@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <HomeView/>
     </nav>
-    <router-view/>
   </div>
 </template>
 
@@ -30,3 +28,6 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style>
+<script setup>
+import HomeView from "@/views/HomeView.vue";
+</script>
