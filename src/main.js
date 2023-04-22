@@ -13,6 +13,8 @@ Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 
 
+export const eventBus = new Vue();
+
 Vue.config.productionTip = false
 
 new Vue({
