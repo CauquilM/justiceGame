@@ -9,13 +9,17 @@
         </div>
         <b-modal id="guilty-modal" centered hide-footer
                  hide-header-close
+                 no-close-on-backdrop
                  title="Message from the clerk">
           <p class="sentencing-modal-text">{{ judgeComment }}</p>
           <b-button block class="sentencing-modal-button" variant="info"
-                    @click="$bvModal.hide('guilty-modal')">
+                    @click="showSentences">
             Let's do</b-button>
         </b-modal>
-        <b-modal>
+        <b-modal id="not-guilty-modal" centered hide-footer
+                 no-close-on-backdrop
+        hide-header-close
+        title="Message from the clerk">
           <b-button block class="sentencing-modal-button" variant="info"
                     @click="$bvModal.hide('not-guilty-modal')">
             🕊️ Freed him, case dismissed</b-button>
@@ -27,7 +31,7 @@
 
     <div v-for="chosenCase in caseToJudge" :key="chosenCase.id" class="others-container">
 
-      <div class="sentences-card" v-if="showSentences">
+      <div class="sentences-card" v-if="showAllSentences">
         <b-card>
           <p class="card-title"><i class="ti ti-gavel"/>Sentences</p>
           <div class="sentences-card-select-flex">
@@ -37,6 +41,7 @@
             <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
           </div>
           <b-modal id="sentencing-success-modal" centered hide-footer
+                   no-close-on-backdrop
                    hide-header-close
                    title="Message from the clerk">
             <p class="sentencing-modal-text">{{ finalComment }}</p>
@@ -44,6 +49,7 @@
                       @click="finishCase">My bad<i class="ti ti-brain"/></b-button>
           </b-modal>
           <b-modal id="sentencing-failed-modal" centered hide-footer
+                   no-close-on-backdrop
                    hide-header-close
                    title="Message from the clerk">
             <p class="sentencing-modal-text">Judge ! You need to fill all sentencing choices</p>
@@ -179,12 +185,12 @@ export default {
           ],
           fineSentences: [
             {
-              value: "0",
-              text: "No fine"
-            },
-            {
               value: null,
               text: "Select a fine"
+            },
+            {
+              value: "0",
+              text: "No fine"
             },
             {
               value: "$250,000",
@@ -211,7 +217,7 @@ export default {
       defenseComment: '',
       prosecutionComment: '',
       judgeComment: '',
-      showSentences: false,
+      showAllSentences: false,
       finalComment: ''
     }
   },
@@ -233,15 +239,24 @@ export default {
       if (decision === "guilty") {
         this.judgeComment = "The suspect is recognized guilty, let's proceed to the sentencing";
         this.$bvModal.show('guilty-modal')
-        /*this.showSentences = true;*/
       } else {
         this.judgeComment = "The suspect is innocent, bailiff, freed him, case dismissed"
-        this.$bvModal.show('guilty-modal')
+        this.$bvModal.show('not-guilty-modal')
       }
     },
     doSentencing() {
       if (this.prisonSelected !== null && this.probationSelected !== null && this.fineSelected !== null) {
         const randomSentence = Math.floor(Math.random() * 3);
+        if (this.prisonSelected === '0'){
+          this.prisonSelected = "no time"
+
+        }
+        if (this.probationSelected === '0'){
+          this.probationSelected = "no time"
+        }
+        if (this.fineSelected === '0'){
+          this.fineSelected = "no "
+        }
         if(randomSentence === 0){
           this.finalComment = `The defendant has been recognized guilty of their crimes and
           then sentenced to ${this.prisonSelected} in prison, ${this.probationSelected}
@@ -261,6 +276,10 @@ export default {
       } else {
         this.$bvModal.show("sentencing-failed-modal");
       }
+    },
+    showSentences(){
+      this.$bvModal.hide('guilty-modal');
+      this.showAllSentences = true;
     },
     finishCase(){
       this.$bvModal.hide('sentencing-success-modal')
