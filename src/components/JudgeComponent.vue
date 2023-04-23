@@ -20,7 +20,7 @@
                hide-header-close
                title="Message from the clerk">
         <b-button block class="sentencing-modal-button" variant="info"
-                  @click="$refs['not-guilty-modal'].hide()">
+                  @click="refreshPage">
           🕊️ Freed him, case dismissed</b-button>
       </b-modal>
     </b-card>
@@ -46,7 +46,7 @@ import { eventBus } from '../main';
       });
     },
     methods: {
-      ...mapActions(["playerDecision", "showSentences"]),
+      ...mapActions(["playerDecision", "showSentences", "refreshPage"]),
     }
   }
 </script>

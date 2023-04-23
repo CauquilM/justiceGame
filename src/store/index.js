@@ -1144,7 +1144,12 @@ export default new Vuex.Store({
     },
     actions: {
         displayCase({state, commit}) {
-            const caseIndex = Math.floor(Math.random() * state.cases.length);
+            var lastCase = null;
+            var caseIndex = Math.floor(Math.random() * state.cases.length);
+            if (lastCase === caseIndex){
+                caseIndex = Math.floor(Math.random() * state.cases.length);
+            }
+            lastCase = caseIndex;
             commit("SET_CASE_TO_JUDGE", state.cases[caseIndex]);
         },
         playerDecision({dispatch, commit}, decision) {
@@ -1211,6 +1216,9 @@ export default new Vuex.Store({
         },
         modifyFineSelected({commit}, fine) {
             commit("SET_FINE_SELECTED", fine);
+        },
+        refreshPage(){
+            window.location.reload();
         }
     },
 })
