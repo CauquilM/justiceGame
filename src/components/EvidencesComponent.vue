@@ -4,7 +4,7 @@
       <p class="card-title"><i class="ti ti-folders"/>Evidences</p>
       <div class="evidence-overflow">
         <p v-for="evidence in chosenCase.evidences" :key="evidence.id"
-           @click="displaySentence(chosenCase.id, evidence.id)">
+           @click="displayCommentsOnEvidence({caseIndex: chosenCase.id, evidenceIndex: evidence.id})">
           {{ evidence.description }}
         </p>
       </div>
@@ -12,10 +12,15 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'EvidencesComponent',
-    props: {
-      chosenCase: Object
-    }
+import {mapActions} from "vuex";
+
+export default {
+  name: 'EvidencesComponent',
+  props: {
+    chosenCase: Object
+  },
+  methods: {
+    ...mapActions(["displayCommentsOnEvidence"])
   }
+}
 </script>
