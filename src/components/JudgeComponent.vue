@@ -1,6 +1,6 @@
 <template>
   <div class="judge-bench">
-    <b-card>
+    <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-gavel"/>Judge</p>
       <div class="judge-buttons">
         <b-button variant="danger" ref="guilty-btn" @click="playerDecision('guilty')">Guilty</b-button>
@@ -32,7 +32,7 @@ import { eventBus } from '../main';
   export default {
     name: 'JudgeComponent',
     computed:{
-      ...mapState(["judgeComment"])
+      ...mapState(["judgeComment", "isDark"])
     },
     mounted() {
       eventBus.$on('openGuiltyModal', () => {

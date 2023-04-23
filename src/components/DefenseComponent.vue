@@ -1,6 +1,6 @@
 <template>
   <div class="defense-table">
-    <b-card>
+    <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-user-heart"/>Defense</p>
       <p v-if="defenseComment !== ''">
         {{ defenseComment }}
@@ -14,7 +14,7 @@
   export default {
     name: 'DefenseComponent',
     computed: {
-      ...mapState(["defenseComment"])
+      ...mapState(["defenseComment", "isDark"])
     }
   }
 </script>

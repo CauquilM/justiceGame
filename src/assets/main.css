@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 /************** Title of all cards **************/
@@ -109,4 +110,13 @@
 .evidence-overflow > p {
     margin-top: 0;
 }
+
+/************** Dark Mode **************/
+.dark-mode-flex{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
 

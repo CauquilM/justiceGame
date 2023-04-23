@@ -1105,7 +1105,8 @@ export default new Vuex.Store({
         prosecutionComment: '',
         judgeComment: '',
         showAllSentences: false,
-        finalComment: ''
+        finalComment: '',
+        isDark: true
     },
 
     getters: {
@@ -1118,6 +1119,9 @@ export default new Vuex.Store({
         },
         getFineSelected: (state) => {
             return state.fineSelected;
+        },
+        getIsDark: (state) => {
+            return state.isDark;
         }
     },
 
@@ -1139,6 +1143,9 @@ export default new Vuex.Store({
         },
         SET_FINE_SELECTED(state, payload) {
             state.fineSelected = payload;
+        },
+        SET_IS_DARK(state) {
+            state.isDark === true ? state.isDark = false : state.isDark = true;
         }
 
     },
@@ -1146,7 +1153,7 @@ export default new Vuex.Store({
         displayCase({state, commit}) {
             var lastCase = null;
             var caseIndex = Math.floor(Math.random() * state.cases.length);
-            if (lastCase === caseIndex){
+            if (lastCase === caseIndex) {
                 caseIndex = Math.floor(Math.random() * state.cases.length);
             }
             lastCase = caseIndex;
@@ -1217,7 +1224,10 @@ export default new Vuex.Store({
         modifyFineSelected({commit}, fine) {
             commit("SET_FINE_SELECTED", fine);
         },
-        refreshPage(){
+        modifyDarkMode({commit}) {
+            commit("SET_IS_DARK");
+        },
+        refreshPage() {
             window.location.reload();
         }
     },

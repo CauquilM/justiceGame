@@ -1,6 +1,6 @@
 <template>
   <div v-if="showAllSentences" class="sentences-card">
-    <b-card>
+    <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-gavel"/>Sentences</p>
       <div class="sentences-card-select-flex">
         <b-form-select v-model="prisonSelected" :options="chosenCase.prisonSentences"></b-form-select>
@@ -38,7 +38,7 @@ export default {
     return {}
   },
   computed: {
-    ...mapState(["showAllSentences", "finalComment"]),
+    ...mapState(["showAllSentences", "finalComment", "isDark"]),
     ...mapGetters(["getPrisonSelected", 'getProbationSelected', 'getFineSelected']),
     prisonSelected: {
       get() {
