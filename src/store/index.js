@@ -203,6 +203,10 @@ export default new Vuex.Store({
                 eventBus.$emit('openSentencingFailModal');
             }
         },
+        displayCommentsOnEvidence({state}, { caseIndex, evidenceIndex }) {
+            state.defenseComment = state.cases[caseIndex].evidences[evidenceIndex].defenseSentence;
+            state.prosecutionComment = state.cases[caseIndex].evidences[evidenceIndex].prosecutionSentence;
+        },
         showSentences({commit}) {
             /*this.$bvModal.hide('guilty-modal');*/
             commit("SET_SHOW_SENTENCES");
