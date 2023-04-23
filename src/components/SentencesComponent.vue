@@ -34,9 +34,6 @@ import {mapActions, mapGetters, mapState} from "vuex";
     name: 'SentenceComponent',
     data(){
       return {
-        _prisonSelected: null,
-        _probationSelected: null,
-        _fineSelected: null,
       }
     },
     computed: {
@@ -46,24 +43,24 @@ import {mapActions, mapGetters, mapState} from "vuex";
         get(){
           return this.getPrisonSelected;
         },
-        set(){
-          return this.modifyPrisonSelected();
+        set(value){
+          return this.modifyPrisonSelected(value);
         }
       },
       probationSelected: {
         get(){
           return this.getProbationSelected;
         },
-        set(){
-          return this.modifyProbationSelected();
+        set(value){
+          return this.modifyProbationSelected(value);
         }
       },
       fineSelected: {
         get(){
           return this.getFineSelected;
         },
-        set(){
-          return this.modifyFineSelected();
+        set(value){
+          return this.modifyFineSelected(value);
         }
       }
     },
