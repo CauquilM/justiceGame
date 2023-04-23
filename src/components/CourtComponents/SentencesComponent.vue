@@ -30,7 +30,7 @@
 </template>
 <script>
 import {mapActions, mapGetters, mapState} from "vuex";
-import {eventBus} from '../main';
+import {eventBus} from '../../main';
 
 export default {
   name: 'SentenceComponent',

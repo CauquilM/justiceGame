@@ -28,7 +28,7 @@
 </template>
 <script>
 import {mapActions, mapState} from "vuex";
-import { eventBus } from '../main';
+import { eventBus } from '../../main';
   export default {
     name: 'JudgeComponent',
     computed:{

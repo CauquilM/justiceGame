@@ -35,6 +35,38 @@ export default new Vuex.Store({
                         defenseSentence: "John Smith is an art collector and the key is from his private collection. It has nothing to do with the theft."
                     }
                 ],
+                witnesses: [
+                    {
+                        id: 1,
+                        name: "Sarah Johnson",
+                        age: 29,
+                        job: "Art Historian",
+                        presentation: "My name is Sarah Johnson, and I'm an art historian who specializes in the period of the stolen painting.",
+                        testimony: [
+                            {
+                                question: "Is the stolen painting a well-known work of art?",
+                                answers: [
+                                    "Yes, it's considered to be one of the most important works of art from that period.",
+                                    "No, it's a relatively unknown painting."
+                                ]
+                            },
+                            {
+                                question: "Can you estimate the value of the stolen painting?",
+                                answers: [
+                                    "It's difficult to put a precise value on a painting of this importance, but it could be worth millions of dollars.",
+                                    "It's probably only worth a few thousand dollars."
+                                ]
+                            },
+                            {
+                                question: "Do you recognize the defendant as being a collector or dealer of art?",
+                                answers: [
+                                    "Yes, I've seen him at art auctions and exhibitions before.",
+                                    "No, I don't recognize him from the art world."
+                                ]
+                            }
+                        ]
+                    }
+                ],
                 /* Punishments */
                 prisonSentences: [
                     {
@@ -105,8 +137,8 @@ export default new Vuex.Store({
                 /* End of punishments */
 
                 actualOutcome: "Guilty"
-            },
-            {
+            }
+            /*{
                 id: 1,
                 type: "Criminal",
                 description: "Breaking and entering into a jewelry store",
@@ -1095,7 +1127,7 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Guilty"
-            }
+            }*/
         ],
         caseToJudge: [],
         prisonSelected: '0',

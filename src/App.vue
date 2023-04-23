@@ -3,7 +3,7 @@
     <div class="dark-mode-flex">
       <DarkModeSwitch/>
     </div>
-    <CourtView/>
+    <router-view/>
   </div>
 </template>
 
@@ -11,8 +11,7 @@
 
 </style>
 <script setup>
-import CourtView from "@/views/CourtView.vue";
-import DarkModeSwitch from "@/components/DarkModeSwitch.vue";
+import DarkModeSwitch from "@/components/CourtComponents/DarkModeSwitch.vue";
 </script>
 <script>
 import {mapState} from "vuex";

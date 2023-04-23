@@ -7,6 +7,7 @@
            @click="displayCommentsOnEvidence({caseIndex: chosenCase.id, evidenceIndex: evidence.id})">
           {{ evidence.description }}
         </p>
+
       </div>
     </b-card>
   </div>

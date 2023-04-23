@@ -22,12 +22,12 @@
 
 <script>
 
-import JudgeComponent from "@/components/JudgeComponent.vue";
-import SentenceComponent from "@/components/SentencesComponent.vue";
-import DefenseComponent from "@/components/DefenseComponent.vue";
-import DescriptionComponent from "@/components/DescriptionComponent.vue";
-import EvidencesComponent from "@/components/EvidencesComponent.vue";
-import ProsecutionComponent from "@/components/ProsecutionComponent.vue";
+import JudgeComponent from "@/components/CourtComponents/JudgeComponent.vue";
+import SentenceComponent from "@/components/CourtComponents/SentencesComponent.vue";
+import DefenseComponent from "@/components/CourtComponents/DefenseComponent.vue";
+import DescriptionComponent from "@/components/CourtComponents/DescriptionComponent.vue";
+import EvidencesComponent from "@/components/CourtComponents/EvidencesComponent.vue";
+import ProsecutionComponent from "@/components/CourtComponents/ProsecutionComponent.vue";
 import {mapActions, mapState} from "vuex";
 
 export default {
