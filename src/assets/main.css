@@ -1,4 +1,3 @@
-
 /************** App **************/
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -31,21 +30,21 @@
     border-color: red;
 }
 
-.judge-buttons{
+.judge-buttons {
     display: flex;
     justify-content: space-around;
 }
 
-.judge-buttons > button{
+.judge-buttons > button {
     margin: 0 5px;
 }
 
 /************** Others **************/
-.others-container{
+.others-container {
     width: 100%;
 }
 
-.others-div{
+.others-div {
     margin: 50px 5% 0 3%;
     display: flex;
     justify-content: space-evenly;
@@ -56,21 +55,28 @@
 /************** Sentences **************/
 .sentences-card > .card {
     border-color: orange;
-    margin: 20px 25% 0 25%;
+    margin: 20px 15% 0 15%;
 }
 
-.sentences-card > .card > .card-body > .sentences-card-select-flex{
+.sentences-card > .card > .card-body > .sentences-card-select-flex {
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
 }
 
-.sentencing-modal-text{
+.sentences-card > .card > .card-body > .sentences-card-select-flex > * {
+    margin: 0 10px;
+}
+
+.sentences-card > .card > .card-body > .sentences-card-select-flex > button {
+    width: 50%;
+}
+
+.sentencing-modal-text {
     text-align: center;
     margin: 20px;
 }
 
-.sentencing-modal-button{
+.sentencing-modal-button {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -78,7 +84,7 @@
 /************** Defense **************/
 .defense-table > .card {
     border-color: red;
-    min-width: 80%;
+    min-width: 60%;
 }
 
 /************** Description of the case **************/
@@ -92,7 +98,7 @@
     padding: 0 20px;
 }
 
-.evidence-display > .card{
+.evidence-display > .card {
     border-color: green;
 }
 
@@ -112,11 +118,50 @@
 }
 
 /************** Dark Mode **************/
-.dark-mode-flex{
+.dark-mode-flex {
     display: flex;
     justify-content: flex-end;
     margin-right: 20px;
     margin-bottom: 100px;
+}
+
+/************** Responsive **************/
+@media (max-width: 800px) {
+    #app {
+        height: unset;
+        overflow: scroll;
+        padding-top: 10px;
+    }
+
+    .others-div {
+        flex-direction: column;
+    }
+
+    .others-div > *{
+        margin-top: 20px;
+    }
+
+    .sentences-card > .card{
+        margin: 20px 5% 0 5%;
+    }
+
+    .sentences-card > .card > .card-body > .sentences-card-select-flex {
+        flex-direction: column;
+        margin: 0 15%;
+        align-items: center;
+    }
+
+    .sentences-card > .card > .card-body > .sentences-card-select-flex  > * {
+        margin-top: 20px;
+    }
+
+    .sentences-card > .card > .card-body > .sentences-card-select-flex > button{
+        width: 100%;
+    }
+
+    .modal-content{
+        margin: 0 5%;
+    }
 }
 
 
