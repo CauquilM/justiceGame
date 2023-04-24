@@ -26,6 +26,10 @@
     text-decoration: underline red;
 }
 
+.card-title > span {
+    margin-right: 7px;
+}
+
 /*************************** Judge ***************************/
 .judge-bench > .card {
     border-color: red;

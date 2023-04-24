@@ -1,7 +1,7 @@
 <template>
   <div class="defense-table">
     <b-card :class="isDark ?'bg-dark text-light' : ''">
-      <p class="card-title"><i class="ti ti-user-heart"/>Defense</p>
+      <p class="card-title"><b-avatar :src="require('@/assets/characters-logo/juror_4.jpg')"/>Defense</p>
       <p v-if="defenseComment !== ''">
         {{ defenseComment }}
       </p>
