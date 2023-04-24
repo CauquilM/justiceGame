@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import {eventBus} from '../main';
+import {eventBus} from '@/main';
 
 Vue.use(Vuex)
 
@@ -624,7 +624,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
-
             {
                 id: 3,
                 type: "Assault",
@@ -781,7 +780,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
-
             {
                 id: 4,
                 type: "Theft",
@@ -1489,6 +1487,190 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Guilty"
+            },
+
+            {
+                id: 11,
+                type: "Treason",
+                description: "Plotting against the British Crown, 1783",
+                suspect: {
+                    name: "George Washington",
+                    age: 43
+                },
+                evidences: [
+                    {
+                        id: 0,
+                        description: "Witness testimony places George Washington at a secret meeting discussing plans to overthrow the British Crown",
+                        prosecutionSentence: "We have a reliable witness who can testify that George Washington was present at the meeting and actively participated in the discussion.",
+                        defenseSentence: "Our client denies any involvement in such a meeting and questions the credibility of the witness."
+                    },
+                    {
+                        id: 1,
+                        description: "A letter was intercepted from George Washington to a known British enemy, discussing plans to weaken the British army",
+                        prosecutionSentence: "We have a letter that was intercepted from George Washington to a known British enemy that contains explicit plans to weaken the British army. This shows clear intent to betray the British Crown.",
+                        defenseSentence: "Our client denies writing this letter and questions the authenticity of the evidence. It is possible that someone else forged the letter to frame him."
+                    },
+                    {
+                        id: 2,
+                        description: "George Washington was seen meeting with a group of known rebels and was overheard discussing plans to attack British troops",
+                        prosecutionSentence: "Multiple witnesses have identified George Washington as the leader of a group of known rebels, and overheard him discussing plans to attack British troops. This is clear evidence of treason.",
+                        defenseSentence: "Our client was simply meeting with friends and denies discussing any plans to attack British troops. There is no concrete evidence to prove otherwise."
+                    }
+                ],
+                witnesses: [
+                    {
+                        id: 2,
+                        name: "John Adams",
+                        age: 45,
+                        job: "Historian",
+                        presentation: "My name is John Adams, and I'm a historian who has studied the American Revolution extensively.",
+                        testimony: [
+                            {
+                                question: "Is George Washington known for his patriotism and loyalty to the American cause?",
+                                answers: [
+                                    "Absolutely, he is considered one of the founding fathers of our country and a hero of the Revolution.",
+                                    "There have been some questions raised about his true motives and loyalty."
+                                ]
+                            },
+                            {
+                                question: "What do you know about the accused's involvement in the plot against the British Crown?",
+                                answers: [
+                                    "There is little evidence to suggest that George Washington was actively involved in any plot against the Crown.",
+                                    "There are some reports that he was part of a group that was planning to overthrow British rule."
+                                ]
+                            },
+                            {
+                                question: "Do you believe that George Washington is capable of committing treason?",
+                                answers: [
+                                    "No, I do not believe that George Washington would ever betray his country or the principles of liberty and democracy.",
+                                    "It's difficult to say, but there are some indications that he may have been willing to take extreme measures to achieve his goals."
+                                ]
+                            }
+                        ]
+                    },
+
+                    {
+                        id: 3,
+                        name: "Thomas Jefferson",
+                        age: 50,
+                        job: "Philosopher",
+                        presentation: "My name is Thomas Jefferson, and I'm a philosopher and statesman who played a significant role in the American Revolution.",
+                        testimony: [
+                            {
+                                question: "What do you know about the accused's character and beliefs?",
+                                answers: [
+                                    "George Washington was a man of great integrity and courage who fought tirelessly for the cause of liberty.",
+                                    "There are some reports that he was motivated by personal gain and ambition rather than a genuine commitment to the American cause."
+                                ]
+                            },
+                            {
+                                question: "Do you think that George Washington was capable of plotting against the British Crown?",
+                                answers: [
+                                    "No, I do not believe that George Washington would ever engage in treasonous activity.",
+                                    "There is some evidence to suggest that he may have been involved in a conspiracy to overthrow British rule."
+                                ]
+                            },
+                            {
+                                question: "What do you think would have been the consequences of a successful plot against the British Crown?",
+                                answers: [
+                                    "It's difficult to say, but it could have led to a long and bloody conflict between the American colonies and the British Empire.",
+                                    "It would have been a significant victory for the cause of American independence, but at a great cost in terms of human life and suffering."
+                                ]
+                            }
+                        ]
+                    },
+
+                    {
+                        id: 4,
+                        name: "Martha Washington",
+                        age: 41,
+                        job: "First Lady",
+                        presentation: "My name is Martha Washington, and I'm the wife of George Washington.",
+                        testimony: [
+                            {
+                                question: "What can you tell us about your husband's character and loyalty to the American cause?",
+                                answers: [
+                                    "George is a man of great honor and patriotism, who has always put the needs of his country and his fellow citizens first.",
+                                    "He is a dedicated public servant, but there have been some rumors and accusations that he is not as loyal to the American cause as he appears."
+                                ]
+                            },
+                            {
+                                question: "Do you believe that your husband is capable of plotting against the British Crown?",
+                                answers: [
+                                    "No, I do not believe that George would ever engage in treasonous activity.",
+                                    "I cannot say for certain, but I find it"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                prisonSentences: [
+                    {
+                        value: null,
+                        text: "Select a prison time"
+                    },
+                    {
+                        value: "0",
+                        text: "No prison time"
+                    },
+                    {
+                        value: "life imprisonment",
+                        text: "Life imprisonment"
+                    },
+                    {
+                        value: "30 years",
+                        text: "30 years"
+                    },
+                    {
+                        value: "20 years",
+                        text: "20 years"
+                    }
+                ],
+                probationSentences: [
+                    {
+                        value: null,
+                        text: "Select a probation duration"
+                    },
+                    {
+                        value: "0",
+                        text: "No probation time"
+                    },
+                    {
+                        value: "10 years",
+                        text: "10 years"
+                    },
+                    {
+                        value: "5 years",
+                        text: "5 years"
+                    },
+                    {
+                        value: "3 years",
+                        text: "3 years"
+                    }
+                ],
+                fineSentences: [
+                    {
+                        value: null,
+                        text: "Select a fine"
+                    },
+                    {
+                        value: "0",
+                        text: "No fine"
+                    },
+                    {
+                        value: "$100,000",
+                        text: "$100,000"
+                    },
+                    {
+                        value: "$50,000",
+                        text: "$50,000"
+                    },
+                    {
+                        value: "$500,000",
+                        text: "$500,000"
+                    }
+                ],
+                actualOutcome: "Not guilty"
             }
         ],
         chosenCase: Object,
@@ -1553,8 +1735,8 @@ export default new Vuex.Store({
     },
     actions: {
         displayCase({state, commit}) {
-            var lastCase = null;
-            var caseIndex = Math.floor(Math.random() * state.cases.length);
+            let lastCase = null;
+            let caseIndex = Math.floor(Math.random() * state.cases.length);
             if (lastCase === caseIndex) {
                 caseIndex = Math.floor(Math.random() * state.cases.length);
             }

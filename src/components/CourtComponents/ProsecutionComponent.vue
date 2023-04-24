@@ -1,7 +1,7 @@
 <template>
   <div class="prosecution-table">
     <b-card :class="isDark ?'bg-dark text-light' : ''">
-      <p class="card-title"><i class="ti ti-user-exclamation"/>Prosecution</p>
+      <p class="card-title"><b-avatar :src="require('@/assets/characters-logo/juror_1.jpg')"/>Prosecution</p>
       <p v-if="prosecutionComment !== ''">
         {{ prosecutionComment }}
       </p>
