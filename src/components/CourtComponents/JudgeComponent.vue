@@ -2,9 +2,12 @@
   <div class="judge-bench">
     <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>Judge</p>
-      <div class="judge-buttons">
-        <b-button variant="danger" ref="guilty-btn" @click="playerDecision('guilty')">Guilty</b-button>
-        <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
+      <div>
+        <div class="judge-buttons">
+          <b-button variant="danger" ref="guilty-btn" @click="playerDecision('guilty')">Guilty</b-button>
+          <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
+        </div>
+        <PleaDealComponent/>
       </div>
       <b-modal ref="guilty-modal" centered hide-footer
                hide-header-close
@@ -29,8 +32,10 @@
 <script>
 import {mapActions, mapState} from "vuex";
 import { eventBus } from '../../main';
+import PleaDealComponent from "@/components/CourtComponents/PleaDealComponent.vue";
   export default {
     name: 'JudgeComponent',
+    components: {PleaDealComponent},
     computed:{
       ...mapState(["judgeComment", "isDark"])
     },
