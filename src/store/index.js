@@ -6,6 +6,35 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
+        /*use the pattern and generate 3 witnesses for this case =>*/
+        /*{
+            name: "Lisa Hernandez",
+                age: 52,
+            job: "Art Historian",
+            testimony: [
+            {
+                question: "What can you tell us about the painting that was stolen?",
+                answers: [
+                    "It was a rare work by a famous artist, valued at over $1 million.",
+                    "I don't know much about it. I'm not really a specialist in that area."
+                ]
+            },
+            {
+                question: "What do you think of the security at the museum?",
+                answers: [
+                    "I think it's pretty tight. It's unlikely that someone could have just walked in and stolen a painting.",
+                    "I think there are some serious flaws in the security system. It's not hard for a determined thief to get in."
+                ]
+            },
+            {
+                question: "Do you have any information that could help us identify the thief?",
+                answers: [
+                    "No, I'm afraid not. I wish I could be more helpful.",
+                    "Yes, I saw a suspicious-looking man leaving the museum shortly after the theft occurred."
+                ]
+            }
+        ]
+        }*/
         cases: [
             {
                 id: 0,
@@ -67,7 +96,7 @@ export default new Vuex.Store({
                         ]
                     },
                     {
-                        id:2,
+                        id: 2,
                         name: "David Moore",
                         age: 28,
                         job: "Security Guard",
@@ -225,7 +254,7 @@ export default new Vuex.Store({
 
                 actualOutcome: "Guilty"
             },
-            /*{
+            {
                 id: 1,
                 type: "Criminal",
                 description: "Breaking and entering into a jewelry store",
@@ -251,6 +280,95 @@ export default new Vuex.Store({
                         description: "No stolen items were found in Sarah Davis' possession at the time of her arrest",
                         prosecutionSentence: "The fact that Sarah Davis did not have any stolen items on her does not prove her innocence.",
                         defenseSentence: "The lack of any stolen items in my client's possession is evidence that she did not commit the crime."
+                    }
+                ],
+                witnesses: [
+                    {
+                        id: 1,
+                        name: "James Johnson",
+                        age: 45,
+                        job: "Security Guard at the Jewelry Store",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the night of the break-in?",
+                                answers: [
+                                    "I was on duty that night and saw Sarah Davis trying to break into the store.",
+                                    "I didn't see anything unusual that night, it all seemed quiet."
+                                ]
+                            },
+                            {
+                                question: "Do you recognize Sarah Davis as the person you saw that night?",
+                                answers: [
+                                    "Yes, I am certain that it was her.",
+                                    "No, I am not sure. It was dark and the person had a mask on."
+                                ]
+                            },
+                            {
+                                question: "Was the security system working properly that night?",
+                                answers: [
+                                    "Yes, everything was working fine.",
+                                    "No, there were some issues with the alarm system that night."
+                                ]
+                            }
+                        ],
+                    },
+                    {
+                        id: 2,
+                        name: "Ethan Lee",
+                        age: 33,
+                        job: "Police Detective",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the investigation into the break-in?",
+                                answers: [
+                                    "We found fingerprints at the scene of the crime that match Sarah Davis.",
+                                    "We didn't find any useful evidence at the scene."
+                                ]
+                            },
+                            {
+                                question: "Did you interview any witnesses?",
+                                answers: [
+                                    "Yes, we talked to several witnesses who saw someone matching Sarah Davis' description near the store that night.",
+                                    "No, we didn't have any luck finding any witnesses."
+                                ]
+                            },
+                            {
+                                question: "What do you think of the evidence against Sarah Davis?",
+                                answers: [
+                                    "I think the evidence is strong and supports the prosecution's case.",
+                                    "I think the evidence is circumstantial and does not prove Sarah Davis' guilt beyond a reasonable doubt."
+                                ]
+                            }
+                        ],
+                    },
+                    {
+                        id: 3,
+                        name: "Karen Jackson",
+                        age: 52,
+                        job: "Jewelry Expert",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the stolen jewelry?",
+                                answers: [
+                                    "The stolen items were all high-end pieces that would be difficult to sell on the black market.",
+                                    "I don't know much about the specific items that were stolen."
+                                ]
+                            },
+                            {
+                                question: "Do you think the thief was a professional?",
+                                answers: [
+                                    "Yes, it seems likely that the thief had some experience in this kind of crime.",
+                                    "No, it's possible that this was just an amateur job."
+                                ]
+                            },
+                            {
+                                question: "Would Sarah Davis have had access to the stolen jewelry?",
+                                answers: [
+                                    "No, she did not have access to the jewelry and could not have stolen it.",
+                                    "Yes, she had access to the jewelry and could have stolen it if she wanted to."
+                                ]
+                            }
+                        ],
                     }
                 ],
                 prisonSentences: [
@@ -320,8 +438,8 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Not guilty"
-            },*/
-            /*{
+            },
+            {
                 id: 2,
                 type: "Fraud",
                 description: "Embezzlement of company funds",
@@ -347,6 +465,95 @@ export default new Vuex.Store({
                         description: "An audit of the company's finances found discrepancies that pointed to embezzlement",
                         prosecutionSentence: "The audit clearly shows that John Smith manipulated the company's finances for his own personal gain.",
                         defenseSentence: "My client did not intentionally manipulate the finances and was not aware of any discrepancies until after the audit was conducted."
+                    }
+                ],
+                witnesses: [
+                    {
+                        id: 1,
+                        name: "Karen Johnson",
+                        age: 35,
+                        job: "Accountant",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the bank statements?",
+                                answers: [
+                                    "I reviewed the bank statements and found that there were numerous transfers of large sums of money from the company's account to John Smith's personal account.",
+                                    "I didn't review the bank statements myself, but I heard from my colleagues that there were some suspicious transfers made by John Smith."
+                                ]
+                            },
+                            {
+                                question: "Did you notice anything unusual about John Smith's behavior at work?",
+                                answers: [
+                                    "Yes, he would often leave work early or have unexplained absences. It was very suspicious.",
+                                    "No, I didn't really interact with John Smith much so I wouldn't have noticed anything unusual."
+                                ]
+                            },
+                            {
+                                question: "Do you think John Smith is guilty of embezzlement?",
+                                answers: [
+                                    "Yes, based on my analysis of the bank statements and his behavior at work, it seems very likely that he embezzled company funds.",
+                                    "I can't say for sure whether he is guilty or not. I don't have all the facts."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 2,
+                        name: "Michael Lee",
+                        age: 45,
+                        job: "Auditor",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the audit of the company's finances?",
+                                answers: [
+                                    "The audit revealed several discrepancies that strongly suggested embezzlement by John Smith.",
+                                    "I wasn't involved in the audit, so I can't really comment on the findings."
+                                ]
+                            },
+                            {
+                                question: "Do you think John Smith was aware of the discrepancies in the finances?",
+                                answers: [
+                                    "Based on my experience with auditing, it's hard to believe that he wasn't aware of what was going on.",
+                                    "I don't know enough about the situation to say for sure."
+                                ]
+                            },
+                            {
+                                question: "What do you think is an appropriate punishment for embezzlement?",
+                                answers: [
+                                    "I think a prison sentence is appropriate, especially given the large sums of money that were involved.",
+                                    "I'm not really sure. It depends on the circumstances of the case."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 3,
+                        name: "Emily Rodriguez",
+                        age: 28,
+                        job: "HR Manager",
+                        testimony: [
+                            {
+                                question: "Did you receive any reports of suspicious behavior from John Smith's colleagues?",
+                                answers: [
+                                    "Yes, several employees reported that John Smith would leave work early or have unexplained absences.",
+                                    "No, I didn't receive any reports of suspicious behavior from John Smith's colleagues."
+                                ]
+                            },
+                            {
+                                question: "Do you think John Smith had any legitimate business reasons for making transfers between the company and personal accounts?",
+                                answers: [
+                                    "Based on my knowledge of the company's policies, it seems unlikely that he had any legitimate reasons for these transfers.",
+                                    "I can't say for sure whether he had legitimate reasons or not."
+                                ]
+                            },
+                            {
+                                question: "What do you think is an appropriate punishment for embezzlement?",
+                                answers: [
+                                    "I think a combination of prison time and a fine would be appropriate, to send a message that this kind of behavior won't be tolerated.",
+                                    "I'm not really sure. It depends on the severity of the crime."
+                                ]
+                            }
+                        ]
                     }
                 ],
                 prisonSentences: [
@@ -417,6 +624,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
+
             {
                 id: 3,
                 type: "Assault",
@@ -444,6 +652,66 @@ export default new Vuex.Store({
                         prosecutionSentence: "The victim's injuries indicate that Robert Johnson's attack was unprovoked and excessive.",
                         defenseSentence: "My client did not intend to cause serious harm and was only defending himself from the victim's initial attack."
                     }
+                ],
+                witnesses: [
+                    {
+                        id: 1,
+                        name: "Samantha Lee",
+                        age: 28,
+                        job: "Human Resources Manager",
+                        testimony: [
+                            {
+                                question: "Do you know anything about the relationship between Robert Johnson and his coworker?",
+                                answers: [
+                                    "Yes, there had been some tension between them for a while. They had a few arguments before this incident.",
+                                    "No, I'm not sure. I haven't heard anything about their relationship."
+                                ]
+                            },
+                            {
+                                question: "Did you witness the assault?",
+                                answers: [
+                                    "No, I didn't witness it directly, but I heard a commotion and went to see what was happening. By the time I got there, it was over.",
+                                    "Yes, I saw Robert attacking his coworker. It was very violent and disturbing."
+                                ]
+                            },
+                            {
+                                question: "Do you believe Robert Johnson was the aggressor in this incident?",
+                                answers: [
+                                    "Based on what I know about their relationship and what I saw after the fact, I would say it's likely that Robert was the aggressor.",
+                                    "I can't say for sure who started the altercation. It all happened so quickly and it was hard to see everything clearly."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 2,
+                        name: "Daniel Kim",
+                        age: 42,
+                        job: "Security Guard",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the security camera footage of the incident?",
+                                answers: [
+                                    "I reviewed the footage and it clearly shows Robert attacking his coworker. There's no question about who was the aggressor.",
+                                    "The footage is not very clear and it's hard to make out what's happening. It's possible that there was mutual aggression involved."
+                                ]
+                            },
+                            {
+                                question: "Have you ever had any issues with Robert Johnson's behavior in the workplace?",
+                                answers: [
+                                    "Yes, I've had to talk to him a few times about inappropriate behavior towards his coworkers. He can be very aggressive and confrontational.",
+                                    "No, I haven't personally seen anything concerning from Robert's behavior at work."
+                                ]
+                            },
+                            {
+                                question: "Do you believe Robert Johnson poses a danger to his coworkers?",
+                                answers: [
+                                    "Based on what I've seen and heard, I think there's a real risk that Robert could hurt someone again. I would be very cautious around him.",
+                                    "I don't think Robert is a danger to his coworkers. This incident was likely a one-time thing and I don't believe he's a violent person in general."
+                                ]
+                            }
+                        ]
+                    },
                 ],
                 prisonSentences: [
                     {
@@ -513,6 +781,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
+
             {
                 id: 4,
                 type: "Theft",
@@ -615,6 +884,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
+
             {
                 id: 5,
                 type: "Forgery",
@@ -717,6 +987,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
+
             {
                 id: 6,
                 type: "Burglary",
@@ -819,6 +1090,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
+
             {
                 id: 7,
                 type: "Assault",
@@ -921,6 +1193,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty, sentenced to 3 years in prison and 2 years of probation, and fined $5,000."
             },
+
             {
                 id: 8,
                 type: "Assault",
@@ -1023,6 +1296,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: null
             },
+
             {
                 id: 9,
                 type: "Robbery",
@@ -1119,6 +1393,7 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
+
             {
                 id: 10,
                 type: "Spying",
@@ -1214,7 +1489,7 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Guilty"
-            }*/
+            }
         ],
         chosenCase: Object,
         prisonSelected: '0',
@@ -1336,8 +1611,8 @@ export default new Vuex.Store({
             state.defenseComment = state.chosenCase.evidences[evidenceIndex].defenseSentence;
             state.prosecutionComment = state.chosenCase.evidences[evidenceIndex].prosecutionSentence;
         },
-        callWitness({state, commit}, witness){
-            if(state.showAllSentences === true){
+        callWitness({state, commit}, witness) {
+            if (state.showAllSentences === true) {
                 commit("SET_SHOW_SENTENCES");
             }
             commit("SET_WITNESS_CHOSE", witness);
@@ -1345,7 +1620,7 @@ export default new Vuex.Store({
             commit("SET_SHOW_COURT_BAR");
         },
         showSentences({state, commit}) {
-            if(state.showCourtBar === true){
+            if (state.showCourtBar === true) {
                 commit("SET_SHOW_COURT_BAR");
             }
             commit("SET_SHOW_SENTENCES");
