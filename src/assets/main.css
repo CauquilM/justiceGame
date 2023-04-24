@@ -64,7 +64,7 @@
 /*************************** Sentences ***************************/
 .sentences-card > .card {
     border-color: orange;
-    margin-top: 20px%;
+    margin-top: 20px;
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex {
