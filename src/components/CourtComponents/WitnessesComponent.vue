@@ -1,7 +1,7 @@
 <template>
   <div>
     <p v-for="witness in chosenCase.witnesses" :key="witness.index"
-       @click="callWitness()">
+       @click="callWitness(witness)">
       Witness #{{ witness.id }} : {{ witness.name }}
     </p>
   </div>

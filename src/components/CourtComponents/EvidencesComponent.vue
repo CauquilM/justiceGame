@@ -1,7 +1,7 @@
 <template>
   <div>
     <p v-for="evidence in chosenCase.evidences" :key="evidence.id"
-       @click="displayCommentsOnEvidence({caseIndex: chosenCase.id, evidenceIndex: evidence.id})">
+       @click="displayCommentsOnEvidence(evidence.id)">
       {{ evidence.description }}
     </p>
   </div>

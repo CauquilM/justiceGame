@@ -1138,6 +1138,7 @@ export default new Vuex.Store({
         judgeComment: '',
         showAllSentences: false,
         showCourtBar: false,
+        witnessChose: Object,
         finalComment: '',
         isDark: true
     },
@@ -1167,6 +1168,9 @@ export default new Vuex.Store({
         },
         SET_SHOW_SENTENCES(state) {
             state.showAllSentences === true ? state.showAllSentences = false : state.showAllSentences = true;
+        },
+        SET_WITNESS_CHOSE(state, payload) {
+            state.witnessChose = payload;
         },
         SET_SHOW_COURT_BAR(state) {
             state.showCourtBar === true ? state.showCourtBar = false : state.showCourtBar = true;
@@ -1241,11 +1245,13 @@ export default new Vuex.Store({
                 eventBus.$emit('openSentencingFailModal');
             }
         },
-        displayCommentsOnEvidence({state}, {caseIndex, evidenceIndex}) {
-            state.defenseComment = state.cases[caseIndex].evidences[evidenceIndex].defenseSentence;
-            state.prosecutionComment = state.cases[caseIndex].evidences[evidenceIndex].prosecutionSentence;
+        displayCommentsOnEvidence({state}, evidenceIndex) {
+            state.defenseComment = state.chosenCase.evidences[evidenceIndex].defenseSentence;
+            state.prosecutionComment = state.chosenCase.evidences[evidenceIndex].prosecutionSentence;
         },
-        callWitness({commit}){
+        callWitness({commit}, witness){
+            commit("SET_WITNESS_CHOSE", witness);
+            console.log(witness)
             commit("SET_SHOW_COURT_BAR");
         },
         showSentences({commit}) {
