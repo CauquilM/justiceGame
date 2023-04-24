@@ -1129,7 +1129,7 @@ export default new Vuex.Store({
                 actualOutcome: "Guilty"
             }*/
         ],
-        caseToJudge: [],
+        chosenCase: Object,
         prisonSelected: '0',
         probationSelected: null,
         fineSelected: null,
@@ -1137,6 +1137,7 @@ export default new Vuex.Store({
         prosecutionComment: '',
         judgeComment: '',
         showAllSentences: false,
+        showCourtBar: false,
         finalComment: '',
         isDark: true
     },
@@ -1158,14 +1159,17 @@ export default new Vuex.Store({
     },
 
     mutations: {
-        SET_CASE_TO_JUDGE(state, payload) {
-            state.caseToJudge.push(payload)
+        SET_CHOSEN_CASE(state, payload) {
+            state.chosenCase = payload;
         },
         SET_JUDGE_COMMENT(state, payload) {
             state.judgeComment = payload;
         },
         SET_SHOW_SENTENCES(state) {
             state.showAllSentences === true ? state.showAllSentences = false : state.showAllSentences = true;
+        },
+        SET_SHOW_COURT_BAR(state) {
+            state.showCourtBar === true ? state.showCourtBar = false : state.showCourtBar = true;
         },
         SET_PRISON_SELECTED(state, payload) {
             state.prisonSelected = payload;
@@ -1189,7 +1193,7 @@ export default new Vuex.Store({
                 caseIndex = Math.floor(Math.random() * state.cases.length);
             }
             lastCase = caseIndex;
-            commit("SET_CASE_TO_JUDGE", state.cases[caseIndex]);
+            commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
         },
         playerDecision({dispatch, commit}, decision) {
             if (decision === "guilty") {
@@ -1240,6 +1244,9 @@ export default new Vuex.Store({
         displayCommentsOnEvidence({state}, {caseIndex, evidenceIndex}) {
             state.defenseComment = state.cases[caseIndex].evidences[evidenceIndex].defenseSentence;
             state.prosecutionComment = state.cases[caseIndex].evidences[evidenceIndex].prosecutionSentence;
+        },
+        callWitness({commit}){
+            commit("SET_SHOW_COURT_BAR");
         },
         showSentences({commit}) {
             /*this.$bvModal.hide('guilty-modal');*/

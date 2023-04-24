@@ -1,14 +1,21 @@
 <template>
-  <p v-for="witness in chosenCase.witnesses" :key="witness.id"
-     @click="callWitness({caseIndex: chosenCase.id, evidenceIndex: witness.id})">
-    Witness #{{ witness.id }} : {{ witness.name }}
-  </p>
+  <div>
+    <p v-for="witness in chosenCase.witnesses" :key="witness.index"
+       @click="callWitness()">
+      Witness #{{ witness.id }} : {{ witness.name }}
+    </p>
+  </div>
 </template>
 <script>
-  export default {
-    name: 'WitnessesComponent',
-    props: {
+import {mapActions, mapState} from "vuex";
 
+  export default {
+    name: "WitnessesComponent",
+    computed: {
+      ...mapState(["chosenCase"])
+    },
+    methods: {
+      ...mapActions(["callWitness"])
     }
   }
 </script>

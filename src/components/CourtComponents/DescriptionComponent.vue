@@ -13,11 +13,8 @@ import {mapState} from "vuex";
 
 export default {
   name: 'DescriptionComponent',
-  props: {
-    chosenCase: Object
-  },
   computed: {
-    ...mapState(["isDark"])
+    ...mapState(["isDark", "chosenCase"])
   }
 }
 </script>

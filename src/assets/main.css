@@ -1,4 +1,4 @@
-/************** App **************/
+/*************************** App ***************************/
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-/************** Court View **************/
+/*************************** Court View ***************************/
 .game-container {
     display: flex;
     flex-direction: column;
@@ -18,14 +18,14 @@
     margin-bottom: 80px;
 }
 
-/************** Title of all cards **************/
+/*************************** Title of all cards ***************************/
 .card-title {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline red;
 }
 
-/************** Judge **************/
+/*************************** Judge ***************************/
 .judge-bench > .card {
     border-color: red;
 }
@@ -39,7 +39,7 @@
     margin: 0 5px;
 }
 
-/************** Others **************/
+/*************************** Others ***************************/
 .others-container {
     width: 100%;
 }
@@ -52,7 +52,13 @@
     width: 95%;
 }
 
-/************** Sentences **************/
+/*************************** Switchable Components ***************************/
+.switchable-components{
+    display: flex;
+    justify-content: center;
+}
+
+/*************************** Sentences ***************************/
 .sentences-card > .card {
     border-color: orange;
     margin: 20px 15% 0 15%;
@@ -81,19 +87,24 @@
     margin-bottom: 10px;
 }
 
-/************** Defense **************/
+/*************************** Court Bar ***************************/
+.court-bar{
+    max-width: 30%;
+}
+
+/*************************** Defense ***************************/
 .defense-table > .card {
     border-color: red;
     min-width: 60%;
 }
 
-/************** Description of the case **************/
+/*************************** Description of the case ***************************/
 .description-display > .card {
     border-color: blue;
 }
 
 
-/************** Evidences **************/
+/*************************** Evidences ***************************/
 .evidence-display, .description-display {
     padding: 0 20px;
 }
@@ -107,7 +118,9 @@
     height: 18vh;
 }
 
-/************** Prosecution **************/
+/**************************** Witenesses ****************************/
+
+/**************************** Prosecution ****************************/
 .prosecution-table > .card {
     border: 2px dashed black;
     min-width: 80%;
@@ -117,7 +130,7 @@
     margin-top: 0;
 }
 
-/************** Dark Mode **************/
+/*************************** Dark Mode ***************************/
 .dark-mode-flex {
     display: flex;
     justify-content: flex-end;
@@ -125,7 +138,7 @@
     margin-bottom: 100px;
 }
 
-/************** Responsive **************/
+/*************************** Responsive ***************************/
 @media (max-width: 1024px) {
     #app {
         height: unset;
