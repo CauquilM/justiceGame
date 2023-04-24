@@ -130,6 +130,23 @@
     height: 18vh;
 }
 
+.evidence-overflow::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.evidence-overflow::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+.evidence-overflow::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+}
+
+
+
 /**************************** Witenesses ****************************/
 
 /**************************** Prosecution ****************************/
