@@ -1,5 +1,4 @@
-
-/************** App **************/
+/*************************** App ***************************/
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
@@ -8,90 +7,121 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
-/************** Court View **************/
+/*************************** Court View ***************************/
 .game-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
-/************** Title of all cards **************/
+/*************************** Title of all cards ***************************/
 .card-title {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline red;
 }
 
-/************** Judge **************/
+/*************************** Judge ***************************/
 .judge-bench > .card {
     border-color: red;
+    margin-top: 80px;
+    margin-bottom: 25px;
 }
 
-.judge-buttons{
+.judge-buttons {
     display: flex;
     justify-content: space-around;
 }
 
-.judge-buttons > button{
+.judge-buttons > button {
     margin: 0 5px;
 }
 
-/************** Others **************/
-.others-container{
+/*************************** Others ***************************/
+.others-container {
     width: 100%;
 }
 
-.others-div{
-    margin: 50px 5% 0 3%;
+.others-div {
+    margin: 25px 5% 0 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 95%;
 }
 
-/************** Sentences **************/
+/*************************** Switchable Components ***************************/
+.switchable-components {
+    display: flex;
+    justify-content: center;
+}
+
+/*************************** Sentences ***************************/
 .sentences-card > .card {
     border-color: orange;
-    margin: 20px 25% 0 25%;
+    margin-top: 20px;
 }
 
-.sentences-card > .card > .card-body > .sentences-card-select-flex{
+.sentences-card > .card > .card-body > .sentences-card-select-flex {
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
 }
 
-.sentencing-modal-text{
+.sentences-card > .card > .card-body > .sentences-card-select-flex > * {
+    margin: 0 10px;
+}
+
+.sentences-card > .card > .card-body > .sentences-card-select-flex > button {
+    width: 100%;
+}
+
+.sentencing-modal-text {
     text-align: center;
     margin: 20px;
 }
 
-.sentencing-modal-button{
+.sentencing-modal-button {
     width: 100%;
     margin-bottom: 10px;
 }
 
-/************** Defense **************/
-.defense-table > .card {
-    border-color: red;
-    min-width: 80%;
+/*************************** Court Bar ***************************/
+.court-bar {
+    max-width: 40%;
 }
 
-/************** Description of the case **************/
+.court-bar > .card {
+    border-color: orange;
+    padding: 0 5px;
+}
+
+.witness-questions-buttons {
+    margin: 15px 0;
+}
+
+/*************************** Defense ***************************/
+.defense-table > .card {
+    border-color: red;
+    min-width: 60%;
+}
+
+/*************************** Description of the case ***************************/
 .description-display > .card {
     border-color: blue;
 }
 
 
-/************** Evidences **************/
+/*************************** Evidences ***************************/
 .evidence-display, .description-display {
     padding: 0 20px;
 }
 
-.evidence-display > .card{
+.evidence-display > .card {
     border-color: green;
 }
 
@@ -100,7 +130,26 @@
     height: 18vh;
 }
 
-/************** Prosecution **************/
+.evidence-overflow::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.evidence-overflow::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+.evidence-overflow::-webkit-scrollbar-thumb {
+    background: green;
+    border-radius: 10px;
+}
+
+
+
+/**************************** Witenesses ****************************/
+
+/**************************** Prosecution ****************************/
 .prosecution-table > .card {
     border: 2px dashed black;
     min-width: 80%;
@@ -109,4 +158,64 @@
 .evidence-overflow > p {
     margin-top: 0;
 }
+
+/*************************** Dark Mode ***************************/
+.dark-mode-flex {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/*************************** Responsive ***************************/
+@media (max-width: 1024px) {
+    #app {
+        height: unset;
+        overflow: scroll;
+        padding-top: 10px;
+    }
+
+    .others-div {
+        flex-direction: column;
+    }
+
+    .others-div > * {
+        margin-top: 20px;
+        max-width: 85%;
+    }
+
+    .sentences-card > .card {
+        margin: unset;
+    }
+
+    .sentences-card > .card > .card-body > .sentences-card-select-flex {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .sentences-card > .card > .card-body > .sentences-card-select-flex > * {
+        margin-top: 20px;
+    }
+
+    .sentences-card > .card > .card-body > .sentences-card-select-flex > button {
+        width: 100%;
+    }
+
+    .modal-content {
+        margin: 0 5%;
+    }
+
+    .court-bar {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .court-bar {
+        max-width: 85%;
+    }
+}
+
 

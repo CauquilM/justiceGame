@@ -1,6 +1,6 @@
 <template>
   <div class="description-display">
-    <b-card>
+    <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-file-description"/>The case</p>
       <p>This a <b>{{ chosenCase.type }}</b> case</p>
       <p>The reason of the case is <b>{{ chosenCase.description }}</b></p>
@@ -9,10 +9,12 @@
   </div>
 </template>
 <script>
+import {mapState} from "vuex";
+
 export default {
   name: 'DescriptionComponent',
-  props: {
-    chosenCase: Object
+  computed: {
+    ...mapState(["isDark", "chosenCase"])
   }
 }
 </script>
