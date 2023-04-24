@@ -56,7 +56,7 @@
 }
 
 /*************************** Switchable Components ***************************/
-.switchable-components{
+.switchable-components {
     display: flex;
     justify-content: center;
 }
@@ -64,7 +64,7 @@
 /*************************** Sentences ***************************/
 .sentences-card > .card {
     border-color: orange;
-    margin: 20px 15% 0 15%;
+    margin-top: 20px%;
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex {
@@ -77,7 +77,7 @@
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex > button {
-    width: 50%;
+    width: 100%;
 }
 
 .sentencing-modal-text {
@@ -91,7 +91,7 @@
 }
 
 /*************************** Court Bar ***************************/
-.court-bar{
+.court-bar {
     max-width: 40%;
 }
 
@@ -100,9 +100,10 @@
     padding: 0 5px;
 }
 
-.witness-questions-buttons{
+.witness-questions-buttons {
     margin: 15px 0;
 }
+
 /*************************** Defense ***************************/
 .defense-table > .card {
     border-color: red;
@@ -162,30 +163,41 @@
         flex-direction: column;
     }
 
-    .others-div > *{
+    .others-div > * {
         margin-top: 20px;
+        max-width: 85%;
     }
 
-    .sentences-card > .card{
-        margin: 20px 5% 0 5%;
+    .sentences-card > .card {
+        margin: unset;
     }
 
     .sentences-card > .card > .card-body > .sentences-card-select-flex {
         flex-direction: column;
-        margin: 0 15%;
+        margin: 0;
         align-items: center;
     }
 
-    .sentences-card > .card > .card-body > .sentences-card-select-flex  > * {
+    .sentences-card > .card > .card-body > .sentences-card-select-flex > * {
         margin-top: 20px;
     }
 
-    .sentences-card > .card > .card-body > .sentences-card-select-flex > button{
+    .sentences-card > .card > .card-body > .sentences-card-select-flex > button {
         width: 100%;
     }
 
-    .modal-content{
+    .modal-content {
         margin: 0 5%;
+    }
+
+    .court-bar {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .court-bar {
+        max-width: 85%;
     }
 }
 

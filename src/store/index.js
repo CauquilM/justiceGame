@@ -65,6 +65,93 @@ export default new Vuex.Store({
                                 ]
                             }
                         ]
+                    },
+                    {
+                        id:2,
+                        name: "David Moore",
+                        age: 28,
+                        job: "Security Guard",
+                        testimony: [
+                            {
+                                question: "Were you working at the museum on the night of the theft?",
+                                answers: [
+                                    "Yes, I was on duty all night.",
+                                    "No, I was off duty that night."
+                                ]
+                            },
+                            {
+                                question: "Did you see anyone suspicious in or around the museum on the night of the theft?",
+                                answers: [
+                                    "Yes, I saw someone matching the suspect's description near the exhibit hall.",
+                                    "No, I didn't see anyone out of the ordinary that night."
+                                ]
+                            },
+                            {
+                                question: "Do you recognize the suspect in this case?",
+                                answers: [
+                                    "Yes, I'm almost positive that it was John Smith.",
+                                    "No, I'm not sure. The lighting in the video footage was poor."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 3,
+                        name: "Tom Wilson",
+                        age: 42,
+                        job: "Art Dealer",
+                        testimony: [
+                            {
+                                question: "Did you have any business dealings with John Smith?",
+                                answers: [
+                                    "Yes, I bought a painting from him a few months ago.",
+                                    "No, I've never met the guy before."
+                                ]
+                            },
+                            {
+                                question: "Is it possible that John Smith had a motive for stealing the painting?",
+                                answers: [
+                                    "Yes, he could have been trying to recover a painting that he believed was stolen from him.",
+                                    "No, I don't think he would risk his reputation for something like that."
+                                ]
+                            },
+                            {
+                                question: "What do you think of the evidence presented by the prosecution?",
+                                answers: [
+                                    "I think it's pretty damning. It's hard to argue with video footage and eyewitness testimony.",
+                                    "I think there are too many holes in the prosecution's case to make a conviction."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 4,
+                        name: "Lisa Hernandez",
+                        age: 52,
+                        job: "Art Historian",
+                        testimony: [
+                            {
+                                question: "What can you tell us about the painting that was stolen?",
+                                answers: [
+                                    "It was a rare work by a famous artist, valued at over $1 million.",
+                                    "I don't know much about it. I'm not really a specialist in that area."
+                                ]
+                            },
+                            {
+                                question: "What do you think of the security at the museum?",
+                                answers: [
+                                    "I think it's pretty tight. It's unlikely that someone could have just walked in and stolen a painting.",
+                                    "I think there are some serious flaws in the security system. It's not hard for a determined thief to get in."
+                                ]
+                            },
+                            {
+                                question: "Do you have any information that could help us identify the thief?",
+                                answers: [
+                                    "No, I'm afraid not. I wish I could be more helpful.",
+                                    "Yes, I saw a suspicious-looking man leaving the museum shortly after the theft occurred."
+                                ]
+                            }
+                        ]
                     }
                 ],
                 /* Punishments */
@@ -137,7 +224,7 @@ export default new Vuex.Store({
                 /* End of punishments */
 
                 actualOutcome: "Guilty"
-            }
+            },
             /*{
                 id: 1,
                 type: "Criminal",
@@ -233,8 +320,8 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Not guilty"
-            },
-            {
+            },*/
+            /*{
                 id: 2,
                 type: "Fraud",
                 description: "Embezzlement of company funds",
@@ -1249,13 +1336,18 @@ export default new Vuex.Store({
             state.defenseComment = state.chosenCase.evidences[evidenceIndex].defenseSentence;
             state.prosecutionComment = state.chosenCase.evidences[evidenceIndex].prosecutionSentence;
         },
-        callWitness({commit}, witness){
+        callWitness({state, commit}, witness){
+            if(state.showAllSentences === true){
+                commit("SET_SHOW_SENTENCES");
+            }
             commit("SET_WITNESS_CHOSE", witness);
             console.log(witness)
             commit("SET_SHOW_COURT_BAR");
         },
-        showSentences({commit}) {
-            /*this.$bvModal.hide('guilty-modal');*/
+        showSentences({state, commit}) {
+            if(state.showCourtBar === true){
+                commit("SET_SHOW_COURT_BAR");
+            }
             commit("SET_SHOW_SENTENCES");
             eventBus.$emit('closeGuiltyModal');
         },

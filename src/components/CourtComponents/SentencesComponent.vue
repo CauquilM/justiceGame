@@ -38,7 +38,7 @@ export default {
     return {}
   },
   computed: {
-    ...mapState(["showAllSentences", "finalComment", "isDark"]),
+    ...mapState(["showAllSentences", "finalComment", "isDark", "chosenCase"]),
     ...mapGetters(["getPrisonSelected", 'getProbationSelected', 'getFineSelected']),
     prisonSelected: {
       get() {
@@ -64,9 +64,6 @@ export default {
         return this.modifyFineSelected(value);
       }
     }
-  },
-  props: {
-    chosenCase: Object
   },
   mounted() {
     eventBus.$on('openSuccessModal', () => {
