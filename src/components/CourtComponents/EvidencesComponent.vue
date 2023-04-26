@@ -1,9 +1,14 @@
 <template>
   <div>
-    <p v-for="evidence in chosenCase.evidences" :key="evidence.id"
-       @click="displayCommentsOnEvidence(evidence.id)">
-      {{ evidence.description }}
-    </p>
+    <div v-if="chosenCase.evidences.length !== 0">
+      <p v-for="evidence in chosenCase.evidences" :key="evidence.id"
+         @click="displayCommentsOnEvidence(evidence.id)">
+        {{ evidence.description }}
+      </p>
+    </div>
+    <div v-else>
+      <p>There's no evidence</p>
+    </div>
   </div>
 </template>
 <script>

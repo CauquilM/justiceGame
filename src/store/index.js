@@ -6,36 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        /*use the pattern and generate 3 witnesses for this case =>*/
-        /*{
-            name: "Lisa Hernandez",
-                age: 52,
-            job: "Art Historian",
-            testimony: [
-            {
-                question: "What can you tell us about the painting that was stolen?",
-                answers: [
-                    "It was a rare work by a famous artist, valued at over $1 million.",
-                    "I don't know much about it. I'm not really a specialist in that area."
-                ]
-            },
-            {
-                question: "What do you think of the security at the museum?",
-                answers: [
-                    "I think it's pretty tight. It's unlikely that someone could have just walked in and stolen a painting.",
-                    "I think there are some serious flaws in the security system. It's not hard for a determined thief to get in."
-                ]
-            },
-            {
-                question: "Do you have any information that could help us identify the thief?",
-                answers: [
-                    "No, I'm afraid not. I wish I could be more helpful.",
-                    "Yes, I saw a suspicious-looking man leaving the museum shortly after the theft occurred."
-                ]
-            }
-        ]
-        }*/
         cases: [
+            // TEMPLATE, DO NOT ERASE
             {
                 id: 0,
                 type: "criminal",
@@ -255,6 +227,8 @@ export default new Vuex.Store({
 
                 actualOutcome: "Guilty"
             },
+
+            // YOU CAN ERASE
             /*{
                 id: 1,
                 type: "criminal",
@@ -887,7 +861,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
-
             {
                 id: 5,
                 type: "criminal",
@@ -991,7 +964,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
-
             {
                 id: 6,
                 type: "criminal",
@@ -1095,7 +1067,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
-
             {
                 id: 7,
                 type: "criminal",
@@ -1199,7 +1170,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty, sentenced to 3 years in prison and 2 years of probation, and fined $5,000."
             },
-
             {
                 id: 8,
                 type: "criminal",
@@ -1303,7 +1273,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: null
             },
-
             {
                 id: 9,
                 type: "criminal",
@@ -1401,7 +1370,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
-
             {
                 id: 10,
                 type: "criminal",
@@ -1499,7 +1467,6 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
-
             {
                 id: 11,
                 type: "historical",
