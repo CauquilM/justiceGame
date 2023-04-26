@@ -7,7 +7,7 @@
           <b-button variant="danger" ref="guilty-btn" @click="playerDecision('guilty')">Guilty</b-button>
           <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
         </div>
-        <PleaDealComponent/>
+<!--        <PleaDealComponent/>-->
       </div>
       <b-modal ref="guilty-modal" centered hide-footer
                hide-header-close
@@ -32,10 +32,10 @@
 <script>
 import {mapActions, mapState} from "vuex";
 import { eventBus } from '../../main';
-import PleaDealComponent from "@/components/CourtComponents/PleaDealComponent.vue";
+/*import PleaDealComponent from "@/components/CourtComponents/PleaDealComponent.vue";*/
   export default {
     name: 'JudgeComponent',
-    components: {PleaDealComponent},
+   /* components: {PleaDealComponent},*/
     computed:{
       ...mapState(["judgeComment", "isDark"])
     },

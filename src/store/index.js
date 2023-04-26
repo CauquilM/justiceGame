@@ -38,7 +38,8 @@ export default new Vuex.Store({
         cases: [
             {
                 id: 0,
-                type: "Criminal",
+                type: "criminal",
+                charge: "theft",
                 description: "Theft of a valuable painting",
                 suspect: {
                     name: "John Smith",
@@ -254,9 +255,10 @@ export default new Vuex.Store({
 
                 actualOutcome: "Guilty"
             },
-            {
+            /*{
                 id: 1,
-                type: "Criminal",
+                type: "criminal",
+                charge: "llegal entrance",
                 description: "Breaking and entering into a jewelry store",
                 suspect: {
                     name: "Sarah Davis",
@@ -441,7 +443,8 @@ export default new Vuex.Store({
             },
             {
                 id: 2,
-                type: "Fraud",
+                type: "criminal",
+                charge: "fraud",
                 description: "Embezzlement of company funds",
                 suspect: {
                     name: "John Smith",
@@ -626,7 +629,8 @@ export default new Vuex.Store({
             },
             {
                 id: 3,
-                type: "Assault",
+                type: "criminal",
+                charge: "assault",
                 description: "Physical assault against a coworker",
                 suspect: {
                     name: "Robert Johnson",
@@ -781,8 +785,9 @@ export default new Vuex.Store({
                 actualOutcome: "Guilty"
             },
             {
+                type: "criminal",
                 id: 4,
-                type: "Theft",
+                charge: "theft",
                 description: "Alleged theft of a valuable piece of jewelry",
                 suspect: {
                     name: "Maria Rodriguez",
@@ -885,7 +890,8 @@ export default new Vuex.Store({
 
             {
                 id: 5,
-                type: "Forgery",
+                type: "criminal",
+                charge: "forgery",
                 description: "Alleged forgery of a signature on a legal document",
                 suspect: {
                     name: "John Smith",
@@ -988,7 +994,8 @@ export default new Vuex.Store({
 
             {
                 id: 6,
-                type: "Burglary",
+                type: "criminal",
+                charge: "burglary",
                 description: "A home was burglarized and several valuable items were stolen",
                 suspect: {
                     name: "Alex Johnson",
@@ -1091,7 +1098,8 @@ export default new Vuex.Store({
 
             {
                 id: 7,
-                type: "Assault",
+                type: "criminal",
+                charge: "assault",
                 description: "A man was attacked in a parking lot and suffered serious injuries",
                 suspect: {
                     name: "Emily Rodriguez",
@@ -1194,7 +1202,8 @@ export default new Vuex.Store({
 
             {
                 id: 8,
-                type: "Assault",
+                type: "criminal",
+                charge: "assault",
                 description: "A man was found with serious injuries following an altercation outside a nightclub",
                 suspect: {
                     name: "Jack Wilson",
@@ -1297,7 +1306,8 @@ export default new Vuex.Store({
 
             {
                 id: 9,
-                type: "Robbery",
+                type: "criminal",
+                charge: "robbery",
                 description: "A convenience store was robbed at gunpoint",
                 suspect: {
                     name: "Mark Davis",
@@ -1394,7 +1404,8 @@ export default new Vuex.Store({
 
             {
                 id: 10,
-                type: "Spying",
+                type: "criminal",
+                charge: "spying",
                 description: "A private investigator is suspected of spying on a client's ex-spouse for personal gain.",
                 suspect: {
                     name: "John Smith",
@@ -1491,7 +1502,8 @@ export default new Vuex.Store({
 
             {
                 id: 11,
-                type: "Treason",
+                type: "historical",
+                charge: "treason",
                 description: "Plotting against the British Crown, 1783",
                 suspect: {
                     name: "George Washington",
@@ -1671,7 +1683,7 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Not guilty"
-            }
+            }*/
         ],
         chosenCase: Object,
         prisonSelected: '0',
@@ -1706,6 +1718,9 @@ export default new Vuex.Store({
     mutations: {
         SET_CHOSEN_CASE(state, payload) {
             state.chosenCase = payload;
+        },
+        SET_CASES(state, payload){
+            state.cases.push(payload)
         },
         SET_JUDGE_COMMENT(state, payload) {
             state.judgeComment = payload;
@@ -1742,6 +1757,10 @@ export default new Vuex.Store({
             }
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
+        },
+        addGeneratedCase({ state, commit }, cases){
+            commit("SET_CASES", cases);
+            console.log("cases from store: ", state.cases)
         },
         playerDecision({dispatch, commit}, decision) {
             if (decision === "guilty") {
@@ -1823,6 +1842,6 @@ export default new Vuex.Store({
         },
         refreshPage() {
             window.location.reload();
-        }
+        },
     },
 })
