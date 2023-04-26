@@ -229,7 +229,7 @@ export default new Vuex.Store({
             },
 
             // YOU CAN ERASE
-            /*{
+            {
                 id: 1,
                 type: "criminal",
                 charge: "llegal entrance",
@@ -1650,7 +1650,7 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Not guilty"
-            }*/
+            }
         ],
         chosenCase: Object,
         prisonSelected: '0',
