@@ -47,27 +47,27 @@ export default {
 
 
       // Define case types
-      const caseTypes = ['Criminal'
-        /* , 'Road'
-         , 'Prison'*/
-      ];
+      const caseTypes = ['Criminal', 'Road', 'Prison'];
 
       // Define case properties for each type
       const caseProperties = {
-        Criminal: ['charge'],
-        /*Road: ['charge'],
-        Prison: ['charge']*/
+        Criminal: ['criminalCharge'],
+        Road: ['roadCharge'],
+        Prison: ['prisonCharge'],
       };
 
 
       // Define randomization parameters
       const randomizationParams = {
         'type': "",
-        'charge': ['murder', 'theft', 'fraud', 'assault']
+        'criminalCharge': ['murder', 'theft', 'fraud', 'assault'],
+        'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense'],
+        'prisonCharge': ['fight'],
         /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
       };
 
       const descriptions = {
+        /******* Criminal *******/
         murder: [
           {
             id: 0,
@@ -311,10 +311,263 @@ export default {
             id: 14,
             description: "The suspect has a history of animosity towards the victim and had motive to commit the assault"
           }
+        ],
+
+        /******* Road *******/
+        dui: [
+          {
+            id: 0,
+            description: "The defendant was pulled over for driving erratically and was found to have a blood alcohol level above the legal limit."
+          },
+          {
+            id: 1,
+            description: "A witness reported seeing the defendant swerving on the road and almost causing an accident."
+          },
+          {
+            id: 2,
+            description: "The defendant failed a sobriety test and was subsequently arrested for driving under the influence."
+          },
+          {
+            id: 3,
+            description: "The defendant had a strong smell of alcohol on their breath and slurred speech when speaking to the arresting officer."
+          },
+          {
+            id: 4,
+            description: "The defendant was caught on video running a red light and almost hitting another vehicle."
+          },
+          {
+            id: 5,
+            description: "The defendant's blood alcohol level was twice the legal limit at the time of the arrest."
+          },
+          {
+            id: 6,
+            description: "The defendant was found passed out behind the wheel of their car at a red light."
+          },
+          {
+            id: 7,
+            description: "The defendant had an open container of alcohol in the car at the time of the arrest."
+          },
+          {
+            id: 8,
+            description: "The defendant admitted to drinking multiple alcoholic beverages before getting behind the wheel of their car."
+          },
+          {
+            id: 9,
+            description: "The defendant was seen stumbling and having difficulty maintaining their balance before getting into the car."
+          },
+          {
+            id: 10,
+            description: "The defendant was driving on the wrong side of the road and almost caused a head-on collision."
+          },
+          {
+            id: 11,
+            description: "The defendant was seen driving at an excessive speed and almost lost control of their vehicle."
+          },
+          {
+            id: 12,
+            description: "The defendant had bloodshot and watery eyes at the time of the arrest."
+          },
+          {
+            id: 13,
+            description: "The defendant failed to stop at a stop sign and almost caused an accident with another vehicle."
+          },
+          {
+            id: 14,
+            description: "The defendant was driving on a suspended license at the time of the arrest."
+          }
+        ],
+        recklessDriving: [
+          {
+            id: 0,
+            description: "The defendant was driving at an excessive speed and failed to stop at a red light, causing a collision with another vehicle."
+          },
+          {
+            id: 1,
+            description: "The defendant was weaving in and out of traffic, driving erratically and causing other drivers to swerve to avoid a collision."
+          },
+          {
+            id: 2,
+            description: "The defendant was driving under the influence of drugs and/or alcohol, swerving across lanes and putting other drivers at risk."
+          },
+          {
+            id: 3,
+            description: "The defendant was driving aggressively, tailgating and cutting off other drivers, causing them to brake suddenly."
+          },
+          {
+            id: 4,
+            description: "The defendant was driving on the wrong side of the road, narrowly avoiding several head-on collisions."
+          },
+          {
+            id: 5,
+            description: "The defendant was driving distracted, texting on their phone and failing to notice stop signs and other vehicles."
+          },
+          {
+            id: 6,
+            description: "The defendant was racing another vehicle on a public road, endangering the lives of other drivers and pedestrians."
+          },
+          {
+            id: 7,
+            description: "The defendant was driving a vehicle that was not roadworthy, with bald tires and faulty brakes, putting themselves and others in danger."
+          },
+          {
+            id: 8,
+            description: "The defendant was driving a commercial vehicle without the proper license or training, causing them to lose control and crash."
+          },
+          {
+            id: 9,
+            description: "The defendant was driving in a construction zone at high speeds, ignoring warning signs and narrowly missing workers."
+          },
+          {
+            id: 10,
+            description: "The defendant was driving in a school zone at high speeds, failing to yield to pedestrians and nearly hitting several children."
+          },
+          {
+            id: 11,
+            description: "The defendant was driving a stolen vehicle, evading police and causing a high-speed chase that endangered other drivers."
+          },
+          {
+            id: 12,
+            description: "The defendant was driving a vehicle with heavily tinted windows, making it difficult for other drivers to see them and causing several near-misses."
+          },
+          {
+            id: 13,
+            description: "The defendant was driving while fatigued, swerving across lanes and nearly causing several accidents."
+          },
+          {
+            id: 14,
+            description: "The defendant was driving a motorcycle at high speeds, weaving in and out of traffic and putting themselves and other drivers at risk."
+          }
+        ],
+        drivingNoLicense: [
+          {
+            id: 0,
+            description: "Driver stopped for speeding found to be driving without a license"
+          },
+          {
+            id: 1,
+            description: "Police pull over driver who was driving without a valid license"
+          },
+          {
+            id: 2,
+            description: "Driver involved in an accident was found to be driving without a license"
+          },
+          {
+            id: 3,
+            description: "Police officer stopped driver who had a suspended license"
+          },
+          {
+            id: 4,
+            description: "Driver pulled over for making an illegal turn found to be driving without a license"
+          },
+          {
+            id: 5,
+            description: "Driver stopped for running a red light found to be driving without a license"
+          },
+          {
+            id: 6,
+            description: "Driver pulled over for not wearing seat belt found to be driving without a license"
+          },
+          {
+            id: 7,
+            description: "Driver found to be driving without a license after failing to produce one during a traffic stop"
+          },
+          {
+            id: 8,
+            description: "Police officer stopped driver who had an expired license"
+          },
+          {
+            id: 9,
+            description: "Driver pulled over for using a cellphone while driving found to be driving without a license"
+          },
+          {
+            id: 10,
+            description: "Driver involved in a hit-and-run was found to be driving without a license"
+          },
+          {
+            id: 11,
+            description: "Driver stopped for not having working taillights found to be driving without a license"
+          },
+          {
+            id: 12,
+            description: "Driver found to be driving without a license during a routine license check"
+          },
+          {
+            id: 13,
+            description: "Driver pulled over for not yielding to pedestrians found to be driving without a license"
+          },
+          {
+            id: 14,
+            description: "Police officer stopped driver who had a revoked license"
+          }
+        ],
+
+        /******* Prison *******/
+        fight: [
+          {
+            id: 0,
+            description: "Two inmates engaged in a violent altercation in the prison yard."
+          },
+          {
+            id: 1,
+            description: "A prison guard was injured while trying to break up a fight between two inmates."
+          },
+          {
+            id: 2,
+            description: "Multiple inmates were involved in a brawl in the cafeteria during mealtime."
+          },
+          {
+            id: 3,
+            description: "A fight broke out in the exercise yard and several inmates sustained injuries."
+          },
+          {
+            id: 4,
+            description: "Two inmates were caught on camera fighting in their cell."
+          },
+          {
+            id: 5,
+            description: "A group of inmates attacked a fellow prisoner in the shower area."
+          },
+          {
+            id: 6,
+            description: "An inmate was severely beaten by a gang in their cell block."
+          },
+          {
+            id: 7,
+            description: "A fight between two inmates in the prison library led to a lockdown of the facility."
+          },
+          {
+            id: 8,
+            description: "A riot broke out in the prison yard and multiple inmates were injured."
+          },
+          {
+            id: 9,
+            description: "An inmate was hospitalized after being assaulted by another prisoner in the mess hall."
+          },
+          {
+            id: 10,
+            description: "Several inmates were involved in a physical altercation in the prison chapel."
+          },
+          {
+            id: 11,
+            description: "A fight between rival gangs in the prison yard resulted in several injuries and property damage."
+          },
+          {
+            id: 12,
+            description: "A prison guard was attacked by multiple inmates during a routine cell search."
+          },
+          {
+            id: 13,
+            description: "An inmate was killed in a fight with another prisoner in their cell."
+          },
+          {
+            id: 14,
+            description: "A gang of inmates staged a violent takeover of a cell block, injuring several prisoners and guards."
+          }
         ]
       };
 
       const evidences = {
+        /******* Criminal *******/
         murder: [
           {
             id: 0,
@@ -373,13 +626,6 @@ export default {
         ],
 
         theft: [
-          {
-            id: 0,
-            description: "Surveillance footage shows the suspect taking the victim's purse",
-            prosecutionSentence: "We have clear video evidence that shows the suspect taking the victim's purse. There is no doubt about his identity.",
-            defenseSentence: "The video footage is inconclusive and doesn't clearly show my client taking the purse. It could be someone who looks like him."
-          },
-
           {
             id: 1,
             description: "Fingerprints from the crime scene match the suspect",
@@ -619,6 +865,392 @@ export default {
             prosecutionSentence: "The victim's injuries are consistent with a vicious assault, and we have DNA evidence linking the defendant to the crime.",
             defenseSentence: "My client did not assault the victim, and the DNA evidence could have been planted or contaminated."
           }
+        ],
+
+        /******* Road *******/
+        dui: [
+          {
+            id: 0,
+            description: "The defendant had a blood alcohol content (BAC) level of 0.15%, which is almost twice the legal limit.",
+            prosecutionSentence: "The defendant was clearly under the influence of alcohol while driving, as evidenced by their high BAC level.",
+            defenseSentence: "The BAC test may have been faulty or contaminated, leading to inaccurate results."
+          },
+          {
+            id: 1,
+            description: "The defendant was swerving on the road and almost hit several other cars.",
+            prosecutionSentence: "Eyewitnesses reported seeing the defendant driving erratically and endangering other drivers on the road.",
+            defenseSentence: "The defendant may have been swerving to avoid an obstacle on the road or to adjust their GPS."
+          },
+          {
+            id: 2,
+            description: "The defendant failed the field sobriety test, which includes tasks like walking in a straight line and standing on one leg.",
+            prosecutionSentence: "The defendant's failure to complete the field sobriety test indicates that they were impaired and unable to perform basic physical tasks.",
+            defenseSentence: "The field sobriety test may not be a reliable indicator of impairment, as it can be affected by external factors like weather conditions."
+          },
+          {
+            id: 3,
+            description: "The defendant had an open container of alcohol in their car.",
+            prosecutionSentence: "The presence of an open container of alcohol in the defendant's car indicates that they were drinking while driving.",
+            defenseSentence: "The defendant may have forgotten to dispose of the container from a previous occasion when they were not driving."
+          },
+          {
+            id: 4,
+            description: "The defendant smelled strongly of alcohol and had bloodshot eyes.",
+            prosecutionSentence: "The defendant's physical appearance indicates that they were under the influence of alcohol while driving.",
+            defenseSentence: "The defendant may have been experiencing symptoms of a medical condition, leading to their physical appearance."
+          },
+          {
+            id: 5,
+            description: "The defendant was slurring their words and had difficulty speaking.",
+            prosecutionSentence: "The defendant's speech impairment suggests that they were impaired and unable to speak clearly.",
+            defenseSentence: "The defendant may have a speech impediment or be experiencing a medical condition that affects their speech."
+          },
+          {
+            id: 6,
+            description: "The defendant had a history of DUI convictions and had their license suspended multiple times.",
+            prosecutionSentence: "The defendant's history of DUI convictions indicates a pattern of reckless behavior and disregard for the law.",
+            defenseSentence: "The defendant's past convictions should not be taken into account for the current case, as it is not relevant to the present offense."
+          },
+          {
+            id: 7,
+            description: "The defendant was driving on the wrong side of the road and almost collided with oncoming traffic.",
+            prosecutionSentence: "The defendant's reckless driving behavior could have resulted in a serious accident and put other drivers at risk.",
+            defenseSentence: "The defendant may have been confused by the road signage or had a medical emergency while driving."
+          },
+          {
+            id: 8,
+            description: "The defendant refused to take a breathalyzer or BAC test, which is an automatic license suspension in this state.",
+            prosecutionSentence: "The defendant's refusal to take the test is a clear indication of guilt and attempts to conceal their impairment.",
+            defenseSentence: "The defendant may have refused the test due to a misunderstanding or concerns about its accuracy."
+          },
+          {
+            id: 9,
+            description: "The defendant was pulled over and failed a field sobriety test.",
+            prosecutionSentence: "The arresting officer observed slurred speech, the smell of alcohol on the defendant's breath, and erratic driving behavior prior to the stop.",
+            defenseSentence: "The defendant had consumed alcohol earlier, but was not over the legal limit while driving. The arresting officer did not follow proper procedures during the field sobriety test."
+          },
+          {
+            id: 10,
+            description: "The defendant's blood alcohol content was measured at .09%, just over the legal limit.",
+            prosecutionSentence: "The BAC test results indicate that the defendant was driving while intoxicated.",
+            defenseSentence: "The BAC test results may not be accurate due to the equipment used or the timing of the test. The defendant was not exhibiting signs of impairment at the time of the stop."
+          },
+          {
+            id: 11,
+            description: "The defendant caused a car accident while driving under the influence.",
+            prosecutionSentence: "Eyewitnesses saw the defendant driving erratically and crossing the center line prior to the accident. The defendant's BAC was measured at .10% after the crash.",
+            defenseSentence: "The defendant was not under the influence at the time of the accident. The eyewitness accounts may be unreliable and the BAC test results may have been affected by other factors."
+          },
+          {
+            id: 12,
+            description: "The defendant refused to take a BAC test at the scene of the arrest.",
+            prosecutionSentence: "Refusing to take a BAC test is a violation of the law and implies that the defendant was aware of being under the influence.",
+            defenseSentence: "The defendant had a right to refuse the BAC test and did not want to provide potentially inaccurate results. The refusal alone does not prove guilt."
+          },
+          {
+            id: 13,
+            description: "The defendant was found sleeping in their car with the engine running and the headlights on.",
+            prosecutionSentence: "The defendant was in control of a vehicle while under the influence of alcohol, as evidenced by the smell of alcohol on their breath and slurred speech.",
+            defenseSentence: "The defendant was not driving at the time of the stop and was only sleeping in the car. The car was parked legally and the defendant was not in violation of any laws."
+          },
+          {
+            id: 14,
+            description: "The defendant was involved in a hit-and-run accident and later found to be driving under the influence.",
+            prosecutionSentence: "The defendant fled the scene of the accident and was later found to be intoxicated. This behavior indicates guilt and a disregard for the law.",
+            defenseSentence: "The defendant was not aware of the accident and did not flee intentionally. The intoxication did not cause the accident and may have occurred after the collision."
+          }
+
+        ],
+        recklessDriving: [
+          {
+            id: 0,
+            description: "The defendant was observed driving at an excessive speed, swerving in and out of traffic lanes and running a red light",
+            prosecutionSentence: "We have video evidence of the defendant's reckless driving behavior captured by the traffic cameras and witnessed by multiple officers.",
+            defenseSentence: "My client admits to driving fast but denies driving recklessly. The video footage could be misleading due to camera angles and other factors."
+          },
+          {
+            id: 1,
+            description: "The defendant caused a multiple-car collision on the highway while driving under the influence of drugs",
+            prosecutionSentence: "We have a toxicology report indicating that the defendant had drugs in their system at the time of the accident. Eyewitnesses also saw the defendant driving erratically before the collision.",
+            defenseSentence: "My client denies driving under the influence and claims that the accident was caused by the other driver's negligence. We have evidence to support our argument."
+          },
+          {
+            id: 2,
+            description: "The defendant was speeding on a residential street and hit a pedestrian who was crossing the road",
+            prosecutionSentence: "We have witnesses who saw the defendant speeding and hitting the pedestrian. The defendant also failed a sobriety test administered by the police.",
+            defenseSentence: "My client admits to hitting the pedestrian but denies speeding. The sobriety test results could be inaccurate due to other factors, and we have evidence to support our argument."
+          },
+          {
+            id: 3,
+            description: "The defendant was racing with another vehicle on the highway and caused a single-car accident",
+            prosecutionSentence: "We have video evidence showing the defendant's car racing with another vehicle before the accident. The defendant's car was also found to have modifications that are illegal on public roads.",
+            defenseSentence: "My client denies racing and claims that the accident was caused by a mechanical failure in the car. We have evidence to support our argument."
+          },
+          {
+            id: 4,
+            description: "The defendant was driving at high speed on a wet road and lost control of the vehicle, causing a collision",
+            prosecutionSentence: "We have eyewitnesses who saw the defendant driving at an excessive speed and losing control of the vehicle. The police report also indicates that the road was wet at the time of the accident.",
+            defenseSentence: "My client admits to losing control of the vehicle but denies driving at high speed. The road conditions were not favorable, and we have evidence to support our argument."
+          },
+          {
+            id: 5,
+            description: "The defendant was driving under the influence of alcohol and collided with a parked car",
+            prosecutionSentence: "We have a breathalyzer test result indicating that the defendant had a blood alcohol content (BAC) level above the legal limit at the time of the accident. The defendant also admitted to drinking before driving.",
+            defenseSentence: "My client admits to drinking before driving but denies driving under the influence. The breathalyzer test results could be inaccurate due to other factors, and we have evidence to support our argument."
+          },
+          {
+            id: 6,
+            description: "The defendant was driving a stolen vehicle and caused a hit-and-run accident",
+            prosecutionSentence: "We have surveillance footage showing the defendant stealing the vehicle. We also have eyewitnesses who saw the defendant driving the stolen vehicle and fleeing the scene of the accident.",
+            defenseSentence: "My client denies stealing the vehicle and claims that they found it abandoned. The eyewitnesses could be mistaken, and we have evidence to support our argument."
+          },
+          {
+            id: 7,
+            description: "The defendant was driving at an excessive speed on a residential street.",
+            prosecutionSentence: "We have witness statements that the defendant was driving recklessly, swerving between lanes and almost hitting pedestrians.",
+            defenseSentence: "My client was driving within the speed limit and was not swerving. The witnesses may have mistaken my client's car for another car that was driving recklessly."
+          },
+          {
+            id: 8,
+            description: "The defendant ran a red light and caused a collision with another vehicle.",
+            prosecutionSentence: "We have CCTV footage that clearly shows the defendant running the red light and colliding with another vehicle.",
+            defenseSentence: "My client did not see the red light and did not intentionally run it. The collision may have been caused by the other vehicle's driver also driving recklessly."
+          },
+          {
+            id: 9,
+            description: "The defendant was driving under the influence of drugs and caused a collision.",
+            prosecutionSentence: "We have a blood test that shows the presence of drugs in the defendant's system at the time of the collision.",
+            defenseSentence: "My client was not under the influence of drugs and the blood test may have been contaminated or inaccurate."
+          },
+          {
+            id: 10,
+            description: "The defendant was racing another vehicle on a public road and caused a collision.",
+            prosecutionSentence: "We have witness statements and CCTV footage that show the defendant racing another vehicle and causing the collision.",
+            defenseSentence: "My client was not racing and was driving at a safe speed. The other vehicle may have been driving recklessly and caused the collision."
+          },
+          {
+            id: 11,
+            description: "The defendant was driving a stolen vehicle and caused a collision.",
+            prosecutionSentence: "We have evidence that the vehicle was stolen and the defendant did not have permission to drive it. The collision was a result of the defendant's reckless driving.",
+            defenseSentence: "My client did not know the vehicle was stolen and was not driving recklessly. The collision may have been caused by the other driver's actions."
+          },
+          {
+            id: 12,
+            description: "The defendant was driving while distracted and caused a collision.",
+            prosecutionSentence: "We have witness statements that the defendant was using their phone while driving and caused the collision.",
+            defenseSentence: "My client was not using their phone while driving and was not distracted. The collision may have been caused by the other driver's actions."
+          },
+          {
+            id: 13,
+            description: "The defendant was driving in the wrong lane and caused a head-on collision with another vehicle.",
+            prosecutionSentence: "We have CCTV footage that shows the defendant driving in the wrong lane and causing the collision.",
+            defenseSentence: "My client was not driving in the wrong lane and did not cause the collision. The other driver may have been driving recklessly."
+          },
+          {
+            id: 14,
+            description: "The defendant was driving at night without headlights and caused a collision with another vehicle.",
+            prosecutionSentence: "We have witness statements that the defendant was driving without headlights and caused the collision.",
+            defenseSentence: "My client had their headlights on and was not driving recklessly. The collision may have been caused by the other driver's actions."
+          }
+        ],
+        drivingNoLicense: [
+          {
+            id: 0,
+            description: "The defendant was driving a vehicle without a valid driver's license.",
+            prosecutionSentence: "We have clear evidence that the defendant was driving a vehicle without a valid driver's license.",
+            defenseSentence: "There may have been an issue with my client's license, but they were not aware of it and did not intentionally drive without a license."
+          },
+          {
+            id: 1,
+            description: "The defendant was pulled over for a traffic violation and was found to have no driver's license.",
+            prosecutionSentence: "We have clear evidence that the defendant was pulled over for a traffic violation and was found to have no driver's license.",
+            defenseSentence: "While my client may not have had their driver's license on them at the time of the traffic stop, they do have a valid license and were not intentionally driving without one."
+          },
+          {
+            id: 2,
+            description: "The defendant had their driver's license suspended or revoked at the time they were pulled over.",
+            prosecutionSentence: "We have clear evidence that the defendant had their driver's license suspended or revoked at the time they were pulled over.",
+            defenseSentence: "While my client's license may have been suspended or revoked, they were not aware of it and did not intentionally drive without a license."
+          },
+          {
+            id: 3,
+            description: "The defendant had previously been convicted of driving without a license.",
+            prosecutionSentence: "We have clear evidence that the defendant had previously been convicted of driving without a license.",
+            defenseSentence: "While my client may have a prior conviction for driving without a license, they had since obtained a valid license and were not intentionally driving without one at the time of the alleged offense."
+          },
+          {
+            id: 4,
+            description: "The defendant was driving a commercial vehicle without the proper license or certification.",
+            prosecutionSentence: "We have clear evidence that the defendant was driving a commercial vehicle without the proper license or certification.",
+            defenseSentence: "My client may not have had the proper license or certification at the time of the alleged offense, but they were not aware of this and did not intentionally drive without the proper license or certification."
+          },
+          {
+            id: 5,
+            description: "The defendant was involved in an accident while driving without a license.",
+            prosecutionSentence: "We have clear evidence that the defendant was involved in an accident while driving without a license.",
+            defenseSentence: "While my client may not have had a valid license at the time of the accident, they were not at fault for the accident and did not intentionally drive without a license."
+          },
+          {
+            id: 6,
+            description: "The defendant was caught driving without a license during a routine traffic stop.",
+            prosecutionSentence: "We have clear evidence that the defendant was caught driving without a license during a routine traffic stop.",
+            defenseSentence: "While my client may not have had their license on them at the time of the traffic stop, they do have a valid license and were not intentionally driving without one."
+          },
+          {
+            id: 7,
+            description: "The defendant had never obtained a driver's license.",
+            prosecutionSentence: "We have clear evidence that the defendant had never obtained a driver's license.",
+            defenseSentence: "While my client may not have had a driver's license at the time of the alleged offense, they were not aware that they needed one and did not intentionally drive without a license."
+          },
+          {
+            id: 8,
+            description: "The defendant was pulled over for a routine traffic stop and was unable to provide a valid driver's license to the officer.",
+            prosecutionSentence: "We have evidence that the defendant has never held a valid driver's license and was aware of this fact when they got behind the wheel.",
+            defenseSentence: "My client was not aware that their license had been revoked and believed it was still valid at the time of the traffic stop."
+          },
+          {
+            id: 9,
+            description: "The defendant was involved in a hit-and-run accident and fled the scene before the police arrived.",
+            prosecutionSentence: "We have evidence that the defendant was driving without a valid license at the time of the hit-and-run and knowingly left the scene of the accident.",
+            defenseSentence: "My client did not realize they had hit another vehicle and left the scene out of panic. They were unaware their license was invalid."
+          },
+          {
+            id: 10,
+            description: "The defendant was caught driving a company vehicle without a valid driver's license.",
+            prosecutionSentence: "We have evidence that the defendant was aware they did not have a valid license, yet still chose to operate a company vehicle, putting both themselves and others at risk.",
+            defenseSentence: "My client was not aware that their license had been revoked and believed they were authorized to operate the company vehicle."
+          },
+          {
+            id: 11,
+            description: "The defendant was stopped at a DUI checkpoint and was unable to provide a valid driver's license to the officer.",
+            prosecutionSentence: "We have evidence that the defendant did not have a valid driver's license at the time of the DUI checkpoint and knowingly drove under the influence.",
+            defenseSentence: "My client was not aware that their license had been revoked and believed it was still valid at the time of the DUI checkpoint."
+          },
+          {
+            id: 12,
+            description: "The defendant was involved in a car accident and was unable to provide a valid driver's license to the responding officer.",
+            prosecutionSentence: "We have evidence that the defendant was driving without a valid license and was at fault for the accident. They attempted to flee the scene but were apprehended shortly after.",
+            defenseSentence: "My client was not aware that their license had been revoked and attempted to flee the scene out of fear."
+          },
+          {
+            id: 13,
+            description: "The defendant was pulled over for speeding and was unable to provide a valid driver's license to the officer.",
+            prosecutionSentence: "We have evidence that the defendant was driving without a valid license and knowingly broke the law by exceeding the speed limit.",
+            defenseSentence: "My client was not aware that their license had been revoked and did not realize they were speeding at the time of the traffic stop."
+          },
+          {
+            id: 14,
+            description: "The defendant was caught driving a rental car without a valid driver's license.",
+            prosecutionSentence: "We have evidence that the defendant was aware they did not have a valid license, yet still chose to operate a rental car, putting both themselves and others at risk.",
+            defenseSentence: "My client was not aware that their license had been revoked and believed they were authorized to operate the rental car."
+          }
+        ],
+
+        /******* Prison *******/
+        fight: [
+          {
+            id: 0,
+            description: "Two inmates were caught on camera fighting in the prison yard.",
+            prosecutionSentence: "We have clear video evidence that the defendant initiated the fight and caused injuries to the victim.",
+            defenseSentence: "My client acted in self-defense and only used necessary force to protect himself from the victim's aggression."
+          },
+
+          {
+            id: 1,
+            description: "The prison guards found two inmates with injuries after a fight occurred in their cell.",
+            prosecutionSentence: "We have medical records that show the victim suffered severe injuries caused by the defendant's assault.",
+            defenseSentence: "My client did not start the fight and only defended himself against the victim's violent behavior."
+          },
+
+          {
+            id: 2,
+            description: "Eyewitnesses saw the defendant and the victim arguing before a fight broke out in the cafeteria.",
+            prosecutionSentence: "Multiple eyewitnesses confirmed that the defendant instigated the fight and caused harm to the victim.",
+            defenseSentence: "My client was provoked by the victim and only acted in self-defense to protect himself."
+          },
+
+          {
+            id: 3,
+            description: "The victim suffered a broken nose and other injuries after being attacked by the defendant in their cell.",
+            prosecutionSentence: "We have medical records that show the victim's injuries were caused by the defendant's violent assault.",
+            defenseSentence: "My client was not the instigator of the fight and only used necessary force to defend himself from the victim's attack."
+          },
+
+          {
+            id: 4,
+            description: "Security footage shows the defendant assaulting the victim with a makeshift weapon during a prison riot.",
+            prosecutionSentence: "We have clear video evidence that the defendant attacked the victim with a weapon, causing severe injuries.",
+            defenseSentence: "My client was acting in self-defense during a chaotic and dangerous prison riot."
+          },
+
+          {
+            id: 5,
+            description: "The victim suffered a concussion and other injuries after being beaten by the defendant and several other inmates.",
+            prosecutionSentence: "Eyewitnesses and medical records confirm that the defendant and other inmates initiated the assault and caused harm to the victim.",
+            defenseSentence: "My client did not start the fight and only acted in self-defense against the victim and other inmates who were attacking him."
+          },
+
+          {
+            id: 6,
+            description: "The defendant and victim were found in a fight by the prison guards, who had to use force to break it up.",
+            prosecutionSentence: "The guards' testimony and the victim's injuries confirm that the defendant was the aggressor and caused harm to the victim.",
+            defenseSentence: "My client was defending himself from the victim's aggressive behavior and did not start the fight."
+          },
+
+          {
+            id: 7,
+            description: "The victim suffered a broken jaw and other injuries after being assaulted by the defendant in the prison yard.",
+            prosecutionSentence: "Medical records and eyewitness accounts confirm that the defendant initiated the assault and caused harm to the victim.",
+            defenseSentence: "My client acted in self-defense after the victim threatened him and made physical contact."
+          },
+
+          {
+            id: 8,
+            description: "Prison guards found the defendant and victim with injuries after a fight broke out in the shower area.",
+            prosecutionSentence: "Medical records and eyewitness accounts confirm that the defendant instigated the fight and caused harm to the victim.",
+            defenseSentence: "My client only used necessary force to defend himself from the victim's attack."
+          },
+          {
+            id: 9,
+            description: "Inmate A suffered multiple bruises and fractures after a physical altercation with Inmate B",
+            prosecutionSentence: "We have video evidence showing Inmate B initiating the fight and causing harm to Inmate A. This is a clear violation of prison regulations.",
+            defenseSentence: "Inmate B was acting in self-defense as Inmate A had threatened and physically assaulted him first. Our client should not be held responsible for defending himself."
+          },
+
+          {
+            id: 10,
+            description: "Two inmates got into a heated argument during meal time and started throwing punches at each other",
+            prosecutionSentence: "Eyewitness accounts and surveillance footage confirm that both inmates were equally involved in the fight and caused harm to each other. This is a clear violation of prison regulations.",
+            defenseSentence: "Our client was provoked and acted in self-defense. The other inmate started the altercation and our client only acted to protect himself."
+          },
+
+          {
+            id: 11,
+            description: "A group of inmates started a riot and caused extensive damage to the prison facilities",
+            prosecutionSentence: "We have clear evidence showing that the defendant was part of the group that started the riot and caused damage to the prison facilities. This is a serious offense and cannot be taken lightly.",
+            defenseSentence: "Our client was not involved in the riot and was merely caught in the crossfire. There is no evidence showing that our client actively participated in the violence."
+          },
+
+          {
+            id: 12,
+            description: "Inmate A suffered a broken nose and several lacerations after being attacked by Inmate B with a homemade weapon",
+            prosecutionSentence: "We have video evidence showing Inmate B attacking Inmate A with a weapon and causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+            defenseSentence: "Our client acted in self-defense as Inmate A had threatened him and he felt that his life was in danger. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+          },
+
+          {
+            id: 13,
+            description: "Two inmates got into a physical altercation in the yard, causing a disturbance among other inmates",
+            prosecutionSentence: "Eyewitness accounts and surveillance footage confirm that both inmates were equally involved in the fight and caused a disturbance among other inmates. This is a clear violation of prison regulations.",
+            defenseSentence: "Our client was provoked and acted in self-defense. The other inmate started the altercation and our client only acted to protect himself. The disturbance among other inmates was caused by their own reaction to the fight, and not our client's actions."
+          },
+
+          {
+            id: 14,
+            description: "Inmate A suffered a broken arm after being pushed down a flight of stairs by Inmate B",
+            prosecutionSentence: "We have video evidence showing Inmate B pushing Inmate A down the stairs and causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+            defenseSentence: "Our client did not intend to cause harm and merely pushed Inmate A in self-defense. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+          }
         ]
       }
 
@@ -630,6 +1262,9 @@ export default {
         if (!fineVariant) {
           for (let j = 0; j < 3; j++) {
             numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
+            if (numbers[j] === numbers[j - 1]){
+              numbers[j] += 5;
+            }
           }
         } else {
           for (let j = 0; j < 3; j++) {
@@ -646,7 +1281,7 @@ export default {
           });
           result.push({
             text: "No prison time",
-            value: `${numbers[1]} years`
+            value: "0"
           });
           result.push({
             text: `${numbers[0]} years`,
@@ -666,12 +1301,12 @@ export default {
             value: null
           });
           result.push({
-            text: `${numbers[1]} years`,
-            value: `${numbers[1]} years`
-          });
-          result.push({
             text: "No probation time",
             value: "0"
+          });
+          result.push({
+            text: `${numbers[0]} years`,
+            value: `${numbers[0]} years`
           });
           result.push({
             text: `${numbers[1]} years`,
@@ -722,32 +1357,70 @@ export default {
         caseProperties[type].forEach(prop => {
           if (randomizationParams[prop]) {
             caseObj[prop] = randomizationParams[prop][Math.floor(Math.random() * randomizationParams[prop].length)];
-            if (caseObj.charge === "murder") {
+            /******* Criminal *******/
+            if (caseObj.criminalCharge === "murder") {
+              caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.murder[Math.floor(Math.random() * descriptions.murder.length)].description;
               caseObj["evidences"] = evidences.murder.slice(0, Math.floor(Math.random() * evidences.murder.length));
               caseObj["prisonSentences"] = generateSentences(5, 20, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
 
-            } else if (caseObj.charge === "theft") {
+            } else if (caseObj.criminalCharge === "theft") {
+              caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.theft[Math.floor(Math.random() * descriptions.theft.length)].description;
               caseObj["evidences"] = evidences.theft.slice(0, Math.floor(Math.random() * evidences.theft.length));
               caseObj["prisonSentences"] = generateSentences(1, 10, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 20000, true);
-            } else if (caseObj.charge === "fraud") {
+            } else if (caseObj.criminalCharge === "fraud") {
+              caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.fraud[Math.floor(Math.random() * descriptions.fraud.length)].description;
               caseObj["evidences"] = evidences.fraud.slice(0, Math.floor(Math.random() * evidences.fraud.length));
               caseObj["prisonSentences"] = generateSentences(1, 10, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(5000, 100000, true);
-            } else if (caseObj.charge === "assault") {
+            } else if (caseObj.criminalCharge === "assault") {
+              caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.assault[Math.floor(Math.random() * descriptions.assault.length)].description;
               caseObj["evidences"] = evidences.assault.slice(0, Math.floor(Math.random() * evidences.assault.length));
               caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
             }
+            /******* Road *******/
+            else if (caseObj.roadCharge === "dui") {
+              caseObj["charge"] = caseObj.roadCharge;
+              caseObj["description"] = descriptions.dui[Math.floor(Math.random() * descriptions.dui.length)].description;
+              caseObj["evidences"] = evidences.dui.slice(0, Math.floor(Math.random() * evidences.dui.length));
+              caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
+              caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
+              caseObj["fineSentences"] = generateSentences(3000, 10000, true);
+            } else if (caseObj.roadCharge === "recklessDriving") {
+              caseObj["charge"] = caseObj.roadCharge;
+              caseObj["description"] = descriptions.recklessDriving[Math.floor(Math.random() * descriptions.recklessDriving.length)].description;
+              caseObj["evidences"] = evidences.recklessDriving.slice(0, Math.floor(Math.random() * evidences.recklessDriving.length));
+              caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
+              caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
+              caseObj["fineSentences"] = generateSentences(3000, 10000, true);
+            } else if (caseObj.roadCharge === "drivingNoLicense") {
+              caseObj["charge"] = caseObj.roadCharge;
+              caseObj["description"] = descriptions.drivingNoLicense[Math.floor(Math.random() * descriptions.drivingNoLicense.length)].description;
+              caseObj["evidences"] = evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * evidences.drivingNoLicense.length));
+              caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
+              caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
+              caseObj["fineSentences"] = generateSentences(3000, 10000, true);
+            }
+            /******* Prison *******/
+            else if (caseObj.prisonCharge === "fight") {
+              caseObj["charge"] = caseObj.prisonCharge;
+              caseObj["description"] = descriptions.fight[Math.floor(Math.random() * descriptions.fight.length)].description;
+              caseObj["evidences"] = evidences.fight.slice(0, Math.floor(Math.random() * evidences.fight.length));
+              caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
+              caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
+              caseObj["fineSentences"] = generateSentences(3000, 10000, true);
+            }
+
           } else {
             caseObj[prop] = '';
           }
@@ -756,9 +1429,8 @@ export default {
         return caseObj;
       }
 
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 9; i++) {
         let generatedCase = generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
-        console.log(generatedCase);
         this.addGeneratedCase(generatedCase);
       }
 
