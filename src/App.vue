@@ -33,11 +33,112 @@ export default {
 
       // Create suspect name
       function generateName() {
-        const firstName = ["Emma", "Olivia", "Ava", "Isabella",
-          "Sophia", "Mia", "Charlotte", "Amelia", "Harper", "Evelyn"];
+        const firstName = [
+          "Emma",
+          "Noah",
+          "Ava",
+          "Liam",
+          "Olivia",
+          "William",
+          "Sophia",
+          "Mason",
+          "Isabella",
+          "James",
+          "Mia",
+          "Benjamin",
+          "Charlotte",
+          "Jacob",
+          "Amelia",
+          "Michael",
+          "Harper",
+          "Elijah",
+          "Evelyn",
+          "Ethan",
+          "Abigail",
+          "Alexander",
+          "Emily",
+          "Daniel",
+          "Elizabeth",
+          "Matthew",
+          "Mila",
+          "Aiden",
+          "Ella",
+          "Henry",
+          "Avery",
+          "Joseph",
+          "Sofia",
+          "Jackson",
+          "Camila",
+          "Samuel",
+          "Scarlett",
+          "Sebastian",
+          "Victoria",
+          "David",
+          "Luna",
+          "Carter",
+          "Chloe",
+          "Luke",
+          "Penelope",
+          "Owen",
+          "Grace",
+          "Wyatt",
+          "Lily",
+          "Nathan",
+          "Hannah"
+        ];
 
-        const lastName = ["Smith", "Johnson", "Williams", "Jones",
-          "Brown", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez"];
+
+        const lastName = [
+          "Lopez",
+          "Adams",
+          "Perry",
+          "Henderson",
+          "Foster",
+          "Harrison",
+          "Stewart",
+          "Ramirez",
+          "Graham",
+          "Flores",
+          "Ramos",
+          "Wright",
+          "Sullivan",
+          "Parker",
+          "Cox",
+          "Murray",
+          "Morales",
+          "Bryant",
+          "Hunt",
+          "Rose",
+          "Riley",
+          "Gonzalez",
+          "Jordan",
+          "Bishop",
+          "Wheeler",
+          "Marshall",
+          "Hayes",
+          "Douglas",
+          "Griffin",
+          "Harper",
+          "Lawson",
+          "Barrett",
+          "Hawkins",
+          "Banks",
+          "Franklin",
+          "Moreno",
+          "Hudson",
+          "McGuire",
+          "Gutierrez",
+          "Clarke",
+          "Vargas",
+          "Baker",
+          "Gibson",
+          "Warren",
+          "Austin",
+          "Waters",
+          "Stone",
+          "Mcdonald",
+          "Rocha",
+          "Santos"];
 
         const randomFirstName = firstName[Math.floor(Math.random() * firstName.length)];
         const randomLastName = lastName[Math.floor(Math.random() * lastName.length)];
@@ -47,13 +148,14 @@ export default {
 
 
       // Define case types
-      const caseTypes = ['Criminal', 'Road', 'Prison'];
+      const caseTypes = [/*'Criminal', 'Road', 'Prison', */'Traffic'];
 
       // Define case properties for each type
       const caseProperties = {
         Criminal: ['criminalCharge'],
         Road: ['roadCharge'],
         Prison: ['prisonCharge'],
+        Traffic: ['trafficCharge']
       };
 
 
@@ -63,6 +165,7 @@ export default {
         'criminalCharge': ['murder', 'theft', 'fraud', 'assault'],
         'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense'],
         'prisonCharge': ['fight'],
+        'trafficCharge': ['traffic']
         /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
       };
 
@@ -498,6 +601,83 @@ export default {
           {
             id: 14,
             description: "Police officer stopped driver who had a revoked license"
+          }
+        ],
+
+        /******* Traffic *******/
+        traffic: [
+          {
+            id: 0,
+            description: "The defendant was caught on camera running a red light at a busy intersection.",
+          },
+          {
+            id: 1,
+            description: "The defendant was pulled over for driving at an excessive speed on the highway.",
+          },
+          {
+            id: 2,
+            description: "The defendant was observed by a police officer driving recklessly and swerving between lanes.",
+          },
+          {
+            id: 3,
+            description: "The defendant failed to yield to a pedestrian at a crosswalk and was issued a citation by a police officer.",
+          },
+          {
+            id: 4,
+            description: "The defendant was caught on camera illegally passing another vehicle on a double yellow line.",
+          },
+          {
+            id: 5,
+            description: "The defendant's vehicle was found to have faulty brakes after a routine inspection by a traffic officer.",
+          },
+
+          {
+            id: 6,
+            description: "The defendant was caught on camera driving on the wrong side of the road.",
+          },
+
+          {
+            id: 7,
+            description: "The defendant was pulled over for driving with an expired license.",
+          },
+
+          {
+            id: 8,
+            description: "The defendant was observed by a police officer texting while driving.",
+          },
+
+          {
+            id: 9,
+            description: "The defendant was caught on camera running a stop sign at an intersection.",
+          },
+
+          {
+            id: 10,
+            description: "The defendant was pulled over for driving with a broken taillight.",
+          },
+          {
+            id: 11,
+            description: "The defendant was pulled over for driving with expired license plates.",
+          },
+          {
+            id: 12,
+            description: "The defendant was observed by a police officer driving while using their cellphone.",
+          },
+          {
+            id: 13,
+            description: "The defendant failed to come to a complete stop at a railroad crossing while a train was passing.",
+          },
+          {
+            id: 14,
+            description: "The defendant was caught on camera driving in the carpool lane without a passenger.",
+          },
+          {
+            id: 15,
+            description: "The defendant was observed by a police officer driving with a broken taillight.",
+          },
+          {
+            id: 16,
+            description: "The defendant was caught on camera making an illegal U-turn on a busy street.",
           }
         ],
 
@@ -1146,6 +1326,116 @@ export default {
           }
         ],
 
+        /******* Traffic *******/
+        traffic: [
+          {
+            id: 0,
+            description: "The defendant was caught on camera running a red light at a busy intersection.",
+            prosecutionSentence: "The footage from the camera shows the defendant's vehicle clearly entering the intersection after the light had turned red, putting other drivers and pedestrians in danger.",
+            defenseSentence: "I apologize for my mistake, but I was rushing to get to the hospital as my wife had just gone into labor. I realize the danger I put others in and I assure the court that it won't happen again."
+          },
+          {
+            id: 0,
+            description: "The defendant was pulled over for driving at an excessive speed on the highway.",
+            prosecutionSentence: "The radar gun recorded the defendant's vehicle traveling at a speed of 90 miles per hour, which is well above the posted speed limit of 65 miles per hour.",
+            defenseSentence: "I was in a rush to get to an important meeting and lost track of my speed. I know that doesn't excuse my behavior and I promise to be more careful in the future."
+          },
+          {
+            id: 0,
+            description: "The defendant was observed by a police officer driving recklessly and swerving between lanes.",
+            prosecutionSentence: "The police officer's dash cam footage clearly shows the defendant's vehicle swerving between lanes without signaling, which is a clear violation of traffic laws.",
+            defenseSentence: "I admit that I was changing the radio station while driving and that caused me to momentarily lose control of my vehicle. I'm sorry for my mistake and I promise to be more focused on the road."
+          },
+          {
+            id: 0,
+            description: "The defendant failed to yield to a pedestrian at a crosswalk and was issued a citation by a police officer.",
+            prosecutionSentence: "The police officer witnessed the defendant's vehicle failing to yield to a pedestrian who was legally crossing the street at a marked crosswalk, which is a clear violation of traffic laws.",
+            defenseSentence: "I didn't see the pedestrian as they were partially obstructed by a parked car. But that doesn't excuse my behavior and I take full responsibility for my mistake."
+          },
+          {
+            id: 0,
+            description: "The defendant was caught on camera illegally passing another vehicle on a double yellow line.",
+            prosecutionSentence: "The camera footage shows the defendant's vehicle passing another vehicle on a double yellow line, which is a clear violation of traffic laws.",
+            defenseSentence: "I was in a hurry to get to my son's game and didn't realize that I was crossing the double yellow line. I'm sorry for my mistake and I promise to be more mindful of traffic laws in the future."
+          },
+          {
+            id: 0,
+            description: "The defendant's vehicle was found to have faulty brakes after a routine inspection by a traffic officer.",
+            prosecutionSentence: "The inspection report clearly indicates that the defendant's vehicle had faulty brakes, which poses a serious danger to other drivers and pedestrians on the road.",
+            defenseSentence: "I had no idea that the brakes were faulty. I had the car serviced recently and assumed that everything was in order. I request a chance to fix the issue and provide proof of repair to the court."
+          },
+
+          {
+            id: 0,
+            description: "The defendant was caught on camera driving on the wrong side of the road.",
+            prosecutionSentence: "The video evidence clearly shows that the defendant was driving on the wrong side of the road, which is a serious traffic violation that endangers other drivers and pedestrians.",
+            defenseSentence: "I admit that I made a mistake and drove on the wrong side of the road, but it was a momentary lapse of judgement. I request a warning instead of a fine as this is my first offense."
+          },
+
+          {
+            id: 0,
+            description: "The defendant was pulled over for driving with an expired license.",
+            prosecutionSentence: "The officer who pulled over the defendant confirmed that the license was expired, which is a clear violation of traffic laws.",
+            defenseSentence: "I had no idea that my license had expired. I had renewed it online but must have missed the notification that it was ready for pickup. I request a chance to renew my license and provide proof of renewal to the court."
+          },
+
+          {
+            id: 0,
+            description: "The defendant was observed by a police officer texting while driving.",
+            prosecutionSentence: "The officer's testimony and dashcam footage clearly show that the defendant was distracted by their phone while driving, which is a serious traffic violation that can cause accidents.",
+            defenseSentence: "I admit that I was using my phone while driving, but it was an emergency and I had to respond to a family member's message. I understand the danger it poses and promise not to do it again. I request a warning instead of a fine."
+          },
+
+          {
+            id: 0,
+            description: "The defendant was caught on camera running a stop sign at an intersection.",
+            prosecutionSentence: "The video footage clearly shows that the defendant failed to stop at the stop sign, which is a serious traffic violation that endangers other drivers and pedestrians.",
+            defenseSentence: "I admit that I did not stop at the stop sign, but I did slow down and looked both ways before proceeding. I request a warning instead of a fine."
+          },
+
+          {
+            id: 0,
+            description: "The defendant was pulled over for driving with a broken taillight.",
+            prosecutionSentence: "The officer who pulled over the defendant confirmed that the taillight was broken, which is a clear violation of traffic laws.",
+            defenseSentence: "I had no idea that the taillight was broken. I must have missed it during my regular checks. I request a chance to fix the taillight and provide proof of repair to the court."
+          },
+          {
+            id: 0,
+            description: "The defendant was pulled over for driving with expired license plates.",
+            prosecutionSentence: "The police officer observed that the defendant's license plates had expired, which is a violation of traffic laws.",
+            defenseSentence: "I was unaware that my license plates had expired. I recently moved and didn't receive a renewal notice from the DMV. I have since renewed them."
+          },
+          {
+            id: 0,
+            description: "The defendant was observed by a police officer driving while using their cellphone.",
+            prosecutionSentence: "The police officer witnessed the defendant using their cellphone while driving, which is a violation of traffic laws.",
+            defenseSentence: "I was using my cellphone as a GPS device and had it mounted on the dashboard. I wasn't texting or making a call. I understand that it's still a violation and I won't do it again."
+          },
+          {
+            id: 0,
+            description: "The defendant failed to come to a complete stop at a railroad crossing while a train was passing.",
+            prosecutionSentence: "Several eyewitnesses, including the train conductor and passengers, saw the defendant's vehicle fail to come to a complete stop at the railroad crossing while the train was passing, which is a serious violation of traffic laws.",
+            defenseSentence: "I'm sorry for my mistake. I didn't see the stop sign at the railroad crossing and didn't realize the train was passing. It was an honest mistake and I promise to be more vigilant in the future."
+          },
+          {
+            id: 0,
+            description: "The defendant was caught on camera driving in the carpool lane without a passenger.",
+            prosecutionSentence: "The camera footage clearly shows the defendant driving in the carpool lane without a passenger, which is a violation of traffic laws.",
+            defenseSentence: "I'm sorry for my mistake. I was in a hurry and didn't realize that I couldn't drive in the carpool lane alone. I promise to pay more attention to traffic signs in the future."
+          },
+          {
+            id: 0,
+            description: "The defendant was observed by a police officer driving with a broken taillight.",
+            prosecutionSentence: "The police officer observed that the defendant's taillight was broken, which is a violation of traffic laws.",
+            defenseSentence: "I wasn't aware that my taillight was broken. I apologize for the oversight and have since had it repaired."
+          },
+          {
+            id: 0,
+            description: "The defendant was caught on camera making an illegal U-turn on a busy street.",
+            prosecutionSentence: "The camera footage clearly shows the defendant making an illegal U-turn on a busy street, which is a violation of traffic laws and poses a safety hazard to other drivers.",
+            defenseSentence: "I'm sorry for my mistake. I was lost and trying to find my way back to the highway. I didn't realize that U-turns weren't allowed on that street."
+          }
+        ],
         /******* Prison *******/
         fight: [
           {
@@ -1262,7 +1552,7 @@ export default {
         if (!fineVariant) {
           for (let j = 0; j < 3; j++) {
             numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
-            if (numbers[j] === numbers[j - 1]){
+            if (numbers[j] === numbers[j - 1]) {
               numbers[j] += 5;
             }
           }
@@ -1342,6 +1632,13 @@ export default {
         return result;
       }
 
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
 
       // Define logic for generating cases
       function generateCase(type) {
@@ -1361,7 +1658,7 @@ export default {
             if (caseObj.criminalCharge === "murder") {
               caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.murder[Math.floor(Math.random() * descriptions.murder.length)].description;
-              caseObj["evidences"] = evidences.murder.slice(0, Math.floor(Math.random() * evidences.murder.length));
+              caseObj["evidences"] = shuffleArray(evidences.murder.slice(0, Math.floor(Math.random() * evidences.murder.length)));
               caseObj["prisonSentences"] = generateSentences(5, 20, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
@@ -1369,53 +1666,63 @@ export default {
             } else if (caseObj.criminalCharge === "theft") {
               caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.theft[Math.floor(Math.random() * descriptions.theft.length)].description;
-              caseObj["evidences"] = evidences.theft.slice(0, Math.floor(Math.random() * evidences.theft.length));
+              caseObj["evidences"] = shuffleArray(evidences.theft.slice(0, Math.floor(Math.random() * evidences.theft.length)));
               caseObj["prisonSentences"] = generateSentences(1, 10, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 20000, true);
             } else if (caseObj.criminalCharge === "fraud") {
               caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.fraud[Math.floor(Math.random() * descriptions.fraud.length)].description;
-              caseObj["evidences"] = evidences.fraud.slice(0, Math.floor(Math.random() * evidences.fraud.length));
+              caseObj["evidences"] = shuffleArray(evidences.fraud.slice(0, Math.floor(Math.random() * evidences.fraud.length)));
               caseObj["prisonSentences"] = generateSentences(1, 10, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(5000, 100000, true);
             } else if (caseObj.criminalCharge === "assault") {
               caseObj["charge"] = caseObj.criminalCharge;
               caseObj["description"] = descriptions.assault[Math.floor(Math.random() * descriptions.assault.length)].description;
-              caseObj["evidences"] = evidences.assault.slice(0, Math.floor(Math.random() * evidences.assault.length));
+              caseObj["evidences"] = shuffleArray(evidences.assault.slice(0, Math.floor(Math.random() * evidences.assault.length)));
               caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
             }
             /******* Road *******/
             else if (caseObj.roadCharge === "dui") {
-              caseObj["charge"] = caseObj.roadCharge;
+              caseObj["charge"] = "driving under influence";
               caseObj["description"] = descriptions.dui[Math.floor(Math.random() * descriptions.dui.length)].description;
-              caseObj["evidences"] = evidences.dui.slice(0, Math.floor(Math.random() * evidences.dui.length));
+              caseObj["evidences"] = shuffleArray(evidences.dui.slice(0, Math.floor(Math.random() * evidences.dui.length)));
               caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
             } else if (caseObj.roadCharge === "recklessDriving") {
-              caseObj["charge"] = caseObj.roadCharge;
+              caseObj["charge"] = "reckless driving";
               caseObj["description"] = descriptions.recklessDriving[Math.floor(Math.random() * descriptions.recklessDriving.length)].description;
-              caseObj["evidences"] = evidences.recklessDriving.slice(0, Math.floor(Math.random() * evidences.recklessDriving.length));
+              caseObj["evidences"] = shuffleArray(evidences.recklessDriving.slice(0, Math.floor(Math.random() * evidences.recklessDriving.length)));
               caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
             } else if (caseObj.roadCharge === "drivingNoLicense") {
-              caseObj["charge"] = caseObj.roadCharge;
+              caseObj["charge"] = "driving w//o license";
               caseObj["description"] = descriptions.drivingNoLicense[Math.floor(Math.random() * descriptions.drivingNoLicense.length)].description;
-              caseObj["evidences"] = evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * evidences.drivingNoLicense.length));
+              caseObj["evidences"] = shuffleArray(evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * evidences.drivingNoLicense.length)));
               caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
             }
+            /******* Traffic *******/
+            else if (caseObj.trafficCharge === "traffic") {
+              let randomNum = Math.floor(Math.random() * descriptions.traffic.length);
+              caseObj["charge"] = "traffic";
+              caseObj["description"] = descriptions.traffic[randomNum].description;
+              caseObj["evidences"] = [evidences.traffic[randomNum]];
+              caseObj["prisonSentences"] = generateSentences(0, 0, false, "prison");
+              caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
+              caseObj["fineSentences"] = generateSentences(90, 1500, true);
+            }
             /******* Prison *******/
             else if (caseObj.prisonCharge === "fight") {
-              caseObj["charge"] = caseObj.prisonCharge;
+              caseObj["charge"] = "fight";
               caseObj["description"] = descriptions.fight[Math.floor(Math.random() * descriptions.fight.length)].description;
-              caseObj["evidences"] = evidences.fight.slice(0, Math.floor(Math.random() * evidences.fight.length));
+              caseObj["evidences"] = shuffleArray(evidences.fight.slice(0, Math.floor(Math.random() * evidences.fight.length)));
               caseObj["prisonSentences"] = generateSentences(1, 8, false, "prison");
               caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
               caseObj["fineSentences"] = generateSentences(3000, 10000, true);
@@ -1429,7 +1736,7 @@ export default {
         return caseObj;
       }
 
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 1; i++) {
         let generatedCase = generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
         this.addGeneratedCase(generatedCase);
       }
