@@ -148,7 +148,7 @@ export default {
 
 
       // Define case types
-      const caseTypes = [/*'Criminal', 'Road', 'Prison', */'Traffic'];
+      const caseTypes = ['Criminal', 'Road', 'Prison', 'Traffic'];
 
       // Define case properties for each type
       const caseProperties = {
@@ -1556,7 +1556,11 @@ export default {
               numbers[j] += 5;
             }
           }
-        } else {
+        } else if(fineVariant && text === "traffic") {
+          for (let j = 0; j < 3; j++) {
+            numbers.push(Math.floor(Math.random() * (1500 - 90)) + 90);
+          }
+        }else{
           for (let j = 0; j < 3; j++) {
             numbers.push(Math.floor(Math.random() * 50000));
           }
@@ -1605,6 +1609,11 @@ export default {
           result.push({
             text: `${numbers[2]} years`,
             value: `${numbers[2]} years`
+          });
+        } else if (!fineVariant && text === "traffic") {
+          result.push({
+            text: "Not available for this case",
+            value: "0",
           });
         } else {
           result.push({
@@ -1714,9 +1723,9 @@ export default {
               caseObj["charge"] = "traffic";
               caseObj["description"] = descriptions.traffic[randomNum].description;
               caseObj["evidences"] = [evidences.traffic[randomNum]];
-              caseObj["prisonSentences"] = generateSentences(0, 0, false, "prison");
-              caseObj["probationSentences"] = generateSentences(1, 5, false, "probation");
-              caseObj["fineSentences"] = generateSentences(90, 1500, true);
+              caseObj["prisonSentences"] = generateSentences(0, 0, false, "traffic");
+              caseObj["probationSentences"] = generateSentences(1, 2, false, "traffic");
+              caseObj["fineSentences"] = generateSentences(90, 1500, true, "traffic");
             }
             /******* Prison *******/
             else if (caseObj.prisonCharge === "fight") {
@@ -1736,7 +1745,7 @@ export default {
         return caseObj;
       }
 
-      for (let i = 0; i < 1; i++) {
+      for (let i = 0; i < 10; i++) {
         let generatedCase = generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
         this.addGeneratedCase(generatedCase);
       }
