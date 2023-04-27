@@ -8,7 +8,7 @@ export default new Vuex.Store({
     state: {
         cases: [
             // TEMPLATE, DO NOT ERASE
-            {
+            /*{
                 id: 0,
                 type: "criminal",
                 charge: "theft",
@@ -156,7 +156,7 @@ export default new Vuex.Store({
                         ]
                     }
                 ],
-                /* Punishments */
+                /!* Punishments *!/
                 prisonSentences: [
                     {
                         value: null,
@@ -223,10 +223,10 @@ export default new Vuex.Store({
                         text: "$500,000"
                     }
                 ],
-                /* End of punishments */
+                /!* End of punishments *!/
 
                 actualOutcome: "Guilty"
-            },
+            },*/
 
             // YOU CAN ERASE
             /*{
