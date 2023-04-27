@@ -1745,7 +1745,7 @@ export default {
         return caseObj;
       }
 
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 15; i++) {
         let generatedCase = generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
         this.addGeneratedCase(generatedCase);
       }
