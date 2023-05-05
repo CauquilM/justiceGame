@@ -108,6 +108,36 @@
     margin: 15px 0;
 }
 
+/*************************** Criminal Record ***************************/
+.criminal-record-card > .card {
+    border-color: wheat;
+}
+
+.criminal-record-overflow {
+    overflow-y: scroll;
+    height: 28vh;
+}
+
+.criminal-record-overflow >  .criminal-record-subcard {
+    border-color: white;
+    margin: 15px 5% 20px 5%;
+}
+
+.criminal-record-overflow::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.criminal-record-overflow::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.criminal-record-overflow::-webkit-scrollbar-thumb {
+    background: wheat;
+    border-radius: 10px;
+}
+
+
 /*************************** Defense ***************************/
 .defense-table > .card {
     border-color: red;

@@ -1661,6 +1661,7 @@ export default new Vuex.Store({
         judgeComment: '',
         showAllSentences: false,
         showCourtBar: false,
+        showCriminalRecord: false,
         witnessChose: Object,
         finalComment: '',
         isDark: true
@@ -1668,7 +1669,6 @@ export default new Vuex.Store({
 
     getters: {
         getPrisonSelected: (state) => {
-            console.log(state.prisonSelected);
             return state.prisonSelected;
         },
         getProbationSelected: (state) => {
@@ -1700,6 +1700,9 @@ export default new Vuex.Store({
         },
         SET_SHOW_COURT_BAR(state) {
             state.showCourtBar === true ? state.showCourtBar = false : state.showCourtBar = true;
+        },
+        SET_SHOW_CRIMINAL_RECORD(state) {
+            state.showCriminalRecord === true ? state.showCriminalRecord = false : state.showCriminalRecord = true;
         },
         SET_PRISON_SELECTED(state, payload) {
             state.prisonSelected = payload;
@@ -1783,6 +1786,9 @@ export default new Vuex.Store({
             if (state.showAllSentences === true) {
                 commit("SET_SHOW_SENTENCES");
             }
+            if (state.showCriminalRecord === true) {
+                commit("SET_SHOW_CRIMINAL_RECORD");
+            }
             commit("SET_WITNESS_CHOSE", witness);
             console.log(witness)
             commit("SET_SHOW_COURT_BAR");
@@ -1791,8 +1797,20 @@ export default new Vuex.Store({
             if (state.showCourtBar === true) {
                 commit("SET_SHOW_COURT_BAR");
             }
+            if (state.showCriminalRecord === true) {
+                commit("SET_SHOW_CRIMINAL_RECORD");
+            }
             commit("SET_SHOW_SENTENCES");
             eventBus.$emit('closeGuiltyModal');
+        },
+        showCriminalRecord({state, commit}) {
+            if (state.showAllSentences === true) {
+                commit("SET_SHOW_SENTENCES");
+            }
+            if (state.showCourtBar === true) {
+                commit("SET_SHOW_COURT_BAR");
+            }
+            commit("SET_SHOW_CRIMINAL_RECORD");
         },
         modifyPrisonSelected({commit}, prison) {
             console.log("coucou", prison);
