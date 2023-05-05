@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="chosenCase.evidences.length !== 0">
+    <div class="evidence-proof" v-if="chosenCase.evidences.length !== 0">
       <p v-for="evidence in chosenCase.evidences" :key="evidence.id"
          @click="displayCommentsOnEvidence(evidence.id)">
         {{ evidence.description }}

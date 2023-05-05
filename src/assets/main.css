@@ -137,6 +137,9 @@
     border-radius: 10px;
 }
 
+.wheat-proof{
+    text-decoration: underline wheat;
+}
 
 /*************************** Defense ***************************/
 .defense-table > .card {
@@ -179,7 +182,9 @@
     border-radius: 10px;
 }
 
-
+.evidence-proof{
+    text-decoration: underline chocolate;
+}
 
 /**************************** Witenesses ****************************/
 

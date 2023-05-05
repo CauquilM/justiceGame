@@ -2442,9 +2442,380 @@ export default {
       ];
       const record = [];
       const randomChances = Math.floor(Math.random() * 11);
-      if (randomChances >= 1) {
+      if (randomChances >= 7) {
         const min = 1; // minimum number of crimes
-        const max = Math.min(Math.floor(Math.random() * (crimes.length - min)) + min, 10); // maximum number of crimes, up to the length of the crimes array minus the minimum or 10, whichever is smaller
+        const max = Math.min(Math.floor(Math.random() * (crimes.length - min)) + min, 5); // maximum number of crimes, up to the length of the crimes array minus the minimum or 10, whichever is smaller
+        const numCrimes = Math.floor(Math.random() * (max - min + 1)) + min; // generate a random number of crimes between min and max
+        for (let i = 0; i < numCrimes; i++) {
+          const crime = crimes[Math.floor(Math.random() * crimes.length)]; // randomly select a crime from the crimes array
+          record.push(crime);
+        }
+      }
+      return record;
+    },
+
+    generateTrafficRecord() {
+      const crimes = [
+        {
+          "charge": "speeding",
+          "description": "Drove above the posted speed limit.",
+          "sentence": "$200 fine",
+          "fine": "$200"
+        },
+        {
+          "charge": "failure to stop at a stop sign",
+          "description": "Failed to stop at a stop sign.",
+          "sentence": "$250 fine",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving without a license",
+          "description": "Drove without a valid driver's license.",
+          "sentence": "$300 fine",
+          "fine": "$300"
+        },
+        {
+          "charge": "failure to signal",
+          "description": "Failed to use turn signals while driving.",
+          "sentence": "$150 fine",
+          "fine": "$150"
+        },
+        {
+          "charge": "improper lane change",
+          "description": "Changed lanes without using proper signals.",
+          "sentence": "$200 fine",
+          "fine": "$200"
+        },
+        {
+          "charge": "driving without insurance",
+          "description": "Drove without valid auto insurance.",
+          "sentence": "$500 fine",
+          "fine": "$500"
+        },
+        {
+          "charge": "parking in a no-parking zone",
+          "description": "Parked a vehicle in a no-parking zone.",
+          "sentence": "$100 fine",
+          "fine": "$100"
+        },
+        {
+          "charge": "driving without headlights at night",
+          "description": "Drove without headlights turned on during the night.",
+          "sentence": "$150 fine",
+          "fine": "$150"
+        },
+        {
+          "charge": "jaywalking",
+          "description": "Crossed the street outside of a designated crosswalk.",
+          "sentence": "$50 fine",
+          "fine": "$50"
+        },
+        {
+          "charge": "driving too close to another vehicle",
+          "description": "Followed too closely to another vehicle while driving.",
+          "sentence": "$200 fine",
+          "fine": "$200"
+        },
+        {
+          "charge": "parking in a handicap spot without a permit",
+          "description": "Parked a vehicle in a handicap spot without a valid permit.",
+          "sentence": "$500 fine",
+          "fine": "$500"
+        },
+        {
+          "charge": "driving with expired registration",
+          "description": "Drove a vehicle with expired registration tags.",
+          "sentence": "$250 fine",
+          "fine": "$250"
+        },
+        {
+          "charge": "failure to yield to pedestrians",
+          "description": "Failed to yield to pedestrians at a crosswalk.",
+          "sentence": "$150 fine",
+          "fine": "$150"
+        },
+        {
+          "charge": "driving with a suspended license",
+          "description": "Drove with a suspended driver's license.",
+          "sentence": "$500 fine",
+          "fine": "$500"
+        },
+        {
+          "charge": "texting while driving",
+          "description": "Used a cell phone to text while driving.",
+          "sentence": "$250 fine",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving without a license",
+          "description": "Operated a vehicle without a valid driver's license.",
+          "sentence": "6 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "driving without insurance",
+          "description": "Operated a vehicle without proper insurance coverage.",
+          "sentence": "3 months probation",
+          "fine": "$750"
+        },
+        {
+          "charge": "parking violation",
+          "description": "Illegally parked in a designated no parking zone.",
+          "sentence": "2 weeks probation",
+          "fine": "$50"
+        },
+        {
+          "charge": "failure to stop at a stop sign",
+          "description": "Failed to come to a complete stop at a stop sign.",
+          "sentence": "1 month probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "driving with a suspended license",
+          "description": "Operated a vehicle with a suspended driver's license.",
+          "sentence": "3 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "driving under the influence of alcohol",
+          "description": "Operated a vehicle while under the influence of alcohol.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,500"
+        },
+        {
+          "charge": "speeding in a school zone",
+          "description": "Drove above the posted speed limit in a designated school zone.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "failure to signal",
+          "description": "Failed to use proper signals when changing lanes or turning.",
+          "sentence": "2 weeks probation",
+          "fine": "$50"
+        },
+        {
+          "charge": "improper passing",
+          "description": "Passed another vehicle in an unsafe or illegal manner.",
+          "sentence": "1 month probation",
+          "fine": "$200"
+        },
+        {
+          "charge": "driving with an expired registration",
+          "description": "Operated a vehicle with an expired registration.",
+          "sentence": "2 weeks probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "failure to yield to a pedestrian",
+          "description": "Failed to yield to a pedestrian at a crosswalk.",
+          "sentence": "1 month probation",
+          "fine": "$200"
+        },
+        {
+          "charge": "driving with a broken taillight",
+          "description": "Operated a vehicle with a broken taillight.",
+          "sentence": "2 weeks probation",
+          "fine": "$50"
+        },
+        {
+          "charge": "reckless driving",
+          "description": "Drove recklessly and endangered others on the road.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "driving in a bike lane",
+          "description": "Illegally drove in a designated bike lane.",
+          "sentence": "1 month probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "driving with a cracked windshield",
+          "description": "Operated a vehicle with a cracked windshield.",
+          "sentence": "2 weeks probation",
+          "fine": "$50"
+        },
+        {
+          "charge": "reckless driving",
+          "description": "Drove in a reckless manner endangering the safety of others.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,500"
+        },
+        {
+          "charge": "driving without a license",
+          "description": "Drove a motor vehicle without a valid driver's license.",
+          "sentence": "1 month in jail, 3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "driving under the influence",
+          "description": "Drove a motor vehicle while under the influence of drugs or alcohol.",
+          "sentence": "6 months in jail, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "hit and run",
+          "description": "Collided with another vehicle or pedestrian and left the scene without stopping.",
+          "sentence": "6 months in jail, 1 year probation",
+          "fine": "$2,500"
+        },
+        {
+          "charge": "driving with a suspended license",
+          "description": "Drove a motor vehicle with a suspended driver's license.",
+          "sentence": "3 months in jail, 6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "failure to stop at a stop sign",
+          "description": "Failed to stop at a stop sign before entering an intersection.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "improper lane change",
+          "description": "Changed lanes without signaling or checking for other vehicles.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving with expired registration",
+          "description": "Drove a motor vehicle with expired registration tags.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving with a broken taillight",
+          "description": "Drove a motor vehicle with a broken taillight or other non-working light.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving without insurance",
+          "description": "Drove a motor vehicle without valid insurance coverage.",
+          "sentence": "3 months in jail, 6 months probation",
+          "fine": "$1,500"
+        },
+        {
+          "charge": "failure to signal",
+          "description": "Failed to use turn signals when turning or changing lanes.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving with a broken headlight",
+          "description": "Drove a motor vehicle with a broken headlight or other non-working light.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "following too closely",
+          "description": "Followed another vehicle too closely, risking a rear-end collision.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving without headlights",
+          "description": "Drove a motor vehicle without using headlights during nighttime hours.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "driving with a suspended license",
+          "description": "Drove a vehicle with a suspended driver's license.",
+          "sentence": "30 days in jail, 6 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "driving without a license",
+          "description": "Drove a vehicle without a valid driver's license.",
+          "sentence": "10 days community service, 3 months probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "reckless driving",
+          "description": "Drove recklessly and endangered others on the road.",
+          "sentence": "3 months in jail, 1 year probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "driving under the influence",
+          "description": "Drove a vehicle while under the influence of drugs or alcohol.",
+          "sentence": "6 months in jail, 1 year probation",
+          "fine": "$2,500"
+        },
+        {
+          "charge": "leaving the scene of an accident",
+          "description": "Left the scene of an accident without stopping to exchange information or render aid.",
+          "sentence": "6 months in jail, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "driving with an expired registration",
+          "description": "Drove a vehicle with an expired registration.",
+          "sentence": "1 month probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "driving without insurance",
+          "description": "Drove a vehicle without insurance coverage.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "improper lane change",
+          "description": "Changed lanes without signaling or checking for other vehicles.",
+          "sentence": "1 month probation",
+          "fine": "$150"
+        },
+        {
+          "charge": "driving the wrong way on a one-way street",
+          "description": "Drove a vehicle in the wrong direction on a one-way street.",
+          "sentence": "1 month probation",
+          "fine": "$200"
+        },
+        {
+          "charge": "driving without headlights",
+          "description": "Drove a vehicle without headlights during nighttime hours.",
+          "sentence": "1 month probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "unsafe lane change",
+          "description": "Changed lanes in an unsafe manner that endangered other drivers.",
+          "sentence": "3 months probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "failure to signal",
+          "description": "Failed to use turn signals when turning or changing lanes.",
+          "sentence": "1 month probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "following too closely",
+          "description": "Followed another vehicle too closely, creating an unsafe situation.",
+          "sentence": "3 months probation",
+          "fine": "$300"
+        },
+        {
+          "charge": "driving with a broken taillight",
+          "description": "Drove a vehicle with a broken taillight or other lighting equipment.",
+          "sentence": "1 month probation",
+          "fine": "$100"
+        },
+        {
+          "charge": "driving in a bike lane",
+          "description": "Drove a vehicle in a designated bike lane.",
+          "sentence": "1 month probation",
+          "fine": "$150"
+        }
+      ];
+      const record = [];
+      const randomChances = Math.floor(Math.random() * 11);
+      if (randomChances >= 7) {
+        const min = 1; // minimum number of crimes
+        const max = Math.min(Math.floor(Math.random() * (crimes.length - min)) + min, 5); // maximum number of crimes, up to the length of the crimes array minus the minimum or 10, whichever is smaller
         const numCrimes = Math.floor(Math.random() * (max - min + 1)) + min; // generate a random number of crimes between min and max
         for (let i = 0; i < numCrimes; i++) {
           const crime = crimes[Math.floor(Math.random() * crimes.length)]; // randomly select a crime from the crimes array
@@ -2463,6 +2834,7 @@ export default {
     },
 
     generateCase(type) {
+      console.log("case", type);
       this.caseProperties[type].forEach(prop => {
         if (this.randomizationParams[prop]) {
           this.caseObj[prop] = this.randomizationParams[prop][Math.floor(Math.random() * this.randomizationParams[prop].length)];
@@ -2545,7 +2917,7 @@ export default {
             this.caseObj["prisonSentences"] = this.generateSentences(0, 0, false, "traffic");
             this.caseObj["probationSentences"] = this.generateSentences(1, 2, false, "traffic");
             this.caseObj["fineSentences"] = this.generateSentences(90, 1500, true, "traffic");
-            this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["criminalRecord"] = this.generateTrafficRecord();
           }
           /******* Prison *******/
           else if (this.caseObj.prisonCharge === "fight") {
@@ -2572,6 +2944,7 @@ export default {
       const caseTypes = ['Criminal', 'Road', 'Prison', 'Traffic'];
 
       for (let i = 0; i < 5; i++) {
+        console.log("devug", this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]))
         let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
         this.addGeneratedCase(generatedCase);
       }

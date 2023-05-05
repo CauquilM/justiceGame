@@ -3,7 +3,7 @@
     <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-folders"/>Proves</p>
       <div class="evidence-overflow">
-        <p @click="showCriminalRecord" v-if="chosenCase.criminalRecord.length > 0">Criminal Record</p>
+        <p class="wheat-proof" @click="showCriminalRecord" v-if="chosenCase.criminalRecord.length > 0">Criminal Record</p>
         <EvidencesComponent/>
         <WitnessesComponent/>
       </div>
