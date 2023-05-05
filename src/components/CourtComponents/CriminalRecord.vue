@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!showCriminalRecord" class="criminal-record-card">
+  <div v-if="showCriminalRecord" class="criminal-record-card">
     <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-folders"/>Proves</p>
       <div class="criminal-record-overflow">

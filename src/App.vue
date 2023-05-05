@@ -1415,7 +1415,6 @@ export default {
       },
 
       caseObj: {
-        'type': String,
         suspect: {
           name: this.generateName(),
           age: `${Math.floor(Math.random() * 41) + 20}`
@@ -1649,6 +1648,96 @@ export default {
     generateCriminalRecord() {
       const crimes = [
         {
+          "charge": "disorderly conduct",
+          "description": "Behaved in a disorderly manner in public.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "trespassing",
+          "description": "Entered private property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "vandalism",
+          "description": "Damaged public property.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "possession of drugs",
+          "description": "Had illegal drugs in their possession.",
+          "sentence": "1 year in prison, 6 months probation",
+          "fine": "$2,500"
+        },
+        {
+          "charge": "public intoxication",
+          "description": "Got drunk in public and caused a disturbance.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on government property",
+          "description": "Entered government property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing the peace",
+          "description": "Disturbed the peace in a public area.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "reckless driving",
+          "description": "Drove recklessly and endangered others on the road.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "shoplifting",
+          "description": "Stole goods from a retail store.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "underage drinking",
+          "description": "Drank alcohol while under the legal drinking age.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on private property",
+          "description": "Entered private property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing a religious service",
+          "description": "Disturbed a religious service with loud noise or unruly behavior.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public urination",
+          "description": "Urinated in public.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "disorderly conduct at a sporting event",
+          "description": "Behaved in a disorderly manner at a sporting event.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "loitering",
+          "description": "Remained in a public area without a valid reason.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
           "charge": "murder",
           "description": "Killed a rival gang member.",
           "sentence": "20 years in prison, 5 years probation",
@@ -1789,7 +1878,7 @@ export default {
         {
           "charge": "kidnapping",
           "description": "Unlawfully abducted and held someone against their will.",
-          "sentence": "25 years in prison, 5 years probation",
+          "sentence": "5 years in prison, 5 years probation",
           "fine": "$100,000"
         },
         {
@@ -1801,13 +1890,13 @@ export default {
         {
           "charge": "arson",
           "description": "Intentionally set fire to a property.",
-          "sentence": "20 years in prison, 5 years probation",
+          "sentence": "8 years in prison, 5 years probation",
           "fine": "$75,000"
         },
         {
           "charge": "drug trafficking",
           "description": "Distributed illegal drugs.",
-          "sentence": "30 years in prison, 7 years probation",
+          "sentence": "9 years in prison, 7 years probation",
           "fine": "$500,000"
         },
         {
@@ -1819,19 +1908,19 @@ export default {
         {
           "charge": "sex trafficking",
           "description": "Used force or coercion to engage someone in prostitution.",
-          "sentence": "40 years in prison, 10 years probation",
+          "sentence": "10 years in prison, 10 years probation",
           "fine": "$1,000,000"
         },
         {
           "charge": "money laundering",
           "description": "Attempted to conceal the source of illegal funds.",
-          "sentence": "20 years in prison, 5 years probation",
+          "sentence": "7 years in prison, 5 years probation",
           "fine": "$250,000"
         },
         {
           "charge": "cybercrime",
           "description": "Committed a crime using a computer or the internet.",
-          "sentence": "15 years in prison, 4 years probation",
+          "sentence": "3 years in prison",
           "fine": "$50,000"
         },
         {
@@ -1873,25 +1962,13 @@ export default {
         {
           "charge": "kidnapping",
           "description": "Kidnapped and held a wealthy businessman for ransom.",
-          "sentence": "25 years in prison, 5 years probation",
+          "sentence": "8 years in prison, 5 years probation",
           "fine": "$500,000"
-        },
-        {
-          "charge": "manslaughter",
-          "description": "Caused the death of another person while driving under the influence.",
-          "sentence": "15 years in prison, 5 years probation",
-          "fine": "$100,000"
-        },
-        {
-          "charge": "money laundering",
-          "description": "Used a legitimate business to launder money from illegal activities.",
-          "sentence": "20 years in prison, 10 years probation",
-          "fine": "$1,000,000"
         },
         {
           "charge": "robbery",
           "description": "Robbed a bank at gunpoint.",
-          "sentence": "30 years in prison, 5 years probation",
+          "sentence": "8 years in prison, 5 years probation",
           "fine": "$250,000"
         },
         {
@@ -1905,11 +1982,467 @@ export default {
           "description": "Entered a restricted area without permission.",
           "sentence": "6 months in jail, 1 year probation",
           "fine": "$1,000"
+        },
+        {
+          "charge": "disorderly conduct",
+          "description": "Behaved in a disorderly manner in public.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "trespassing",
+          "description": "Entered private property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "vandalism",
+          "description": "Damaged public property.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "possession of drugs",
+          "description": "Had illegal drugs in their possession.",
+          "sentence": "1 year in prison, 6 months probation",
+          "fine": "$2,500"
+        },
+        {
+          "charge": "public intoxication",
+          "description": "Got drunk in public and caused a disturbance.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on government property",
+          "description": "Entered government property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing the peace",
+          "description": "Disturbed the peace in a public area.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "reckless driving",
+          "description": "Drove recklessly and endangered others on the road.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "shoplifting",
+          "description": "Stole goods from a retail store.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "underage drinking",
+          "description": "Drank alcohol while under the legal drinking age.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on private property",
+          "description": "Entered private property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing a religious service",
+          "description": "Disturbed a religious service with loud noise or unruly behavior.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public urination",
+          "description": "Urinated in public.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "disorderly conduct at a sporting event",
+          "description": "Behaved in a disorderly manner at a sporting event.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "loitering",
+          "description": "Remained in a public area without a valid reason.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "disorderly conduct",
+          "description": "Behaved in a disorderly manner in a bar.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "vandalism",
+          "description": "Spray-painted graffiti on a public wall.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "possession of marijuana",
+          "description": "Had marijuana in their possession.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public intoxication",
+          "description": "Got drunk and caused a disturbance at a concert.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on school property",
+          "description": "Entered school property after hours.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing the peace",
+          "description": "Got into a loud argument in a public park.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "reckless cycling",
+          "description": "Cycled recklessly on a pedestrian sidewalk.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "shoplifting",
+          "description": "Stole cosmetics from a drugstore.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "underage smoking",
+          "description": "Smoked cigarettes while under the legal smoking age.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on construction site",
+          "description": "Entered a construction site without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing a movie screening",
+          "description": "Talked loudly and disrupted a movie screening.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public indecency",
+          "description": "Exposed themselves in a public park.",
+          "sentence": "1 month in prison, 3 months probation",
+          "fine": "$750"
+        },
+        {
+          "charge": "disorderly conduct at a concert",
+          "description": "Behaved in a disorderly manner and caused a disturbance at a concert.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "loitering near a business",
+          "description": "Remained in front of a business without a valid reason.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "vandalism of a public restroom",
+          "description": "Destroyed property in a public restroom.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "possession of drug paraphernalia",
+          "description": "Had drug paraphernalia in their possession.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "trespassing in a park after hours",
+          "description": "Entered a park after it was closed to the public.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disorderly conduct at a concert",
+          "description": "Behaved in a disorderly manner at a concert.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "possession of drug paraphernalia",
+          "description": "Had items used for drug consumption in their possession.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "driving under the influence",
+          "description": "Drove a vehicle while under the influence of alcohol or drugs.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "vandalism of a mailbox",
+          "description": "Damaged a mailbox.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "failure to pay parking tickets",
+          "description": "Failed to pay multiple parking tickets.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "disturbing the peace at a movie theater",
+          "description": "Disturbed the peace at a movie theater.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "possession of stolen property",
+          "description": "Had stolen property in their possession.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "fraudulent use of a credit card",
+          "description": "Used someone else's credit card without permission.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "possession of a small amount of marijuana",
+          "description": "Had a small amount of marijuana in their possession.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "disorderly conduct at a public pool",
+          "description": "Behaved in a disorderly manner at a public pool.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "trespassing on a construction site",
+          "description": "Entered a construction site without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disorderly conduct at a bar",
+          "description": "Behaved in a disorderly manner at a bar.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "petty theft",
+          "description": "Stole items worth less than $500.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public intoxication at a festival",
+          "description": "Got drunk in public at a festival and caused a disturbance.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on school property",
+          "description": "Entered school property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "public indecency",
+          "description": "Exposed themselves in public.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "unauthorized use of a vehicle",
+          "description": "Used a vehicle without the owner's permission.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,500"
+        },
+        {
+          "charge": "trespassing on railroad tracks",
+          "description": "Entered railroad tracks without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "possession of drug paraphernalia",
+          "description": "Had drug paraphernalia in their possession.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "disorderly conduct at a concert",
+          "description": "Behaved in a disorderly manner at a concert.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "disturbing the peace at a bar",
+          "description": "Disturbed the peace at a bar.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "vandalism of a park bench",
+          "description": "Damaged a park bench.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "reckless bicycle riding",
+          "description": "Rode a bicycle recklessly on the road.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "possession of stolen property",
+          "description": "Had stolen property in their possession.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,500"
+        },
+        {
+          "charge": "trespassing on a construction site",
+          "description": "Entered a construction site without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disorderly conduct at a park",
+          "description": "Behaved in a disorderly manner at a park.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "shoplifting from a convenience store",
+          "description": "Stole goods from a convenience store.",
+          "sentence": "3 months in prison, 6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public intoxication at a parade",
+          "description": "Got drunk in public and caused a disturbance at a parade.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "disturbing the peace at a movie theater",
+          "description": "Disturbed the peace at a movie theater.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "failure to pay fines",
+          "description": "Failed to pay a fine that was previously imposed.",
+          "sentence": "1 month in jail",
+          "fine": "$500"
+        },
+        {
+          "charge": "disorderly conduct at a concert",
+          "description": "Behaved in a disorderly manner at a concert.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "vandalism of a vehicle",
+          "description": "Damaged a vehicle that did not belong to them.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "possession of drug paraphernalia",
+          "description": "Had drug-related items in their possession.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "public nudity",
+          "description": "Exposed their private parts in public.",
+          "sentence": "1 month in jail",
+          "fine": "$500"
+        },
+        {
+          "charge": "trespassing on school property",
+          "description": "Entered school property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing the peace at a park",
+          "description": "Disturbed the peace in a public park.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "reckless discharge of a firearm",
+          "description": "Discharged a firearm in a reckless manner.",
+          "sentence": "6 months in prison, 1 year probation",
+          "fine": "$2,000"
+        },
+        {
+          "charge": "petty theft",
+          "description": "Stole items that were of low value.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "public intoxication and disorderly conduct",
+          "description": "Got drunk in public and behaved in a disorderly manner.",
+          "sentence": "1 month in jail",
+          "fine": "$500"
+        },
+        {
+          "charge": "trespassing on railroad property",
+          "description": "Entered railroad property without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
+        },
+        {
+          "charge": "disturbing the peace at a movie theater",
+          "description": "Disturbed the peace at a movie theater.",
+          "sentence": "6 months probation",
+          "fine": "$1,000"
+        },
+        {
+          "charge": "failure to appear in court",
+          "description": "Failed to appear in court as required.",
+          "sentence": "1 month in jail",
+          "fine": "$500"
+        },
+        {
+          "charge": "underage smoking",
+          "description": "Smoked cigarettes while under the legal smoking age.",
+          "sentence": "1 month probation",
+          "fine": "$250"
+        },
+        {
+          "charge": "trespassing on a construction site",
+          "description": "Entered a construction site without permission.",
+          "sentence": "3 months probation",
+          "fine": "$500"
         }
       ];
       const record = [];
       const randomChances = Math.floor(Math.random() * 11);
-      if( randomChances >= 1){
+      if (randomChances >= 1) {
         const min = 1; // minimum number of crimes
         const max = Math.min(Math.floor(Math.random() * (crimes.length - min)) + min, 10); // maximum number of crimes, up to the length of the crimes array minus the minimum or 10, whichever is smaller
         const numCrimes = Math.floor(Math.random() * (max - min + 1)) + min; // generate a random number of crimes between min and max
@@ -1936,6 +2469,7 @@ export default {
 
           /******* Criminal *******/
           if (this.caseObj.criminalCharge === "murder") {
+            this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.murder[Math.floor(Math.random() * this.descriptions.murder.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.murder.slice(0, Math.floor(Math.random() * this.evidences.murder.length)));
@@ -1945,6 +2479,7 @@ export default {
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
 
           } else if (this.caseObj.criminalCharge === "theft") {
+            this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.theft[Math.floor(Math.random() * this.descriptions.theft.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.theft.slice(0, Math.floor(Math.random() * this.evidences.theft.length)));
@@ -1953,6 +2488,7 @@ export default {
             this.caseObj["fineSentences"] = this.generateSentences(3000, 20000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
           } else if (this.caseObj.criminalCharge === "fraud") {
+            this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.fraud[Math.floor(Math.random() * this.descriptions.fraud.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.fraud.slice(0, Math.floor(Math.random() * this.evidences.fraud.length)));
@@ -1961,6 +2497,7 @@ export default {
             this.caseObj["fineSentences"] = this.generateSentences(5000, 100000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
           } else if (this.caseObj.criminalCharge === "assault") {
+            this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.assault[Math.floor(Math.random() * this.descriptions.assault.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.assault.slice(0, Math.floor(Math.random() * this.evidences.assault.length)));
@@ -1971,6 +2508,7 @@ export default {
           }
           /******* Road *******/
           else if (this.caseObj.roadCharge === "dui") {
+            this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "driving under influence";
             this.caseObj["description"] = this.descriptions.dui[Math.floor(Math.random() * this.descriptions.dui.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.dui.slice(0, Math.floor(Math.random() * this.evidences.dui.length)));
@@ -1979,6 +2517,7 @@ export default {
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
           } else if (this.caseObj.roadCharge === "recklessDriving") {
+            this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "reckless driving";
             this.caseObj["description"] = this.descriptions.recklessDriving[Math.floor(Math.random() * this.descriptions.recklessDriving.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.recklessDriving.slice(0, Math.floor(Math.random() * this.evidences.recklessDriving.length)));
@@ -1987,6 +2526,7 @@ export default {
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
           } else if (this.caseObj.roadCharge === "drivingNoLicense") {
+            this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "driving w//o license";
             this.caseObj["description"] = this.descriptions.drivingNoLicense[Math.floor(Math.random() * this.descriptions.drivingNoLicense.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * this.evidences.drivingNoLicense.length)));
@@ -1998,6 +2538,7 @@ export default {
           /******* Traffic *******/
           else if (this.caseObj.trafficCharge === "traffic") {
             let randomNum = Math.floor(Math.random() * this.descriptions.traffic.length);
+            this.caseObj["type"] = "traffic infraction";
             this.caseObj["charge"] = "traffic";
             this.caseObj["description"] = this.descriptions.traffic[randomNum].description;
             this.caseObj["evidences"] = [this.evidences.traffic[randomNum]];
@@ -2008,6 +2549,7 @@ export default {
           }
           /******* Prison *******/
           else if (this.caseObj.prisonCharge === "fight") {
+            this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "fight";
             this.caseObj["description"] = this.descriptions.fight[Math.floor(Math.random() * this.descriptions.fight.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.fight.slice(0, Math.floor(Math.random() * this.evidences.fight.length)));
