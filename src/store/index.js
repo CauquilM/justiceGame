@@ -1687,6 +1687,7 @@ export default new Vuex.Store({
             state.chosenCase = payload;
         },
         SET_CASES(state, payload){
+            console.log("payload", payload);
             state.cases.push(payload)
         },
         SET_JUDGE_COMMENT(state, payload) {

@@ -2834,7 +2834,6 @@ export default {
     },
 
     generateCase(type) {
-      console.log("case", type);
       this.caseProperties[type].forEach(prop => {
         if (this.randomizationParams[prop]) {
           this.caseObj[prop] = this.randomizationParams[prop][Math.floor(Math.random() * this.randomizationParams[prop].length)];
@@ -2943,11 +2942,10 @@ export default {
       // Define case types
       const caseTypes = ['Criminal', 'Road', 'Prison', 'Traffic'];
 
-      for (let i = 0; i < 5; i++) {
-        console.log("devug", this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]))
+      /*for (let i = 0; i < 5; i++) {*/
         let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
         this.addGeneratedCase(generatedCase);
-      }
+      /*}*/
     }
   }
 }
