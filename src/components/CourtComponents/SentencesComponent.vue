@@ -7,17 +7,32 @@
           <p class="card-title"><i class="ti ti-gavel"/>Sentences</p>
         </div>
         <div class="col-xl-5 col-lg-12 col-md-12">
-          <b-form-checkbox class="sentences-switch" v-model="fake" switch size="lg">
+          <b-form-checkbox class="sentences-switch" v-model="customSentences" switch size="lg">
             Custom sentences
           </b-form-checkbox>
         </div>
       </div>
-      <div class="sentences-card-select-flex">
+      <div v-if="!customSentences" class="sentences-card-select-flex">
         <b-form-select v-if="chosenCase.type !== 'traffic infraction'" v-model="prisonSelected"
                        :options="chosenCase.prisonSentences"/>
         <b-form-select v-if="chosenCase.type !== 'traffic infraction'" v-model="probationSelected"
                        :options="chosenCase.probationSentences"/>
         <b-form-select v-model="fineSelected" :options="chosenCase.fineSentences"></b-form-select>
+        <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
+      </div>
+      <div v-if="customSentences" class="sentences-card-select-flex">
+        <b-input-group prepend="Prison">
+          <b-form-input v-model="prisonSelected"
+            min="0" max="30" type="number"/>
+        </b-input-group>
+        <b-input-group prepend="Probation">
+          <b-form-input v-model="probationSelected"
+            min="0" max="10" type="number"/>
+        </b-input-group>
+        <b-input-group prepend="Fines" append="$">
+          <b-form-input v-model="fineSelected" type="number"
+            min="0" max="5000"/>
+        </b-input-group>
         <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
       </div>
       <b-modal ref="sentencing-success-modal" centered hide-footer
@@ -47,7 +62,9 @@ import {eventBus} from '../../main';
 export default {
   name: 'SentenceComponent',
   data() {
-    return {}
+    return {
+      customSentences: false
+    }
   },
   computed: {
     ...mapState(["showAllSentences", "finalComment", "isDark", "chosenCase"]),

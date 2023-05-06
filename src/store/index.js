@@ -1653,7 +1653,7 @@ export default new Vuex.Store({
             }*/
         ],
         chosenCase: Object,
-        prisonSelected: '0',
+        prisonSelected: null,
         probationSelected: null,
         fineSelected: null,
         defenseComment: '',
@@ -1783,19 +1783,28 @@ export default new Vuex.Store({
             else {
                 if (state.fineSelected !== null){
                     const randomSentence = Math.floor(Math.random() * 3);
+                    if (state.prisonSelected === '0' || state.prisonSelected === null) {
+                        state.prisonSelected = "no time"
+
+                    }
+                    if (state.probationSelected === '0' || state.probationSelected === null) {
+                        state.probationSelected = "no time"
+                    }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
                     }
-
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
-                        then sentenced to a ${state.fineSelected} fine.`
+                        then sentenced to ${state.prisonSelected} in prison, ${state.probationSelected}
+                        of probation, and a ${state.fineSelected} fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to a ${state.fineSelected} fine as punishment for thoses infractions.`
+                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
+                        and a ${state.fineSelected} fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to a ${state.fineSelected} fine for thoses infractions.`
+                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
+                        and a ${state.fineSelected} fine for his crimes.`
                     }
                     eventBus.$emit('openSuccessModal');
                 }

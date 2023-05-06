@@ -32,7 +32,9 @@ export default {
       // Define randomization parameters
       randomizationParams: {
         'type': "",
-        'criminalCharge': ['murder', 'theft', 'fraud', 'assault'],
+        'criminalCharge': ['murder', 'theft', 'fraud', 'assault',
+          /*'cybercrime', 'identity theft', 'arson', 'kidnapping', 'bribery'*/
+        ],
         'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense'],
         'prisonCharge': ['fight'],
         'trafficCharge': ['traffic']
@@ -81,6 +83,146 @@ export default {
           {
             id: 9,
             description: "The suspect was arrested and charged with first-degree murder"
+          },
+          {
+            id: 10,
+            description: "The victim's body was found buried in a shallow grave in the woods"
+          },
+          {
+            id: 11,
+            description: "A witness reported seeing the suspect fleeing the scene covered in blood"
+          },
+          {
+            id: 12,
+            description: "The murder weapon, a knife, was found in the suspect's car"
+          },
+          {
+            id: 13,
+            description: "The victim's family members reported receiving threatening messages from the suspect prior to the murder"
+          },
+          {
+            id: 14,
+            description: "Security footage shows the suspect entering and leaving the victim's apartment on the night of the murder"
+          },
+          {
+            id: 15,
+            description: "The victim's body was found in a shallow grave in a remote area"
+          },
+          {
+            id: 16,
+            description: "The suspect was caught on CCTV leaving the crime scene shortly before the murder"
+          },
+          {
+            id: 17,
+            description: "The victim's fingerprints were found on the murder weapon"
+          },
+          {
+            id: 18,
+            description: "The victim's spouse has a history of domestic violence and was seen arguing with the victim before the murder"
+          },
+          {
+            id: 19,
+            description: "The victim's computer contained evidence of a financial dispute with the suspect"
+          },
+          {
+            id: 20,
+            description: "The suspect had a motive for the murder: the victim was about to expose the suspect's embezzlement"
+          },
+          {
+            id: 21,
+            description: "The victim's cause of death was determined to be poisoning"
+          },
+          {
+            id: 22,
+            description: "The victim's diary contained entries describing the suspect's threatening behavior"
+          },
+          {
+            id: 23,
+            description: "The suspect had a previous conviction for assault and had recently been released from prison"
+          },
+          {
+            id: 24,
+            description: "The victim's car was found abandoned in a nearby parking lot with signs of a struggle"
+          },
+          {
+            id: 25,
+            description: "The suspect's phone contained text messages planning the murder with an accomplice"
+          },
+          {
+            id: 26,
+            description: "The victim was found dead in their home, which had been ransacked"
+          },
+          {
+            id: 27,
+            description: "The victim was a witness in a high-profile case and had received death threats"
+          },
+          {
+            id: 28,
+            description: "The victim's family reported that they had been receiving threatening phone calls from the suspect"
+          },
+          {
+            id: 29,
+            description: "The suspect's fingerprints were found on a piece of evidence at the crime scene"
+          },
+          {
+            id: 30,
+            description: "The victim's body was discovered in a remote location, buried in a shallow grave"
+          },
+          {
+            id: 31,
+            description: "The victim was strangled with a scarf, which was found near the body"
+          },
+          {
+            id: 32,
+            description: "The suspect's fingerprints were found on a glass at the victim's home"
+          },
+          {
+            id: 33,
+            description: "The victim's car was stolen and found abandoned several miles away"
+          },
+          {
+            id: 34,
+            description: "The victim's spouse reported them missing and later confessed to the murder"
+          },
+          {
+            id: 35,
+            description: "The victim was a well-known public figure, and the murder gained national attention"
+          },
+          {
+            id: 36,
+            description: "The victim and the suspect were business partners, and the motive was believed to be financial gain"
+          },
+          {
+            id: 37,
+            description: "The suspect's shoes had blood on them that matched the victim's DNA"
+          },
+          {
+            id: 38,
+            description: "The victim's body was found in a hotel room, and surveillance footage showed the suspect entering and leaving the room"
+          },
+          {
+            id: 39,
+            description: "The victim was stabbed multiple times with a kitchen knife, which was found at the crime scene"
+          },
+          {
+            id: 40,
+            description: "The suspect was seen arguing with the victim shortly before the murder"
+          },
+          {
+            id: 41,
+            description: "The victim's cause of death was initially believed to be natural causes, but an autopsy revealed signs of foul play"
+          },
+          {
+            id: 42,
+            description: "The victim's body was found in a park, and a witness reported seeing the suspect in the area"
+          },
+          {
+            id: 43,
+            description: "The victim was poisoned with a lethal dose of cyanide"
+          },
+          {
+            id: 44,
+            description: "The suspect had a history of violent behavior and was known to carry a weapon"
           }
         ],
 
@@ -144,6 +286,186 @@ export default {
             id: 14,
             description: "The security cameras captured footage of the suspect stealing a watch from the jewelry store."
           },
+          {
+            id: 15,
+            description: "A company reported theft of several expensive pieces of equipment from their storage facility."
+          },
+          {
+            id: 16,
+            description: "The victim reported their car stolen from their driveway overnight."
+          },
+          {
+            id: 17,
+            description: "A student reported their backpack stolen from the classroom while they stepped out for a few minutes."
+          },
+          {
+            id: 18,
+            description: "The art museum reported a valuable painting missing from their exhibition."
+          },
+          {
+            id: 19,
+            description: "The victim reported their wallet stolen from their jacket pocket while riding the crowded train."
+          },
+          {
+            id: 20,
+            description: "The storage unit owner discovered several units broken into and items missing."
+          },
+          {
+            id: 21,
+            description: "A restaurant reported a group of diners leaving without paying their bill."
+          },
+          {
+            id: 22,
+            description: "The victim's bike was stolen from their garage overnight."
+          },
+          {
+            id: 23,
+            description: "A company reported theft of confidential documents and data from their office."
+          },
+          {
+            id: 24,
+            description: "The store manager noticed missing inventory and found an employee responsible for stealing the items."
+          },
+          {
+            id: 25,
+            description: "The victim reported their phone stolen from their bag while waiting in line at a crowded event."
+          },
+          {
+            id: 26,
+            description: "A customer reported their jewelry missing after leaving it on the dresser in their hotel room."
+          },
+          {
+            id: 27,
+            description: "The warehouse manager reported several shipments missing and signs of forced entry."
+          },
+          {
+            id: 28,
+            description: "A homeowner reported missing electronics and jewelry after a break-in while they were away on vacation."
+          },
+          {
+            id: 29,
+            description: "The victim's purse was stolen from their shopping cart while browsing at the grocery store."
+          },
+          {
+            id: 30,
+            description: "The victim's bike was stolen from their garage overnight."
+          },
+          {
+            id: 31,
+            description: "A customer reported their phone missing after leaving it on the table at a coffee shop."
+          },
+          {
+            id: 32,
+            description: "The store owner reported a shoplifting incident involving several expensive designer handbags."
+          },
+          {
+            id: 33,
+            description: "The victim's backpack was stolen while they were waiting for the bus."
+          },
+          {
+            id: 34,
+            description: "The construction site reported missing copper wiring and pipes from the site."
+          },
+          {
+            id: 35,
+            description: "A customer reported their wallet stolen from their purse while browsing in a clothing store."
+          },
+          {
+            id: 36,
+            description: "The victim's laptop was stolen from their car while parked at a restaurant."
+          },
+          {
+            id: 37,
+            description: "The department store reported a theft of several pieces of jewelry from the display case."
+          },
+          {
+            id: 38,
+            description: "A customer reported their watch stolen after leaving it in the locker room at the gym."
+          },
+          {
+            id: 39,
+            description: "The victim's purse was stolen from their office while they were away on a break."
+          },
+          {
+            id: 40,
+            description: "The electronics store reported a theft of several smartphones from the stock room."
+          },
+          {
+            id: 41,
+            description: "The victim's car was broken into and several items were stolen, including a GPS and sunglasses."
+          },
+          {
+            id: 42,
+            description: "The store manager noticed a shortage of merchandise and upon review of the surveillance footage, saw an employee stealing items."
+          },
+          {
+            id: 43,
+            description: "The victim's wallet was stolen from their backpack while they were at the library."
+          },
+          {
+            id: 44,
+            description: "The art museum reported a theft of a valuable painting from the exhibit."
+          },
+          {
+            id: 45,
+            description: "The company reported a case of embezzlement by one of their senior executives."
+          },
+          {
+            id: 46,
+            description: "The victim reported being physically assaulted by a stranger on their way home."
+          },
+          {
+            id: 47,
+            description: "The bank reported fraudulent activity on a customer's account, resulting in several unauthorized transactions."
+          },
+          {
+            id: 48,
+            description: "The school principal reported finding drugs in a student's locker and upon further investigation, discovered a drug ring operating within the school."
+          },
+          {
+            id: 49,
+            description: "The victim reported receiving threatening messages from an unknown number on their phone."
+          },
+          {
+            id: 50,
+            description: "The hospital reported a case of medical malpractice resulting in the death of a patient."
+          },
+          {
+            id: 51,
+            description: "The victim's apartment was broken into and vandalized with graffiti."
+          },
+          {
+            id: 52,
+            description: "The animal shelter reported a case of animal cruelty, with several dogs found malnourished and neglected."
+          },
+          {
+            id: 53,
+            description: "The victim reported their identity stolen and used to open fraudulent accounts and make unauthorized purchases."
+          },
+          {
+            id: 54,
+            description: "The museum reported a case of theft of several valuable paintings from their exhibit."
+          },
+          {
+            id: 55,
+            description: "The victim reported their car stolen from their driveway overnight."
+          },
+          {
+            id: 56,
+            description: "The victim reported being scammed out of thousands of dollars in an online investment scheme."
+          },
+          {
+            id: 57,
+            description: "The restaurant reported a case of food poisoning among several customers, resulting in hospitalizations."
+          },
+          {
+            id: 58,
+            description: "The victim reported being cyberstalked by an unknown individual, receiving harassing messages and threats online."
+          },
+          {
+            id: 59,
+            description: "The victim reported their home broken into and several valuable items, including jewelry and electronics, stolen."
+          }
         ],
 
         fraud: [
@@ -672,7 +994,139 @@ export default {
             description: "The defendant's alibi has been proven to be false",
             prosecutionSentence: "The defendant lied about their whereabouts at the time of the murder, indicating guilt.",
             defenseSentence: "The defendant may have simply been mistaken about their location and had no involvement in the crime."
-          }
+          },
+          {
+            id: 10,
+            description: "The defendant's car was seen leaving the scene of the crime shortly after the murder",
+            prosecutionSentence: "Eyewitnesses saw the defendant's car leaving the scene of the crime around the time of the murder, suggesting their involvement.",
+            defenseSentence: "The defendant's car may have been stolen or borrowed by someone else without their knowledge."
+          },
+          {
+            id: 11,
+            description: "A security camera captured footage of the defendant entering and leaving the victim's building on the day of the murder",
+            prosecutionSentence: "The security camera footage provides clear evidence that the defendant was at the scene of the crime.",
+            defenseSentence: "The defendant may have been visiting someone else in the building and had no involvement in the murder."
+          },
+          {
+            id: 12,
+            description: "The defendant had a history of conflict with the victim and had made threats against them in the past",
+            prosecutionSentence: "The defendant's prior threats and animosity towards the victim demonstrate a clear motive for the murder.",
+            defenseSentence: "The defendant's past conflicts with the victim do not prove that they committed the murder, and could be irrelevant to the current charges."
+          },
+          {
+            id: 13,
+            description: "A neighbor heard screams coming from the victim's apartment around the time of the murder",
+            prosecutionSentence: "The witness heard the victim's screams and believes they were coming from the defendant's apartment, indicating their involvement in the murder.",
+            defenseSentence: "The witness may have misheard or misinterpreted what they heard, or the screams could have come from someone else's apartment."
+          },
+          {
+            id: 14,
+            description: "The victim's blood was found on the defendant's clothing",
+            prosecutionSentence: "The presence of the victim's blood on the defendant's clothing is strong evidence that they were involved in the murder.",
+            defenseSentence: "The defendant may have come into contact with the victim's blood innocently, without any involvement in the murder."
+          },
+          {
+            id: 15,
+            description: "A witness saw the defendant disposing of a bag near the crime scene on the day of the murder",
+            prosecutionSentence: "The witness saw the defendant disposing of evidence near the crime scene, indicating their involvement in the murder.",
+            defenseSentence: "The bag could have contained something innocuous, and the defendant may have been disposing of it for unrelated reasons."
+          },
+          {
+            id: 16,
+            description: "Security footage shows the suspect entering and leaving the victim's house around the time of the murder",
+            prosecutionSentence: "The security footage clearly shows the suspect entering and leaving the victim's house around the time of the murder, providing strong evidence of their involvement.",
+            defenseSentence: "The security footage may not be clear enough to positively identify my client as the person in question, or could have been doctored or altered in some way."
+          },
+          {
+            id: 17,
+            description: "The suspect's financial records show a sudden influx of cash around the time of the murder",
+            prosecutionSentence: "The suspect's financial records indicate that they received a large sum of money around the time of the murder, providing a possible motive for the crime.",
+            defenseSentence: "The sudden influx of cash may have been due to other factors, such as an inheritance or legal settlement, and does not necessarily indicate guilt."
+          },
+          {
+            id: 18,
+            description: "The victim's blood was found on the suspect's clothing",
+            prosecutionSentence: "The presence of the victim's blood on the suspect's clothing is strong evidence that they were involved in the murder.",
+            defenseSentence: "The presence of the victim's blood on my client's clothing does not necessarily indicate guilt, as it could have been transferred innocently or accidentally."
+          },
+          {
+            id: 19,
+            description: "The suspect has a history of violent behavior towards others",
+            prosecutionSentence: "The suspect's past violent behavior towards others is a strong indicator that they may have committed the murder.",
+            defenseSentence: "The suspect's past violent behavior may not be relevant to the current charges and does not necessarily indicate guilt in this particular case."
+          },
+          {
+            id: 20,
+            description: "The suspect was caught on camera purchasing materials that could be used to commit the murder",
+            prosecutionSentence: "The video footage of the suspect purchasing materials that could be used to commit the murder is damning evidence of their guilt.",
+            defenseSentence: "The purchase of these materials does not necessarily indicate that my client used them to commit the murder, or that they were aware of their intended use."
+          },
+          {
+            id: 21,
+            description: "The victim's cell phone records show a call from the suspect around the time of the murder",
+            prosecutionSentence: "The victim's cell phone records provide strong evidence that the suspect was in contact with them around the time of the murder.",
+            defenseSentence: "The phone call may have been innocent in nature and does not necessarily indicate guilt in the murder."
+          },
+          {
+            id: 22,
+            description: "The suspect has a documented history of animosity towards the victim",
+            prosecutionSentence: "The suspect's documented history of animosity towards the victim provides a possible motive for the murder.",
+            defenseSentence: "The suspect's animosity towards the victim may have been unrelated to the murder and does not necessarily indicate guilt."
+          },
+          {
+            id: 23,
+            description: "The suspect's internet search history includes searches related to the murder weapon and method",
+            prosecutionSentence: "The suspect's internet search history is strong evidence that they were planning and preparing to commit the murder.",
+            defenseSentence: "The internet search history may not necessarily indicate guilt, as the suspect could have been researching these topics for other reasons."
+          },
+          {
+            id: 24,
+            description: "The defendant was seen purchasing the murder weapon at a local store",
+            prosecutionSentence: "We have surveillance footage of the defendant purchasing the murder weapon at a local store. This is clear evidence that they planned to commit the murder.",
+            defenseSentence: "Just because my client bought the weapon does not prove that they used it to commit the murder. They may have had a legitimate reason for purchasing it."
+          },
+          {
+            id: 25,
+            description: "The victim's blood was found on the defendant's clothing",
+            prosecutionSentence: "The presence of the victim's blood on the defendant's clothing is strong evidence that they were involved in the murder.",
+            defenseSentence: "The defendant may have come into contact with the victim's blood innocently, without any involvement in the crime. We need to investigate how the blood got there."
+          },
+          {
+            id: 26,
+            description: "The defendant's phone records show that they were in the area of the crime scene at the time of the murder",
+            prosecutionSentence: "The defendant's phone records clearly place them in the area of the crime scene at the time of the murder. This is strong evidence of their involvement.",
+            defenseSentence: "The defendant may have been in the area for legitimate reasons and had no involvement in the murder. We need to consider alternative explanations for their presence."
+          },
+          {
+            id: 27,
+            description: "The defendant has a history of violence and aggression towards the victim",
+            prosecutionSentence: "The defendant's history of violence towards the victim provides a clear motive for the murder.",
+            defenseSentence: "The defendant's prior behavior may not be relevant to the current charges and could be misinterpreted. We need to focus on the evidence directly related to the murder."
+          },
+          {
+            id: 28,
+            description: "The defendant's DNA was found under the victim's fingernails",
+            prosecutionSentence: "The presence of the defendant's DNA under the victim's fingernails is strong evidence that they were involved in a struggle with the victim during the murder.",
+            defenseSentence: "The defendant's DNA may have been transferred innocently, without any involvement in the crime. We need to investigate how it got there."
+          },
+          {
+            id: 29,
+            description: "The defendant had a financial motive for the murder",
+            prosecutionSentence: "The defendant stood to gain financially from the victim's death, providing a clear motive for the murder.",
+            defenseSentence: "Motive alone does not prove that my client committed the murder. We need to focus on the actual evidence related to the crime."
+          },
+          {
+            id: 30,
+            description: "A neighbor heard the defendant arguing with the victim shortly before the murder",
+            prosecutionSentence: "The neighbor's testimony places the defendant at the scene of the crime and indicates motive.",
+            defenseSentence: "Eyewitness testimony can be unreliable and subject to bias or error. We need to investigate whether there is any other evidence to support this claim."
+          },
+          {
+            id: 31,
+            description: "The defendant's car was seen leaving the scene of the crime shortly after the murder",
+            prosecutionSentence: "The defendant's car was seen leaving the scene of the crime shortly after the murder, providing strong evidence of their involvement.",
+            defenseSentence: "The defendant's car may have been in the area for legitimate reasons and had no involvement in the murder. We need to consider alternative explanations for its presence."
+          },
         ],
 
         theft: [
@@ -1612,6 +2066,12 @@ export default {
           value: `${numbers[2]} years`
         });
       } else if (!fineVariant && text === "traffic") {
+        result.push({
+          text: "Not available for this case",
+          value: "0",
+          disabled: true
+        });
+      } else {
         result.push({
           text: "Select a fine",
           value: null
@@ -2890,7 +3350,7 @@ export default {
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
           } else if (this.caseObj.roadCharge === "drivingNoLicense") {
             this.caseObj["type"] = "traffic crime";
-            this.caseObj["charge"] = "driving w//o license";
+            this.caseObj["charge"] = "driving w/o license";
             this.caseObj["description"] = this.descriptions.drivingNoLicense[Math.floor(Math.random() * this.descriptions.drivingNoLicense.length)].description;
             this.caseObj["evidences"] = this.shuffleArray(this.evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * this.evidences.drivingNoLicense.length)));
             this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
