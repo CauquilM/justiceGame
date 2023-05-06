@@ -35,8 +35,12 @@ export default {
         'criminalCharge': ['murder', 'theft', 'fraud', 'assault',
           /*'cybercrime', 'identity theft', 'arson', 'kidnapping', 'bribery'*/
         ],
-        'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense'],
-        'prisonCharge': ['fight'],
+        'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense',
+          /*'hitAndRun', 'speeding', 'dragRacing', 'drivingUnderSuspension', 'textingWhileDriving'*/
+        ],
+        'prisonCharge': ['fight', 'escape',
+          /*'assaultWithDeadlyWeapon', 'attempted', "hostage situation", 'manslaughter', 'drugTrafficking'*/
+        ],
         'trafficCharge': ['traffic']
         /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
       },
@@ -934,6 +938,188 @@ export default {
           {
             id: 14,
             description: "A gang of inmates staged a violent takeover of a cell block, injuring several prisoners and guards."
+          }
+        ],
+        escape: [
+          {
+            id: 0,
+            description: "A prisoner escaped from their cell by digging a tunnel with a spoon."
+          },
+          {
+            id: 1,
+            description: "During a prison transport, a prisoner managed to overpower the guards and escape from the vehicle."
+          },
+          {
+            id: 2,
+            description: "A prisoner escaped by climbing over the fence during outdoor recreation time."
+          },
+          {
+            id: 3,
+            description: "A prisoner escaped by hiding in a laundry cart and being wheeled out of the facility."
+          },
+          {
+            id: 4,
+            description: "A prisoner managed to pick the lock on their cell and escape through the ventilation system."
+          },
+          {
+            id: 5,
+            description: "A group of prisoners staged a riot as a diversion and several of them escaped during the chaos."
+          },
+          {
+            id: 6,
+            description: "A prisoner managed to forge documents and pose as a guard to escape the facility."
+          },
+          {
+            id: 7,
+            description: "A prisoner escaped by cutting through the bars on their cell using a hacksaw blade smuggled in by a visitor."
+          },
+          {
+            id: 8,
+            description: "A prisoner escaped by creating a distraction during mealtime and sneaking out of the cafeteria."
+          },
+          {
+            id: 9,
+            description: "A prisoner managed to bribe a guard and escape through a back exit of the facility."
+          },
+          {
+            id: 10,
+            description: "A prisoner escaped by stealing a guard's uniform and walking out of the facility disguised as a staff member."
+          },
+          {
+            id: 11,
+            description: "A prisoner escaped by tunneling under the perimeter fence using makeshift tools."
+          },
+          {
+            id: 12,
+            description: "A prisoner managed to escape by crawling through a ventilation duct and exiting through a rooftop hatch."
+          },
+          {
+            id: 13,
+            description: "A prisoner escaped by overpowering a guard and stealing their keys to unlock the cell doors."
+          },
+          {
+            id: 14,
+            description: "A prisoner managed to create a fake identity and pose as a visitor to escape from the facility."
+          },
+          {
+            id: 15,
+            description: "A prisoner escaped from a maximum-security prison by tunneling through the walls with a makeshift tool."
+          },
+          {
+            id: 16,
+            description: "An inmate escaped from prison by hiding in a laundry cart that was being taken out of the facility."
+          },
+          {
+            id: 17,
+            description: "A prisoner escaped from a transport van by picking the lock on their handcuffs and overpowering the guard."
+          },
+          {
+            id: 18,
+            description: "An inmate escaped from a low-security prison by walking out of an unlocked door during a prison-wide power outage."
+          },
+          {
+            id: 19,
+            description: "A prisoner escaped from a high-security prison by posing as a visitor and walking out the front gate."
+          },
+          {
+            id: 20,
+            description: "An inmate escaped from a prison by climbing over a fence during a recreation period."
+          },
+          {
+            id: 21,
+            description: "A prisoner escaped from a jail by creating a hole in the wall of their cell and crawling through it."
+          },
+          {
+            id: 22,
+            description: "An inmate escaped from a prison by stealing the keys to a guard's car and driving away from the facility."
+          },
+          {
+            id: 23,
+            description: "A prisoner escaped from a prison by sneaking into the garbage truck that was collecting trash from the facility."
+          },
+          {
+            id: 24,
+            description: "An inmate escaped from a jail by convincing the guard to unlock their cell and then overpowering them."
+          },
+          {
+            id: 25,
+            description: "A prisoner escaped from a prison by creating a fake ID and pretending to be a guard during a shift change."
+          },
+          {
+            id: 26,
+            description: "An inmate escaped from a low-security prison by walking away from a work detail and disappearing into the surrounding woods."
+          },
+          {
+            id: 27,
+            description: "A prisoner escaped from a jail by crawling through the ventilation system and exiting through a vent on the roof."
+          },
+          {
+            id: 28,
+            description: "An inmate escaped from a prison by posing as a maintenance worker and walking out the front gate."
+          },
+          {
+            id: 29,
+            description: "A prisoner escaped from a maximum-security prison by creating a hole in the ceiling of their cell and climbing out through it."
+          },
+          {
+            id: 30,
+            description: "The prisoner escaped from their cell by tunneling through the concrete wall using makeshift tools."
+          },
+          {
+            id: 31,
+            description: "The inmate managed to smuggle a hacksaw blade into the prison and used it to cut through the bars of their cell window."
+          },
+          {
+            id: 32,
+            description: "The prisoner escaped during a prison transport when their accomplices ambushed the guards and helped them break free."
+          },
+          {
+            id: 33,
+            description: "The inmate escaped from their cell by disabling the security cameras and picking the lock with a homemade lockpick."
+          },
+          {
+            id: 34,
+            description: "The prisoner managed to bribe a guard to leave their cell unlocked and then slipped out unnoticed."
+          },
+          {
+            id: 35,
+            description: "The inmate escaped during a prison riot when the guards were too busy trying to restore order."
+          },
+          {
+            id: 36,
+            description: "The prisoner escaped by disguising themselves as a guard and walking out of the prison through the front gate."
+          },
+          {
+            id: 37,
+            description: "The inmate managed to create a dummy using materials from their cell and then placed it in their bed to trick the guards during a headcount."
+          },
+          {
+            id: 38,
+            description: "The prisoner escaped by using a grappling hook to climb over the prison walls."
+          },
+          {
+            id: 39,
+            description: "The inmate managed to steal a guard's uniform and then walked out of the prison unnoticed during a shift change."
+          },
+          {
+            id: 40,
+            description: "The prisoner escaped by creating a diversion in the prison yard and then slipping out through a hole in the fence."
+          },
+          {
+            id: 41,
+            description: "The inmate managed to disable the electronic door locks using a hack and then escaped from their cell."
+          },
+          {
+            id: 42,
+            description: "The prisoner escaped by digging a tunnel under the prison using a spoon and other makeshift tools."
+          },
+          {
+            id: 43,
+            description: "The inmate managed to steal the keys from a guard and then unlocked their cell and walked out."
+          },
+          {
+            id: 44,
+            description: "The prisoner escaped by jumping over the prison walls using a makeshift trampoline made from a bedsheet."
           }
         ]
       },
@@ -1865,6 +2051,200 @@ export default {
             prosecutionSentence: "We have video evidence showing Inmate B pushing Inmate A down the stairs and causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
             defenseSentence: "Our client did not intend to cause harm and merely pushed Inmate A in self-defense. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
           }
+        ],
+        escape: [
+          {
+            id: 0,
+            description: "The guards discovered a tunnel leading from one of the prison cells to the outside.",
+            prosecutionSentence: "We found evidence that the defendant had been digging the tunnel for months and had been planning their escape.",
+            defenseSentence: "My client was not involved in the construction of the tunnel and had no knowledge of the escape plan."
+          },
+          {
+            id: 1,
+            description: "A prison guard reported seeing a rope made of bed sheets hanging from the prison walls.",
+            prosecutionSentence: "We found the defendant's fingerprints on the bed sheets used to make the rope and have evidence that they used it to escape.",
+            defenseSentence: "My client's fingerprints may have been on the bed sheets, but they were not involved in the escape and did not use the rope."
+          },
+          {
+            id: 2,
+            description: "The prison staff discovered a hole in the fence surrounding the prison yard.",
+            prosecutionSentence: "We have evidence that the defendant cut the hole in the fence to escape from the prison.",
+            defenseSentence: "My client did not cut the hole in the fence and was not involved in the escape plan."
+          },
+          {
+            id: 3,
+            description: "A witness reported seeing a group of inmates scaling the prison walls using makeshift ladders.",
+            prosecutionSentence: "We have video evidence of the defendant climbing the ladder and escaping from the prison.",
+            defenseSentence: "My client did not climb the ladder and was not involved in the escape plan."
+          },
+          {
+            id: 4,
+            description: "The guards discovered a prison uniform hidden in a trash can outside the prison.",
+            prosecutionSentence: "We have evidence that the defendant discarded their prison uniform to avoid being caught while escaping.",
+            defenseSentence: "My client did not discard their prison uniform and was not involved in the escape plan."
+          },
+          {
+            id: 5,
+            description: "A guard noticed that a cell door was unlocked during a routine check and upon further investigation, discovered that the inmate had escaped.",
+            prosecutionSentence: "We have evidence that the defendant picked the lock of their cell door and escaped from the prison.",
+            defenseSentence: "My client did not pick the lock of their cell door and was not involved in the escape plan."
+          },
+          {
+            id: 6,
+            description: "The prison staff discovered a hole in the roof of one of the cell blocks.",
+            prosecutionSentence: "We have evidence that the defendant cut the hole in the roof to escape from the prison.",
+            defenseSentence: "My client did not cut the hole in the roof and was not involved in the escape plan."
+          },
+          {
+            id: 7,
+            description: "A guard noticed that an inmate was missing during a routine head count.",
+            prosecutionSentence: "We have evidence that the defendant escaped from the prison during the time of the head count.",
+            defenseSentence: "My client did not escape from the prison during the head count and was not involved in the escape plan."
+          },
+          {
+            id: 8,
+            description: "The prison staff discovered a fake wall that had been built in one of the cells to hide an escape tunnel.",
+            prosecutionSentence: "We have evidence that the defendant built the fake wall and the escape tunnel to escape from the prison.",
+            defenseSentence: "My client did not build the fake wall or the escape tunnel and was not involved in the escape plan."
+          },
+          {
+            id: 9,
+            description: "A tunnel was discovered leading from one of the prison cells to the outside.",
+            prosecutionSentence: "The defendant and their accomplices spent months planning and constructing this tunnel in order to escape prison.",
+            defenseSentence: "My client had no involvement in the construction or planning of the tunnel and was unaware of its existence until it was discovered by prison authorities."
+          },
+          {
+            id: 10,
+            description: "A guard reported overhearing two inmates discussing their plans to escape during the recreation hour.",
+            prosecutionSentence: "The defendant was caught discussing their escape plan and clearly intended to follow through with it.",
+            defenseSentence: "My client was merely engaging in idle talk and had no actual plans to escape."
+          },
+          {
+            id: 11,
+            description: "A drone was found crashed inside the prison yard, carrying tools that could be used for an escape.",
+            prosecutionSentence: "The defendant used the drone to transport tools for their planned escape, and clearly intended to use them to break out of prison.",
+            defenseSentence: "My client had no involvement in the drone or its contents, and was not aware of its presence inside the prison yard."
+          },
+          {
+            id: 12,
+            description: "A prison guard reported finding a hidden stash of clothing and supplies in one of the cells, indicating an escape attempt.",
+            prosecutionSentence: "The defendant clearly had plans to escape and was actively gathering the necessary supplies and clothing to do so.",
+            defenseSentence: "My client had no knowledge of the hidden stash and was not involved in any escape attempt."
+          },
+          {
+            id: 13,
+            description: "An anonymous tip was received by prison authorities, warning of an upcoming escape attempt.",
+            prosecutionSentence: "The defendant was caught with materials indicating that they were preparing to escape, proving that the anonymous tip was accurate.",
+            defenseSentence: "My client was not involved in any escape attempt and the materials found on their person were innocent."
+          },
+          {
+            id: 14,
+            description: "A prisoner was caught on camera attempting to dig a hole in the wall of their cell.",
+            prosecutionSentence: "The defendant was clearly attempting to escape and was caught in the act.",
+            defenseSentence: "My client was not attempting to escape, but rather was using the tool to fix a loose piece of wall."
+          },
+          {
+            id: 15,
+            description: "A group of inmates were found with a makeshift ladder, clearly intended for use in an escape attempt.",
+            prosecutionSentence: "The defendants were caught with a ladder indicating their intention to escape from prison.",
+            defenseSentence: "My client had no knowledge of the ladder or the escape attempt, and was not involved in any way."
+          },
+          {
+            id: 16,
+            description: "A guard reported finding a note detailing an escape plan hidden in one of the prisoner's books.",
+            prosecutionSentence: "The note was found in the defendant's possession and clearly outlined an escape plan, proving their intention to break out of prison.",
+            defenseSentence: "My client had no knowledge of the note or the escape plan, and was not involved in any way."
+          },
+          {
+            id: 17,
+            description: "A prisoner was caught attempting to bribe a guard to aid in their escape.",
+            prosecutionSentence: "The defendant was caught in the act of attempting to bribe a guard to aid in their escape, clearly indicating their intention to break out of prison.",
+            defenseSentence: "My client was not attempting to bribe the guard, but rather was offering a small gift in exchange for a favor."
+          },
+          {
+            id: 18,
+            description: "During a routine cell check, a guard found a hole in the wall that appeared to have been recently made.",
+            prosecutionSentence: "The defendant was caught on camera using a makeshift tool to make a hole in the wall and was attempting to escape.",
+            defenseSentence: "My client was not involved in the attempted escape and had no knowledge of the hole in the wall."
+          },
+          {
+            id: 19,
+            description: "A set of prison clothes was found discarded outside the perimeter fence.",
+            prosecutionSentence: "The defendant was identified on surveillance footage wearing those clothes and attempting to escape.",
+            defenseSentence: "My client did not attempt to escape and had no involvement with the discarded clothes found outside the prison."
+          },
+          {
+            id: 20,
+            description: "A guard reported seeing the defendant climbing over the fence during the night shift.",
+            prosecutionSentence: "The defendant was caught on camera climbing over the fence and attempting to escape.",
+            defenseSentence: "My client was not involved in the attempted escape and had no intention of escaping the prison."
+          },
+          {
+            id: 21,
+            description: "A missing key was reported by a guard, and the defendant was found with the key in their possession.",
+            prosecutionSentence: "The defendant stole the key and was planning to use it to escape.",
+            defenseSentence: "My client found the key on the floor and intended to return it to the guard."
+          },
+          {
+            id: 22,
+            description: "A hole was discovered in the perimeter fence, and the defendant's DNA was found on a tool used to cut the fence.",
+            prosecutionSentence: "The defendant was caught on camera using the tool to cut the fence and was attempting to escape.",
+            defenseSentence: "My client did not attempt to escape and was not involved in cutting the fence."
+          },
+          {
+            id: 23,
+            description: "A group of inmates were found in possession of a map of the prison and a set of keys.",
+            prosecutionSentence: "The defendant was part of the group planning to use the map and keys to escape the prison.",
+            defenseSentence: "My client was not involved in planning an escape and did not possess the map or keys."
+          },
+          {
+            id: 24,
+            description: "A guard reported hearing unusual noises coming from the defendant's cell and found a hole in the floor.",
+            prosecutionSentence: "The defendant was caught on camera using a tool to make a hole in the floor and was attempting to escape.",
+            defenseSentence: "My client was not involved in attempting to escape and had no knowledge of the hole in the floor."
+          },
+          {
+            id: 25,
+            description: "A guard reported finding a rope made of bedsheets in the defendant's cell.",
+            prosecutionSentence: "The defendant was planning to use the rope to climb out of the window and escape.",
+            defenseSentence: "My client found the rope in their cell and intended to return it to the guard."
+          },
+          {
+            id: 26,
+            description: "A guard reported seeing the defendant with a bag of clothes that did not belong to them.",
+            prosecutionSentence: "The defendant stole the clothes and was planning to use them to disguise themselves and escape.",
+            defenseSentence: "My client found the bag of clothes and was planning to turn it in to the guard."
+          },
+          {
+            id: 27,
+            description: "During a routine check, the guard discovered a hole in the wall of one of the cells, which appeared to have been dug using a tool.",
+            prosecutionSentence: "The defendant was found with a shovel and digging materials in his cell. It is clear that he was planning to escape.",
+            defenseSentence: "My client was simply trying to make some home repairs in his cell. There is no evidence that he was planning to escape."
+          },
+          {
+            id: 28,
+            description: "The guard on duty heard a commotion in the cells and went to investigate. When he arrived, he found that the bars of one cell had been cut and the prisoner was missing.",
+            prosecutionSentence: "The defendant was found several miles from the prison, and had clearly been planning his escape for some time. We have evidence of his accomplices and their involvement in the escape.",
+            defenseSentence: "My client was simply in the wrong place at the wrong time. There is no evidence that he had any involvement in the escape, and we believe that he was framed by the real culprits."
+          },
+          {
+            id: 29,
+            description: "A guard noticed that one of the prisoners was missing during a head count. Upon closer inspection, it was discovered that he had tunneled his way out of the prison.",
+            prosecutionSentence: "The defendant was found outside of the prison walls with a shovel and a backpack full of supplies. He clearly had the intention of escaping and had planned it in advance.",
+            defenseSentence: "My client was simply trying to fix a leak in his cell and had no intention of escaping. He happened to have a shovel and supplies on hand, but that is only because he was using them for repairs."
+          },
+          {
+            id: 30,
+            description: "A prison guard noticed that one of the prisoners had been acting suspiciously for several days, and upon closer inspection, discovered that he had been using a homemade tool to pick the lock of his cell.",
+            prosecutionSentence: "The defendant was found with the tool in his possession and had clearly been planning his escape for some time. We have evidence that he had help from other inmates and that they were all involved in a larger escape plot.",
+            defenseSentence: "My client was simply trying to fix a broken lock in his cell, and the tool he used was the only thing he had on hand. There is no evidence that he was involved in any larger escape plot."
+          },
+          {
+            id: 31,
+            description: "A guard noticed that one of the windows in the cell block had been broken, and upon closer inspection, discovered that the prisoner had used a homemade tool to break the window and escape.",
+            prosecutionSentence: "The defendant was found several miles from the prison, and had clearly been planning his escape for some time. We have evidence that he had help from other inmates and that they were all involved in a larger escape plot.",
+            defenseSentence: "My client was simply trying to get some fresh air in his cell and had no intention of escaping. He happened to have a homemade tool on hand, but that is only because he had been using it for other purposes."
+          }
         ]
       },
 
@@ -2097,7 +2477,7 @@ export default {
       return result;
     },
 
-    generateCriminalRecord() {
+    generateCriminalRecord(chancesToHaveARecord = 7) {
       const crimes = [
         {
           "charge": "disorderly conduct",
@@ -2894,7 +3274,7 @@ export default {
       ];
       const record = [];
       const randomChances = Math.floor(Math.random() * 11);
-      if (randomChances >= 7) {
+      if (randomChances >= chancesToHaveARecord) {
         const min = 1; // minimum number of crimes
         const max = Math.min(Math.floor(Math.random() * (crimes.length - min)) + min, 5); // maximum number of crimes, up to the length of the crimes array minus the minimum or 10, whichever is smaller
         const numCrimes = Math.floor(Math.random() * (max - min + 1)) + min; // generate a random number of crimes between min and max
@@ -3295,7 +3675,7 @@ export default {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.murder[Math.floor(Math.random() * this.descriptions.murder.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.murder.slice(0, Math.floor(Math.random() * this.evidences.murder.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.murder.slice(0, Math.floor(Math.random() * this.evidences.murder.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(5, 20, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -3305,7 +3685,7 @@ export default {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.theft[Math.floor(Math.random() * this.descriptions.theft.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.theft.slice(0, Math.floor(Math.random() * this.evidences.theft.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.theft.slice(0, Math.floor(Math.random() * this.evidences.theft.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 10, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 20000, true);
@@ -3314,7 +3694,7 @@ export default {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.fraud[Math.floor(Math.random() * this.descriptions.fraud.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.fraud.slice(0, Math.floor(Math.random() * this.evidences.fraud.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.fraud.slice(0, Math.floor(Math.random() * this.evidences.fraud.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 10, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(5000, 100000, true);
@@ -3323,7 +3703,7 @@ export default {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
             this.caseObj["description"] = this.descriptions.assault[Math.floor(Math.random() * this.descriptions.assault.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.assault.slice(0, Math.floor(Math.random() * this.evidences.assault.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.assault.slice(0, Math.floor(Math.random() * this.evidences.assault.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -3334,7 +3714,7 @@ export default {
             this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "driving under influence";
             this.caseObj["description"] = this.descriptions.dui[Math.floor(Math.random() * this.descriptions.dui.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.dui.slice(0, Math.floor(Math.random() * this.evidences.dui.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.dui.slice(0, Math.floor(Math.random() * this.evidences.dui.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -3343,7 +3723,7 @@ export default {
             this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "reckless driving";
             this.caseObj["description"] = this.descriptions.recklessDriving[Math.floor(Math.random() * this.descriptions.recklessDriving.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.recklessDriving.slice(0, Math.floor(Math.random() * this.evidences.recklessDriving.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.recklessDriving.slice(0, Math.floor(Math.random() * this.evidences.recklessDriving.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -3352,7 +3732,7 @@ export default {
             this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "driving w/o license";
             this.caseObj["description"] = this.descriptions.drivingNoLicense[Math.floor(Math.random() * this.descriptions.drivingNoLicense.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * this.evidences.drivingNoLicense.length))).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.drivingNoLicense.slice(0, Math.floor(Math.random() * this.evidences.drivingNoLicense.length))).slice(0, 4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -3375,11 +3755,21 @@ export default {
             this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "fight";
             this.caseObj["description"] = this.descriptions.fight[Math.floor(Math.random() * this.descriptions.fight.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.fight.slice(0, Math.floor(Math.random() * this.evidences.fight.length))).slice(0,4);
-            this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.fight.slice(0, Math.floor(Math.random() * this.evidences.fight.length))).slice(0, 4);
+            this.caseObj["prisonSentences"] = this.generateSentences(1, 10, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
-            this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+          }
+          else if (this.caseObj.prisonCharge === "escape") {
+            this.caseObj["type"] = "prison case";
+            this.caseObj["charge"] = "escape";
+            this.caseObj["description"] = this.descriptions.escape[Math.floor(Math.random() * this.descriptions.escape.length)].description;
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.escape.slice(0, Math.floor(Math.random() * this.evidences.fight.length))).slice(0, 4);
+            this.caseObj["prisonSentences"] = this.generateSentences(3, 12, false, "prison");
+            this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+            this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
+            this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
           }
 
         } else {
@@ -3392,7 +3782,7 @@ export default {
 
     caseGeneration() {
       // Define case types
-      const caseTypes = ['Criminal', 'Road', 'Prison', 'Traffic'];
+      const caseTypes = ['Prison'];
 
       /*for (let i = 0; i < 5; i++) {*/
       let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
@@ -3402,3 +3792,22 @@ export default {
   }
 }
 </script>
+
+<!--
+{
+id: 0,
+description: "The antique store owner discovered a valuable artifact missing from their display case."
+},
+Generate 15 prison escape cases like in the examples, put them in objects not a function, continue from the last ID (0)-->
+
+<!--do 15 more continuing from you last ID (was 14)-->
+
+<!--{
+id: 0,
+description: "Two inmates were caught on camera fighting in the prison yard.",
+prosecutionSentence: "We have clear video evidence that the defendant initiated the fight and caused injuries to the victim.",
+defenseSentence: "My client acted in self-defense and only used necessary force to protect himself from the victim's aggression."
+},
+Generate 15 prison escape evidences like in the examples, put them in objects not a function, continue from the last ID (0)-->
+
+<!--do 15 more continuing from you last ID (was 14)-->
