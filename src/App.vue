@@ -3375,7 +3375,7 @@ export default {
             this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "fight";
             this.caseObj["description"] = this.descriptions.fight[Math.floor(Math.random() * this.descriptions.fight.length)].description;
-            this.caseObj["evidences"] = this.shuffleArray(this.evidences.fight.slice(0, Math.floor(Math.random() * this.evidences.fight.length),5)).slice(0,4);
+            this.caseObj["evidences"] = this.shuffleArray(this.evidences.fight.slice(0, Math.floor(Math.random() * this.evidences.fight.length))).slice(0,4);
             this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
