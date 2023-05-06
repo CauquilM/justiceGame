@@ -9,6 +9,7 @@
         <SentenceComponent/>
 
         <CourtBarComponent/>
+        <CriminalRecord/>
       </div>
 
       <div class="others-div">
@@ -34,10 +35,12 @@ import ProsecutionComponent from "@/components/CourtComponents/ProsecutionCompon
 import {mapActions} from "vuex";
 import AllProvesComponent from "@/components/CourtComponents/AllProvesComponent.vue";
 import CourtBarComponent from "@/components/CourtComponents/CourtBarComponent.vue";
+import CriminalRecord from "@/components/CourtComponents/CriminalRecord.vue";
 
 export default {
   name: 'HomeView',
   components: {
+    CriminalRecord,
     CourtBarComponent,
     AllProvesComponent,
     ProsecutionComponent, DescriptionComponent, DefenseComponent, SentenceComponent, JudgeComponent

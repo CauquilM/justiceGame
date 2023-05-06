@@ -6,39 +6,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        /*use the pattern and generate 3 witnesses for this case =>*/
-        /*{
-            name: "Lisa Hernandez",
-                age: 52,
-            job: "Art Historian",
-            testimony: [
-            {
-                question: "What can you tell us about the painting that was stolen?",
-                answers: [
-                    "It was a rare work by a famous artist, valued at over $1 million.",
-                    "I don't know much about it. I'm not really a specialist in that area."
-                ]
-            },
-            {
-                question: "What do you think of the security at the museum?",
-                answers: [
-                    "I think it's pretty tight. It's unlikely that someone could have just walked in and stolen a painting.",
-                    "I think there are some serious flaws in the security system. It's not hard for a determined thief to get in."
-                ]
-            },
-            {
-                question: "Do you have any information that could help us identify the thief?",
-                answers: [
-                    "No, I'm afraid not. I wish I could be more helpful.",
-                    "Yes, I saw a suspicious-looking man leaving the museum shortly after the theft occurred."
-                ]
-            }
-        ]
-        }*/
         cases: [
-            {
+            // TEMPLATE, DO NOT ERASE
+            /*{
                 id: 0,
-                type: "Criminal",
+                type: "criminal",
+                charge: "theft",
                 description: "Theft of a valuable painting",
                 suspect: {
                     name: "John Smith",
@@ -183,7 +156,7 @@ export default new Vuex.Store({
                         ]
                     }
                 ],
-                /* Punishments */
+                /!* Punishments *!/
                 prisonSentences: [
                     {
                         value: null,
@@ -250,13 +223,16 @@ export default new Vuex.Store({
                         text: "$500,000"
                     }
                 ],
-                /* End of punishments */
+                /!* End of punishments *!/
 
                 actualOutcome: "Guilty"
-            },
-            {
+            },*/
+
+            // YOU CAN ERASE
+            /*{
                 id: 1,
-                type: "Criminal",
+                type: "criminal",
+                charge: "llegal entrance",
                 description: "Breaking and entering into a jewelry store",
                 suspect: {
                     name: "Sarah Davis",
@@ -441,7 +417,8 @@ export default new Vuex.Store({
             },
             {
                 id: 2,
-                type: "Fraud",
+                type: "criminal",
+                charge: "fraud",
                 description: "Embezzlement of company funds",
                 suspect: {
                     name: "John Smith",
@@ -626,7 +603,8 @@ export default new Vuex.Store({
             },
             {
                 id: 3,
-                type: "Assault",
+                type: "criminal",
+                charge: "assault",
                 description: "Physical assault against a coworker",
                 suspect: {
                     name: "Robert Johnson",
@@ -781,8 +759,9 @@ export default new Vuex.Store({
                 actualOutcome: "Guilty"
             },
             {
+                type: "criminal",
                 id: 4,
-                type: "Theft",
+                charge: "theft",
                 description: "Alleged theft of a valuable piece of jewelry",
                 suspect: {
                     name: "Maria Rodriguez",
@@ -882,10 +861,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
-
             {
                 id: 5,
-                type: "Forgery",
+                type: "criminal",
+                charge: "forgery",
                 description: "Alleged forgery of a signature on a legal document",
                 suspect: {
                     name: "John Smith",
@@ -985,10 +964,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
-
             {
                 id: 6,
-                type: "Burglary",
+                type: "criminal",
+                charge: "burglary",
                 description: "A home was burglarized and several valuable items were stolen",
                 suspect: {
                     name: "Alex Johnson",
@@ -1088,10 +1067,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Not Guilty"
             },
-
             {
                 id: 7,
-                type: "Assault",
+                type: "criminal",
+                charge: "assault",
                 description: "A man was attacked in a parking lot and suffered serious injuries",
                 suspect: {
                     name: "Emily Rodriguez",
@@ -1191,10 +1170,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty, sentenced to 3 years in prison and 2 years of probation, and fined $5,000."
             },
-
             {
                 id: 8,
-                type: "Assault",
+                type: "criminal",
+                charge: "assault",
                 description: "A man was found with serious injuries following an altercation outside a nightclub",
                 suspect: {
                     name: "Jack Wilson",
@@ -1294,10 +1273,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: null
             },
-
             {
                 id: 9,
-                type: "Robbery",
+                type: "criminal",
+                charge: "robbery",
                 description: "A convenience store was robbed at gunpoint",
                 suspect: {
                     name: "Mark Davis",
@@ -1391,10 +1370,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
-
             {
                 id: 10,
-                type: "Spying",
+                type: "criminal",
+                charge: "spying",
                 description: "A private investigator is suspected of spying on a client's ex-spouse for personal gain.",
                 suspect: {
                     name: "John Smith",
@@ -1488,10 +1467,10 @@ export default new Vuex.Store({
                 ],
                 actualOutcome: "Guilty"
             },
-
             {
                 id: 11,
-                type: "Treason",
+                type: "historical",
+                charge: "treason",
                 description: "Plotting against the British Crown, 1783",
                 suspect: {
                     name: "George Washington",
@@ -1671,10 +1650,10 @@ export default new Vuex.Store({
                     }
                 ],
                 actualOutcome: "Not guilty"
-            }
+            }*/
         ],
         chosenCase: Object,
-        prisonSelected: '0',
+        prisonSelected: null,
         probationSelected: null,
         fineSelected: null,
         defenseComment: '',
@@ -1682,6 +1661,7 @@ export default new Vuex.Store({
         judgeComment: '',
         showAllSentences: false,
         showCourtBar: false,
+        showCriminalRecord: false,
         witnessChose: Object,
         finalComment: '',
         isDark: true
@@ -1689,7 +1669,6 @@ export default new Vuex.Store({
 
     getters: {
         getPrisonSelected: (state) => {
-            console.log(state.prisonSelected);
             return state.prisonSelected;
         },
         getProbationSelected: (state) => {
@@ -1707,6 +1686,10 @@ export default new Vuex.Store({
         SET_CHOSEN_CASE(state, payload) {
             state.chosenCase = payload;
         },
+        SET_CASES(state, payload){
+            console.log("payload", payload);
+            state.cases.push(payload)
+        },
         SET_JUDGE_COMMENT(state, payload) {
             state.judgeComment = payload;
         },
@@ -1718,6 +1701,9 @@ export default new Vuex.Store({
         },
         SET_SHOW_COURT_BAR(state) {
             state.showCourtBar === true ? state.showCourtBar = false : state.showCourtBar = true;
+        },
+        SET_SHOW_CRIMINAL_RECORD(state) {
+            state.showCriminalRecord === true ? state.showCriminalRecord = false : state.showCriminalRecord = true;
         },
         SET_PRISON_SELECTED(state, payload) {
             state.prisonSelected = payload;
@@ -1743,6 +1729,10 @@ export default new Vuex.Store({
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
         },
+        addGeneratedCase({ state, commit }, cases){
+            commit("SET_CASES", cases);
+            console.log("cases from store: ", state.cases)
+        },
         playerDecision({dispatch, commit}, decision) {
             if (decision === "guilty") {
                 commit("SET_JUDGE_COMMENT", "The suspect is recognized guilty, let's proceed to the sentencing");
@@ -1759,34 +1749,68 @@ export default new Vuex.Store({
             eventBus.$emit('openNotGuiltyModal');
         },
         doSentencing({state}) {
-            if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
-                const randomSentence = Math.floor(Math.random() * 3);
-                if (state.prisonSelected === '0') {
-                    state.prisonSelected = "no time"
+            if (state.chosenCase.type !== "traffic infraction"){
+                if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
+                    const randomSentence = Math.floor(Math.random() * 3);
+                    if (state.prisonSelected === '0') {
+                        state.prisonSelected = "no time"
 
-                }
-                if (state.probationSelected === '0') {
-                    state.probationSelected = "no time"
-                }
-                if (state.fineSelected === '0') {
-                    state.fineSelected = "no "
-                }
-                if (randomSentence === 0) {
-                    state.finalComment = `The defendant has been recognized guilty of their crimes and
-          then sentenced to ${state.prisonSelected} in prison, ${state.probationSelected}
-          of probation, and a ${state.fineSelected} fine.`
-                } else if (randomSentence === 1) {
-                    state.finalComment = `After a fair trial, the defendant has been sentenced
-          to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
-          and a ${state.fineSelected} fine as punishment for their actions.`
+                    }
+                    if (state.probationSelected === '0') {
+                        state.probationSelected = "no time"
+                    }
+                    if (state.fineSelected === '0') {
+                        state.fineSelected = "no "
+                    }
+                    if (randomSentence === 0) {
+                        state.finalComment = `The defendant has been recognized guilty and
+                        then sentenced to ${state.prisonSelected} in prison, ${state.probationSelected}
+                        of probation, and a ${state.fineSelected} fine.`
+                    } else if (randomSentence === 1) {
+                        state.finalComment = `After a fair trial, the defendant has been sentenced
+                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
+                        and a ${state.fineSelected} fine as punishment for his actions.`
+                    } else {
+                        state.finalComment = `In a strict judgement, the defendant has been sentenced
+                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
+                        and a ${state.fineSelected} fine for his crimes.`
+                    }
+                    eventBus.$emit('openSuccessModal');
                 } else {
-                    state.finalComment = `In a strict judgement, the defendant has been sentenced
-          to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
-          and a ${state.fineSelected} fine for their crimes.`
+                    eventBus.$emit('openSentencingFailModal');
                 }
-                eventBus.$emit('openSuccessModal');
-            } else {
-                eventBus.$emit('openSentencingFailModal');
+            }
+            else {
+                if (state.fineSelected !== null){
+                    const randomSentence = Math.floor(Math.random() * 3);
+                    if (state.prisonSelected === '0' || state.prisonSelected === null) {
+                        state.prisonSelected = "no time"
+
+                    }
+                    if (state.probationSelected === '0' || state.probationSelected === null) {
+                        state.probationSelected = "no time"
+                    }
+                    if (state.fineSelected === '0') {
+                        state.fineSelected = "no "
+                    }
+                    if (randomSentence === 0) {
+                        state.finalComment = `The defendant has been recognized guilty and
+                        then sentenced to ${state.prisonSelected} in prison, ${state.probationSelected}
+                        of probation, and a ${state.fineSelected} fine.`
+                    } else if (randomSentence === 1) {
+                        state.finalComment = `After a fair trial, the defendant has been sentenced
+                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
+                        and a ${state.fineSelected} fine as punishment for his actions.`
+                    } else {
+                        state.finalComment = `In a strict judgement, the defendant has been sentenced
+                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
+                        and a ${state.fineSelected} fine for his crimes.`
+                    }
+                    eventBus.$emit('openSuccessModal');
+                }
+                else{
+                    eventBus.$emit('openSentencingFailModal');
+                }
             }
         },
         displayCommentsOnEvidence({state}, evidenceIndex) {
@@ -1797,6 +1821,9 @@ export default new Vuex.Store({
             if (state.showAllSentences === true) {
                 commit("SET_SHOW_SENTENCES");
             }
+            if (state.showCriminalRecord === true) {
+                commit("SET_SHOW_CRIMINAL_RECORD");
+            }
             commit("SET_WITNESS_CHOSE", witness);
             console.log(witness)
             commit("SET_SHOW_COURT_BAR");
@@ -1805,8 +1832,20 @@ export default new Vuex.Store({
             if (state.showCourtBar === true) {
                 commit("SET_SHOW_COURT_BAR");
             }
+            if (state.showCriminalRecord === true) {
+                commit("SET_SHOW_CRIMINAL_RECORD");
+            }
             commit("SET_SHOW_SENTENCES");
             eventBus.$emit('closeGuiltyModal');
+        },
+        showCriminalRecord({state, commit}) {
+            if (state.showAllSentences === true) {
+                commit("SET_SHOW_SENTENCES");
+            }
+            if (state.showCourtBar === true) {
+                commit("SET_SHOW_COURT_BAR");
+            }
+            commit("SET_SHOW_CRIMINAL_RECORD");
         },
         modifyPrisonSelected({commit}, prison) {
             console.log("coucou", prison);
@@ -1823,6 +1862,6 @@ export default new Vuex.Store({
         },
         refreshPage() {
             window.location.reload();
-        }
+        },
     },
 })

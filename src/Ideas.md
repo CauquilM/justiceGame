@@ -1,14 +1,11 @@
 ## Proposed Features for a Legal Simulation Game
 
 ### Soon
-1. Make prisoners parole cases 
-2. Make prison related cases
-3. Procedural generation: Use procedural generation to create an endless amount of cases for players to experience.
-4. Jury system: Introduce a jury system where the player must persuade a group of jurors to side with their decision.
-5. Public opinion: Introduce a system where the player's decisions affect their public approval rating.
-6. Judge's chambers: Add a feature where players can interact with their clerk or other characters in their judge's
+1. Jury system: Introduce a jury system where the player must persuade a group of jurors to side with their decision.
+2. Public opinion: Introduce a system where the player's decisions affect their public approval rating.
+3. Judge's chambers: Add a feature where players can interact with their clerk or other characters in their judge's
    chambers.
-7. Pre-trial negotiations: Add pre-trial negotiations where the player must work with both the prosecution and defense
+4. Pre-trial negotiations: Add pre-trial negotiations where the player must work with both the prosecution and defense
    to come to a plea agreement.
 
 ### Later

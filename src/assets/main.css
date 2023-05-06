@@ -66,9 +66,11 @@
 }
 
 /*************************** Sentences ***************************/
+
 .sentences-card > .card {
     border-color: orange;
     margin-top: 20px;
+    min-width: 700px;
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex {
@@ -94,6 +96,15 @@
     margin-bottom: 10px;
 }
 
+.sentences-switch > .custom-control-input:checked~.custom-control-label::before{
+    background-color: red;
+}
+
+/*.custom-switch.b-custom-control-lg .custom-control-label::after{
+    background-image: url("@/assets/hammer.png");
+    background-size: 100% 100% !important;
+}*/
+
 /*************************** Court Bar ***************************/
 .court-bar {
     max-width: 40%;
@@ -106,6 +117,39 @@
 
 .witness-questions-buttons {
     margin: 15px 0;
+}
+
+/*************************** Criminal Record ***************************/
+.criminal-record-card > .card {
+    border-color: wheat;
+}
+
+.criminal-record-overflow {
+    overflow-y: scroll;
+    height: 28vh;
+}
+
+.criminal-record-overflow >  .criminal-record-subcard {
+    border-color: white;
+    margin: 15px 5% 20px 5%;
+}
+
+.criminal-record-overflow::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.criminal-record-overflow::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.criminal-record-overflow::-webkit-scrollbar-thumb {
+    background: wheat;
+    border-radius: 10px;
+}
+
+.wheat-proof{
+    text-decoration: underline wheat;
 }
 
 /*************************** Defense ***************************/
@@ -149,7 +193,9 @@
     border-radius: 10px;
 }
 
-
+.evidence-proof{
+    text-decoration: underline chocolate;
+}
 
 /**************************** Witenesses ****************************/
 
@@ -190,12 +236,13 @@
     }
 
     .sentences-card > .card {
-        margin: unset;
+        margin: 0 5%;
+        min-width: unset;
     }
 
     .sentences-card > .card > .card-body > .sentences-card-select-flex {
         flex-direction: column;
-        margin: 0;
+        margin: 0 10%;
         align-items: center;
     }
 

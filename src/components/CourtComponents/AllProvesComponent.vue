@@ -3,6 +3,7 @@
     <b-card :class="isDark ?'bg-dark text-light' : ''">
       <p class="card-title"><i class="ti ti-folders"/>Proves</p>
       <div class="evidence-overflow">
+        <p class="wheat-proof" @click="showCriminalRecord" v-if="chosenCase.criminalRecord.length > 0">Criminal Record</p>
         <EvidencesComponent/>
         <WitnessesComponent/>
       </div>
@@ -10,7 +11,7 @@
   </div>
 </template>
 <script>
-  import {mapState} from "vuex";
+import {mapActions, mapState} from "vuex";
   import EvidencesComponent from "@/components/CourtComponents/EvidencesComponent.vue";
   import WitnessesComponent from "@/components/CourtComponents/WitnessesComponent.vue";
 
@@ -19,6 +20,9 @@
     components: {WitnessesComponent, EvidencesComponent},
     computed: {
       ...mapState(["chosenCase", "isDark"])
+    },
+    methods: {
+      ...mapActions(["showCriminalRecord"])
     }
   }
 </script>
