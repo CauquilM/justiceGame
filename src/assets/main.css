@@ -66,9 +66,11 @@
 }
 
 /*************************** Sentences ***************************/
+
 .sentences-card > .card {
     border-color: orange;
     margin-top: 20px;
+    min-width: 700px;
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex {
@@ -93,6 +95,15 @@
     width: 100%;
     margin-bottom: 10px;
 }
+
+.sentences-switch > .custom-control-input:checked~.custom-control-label::before{
+    background-color: red;
+}
+
+/*.custom-switch.b-custom-control-lg .custom-control-label::after{
+    background-image: url("@/assets/hammer.png");
+    background-size: 100% 100% !important;
+}*/
 
 /*************************** Court Bar ***************************/
 .court-bar {

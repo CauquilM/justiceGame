@@ -1554,12 +1554,9 @@ export default {
       const numbers = [];
 
       if (!fineVariant) {
-        for (let j = 0; j < 3; j++) {
-          numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
-          if (numbers[j] === numbers[j - 1]) {
-            numbers[j] += 5;
-          }
-        }
+        numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
+        numbers.push(Math.floor(Math.random() * (max - numbers[0] - 2 + 1)) + min);
+        numbers.push(Math.floor(Math.random() * (max - numbers[1] - 3 + 1)) + numbers[1] + 3);
       } else if (fineVariant && text === "traffic") {
         for (let j = 0; j < 3; j++) {
           numbers.push(Math.floor(Math.random() * (1500 - 90)) + 90);
@@ -1615,11 +1612,6 @@ export default {
           value: `${numbers[2]} years`
         });
       } else if (!fineVariant && text === "traffic") {
-        result.push({
-          text: "Not available for this case",
-          value: "0",
-        });
-      } else {
         result.push({
           text: "Select a fine",
           value: null
@@ -2943,8 +2935,8 @@ export default {
       const caseTypes = ['Criminal', 'Road', 'Prison', 'Traffic'];
 
       /*for (let i = 0; i < 5; i++) {*/
-        let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
-        this.addGeneratedCase(generatedCase);
+      let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
+      this.addGeneratedCase(generatedCase);
       /*}*/
     }
   }
