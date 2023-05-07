@@ -126,7 +126,7 @@
 
 .criminal-record-overflow {
     overflow-y: scroll;
-    height: 28vh;
+    height: 22vh;
 }
 
 .criminal-record-overflow >  .criminal-record-subcard {
