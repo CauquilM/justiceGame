@@ -1805,5 +1805,159 @@
       "prosecutionSentence": "The defendant was found several miles from the prison, and had clearly been planning his escape for some time. We have evidence that he had help from other inmates and that they were all involved in a larger escape plot.",
       "defenseSentence": "My client was simply trying to get some fresh air in his cell and had no intention of escaping. He happened to have a homemade tool on hand, but that is only because he had been using it for other purposes."
     }
-  ]
+  ],
+  "assaultWithDeadlyWeapon": [
+    {
+      "id": 0,
+      "description": "The victim suffered a laceration on their face from being attacked with a homemade knife.",
+      "prosecutionSentence": "We have witness testimony and video evidence showing the defendant making the weapon and using it to attack the victim.",
+      "defenseSentence": "My client was acting in self-defense and did not intend to cause such serious injury."
+    },
+    {
+      "id": 1,
+      "description": "The victim was found unconscious with multiple stab wounds in their cell.",
+      "prosecutionSentence": "We have DNA evidence linking the defendant to the scene and witness testimony placing them near the victim's cell around the time of the attack.",
+      "defenseSentence": "My client had no motive to harm the victim and was in a different part of the prison at the time of the attack."
+    },
+    {
+      "id": 2,
+      "description": "The victim sustained severe head trauma from being struck with a metal object.",
+      "prosecutionSentence": "We have security footage showing the defendant entering the victim's cell with a metal object and leaving shortly after with blood on their hands.",
+      "defenseSentence": "My client was coerced by other inmates into committing the assault and did not act of their own accord."
+    },
+    {
+      "id": 3,
+      "description": "The victim was attacked in the prison yard with a sharpened toothbrush.",
+      "prosecutionSentence": "We have witness testimony identifying the defendant as the attacker and surveillance footage showing them discarding the weapon after the attack.",
+      "defenseSentence": "My client was acting in self-defense and used the toothbrush to fend off an aggressor."
+    },
+    {
+      "id": 4,
+      "description": "The victim sustained a broken arm from being hit with a metal pipe.",
+      "prosecutionSentence": "We have video evidence showing the defendant attacking the victim with the pipe and witness testimony placing them at the scene of the crime.",
+      "defenseSentence": "My client was under duress from other inmates and did not have control over their actions."
+    },
+    {
+      "id": 5,
+      "description": "The victim was slashed with a razor blade during an altercation in the mess hall.",
+      "prosecutionSentence": "We have witness testimony identifying the defendant as the attacker and medical records showing that the victim required stitches for their wounds.",
+      "defenseSentence": "My client was defending themselves against an aggressor and did not intend to cause serious harm."
+    },
+    {
+      "id": 6,
+      "description": "The victim suffered a fractured skull from being struck with a metal tray.",
+      "prosecutionSentence": "We have surveillance footage showing the defendant attacking the victim with the tray and witness testimony placing them at the scene of the crime.",
+      "defenseSentence": "My client was provoked by the victim and acted in the heat of the moment without intending to cause such serious injury."
+    },
+    {
+      "id": 7,
+      "description": "The victim sustained a puncture wound from being stabbed with a sharpened pen.",
+      "prosecutionSentence": "We have DNA evidence linking the defendant to the pen and witness testimony placing them at the scene of the attack.",
+      "defenseSentence": "My client was defending themselves against an unprovoked attack and did not intend to cause such serious injury."
+    },
+    {
+      "id": 8,
+      "description": "The victim was found in their cell with multiple stab wounds and a makeshift knife was discovered nearby.",
+      "prosecutionSentence": "The defendant was seen arguing with the victim earlier in the day and their DNA was found on the knife.",
+      "defenseSentence": "My client was not in the victim's cell at the time of the assault and their DNA could have been transferred through other means."
+    },
+    {
+      "id": 9,
+      "description": "Surveillance footage captured the defendant approaching the victim with a sharpened toothbrush.",
+      "prosecutionSentence": "The defendant had a motive for the assault and the weapon was found in their possession.",
+      "defenseSentence": "The footage is inconclusive and the weapon could have been planted by other inmates."
+    },
+    {
+      "id": 10,
+      "description": "The victim suffered serious injuries after being hit on the head with a metal tray during a fight in the mess hall.",
+      "prosecutionSentence": "Multiple witnesses saw the defendant strike the victim and their fingerprints were found on the tray.",
+      "defenseSentence": "My client was acting in self-defense and did not intend to cause serious harm."
+    },
+    {
+      "id": 11,
+      "description": "The victim was attacked in the yard with a sharpened piece of metal that was later found in the defendant's cell.",
+      "prosecutionSentence": "The defendant had a history of violence and was seen with the weapon before the assault.",
+      "defenseSentence": "My client had no involvement in the assault and the weapon could have been planted in their cell."
+    },
+    {
+      "id": 12,
+      "description": "The victim was found unconscious in their cell with a pillowcase tied tightly around their neck.",
+      "prosecutionSentence": "The defendant had a motive for the assault and was the only one with access to the victim's cell.",
+      "defenseSentence": "My client had no involvement in the assault and there is no concrete evidence linking them to the crime."
+    },
+    {
+      "id": 13,
+      "description": "The victim was stabbed with a sharpened piece of metal during a gang-related dispute.",
+      "prosecutionSentence": "The defendant was a known member of the gang and had a motive for the assault.",
+      "defenseSentence": "My client was not involved in the dispute and had no motive to harm the victim."
+    },
+    {
+      "id": 14,
+      "description": "The victim was found in the shower with severe burns after being attacked with boiling water.",
+      "prosecutionSentence": "The defendant was the only one with access to the boiling water and had a motive for the assault.",
+      "defenseSentence": "My client was not involved in the assault and there is no concrete evidence linking them to the crime."
+    },
+    {
+      "id": 15,
+      "description": "The victim was assaulted with a wooden plank during a dispute over contraband.",
+      "prosecutionSentence": "The defendant was seen with the weapon and had a motive for the assault.",
+      "defenseSentence": "My client was not involved in the dispute and did not have access to the weapon."
+    },
+    {
+      "id": 16,
+      "description": "The victim suffered serious injuries after being hit on the head with a metal pipe in the laundry room.",
+      "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a motive for the attack.",
+      "defenseSentence": "My client was not involved in the assault and did not have access to the weapon."
+    },
+    {
+      "id": 17,
+      "description": "The victim was stabbed multiple times with a homemade knife in the yard.",
+      "prosecutionSentence": "The defendant was found with a bloody knife that matched the wounds on the victim and had a motive for the attack.",
+      "defenseSentence": "My client was not involved in the assault and the knife found on them was not the weapon used in the attack."
+    },
+    {
+      "id": 18,
+      "description": "The victim was hit in the face with a lock wrapped in a sock during an altercation in the common area.",
+      "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a motive for the attack.",
+      "defenseSentence": "My client was not involved in the assault and there is no evidence linking them to the crime."
+    },
+    {
+      "id": 19,
+      "description": "The victim suffered multiple fractures after being beaten with a metal pipe in the recreation room.",
+      "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a history of violent behavior.",
+      "defenseSentence": "My client was not involved in the assault and there is no concrete evidence linking them to the crime."
+    },
+    {
+      "id": 20,
+      "description": "The victim was slashed with a sharpened piece of metal during a gang-related attack in the dormitory.",
+      "prosecutionSentence": "The defendant was identified as a member of the attacking gang and had a motive for the assault.",
+      "defenseSentence": "My client was not involved in the gang and had no reason to attack the victim."
+    },
+    {
+      "id": 21,
+      "description": "The victim was hit in the head with a lock attached to a belt during a fight in the cell block.",
+      "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a history of violent behavior.",
+      "defenseSentence": "My client was not involved in the assault and had no access to the weapon."
+    },
+    {
+      "id": 22,
+      "description": "The victim was stabbed in the back with a sharpened toothbrush during a confrontation in the shower.",
+      "prosecutionSentence": "The defendant was found with a bloodied toothbrush that matched the wounds on the victim and had a history of violent behavior.",
+      "defenseSentence": "My client was not involved in the assault and the toothbrush found on them was not the weapon used in the attack."
+    },
+    {
+      "id": 23,
+      "description": "The victim was hit in the face with a rock during a fight in the exercise yard.",
+      "prosecutionSentence": "The defendant was seen with the rock before the assault and had a history of violent behavior.",
+      "defenseSentence": "My client was not involved in the assault and did not have access to the rock."
+    },
+    {
+      "id": 24,
+      "description": "The victim was attacked with a sharpened piece of wood during a gang-related brawl in the mess hall.",
+      "prosecutionSentence": "The defendant was identified as a member of the attacking gang and had a motive for the assault.",
+      "defenseSentence": "My client was not involved in the gang and had no reason to attack the victim."
+    }
+  ],
+  "manslaughter": [],
+  "drugTrafficking": []
 }

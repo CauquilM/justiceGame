@@ -2038,5 +2038,543 @@
       "id": 44,
       "description": "The prisoner escaped by jumping over the prison walls using a makeshift trampoline made from a bedsheet."
     }
+  ],
+  "assaultWithDeadlyWeapon": [
+    {
+      "id": 0,
+      "description": "A prison guard was attacked by an inmate with a shiv, leaving the guard with multiple stab wounds and other serious injuries."
+    },
+    {
+      "id": 1,
+      "description": "An inmate used a sharpened toothbrush to stab another prisoner multiple times during a fight in the yard."
+    },
+    {
+      "id": 2,
+      "description": "A group of inmates attacked a fellow prisoner with a sock filled with bars of soap, causing serious head injuries."
+    },
+    {
+      "id": 3,
+      "description": "A corrections officer was hit over the head with a metal tray by an inmate, causing a skull fracture and other injuries."
+    },
+    {
+      "id": 4,
+      "description": "An inmate used a homemade weapon to attack another prisoner, causing life-threatening injuries."
+    },
+    {
+      "id": 5,
+      "description": "A prison fight broke out between rival gang members, resulting in one inmate being stabbed multiple times with a sharpened piece of metal."
+    },
+    {
+      "id": 6,
+      "description": "A prisoner attacked a guard with a metal chair, causing the guard to suffer a concussion and other injuries."
+    },
+    {
+      "id": 7,
+      "description": "A group of inmates attacked a rival gang member with a broken broomstick, causing multiple lacerations and other injuries."
+    },
+    {
+      "id": 8,
+      "description": "An inmate attacked another prisoner with a sharpened piece of plastic, causing deep wounds and other injuries."
+    },
+    {
+      "id": 9,
+      "description": "A corrections officer was attacked by an inmate wielding a sharpened piece of metal, causing severe cuts and other injuries."
+    },
+    {
+      "id": 10,
+      "description": "A prison riot broke out, during which several inmates used weapons to attack guards and fellow prisoners, causing numerous injuries and extensive property damage."
+    },
+    {
+      "id": 11,
+      "description": "A prisoner attacked another inmate with a sock filled with rocks, causing head injuries and other wounds."
+    },
+    {
+      "id": 12,
+      "description": "An inmate used a sharpened piece of metal to stab another prisoner in the neck, causing life-threatening injuries."
+    },
+    {
+      "id": 13,
+      "description": "A prison guard was assaulted by an inmate with a broomstick, causing serious head injuries and other wounds."
+    },
+    {
+      "id": 14,
+      "description": "An inmate attacked another prisoner with a sharpened toothbrush, causing deep cuts and other injuries."
+    },
+    {
+      "id": 15,
+      "description": "A group of inmates attacked a fellow prisoner with a broken pool cue, causing severe lacerations and other injuries."
+    },
+    {
+      "id": 16,
+      "description": "A corrections officer was attacked by an inmate with a sharpened piece of plastic, causing deep cuts and other injuries."
+    },
+    {
+      "id": 17,
+      "description": "An inmate used a sharpened piece of metal to attack another prisoner, causing multiple wounds and other injuries."
+    },
+    {
+      "id": 18,
+      "description": "A prisoner attacked a guard with a makeshift weapon made from a metal pipe, causing serious head injuries and other wounds."
+    },
+    {
+      "id": 19,
+      "description": "An inmate attacked another prisoner with a sharpened piece of glass, causing deep cuts and other injuries."
+    },
+    {
+      "id": 20,
+      "description": "A group of inmates attacked a fellow prisoner with a sock filled with batteries, causing serious head injuries and other wounds."
+    },
+    {
+      "id": 21,
+      "description": "A corrections officer was assaulted by an inmate with a sharpened piece of metal, causing severe cuts and other injuries."
+    },
+    {
+      "id": 22,
+      "description": "An inmate used a sharpened toothbrush to attack another prisoner, causing deep wounds and other injuries."
+    },
+    {
+      "id": 23,
+      "description": "A prisoner attacked another inmate with a homemade knife, causing serious injuries."
+    },
+    {
+      "id": 24,
+      "description": "During a fight in the prison yard, a prisoner stabbed another inmate with a sharpened toothbrush."
+    },
+    {
+      "id": 25,
+      "description": "A group of inmates attacked a fellow prisoner with a metal pipe, causing severe head trauma."
+    },
+    {
+      "id": 26,
+      "description": "A prisoner assaulted a guard with a homemade weapon, causing significant injuries."
+    },
+    {
+      "id": 27,
+      "description": "An inmate stabbed another prisoner with a pen, causing multiple puncture wounds."
+    },
+    {
+      "id": 28,
+      "description": "During a fight in the recreation room, a prisoner struck another inmate in the head with a weight, causing a skull fracture."
+    },
+    {
+      "id": 29,
+      "description": "A group of inmates attacked a fellow prisoner with a broom handle, causing multiple broken bones."
+    },
+    {
+      "id": 30,
+      "description": "A prisoner assaulted a guard with a sharpened piece of metal, causing deep lacerations and a punctured lung."
+    },
+    {
+      "id": 31,
+      "description": "A prisoner attacked another inmate with a sock filled with rocks, causing significant head injuries."
+    },
+    {
+      "id": 32,
+      "description": "During a brawl in the mess hall, a prisoner slashed another inmate with a sharpened plastic utensil."
+    },
+    {
+      "id": 33,
+      "description": "A group of inmates attacked a fellow prisoner with a metal rod, causing serious internal injuries."
+    },
+    {
+      "id": 34,
+      "description": "A prisoner assaulted a guard with a broken broom handle, causing multiple lacerations and bruises."
+    },
+    {
+      "id": 35,
+      "description": "During a fight in the cell block, a prisoner used a sock filled with batteries to attack another inmate, causing significant injuries."
+    },
+    {
+      "id": 36,
+      "description": "An inmate attacked another prisoner with a sharpened piece of plexiglass, causing deep lacerations and puncture wounds."
+    },
+    {
+      "id": 37,
+      "description": "A prisoner assaulted a guard with a makeshift weapon made from a broken chair leg, causing significant head injuries."
+    },
+    {
+      "id": 38,
+      "description": "During a scuffle in the exercise yard, a prisoner struck another inmate with a metal weight, causing a broken jaw."
+    },
+    {
+      "id": 39,
+      "description": "A group of inmates attacked a fellow prisoner with a broken pool cue, causing multiple lacerations and bruises."
+    },
+    {
+      "id": 40,
+      "description": "A prisoner assaulted a guard with a sharpened toothbrush, causing deep puncture wounds."
+    },
+    {
+      "id": 41,
+      "description": "During a fight in the laundry room, a prisoner used a hot iron to burn another inmate, causing significant burns."
+    },
+    {
+      "id": 42,
+      "description": "An inmate attacked another prisoner with a sharpened piece of rebar, causing multiple puncture wounds."
+    },
+    {
+      "id": 43,
+      "description": "A prisoner assaulted a guard with a broken piece of furniture, causing significant head injuries."
+    },
+    {
+      "id": 44,
+      "description": "During a brawl in the shower area, a prisoner used a bar of soap in a sock to attack another inmate, causing significant head injuries."
+    }
+  ],
+  "manslaughter": [
+    {
+      "id": 0,
+      "description": "The victim was found dead in their cell with signs of physical trauma indicating they had been beaten to death by another inmate."
+    },
+    {
+      "id": 1,
+      "description": "An inmate was killed during a prison riot that broke out after a disagreement between rival gangs."
+    },
+    {
+      "id": 2,
+      "description": "A corrections officer was found dead in a cell block with evidence suggesting they had been attacked by an inmate."
+    },
+    {
+      "id": 3,
+      "description": "An inmate died after being beaten by several other prisoners in a common area of the prison."
+    },
+    {
+      "id": 4,
+      "description": "A prisoner who had been placed in solitary confinement died after being left unattended for an extended period of time."
+    },
+    {
+      "id": 5,
+      "description": "An inmate was found dead in their cell after reportedly being involved in a physical altercation with another prisoner."
+    },
+    {
+      "id": 6,
+      "description": "A prisoner was killed by a fellow inmate using a makeshift weapon."
+    },
+    {
+      "id": 7,
+      "description": "A corrections officer was fatally injured while attempting to break up a fight between two inmates."
+    },
+    {
+      "id": 8,
+      "description": "An inmate died after being beaten by another prisoner in a prison yard."
+    },
+    {
+      "id": 9,
+      "description": "A prisoner died after being struck by a vehicle while on a work detail outside the prison."
+    },
+    {
+      "id": 10,
+      "description": "An inmate died after being strangled by a cellmate."
+    },
+    {
+      "id": 11,
+      "description": "A corrections officer was killed in a prison escape attempt."
+    },
+    {
+      "id": 12,
+      "description": "An inmate died after being stabbed by another prisoner with a homemade weapon."
+    },
+    {
+      "id": 13,
+      "description": "A prisoner died after being beaten by several other inmates during a gang-related incident."
+    },
+    {
+      "id": 14,
+      "description": "A corrections officer was killed during a prison riot that was sparked by a disagreement between inmates and staff members."
+    },
+    {
+      "id": 15,
+      "description": "An inmate died after being found unconscious in their cell with multiple injuries."
+    },
+    {
+      "id": 16,
+      "description": "A prisoner died after being hit by a car while attempting to escape from the prison."
+    },
+    {
+      "id": 17,
+      "description": "A corrections officer was killed in a hostage situation that occurred during a prison uprising."
+    },
+    {
+      "id": 18,
+      "description": "An inmate was found dead in their cell with evidence suggesting they had committed suicide."
+    },
+    {
+      "id": 19,
+      "description": "A prisoner died after being beaten by a group of other inmates who had gained access to their cell."
+    },
+    {
+      "id": 20,
+      "description": "An inmate was killed in a fight that broke out in the prison yard over gang territory."
+    },
+    {
+      "id": 21,
+      "description": "A corrections officer was fatally shot by an inmate who had obtained a firearm while in the prison."
+    },
+    {
+      "id": 22,
+      "description": "An inmate died after being struck by a guard's baton during a riot in the prison."
+    },
+    {
+      "id": 23,
+      "description": "A prisoner died after being beaten by a cellmate with a metal pipe."
+    },
+    {
+      "id": 24,
+      "description": "An inmate died after being involved in a fight with another inmate in the recreation yard."
+    },
+    {
+      "id": 25,
+      "description": "An inmate was found unresponsive in their cell and later died as a result of injuries sustained in an altercation with another inmate."
+    },
+    {
+      "id": 26,
+      "description": "During a fight between two inmates in the prison yard, one of them struck the other with a metal pipe, causing fatal injuries."
+    },
+    {
+      "id": 27,
+      "description": "An inmate was fatally stabbed in the chest during a brawl in the prison mess hall."
+    },
+    {
+      "id": 28,
+      "description": "An inmate died from head injuries sustained in a physical altercation with another inmate in their shared cell."
+    },
+    {
+      "id": 29,
+      "description": "Two inmates got into a fight in the prison library, during which one of them struck the other with a book, causing fatal head injuries."
+    },
+    {
+      "id": 30,
+      "description": "An inmate died after being punched in the face multiple times during a dispute with another inmate over a television in the dayroom."
+    },
+    {
+      "id": 31,
+      "description": "An inmate was found dead in their cell, with evidence suggesting they were strangled by their cellmate during an altercation."
+    },
+    {
+      "id": 32,
+      "description": "During a physical altercation between two inmates in the prison yard, one of them was knocked unconscious and later died from brain damage."
+    },
+    {
+      "id": 33,
+      "description": "An inmate died from internal injuries after being beaten with a broomstick during a fight with another inmate in the prison laundry room."
+    },
+    {
+      "id": 34,
+      "description": "A prisoner died from blunt force trauma to the head after being attacked by another inmate with a metal tray during a meal in the cafeteria."
+    },
+    {
+      "id": 35,
+      "description": "An inmate was killed during a gang-related brawl in the prison yard, during which multiple weapons were used."
+    },
+    {
+      "id": 36,
+      "description": "A prisoner died from injuries sustained in a fight with another inmate in their cell, which was not stopped by the guards in time."
+    },
+    {
+      "id": 37,
+      "description": "An inmate was found dead in their cell, with evidence suggesting they were beaten to death by their cellmate with a homemade weapon."
+    },
+    {
+      "id": 38,
+      "description": "During a fight between two inmates in the shower area, one of them was fatally stabbed with a sharpened piece of metal."
+    },
+    {
+      "id": 39,
+      "description": "An inmate died from internal injuries after being punched repeatedly in the stomach by another inmate during a physical altercation in the yard."
+    },
+    {
+      "id": 40,
+      "description": "A prisoner was killed by their cellmate, who strangled them with a bedsheet during a dispute over the use of the cell's toilet."
+    },
+    {
+      "id": 41,
+      "description": "An inmate was found dead in their cell, with evidence suggesting they were suffocated by their cellmate with a pillow during the night."
+    },
+    {
+      "id": 42,
+      "description": "During a fight between two inmates in the prison yard, one of them was hit in the head with a rock and died from their injuries."
+    },
+    {
+      "id": 43,
+      "description": "An inmate died after being stabbed multiple times with a homemade knife during a brawl in the prison exercise area."
+    }
+  ],
+  "drugTrafficking": [
+    {
+      "id": 0,
+      "description": "A correctional officer found a package of drugs hidden inside a roll of toilet paper in an inmate's cell."
+    },
+    {
+      "id": 1,
+      "description": "An inmate was caught on surveillance camera passing a small package to another inmate in the yard, suspected to contain drugs."
+    },
+    {
+      "id": 2,
+      "description": "A random search of an inmate's cell revealed a stash of drugs hidden inside a hollowed-out book."
+    },
+    {
+      "id": 3,
+      "description": "A visitor attempting to leave the prison was caught with drugs concealed in their clothing by a security checkpoint guard."
+    },
+    {
+      "id": 4,
+      "description": "During a routine cell search, a correctional officer found a homemade syringe filled with drugs hidden in a mattress."
+    },
+    {
+      "id": 5,
+      "description": "An inmate was found to be in possession of drugs after being stopped for a routine pat-down search by a correctional officer."
+    },
+    {
+      "id": 6,
+      "description": "A correctional officer noticed an inmate acting suspiciously and upon searching them found a bag of drugs hidden in their shoe."
+    },
+    {
+      "id": 7,
+      "description": "A visitor was caught on surveillance camera passing a small package to an inmate during a visitation session, suspected to contain drugs."
+    },
+    {
+      "id": 8,
+      "description": "A group of inmates were caught in possession of drugs after a search of their shared cell turned up a stash hidden in a wall vent."
+    },
+    {
+      "id": 9,
+      "description": "An inmate was found to be in possession of drugs after being searched during a routine transfer between cells."
+    },
+    {
+      "id": 10,
+      "description": "A correctional officer discovered a package of drugs hidden in a trash can in a common area of the prison."
+    },
+    {
+      "id": 11,
+      "description": "An inmate was caught attempting to flush a package of drugs down the toilet during a surprise cell inspection."
+    },
+    {
+      "id": 12,
+      "description": "During a visitor search, a visitor was found to have swallowed drugs in an attempt to smuggle them into the prison."
+    },
+    {
+      "id": 13,
+      "description": "A drug-sniffing dog alerted to the presence of drugs in an inmate's personal belongings during a routine search of incoming mail."
+    },
+    {
+      "id": 14,
+      "description": "A correctional officer discovered a package of drugs hidden inside a bar of soap in an inmate's shower area."
+    },
+    {
+      "id": 15,
+      "description": "An inmate was caught attempting to smuggle drugs into the prison by hiding them in their prosthetic leg."
+    },
+    {
+      "id": 16,
+      "description": "A correctional officer noticed an inmate with bloodshot eyes and slurred speech and found a bag of drugs hidden in their mouth upon searching them."
+    },
+    {
+      "id": 17,
+      "description": "An inmate was caught in possession of drugs after being caught on surveillance camera entering a staff-only area of the prison."
+    },
+    {
+      "id": 18,
+      "description": "During a cell shakedown, a correctional officer found a bag of drugs hidden inside a rolled-up magazine."
+    },
+    {
+      "id": 19,
+      "description": "Prison officials discovered a package containing drugs hidden in a laundry basket during a routine search."
+    },
+    {
+      "id": 20,
+      "description": "A visitor attempted to smuggle drugs into the prison by hiding them in a gift package."
+    },
+    {
+      "id": 21,
+      "description": "The prison's drug-sniffing dogs found drugs hidden in an inmate's cell."
+    },
+    {
+      "id": 22,
+      "description": "An inmate was caught trying to flush drugs down the toilet."
+    },
+    {
+      "id": 23,
+      "description": "A prison employee was caught smuggling drugs into the facility inside their lunchbox."
+    },
+    {
+      "id": 24,
+      "description": "A group of inmates was caught trying to bribe a guard to smuggle drugs into the prison."
+    },
+    {
+      "id": 25,
+      "description": "A drone was used to deliver drugs to a specific location inside the prison."
+    },
+    {
+      "id": 26,
+      "description": "An inmate's mail was intercepted and found to contain drugs hidden inside."
+    },
+    {
+      "id": 27,
+      "description": "Drugs were found hidden inside a book during a routine search of the prison library."
+    },
+    {
+      "id": 28,
+      "description": "A prison nurse was caught smuggling prescription drugs into the facility."
+    },
+    {
+      "id": 29,
+      "description": "An inmate was caught attempting to hide drugs inside their mattress."
+    },
+    {
+      "id": 30,
+      "description": "Drugs were found concealed inside a pen during a search of an inmate's property."
+    },
+    {
+      "id": 31,
+      "description": "A visitor attempted to pass drugs to an inmate during a visitation session."
+    },
+    {
+      "id": 32,
+      "description": "An inmate was caught with drugs hidden in their clothing during a pat-down search."
+    },
+    {
+      "id": 33,
+      "description": "An undercover officer posed as an inmate to gather evidence of drug trafficking inside the prison."
+    },
+    {
+      "id": 34,
+      "description": "A prison staff member was caught on camera smuggling drugs into the facility."
+    },
+    {
+      "id": 35,
+      "description": "An inmate was caught with drugs hidden in their personal hygiene products during a search."
+    },
+    {
+      "id": 36,
+      "description": "Drugs were found inside a package of legal correspondence sent to an inmate."
+    },
+    {
+      "id": 37,
+      "description": "An inmate was caught trying to pass drugs to another inmate during a meal service."
+    },
+    {
+      "id": 38,
+      "description": "A prison maintenance worker was caught trying to smuggle drugs into the facility in their tool belt."
+    },
+    {
+      "id": 39,
+      "description": "An inmate was caught trying to pass drugs to a visitor during a visitation session."
+    },
+    {
+      "id": 40,
+      "description": "Drugs were found hidden inside a roll of toilet paper during a routine search of the prison's facilities."
+    },
+    {
+      "id": 41,
+      "description": "An inmate was caught trying to conceal drugs inside their prosthetic limb."
+    },
+    {
+      "id": 42,
+      "description": "A prison visitor was caught trying to smuggle drugs into the facility inside their shoes."
+    },
+    {
+      "id": 43,
+      "description": "An inmate was caught with drugs hidden inside their legal paperwork."
+    }
   ]
 }
