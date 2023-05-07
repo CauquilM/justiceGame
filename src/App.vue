@@ -214,8 +214,15 @@ export default {
       let prosecutorChoice = [];
 
       if (!fineVariant && text === "prison") {
-        prosecutorChoice = numbers[prosecutorRandom];
-        this.chooseProsecutionSentence({prison: prosecutorChoice});
+        const prosecutionNoSentence = Math.floor(Math.random() * 11);
+        if(prosecutionNoSentence >= 7){
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({prison: prosecutorChoice});
+        }
+        else {
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({prison: 0});
+        }
         result.push({
           text: "Select a prison time",
           value: null
@@ -237,8 +244,15 @@ export default {
           value: `${numbers[2]} years`
         });
       } else if (!fineVariant && text === "probation") {
-        prosecutorChoice = numbers[prosecutorRandom];
-        this.chooseProsecutionSentence({probation: prosecutorChoice});
+        const prosecutionNoSentence = Math.floor(Math.random() * 11);
+        if(prosecutionNoSentence >= 7){
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({probation: prosecutorChoice});
+        }
+        else {
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({probation: 0});
+        }
         result.push({
           text: "Select a probation duration",
           value: null
@@ -260,16 +274,31 @@ export default {
           value: `${numbers[2]} years`
         });
       } else if (!fineVariant && text === "traffic") {
+        const prosecutionNoSentence = Math.floor(Math.random() * 11);
+        if(prosecutionNoSentence >= 7){
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({fine: prosecutorChoice});
+        }
+        else {
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({fine: 0});
+        }
         prosecutorChoice = numbers[prosecutorRandom];
-        this.chooseProsecutionSentence({fine: prosecutorChoice});
         result.push({
           text: "Not available for this case",
           value: "0",
           disabled: true
         });
       } else {
-        prosecutorChoice = numbers[prosecutorRandom];
-        this.chooseProsecutionSentence({fine: prosecutorChoice});
+        const prosecutionNoSentence = Math.floor(Math.random() * 11);
+        if(prosecutionNoSentence >= 7){
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({fine: prosecutorChoice});
+        }
+        else {
+          prosecutorChoice = numbers[prosecutorRandom];
+          this.chooseProsecutionSentence({fine: 0});
+        }
         result.push({
           text: "Select a fine",
           value: null

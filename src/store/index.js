@@ -235,7 +235,7 @@ export default new Vuex.Store({
         fineSelected: null,
         defenseComment: '',
         prosecutionComment: '',
-        prosecutionSelectedSentences: [],
+        prosecutionSentences: [],
         judgeComment: '',
         showAllSentences: false,
         showCourtBar: false,
@@ -277,7 +277,7 @@ export default new Vuex.Store({
             state.defenseComment = payload;
         },
         SET_PROSECUTION_SENTENCES(state, payload) {
-            state.prosecutionSelectedSentences.push(payload);
+            state.prosecutionSentences.push(payload);
         },
         SET_SHOW_SENTENCES(state) {
             state.showAllSentences === true ? state.showAllSentences = false : state.showAllSentences = true;
@@ -326,7 +326,7 @@ export default new Vuex.Store({
         },
         chooseProsecutionSentence({state, commit}, sentences){
             commit("SET_PROSECUTION_SENTENCES", sentences);
-            console.log("prosecution store: ", state.prosecutionSelectedSentences);
+            console.log("prosecution store: ", state.prosecutionSentences);
         },
         addGeneratedCase({ state, commit }, cases){
             commit("SET_CASES", cases);

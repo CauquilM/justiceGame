@@ -163,7 +163,6 @@
     border-color: blue;
 }
 
-
 /*************************** Evidences ***************************/
 .evidence-display, .description-display {
     padding: 0 20px;
@@ -171,6 +170,7 @@
 
 .evidence-display > .card {
     border-color: green;
+    min-width: 200px;
 }
 
 .evidence-overflow {
