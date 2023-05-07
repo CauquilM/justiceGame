@@ -47,7 +47,7 @@
 }
 
 /*************************** Plea Deal ***************************/
-.pleadDeal-buttons-container{
+.pleaDeal-buttons-container{
     display: flex;
     justify-content: space-around;
 }
@@ -105,11 +105,6 @@
 .sentences-switch > .custom-control-input:checked~.custom-control-label::before{
     background-color: red;
 }
-
-/*.custom-switch.b-custom-control-lg .custom-control-label::after{
-    background-image: url("@/assets/hammer.png");
-    background-size: 100% 100% !important;
-}*/
 
 /*************************** Court Bar ***************************/
 .court-bar {
@@ -272,6 +267,12 @@
 @media (max-width: 900px) {
     .court-bar {
         max-width: 85%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pleaDeal-buttons-container > button {
+        font-size: 0.82em;
     }
 }
 

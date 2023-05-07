@@ -1,7 +1,7 @@
 <template>
   <div>
-    <b-button v-b-modal.pleadDeal-modal v-if="showButton" block variant="warning">Plea deal</b-button>
-    <b-modal id="pleadDeal-modal"
+    <b-button v-b-modal.pleaDeal-modal v-if="showButton" block variant="warning">Plea deal</b-button>
+    <b-modal id="pleaDeal-modal"
              centered hide-footer
              hide-header-close
              title="Message from the clerk">
@@ -19,11 +19,11 @@
         <p v-else>No fine</p>
       </div>
 
-      <div class="pleadDeal-buttons-container">
-        <b-button class="pleadDeal-buttons" variant="danger"
+      <div class="pleaDeal-buttons-container">
+        <b-button class="pleaDeal-buttons" variant="danger"
                   @click="refusePleaDeal">🕊️ Refuse the plea deal
         </b-button>
-        <b-button class="pleadDeal-buttons" variant="success"
+        <b-button class="pleaDeal-buttons" variant="success"
                   @click="refreshPage"><i class="ti ti-prison"/> Accept the plea deal
         </b-button>
       </div>
@@ -52,11 +52,11 @@ export default {
   methods: {
     ...mapActions(['refreshPage']),
     refusePleaDeal(){
-      this.$bvModal.hide('pleadDeal-modal');
+      this.$bvModal.hide('pleaDeal-modal');
       this.showButton = false;
     },
     createPleaDeal() {
-      if (this.randomNumber() >= 8) {
+      if (this.randomNumber() >= 1) {
         if (this.chosenCase.type !== 'traffic infraction'){
           if(this.noSentence() >= 2){
             this.prisonSentence = this.randomNumber(15, 1, true);
