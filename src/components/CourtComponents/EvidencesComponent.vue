@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="evidence-proof" v-if="chosenCase.evidences.length !== 0">
-      <p v-for="evidence in chosenCase.evidences" :key="evidence.id"
-         @click="displayCommentsOnEvidence(evidence.id)">
+      <p v-for="(evidence, index) in chosenCase.evidences" :key="evidence.id"
+         @click="displayCommentsOnEvidence(index)">
         {{ evidence.description }}
       </p>
     </div>

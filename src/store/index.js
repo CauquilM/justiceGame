@@ -235,6 +235,7 @@ export default new Vuex.Store({
         fineSelected: null,
         defenseComment: '',
         prosecutionComment: '',
+        prosecutionSentences: [],
         judgeComment: '',
         showAllSentences: false,
         showCourtBar: false,
@@ -268,6 +269,15 @@ export default new Vuex.Store({
         },
         SET_JUDGE_COMMENT(state, payload) {
             state.judgeComment = payload;
+        },
+        SET_PROSECUTION_COMMENT(state, payload) {
+            state.prosecutionComment = payload;
+        },
+        SET_DEFENSE_COMMENT(state, payload) {
+            state.defenseComment = payload;
+        },
+        SET_PROSECUTION_SENTENCES(state, payload) {
+            state.prosecutionSentences.push(payload);
         },
         SET_SHOW_SENTENCES(state) {
             state.showAllSentences === true ? state.showAllSentences = false : state.showAllSentences = true;
@@ -313,6 +323,10 @@ export default new Vuex.Store({
                 .catch((err) => {
                     console.log(err)
                 })
+        },
+        chooseProsecutionSentence({state, commit}, sentences){
+            commit("SET_PROSECUTION_SENTENCES", sentences);
+            console.log("prosecution store: ", state.prosecutionSentences);
         },
         addGeneratedCase({ state, commit }, cases){
             commit("SET_CASES", cases);
@@ -398,9 +412,9 @@ export default new Vuex.Store({
                 }
             }
         },
-        displayCommentsOnEvidence({state}, evidenceIndex) {
-            state.defenseComment = state.chosenCase.evidences[evidenceIndex].defenseSentence;
-            state.prosecutionComment = state.chosenCase.evidences[evidenceIndex].prosecutionSentence;
+        displayCommentsOnEvidence({state, commit}, evidenceIndex) {
+            commit("SET_PROSECUTION_COMMENT", state.chosenCase.evidences[evidenceIndex].prosecutionSentence);
+            commit("SET_DEFENSE_COMMENT", state.chosenCase.evidences[evidenceIndex].defenseSentence);
         },
         callWitness({state, commit}, witness) {
             if (state.showAllSentences === true) {
@@ -420,6 +434,8 @@ export default new Vuex.Store({
             if (state.showCriminalRecord === true) {
                 commit("SET_SHOW_CRIMINAL_RECORD");
             }
+            commit("SET_PROSECUTION_COMMENT", '');
+            commit("SET_DEFENSE_COMMENT", '');
             commit("SET_SHOW_SENTENCES");
             eventBus.$emit('closeGuiltyModal');
         },
