@@ -1,0 +1,796 @@
+{
+  "crimes": [
+    {
+      "charge": "disorderly conduct",
+      "description": "Behaved in a disorderly manner in public.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "trespassing",
+      "description": "Entered private property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "vandalism",
+      "description": "Damaged public property.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "possession of drugs",
+      "description": "Had illegal drugs in their possession.",
+      "sentence": "1 year in prison, 6 months probation",
+      "fine": "$2,500"
+    },
+    {
+      "charge": "public intoxication",
+      "description": "Got drunk in public and caused a disturbance.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on government property",
+      "description": "Entered government property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing the peace",
+      "description": "Disturbed the peace in a public area.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "reckless driving",
+      "description": "Drove recklessly and endangered others on the road.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "shoplifting",
+      "description": "Stole goods from a retail store.",
+      "sentence": "3 months in prison, 6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "underage drinking",
+      "description": "Drank alcohol while under the legal drinking age.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on private property",
+      "description": "Entered private property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing a religious service",
+      "description": "Disturbed a religious service with loud noise or unruly behavior.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public urination",
+      "description": "Urinated in public.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "disorderly conduct at a sporting event",
+      "description": "Behaved in a disorderly manner at a sporting event.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "loitering",
+      "description": "Remained in a public area without a valid reason.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "murder",
+      "description": "Killed a rival gang member.",
+      "sentence": "20 years in prison, 5 years probation",
+      "fine": "$50,000"
+    },
+    {
+      "charge": "theft",
+      "description": "Stole a valuable item from a museum.",
+      "sentence": "5 years in prison, 3 years probation",
+      "fine": "$10,000"
+    },
+    {
+      "charge": "fraud",
+      "description": "Committed credit card fraud.",
+      "sentence": "10 years in prison, 2 years probation",
+      "fine": "$20,000"
+    },
+    {
+      "charge": "assault",
+      "description": "Physically attacked a neighbor.",
+      "sentence": "2 years in prison, 1 year probation",
+      "fine": "$5,000"
+    },
+    {
+      "charge": "embezzlement",
+      "description": "Stole funds from a company.",
+      "sentence": "15 years in prison, 5 years probation",
+      "fine": "$100,000"
+    },
+    {
+      "charge": "drug possession",
+      "description": "Found with illegal drugs on their person.",
+      "sentence": "1 year in prison, 2 years probation",
+      "fine": "$2,500"
+    },
+    {
+      "charge": "identity theft",
+      "description": "Stole someone's identity and used it for personal gain.",
+      "sentence": "7 years in prison, 3 years probation",
+      "fine": "$15,000"
+    },
+    {
+      "charge": "arson",
+      "description": "Intentionally set fire to a building.",
+      "sentence": "25 years in prison, 10 years probation",
+      "fine": "$75,000"
+    },
+    {
+      "charge": "kidnapping",
+      "description": "Abducted and held someone against their will.",
+      "sentence": "30 years in prison, 15 years probation",
+      "fine": "$150,000"
+    },
+    {
+      "charge": "money laundering",
+      "description": "Cleaned dirty money through an illegal operation.",
+      "sentence": "20 years in prison, 5 years probation",
+      "fine": "$200,000"
+    },
+    {
+      "charge": "sexual assault",
+      "description": "Forced sexual contact without consent.",
+      "sentence": "15 years in prison, 5 years probation",
+      "fine": "$50,000"
+    },
+    {
+      "charge": "tax evasion",
+      "description": "Failed to report all taxable income.",
+      "sentence": "5 years in prison, 2 years probation",
+      "fine": "$25,000"
+    },
+    {
+      "charge": "cybercrime",
+      "description": "Hacked into a computer system to steal information.",
+      "sentence": "10 years in prison, 3 years probation",
+      "fine": "$50,000"
+    },
+    {
+      "charge": "burglary",
+      "description": "Broke into a home and stole valuable items.",
+      "sentence": "8 years in prison, 3 years probation",
+      "fine": "$20,000"
+    },
+    {
+      "charge": "counterfeiting",
+      "description": "Created and distributed counterfeit money.",
+      "sentence": "12 years in prison, 4 years probation",
+      "fine": "$30,000"
+    },
+    {
+      "charge": "domestic violence",
+      "description": "Physically assaulted a partner or family member.",
+      "sentence": "3 years in prison, 2 years probation",
+      "fine": "$7,500"
+    },
+    {
+      "charge": "extortion",
+      "description": "Used threats to obtain money or property.",
+      "sentence": "15 years in prison, 5 years probation",
+      "fine": "$50,000"
+    },
+    {
+      "charge": "grand theft auto",
+      "description": "Stole a car and used it for personal use.",
+      "sentence": "6 years in prison, 2 years probation",
+      "fine": "$15,000"
+    },
+    {
+      "charge": "money counterfeiting",
+      "description": "Created and distributed counterfeit money.",
+      "sentence": "12 years in prison, 4 years probation",
+      "fine": "$30,000"
+    },
+    {
+      "charge": "perjury",
+      "description": "Lied under oath in court.",
+      "sentence": "2 years in prison, 1 year probation",
+      "fine": "$5,000"
+    },
+    {
+      "charge": "robbery",
+      "description": "Used force or threat of force to steal property.",
+      "sentence": "10 years in prison, 3 years probation",
+      "fine": "$25,000"
+    },
+    {
+      "charge": "vandalism",
+      "description": "Intentionally damaged or destroyed property.",
+      "sentence": "1 year in prison, 6 months probation",
+      "fine": "$2,500"
+    },
+    {
+      "charge": "wire fraud",
+      "description": "Used electronic communication to defraud others.",
+      "sentence": "7 years in prison, 3 years probation",
+      "fine": "$20,000"
+    },
+    {
+      "charge": "kidnapping",
+      "description": "Unlawfully abducted and held someone against their will.",
+      "sentence": "5 years in prison, 5 years probation",
+      "fine": "$100,000"
+    },
+    {
+      "charge": "embezzlement",
+      "description": "Stole money from an employer or client.",
+      "sentence": "15 years in prison, 4 years probation",
+      "fine": "$40,000"
+    },
+    {
+      "charge": "arson",
+      "description": "Intentionally set fire to a property.",
+      "sentence": "8 years in prison, 5 years probation",
+      "fine": "$75,000"
+    },
+    {
+      "charge": "drug trafficking",
+      "description": "Distributed illegal drugs.",
+      "sentence": "9 years in prison, 7 years probation",
+      "fine": "$500,000"
+    },
+    {
+      "charge": "identity theft",
+      "description": "Used someone else's identity for personal gain.",
+      "sentence": "10 years in prison, 3 years probation",
+      "fine": "$25,000"
+    },
+    {
+      "charge": "sex trafficking",
+      "description": "Used force or coercion to engage someone in prostitution.",
+      "sentence": "10 years in prison, 10 years probation",
+      "fine": "$1,000,000"
+    },
+    {
+      "charge": "money laundering",
+      "description": "Attempted to conceal the source of illegal funds.",
+      "sentence": "7 years in prison, 5 years probation",
+      "fine": "$250,000"
+    },
+    {
+      "charge": "cybercrime",
+      "description": "Committed a crime using a computer or the internet.",
+      "sentence": "3 years in prison",
+      "fine": "$50,000"
+    },
+    {
+      "charge": "assault",
+      "description": "Physically attacked someone without causing serious injury.",
+      "sentence": "2 years in prison, 1 year probation",
+      "fine": "$5,000"
+    },
+    {
+      "charge": "harassment",
+      "description": "Continuously bothered or intimidated someone.",
+      "sentence": "1 year in prison, 6 months probation",
+      "fine": "$2,500"
+    },
+    {
+      "charge": "assault",
+      "description": "Assaulted a police officer during a protest.",
+      "sentence": "3 years in prison, 2 years probation",
+      "fine": "$5,000"
+    },
+    {
+      "charge": "drug possession",
+      "description": "Caught with illegal drugs during a traffic stop.",
+      "sentence": "2 years in prison, 3 years probation",
+      "fine": "$10,000"
+    },
+    {
+      "charge": "embezzlement",
+      "description": "Embezzled funds from an employer.",
+      "sentence": "7 years in prison, 4 years probation",
+      "fine": "$100,000"
+    },
+    {
+      "charge": "identity theft",
+      "description": "Stole someone's identity and used it to make fraudulent purchases.",
+      "sentence": "5 years in prison, 2 years probation",
+      "fine": "$25,000"
+    },
+    {
+      "charge": "kidnapping",
+      "description": "Kidnapped and held a wealthy businessman for ransom.",
+      "sentence": "8 years in prison, 5 years probation",
+      "fine": "$500,000"
+    },
+    {
+      "charge": "robbery",
+      "description": "Robbed a bank at gunpoint.",
+      "sentence": "8 years in prison, 5 years probation",
+      "fine": "$250,000"
+    },
+    {
+      "charge": "tax evasion",
+      "description": "Failed to pay income tax for several years.",
+      "sentence": "5 years in prison, 3 years probation",
+      "fine": "$50,000"
+    },
+    {
+      "charge": "trespassing",
+      "description": "Entered a restricted area without permission.",
+      "sentence": "6 months in jail, 1 year probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "disorderly conduct",
+      "description": "Behaved in a disorderly manner in public.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "trespassing",
+      "description": "Entered private property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "vandalism",
+      "description": "Damaged public property.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "possession of drugs",
+      "description": "Had illegal drugs in their possession.",
+      "sentence": "1 year in prison, 6 months probation",
+      "fine": "$2,500"
+    },
+    {
+      "charge": "public intoxication",
+      "description": "Got drunk in public and caused a disturbance.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on government property",
+      "description": "Entered government property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing the peace",
+      "description": "Disturbed the peace in a public area.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "reckless driving",
+      "description": "Drove recklessly and endangered others on the road.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "shoplifting",
+      "description": "Stole goods from a retail store.",
+      "sentence": "3 months in prison, 6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "underage drinking",
+      "description": "Drank alcohol while under the legal drinking age.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on private property",
+      "description": "Entered private property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing a religious service",
+      "description": "Disturbed a religious service with loud noise or unruly behavior.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public urination",
+      "description": "Urinated in public.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "disorderly conduct at a sporting event",
+      "description": "Behaved in a disorderly manner at a sporting event.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "loitering",
+      "description": "Remained in a public area without a valid reason.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "disorderly conduct",
+      "description": "Behaved in a disorderly manner in a bar.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "vandalism",
+      "description": "Spray-painted graffiti on a public wall.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "possession of marijuana",
+      "description": "Had marijuana in their possession.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public intoxication",
+      "description": "Got drunk and caused a disturbance at a concert.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on school property",
+      "description": "Entered school property after hours.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing the peace",
+      "description": "Got into a loud argument in a public park.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "reckless cycling",
+      "description": "Cycled recklessly on a pedestrian sidewalk.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "shoplifting",
+      "description": "Stole cosmetics from a drugstore.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "underage smoking",
+      "description": "Smoked cigarettes while under the legal smoking age.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on construction site",
+      "description": "Entered a construction site without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing a movie screening",
+      "description": "Talked loudly and disrupted a movie screening.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public indecency",
+      "description": "Exposed themselves in a public park.",
+      "sentence": "1 month in prison, 3 months probation",
+      "fine": "$750"
+    },
+    {
+      "charge": "disorderly conduct at a concert",
+      "description": "Behaved in a disorderly manner and caused a disturbance at a concert.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "loitering near a business",
+      "description": "Remained in front of a business without a valid reason.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "vandalism of a public restroom",
+      "description": "Destroyed property in a public restroom.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "possession of drug paraphernalia",
+      "description": "Had drug paraphernalia in their possession.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "trespassing in a park after hours",
+      "description": "Entered a park after it was closed to the public.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disorderly conduct at a concert",
+      "description": "Behaved in a disorderly manner at a concert.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "possession of drug paraphernalia",
+      "description": "Had items used for drug consumption in their possession.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "driving under the influence",
+      "description": "Drove a vehicle while under the influence of alcohol or drugs.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "vandalism of a mailbox",
+      "description": "Damaged a mailbox.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "failure to pay parking tickets",
+      "description": "Failed to pay multiple parking tickets.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "disturbing the peace at a movie theater",
+      "description": "Disturbed the peace at a movie theater.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "possession of stolen property",
+      "description": "Had stolen property in their possession.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "fraudulent use of a credit card",
+      "description": "Used someone else's credit card without permission.",
+      "sentence": "3 months in prison, 6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "possession of a small amount of marijuana",
+      "description": "Had a small amount of marijuana in their possession.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "disorderly conduct at a public pool",
+      "description": "Behaved in a disorderly manner at a public pool.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "trespassing on a construction site",
+      "description": "Entered a construction site without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disorderly conduct at a bar",
+      "description": "Behaved in a disorderly manner at a bar.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "petty theft",
+      "description": "Stole items worth less than $500.",
+      "sentence": "3 months in prison, 6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public intoxication at a festival",
+      "description": "Got drunk in public at a festival and caused a disturbance.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on school property",
+      "description": "Entered school property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "public indecency",
+      "description": "Exposed themselves in public.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "unauthorized use of a vehicle",
+      "description": "Used a vehicle without the owner's permission.",
+      "sentence": "3 months in prison, 6 months probation",
+      "fine": "$1,500"
+    },
+    {
+      "charge": "trespassing on railroad tracks",
+      "description": "Entered railroad tracks without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "possession of drug paraphernalia",
+      "description": "Had drug paraphernalia in their possession.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "disorderly conduct at a concert",
+      "description": "Behaved in a disorderly manner at a concert.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "disturbing the peace at a bar",
+      "description": "Disturbed the peace at a bar.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "vandalism of a park bench",
+      "description": "Damaged a park bench.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "reckless bicycle riding",
+      "description": "Rode a bicycle recklessly on the road.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "possession of stolen property",
+      "description": "Had stolen property in their possession.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,500"
+    },
+    {
+      "charge": "trespassing on a construction site",
+      "description": "Entered a construction site without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disorderly conduct at a park",
+      "description": "Behaved in a disorderly manner at a park.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "shoplifting from a convenience store",
+      "description": "Stole goods from a convenience store.",
+      "sentence": "3 months in prison, 6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public intoxication at a parade",
+      "description": "Got drunk in public and caused a disturbance at a parade.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "disturbing the peace at a movie theater",
+      "description": "Disturbed the peace at a movie theater.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "failure to pay fines",
+      "description": "Failed to pay a fine that was previously imposed.",
+      "sentence": "1 month in jail",
+      "fine": "$500"
+    },
+    {
+      "charge": "disorderly conduct at a concert",
+      "description": "Behaved in a disorderly manner at a concert.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "vandalism of a vehicle",
+      "description": "Damaged a vehicle that did not belong to them.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "possession of drug paraphernalia",
+      "description": "Had drug-related items in their possession.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "public nudity",
+      "description": "Exposed their private parts in public.",
+      "sentence": "1 month in jail",
+      "fine": "$500"
+    },
+    {
+      "charge": "trespassing on school property",
+      "description": "Entered school property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing the peace at a park",
+      "description": "Disturbed the peace in a public park.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "reckless discharge of a firearm",
+      "description": "Discharged a firearm in a reckless manner.",
+      "sentence": "6 months in prison, 1 year probation",
+      "fine": "$2,000"
+    },
+    {
+      "charge": "petty theft",
+      "description": "Stole items that were of low value.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "public intoxication and disorderly conduct",
+      "description": "Got drunk in public and behaved in a disorderly manner.",
+      "sentence": "1 month in jail",
+      "fine": "$500"
+    },
+    {
+      "charge": "trespassing on railroad property",
+      "description": "Entered railroad property without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    },
+    {
+      "charge": "disturbing the peace at a movie theater",
+      "description": "Disturbed the peace at a movie theater.",
+      "sentence": "6 months probation",
+      "fine": "$1,000"
+    },
+    {
+      "charge": "failure to appear in court",
+      "description": "Failed to appear in court as required.",
+      "sentence": "1 month in jail",
+      "fine": "$500"
+    },
+    {
+      "charge": "underage smoking",
+      "description": "Smoked cigarettes while under the legal smoking age.",
+      "sentence": "1 month probation",
+      "fine": "$250"
+    },
+    {
+      "charge": "trespassing on a construction site",
+      "description": "Entered a construction site without permission.",
+      "sentence": "3 months probation",
+      "fine": "$500"
+    }
+  ]
+}

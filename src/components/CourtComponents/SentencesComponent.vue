@@ -29,7 +29,7 @@
           <b-form-input v-model="probationSelected"
             min="0" max="10" type="number"/>
         </b-input-group>
-        <b-input-group prepend="Fines" append="$">
+        <b-input-group prepend="Fines $">
           <b-form-input v-model="fineSelected" type="number"
             min="0" max="5000"/>
         </b-input-group>
