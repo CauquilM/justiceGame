@@ -449,9 +449,9 @@ export default {
 id: 0,
 description: "The antique store owner discovered a valuable artifact missing from their display case."
 },
-Generate 15 prison escape cases like in the examples, put them in objects not a function, continue from the last ID (0)-->
+Generate 30 evidences for an assault case like in the examples, put them in objects not a function, continue from the last ID (11)-->
 
-<!--do 15 more continuing from you last ID (was 14)-->
+<!--do 30 more continuing from you last ID (was 14)-->
 
 <!--{
 id: 0,
@@ -459,6 +459,6 @@ description: "Two inmates were caught on camera fighting in the prison yard.",
 prosecutionSentence: "We have clear video evidence that the defendant initiated the fight and caused injuries to the victim.",
 defenseSentence: "My client acted in self-defense and only used necessary force to protect himself from the victim's aggression."
 },
-Generate 15 prison escape evidences like in the examples, put them in objects not a function, continue from the last ID (0)-->
+Generate 30 prison escape evidences like in the examples, put them in objects not a function, continue from the last ID (0)-->
 
-<!--do 15 more continuing from you last ID (was 14)-->
+<!--do 30 more continuing from you last ID (was 14)-->

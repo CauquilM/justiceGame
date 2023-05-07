@@ -432,6 +432,96 @@
       "description": "The victim was beaten with a baseball bat in the assault",
       "prosecutionSentence": "The victim's injuries are consistent with a vicious assault, and we have DNA evidence linking the defendant to the crime.",
       "defenseSentence": "My client did not assault the victim, and the DNA evidence could have been planted or contaminated."
+    },
+    {
+      "id": 12,
+      "description": "The victim suffered a concussion and multiple bruises to the face and body",
+      "prosecutionSentence": "The victim's injuries are consistent with a physical assault, and there are witnesses who saw the defendant at the scene of the crime.",
+      "defenseSentence": "There is no conclusive evidence linking my client to the assault, and the victim's injuries could have been sustained in other ways."
+    },
+    {
+      "id": 13,
+      "description": "The victim reported being punched and kicked by the defendant",
+      "prosecutionSentence": "The victim's testimony is consistent with their injuries, and we have other witnesses who saw the defendant in the area at the time of the assault.",
+      "defenseSentence": "The victim's testimony may be unreliable, and there is no conclusive evidence linking my client to the assault."
+    },
+    {
+      "id": 14,
+      "description": "The defendant was heard threatening the victim prior to the assault",
+      "prosecutionSentence": "The witness's testimony indicates that the defendant had a clear motive to assault the victim and acted on that motive.",
+      "defenseSentence": "The witness's testimony may be unreliable and subject to error. It is possible that they misinterpreted what they heard or were influenced by outside factors."
+    },
+    {
+      "id": 15,
+      "description": "The victim suffered a broken rib and internal bleeding in the assault",
+      "prosecutionSentence": "The victim's injuries are consistent with a violent assault, and we have video footage placing the defendant at the scene of the crime.",
+      "defenseSentence": "The victim's injuries could have been sustained in other ways, and the video footage may not necessarily show the defendant committing the assault."
+    },
+    {
+      "id": 16,
+      "description": "The defendant was seen holding a weapon near the scene of the assault",
+      "prosecutionSentence": "The presence of a weapon and witness testimony placing the defendant in the area suggest that they had the means and opportunity to commit the assault.",
+      "defenseSentence": "The defendant did not use the weapon to commit the assault, and there is no conclusive evidence linking them to the crime."
+    },
+    {
+      "id": 17,
+      "description": "The victim suffered a broken nose and swollen eye in the assault",
+      "prosecutionSentence": "The victim's injuries are consistent with a physical assault, and there are multiple witnesses who saw the defendant at the scene of the crime.",
+      "defenseSentence": "The victim's injuries could have been sustained in other ways, and there is no conclusive evidence linking my client to the assault."
+    },
+    {
+      "id": 18,
+      "description": "The defendant was identified by the victim as the person who assaulted them",
+      "prosecutionSentence": "The victim's identification of the defendant as their assailant provides strong evidence of their guilt.",
+      "defenseSentence": "The victim may have misidentified my client, and there is no other evidence linking them to the assault."
+    },
+    {
+      "id": 19,
+      "description": "The victim was knocked unconscious and suffered a head injury in the assault",
+      "prosecutionSentence": "The victim's injuries are consistent with a violent assault, and there are witnesses who saw the defendant in the area at the time of the crime.",
+      "defenseSentence": "There is no conclusive evidence linking my client to the assault, and the victim's injuries could have been sustained in other ways."
+    },
+    {
+      "id": 20,
+      "description": "The victim was found with bruises and lacerations all over their body",
+      "prosecutionSentence": "The victim's extensive injuries are consistent with a brutal assault, and we have witness testimony placing the defendant at the scene of the crime.",
+      "defenseSentence": "The victim's injuries could have been sustained in a variety of ways, and there is no conclusive evidence linking my client to the assault."
+    },
+    {
+      "id": 21,
+      "description": "The defendant was seen holding a weapon that matches the description of the one used in the assault",
+      "prosecutionSentence": "The witness's testimony indicates that the defendant had access to the weapon used in the assault and was seen holding it around the time of the attack.",
+      "defenseSentence": "The witness's testimony may be unreliable and subject to error. It is possible that they misinterpreted what they saw or were influenced by outside factors."
+    },
+    {
+      "id": 22,
+      "description": "The victim's phone was found on the defendant's person",
+      "prosecutionSentence": "The victim's phone was in the defendant's possession around the time of the assault, indicating that they were in close physical contact.",
+      "defenseSentence": "The defendant may have innocently acquired the victim's phone and did not necessarily use it to commit the assault."
+    },
+    {
+      "id": 23,
+      "description": "The victim identified the defendant as their attacker in a lineup",
+      "prosecutionSentence": "The victim's identification of the defendant as their attacker is strong evidence that they were present at the scene of the assault.",
+      "defenseSentence": "Eyewitness identification can be unreliable and subject to error. It is possible that the victim misidentified my client or was influenced by outside factors."
+    },
+    {
+      "id": 24,
+      "description": "The defendant was seen running away from the scene of the assault",
+      "prosecutionSentence": "The defendant's flight from the scene of the assault is strong evidence that they were involved in the crime.",
+      "defenseSentence": "My client did not flee the scene of the assault and there is no conclusive evidence linking them to the crime."
+    },
+    {
+      "id": 25,
+      "description": "The victim's clothing was torn and ripped in the assault",
+      "prosecutionSentence": "The condition of the victim's clothing suggests that they were in a physical altercation, and we have witness testimony placing the defendant at the scene of the crime.",
+      "defenseSentence": "The condition of the victim's clothing could have been caused by a variety of circumstances and does not necessarily prove that my client was responsible for the assault."
+    },
+    {
+      "id": 26,
+      "description": "The defendant has a history of violence and assault",
+      "prosecutionSentence": "The defendant's history of violence is strong evidence that they have a propensity to commit assault, and it is likely that they were involved in this crime.",
+      "defenseSentence": "My client's past behavior is not relevant to this case, and there is no conclusive evidence linking them to the assault in question."
     }
   ],
   "arson": [
@@ -670,6 +760,54 @@
       "description": "The defendant was involved in a hit-and-run accident and later found to be driving under the influence.",
       "prosecutionSentence": "The defendant fled the scene of the accident and was later found to be intoxicated. This behavior indicates guilt and a disregard for the law.",
       "defenseSentence": "The defendant was not aware of the accident and did not flee intentionally. The intoxication did not cause the accident and may have occurred after the collision."
+    },
+    {
+      "id": 15,
+      "description": "The defendant's vehicle was found with significant damage matching the accident scene.",
+      "prosecutionSentence": "The defendant's damaged vehicle indicates they were involved in the hit-and-run accident.",
+      "defenseSentence": "The damage to the defendant's vehicle does not prove they were involved in the accident, as it could have been caused by another incident."
+    },
+    {
+      "id": 16,
+      "description": "Eyewitnesses saw the defendant driving erratically before the accident.",
+      "prosecutionSentence": "The defendant's erratic driving suggests they were under the influence at the time of the accident.",
+      "defenseSentence": "Eyewitness accounts can be unreliable and the defendant's driving behavior could have been caused by something other than intoxication."
+    },
+    {
+      "id": 17,
+      "description": "The defendant failed a field sobriety test administered by law enforcement.",
+      "prosecutionSentence": "The defendant's failure of the field sobriety test suggests they were driving under the influence at the time of the accident.",
+      "defenseSentence": "Field sobriety tests can be inaccurate and the defendant's failure may have been due to factors other than intoxication."
+    },
+    {
+      "id": 18,
+      "description": "The defendant's blood alcohol level was found to be above the legal limit.",
+      "prosecutionSentence": "The defendant's blood alcohol level above the legal limit suggests they were driving under the influence at the time of the accident.",
+      "defenseSentence": "The blood alcohol test may have been administered improperly or there may have been errors in the testing process."
+    },
+    {
+      "id": 19,
+      "description": "The defendant's speech was slurred and their eyes were bloodshot when they were taken into custody.",
+      "prosecutionSentence": "The defendant's slurred speech and bloodshot eyes are consistent with being under the influence of alcohol.",
+      "defenseSentence": "The defendant's slurred speech and bloodshot eyes could have been caused by something other than intoxication, such as fatigue or allergies."
+    },
+    {
+      "id": 20,
+      "description": "The defendant's breath smelled strongly of alcohol when they were taken into custody.",
+      "prosecutionSentence": "The defendant's strong smell of alcohol suggests they were under the influence at the time of the accident.",
+      "defenseSentence": "The defendant may have consumed alcohol after the accident and before they were taken into custody, or the smell could have been caused by something other than alcohol."
+    },
+    {
+      "id": 21,
+      "description": "The defendant has a prior record of driving under the influence.",
+      "prosecutionSentence": "The defendant's prior DUI record suggests a pattern of behavior and a disregard for the law.",
+      "defenseSentence": "The defendant's prior record does not prove they were under the influence at the time of the accident and should not be used to influence the current case."
+    },
+    {
+      "id": 22,
+      "description": "The defendant was driving on a suspended license at the time of the accident.",
+      "prosecutionSentence": "The defendant's suspended license indicates a lack of responsibility and disregard for the law.",
+      "defenseSentence": "The defendant's driving on a suspended license does not prove they were under the influence at the time of the accident and should not be used to influence the current case."
     }
   ],
   "recklessDriving": [
@@ -762,6 +900,108 @@
       "description": "The defendant was driving at night without headlights and caused a collision with another vehicle.",
       "prosecutionSentence": "We have witness statements that the defendant was driving without headlights and caused the collision.",
       "defenseSentence": "My client had their headlights on and was not driving recklessly. The collision may have been caused by the other driver's actions."
+    },
+    {
+      "id": 15,
+      "description": "The defendant was driving well above the speed limit and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have radar evidence that the defendant was driving well above the speed limit and caused the collision.",
+      "defenseSentence": "My client was not driving above the speed limit and did not cause the collision. The radar evidence may be inaccurate."
+    },
+    {
+      "id": 16,
+      "description": "The defendant was texting while driving and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have phone records that show the defendant was texting at the time of the collision.",
+      "defenseSentence": "My client was not texting while driving and did not cause the collision. The phone records may not be accurate."
+    },
+    {
+      "id": 17,
+      "description": "The defendant was driving under the influence of drugs and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have blood test results that show the defendant was under the influence of drugs at the time of the collision.",
+      "defenseSentence": "My client was not under the influence of drugs and did not cause the collision. The blood test results may be inaccurate."
+    },
+    {
+      "id": 18,
+      "description": "The defendant was driving under the influence of alcohol and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have breathalyzer test results that show the defendant was under the influence of alcohol at the time of the collision.",
+      "defenseSentence": "My client was not under the influence of alcohol and did not cause the collision. The breathalyzer test results may be inaccurate."
+    },
+    {
+      "id": 19,
+      "description": "The defendant was driving with a suspended license and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have records that show the defendant's license was suspended at the time of the collision.",
+      "defenseSentence": "My client was not driving with a suspended license and did not cause the collision. The records may be inaccurate."
+    },
+    {
+      "id": 20,
+      "description": "The defendant was driving a vehicle with faulty brakes and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have evidence that the defendant's vehicle had faulty brakes at the time of the collision.",
+      "defenseSentence": "My client's vehicle did not have faulty brakes and did not cause the collision. The evidence may be inaccurate."
+    },
+    {
+      "id": 21,
+      "description": "The defendant was driving a vehicle with a faulty steering system and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have evidence that the defendant's vehicle had a faulty steering system at the time of the collision.",
+      "defenseSentence": "My client's vehicle did not have a faulty steering system and did not cause the collision. The evidence may be inaccurate."
+    },
+    {
+      "id": 22,
+      "description": "The defendant was driving in the wrong direction on a one-way street and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have witness statements that the defendant was driving in the wrong direction on a one-way street at the time of the collision.",
+      "defenseSentence": "My client was not driving in the wrong direction on a one-way street and did not cause the collision. The witness statements may be inaccurate."
+    },
+    {
+      "id": 23,
+      "description": "The defendant was driving while fatigued and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have evidence that the defendant was driving while fatigued and caused the collision.",
+      "defenseSentence": "My client was not driving while fatigued and did not cause the collision. The evidence may be inaccurate."
+    },
+    {
+      "id": 24,
+      "description": "The defendant was driving aggressively and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have witness statements that the defendant was driving aggressively and caused the collision.",
+      "defenseSentence": "My client was not driving aggressively and did not cause the collision. The witness statements may be inaccurate."
+    },
+    {
+      "id": 25,
+      "description": "The defendant was racing with another vehicle and caused a collision.",
+      "prosecutionSentence": "We have witness statements that the defendant was racing with another vehicle and caused the collision.",
+      "defenseSentence": "My client was not racing with another vehicle and did not cause the collision. The witness statements may be inaccurate."
+    },
+    {
+      "id": 26,
+      "description": "The defendant was driving while distracted and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have evidence that the defendant was driving while distracted and caused the collision.",
+      "defenseSentence": "My client was not driving while distracted and did not cause the collision. The evidence may be inaccurate."
+    },
+    {
+      "id": 27,
+      "description": "The defendant was tailgating and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have witness statements that the defendant was tailgating and caused the collision.",
+      "defenseSentence": "My client was not tailgating and did not cause the collision. The witness statements may be inaccurate."
+    },
+    {
+      "id": 28,
+      "description": "The defendant was driving with worn-out tires and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have evidence that the defendant was driving with worn-out tires and caused the collision.",
+      "defenseSentence": "My client was not driving with worn-out tires and did not cause the collision. The evidence may be inaccurate."
+    },
+    {
+      "id": 29,
+      "description": "The defendant was driving in a carpool lane alone and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have camera footage that shows the defendant driving in a carpool lane alone and causing the collision.",
+      "defenseSentence": "My client was not driving in a carpool lane alone and did not cause the collision. The camera footage may be inaccurate."
+    },
+    {
+      "id": 30,
+      "description": "The defendant was driving with excessively loud music and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have witness statements that the defendant was driving with excessively loud music and caused the collision.",
+      "defenseSentence": "My client was not driving with excessively loud music and did not cause the collision. The witness statements may be inaccurate."
+    },
+    {
+      "id": 31,
+      "description": "The defendant was driving a vehicle with malfunctioning lights and caused a collision with another vehicle.",
+      "prosecutionSentence": "We have evidence that the defendant was driving a vehicle with malfunctioning lights and caused the collision.",
+      "defenseSentence": "My client's vehicle did not have malfunctioning lights and did not cause the collision. The evidence may be inaccurate."
     }
   ],
   "drivingNoLicense": [
@@ -854,6 +1094,48 @@
       "description": "The defendant was caught driving a rental car without a valid driver's license.",
       "prosecutionSentence": "We have evidence that the defendant was aware they did not have a valid license, yet still chose to operate a rental car, putting both themselves and others at risk.",
       "defenseSentence": "My client was not aware that their license had been revoked and believed they were authorized to operate the rental car."
+    },
+    {
+      "id": 15,
+      "description": "The defendant was pulled over for running a red light and was unable to provide a valid driver's license to the officer.",
+      "prosecutionSentence": "We have evidence that the defendant was driving without a valid license and knowingly broke the law by running a red light.",
+      "defenseSentence": "My client was not aware that their license had been revoked and did not see the red light due to the glare of the sun."
+    },
+    {
+      "id": 16,
+      "description": "The defendant was caught driving under the influence and did not have a valid driver's license.",
+      "prosecutionSentence": "We have evidence that the defendant was driving under the influence and did not have a valid license, putting both themselves and others at risk.",
+      "defenseSentence": "My client was not aware that their license had been revoked and did not intend to drive under the influence."
+    },
+    {
+      "id": 17,
+      "description": "The defendant was involved in a hit-and-run accident and was unable to provide a valid driver's license to the responding officer.",
+      "prosecutionSentence": "We have evidence that the defendant was driving without a valid license and knowingly left the scene of an accident.",
+      "defenseSentence": "My client was not aware that their license had been revoked and panicked after the accident."
+    },
+    {
+      "id": 18,
+      "description": "The defendant was pulled over for a broken taillight and was unable to provide a valid driver's license to the officer.",
+      "prosecutionSentence": "We have evidence that the defendant was driving without a valid license and knowingly broke the law by operating a vehicle with a broken taillight.",
+      "defenseSentence": "My client was not aware that their license had been revoked and was on their way to get the taillight fixed."
+    },
+    {
+      "id": 19,
+      "description": "The defendant was caught driving a motorcycle without a valid motorcycle license.",
+      "prosecutionSentence": "We have evidence that the defendant was driving a motorcycle without a valid license, knowingly breaking the law and putting both themselves and others at risk.",
+      "defenseSentence": "My client was not aware that they needed a separate license to operate a motorcycle and did not intend to break the law."
+    },
+    {
+      "id": 20,
+      "description": "The defendant was caught driving a commercial vehicle without a valid commercial driver's license.",
+      "prosecutionSentence": "We have evidence that the defendant was driving a commercial vehicle without a valid license, knowingly putting both themselves and others at risk.",
+      "defenseSentence": "My client was not aware that they needed a separate license to operate a commercial vehicle and believed their regular license was sufficient."
+    },
+    {
+      "id": 21,
+      "description": "The defendant was pulled over for not wearing a seatbelt and was unable to provide a valid driver's license to the officer.",
+      "prosecutionSentence": "We have evidence that the defendant was driving without a valid license and knowingly broke the law by not wearing a seatbelt.",
+      "defenseSentence": "My client was not aware that their license had been revoked and had just taken off their seatbelt to reach for something in the car."
     }
   ],
   "traffic": [
@@ -958,6 +1240,48 @@
       "description": "The defendant was caught on camera making an illegal U-turn on a busy street.",
       "prosecutionSentence": "The camera footage clearly shows the defendant making an illegal U-turn on a busy street, which is a violation of traffic laws and poses a safety hazard to other drivers.",
       "defenseSentence": "I'm sorry for my mistake. I was lost and trying to find my way back to the highway. I didn't realize that U-turns weren't allowed on that street."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was caught driving without a seatbelt.",
+      "prosecutionSentence": "The defendant was observed driving without a seatbelt, which is a violation of traffic laws and poses a risk to their safety.",
+      "defenseSentence": "I was only driving for a short distance and forgot to put on my seatbelt. I realize the importance of wearing a seatbelt and will make sure to do so in the future."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was observed driving in the carpool lane without any passengers.",
+      "prosecutionSentence": "The defendant was observed driving in the carpool lane without any passengers, which is a violation of traffic laws and can cause unnecessary congestion on the road.",
+      "defenseSentence": "I was running late for an appointment and thought it would be quicker to use the carpool lane. I now realize this was a mistake and won't do it again."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was pulled over for driving with an expired registration.",
+      "prosecutionSentence": "The defendant was pulled over for driving with an expired registration, which is a violation of traffic laws.",
+      "defenseSentence": "I didn't realize my registration had expired. I've since renewed it and won't let it happen again."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was caught on camera running a red light.",
+      "prosecutionSentence": "The camera footage clearly shows the defendant running a red light, which is a violation of traffic laws and poses a risk to other drivers and pedestrians.",
+      "defenseSentence": "I apologize for my mistake. I was in a hurry and thought I could make it through the light before it turned red. I now realize this was a dangerous decision and won't do it again."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was observed texting while driving.",
+      "prosecutionSentence": "The defendant was observed texting while driving, which is a violation of traffic laws and can cause distracted driving accidents.",
+      "defenseSentence": "I know it was wrong to text while driving, and I'm sorry for my mistake. I've learned my lesson and won't do it again."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was caught on camera driving over the speed limit.",
+      "prosecutionSentence": "The camera footage clearly shows the defendant driving over the speed limit, which is a violation of traffic laws and poses a risk to other drivers.",
+      "defenseSentence": "I was in a rush and didn't realize how fast I was going. I now understand the dangers of speeding and will make sure to drive within the posted speed limit."
+    },
+    {
+      "id": 0,
+      "description": "The defendant was pulled over for driving with a cracked windshield.",
+      "prosecutionSentence": "The defendant was pulled over for driving with a cracked windshield, which is a violation of traffic laws and can obstruct the driver's view.",
+      "defenseSentence": "I didn't realize my windshield was cracked. I've had it repaired since then and will make sure to keep it in good condition in the future."
     }
   ],
   "fight": [
@@ -1050,6 +1374,66 @@
       "description": "Inmate A suffered a broken arm after being pushed down a flight of stairs by Inmate B",
       "prosecutionSentence": "We have video evidence showing Inmate B pushing Inmate A down the stairs and causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
       "defenseSentence": "Our client did not intend to cause harm and merely pushed Inmate A in self-defense. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 15,
+      "description": "Inmate A sustained a broken jaw after being punched by Inmate B during a dispute over food",
+      "prosecutionSentence": "Witnesses confirm that Inmate B punched Inmate A without provocation, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to steal his food. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 16,
+      "description": "Inmate A suffered a concussion and multiple bruises after being attacked by Inmate B in the shower",
+      "prosecutionSentence": "Surveillance footage shows Inmate B attacking Inmate A without provocation in the shower area, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to attack him with a razor blade. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 17,
+      "description": "Inmate A suffered a black eye and a broken nose after being punched by Inmate B during a basketball game",
+      "prosecutionSentence": "Witnesses confirm that Inmate B punched Inmate A without provocation during a basketball game, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A repeatedly fouled him during the game and then attempted to attack him. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 18,
+      "description": "Inmate A suffered a broken rib after being kicked by Inmate B during an argument over television programming",
+      "prosecutionSentence": "Eyewitness accounts confirm that Inmate B kicked Inmate A without provocation during an argument over television programming, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him with a makeshift weapon during the argument. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 19,
+      "description": "Inmate A suffered a broken finger after being grabbed and twisted by Inmate B during a dispute over a card game",
+      "prosecutionSentence": "Eyewitness accounts confirm that Inmate B grabbed and twisted Inmate A's finger without provocation during a dispute over a card game, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to cheat during the card game. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 20,
+      "description": "Inmate A suffered a broken nose and a black eye after being punched by Inmate B during a disagreement over cell cleaning duties",
+      "prosecutionSentence": "Witnesses confirm that Inmate B punched Inmate A without provocation during a disagreement over cell cleaning duties, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to steal his cleaning supplies. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 21,
+      "description": "Inmate A suffered a broken tooth and a cut lip after being punched by Inmate B during a dispute over a phone call",
+      "prosecutionSentence": "Eyewitness accounts confirm that Inmate B punched Inmate A without provocation during a dispute over a phone call, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to steal his phone privileges. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 22,
+      "description": "Inmate A suffered a broken finger and a dislocated shoulder after being attacked by Inmate B with a broom handle",
+      "prosecutionSentence": "Surveillance footage shows Inmate B attacking Inmate A with a broom handle without provocation, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to attack him with a sharpened toothbrush. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 23,
+      "description": "Inmate A suffered a broken nose and a laceration on his forehead after being headbutted by Inmate B during a disagreement over a meal",
+      "prosecutionSentence": "Witnesses confirm that Inmate B headbutted Inmate A without provocation during a disagreement over a meal, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to steal his food. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 24,
+      "description": "Inmate A suffered a broken hand and a sprained wrist after being punched by Inmate B during a dispute over a game of chess",
+      "prosecutionSentence": "Eyewitness accounts confirm that Inmate B punched Inmate A without provocation during a dispute over a game of chess, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
+      "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to cheat during the chess game. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
     }
   ],
   "escape": [
