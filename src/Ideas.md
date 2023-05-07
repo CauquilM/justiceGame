@@ -1,4 +1,36 @@
 ## Proposed Features for a Legal Simulation Game
+Immigration law cases (asylum, citizenship, deportation)
+
+Immigration cases typically involve issues related to visas, green cards, 
+and citizenship. 
+These cases may arise when an individual is seeking to enter the United States, 
+extend their stay, or obtain permanent resident status. Some common immigration cases include:
+
+Family-based immigration: Cases in which a U.S. citizen or 
+permanent resident sponsors a family member for immigration.
+
+Employment-based immigration: Cases in which a U.S. 
+employer sponsors a foreign worker for a work visa.
+
+Asylum: Cases in which an individual seeks protection 
+from persecution in their home country.
+
+Deportation and removal: Cases in which an individual faces deportation 
+or removal from the United States due to immigration violations.
+
+Naturalization: Cases in which an individual applies for U.S. citizenship.
+
+Consular processing: Cases in which an individual applies for 
+a visa at a U.S. consulate or embassy abroad.
+
+Adjustment of status: Cases in which an individual applies 
+for a green card while in the United States.
+
+Visa waivers: Cases in which an individual seeks to enter 
+the United States without a visa.
+
+Immigration cases can be complex and often involve navigating multiple 
+federal agencies and regulations. 
 
 ### Soon
 1. Jury system: Introduce a jury system where the player must persuade a group of jurors to side with their decision.
