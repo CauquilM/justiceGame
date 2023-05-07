@@ -2116,5 +2116,193 @@
       "defenseSentence": "My client did not intend to cause the victim's death and was defending themselves in the fight."
     }
   ],
-  "drugTrafficking": []
+  "drugTrafficking": [
+    {
+      "id": 0,
+      "description": "A large amount of drugs were found in the defendant's cell during a routine search.",
+      "prosecutionSentence": "The drugs found in the defendant's cell were enough to supply the entire prison population, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the drugs were in their cell and someone else must have placed them there."
+    },
+    {
+      "id": 1,
+      "description": "The defendant was caught on CCTV footage passing drugs to another inmate during a visitation session.",
+      "prosecutionSentence": "The CCTV footage clearly shows the defendant passing drugs to the other inmate, and the defendant had a history of drug trafficking.",
+      "defenseSentence": "My client did not pass drugs to the other inmate and the footage must have been doctored or manipulated."
+    },
+    {
+      "id": 2,
+      "description": "Drugs were found hidden inside a package sent to the defendant by a known drug supplier.",
+      "prosecutionSentence": "The package was intercepted and searched, revealing a significant amount of drugs, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know there were drugs in the package and the supplier must have sent them without their knowledge or consent."
+    },
+    {
+      "id": 3,
+      "description": "The defendant was caught with drugs in their possession during a pat-down search before entering the visiting area.",
+      "prosecutionSentence": "The drugs were found in the defendant's pockets during the search, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the drugs were in their pockets and someone else must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 4,
+      "description": "The defendant was overheard discussing drug deals with other inmates during recreation time.",
+      "prosecutionSentence": "The defendant's conversations were recorded by an undercover officer and confirmed drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client was not discussing drug deals with the other inmates and the recordings must have been doctored or manipulated."
+    },
+    {
+      "id": 5,
+      "description": "The defendant was caught with drugs hidden inside their personal belongings during a random cell search.",
+      "prosecutionSentence": "The drugs found in the defendant's belongings were enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the drugs were in their belongings and someone else must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 6,
+      "description": "A search of the defendant's cell revealed drug paraphernalia and a ledger detailing drug transactions.",
+      "prosecutionSentence": "The paraphernalia and ledger provided strong evidence of drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not own the drug paraphernalia or ledger, and someone else must have put them in the cell without their knowledge or consent."
+    },
+    {
+      "id": 7,
+      "description": "A package containing drugs and addressed to the defendant was intercepted by prison officials before it reached its intended destination.",
+      "prosecutionSentence": "The package contained a significant amount of drugs and was clearly intended for the defendant, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the package contained drugs and the sender must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 8,
+      "description": "During a routine pat-down search, a prison guard discovered drugs hidden on the defendant's person.",
+      "prosecutionSentence": "The drugs found on the defendant were enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the drugs were on their person and someone else must have planted them there without their knowledge or consent."
+    },
+    {
+      "id": 9,
+      "description": "A wiretap investigation revealed that the defendant was coordinating drug trafficking operations from within the prison.",
+      "prosecutionSentence": "The wiretap recordings provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client was not involved in any drug trafficking operations and the recordings must have been fabricated or taken out of context."
+    },
+    {
+      "id": 10,
+      "description": "Multiple inmates reported seeing the defendant selling drugs in the prison yard.",
+      "prosecutionSentence": "The testimonies of multiple witnesses provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client was not selling drugs in the prison yard and the witnesses must be mistaken or lying."
+    },
+    {
+      "id": 11,
+      "description": "A search of the defendant's cell revealed a large quantity of drugs and drug paraphernalia.",
+      "prosecutionSentence": "The drugs and paraphernalia found in the defendant's cell provided strong evidence of their involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not own the drugs or paraphernalia and someone else must have put them in the cell without their knowledge or consent."
+    },
+    {
+      "id": 12,
+      "description": "An undercover officer posing as an inmate was able to purchase drugs directly from the defendant.",
+      "prosecutionSentence": "The undercover operation provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not sell drugs to the undercover officer and the officer must have mistaken them for someone else."
+    },
+    {
+      "id": 13,
+      "description": "The defendant was found in possession of a cell phone with evidence of drug transactions and communications with known drug dealers.",
+      "prosecutionSentence": "The evidence on the cell phone provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the cell phone contained evidence of drug transactions and the phone must have been planted on them without their knowledge or consent."
+    },
+    {
+      "id": 14,
+      "description": "A drug-sniffing dog alerted to the presence of drugs in the defendant's cell.",
+      "prosecutionSentence": "The alert from the drug-sniffing dog provided probable cause for a search of the defendant's cell, which revealed drugs and drug paraphernalia.",
+      "defenseSentence": "My client did not own the drugs or paraphernalia and someone else must have put them in the cell without their knowledge or consent."
+    },
+    {
+      "id": 15,
+      "description": "The defendant's bank account showed large and unexplained deposits of money, consistent with profits from drug trafficking.",
+      "prosecutionSentence": "The deposits in the defendant's bank account provided strong evidence of their involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not deposit the money and someone else must have used their information to do so without their knowledge or consent."
+    },
+    {
+      "id": 16,
+      "description": "A confidential informant reported that the defendant was involved in drug trafficking within the prison.",
+      "prosecutionSentence": "The informant provided specific details about the defendant's drug trafficking activity, and their information was corroborated by other evidence.",
+      "defenseSentence": "The informant's testimony is unreliable and my client has never been involved in drug trafficking."
+    },
+    {
+      "id": 17,
+      "description": "A search of the defendant's cell revealed a large quantity of drugs hidden in a secret compartment in the wall.",
+      "prosecutionSentence": "The amount of drugs found in the defendant's cell was enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know about the drugs hidden in the cell and someone else must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 18,
+      "description": "The defendant was caught on camera exchanging drugs for money with another inmate.",
+      "prosecutionSentence": "The footage clearly showed the defendant engaged in drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "The footage is inconclusive and does not show my client engaged in any illegal activity."
+    },
+    {
+      "id": 19,
+      "description": "A search of the defendant's person revealed a small quantity of drugs hidden in their clothing.",
+      "prosecutionSentence": "The drugs found on the defendant's person were consistent with drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know about the drugs hidden in their clothing and someone else must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 20,
+      "description": "The defendant's phone records showed multiple conversations with known drug traffickers outside of the prison.",
+      "prosecutionSentence": "The phone records provided strong evidence of the defendant's involvement in drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not discuss drug trafficking with anyone over the phone, and the calls were about other matters."
+    },
+    {
+      "id": 21,
+      "description": "An undercover officer posed as a drug buyer and successfully purchased drugs from the defendant.",
+      "prosecutionSentence": "The undercover operation provided strong evidence of the defendant's drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the person was an undercover officer and did not intend to sell drugs."
+    },
+    {
+      "id": 22,
+      "description": "A search of the defendant's visitors revealed that they were bringing in drugs to be sold within the prison.",
+      "prosecutionSentence": "The visitors admitted to bringing in drugs for the defendant, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not ask the visitors to bring in drugs and did not know they were planning to do so."
+    },
+    {
+      "id": 23,
+      "description": "A fellow inmate testified that the defendant had sold them drugs on multiple occasions.",
+      "prosecutionSentence": "The inmate's testimony provided strong evidence of the defendant's involvement in drug trafficking activity, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "The inmate's testimony is unreliable and my client did not sell drugs to them."
+    },
+
+    {
+      "id": 24,
+      "description": "The defendant was overheard on a recorded phone call discussing drug transactions with a known drug dealer.",
+      "prosecutionSentence": "The conversation provided strong evidence of the defendant's involvement in drug trafficking and their intention to continue the activity.",
+      "defenseSentence": "My client did not intend to participate in any drug transactions and was only discussing hypothetical scenarios with the other person on the call."
+    },
+    {
+      "id": 25,
+      "description": "During a routine pat-down search, prison guards found a small quantity of drugs hidden on the defendant's person.",
+      "prosecutionSentence": "The drugs found on the defendant were consistent with those commonly found in the prison, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the drugs were on their person and someone else must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 26,
+      "description": "The defendant was observed passing a small object to another inmate during a visitation session.",
+      "prosecutionSentence": "Subsequent searches of both inmates revealed drugs hidden on their persons, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not intend to pass drugs to the other inmate and was only giving them a harmless object, which was mistaken for drugs."
+    },
+    {
+      "id": 27,
+      "description": "A search of the defendant's cell revealed a stash of drugs hidden in a hollowed-out book.",
+      "prosecutionSentence": "The drugs found in the defendant's cell were enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not know the drugs were in the book and someone else must have put them there without their knowledge or consent."
+    },
+    {
+      "id": 28,
+      "description": "A search of the defendant's mail revealed letters discussing drug transactions with individuals outside the prison.",
+      "prosecutionSentence": "The letters provided strong evidence of the defendant's involvement in drug trafficking both inside and outside the prison.",
+      "defenseSentence": "My client did not intend to participate in any drug transactions and was only communicating with the individuals out of friendship or other non-criminal purposes."
+    },
+    {
+      "id": 29,
+      "description": "A search of the defendant's cell revealed drug paraphernalia and a homemade recipe for producing drugs.",
+      "prosecutionSentence": "The paraphernalia and recipe provided strong evidence of the defendant's involvement in drug production and trafficking, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not own the drug paraphernalia or recipe and someone else must have put them in the cell without their knowledge or consent."
+    },
+    {
+      "id": 30,
+      "description": "The defendant was observed handing over money to another inmate in exchange for a small object during a recreation period.",
+      "prosecutionSentence": "Subsequent searches of both inmates revealed drugs hidden on their persons, and the defendant had a history of drug-related offenses.",
+      "defenseSentence": "My client did not intend to purchase drugs from the other inmate and was only giving them money as a loan or payment for a non-criminal purpose."
+    }
+  ]
 }
