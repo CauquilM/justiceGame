@@ -436,105 +436,150 @@
   ],
   "arson": [
     {
-    "id": 1,
-    "description": "The abandoned warehouse in the industrial district was set ablaze, destroying the entire building and its contents."
-  },
+      "id": 0,
+      "description": "Fire can burn you",
+      "prosecutionSentence": "Naughtyyyyyyyyyyy",
+      "defenseSentence": "I am not naughty :("
+    },
+    {
+      "id": 1,
+      "description": "Footprints matching the defendant's shoes were found at the scene of the fire.",
+      "prosecutionSentence": "The defendant's shoes match the footprints found at the scene, providing strong evidence that they were present at the time of the fire.",
+      "defenseSentence": "The defendant's shoes may have been borrowed or stolen by someone else who then committed the crime."
+    },
     {
       "id": 2,
-      "description": "A string of fires in residential neighborhoods has been attributed to an arsonist on the loose."
+      "description": "A security camera captured footage of the defendant entering and leaving the area around the time of the fire.",
+      "prosecutionSentence": "The security footage clearly shows the defendant in the vicinity of the fire at the time it started.",
+      "defenseSentence": "The defendant may have been in the area for reasons unrelated to the fire, and the footage does not definitively prove their guilt."
     },
     {
       "id": 3,
-      "description": "A historic theater was burned down in what authorities believe was an act of arson."
+      "description": "An accelerant matching the type found in the defendant's possession was discovered at the scene of the fire.",
+      "prosecutionSentence": "The presence of an accelerant matching the defendant's possession at the scene provides strong evidence that they intentionally set the fire.",
+      "defenseSentence": "The defendant may have been carrying the accelerant for legitimate reasons, and it is not clear how it ended up at the scene of the fire."
     },
     {
       "id": 4,
-      "description": "Several cars in a parking lot were set on fire, causing extensive damage to the vehicles."
+      "description": "A witness reported seeing the defendant near the scene of the fire shortly before it started.",
+      "prosecutionSentence": "The witness's testimony places the defendant in the vicinity of the fire at the time it started.",
+      "defenseSentence": "The witness may have been mistaken or biased, and their testimony should be considered with caution."
     },
     {
       "id": 5,
-      "description": "A high-rise apartment complex caught fire in the middle of the night, forcing residents to evacuate."
+      "description": "Forensic analysis of debris found at the scene of the fire matched materials found in the defendant's home.",
+      "prosecutionSentence": "The forensic evidence strongly suggests that the defendant was responsible for the fire.",
+      "defenseSentence": "The materials may have been inadvertently transferred from the defendant's home to the scene of the fire, and their presence there does not necessarily prove guilt."
     },
     {
       "id": 6,
-      "description": "A forest fire in a popular national park was determined to have been caused by an intentional act of arson."
+      "description": "The defendant was overheard making incriminating statements about the fire to a friend.",
+      "prosecutionSentence": "The defendant's statements strongly suggest that they were responsible for the fire.",
+      "defenseSentence": "The defendant's statements may have been taken out of context or exaggerated by the witness, and their meaning should be carefully evaluated."
     },
     {
       "id": 7,
-      "description": "A restaurant was burned to the ground in what was later determined to be a case of arson."
+      "description": "The defendant had a motive to commit the arson, as they were facing financial difficulties and stood to gain from an insurance payout.",
+      "prosecutionSentence": "The defendant had a clear motive to commit the arson, which makes it more likely that they did so.",
+      "defenseSentence": "Having a motive does not necessarily prove that the defendant committed the crime, and other possible suspects should also be considered."
     },
     {
       "id": 8,
-      "description": "A series of fires were set in a college dormitory, causing damage and endangering the students living there."
+      "description": "The defendant's cell phone records show that they were in the vicinity of the fire at the time it started.",
+      "prosecutionSentence": "The defendant's cell phone records provide strong evidence that they were present at the scene of the fire when it started.",
+      "defenseSentence": "The defendant may have left their phone with someone else who then committed the crime, and their phone records do not prove their guilt beyond a reasonable doubt."
     },
     {
       "id": 9,
-      "description": "A local business owner reported that their store had been intentionally set on fire, causing significant damage."
+      "description": "Security footage captured an individual entering and exiting the building just before the fire started.",
+      "prosecutionSentence": "The defendant was caught on camera entering the building and is clearly the perpetrator of this crime.",
+      "defenseSentence": "The footage is blurry and inconclusive, and there is no way to definitively identify the person in question."
     },
     {
       "id": 10,
-      "description": "An abandoned house was set ablaze, resulting in the complete destruction of the structure."
+      "description": "A neighbor reported hearing loud banging and breaking glass just before the fire started.",
+      "prosecutionSentence": "The defendant was likely breaking into the building and starting the fire during the time reported by the witness.",
+      "defenseSentence": "The witness could have been mistaken or confused about the timing of the events, and there is no concrete evidence to support their claims."
     },
     {
       "id": 11,
-      "description": "A barn on a farm was burned down in a suspected case of arson."
+      "description": "A cigarette butt with DNA matching the defendant was found near the scene of the fire.",
+      "prosecutionSentence": "The defendant was clearly smoking near the building and likely caused the fire with a carelessly discarded cigarette.",
+      "defenseSentence": "The cigarette butt may have been planted or contaminated, and there is no direct evidence linking the defendant to the crime."
     },
     {
       "id": 12,
-      "description": "A warehouse containing expensive merchandise was set on fire, causing millions of dollars in damages."
+      "description": "A lighter with the defendant's fingerprints was found inside the building.",
+      "prosecutionSentence": "The defendant's fingerprints provide clear evidence that they were inside the building and started the fire.",
+      "defenseSentence": "The lighter may have been left in the building by someone else, and there is no way to prove that the defendant was the one who started the fire."
     },
     {
       "id": 13,
-      "description": "A church was burned down in what is being investigated as a possible hate crime."
+      "description": "A witness reported seeing the defendant leaving the scene of the fire shortly after it started.",
+      "prosecutionSentence": "The witness provides reliable testimony that places the defendant at the scene of the crime.",
+      "defenseSentence": "The witness may have been mistaken or have a motive to falsely incriminate the defendant, and there is no other evidence linking them to the crime."
     },
     {
       "id": 14,
-      "description": "A small forest fire was started by an arsonist, leading to the evacuation of nearby homes."
+      "description": "A gas can with the defendant's fingerprints was found outside the burned building.",
+      "prosecutionSentence": "The gas can is clear evidence that the defendant was involved in starting the fire.",
+      "defenseSentence": "The defendant's fingerprints may have been on the gas can for innocent reasons, and there is no proof that they used it to start the fire."
     },
     {
       "id": 15,
-      "description": "A homeless encampment was set on fire, leaving several people injured and without shelter."
+      "description": "A forensic analysis of debris from the fire indicated the presence of an accelerant commonly used for arson.",
+      "prosecutionSentence": "The presence of the accelerant strongly suggests that the fire was intentionally started by the defendant.",
+      "defenseSentence": "The analysis may have been flawed or misinterpreted, and the accelerant could have been present for innocent reasons."
     },
     {
       "id": 16,
-      "description": "A group of teenagers were caught setting fire to a playground, causing significant damage to the equipment."
+      "description": "A witness reported seeing the defendant acting suspiciously near the building in the days leading up to the fire.",
+      "prosecutionSentence": "The witness's testimony suggests that the defendant had motive and opportunity to start the fire.",
+      "defenseSentence": "The witness's account is based on speculation and is not supported by any concrete evidence."
     },
     {
       "id": 17,
-      "description": "A community center was burned down, causing widespread shock and sadness in the neighborhood."
+      "description": "A security camera footage shows a person setting fire to a dumpster in an alleyway, which eventually spread to nearby buildings.",
+      "prosecutionSentence": "The security footage provides clear evidence that the defendant was responsible for starting the fire and putting many people's lives in danger.",
+      "defenseSentence": "The footage is blurry and does not definitively identify the defendant as the person who set the fire. It is possible that someone else started the fire and the defendant was just in the area at the time."
     },
     {
       "id": 18,
-      "description": "Several garbage cans were set on fire in a residential area, leading to concerns about the safety of the community."
+      "description": "A witness reported seeing the defendant leaving the scene of the fire shortly before it was discovered.",
+      "prosecutionSentence": "The witness's testimony provides strong evidence that the defendant was involved in starting the fire.",
+      "defenseSentence": "The witness may have mistaken the defendant for someone else, or their memory may be unreliable. There is no concrete evidence linking the defendant to the crime."
     },
     {
       "id": 19,
-      "description": "A hotel was damaged in a fire that investigators believe was started intentionally."
+      "description": "A forensic analysis of the debris found at the scene of the fire matches materials found in the defendant's possession.",
+      "prosecutionSentence": "The forensic evidence conclusively proves that the defendant was present at the scene of the fire and was involved in starting it.",
+      "defenseSentence": "The forensic analysis may have been flawed or contaminated, leading to inaccurate results. There is no other evidence linking the defendant to the crime."
     },
     {
       "id": 20,
-      "description": "A fire broke out in a warehouse full of hazardous materials, raising fears of a chemical disaster."
+      "description": "A neighbor reported hearing the defendant making threats to burn down the building in question in the days leading up to the fire.",
+      "prosecutionSentence": "The defendant's threatening statements provide strong evidence of their intent to commit arson and their responsibility for the resulting fire.",
+      "defenseSentence": "The defendant's statements may have been taken out of context or misunderstood. There is no direct evidence linking the defendant to the fire."
     },
     {
       "id": 21,
-      "description": "A car dealership was set ablaze in the middle of the night, causing damage to dozens of vehicles."
+      "description": "A surveillance camera captured footage of the defendant buying gasoline shortly before the fire started.",
+      "prosecutionSentence": "The video evidence proves that the defendant had the means and the intent to start the fire.",
+      "defenseSentence": "The defendant may have had a legitimate reason to buy gasoline and may not have been involved in starting the fire. The video evidence does not definitively prove their guilt."
     },
     {
       "id": 22,
-      "description": "A historic building was damaged in a fire that authorities believe was set intentionally."
+      "description": "A former friend of the defendant testified that the defendant had admitted to starting the fire as a form of revenge.",
+      "prosecutionSentence": "The defendant's confession provides clear evidence of their guilt and their motive for committing the crime.",
+      "defenseSentence": "The former friend may be lying or may have misunderstood the defendant's statement. There is no other evidence linking the defendant to the fire."
     },
     {
       "id": 23,
-      "description": "A forest fire started by an arsonist destroyed a popular hiking trail and camping site."
-    },
-    {
-      "id": 24,
-      "description": "An apartment building was set on fire, leaving several families homeless and in need of assistance."
-    },
-    {
-      "id": 25,
-      "description": "A popular tourist attraction was damaged in a fire that investigators suspect was caused by arson."
-    }],
+      "description": "The defendant's DNA was found on a lighter that was discovered at the scene of the fire.",
+      "prosecutionSentence": "The DNA evidence proves that the defendant was at the scene of the fire and was likely involved in starting it.",
+      "defenseSentence": "The DNA may have been transferred to the lighter accidentally, or the lighter may have been planted at the scene of the fire. The DNA evidence does not definitively prove the defendant's guilt."
+    }
+  ],
   "dui": [
     {
       "id": 0,
