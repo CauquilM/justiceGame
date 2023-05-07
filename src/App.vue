@@ -39,8 +39,8 @@ export default {
         'criminalCharge': ['murder', 'theft', 'fraud', 'assault',  'arson',
           /*'cybercrime', 'identity theft', 'kidnapping', 'bribery'*/
         ],
-        'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense',
-          /*'hitAndRun', 'speeding', 'dragRacing', 'drivingUnderSuspension', 'textingWhileDriving'*/
+        'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense', 'hitAndRun',
+          /*'hitAndRun', 'dragRacing', 'drivingUnderSuspension'*/
         ],
         'prisonCharge': ['fight', 'escape',
           /*'assaultWithDeadlyWeapon', 'attempted', "hostage situation", 'manslaughter', 'drugTrafficking'*/

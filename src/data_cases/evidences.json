@@ -1138,6 +1138,182 @@
       "defenseSentence": "My client was not aware that their license had been revoked and had just taken off their seatbelt to reach for something in the car."
     }
   ],
+  "hitAndRun": [
+    {
+      "id": 0,
+      "description": "The defendant was caught on camera fleeing the scene of the accident after striking a parked car.",
+      "prosecutionSentence": "We have clear video evidence showing the defendant leaving the scene of the accident after striking a parked car.",
+      "defenseSentence": "My client was not aware that they had struck a parked car and did not intentionally leave the scene of the accident."
+    },
+    {
+      "id": 1,
+      "description": "Eyewitnesses report seeing the defendant's car speeding away from the scene of the accident.",
+      "prosecutionSentence": "Several eyewitnesses reported seeing the defendant's car speeding away from the scene of the accident.",
+      "defenseSentence": "My client was not involved in the accident and was not present at the scene."
+    },
+    {
+      "id": 2,
+      "description": "Police found the defendant's abandoned vehicle several blocks away from the scene of the hit and run.",
+      "prosecutionSentence": "Police found the defendant's abandoned vehicle several blocks away from the scene of the hit and run, and it showed damage consistent with the accident.",
+      "defenseSentence": "My client's vehicle may have been stolen or borrowed without their knowledge."
+    },
+    {
+      "id": 3,
+      "description": "Forensic evidence collected from the scene of the accident matches the defendant's vehicle.",
+      "prosecutionSentence": "Forensic evidence collected from the scene of the accident, such as paint chips and vehicle debris, matches the defendant's vehicle.",
+      "defenseSentence": "The forensic evidence may not be reliable or may have been tampered with."
+    },
+    {
+      "id": 4,
+      "description": "The victim's injuries are consistent with being struck by a vehicle, and there were no witnesses to the accident.",
+      "prosecutionSentence": "The victim's injuries are consistent with being struck by a vehicle, and there were no witnesses to the accident except for the defendant, who fled the scene.",
+      "defenseSentence": "My client was not involved in the accident and did not flee the scene."
+    },
+    {
+      "id": 5,
+      "description": "The defendant's vehicle had damage consistent with a hit and run accident.",
+      "prosecutionSentence": "The defendant's vehicle had damage consistent with a hit and run accident, and they were unable to provide a reasonable explanation for the damage.",
+      "defenseSentence": "The damage to my client's vehicle may have been caused by something other than an accident."
+    },
+    {
+      "id": 6,
+      "description": "A witness saw the defendant's vehicle collide with another car and then flee the scene.",
+      "prosecutionSentence": "A witness saw the defendant's vehicle collide with another car and then flee the scene without stopping to exchange information or render aid.",
+      "defenseSentence": "My client was not involved in the accident and did not flee the scene."
+    },
+    {
+      "id": 7,
+      "description": "Surveillance video shows the defendant's vehicle driving erratically before striking a pedestrian and then leaving the scene.",
+      "prosecutionSentence": "Surveillance video shows the defendant's vehicle driving erratically before striking a pedestrian and then leaving the scene without stopping to render aid.",
+      "defenseSentence": "My client was not involved in the accident and was not driving erratically."
+    },
+    {
+      "id": 8,
+      "description": "A hit and run driver collided with a bicyclist and fled the scene, leaving the victim with a broken arm and other injuries.",
+      "prosecutionSentence": "We have eyewitnesses who saw the defendant's vehicle collide with the bicyclist and then flee the scene. The victim suffered serious injuries and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client did not realize they had collided with a bicyclist and left the scene by accident. They are willing to take responsibility for any damages caused."
+    },
+    {
+      "id": 9,
+      "description": "A pedestrian was hit by a car that fled the scene, leaving the victim with a fractured skull and other serious injuries.",
+      "prosecutionSentence": "We have surveillance footage that clearly shows the defendant's vehicle striking the pedestrian and then leaving the scene without stopping to render aid. The victim suffered life-threatening injuries and the defendant must be held accountable.",
+      "defenseSentence": "My client did not see the pedestrian and did not realize they had hit someone. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 10,
+      "description": "A hit and run driver collided with a parked car and caused significant damage before fleeing the scene.",
+      "prosecutionSentence": "We have physical evidence linking the defendant's vehicle to the collision with the parked car. The defendant must be held accountable for their negligence and failure to report the incident.",
+      "defenseSentence": "My client did not realize they had collided with a parked car and left the scene by accident. They are willing to take responsibility for any damages caused."
+    },
+    {
+      "id": 11,
+      "description": "A motorist struck a pedestrian in a crosswalk and then fled the scene, leaving the victim with a broken leg and other injuries.",
+      "prosecutionSentence": "We have eyewitnesses who saw the defendant's vehicle hit the pedestrian in the crosswalk and then drive away without stopping to render aid. The victim suffered serious injuries and the defendant must be held accountable.",
+      "defenseSentence": "My client did not realize they had hit the pedestrian and left the scene by accident. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 12,
+      "description": "A hit and run driver collided with a motorcycle and caused the rider to be thrown from their bike, resulting in life-threatening injuries.",
+      "prosecutionSentence": "We have physical evidence and eyewitness testimony that link the defendant's vehicle to the collision with the motorcycle. The victim suffered serious injuries and the defendant must be held accountable for their reckless actions.",
+      "defenseSentence": "My client did not see the motorcycle and did not realize they had hit someone. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 13,
+      "description": "A driver fled the scene after striking a pedestrian who was crossing the street in a crosswalk, leaving the victim with a broken collarbone and other injuries.",
+      "prosecutionSentence": "We have surveillance footage that clearly shows the defendant's vehicle hitting the pedestrian in the crosswalk and then driving away without stopping to render aid. The victim suffered serious injuries and the defendant must be held accountable.",
+      "defenseSentence": "My client did not realize they had hit the pedestrian and left the scene by accident. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 14,
+      "description": "A hit and run driver crashed into a parked car and caused significant damage before fleeing the scene without leaving any identifying information.",
+      "prosecutionSentence": "We have gathered evidence from witnesses who saw the defendant's vehicle strike the parked car and then speed away without stopping. The damage caused was significant and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client was not aware that they had hit the parked car and left the scene unknowingly. We are willing to work with the other party to resolve the situation."
+    },
+    {
+      "id": 15,
+      "description": "A motorcyclist was struck by a hit and run driver, causing the rider to suffer serious injuries including a broken leg and head trauma.",
+      "prosecutionSentence": "We have gathered witness statements and physical evidence that indicates the defendant's vehicle was involved in the collision with the motorcyclist. The victim suffered serious injuries and the defendant must be held accountable for their reckless actions.",
+      "defenseSentence": "My client was not aware that they had struck the motorcyclist and left the scene unknowingly. We are willing to cooperate with authorities to resolve the matter and make restitution for any damages caused."
+    },
+    {
+      "id": 16,
+      "description": "A pedestrian was hit by a car that fled the scene, leaving the victim with multiple broken bones and other serious injuries.",
+      "prosecutionSentence": "We have gathered surveillance footage and witness statements that indicate the defendant's vehicle struck the pedestrian and then fled the scene without stopping. The victim suffered serious injuries and the defendant must be held accountable.",
+      "defenseSentence": "My client was not aware that they had hit the pedestrian and left the scene unknowingly. We are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 17,
+      "description": "A hit and run driver collided with a bicyclist and caused significant injuries before fleeing the scene without providing any identifying information.",
+      "prosecutionSentence": "We have gathered witness statements and physical evidence that indicate the defendant's vehicle was involved in the collision with the bicyclist. The victim suffered significant injuries and the defendant must be held accountable for their reckless actions.",
+      "defenseSentence": "My client was not aware that they had hit the bicyclist and left the scene unknowingly. We are willing to cooperate with authorities to resolve the matter and make restitution for any damages caused."
+    },
+    {
+      "id": 18,
+      "description": "A hit and run driver crashed into a fence and caused significant damage before fleeing the scene without leaving any identifying information.",
+      "prosecutionSentence": "We have gathered evidence from witnesses who saw the defendant's vehicle crash into the fence and then speed away without stopping. The damage caused was significant and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client was not aware that they had hit the fence and left the scene unknowingly. We are willing to work with the other party to resolve the situation."
+    },
+    {
+      "id": 19,
+      "description": "A hit and run driver collided with a parked car, causing significant damage and then fled the scene without leaving any identifying information.",
+      "prosecutionSentence": "We have found paint scrapings and other evidence at the scene that match the defendant's vehicle. We also have witness statements that place the defendant at the scene of the accident. They must be held accountable for their reckless behavior.",
+      "defenseSentence": "My client was not aware they had hit a parked car and did not intentionally flee the scene. We are willing to work with authorities to resolve this matter."
+    },
+    {
+      "id": 20,
+      "description": "A hit and run driver collided with a bicyclist, causing the victim to be thrown from their bike and suffer serious injuries.",
+      "prosecutionSentence": "We have evidence that the defendant's vehicle was involved in the accident and then fled the scene. We also have witness statements that identify the defendant as the driver. The victim suffered life-threatening injuries and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client did not realize they had hit the bicyclist and left the scene by accident. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 21,
+      "description": "A pedestrian was struck by a car that fled the scene, leaving the victim with a broken leg and severe head trauma.",
+      "prosecutionSentence": "We have found surveillance footage that shows the defendant's vehicle striking the pedestrian and then fleeing the scene. The victim suffered serious injuries and the defendant must be held accountable for their reckless behavior.",
+      "defenseSentence": "My client was not aware they had hit a pedestrian and did not intentionally flee the scene. We are willing to work with authorities to resolve this matter."
+    },
+    {
+      "id": 22,
+      "description": "A hit and run driver crashed into a parked car and caused significant damage before fleeing the scene without leaving any identifying information.",
+      "prosecutionSentence": "We have found evidence at the scene that match the defendant's vehicle. We also have witness statements that place the defendant at the scene of the accident. They must be held accountable for their reckless behavior.",
+      "defenseSentence": "My client was not aware they had hit a parked car and did not intentionally flee the scene. We are willing to work with authorities to resolve this matter."
+    },
+    {
+      "id": 23,
+      "description": "A cyclist was hit by a car that fled the scene, leaving the victim with multiple broken bones and other serious injuries.",
+      "prosecutionSentence": "We have evidence that the defendant's vehicle was involved in the accident and then fled the scene. We also have witness statements that identify the defendant as the driver. The victim suffered serious injuries and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client did not realize they had hit the cyclist and left the scene by accident. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 24,
+      "description": "A hit and run driver collided with a motorcycle and caused the rider to be thrown from their bike, resulting in life-threatening injuries.",
+      "prosecutionSentence": "We have eyewitness accounts that place the defendant at the scene of the accident, and forensic evidence that links their vehicle to the collision. The victim suffered serious, life-threatening injuries and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client was not aware that they had collided with the motorcycle and left the scene due to shock and confusion. We are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 25,
+      "description": "A pedestrian was struck by a vehicle that then fled the scene, leaving the victim with a broken arm and leg.",
+      "prosecutionSentence": "We have surveillance footage that clearly shows the defendant's vehicle striking the pedestrian and then driving away without stopping to render aid. The victim suffered serious injuries and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client did not realize they had hit the pedestrian and left the scene by accident. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 26,
+      "description": "A hit and run driver caused a multi-car accident and then fled the scene before police arrived, leaving several people injured.",
+      "prosecutionSentence": "We have eyewitness accounts that place the defendant at the scene of the accident, and forensic evidence that links their vehicle to the collision. Several people were injured in the accident and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client was not aware that they had caused the accident and left the scene due to shock and confusion. We are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 27,
+      "description": "A driver fled the scene after striking a pedestrian who was crossing the street in a crosswalk, leaving the victim with a broken collarbone and other injuries.",
+      "prosecutionSentence": "We have surveillance footage that clearly shows the defendant's vehicle hitting the pedestrian in the crosswalk and then driving away without stopping to render aid. The victim suffered serious injuries and the defendant must be held accountable for their actions.",
+      "defenseSentence": "My client did not realize they had hit the pedestrian and left the scene by accident. They are willing to cooperate with authorities and make restitution for any damages caused."
+    },
+    {
+      "id": 28,
+      "description": "A hit and run driver crashed into a utility pole, causing significant damage and leaving the scene without reporting the incident.",
+      "prosecutionSentence": "We have forensic evidence that links the defendant's vehicle to the collision with the utility pole, and witness statements that place the defendant at the scene of the accident. The defendant must be held accountable for leaving the scene and failing to report the incident.",
+      "defenseSentence": "My client did not realize they had caused damage to the utility pole and left the scene by accident. We are willing to cooperate with authorities and make restitution for any damages caused."
+    }
+  ],
   "traffic": [
     {
       "id": 0,
