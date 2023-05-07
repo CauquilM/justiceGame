@@ -36,8 +36,8 @@ export default {
       // Define randomization parameters
       randomizationParams: {
         'type': "",
-        'criminalCharge': ['murder', 'theft', 'fraud', 'assault',
-          /*'cybercrime', 'identity theft', 'arson', 'kidnapping', 'bribery'*/
+        'criminalCharge': ['murder', 'theft', 'fraud', 'assault',  'arson',
+          /*'cybercrime', 'identity theft', 'kidnapping', 'bribery'*/
         ],
         'roadCharge': ['dui', 'recklessDriving', 'drivingNoLicense',
           /*'hitAndRun', 'speeding', 'dragRacing', 'drivingUnderSuspension', 'textingWhileDriving'*/

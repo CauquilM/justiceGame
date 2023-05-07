@@ -186,6 +186,7 @@
       "prosecutionSentence": "The defendant's car was seen leaving the scene of the crime shortly after the murder, providing strong evidence of their involvement.",
       "defenseSentence": "The defendant's car may have been in the area for legitimate reasons and had no involvement in the murder. We need to consider alternative explanations for its presence."
     }
+
   ],
   "theft": [
     {
@@ -271,6 +272,36 @@
       "description": "The suspect's DNA was found on the stolen items",
       "prosecutionSentence": "DNA analysis conclusively proves that the suspect's DNA was found on the stolen items, providing strong evidence of their guilt.",
       "defenseSentence": "The presence of my client's DNA on the stolen items does not definitively prove that they committed the theft. It is possible that the DNA was transferred there innocently, or that someone else planted it."
+    },
+    {
+      "id": 16,
+      "description": "The suspect's phone records show they were in the vicinity of the crime scene at the time of the theft",
+      "prosecutionSentence": "The suspect's phone records show that they were in the vicinity of the crime scene at the time of the theft, providing strong evidence of their involvement in the crime.",
+      "defenseSentence": "The fact that my client's phone records show they were in the area does not prove their guilt. They could have been there for any number of reasons unrelated to the theft."
+    },
+    {
+      "id": 17,
+      "description": "The suspect was seen by multiple witnesses fleeing the scene of the crime",
+      "prosecutionSentence": "Multiple witnesses saw the suspect fleeing the scene of the crime. This is clear evidence of their guilt.",
+      "defenseSentence": "Eyewitness testimony is notoriously unreliable. Multiple witnesses could have been mistaken or influenced each other. It is not conclusive evidence of my client's guilt."
+    },
+    {
+      "id": 18,
+      "description": "The suspect's car was seen leaving the scene of the crime",
+      "prosecutionSentence": "A witness saw the suspect's car leaving the scene of the crime. This is clear evidence of their involvement in the crime.",
+      "defenseSentence": "The witness may have been mistaken or could have seen a similar car. The fact that the car was seen leaving the scene does not prove my client's guilt."
+    },
+    {
+      "id": 19,
+      "description": "The suspect's blood was found on the broken window used to gain entry to the building",
+      "prosecutionSentence": "Forensic analysis found the suspect's blood on the broken window used to gain entry to the building. This is clear evidence of their involvement in the crime.",
+      "defenseSentence": "The presence of my client's blood does not prove their guilt. They may have cut themselves innocently on the broken window at an earlier time."
+    },
+    {
+      "id": 20,
+      "description": "The suspect was identified by a victim of the theft",
+      "prosecutionSentence": "The victim of the theft positively identified the suspect as the person who stole their belongings.",
+      "defenseSentence": "Eyewitness identification is notoriously unreliable. The victim may have been mistaken or influenced by outside factors. It is not conclusive evidence of my client's guilt."
     }
   ],
   "fraud": [
@@ -403,6 +434,107 @@
       "defenseSentence": "My client did not assault the victim, and the DNA evidence could have been planted or contaminated."
     }
   ],
+  "arson": [
+    {
+    "id": 1,
+    "description": "The abandoned warehouse in the industrial district was set ablaze, destroying the entire building and its contents."
+  },
+    {
+      "id": 2,
+      "description": "A string of fires in residential neighborhoods has been attributed to an arsonist on the loose."
+    },
+    {
+      "id": 3,
+      "description": "A historic theater was burned down in what authorities believe was an act of arson."
+    },
+    {
+      "id": 4,
+      "description": "Several cars in a parking lot were set on fire, causing extensive damage to the vehicles."
+    },
+    {
+      "id": 5,
+      "description": "A high-rise apartment complex caught fire in the middle of the night, forcing residents to evacuate."
+    },
+    {
+      "id": 6,
+      "description": "A forest fire in a popular national park was determined to have been caused by an intentional act of arson."
+    },
+    {
+      "id": 7,
+      "description": "A restaurant was burned to the ground in what was later determined to be a case of arson."
+    },
+    {
+      "id": 8,
+      "description": "A series of fires were set in a college dormitory, causing damage and endangering the students living there."
+    },
+    {
+      "id": 9,
+      "description": "A local business owner reported that their store had been intentionally set on fire, causing significant damage."
+    },
+    {
+      "id": 10,
+      "description": "An abandoned house was set ablaze, resulting in the complete destruction of the structure."
+    },
+    {
+      "id": 11,
+      "description": "A barn on a farm was burned down in a suspected case of arson."
+    },
+    {
+      "id": 12,
+      "description": "A warehouse containing expensive merchandise was set on fire, causing millions of dollars in damages."
+    },
+    {
+      "id": 13,
+      "description": "A church was burned down in what is being investigated as a possible hate crime."
+    },
+    {
+      "id": 14,
+      "description": "A small forest fire was started by an arsonist, leading to the evacuation of nearby homes."
+    },
+    {
+      "id": 15,
+      "description": "A homeless encampment was set on fire, leaving several people injured and without shelter."
+    },
+    {
+      "id": 16,
+      "description": "A group of teenagers were caught setting fire to a playground, causing significant damage to the equipment."
+    },
+    {
+      "id": 17,
+      "description": "A community center was burned down, causing widespread shock and sadness in the neighborhood."
+    },
+    {
+      "id": 18,
+      "description": "Several garbage cans were set on fire in a residential area, leading to concerns about the safety of the community."
+    },
+    {
+      "id": 19,
+      "description": "A hotel was damaged in a fire that investigators believe was started intentionally."
+    },
+    {
+      "id": 20,
+      "description": "A fire broke out in a warehouse full of hazardous materials, raising fears of a chemical disaster."
+    },
+    {
+      "id": 21,
+      "description": "A car dealership was set ablaze in the middle of the night, causing damage to dozens of vehicles."
+    },
+    {
+      "id": 22,
+      "description": "A historic building was damaged in a fire that authorities believe was set intentionally."
+    },
+    {
+      "id": 23,
+      "description": "A forest fire started by an arsonist destroyed a popular hiking trail and camping site."
+    },
+    {
+      "id": 24,
+      "description": "An apartment building was set on fire, leaving several families homeless and in need of assistance."
+    },
+    {
+      "id": 25,
+      "description": "A popular tourist attraction was damaged in a fire that investigators suspect was caused by arson."
+    }],
   "dui": [
     {
       "id": 0,
