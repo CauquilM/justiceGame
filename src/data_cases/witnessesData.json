@@ -1,0 +1,364 @@
+{
+  "murder": [
+    {
+      "id": 0,
+      "name": "William Ramos",
+      "age": 42,
+      "job": "Eyewitness",
+      "presentation": "My name is John Smith, and I was an eyewitness to the murder that took place on the night of May 5th.",
+      "testimony": [
+        {
+          "question": "Did you see the defendant at the scene of the crime?",
+          "answers": [
+            "Yes, I saw the defendant standing over the victim with a bloody knife in their hand.",
+            "No, I did not see the defendant at the scene of the crime."
+          ]
+        },
+        {
+          "question": "Can you describe what the defendant was wearing on the night of the murder?",
+          "answers": [
+            "The defendant was wearing a dark hoodie and jeans.",
+            "I did not get a clear look at the defendant's clothing."
+          ]
+        },
+        {
+          "question": "Did you hear any sounds or noises at the time of the murder?",
+          "answers": [
+            "Yes, I heard a loud scream followed by the sound of footsteps running away from the scene.",
+            "No, I did not hear anything unusual."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "John Williams",
+      "age": 45,
+      "job": "Private Investigator",
+      "presentation": "My name is John Williams, and I'm a private investigator with over 20 years of experience in criminal investigations.",
+      "testimony": [
+        {
+          "question": "Were there any signs of forced entry at the crime scene?",
+          "answers": [
+            "No, there were no signs of forced entry. It appears that the perpetrator had access to the victim's property.",
+            "Yes, there were clear signs of forced entry. The perpetrator had to break a window to gain access to the property."
+          ]
+        },
+        {
+          "question": "Did you find any evidence that could link the defendant to the crime?",
+          "answers": [
+            "Yes, we found DNA evidence at the crime scene that matches the defendant's profile.",
+            "No, we didn't find any evidence that could link the defendant to the crime."
+          ]
+        },
+        {
+          "question": "Based on your experience, do you believe the crime was premeditated or a crime of passion?",
+          "answers": [
+            "Based on the evidence we've gathered, I believe this was a premeditated crime.",
+            "It's difficult to say for sure without more information, but it's possible that this was a crime of passion."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Robert Jackson",
+      "age": 47,
+      "job": "Security Guard",
+      "presentation": "My name is Robert Jackson, and I'm a security guard at the building where the murder took place.",
+      "testimony": [
+        {
+          "question": "Did you see anyone suspicious in the building on the night of the murder?",
+          "answers": [
+            "Yes, I saw a man who seemed to be lurking around the hallway where the victim's office is located.",
+            "No, I didn't notice anything out of the ordinary."
+          ]
+        },
+        {
+          "question": "Did you hear any unusual noises or disturbances on the night of the murder?",
+          "answers": [
+            "Yes, I heard what sounded like a struggle or a fight coming from the direction of the victim's office.",
+            "No, everything was quiet and normal throughout my shift."
+          ]
+        },
+        {
+          "question": "Did you notice any signs of forced entry or unusual activity in the building on the night of the murder?",
+          "answers": [
+            "Yes, I noticed that one of the windows on the ground floor had been broken and appeared to have been forced open.",
+            "No, everything looked secure and normal when I did my rounds."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "age": 35,
+      "job": "Forensic Scientist",
+      "presentation": "My name is Emily Davis, and I'm a forensic scientist who was called to examine the evidence found at the crime scene.",
+      "testimony": [
+        {
+          "question": "Based on your analysis of the evidence, can you determine the cause of death of the victim?",
+          "answers": [
+            "Yes, the victim suffered from multiple stab wounds to the chest and abdomen.",
+            "No, the cause of death is still undetermined pending further analysis."
+          ]
+        },
+        {
+          "question": "Did you find any DNA or other trace evidence that could help identify the killer?",
+          "answers": [
+            "Yes, we found DNA samples on the murder weapon and at various points in the crime scene that match the defendant's DNA.",
+            "No, we didn't find any useful DNA or other evidence at the scene."
+          ]
+        },
+        {
+          "question": "Based on your analysis of the evidence, do you believe that the murder was premeditated or committed in the heat of the moment?",
+          "answers": [
+            "Based on the evidence, it appears that the murder was premeditated and planned in advance.",
+            "It's difficult to say for sure at this point, but the evidence suggests that the killer may have acted impulsively."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "David Lee",
+      "age": 42,
+      "job": "Security Guard",
+      "presentation": "Good afternoon, my name is David Lee, and I am a security guard at the building where the crime occurred.",
+      "testimony": [
+        {
+          "question": "Did you see anyone entering or leaving the building at the time of the crime?",
+          "answers": [
+            "Yes, I saw a man leaving the building around the time the crime was committed.",
+            "No, I did not see anyone entering or leaving the building."
+          ]
+        },
+        {
+          "question": "Did you hear any unusual noises or disturbances at the time of the crime?",
+          "answers": [
+            "Yes, I heard a loud bang that sounded like a gunshot.",
+            "No, I did not hear anything out of the ordinary."
+          ]
+        },
+        {
+          "question": "Did you notice anything suspicious or unusual in the building prior to the crime?",
+          "answers": [
+            "Yes, I noticed a man acting strangely in the lobby earlier in the day.",
+            "No, everything seemed normal to me."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mary Rodriguez",
+      "age": 28,
+      "job": "Registered Nurse",
+      "presentation": "Good morning, my name is Mary Rodriguez, and I'm a registered nurse at the hospital where the victim was treated.",
+      "testimony": [
+        {
+          "question": "Can you describe the victim's injuries and the treatment they received at the hospital?",
+          "answers": [
+            "The victim suffered multiple gunshot wounds and was immediately taken to the operating room for emergency surgery.",
+            "I cannot discuss the specifics of a patient's medical treatment."
+          ]
+        },
+        {
+          "question": "Did the victim provide any information about who might have committed the crime?",
+          "answers": [
+            "Yes, the victim was able to give a brief description of the perpetrator before losing consciousness.",
+            "No, the victim was not conscious or coherent when they arrived at the hospital."
+          ]
+        },
+        {
+          "question": "Did you notice anything unusual or suspicious about the victim's condition or behavior?",
+          "answers": [
+            "Yes, the victim seemed very agitated and frightened when they arrived at the hospital.",
+            "No, the victim's behavior was typical for someone with serious injuries."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Paul Robinson",
+      "age": 42,
+      "job": "Construction worker",
+      "presentation": "My name is Paul Robinson, and I work as a construction worker at the building site near where the incident took place.",
+      "testimony": [
+        {
+          "question": "Did you witness the incident happen?",
+          "answers": [
+            "Yes, I was working nearby and saw everything that happened.",
+            "No, I didn't see anything."
+          ]
+        },
+        {
+          "question": "Do you recognize the defendant as being present at the time of the incident?",
+          "answers": [
+            "Yes, I saw the defendant at the scene of the incident.",
+            "No, I don't recognize the defendant."
+          ]
+        },
+        {
+          "question": "Can you describe what you saw happen?",
+          "answers": [
+            "I saw the defendant arguing with the victim before the victim was attacked.",
+            "I didn't see the exact moment of the attack, but I heard shouting and saw the defendant running away."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Elizabeth Davis",
+      "age": 58,
+      "job": "Retired nurse",
+      "presentation": "My name is Elizabeth Davis, and I'm a retired nurse with experience in treating victims of violent crimes.",
+      "testimony": [
+        {
+          "question": "Did you treat the victim after the incident?",
+          "answers": [
+            "Yes, I was one of the first responders to treat the victim.",
+            "No, I was not involved in treating the victim."
+          ]
+        },
+        {
+          "question": "Can you describe the injuries sustained by the victim?",
+          "answers": [
+            "The victim suffered several stab wounds and was bleeding heavily when I arrived on the scene.",
+            "I can't provide specific details, but the victim's injuries were severe."
+          ]
+        },
+        {
+          "question": "Do you believe the victim's injuries were life-threatening?",
+          "answers": [
+            "Yes, the victim was in critical condition and required immediate medical attention.",
+            "It's possible that the victim's injuries were life-threatening, but I can't say for certain."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Zu Wang",
+      "age": 35,
+      "job": "Taxi driver",
+      "presentation": "My name is Zu Wang, and I'm a taxi driver who was driving in the area where the incident took place.",
+      "testimony": [
+        {
+          "question": "Did you see anyone running away from the scene of the incident?",
+          "answers": [
+            "Yes, I saw a man running away from the scene shortly after the incident.",
+            "No, I didn't see anyone running away."
+          ]
+        },
+        {
+          "question": "Can you describe the man you saw running away?",
+          "answers": [
+            "He was a tall, slim man with short hair wearing a dark jacket and jeans.",
+            "I didn't get a good look at him, but he appeared to be a young man wearing casual clothing."
+          ]
+        },
+        {
+          "question": "Did you see any vehicles leaving the scene of the incident?",
+          "answers": [
+            "Yes, I saw a car speeding away from the scene shortly after the incident.",
+            "No, I didn't see any vehicles leaving the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Jessica Stewart",
+      "age": 47,
+      "job": "Accountant",
+      "presentation": "My name is Jessica Stewart, and I'm an accountant who was hired to audit the defendant's financial records.",
+      "testimony": [
+        {
+          "question": "Did you find any discrepancies in the defendant's financial records?",
+          "answers": [
+            "Yes, there were several instances of missing funds and unexplained transactions.",
+            "No, the records appeared to be accurate and in order."
+          ]
+        },
+        {
+          "question": "Were you able to determine where the missing funds went?",
+          "answers": [
+            "Yes, it appears that the defendant embezzled the funds for personal use.",
+            "No, I was unable to determine the exact location of the missing funds."
+          ]
+        },
+        {
+          "question": "Did you confront the defendant about the discrepancies?",
+          "answers": [
+            "Yes, I brought the discrepancies to the defendant's attention and requested an explanation.",
+            "No, I did not directly confront the defendant about the discrepancies."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Olivia Henderson",
+      "age": 25,
+      "job": "Nurse",
+      "presentation": "My name is Olivia Henderson, and I was on duty the night of the incident at the hospital where the victim was taken.",
+      "testimony": [
+        {
+          "question": "What was the victim's condition when they arrived at the hospital?",
+          "answers": [
+            "The victim was in critical condition and required immediate medical attention.",
+            "The victim's condition was stable and they were able to communicate with hospital staff."
+          ]
+        },
+        {
+          "question": "Did the victim provide any information about their attacker?",
+          "answers": [
+            "Yes, the victim was able to provide a physical description of their attacker.",
+            "No, the victim was unable to provide any information about their attacker."
+          ]
+        },
+        {
+          "question": "Was the victim able to recover from their injuries?",
+          "answers": [
+            "No, unfortunately the victim succumbed to their injuries and passed away.",
+            "Yes, the victim was able to recover fully from their injuries."
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Ethan Parker",
+      "age": 38,
+      "job": "Security Guard",
+      "presentation": "My name is Ethan Parker, and I was on duty the night of the incident at the building where the crime took place.",
+      "testimony": [
+        {
+          "question": "Did you witness the incident firsthand?",
+          "answers": [
+            "Yes, I saw the defendant entering and leaving the building around the time of the incident.",
+            "No, I did not witness the incident firsthand."
+          ]
+        },
+        {
+          "question": "Did you notice anything unusual or suspicious about the defendant's behavior?",
+          "answers": [
+            "Yes, the defendant appeared nervous and was acting furtively.",
+            "No, the defendant's behavior seemed normal and routine."
+          ]
+        },
+        {
+          "question": "Did you report the defendant's behavior to your supervisor?",
+          "answers": [
+            "Yes, I reported my observations to my supervisor immediately after the incident.",
+            "No, I did not report the defendant's behavior to my supervisor."
+          ]
+        }
+      ]
+    }
+  ]
+}

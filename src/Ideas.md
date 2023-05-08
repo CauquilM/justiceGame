@@ -46,8 +46,6 @@ federal agencies and regulations.
 2. Public opinion: Introduce a system where the player's decisions affect their public approval rating.
 3. Judge's chambers: Add a feature where players can interact with their clerk or other characters in their judge's
    chambers.
-4. Pre-trial negotiations: Add pre-trial negotiations where the player must work with both the prosecution and defense
-   to come to a plea agreement.
 
 ### Later
 

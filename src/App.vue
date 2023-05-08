@@ -19,6 +19,7 @@ import evidences from "@/data_cases/evidences.json"
 import descriptions from "@/data_cases/descriptions.json"
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
+import witnessesData from '@/data_cases/witnessesData.json'
 
 export default {
   name: 'App',
@@ -51,7 +52,6 @@ export default {
         'trafficCharge': ['traffic']
         /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
       },
-
       caseObj: {
         suspect: {
           name: this.generateName(),
@@ -216,11 +216,10 @@ export default {
 
       if (!fineVariant && text === "prison") {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if(prosecutionNoSentence >= 7){
+        if (prosecutionNoSentence >= 7) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({prison: prosecutorChoice});
-        }
-        else {
+        } else {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({prison: 0});
         }
@@ -246,11 +245,10 @@ export default {
         });
       } else if (!fineVariant && text === "probation") {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if(prosecutionNoSentence >= 7){
+        if (prosecutionNoSentence >= 7) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({probation: prosecutorChoice});
-        }
-        else {
+        } else {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({probation: 0});
         }
@@ -276,11 +274,10 @@ export default {
         });
       } else if (!fineVariant && text === "traffic") {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if(prosecutionNoSentence >= 7){
+        if (prosecutionNoSentence >= 7) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({fine: prosecutorChoice});
-        }
-        else {
+        } else {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({fine: 0});
         }
@@ -292,11 +289,10 @@ export default {
         });
       } else {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if(prosecutionNoSentence >= 7){
+        if (prosecutionNoSentence >= 7) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({fine: prosecutorChoice});
-        }
-        else {
+        } else {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({fine: 0});
         }
@@ -378,7 +374,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.criminalCharge === "theft") {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
@@ -388,6 +384,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 20000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.criminalCharge === "fraud") {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
@@ -397,6 +394,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(5000, 100000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.criminalCharge === "assault") {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
@@ -406,6 +404,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.criminalCharge === "arson") {
             this.caseObj["type"] = "criminal";
             this.caseObj["charge"] = this.caseObj.criminalCharge;
@@ -415,6 +414,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           }
           /******* Road *******/
           else if (this.caseObj.roadCharge === "dui") {
@@ -426,6 +426,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.roadCharge === "recklessDriving") {
             this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "reckless driving";
@@ -435,6 +436,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.roadCharge === "drivingNoLicense") {
             this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "driving w/o license";
@@ -444,6 +446,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.roadCharge === "hitAndRun") {
             this.caseObj["type"] = "traffic crime";
             this.caseObj["charge"] = "hit and run";
@@ -453,6 +456,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+            this.caseObj["witnesses"] = witnessesData.murder;
           }
           /******* Traffic *******/
           else if (this.caseObj.trafficCharge === "traffic") {
@@ -474,6 +478,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.prisonCharge === "escape") {
             this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "escape";
@@ -483,6 +488,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.prisonCharge === "assaultWithDeadlyWeapon") {
             this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "assault with deadly weapon";
@@ -492,6 +498,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.prisonCharge === "manslaughter") {
             this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "manslaughter";
@@ -501,6 +508,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+            this.caseObj["witnesses"] = witnessesData.murder;
           } else if (this.caseObj.prisonCharge === "drugTrafficking") {
             this.caseObj["type"] = "prison case";
             this.caseObj["charge"] = "drug trafficking";
@@ -510,6 +518,7 @@ export default {
             this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
             this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
             this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+            this.caseObj["witnesses"] = witnessesData.murder;
           }
 
         } else {
