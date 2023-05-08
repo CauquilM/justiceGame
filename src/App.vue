@@ -3,6 +3,7 @@
     <div class="dark-mode-flex">
       <DarkModeSwitch/>
     </div>
+    <p v-if="this.$bvMedia('xl')">Coucou</p>
     <router-view/>
   </div>
 </template>
@@ -329,7 +330,6 @@ export default {
       const record = [];
       const randomChances = Math.floor(Math.random() * 11);
       if (randomChances >= chancesToHaveARecord) {
-        console.log('enter');
         const min = 1; // minimum number of crimes
         const max = Math.min(Math.floor(Math.random() * (crimesData.crimes.length - min)) + min, 5); // maximum number of crimes, up to the length of the crimes array minus the minimum or 10, whichever is smaller
         const numCrimes = Math.floor(Math.random() * (max - min + 1)) + min; // generate a random number of crimes between min and max

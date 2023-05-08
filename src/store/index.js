@@ -324,9 +324,8 @@ export default new Vuex.Store({
                     console.log(err)
                 })
         },
-        chooseProsecutionSentence({state, commit}, sentences){
+        chooseProsecutionSentence({commit}, sentences){
             commit("SET_PROSECUTION_SENTENCES", sentences);
-            console.log("prosecution store: ", state.prosecutionSentences);
         },
         addGeneratedCase({ state, commit }, cases){
             commit("SET_CASES", cases);

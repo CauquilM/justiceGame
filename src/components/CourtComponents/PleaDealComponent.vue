@@ -56,7 +56,7 @@ export default {
       this.showButton = false;
     },
     createPleaDeal() {
-      if (this.randomNumber() >= 1) {
+      if (this.randomNumber() >= 9) {
         if (this.chosenCase.type !== 'traffic infraction'){
           if(this.noSentence() >= 2){
             this.prisonSentence = this.randomNumber(15, 1, true);
