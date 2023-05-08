@@ -9,13 +9,15 @@
         <SentenceComponent/>
 
         <CourtBarComponent/>
-        <CriminalRecord/>
+        <CriminalRecord v-if="screenWidth > 540"/>
       </div>
 
       <div class="others-div">
         <DefenseComponent/>
 
         <DescriptionComponent />
+
+        <CriminalRecord v-if="screenWidth < 540"/>
 
         <AllProvesComponent/>
 
@@ -45,11 +47,28 @@ export default {
     AllProvesComponent,
     ProsecutionComponent, DescriptionComponent, DefenseComponent, SentenceComponent, JudgeComponent
   },
+  data(){
+    return {
+      screenWidth: 0,
+    }
+  },
   created() {
     this.displayCase()
   },
+  mounted() {
+    this.updateScreenWidth();
+    this.onScreenResize();
+  },
   methods: {
     ...mapActions(["displayCase"]),
+    onScreenResize() {
+      window.addEventListener("resize", () => {
+        this.updateScreenWidth();
+      });
+    },
+    updateScreenWidth() {
+      this.screenWidth = window.innerWidth;
+    },
   }
 }
 </script>

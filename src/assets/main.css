@@ -270,6 +270,12 @@
     }
 }
 
+@media (max-width: 600px) {
+    .criminal-record-card {
+        max-width: 75%;
+    }
+}
+
 @media (max-width: 500px) {
     .pleaDeal-buttons-container > button {
         font-size: 0.82em;

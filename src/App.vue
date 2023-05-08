@@ -3,7 +3,6 @@
     <div class="dark-mode-flex">
       <DarkModeSwitch/>
     </div>
-    <p v-if="this.$bvMedia('xl')">Coucou</p>
     <router-view/>
   </div>
 </template>
