@@ -13,9 +13,11 @@
       </div>
 
       <div class="others-div">
-        <DefenseComponent/>
+        <DefenseComponent v-if="screenWidth > 540"/>
 
         <DescriptionComponent />
+
+        <DefenseComponent v-if="screenWidth < 540"/>
 
         <CriminalRecord v-if="screenWidth < 540"/>
 
