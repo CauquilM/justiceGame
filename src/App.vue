@@ -216,7 +216,7 @@ export default {
 
       if (!fineVariant && text === "prison") {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if (prosecutionNoSentence >= 7) {
+        if (prosecutionNoSentence >= 2) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({prison: prosecutorChoice});
         } else {
@@ -245,7 +245,7 @@ export default {
         });
       } else if (!fineVariant && text === "probation") {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if (prosecutionNoSentence >= 7) {
+        if (prosecutionNoSentence >= 2) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({probation: prosecutorChoice});
         } else {
@@ -274,7 +274,7 @@ export default {
         });
       } else if (!fineVariant && text === "traffic") {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if (prosecutionNoSentence >= 7) {
+        if (prosecutionNoSentence >= 2) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({fine: prosecutorChoice});
         } else {
@@ -289,7 +289,7 @@ export default {
         });
       } else {
         const prosecutionNoSentence = Math.floor(Math.random() * 11);
-        if (prosecutionNoSentence >= 7) {
+        if (prosecutionNoSentence >= 2) {
           prosecutorChoice = numbers[prosecutorRandom];
           this.chooseProsecutionSentence({fine: prosecutorChoice});
         } else {

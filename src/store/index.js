@@ -448,7 +448,6 @@ export default new Vuex.Store({
             commit("SET_SHOW_CRIMINAL_RECORD");
         },
         modifyPrisonSelected({commit}, prison) {
-            console.log("coucou", prison);
             commit("SET_PRISON_SELECTED", prison);
         },
         modifyProbationSelected({commit}, probation) {
