@@ -1,32 +1,41 @@
 <template>
-  <div class="game-container">
-    <JudgeComponent/>
+    <div class="game-container">
+        <b-row align-h="around" class="game-container-first-row">
+            <div class="col-2">
+                <JudgeComponent/>
+            </div>
+            <div class="col-2">
+                <JudgeComponent/>
+            </div>
+            <div class="col-2">
+                <JudgeComponent/>
+            </div>
+        </b-row>
 
+        <div class="others-container">
 
-    <div class="others-container">
+            <div class="switchable-components">
+                <SentenceComponent/>
 
-      <div class="switchable-components">
-        <SentenceComponent/>
+                <CourtBarComponent/>
+                <CriminalRecord v-if="screenWidth > 540"/>
+            </div>
 
-        <CourtBarComponent/>
-        <CriminalRecord v-if="screenWidth > 540"/>
-      </div>
+            <div class="others-div">
+                <DefenseComponent v-if="screenWidth > 540"/>
 
-      <div class="others-div">
-        <DefenseComponent v-if="screenWidth > 540"/>
+                <DescriptionComponent/>
 
-        <DescriptionComponent />
+                <DefenseComponent v-if="screenWidth < 540"/>
 
-        <DefenseComponent v-if="screenWidth < 540"/>
+                <CriminalRecord v-if="screenWidth < 540"/>
 
-        <CriminalRecord v-if="screenWidth < 540"/>
+                <AllProvesComponent/>
 
-        <AllProvesComponent/>
-
-        <ProsecutionComponent/>
-      </div>
+                <ProsecutionComponent/>
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -42,35 +51,35 @@ import CourtBarComponent from "@/components/CourtComponents/CourtBarComponent.vu
 import CriminalRecord from "@/components/CourtComponents/CriminalRecord.vue";
 
 export default {
-  name: 'HomeView',
-  components: {
-    CriminalRecord,
-    CourtBarComponent,
-    AllProvesComponent,
-    ProsecutionComponent, DescriptionComponent, DefenseComponent, SentenceComponent, JudgeComponent
-  },
-  data(){
-    return {
-      screenWidth: 0,
-    }
-  },
-  created() {
-    this.displayCase()
-  },
-  mounted() {
-    this.updateScreenWidth();
-    this.onScreenResize();
-  },
-  methods: {
-    ...mapActions(["displayCase"]),
-    onScreenResize() {
-      window.addEventListener("resize", () => {
+    name: 'HomeView',
+    components: {
+        CriminalRecord,
+        CourtBarComponent,
+        AllProvesComponent,
+        ProsecutionComponent, DescriptionComponent, DefenseComponent, SentenceComponent, JudgeComponent
+    },
+    data() {
+        return {
+            screenWidth: 0,
+        }
+    },
+    created() {
+        this.displayCase()
+    },
+    mounted() {
         this.updateScreenWidth();
-      });
+        this.onScreenResize();
     },
-    updateScreenWidth() {
-      this.screenWidth = window.innerWidth;
-    },
-  }
+    methods: {
+        ...mapActions(["displayCase"]),
+        onScreenResize() {
+            window.addEventListener("resize", () => {
+                this.updateScreenWidth();
+            });
+        },
+        updateScreenWidth() {
+            this.screenWidth = window.innerWidth;
+        },
+    }
 }
 </script>

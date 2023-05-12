@@ -35,9 +35,12 @@ federal agencies and regulations.
 
 # Historical
 
-- The assassination of Julius Caesar: On March 15, 44 BC, Julius Caesar, the dictator of Rome, was assassinated by a group of senators who were opposed to his rule.
+- The assassination of Julius Caesar: On March 15, 44 BC, Julius Caesar, the dictator of Rome, 
+  was assassinated by a group of senators who were opposed to his rule.
 
-- The Salem Witch Trials: In the late 17th century, more than 200 people in Salem, Massachusetts, were accused of witchcraft and 20 were executed. The trials were a tragic example of mass hysteria and the dangers of religious fanaticism.
+- The Salem Witch Trials: In the late 17th century, more than 200 people in Salem, Massachusetts, 
+  were accused of witchcraft and 20 were executed. 
+  The trials were a tragic example of mass hysteria and the dangers of religious fanaticism.
 
 
 
