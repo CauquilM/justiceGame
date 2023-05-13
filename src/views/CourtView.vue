@@ -1,14 +1,13 @@
 <template>
     <div class="game-container">
-        <b-row align-h="around" class="game-container-first-row">
+        <b-row align-h="around" align-v="center" class="game-container-first-row">
             <div class="col-2">
-                <JudgeComponent/>
             </div>
             <div class="col-2">
                 <JudgeComponent/>
             </div>
             <div class="col-2">
-                <JudgeComponent/>
+                <JuryComponent/>
             </div>
         </b-row>
 
@@ -49,10 +48,12 @@ import {mapActions} from "vuex";
 import AllProvesComponent from "@/components/CourtComponents/AllProvesComponent.vue";
 import CourtBarComponent from "@/components/CourtComponents/CourtBarComponent.vue";
 import CriminalRecord from "@/components/CourtComponents/CriminalRecord.vue";
+import JuryComponent from "@/components/CourtComponents/JuryComponent.vue";
 
 export default {
     name: 'HomeView',
     components: {
+        JuryComponent,
         CriminalRecord,
         CourtBarComponent,
         AllProvesComponent,

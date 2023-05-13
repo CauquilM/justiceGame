@@ -50,6 +50,11 @@
     margin: 0 5px 10px 5px;
 }
 
+/***************************** Jury ***************************/
+.jury-member{
+    font-size: 40px;
+}
+
 /*************************** Plea Deal ***************************/
 .pleaDeal-buttons-container{
     display: flex;
