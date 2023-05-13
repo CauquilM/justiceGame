@@ -7,7 +7,7 @@
                 <JudgeComponent/>
             </div>
             <div class="col-2">
-                <JuryComponent/>
+                <JuryComponent v-if="chosenCase.type !== 'traffic infraction' && !pleaDealExists"/>
             </div>
         </b-row>
 
@@ -44,7 +44,7 @@ import SentenceComponent from "@/components/CourtComponents/SentencesComponent.v
 import DefenseComponent from "@/components/CourtComponents/DefenseComponent.vue";
 import DescriptionComponent from "@/components/CourtComponents/DescriptionComponent.vue";
 import ProsecutionComponent from "@/components/CourtComponents/ProsecutionComponent.vue";
-import {mapActions} from "vuex";
+import {mapActions, mapState} from "vuex";
 import AllProvesComponent from "@/components/CourtComponents/AllProvesComponent.vue";
 import CourtBarComponent from "@/components/CourtComponents/CourtBarComponent.vue";
 import CriminalRecord from "@/components/CourtComponents/CriminalRecord.vue";
@@ -66,10 +66,14 @@ export default {
     },
     created() {
         this.displayCase()
+        console.log("proc: ", this.prosecutionSentences);
     },
     mounted() {
         this.updateScreenWidth();
         this.onScreenResize();
+    },
+    computed: {
+        ...mapState(["chosenCase", 'prosecutionSentences', 'pleaDealExists'])
     },
     methods: {
         ...mapActions(["displayCase"]),

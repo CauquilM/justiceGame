@@ -238,6 +238,7 @@ export default new Vuex.Store({
         prosecutionSentences: [],
         judgeComment: '',
         showAllSentences: false,
+        pleaDealExists: false,
         showCourtBar: false,
         showCriminalRecord: false,
         witnessChose: Object,
@@ -281,6 +282,9 @@ export default new Vuex.Store({
         },
         SET_SHOW_SENTENCES(state) {
             state.showAllSentences === true ? state.showAllSentences = false : state.showAllSentences = true;
+        },
+        SET_PLEA_DEAL(state) {
+            state.pleaDealExists === true ? state.pleaDealExists = false : state.pleaDealExists = true;
         },
         SET_WITNESS_CHOSE(state, payload) {
             state.witnessChose = payload;
@@ -410,6 +414,9 @@ export default new Vuex.Store({
                     eventBus.$emit('openSentencingFailModal');
                 }
             }
+        },
+        togglePleaDeal({commit}){
+            commit("SET_PLEA_DEAL");
         },
         displayCommentsOnEvidence({state, commit}, evidenceIndex) {
             commit("SET_PROSECUTION_COMMENT", state.chosenCase.evidences[evidenceIndex].prosecutionSentence);
