@@ -25,20 +25,33 @@ import {mapState} from "vuex";
 
 export default {
     name: "JuryComponent",
-    data(){
-      return {
-          juryExists: true
-      }
+    data() {
+        return {
+            juryExists: false
+        }
     },
     created() {
-        this.juryDecision();
+        this.createJury();
     },
     computed: {
         ...mapState(["isDark"])
     },
     methods: {
         juryDecision() {
-            console.log("jury: ", Math.floor(Math.random() * 100));
+            let randomDecision = Math.floor(Math.random() * 100);
+            if (randomDecision >= 67) {
+                console.log("Not guilty");
+            }
+            else {
+                console.log("Guilty");
+            }
+        },
+        createJury() {
+            let random = Math.floor(Math.random() * 11);
+            if (random >= 0) {
+                this.juryExists = true;
+                this.juryDecision();
+            }
         }
     }
 }

@@ -50,10 +50,11 @@ export default {
         ...mapState(["chosenCase"])
     },
     methods: {
-        ...mapActions(['refreshPage', "togglePleaDeal"]),
+        ...mapActions(['refreshPage', "togglePleaDeal", "togglePleaDeal"]),
         refusePleaDeal() {
             this.$bvModal.hide('pleaDeal-modal');
             this.showButton = false;
+            this.togglePleaDeal();
         },
         createPleaDeal() {
             if (this.randomNumber() >= 8) {
