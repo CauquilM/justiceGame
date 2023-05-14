@@ -55,6 +55,10 @@
     font-size: 40px;
 }
 
+.jury-btn{
+    background: linear-gradient(-80deg, rgba(64,133,88,1) 50%, rgba(203,68,74,1) 50%);
+}
+
 /*************************** Plea Deal ***************************/
 .pleaDeal-buttons-container{
     display: flex;
@@ -278,6 +282,13 @@
         max-width: 85%;
     }
 }
+
+@media (max-width: 768px) {
+    .judge-bench {
+        margin: 0 15%;
+    }
+}
+
 
 @media (max-width: 600px) {
     .criminal-record-card {

@@ -21,36 +21,34 @@
     </div>
 </template>
 <script>
-import {mapState} from "vuex";
+import {mapActions, mapState} from "vuex";
 
 export default {
     name: "JuryComponent",
-    data() {
-        return {
-            juryExists: false
-        }
-    },
     created() {
         this.createJury();
     },
     computed: {
-        ...mapState(["isDark"])
+        ...mapState(["isDark", "pleaDealExists", "juryExists"])
     },
     methods: {
+        ...mapActions(["toggleJury", "getJuryDecision"]),
         juryDecision() {
             let randomDecision = Math.floor(Math.random() * 100);
             if (randomDecision >= 67) {
-                console.log("Not guilty");
+                console.log("jury not guilty");
+                return "not guilty";
             }
             else {
-                console.log("Guilty");
+                console.log("jury guilty");
+                return "guilty";
             }
         },
         createJury() {
             let random = Math.floor(Math.random() * 11);
-            if (random >= 0) {
-                this.juryExists = true;
-                this.juryDecision();
+            if (!this.pleaDealExists && random >= 7) {
+                this.toggleJury();
+                this.getJuryDecision(this.juryDecision());
             }
         }
     }

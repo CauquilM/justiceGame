@@ -65,7 +65,7 @@ export default {
     ...mapState(["isDark"])
   },
   created() {
-    console.log("VERCEL" + ' ' + "jean");
+    console.log("VERCEL" + ' ' + "groland");
     console.time("Test");
     this.caseGeneration();
     console.timeEnd("Test");

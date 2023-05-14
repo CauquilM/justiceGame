@@ -239,6 +239,8 @@ export default new Vuex.Store({
         judgeComment: '',
         showAllSentences: false,
         pleaDealExists: false,
+        juryExists: false,
+        juryDecision: '',
         showCourtBar: false,
         showCriminalRecord: false,
         witnessChose: Object,
@@ -265,7 +267,7 @@ export default new Vuex.Store({
         SET_CHOSEN_CASE(state, payload) {
             state.chosenCase = payload;
         },
-        SET_CASES(state, payload){
+        SET_CASES(state, payload) {
             state.cases.push(payload)
         },
         SET_JUDGE_COMMENT(state, payload) {
@@ -285,6 +287,12 @@ export default new Vuex.Store({
         },
         SET_PLEA_DEAL(state) {
             state.pleaDealExists === true ? state.pleaDealExists = false : state.pleaDealExists = true;
+        },
+        SET_JURY_EXISTS(state) {
+            state.juryExists === true ? state.juryExists = false : state.juryExists = true;
+        },
+        SET_JURY_DECISION(state, payload) {
+            state.juryDecision = payload;
         },
         SET_WITNESS_CHOSE(state, payload) {
             state.witnessChose = payload;
@@ -319,7 +327,7 @@ export default new Vuex.Store({
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
         },
-        getAllJson(){
+        getAllJson() {
             axios.get("descriptions.json")
                 .then((res) => {
                     console.log("data: ", res.data);
@@ -328,10 +336,10 @@ export default new Vuex.Store({
                     console.log(err)
                 })
         },
-        chooseProsecutionSentence({commit}, sentences){
+        chooseProsecutionSentence({commit}, sentences) {
             commit("SET_PROSECUTION_SENTENCES", sentences);
         },
-        addGeneratedCase({ state, commit }, cases){
+        addGeneratedCase({state, commit}, cases) {
             commit("SET_CASES", cases);
             console.log("cases from store: ", state.cases)
         },
@@ -351,7 +359,7 @@ export default new Vuex.Store({
             eventBus.$emit('openNotGuiltyModal');
         },
         doSentencing({state}) {
-            if (state.chosenCase.type !== "traffic infraction"){
+            if (state.chosenCase.type !== "traffic infraction") {
                 if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
                     const randomSentence = Math.floor(Math.random() * 3);
                     if (state.prisonSelected === '0') {
@@ -381,9 +389,8 @@ export default new Vuex.Store({
                 } else {
                     eventBus.$emit('openSentencingFailModal');
                 }
-            }
-            else {
-                if (state.fineSelected !== null){
+            } else {
+                if (state.fineSelected !== null) {
                     const randomSentence = Math.floor(Math.random() * 3);
                     if (state.prisonSelected === '0' || state.prisonSelected === null) {
                         state.prisonSelected = "no time"
@@ -409,14 +416,19 @@ export default new Vuex.Store({
                         and a ${state.fineSelected} fine for his crimes.`
                     }
                     eventBus.$emit('openSuccessModal');
-                }
-                else{
+                } else {
                     eventBus.$emit('openSentencingFailModal');
                 }
             }
         },
-        togglePleaDeal({commit}){
+        togglePleaDeal({commit}) {
             commit("SET_PLEA_DEAL");
+        },
+        toggleJury({commit}) {
+            commit("SET_JURY_EXISTS");
+        },
+        getJuryDecision({commit}, decision){
+            commit("SET_JURY_DECISION", decision);
         },
         displayCommentsOnEvidence({state, commit}, evidenceIndex) {
             commit("SET_PROSECUTION_COMMENT", state.chosenCase.evidences[evidenceIndex].prosecutionSentence);
