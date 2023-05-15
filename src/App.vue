@@ -39,7 +39,7 @@ export default {
         'type': "",
         'criminalCharge': ['murder', 'theft', 'fraud',
           'assault', 'arson',
-          /*'vandalism', 'cybercrime', 'identity theft', 'kidnapping', 'bribery'*/
+          /*'fake 911 call', 'vandalism', 'cybercrime', 'identity theft', 'kidnapping', 'bribery'*/
         ],
         'roadCharge': ['dui', 'recklessDriving',
           'drivingNoLicense', 'hitAndRun',
