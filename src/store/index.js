@@ -478,7 +478,19 @@ export default new Vuex.Store({
         modifyDarkMode({commit}) {
             commit("SET_IS_DARK");
         },
-        refreshPage() {
+        refreshPage({state}) {
+            if (!Vue.$cookies.isKey("historicOfCases")){
+                console.log("store: ", state.chosenCase)
+                let historyCase= state.chosenCase;
+                Vue.$cookies.set("historicOfCases", "test");
+                Vue.$cookies.set("historicOfCases", [historyCase]);
+            }
+            else {
+                console.log("cookie: ", Vue.$cookies.get("historicOfCases"));
+                let shadow = Vue.$cookies.get("historicOfCases");
+                shadow.push(state.chosenCase);
+                Vue.$cookies.set("historicOfCases", shadow);
+            }
             window.location.reload();
         },
     },
