@@ -2132,6 +2132,72 @@
       "description": "Inmate A suffered a broken hand and a sprained wrist after being punched by Inmate B during a dispute over a game of chess",
       "prosecutionSentence": "Eyewitness accounts confirm that Inmate B punched Inmate A without provocation during a dispute over a game of chess, causing serious harm. This is a clear violation of prison regulations and must be punished accordingly.",
       "defenseSentence": "Our client acted in self-defense after Inmate A threatened him and attempted to cheat during the chess game. Inmate A was the aggressor in this situation and our client had no choice but to defend himself."
+    },
+    {
+      "id": 25,
+      "description": "The defendant has a history of non-violence and has never been involved in any previous altercations or fights.",
+      "prosecutionSentence": "The defendant's previous non-violent behavior does not absolve them of responsibility for the current fight.",
+      "defenseSentence": "My client's clean record and history of non-violence indicate that their involvement in the prison fight is out of character."
+    },
+    {
+      "id": 26,
+      "description": "Medical reports show that the defendant sustained injuries consistent with defensive wounds, supporting their claim of self-defense.",
+      "prosecutionSentence": "The prosecution argues that the defendant's injuries could be a result of their own aggression during the fight.",
+      "defenseSentence": "The medical reports clearly indicate that my client's injuries were defensive in nature, corroborating their self-defense claim."
+    },
+    {
+      "id": 27,
+      "description": "Testimonies from other inmates verify that the victim had a history of aggressive behavior and had previously threatened the defendant.",
+      "prosecutionSentence": "The prosecution contends that the defendant's knowledge of the victim's history does not justify their initiation of the fight.",
+      "defenseSentence": "The testimonies of fellow inmates attest to the victim's aggressive nature and previous threats towards my client, providing context for the prison fight."
+    },
+    {
+      "id": 28,
+      "description": "Video footage from additional angles reveals that the defendant was initially backing away and only resorted to physical force when cornered and in immediate danger.",
+      "prosecutionSentence": "The prosecution argues that the additional video footage does not change the fact that the defendant initiated the fight.",
+      "defenseSentence": "The newly obtained video footage clearly shows that my client was attempting to disengage and only used force as a last resort when their safety was at risk."
+    },
+    {
+      "id": 29,
+      "description": "Statements from prison staff indicate that the defendant had a good behavior record and was not known for engaging in violent behavior.",
+      "prosecutionSentence": "The defendant's previous good behavior does not preclude them from instigating a fight in the prison yard.",
+      "defenseSentence": "The statements from prison staff highlight my client's positive behavior and reputation, suggesting that their involvement in the fight is an exception rather than the norm."
+    },
+    {
+      "id": 30,
+      "description": "Forensic analysis of the CCTV footage suggests that the defendant's actions were in response to a perceived threat, indicating self-defense.",
+      "prosecutionSentence": "The prosecution disputes the forensic analysis and argues that the defendant's actions were unprovoked.",
+      "defenseSentence": "The expert forensic analysis of the CCTV footage supports my client's claim that they acted in self-defense based on a perceived threat."
+    },
+    {
+      "id": 31,
+      "description": "Statements from prison guards confirm that the defendant had a reputation for non-confrontational behavior and was not known to initiate fights.",
+      "prosecutionSentence": "The prosecution maintains that the defendant's reputation does not excuse their participation in the prison fight.",
+      "defenseSentence": "The statements from prison guards affirm that my client had a non-confrontational reputation and did not have a history of starting fights."
+    },
+    {
+      "id": 32,
+      "description": "Witness testimonies assert that the victim had a long-standing history of instigating fights with other inmates.",
+      "prosecutionSentence": "The prosecution argues that the victim's history does not absolve the defendant of initiating the fight.",
+      "defenseSentence": "The testimonies from witnesses indicate that the victim had a well-known reputation for instigating fights, suggesting that my client acted in self-defense."
+    },
+    {
+      "id": 33,
+      "description": "The defendant sustained severe injuries during the fight, indicating that they were overpowered and had no choice but to defend themselves.",
+      "prosecutionSentence": "The prosecution contends that the defendant's injuries do not necessarily prove their innocence.",
+      "defenseSentence": "The extent of my client's injuries demonstrates that they were overpowered and had to resort to self-defense to protect themselves from further harm."
+    },
+    {
+      "id": 34,
+      "description": "Statements from other inmates present during the fight support the defendant's claim that they were provoked and acted in self-defense.",
+      "prosecutionSentence": "The prosecution argues that the statements from other inmates may be biased or unreliable.",
+      "defenseSentence": "The statements from multiple inmates who witnessed the fight corroborate my client's assertion that they were provoked and had no choice but to defend themselves."
+    },
+    {
+      "id": 35,
+      "description": "Security camera footage reveals that the defendant attempted to retreat and disengage from the fight before using force, demonstrating self-defense.",
+      "prosecutionSentence": "The prosecution maintains that the defendant's attempt to retreat does not excuse their initiation of the fight.",
+      "defenseSentence": "The security camera footage clearly shows my client attempting to de-escalate the situation by retreating before resorting to force in self-defense."
     }
   ],
   "escape": [
@@ -2326,6 +2392,90 @@
       "description": "A guard noticed that one of the windows in the cell block had been broken, and upon closer inspection, discovered that the prisoner had used a homemade tool to break the window and escape.",
       "prosecutionSentence": "The defendant was found several miles from the prison, and had clearly been planning his escape for some time. We have evidence that he had help from other inmates and that they were all involved in a larger escape plot.",
       "defenseSentence": "My client was simply trying to get some fresh air in his cell and had no intention of escaping. He happened to have a homemade tool on hand, but that is only because he had been using it for other purposes."
+    },
+    {
+      "id": 32,
+      "description": "Surveillance footage shows that the defendant was in a different location at the time of the prison escape, proving their lack of involvement.",
+      "prosecutionSentence": "The prosecution argues that the defendant may have orchestrated the escape from a remote location.",
+      "defenseSentence": "The surveillance footage clearly demonstrates that my client was elsewhere during the time of the prison escape, proving their innocence."
+    },
+    {
+      "id": 33,
+      "description": "Witness testimonies confirm that the defendant was unaware of the escape plan and had no intention of participating.",
+      "prosecutionSentence": "The prosecution claims that the witness testimonies may be unreliable or influenced by loyalty to the defendant.",
+      "defenseSentence": "Multiple witnesses have provided consistent testimonies affirming that my client had no knowledge of the escape plan and had no intention to be involved."
+    },
+    {
+      "id": 34,
+      "description": "Forensic analysis of the escape route reveals no trace of the defendant's presence, indicating their non-involvement.",
+      "prosecutionSentence": "The prosecution argues that the absence of physical evidence does not prove the defendant's innocence.",
+      "defenseSentence": "The thorough forensic analysis of the escape route has failed to find any evidence linking my client to the escape, supporting their claim of innocence."
+    },
+    {
+      "id": 35,
+      "description": "Prison records show that the defendant had consistently followed all rules and regulations, making it unlikely for them to participate in a prison escape.",
+      "prosecutionSentence": "The prosecution argues that past compliance with prison rules does not preclude the defendant from participating in an escape.",
+      "defenseSentence": "The defendant's exemplary prison record, characterized by strict adherence to rules and regulations, casts doubt on their alleged involvement in the prison escape."
+    },
+    {
+      "id": 36,
+      "description": "Testimonies from prison staff confirm that the defendant was under strict supervision and had limited access to areas involved in the escape.",
+      "prosecutionSentence": "The prosecution asserts that prison staff may have been negligent or complicit in the defendant's escape.",
+      "defenseSentence": "The testimonies from prison staff establish that my client was under close supervision and did not have the opportunity or access required to participate in the escape."
+    },
+    {
+      "id": 37,
+      "description": "Cellmate statements indicate that the defendant had expressed no interest in or knowledge of the escape plan.",
+      "prosecutionSentence": "The prosecution argues that cellmates may not always be aware of each other's intentions.",
+      "defenseSentence": "Statements from the defendant's cellmates consistently confirm that my client had no involvement in or awareness of the prison escape plan."
+    },
+    {
+      "id": 38,
+      "description": "Phone records demonstrate that the defendant had no communication with individuals involved in the escape, supporting their lack of participation.",
+      "prosecutionSentence": "The prosecution suggests that the defendant may have used untraceable means of communication or intermediaries.",
+      "defenseSentence": "Thorough analysis of the defendant's phone records has revealed no communication with individuals associated with the prison escape, further affirming their innocence."
+    },
+    {
+      "id": 39,
+      "description": "Witness testimonies confirm that the defendant was locked in their cell at the time of the prison escape, proving their lack of involvement.",
+      "prosecutionSentence": "The prosecution argues that the witnesses may be mistaken or coerced into providing false alibis.",
+      "defenseSentence": "Multiple witnesses have provided consistent testimonies affirming that my client was locked in their cell at the time of the prison escape, establishing their innocence."
+    },
+    {
+      "id": 40,
+      "description": "Forensic examination of the defendant's belongings and cell uncovered no evidence linking them to the prison escape.",
+      "prosecutionSentence": "The prosecution claims that the lack of evidence does not necessarily prove the defendant's innocence.",
+      "defenseSentence": "The thorough forensic examination of my client's belongings and cell failed to yield any incriminating evidence related to the prison escape, supporting their claim of innocence."
+    },
+    {
+      "id": 41,
+      "description": "Prison records show that the defendant had been under constant surveillance and strict monitoring, making it highly unlikely for them to escape unnoticed.",
+      "prosecutionSentence": "The prosecution argues that the defendant may have found ways to evade surveillance or had assistance from others.",
+      "defenseSentence": "The prison records clearly indicate that my client was under constant surveillance and strict monitoring, rendering their alleged escape highly unlikely and suggesting their innocence."
+    },
+    {
+      "id": 42,
+      "description": "Testimonies from fellow inmates verify that the defendant had no motive or desire to escape from prison.",
+      "prosecutionSentence": "The prosecution asserts that inmates may provide false testimonies to protect or support the defendant.",
+      "defenseSentence": "Multiple inmates have provided consistent testimonies stating that my client had no motive or intention to escape from prison, further establishing their innocence."
+    },
+    {
+      "id": 43,
+      "description": "Video footage from various security cameras within the prison complex shows the defendant in different locations during the time of the escape.",
+      "prosecutionSentence": "The prosecution argues that the defendant may have strategically moved around the prison to avoid suspicion.",
+      "defenseSentence": "The extensive video footage from multiple security cameras provides a clear alibi for my client, proving that they were in different locations within the prison at the time of the escape."
+    },
+    {
+      "id": 44,
+      "description": "The defendant willingly cooperated with the prison authorities during the investigation, providing valuable information to aid in recapturing the escaped prisoners.",
+      "prosecutionSentence": "The prosecution argues that cooperation after the escape does not prove the defendant's innocence.",
+      "defenseSentence": "My client's voluntary cooperation and assistance to the prison authorities in recapturing the escaped prisoners demonstrate their lack of involvement in the escape and support their claim of innocence."
+    },
+    {
+      "id": 45,
+      "description": "Witness testimonies and surveillance footage confirm that the defendant was seen in the prison's recreational area at the time of the escape, making their participation impossible.",
+      "prosecutionSentence": "The prosecution suggests that the witness testimonies may be unreliable or that the defendant may have quickly moved between locations.",
+      "defenseSentence": "Multiple witnesses and corroborating surveillance footage clearly place my client in the prison's recreational area during the time of the escape, ruling out their involvement and reinforcing their innocence."
     }
   ],
   "assaultWithDeadlyWeapon": [
