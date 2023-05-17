@@ -65,7 +65,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "groland");
+        console.log("VERCEL" + ' ' + "boursin");
         console.time("Test");
         this.caseGeneration();
         console.timeEnd("Test");
