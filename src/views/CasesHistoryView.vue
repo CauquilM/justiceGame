@@ -1,42 +1,64 @@
 <template>
-    <b-row align-h="center">
-        <div class="col-8">
-            <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="fields"/>
-        </div>
-    </b-row>
+    <div>
+        <b-button variant="primary" class="return-button" @click="$router.push('/')">
+            <i class="ti ti-arrow-back"/>
+        </b-button>
+        <b-row align-h="center" class="table-css">
+            <div class="col-8">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items"/>
+            </div>
+        </b-row>
+    </div>
 </template>
 <script>
 import {mapState} from "vuex";
-
+import axios from "axios";
 export default {
     name: 'CasesHistoryView',
     data() {
         return {
-            items: [
-                {age: 40, first_name: 'Dickerson', last_name: 'Macdonald'},
-                {age: 21, first_name: 'Larsen', last_name: 'Shaw'},
-                {age: 89, first_name: 'Geneva', last_name: 'Wilson'},
-                {age: 38, first_name: 'Jami', last_name: 'Carney'}
+            example: [
+                {age: 40, first_name: 'Dickerson', last_name: 'Macdonald'}
             ],
+            items: [],
             fields: [
                 {
-                    key: 'last_name',
+                    key: 'type',
                     sortable: true
                 },
                 {
-                    key: 'first_name',
-                    sortable: true
-                },
-                {
-                    key: 'age',
+                    key: 'trafficCharge',
                     label: 'Person age',
                     sortable: true
-                }
+                },
+                {
+                    key: 'suspect.name',
+                    label: "Suspect Name",
+                    sortable: true
+                },
+
             ],
         }
+    },
+    created() {
+        this.setItems();
+        console.log("history: ", this.$cookies.get("historicOfCases"));
     },
     computed: {
         ...mapState(["isDark"])
     },
+    methods: {
+        setItems(){
+            axios.get("http://localhost:3000")
+                .then((res) => {
+                    console.log(res);
+                    this.items = res.data;
+                })
+                .catch((err) => {
+                    console.log("axios fetch history cases: ", err);
+                })
+
+        }
+    }
 }
 </script>

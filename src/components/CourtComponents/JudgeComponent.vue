@@ -5,6 +5,7 @@
                 <b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>
                 Judge
             </p>
+            <b-button @click="$router.push('/history')">Test</b-button>
             <div>
                 <div v-if="!pleaDealExists && juryExists">
                     <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"

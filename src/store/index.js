@@ -480,18 +480,18 @@ export default new Vuex.Store({
         },
         refreshPage({state}) {
             if (!Vue.$cookies.isKey("historicOfCases")){
-                console.log("store: ", state.chosenCase)
-                let historyCase= state.chosenCase;
-                Vue.$cookies.set("historicOfCases", "test");
-                Vue.$cookies.set("historicOfCases", [historyCase]);
+                Vue.$cookies.set("historicOfCases", [state.chosenCase], Infinity);
+                console.log("cookie creation", state.chosenCase);
             }
             else {
-                console.log("cookie: ", Vue.$cookies.get("historicOfCases"));
-                let shadow = Vue.$cookies.get("historicOfCases");
+                console.log('Updating existing cookie');
+                let shadow = Vue.$cookies.get('historicOfCases'); // Spread operator
                 shadow.push(state.chosenCase);
-                Vue.$cookies.set("historicOfCases", shadow);
+                Vue.$cookies.remove("historicOfCases");
+                console.log('Shadow:', shadow);
+                Vue.$cookies.set('historicOfCases', shadow, Infinity);
             }
-            window.location.reload();
+            /*window.location.reload();*/
         },
     },
 })

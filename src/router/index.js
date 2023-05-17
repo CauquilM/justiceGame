@@ -14,7 +14,7 @@ const routes = [
   },
   {
     path: '/history',
-    name: 'casesHistoryView',
+    name: 'cases-history',
     component: CasesHistoryView
   },
   /*{
