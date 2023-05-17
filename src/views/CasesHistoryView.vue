@@ -5,7 +5,7 @@
         </b-button>
         <b-row align-h="center" class="table-css">
             <div class="col-8">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items"/>
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items.judgedCase"/>
             </div>
         </b-row>
     </div>
@@ -49,10 +49,11 @@ export default {
     },
     methods: {
         setItems(){
-            axios.get("http://localhost:3000")
+            axios.get("http://localhost:3000/history")
                 .then((res) => {
-                    console.log(res);
+                    console.log("here: ", res.data);
                     this.items = res.data;
+                    console.log("case from store: ", res.data);
                 })
                 .catch((err) => {
                     console.log("axios fetch history cases: ", err);

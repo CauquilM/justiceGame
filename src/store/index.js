@@ -427,7 +427,7 @@ export default new Vuex.Store({
         toggleJury({commit}) {
             commit("SET_JURY_EXISTS");
         },
-        getJuryDecision({commit}, decision){
+        getJuryDecision({commit}, decision) {
             commit("SET_JURY_DECISION", decision);
         },
         displayCommentsOnEvidence({state, commit}, evidenceIndex) {
@@ -478,20 +478,16 @@ export default new Vuex.Store({
         modifyDarkMode({commit}) {
             commit("SET_IS_DARK");
         },
-        refreshPage({state}) {
-            if (!Vue.$cookies.isKey("historicOfCases")){
-                Vue.$cookies.set("historicOfCases", [state.chosenCase], Infinity);
-                console.log("cookie creation", state.chosenCase);
-            }
-            else {
-                console.log('Updating existing cookie');
-                let shadow = Vue.$cookies.get('historicOfCases'); // Spread operator
-                shadow.push(state.chosenCase);
-                Vue.$cookies.remove("historicOfCases");
-                console.log('Shadow:', shadow);
-                Vue.$cookies.set('historicOfCases', shadow, Infinity);
-            }
-            /*window.location.reload();*/
+        refreshPage() {
+            /*console.log("entered ", {judgedCase: state.chosenCase});
+            axios.post("http://localhost:3000/history", {judgedCase: state.chosenCase})
+                .then((res) => {
+                    console.log(res);
+                })
+                .catch((err) => {
+                    console.log("axios post history cases: ", err);
+                })*/
+            window.location.reload();
         },
     },
 })

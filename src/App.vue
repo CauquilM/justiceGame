@@ -551,12 +551,15 @@ Generate 30 descriptions for an assault case like in the examples, put them in o
 
 <!--do 30 more continuing from ID (14)-->
 
-<!--{
+<!--
+{
 id: 0,
 description: "Two inmates were caught on camera fighting in the prison yard.",
 prosecutionSentence: "We have clear video evidence that the defendant initiated the fight and caused injuries to the victim.",
 defenseSentence: "My client acted in self-defense and only used necessary force to protect himself from the victim's aggression."
 },
-Generate 30 prison escape evidences like in the examples, put them in objects not a function, start from ID (0)-->
+Generate 30 fraud evidences that make the defendant innocent / guilty like in the examples,
+put them in objects not a function, start from ID (27)
+-->
 
 <!--do 30 more continuing from ID (14)-->
