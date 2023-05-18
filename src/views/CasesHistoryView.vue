@@ -33,8 +33,12 @@
                     </template>
                 </b-table>
             </div>
+<!--            <div v-else-if="screenWidth < 852 && items.length === 0" class="col-11">
+                <h1>No data</h1>
+            </div>-->
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="smallFields">
+                {{ items }}
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="largeFields">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -74,21 +78,6 @@ export default {
     data() {
         return {
             screenWidth: 0,
-            example: [
-                {
-                    case_id: "12000",
-                    type: "Criminal",
-                    charge: "Murder",
-                    description: "The defendant was pulled over for driving with an expired license.",
-                    name: "John Doe",
-                    age: 40,
-                    criminalRecord: [],
-                    verdict: "Guilty",
-                    prison: "1 year",
-                    probation: "5 year",
-                    fine: "15000 $",
-                }
-            ],
             smallFields:[
                 "type", "charge", "name", "age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"

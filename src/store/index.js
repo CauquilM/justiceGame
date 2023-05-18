@@ -350,7 +350,7 @@ export default new Vuex.Store({
             } else {
                 commit("SET_JUDGE_COMMENT", "The suspect is innocent, bailiff, freed him, case dismissed");
                 dispatch("openNotGuiltyModal");
-                console.time("test post axios");
+                console.time("test not guilty post axios");
                 axios.post("http://localhost:3000/history",
                     {
                         case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
@@ -368,7 +368,7 @@ export default new Vuex.Store({
                     .catch((err) => {
                         console.log("axios post history cases: ", err);
                     })
-                console.timeEnd("test post axios");
+                console.timeEnd("test not guilty post axios");
             }
         },
         openGuiltyModal() {
@@ -439,6 +439,28 @@ export default new Vuex.Store({
                     eventBus.$emit('openSentencingFailModal');
                 }
             }
+            console.time("test guilty post axios");
+            axios.post("http://localhost:3000/history",
+                {
+                    case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                    type: state.chosenCase.type,
+                    charge: state.chosenCase.charge,
+                    description: state.chosenCase.description,
+                    suspect_name: state.chosenCase.suspect.name,
+                    suspect_age: state.chosenCase.suspect.age,
+                    criminalRecord: state.chosenCase.criminalRecord,
+                    verdict: "Guilty",
+                    prison: state.prisonSelected,
+                    probation: state.probationSelected,
+                    fine: state.fineSelected,
+                })
+                .then((res) => {
+                    console.log(res);
+                })
+                .catch((err) => {
+                    console.log("axios post history cases: ", err);
+                })
+            console.timeEnd("test guilty post axios");
         },
         togglePleaDeal({commit}) {
             commit("SET_PLEA_DEAL");
