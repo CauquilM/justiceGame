@@ -303,6 +303,12 @@
     .court-bar {
         max-width: 85%;
     }
+    .table-history-cases{
+        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 50px;
+        overflow-y: scroll;
+    }
 }
 
 @media (max-width: 768px) {

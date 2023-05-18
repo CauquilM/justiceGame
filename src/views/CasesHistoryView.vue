@@ -42,7 +42,7 @@
             </div>
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
                 <b-row align-h="end">
-                    <div class="col-2 mb-4">
+                    <div class="col-3 mb-4">
                         <b-button v-if="!deleteButton" variant="danger" @click="securityDelete">Delete all data
                         </b-button>
                         <b-button v-if="deleteButton" variant="danger" @click="deleteAll">Really ?</b-button>
