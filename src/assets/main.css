@@ -2,7 +2,6 @@
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
-    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -256,10 +255,6 @@
     #app {
         overflow-y: scroll;
         padding-top: 10px;
-    }
-
-    .game-container{
-        height: 100%;
     }
 
     .others-div {
