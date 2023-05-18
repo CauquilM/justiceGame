@@ -2,7 +2,7 @@
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -233,6 +233,10 @@
 }
 
 /*************************** History Page ***************************/
+.cases-history-container{
+    height: 100vh;
+}
+
 .return-button{
     position: absolute;
     top: 17px;
@@ -240,7 +244,7 @@
 }
 
 .table-history-cases{
-    max-height: 70vh;
+    height: 100%;
 }
 
 
@@ -252,7 +256,7 @@
     }
 
     .game-container{
-        margin-top: 400px;
+        height: 100%;
     }
 
     .others-div {
