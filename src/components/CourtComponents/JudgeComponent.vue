@@ -1,11 +1,10 @@
 <template>
     <div class="judge-bench">
         <b-card :class="isDark ?'bg-dark text-light' : ''">
-            <p class="card-title">
+            <p class="card-title" @click="$router.push('/history')">
                 <b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>
                 Judge
             </p>
-            <b-button @click="$router.push('/history')">Test</b-button>
             <div>
                 <div v-if="!pleaDealExists && juryExists">
                     <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"

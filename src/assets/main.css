@@ -2,7 +2,6 @@
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
-    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -233,6 +232,10 @@
 }
 
 /*************************** History Page ***************************/
+.cases-history-container{
+    height: 100vh;
+}
+
 .return-button{
     position: absolute;
     top: 17px;
@@ -240,7 +243,10 @@
 }
 
 .table-history-cases{
-    max-height: 70vh;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 50px;
+    overflow-y: scroll;
 }
 
 
@@ -249,10 +255,6 @@
     #app {
         overflow-y: scroll;
         padding-top: 10px;
-    }
-
-    .game-container{
-        margin-top: 400px;
     }
 
     .others-div {
@@ -295,6 +297,12 @@
 @media (max-width: 900px) {
     .court-bar {
         max-width: 85%;
+    }
+    .table-history-cases{
+        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 50px;
+        overflow-y: scroll;
     }
 }
 

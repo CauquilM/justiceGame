@@ -1,14 +1,21 @@
 <template>
-    <div>
+    <div class="cases-history-container">
         <b-button class="return-button" variant="primary" @click="$router.push('/')">
             <i class="ti ti-arrow-back"/>
         </b-button>
-        <b-row align-h="center" class="table-history-cases">
-            <div v-if="screenWidth >= 852 && items.length === 0" class="col-11">
+        <b-row align-h="center" align-v="center" class="table-history-cases">
+            <div v-if="historicalCases.length === 0" class="col-11">
                 <h1>No data</h1>
             </div>
             <div v-else-if="screenWidth >= 852" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="largeFields">
+                <b-row align-h="end">
+                    <div class="col-2 mb-4">
+                        <b-button v-if="!deleteButton" variant="danger" @click="securityDelete">Delete all data
+                        </b-button>
+                        <b-button v-if="deleteButton" variant="danger" @click="deleteAll">Really ?</b-button>
+                    </div>
+                </b-row>
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="largeFields" :items="historicalCases">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -34,7 +41,14 @@
                 </b-table>
             </div>
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="smallFields">
+                <b-row align-h="end">
+                    <div class="col-3 mb-4">
+                        <b-button v-if="!deleteButton" variant="danger" @click="securityDelete">Delete all data
+                        </b-button>
+                        <b-button v-if="deleteButton" variant="danger" @click="deleteAll">Really ?</b-button>
+                    </div>
+                </b-row>
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="smallFields" :items="historicalCases">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -66,51 +80,49 @@
     </div>
 </template>
 <script>
-import {mapState} from "vuex";
+import {mapActions, mapState} from "vuex";
 import axios from "axios";
 
 export default {
     name: 'CasesHistoryView',
     data() {
         return {
+            deleteButton: false,
             screenWidth: 0,
-            example: [
-                {
-                    case_id: "12000",
-                    type: "Criminal",
-                    charge: "Murder",
-                    description: "The defendant was pulled over for driving with an expired license.",
-                    name: "John Doe",
-                    age: 40,
-                    criminalRecord: [],
-                    verdict: "Guilty",
-                    prison: "1 year",
-                    probation: "5 year",
-                    fine: "15000 $",
-                }
-            ],
-            smallFields:[
+            smallFields: [
                 "type", "charge", "name", "age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
-            largeFields:[
+            largeFields: [
                 "case_id", "type", "charge", "description", "suspect_name", "suspect_age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
-            items: [],
         }
-    },
-    created() {
-        this.setItems();
     },
     mounted() {
         this.updateScreenWidth();
         this.onScreenResize();
     },
     computed: {
-        ...mapState(["isDark"])
+        ...mapState(["historicalCases", "isDark"])
     },
     methods: {
+        ...mapActions(["getHistoricalCases"]),
+        securityDelete() {
+            this.deleteButton = true;
+        },
+        deleteAll() {
+            console.log("before axios");
+            axios.delete("https://spotless-ant-beret.cyclic.app/history")
+                .then((res) => {
+                    console.log("delete: ", res);
+                    this.deleteButton = false;
+                    this.getHistoricalCases();
+                })
+                .catch((e) => {
+                    console.log("delete error: ", e);
+                })
+        },
         onScreenResize() {
             window.addEventListener("resize", () => {
                 this.updateScreenWidth();
@@ -118,17 +130,6 @@ export default {
         },
         updateScreenWidth() {
             this.screenWidth = window.innerWidth;
-        },
-        setItems() {
-            axios.get("http://localhost:3000/history")
-                .then((res) => {
-                    this.items = res.data;
-                    console.log("case from bdd: ", res.data);
-                })
-                .catch((err) => {
-                    console.log("axios fetch history cases: ", err);
-                })
-
         }
     }
 }

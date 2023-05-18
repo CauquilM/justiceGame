@@ -229,6 +229,7 @@ export default new Vuex.Store({
                 actualOutcome: "Guilty"
             },*/
         ],
+        historicalCases:[],
         chosenCase: Object,
         prisonSelected: null,
         probationSelected: null,
@@ -266,6 +267,9 @@ export default new Vuex.Store({
     mutations: {
         SET_CHOSEN_CASE(state, payload) {
             state.chosenCase = payload;
+        },
+        SET_HISTORICAL_CASES(state, payload) {
+            state.historicalCases = payload;
         },
         SET_CASES(state, payload) {
             state.cases.push(payload)
@@ -327,6 +331,16 @@ export default new Vuex.Store({
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
         },
+        getHistoricalCases({commit}){
+            axios.get("https://spotless-ant-beret.cyclic.app/history")
+                .then((res) => {
+                    commit("SET_HISTORICAL_CASES", res.data);
+                    console.log("case from bdd: ", res.data);
+                })
+                .catch((err) => {
+                    console.log("axios fetch history cases: ", err);
+                })
+        },
         getAllJson() {
             axios.get("descriptions.json")
                 .then((res) => {
@@ -350,8 +364,8 @@ export default new Vuex.Store({
             } else {
                 commit("SET_JUDGE_COMMENT", "The suspect is innocent, bailiff, freed him, case dismissed");
                 dispatch("openNotGuiltyModal");
-                console.time("test post axios");
-                axios.post("http://localhost:3000/history",
+                console.time("test not guilty post axios");
+                axios.post("https://spotless-ant-beret.cyclic.app/history",
                     {
                         case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
                         type: state.chosenCase.type,
@@ -368,7 +382,7 @@ export default new Vuex.Store({
                     .catch((err) => {
                         console.log("axios post history cases: ", err);
                     })
-                console.timeEnd("test post axios");
+                console.timeEnd("test not guilty post axios");
             }
         },
         openGuiltyModal() {
@@ -439,6 +453,28 @@ export default new Vuex.Store({
                     eventBus.$emit('openSentencingFailModal');
                 }
             }
+            console.time("test guilty post axios");
+            axios.post("https://spotless-ant-beret.cyclic.app/history",
+                {
+                    case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                    type: state.chosenCase.type,
+                    charge: state.chosenCase.charge,
+                    description: state.chosenCase.description,
+                    suspect_name: state.chosenCase.suspect.name,
+                    suspect_age: state.chosenCase.suspect.age,
+                    criminalRecord: state.chosenCase.criminalRecord,
+                    verdict: "Guilty",
+                    prison: state.prisonSelected,
+                    probation: state.probationSelected,
+                    fine: state.fineSelected,
+                })
+                .then((res) => {
+                    console.log(res);
+                })
+                .catch((err) => {
+                    console.log("axios post history cases: ", err);
+                })
+            console.timeEnd("test guilty post axios");
         },
         togglePleaDeal({commit}) {
             commit("SET_PLEA_DEAL");
