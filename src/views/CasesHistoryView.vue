@@ -102,12 +102,26 @@ export default {
     mounted() {
         this.updateScreenWidth();
         this.onScreenResize();
+        this.stats();
     },
     computed: {
         ...mapState(["historicalCases", "isDark"])
     },
     methods: {
         ...mapActions(["getHistoricalCases"]),
+        stats() {
+            console.log("debug: ", this.historicalCases.length);
+            let result = 0;
+            for (let i = 0; i < this.historicalCases.length; i++) {
+                console.log("enter for");
+                if (this.historicalCases[i].verdict === "Guilty") {
+                    result++
+                    console.log("enetr for if");
+                }
+            }
+            result = ((result * 100) / this.historicalCases.length);
+            console.log(result.toFixed(2));
+        },
         securityDelete() {
             this.deleteButton = true;
         },
