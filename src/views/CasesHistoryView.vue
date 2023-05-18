@@ -3,9 +3,32 @@
         <b-button variant="primary" class="return-button" @click="$router.push('/')">
             <i class="ti ti-arrow-back"/>
         </b-button>
-        <b-row align-h="center" class="table-css">
-            <div class="col-8">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items.judgedCase"/>
+        <b-row align-h="center" class="table-history-cases">
+            <div class="col-11">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="example">
+                    <template v-slot:cell(criminalRecord)="row">
+                        <span v-if="row.item.criminalRecord.length > 0">True</span>
+                        <span v-else>False</span>
+                    </template>
+                    <template v-slot:cell(prison)="row">
+                        <span v-if="row.item.verdict === 'Guilty'">
+                            {{ row.item.prison }}
+                        </span>
+                        <span v-else>False</span>
+                    </template>
+                    <template v-slot:cell(probation)="row">
+                        <span v-if="row.item.verdict === 'Guilty'">
+                            {{ row.item.probation }}
+                        </span>
+                        <span v-else>False</span>
+                    </template>
+                    <template v-slot:cell(fine)="row">
+                        <span v-if="row.item.verdict === 'Guilty'">
+                            {{ row.item.fine }}
+                        </span>
+                        <span v-else>False</span>
+                    </template>
+                </b-table>
             </div>
         </b-row>
     </div>
@@ -18,17 +41,24 @@ export default {
     data() {
         return {
             example: [
-                {age: 40, first_name: 'Dickerson', last_name: 'Macdonald'}
+                {
+                    type: "Criminal",
+                    charge: "Murder",
+                    description: "The defendant was pulled over for driving with an expired license.",
+                    first_name: 'Dickerson',
+                    last_name: 'Macdonald',
+                    age: 40,
+                    criminalRecord: [],
+                    verdict: "Guilty",
+                    prison: "1 year",
+                    probation: "5 year",
+                    fine: "15000 $",
+                }
             ],
             items: [],
             fields: [
                 {
-                    key: 'type',
-                    sortable: true
-                },
-                {
-                    key: 'trafficCharge',
-                    label: 'Person age',
+                    key: 'charge',
                     sortable: true
                 },
                 {
@@ -36,6 +66,11 @@ export default {
                     label: "Suspect Name",
                     sortable: true
                 },
+                {
+                    key: 'verdict',
+                    sortable: true
+                },
+
 
             ],
         }
