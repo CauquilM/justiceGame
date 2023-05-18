@@ -8,6 +8,13 @@
                 <h1>No data</h1>
             </div>
             <div v-else-if="screenWidth >= 852" class="col-11">
+                <b-row align-h="end">
+                    <div class="col-2 mb-4">
+                        <b-button v-if="!deleteButton" variant="danger" @click="securityDelete">Delete all data
+                        </b-button>
+                        <b-button v-if="deleteButton" variant="danger" @click="deleteAll">Really ?</b-button>
+                    </div>
+                </b-row>
                 <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="largeFields" :items="historicalCases">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
@@ -34,7 +41,14 @@
                 </b-table>
             </div>
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="largeFields" :items="historicalCases">
+                <b-row align-h="end">
+                    <div class="col-2 mb-4">
+                        <b-button v-if="!deleteButton" variant="danger" @click="securityDelete">Delete all data
+                        </b-button>
+                        <b-button v-if="deleteButton" variant="danger" @click="deleteAll">Really ?</b-button>
+                    </div>
+                </b-row>
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="smallFields" :items="historicalCases">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -67,11 +81,13 @@
 </template>
 <script>
 import {mapActions, mapState} from "vuex";
+import axios from "axios";
 
 export default {
     name: 'CasesHistoryView',
     data() {
         return {
+            deleteButton: false,
             screenWidth: 0,
             smallFields: [
                 "type", "charge", "name", "age", "criminalRecord",
@@ -92,6 +108,21 @@ export default {
     },
     methods: {
         ...mapActions(["getHistoricalCases"]),
+        securityDelete() {
+            this.deleteButton = true;
+        },
+        deleteAll() {
+            console.log("before axios");
+            axios.delete("https://spotless-ant-beret.cyclic.app/history")
+                .then((res) => {
+                    console.log("delete: ", res);
+                    this.deleteButton = false;
+                    this.getHistoricalCases();
+                })
+                .catch((e) => {
+                    console.log("delete error: ", e);
+                })
+        },
         onScreenResize() {
             window.addEventListener("resize", () => {
                 this.updateScreenWidth();
