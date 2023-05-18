@@ -4,8 +4,11 @@
             <i class="ti ti-arrow-back"/>
         </b-button>
         <b-row align-h="center" class="table-history-cases">
-            <div v-if="screenWidth >= 852" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="example">
+            <div v-if="screenWidth >= 852 && items.length === 0" class="col-11">
+                <h1>No data</h1>
+            </div>
+            <div v-else-if="screenWidth >= 852" class="col-11">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -31,7 +34,7 @@
                 </b-table>
             </div>
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="example" :fields="fields">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="fields">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -57,7 +60,7 @@
                 </b-table>
             </div>
             <div v-else class="col-auto">
-                <p>You need to put your phone in landscape mode</p>
+                <h2>You need to put your phone in landscape mode</h2>
             </div>
         </b-row>
     </div>
@@ -91,13 +94,10 @@ export default {
                 "verdict", "prison", "probation", "fine"
             ],
             items: [],
-            isLargeScreen: false
         }
     },
     created() {
         this.setItems();
-        console.log("history: ", this.$cookies.get("historicOfCases"));
-
     },
     mounted() {
         this.updateScreenWidth();
