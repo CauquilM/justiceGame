@@ -37,14 +37,18 @@ export default {
             // Define randomization parameters
             randomizationParams: {
                 'type': "",
-                'criminalCharge': ['murder', 'theft', 'fraud',
+                'criminalCharge_first': ['murder', 'theft', 'fraud',
                     'assault', 'arson',
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
-                     'Attempted Murder 1st degree murder', 'Murder of Police Officer'
+                     'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Grand Theft Auto', 'Robbery w/violence',
                     */
                 ],
+                /*'criminalCharge_second': [
+                ],*/
                 /*'felonies_first': [
                     'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
@@ -55,7 +59,8 @@ export default {
                 /*'felonies_second': [
                     'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
                     'Hate Crime', 'Impersonating a Peace/Police Officer', 'Indecent Exposure',
-                    'Participating in Gang'
+                    'Participating in Gang', 'Pickpocketing', 'Brandishing of Firearm', 'Inciting Riot',
+                    'Terrorist threat',
 
                 ],*/
                 /*'parole': [
