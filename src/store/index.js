@@ -351,7 +351,7 @@ export default new Vuex.Store({
                 commit("SET_JUDGE_COMMENT", "The suspect is innocent, bailiff, freed him, case dismissed");
                 dispatch("openNotGuiltyModal");
                 console.time("test not guilty post axios");
-                axios.post("http://localhost:3000/history",
+                axios.post("https://spotless-ant-beret.cyclic.app/history",
                     {
                         case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
                         type: state.chosenCase.type,
@@ -440,7 +440,7 @@ export default new Vuex.Store({
                 }
             }
             console.time("test guilty post axios");
-            axios.post("http://localhost:3000/history",
+            axios.post("https://spotless-ant-beret.cyclic.app/history",
                 {
                     case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
                     type: state.chosenCase.type,

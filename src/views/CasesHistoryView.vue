@@ -4,7 +4,7 @@
             <i class="ti ti-arrow-back"/>
         </b-button>
         <b-row align-h="center" class="table-history-cases">
-            <div v-if="screenWidth >= 852 && items.length === 0" class="col-11">
+            <div v-if="items.length === 0" class="col-11">
                 <h1>No data</h1>
             </div>
             <div v-else-if="screenWidth >= 852" class="col-11">
@@ -33,11 +33,7 @@
                     </template>
                 </b-table>
             </div>
-<!--            <div v-else-if="screenWidth < 852 && items.length === 0" class="col-11">
-                <h1>No data</h1>
-            </div>-->
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                {{ items }}
                 <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="largeFields">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
@@ -109,7 +105,7 @@ export default {
             this.screenWidth = window.innerWidth;
         },
         setItems() {
-            axios.get("http://localhost:3000/history")
+            axios.get("https://spotless-ant-beret.cyclic.app/history")
                 .then((res) => {
                     this.items = res.data;
                     console.log("case from bdd: ", res.data);
