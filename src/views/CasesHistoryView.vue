@@ -4,11 +4,11 @@
             <i class="ti ti-arrow-back"/>
         </b-button>
         <b-row align-h="center" class="table-history-cases">
-            <div v-if="items.length === 0" class="col-11">
+            <div v-if="historicalCases.length === 0" class="col-11">
                 <h1>No data</h1>
             </div>
             <div v-else-if="screenWidth >= 852" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="largeFields">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="largeFields" :items="historicalCases">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -34,7 +34,7 @@
                 </b-table>
             </div>
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="largeFields">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :fields="largeFields" :items="historicalCases">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -66,36 +66,32 @@
     </div>
 </template>
 <script>
-import {mapState} from "vuex";
-import axios from "axios";
+import {mapActions, mapState} from "vuex";
 
 export default {
     name: 'CasesHistoryView',
     data() {
         return {
             screenWidth: 0,
-            smallFields:[
+            smallFields: [
                 "type", "charge", "name", "age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
-            largeFields:[
+            largeFields: [
                 "case_id", "type", "charge", "description", "suspect_name", "suspect_age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
-            items: [],
         }
-    },
-    created() {
-        this.setItems();
     },
     mounted() {
         this.updateScreenWidth();
         this.onScreenResize();
     },
     computed: {
-        ...mapState(["isDark"])
+        ...mapState(["historicalCases", "isDark"])
     },
     methods: {
+        ...mapActions(["getHistoricalCases"]),
         onScreenResize() {
             window.addEventListener("resize", () => {
                 this.updateScreenWidth();
@@ -103,17 +99,6 @@ export default {
         },
         updateScreenWidth() {
             this.screenWidth = window.innerWidth;
-        },
-        setItems() {
-            axios.get("https://spotless-ant-beret.cyclic.app/history")
-                .then((res) => {
-                    this.items = res.data;
-                    console.log("case from bdd: ", res.data);
-                })
-                .catch((err) => {
-                    console.log("axios fetch history cases: ", err);
-                })
-
         }
     }
 }

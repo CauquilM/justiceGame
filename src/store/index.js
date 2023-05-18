@@ -229,6 +229,7 @@ export default new Vuex.Store({
                 actualOutcome: "Guilty"
             },*/
         ],
+        historicalCases:[],
         chosenCase: Object,
         prisonSelected: null,
         probationSelected: null,
@@ -266,6 +267,9 @@ export default new Vuex.Store({
     mutations: {
         SET_CHOSEN_CASE(state, payload) {
             state.chosenCase = payload;
+        },
+        SET_HISTORICAL_CASES(state, payload) {
+            state.historicalCases = payload;
         },
         SET_CASES(state, payload) {
             state.cases.push(payload)
@@ -326,6 +330,16 @@ export default new Vuex.Store({
             }
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
+        },
+        getHistoricalCases({commit}){
+            axios.get("https://spotless-ant-beret.cyclic.app/history")
+                .then((res) => {
+                    commit("SET_HISTORICAL_CASES", res.data);
+                    console.log("case from bdd: ", res.data);
+                })
+                .catch((err) => {
+                    console.log("axios fetch history cases: ", err);
+                })
         },
         getAllJson() {
             axios.get("descriptions.json")

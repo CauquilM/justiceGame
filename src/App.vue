@@ -69,9 +69,10 @@ export default {
         console.time("Test");
         this.caseGeneration();
         console.timeEnd("Test");
+        this.getHistoricalCases();
     },
     methods: {
-        ...mapActions(["addGeneratedCase", "chooseProsecutionSentence"]),
+        ...mapActions(["addGeneratedCase", "chooseProsecutionSentence", "getHistoricalCases"]),
         generateName() {
             const firstName = [
                 "Emma",
