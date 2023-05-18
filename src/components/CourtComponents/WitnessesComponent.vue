@@ -11,7 +11,7 @@ import {mapActions, mapState} from "vuex";
   export default {
     name: "WitnessesComponent",
     created() {
-      console.log("here: ", this.chosenCase.witnesses);
+      console.log("witness created: ", this.chosenCase.witnesses);
     },
     computed: {
       ...mapState(["chosenCase"])

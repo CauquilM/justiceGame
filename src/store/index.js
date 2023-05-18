@@ -343,13 +343,32 @@ export default new Vuex.Store({
             commit("SET_CASES", cases);
             console.log("cases from store: ", state.cases)
         },
-        playerDecision({dispatch, commit}, decision) {
+        playerDecision({dispatch, state, commit}, decision) {
             if (decision === "guilty") {
                 commit("SET_JUDGE_COMMENT", "The suspect is recognized guilty, let's proceed to the sentencing");
                 dispatch("openGuiltyModal");
             } else {
                 commit("SET_JUDGE_COMMENT", "The suspect is innocent, bailiff, freed him, case dismissed");
                 dispatch("openNotGuiltyModal");
+                console.time("test post axios");
+                axios.post("http://localhost:3000/history",
+                    {
+                        case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                        type: state.chosenCase.type,
+                        charge: state.chosenCase.charge,
+                        description: state.chosenCase.description,
+                        suspect_name: state.chosenCase.suspect.name,
+                        suspect_age: state.chosenCase.suspect.age,
+                        criminalRecord: state.chosenCase.criminalRecord,
+                        verdict: "Not Guilty"
+                    })
+                    .then((res) => {
+                        console.log(res);
+                    })
+                    .catch((err) => {
+                        console.log("axios post history cases: ", err);
+                    })
+                console.timeEnd("test post axios");
             }
         },
         openGuiltyModal() {

@@ -8,7 +8,7 @@
                 <h1>No data</h1>
             </div>
             <div v-else-if="screenWidth >= 852" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="largeFields">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -17,24 +17,24 @@
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.prison }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                     <template v-slot:cell(probation)="row">
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.probation }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                     <template v-slot:cell(fine)="row">
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.fine }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                 </b-table>
             </div>
             <div v-else-if="screenWidth < 852 && screenWidth > 670" class="col-11">
-                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="fields">
+                <b-table :class="isDark ?'bg-dark text-light' : ''" :items="items" :fields="smallFields">
                     <template v-slot:cell(criminalRecord)="row">
                         <span v-if="row.item.criminalRecord.length > 0">True</span>
                         <span v-else>False</span>
@@ -89,8 +89,12 @@ export default {
                     fine: "15000 $",
                 }
             ],
-            fields:[
+            smallFields:[
                 "type", "charge", "name", "age", "criminalRecord",
+                "verdict", "prison", "probation", "fine"
+            ],
+            largeFields:[
+                "case_id", "type", "charge", "description", "suspect_name", "suspect_age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
             items: [],
@@ -118,9 +122,8 @@ export default {
         setItems() {
             axios.get("http://localhost:3000/history")
                 .then((res) => {
-                    console.log("here: ", res.data);
                     this.items = res.data;
-                    console.log("case from store: ", res.data);
+                    console.log("case from bdd: ", res.data);
                 })
                 .catch((err) => {
                     console.log("axios fetch history cases: ", err);
