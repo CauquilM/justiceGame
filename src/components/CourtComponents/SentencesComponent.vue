@@ -23,15 +23,15 @@
       <div v-if="customSentences" class="sentences-card-select-flex">
         <b-input-group prepend="Prison">
           <b-form-input v-model="prisonSelected"
-            min="0" max="30" type="number"/>
+            min="0" :max="maxPrison" type="number"/>
         </b-input-group>
         <b-input-group prepend="Probation">
           <b-form-input v-model="probationSelected"
-            min="0" max="10" type="number"/>
+            min="0" :max="maxProbation" type="number"/>
         </b-input-group>
         <b-input-group prepend="Fines $">
           <b-form-input v-model="fineSelected" type="number"
-            min="0" max="5000"/>
+            min="0" :max="maxFine"/>
         </b-input-group>
         <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
       </div>
@@ -63,7 +63,10 @@ export default {
   name: 'SentenceComponent',
   data() {
     return {
-      customSentences: false
+      customSentences: false,
+      maxPrison: 0,
+      maxProbation: 0,
+      maxFine: 0
     }
   },
   computed: {
@@ -101,10 +104,88 @@ export default {
     eventBus.$on('openSentencingFailModal', () => {
       this.$refs["sentencing-failed-modal"].show();
     });
+    this.updateSentences();
   },
   methods: {
     ...mapActions(['doSentencing', 'modifyPrisonSelected',
-      'modifyProbationSelected', 'modifyFineSelected', 'refreshPage'])
+      'modifyProbationSelected', 'modifyFineSelected', 'refreshPage']),
+    updateSentences(){
+      if(this.chosenCase.charge === 'murder'){
+          this.maxPrison = 50;
+          this.maxProbation = 10;
+          this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'theft'){
+        this.maxPrison = 10;
+        this.maxProbation = 5;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'fraud'){
+        this.maxPrison = 30;
+        this.maxProbation = 10;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'assault'){
+        this.maxPrison = 10;
+        this.maxProbation = 7;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'arson'){
+        this.maxPrison = 30;
+        this.maxProbation = 10;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'dui'){
+        this.maxPrison = 10;
+        this.maxProbation = 5;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'recklessDriving'){
+        this.maxPrison = 10;
+        this.maxProbation = 5;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'drivingNoLicense'){
+        this.maxPrison = 5;
+        this.maxProbation = 5;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'hitAndRun'){
+        this.maxPrison = 15;
+        this.maxProbation = 10;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'traffic'){
+        this.maxPrison = 2;
+        this.maxProbation = 2;
+        this.maxFine = 1500;
+      }
+      else if(this.chosenCase.charge === 'fight'){
+        this.maxPrison = 7;
+        this.maxProbation = 5;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'escape'){
+        this.maxPrison = 12;
+        this.maxProbation = 10;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'assaultWithDeadlyWeapon'){
+        this.maxPrison = 15;
+        this.maxProbation = 8;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'manslaughter'){
+        this.maxPrison = 50;
+        this.maxProbation = 10;
+        this.maxFine = 50000;
+      }
+      else if(this.chosenCase.charge === 'drugTrafficking'){
+        this.maxPrison = 20;
+        this.maxProbation = 7;
+        this.maxFine = 50000;
+      }
+    }
   }
 }
 </script>

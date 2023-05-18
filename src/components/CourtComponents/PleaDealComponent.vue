@@ -1,52 +1,105 @@
 <template>
-  <div>
-    <b-button v-if="showButton" block variant="warning">Plea deal</b-button>
-  </div>
+    <div>
+        <b-button v-if="showButton" v-b-modal.pleaDeal-modal block variant="warning">Plea deal</b-button>
+        <b-modal id="pleaDeal-modal"
+                 centered hide-footer
+                 hide-header-close
+                 title="Message from the clerk">
+            <p style="text-align: center">The prosecution and the defense agreed to a plea deal</p>
+            <div v-if="chosenCase.type === 'traffic infraction'" style="text-align: center">
+                <p v-if="fineSentence > 0">{{ fineSentence }}$ of fine</p>
+                <p v-else>Released of all charges</p>
+            </div>
+            <div v-else style="text-align: center">
+                <p v-if="prisonSentence > 0">{{ prisonSentence }} years of prison</p>
+                <p v-else>No prison time</p>
+                <p v-if="probationSentence > 0">{{ probationSentence }} years of probation</p>
+                <p v-else>No probation time</p>
+                <p v-if="fineSentence > 0">{{ fineSentence }}$ of fine</p>
+                <p v-else>No fine</p>
+            </div>
+
+            <div class="pleaDeal-buttons-container">
+                <b-button class="pleaDeal-buttons" variant="danger"
+                          @click="refusePleaDeal">🕊️ Refuse the plea deal
+                </b-button>
+                <b-button class="pleaDeal-buttons" variant="success"
+                          @click="refreshPage"><i class="ti ti-prison"/> Accept the plea deal
+                </b-button>
+            </div>
+        </b-modal>
+    </div>
 </template>
 <script>
-import {mapState} from "vuex";
+import {mapActions, mapState} from "vuex";
 
 export default {
-  name: "PleaDealComponent",
-  data() {
-    return {
-      showButton: true,
-      prisonSentence: "",
-      probationSentence: "",
-      fineSentence: ""
-    }
-  },
-  created() {
-    this.createPleaDeal();
-  },
-  computed: {
-    ...mapState(["chosenCase"])
-  },
-  methods: {
-    createPleaDeal() {
-      if (this.randomNumber(3) === 2) {
-        let randomPrison = this.randomNumber(6);
-        let randomProbation = this.randomNumber(6);
-        let randomFine = this.randomNumber(6);
-
-        this.prisonSentence = this.chosenCase.prisonSentences[randomPrison].value;
-        this.probationSentence = this.chosenCase.probationSentences[randomProbation].value;
-        this.fineSentence = this.chosenCase.fineSentences[randomFine].value;
-        console.log("Sentenced to: ",
-            this.prisonSentence + " " + this.probationSentence + " " + this.fineSentence);
-
-      } else {
-        this.showButton = false;
-      }
+    name: "PleaDealComponent",
+    data() {
+        return {
+            showButton: true,
+            prisonSentence: "",
+            probationSentence: "",
+            fineSentence: ""
+        }
     },
-    randomNumber(max, isSentence) {
-      if (isSentence) {
-        let result = Math.floor(Math.random() * max);
-        return result === 0 ? result += 1 : result;
-      } else {
-        return Math.floor(Math.random() * max);
-      }
+    created() {
+        this.createPleaDeal();
+    },
+    computed: {
+        ...mapState(["chosenCase"])
+    },
+    methods: {
+        ...mapActions(['refreshPage', "togglePleaDeal", "togglePleaDeal"]),
+        refusePleaDeal() {
+            this.$bvModal.hide('pleaDeal-modal');
+            this.showButton = false;
+            this.togglePleaDeal();
+        },
+        createPleaDeal() {
+            if (this.randomNumber() >= 8) {
+                this.togglePleaDeal();
+                if (this.chosenCase.type !== 'traffic infraction') {
+                    if (this.noSentence() >= 2) {
+                        this.prisonSentence = this.randomNumber(15, 1, true);
+                    } else {
+                        this.prisonSentence = 0;
+                    }
+                    if (this.noSentence() >= 2) {
+                        this.probationSentence = this.randomNumber(10, 1, true);
+                    } else {
+                        this.probationSentence = 0;
+                    }
+                    if (this.noSentence() >= 2) {
+                        this.fineSentence = this.randomNumber(50000, 100, true);
+                    } else {
+                        this.fineSentence = 0;
+                    }
+                    console.log("Sentenced to: ",
+                        this.prisonSentence + " " + this.probationSentence + " " + this.fineSentence);
+                } else {
+                    if (this.noSentence() >= 2) {
+                        this.fineSentence = this.randomNumber(1500, 100, true);
+                    } else {
+                        this.fineSentence = 0;
+                    }
+                    console.log("Sentenced to: ", this.fineSentence);
+                }
+
+            } else {
+                this.showButton = false;
+            }
+        },
+        randomNumber(max = 11, min, isSentence) {
+            if (isSentence) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            } else {
+                return Math.floor(Math.random() * max);
+            }
+        },
+        noSentence() {
+            return Math.floor(Math.random() * 11);
+        }
     }
-  }
 }
 </script>

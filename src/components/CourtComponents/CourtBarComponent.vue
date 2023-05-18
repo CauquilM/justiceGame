@@ -33,10 +33,10 @@ export default {
   },
   methods: {
     setAnswer(witness){
-      console.log(witness);
+      console.log("witness: ", witness);
       this.hidePresentation = true;
       this.answer = witness.answers[this.randomNum];
-      delete witness.question;
+      /*delete witness.question;*/
     }
   }
 }

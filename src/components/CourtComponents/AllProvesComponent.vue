@@ -5,7 +5,7 @@
       <div class="evidence-overflow">
         <p class="wheat-proof" @click="showCriminalRecord" v-if="chosenCase.criminalRecord.length > 0">Criminal Record</p>
         <EvidencesComponent/>
-        <WitnessesComponent/>
+<!--        <WitnessesComponent/>-->
       </div>
     </b-card>
   </div>
@@ -13,11 +13,13 @@
 <script>
 import {mapActions, mapState} from "vuex";
   import EvidencesComponent from "@/components/CourtComponents/EvidencesComponent.vue";
-  import WitnessesComponent from "@/components/CourtComponents/WitnessesComponent.vue";
+  /*import WitnessesComponent from "@/components/CourtComponents/WitnessesComponent.vue";*/
 
   export default {
     name: "AllProvesComponent",
-    components: {WitnessesComponent, EvidencesComponent},
+    components: {
+      /*WitnessesComponent, */
+      EvidencesComponent},
     computed: {
       ...mapState(["chosenCase", "isDark"])
     },

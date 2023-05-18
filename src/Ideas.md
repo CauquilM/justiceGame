@@ -1,12 +1,54 @@
 ## Proposed Features for a Legal Simulation Game
 
+# Immigration law cases (asylum, citizenship, deportation)
+
+- Immigration cases typically involve issues related to visas, green cards,
+  and citizenship.
+  These cases may arise when an individual is seeking to enter the United States,
+  extend their stay, or obtain permanent resident status. Some common immigration cases include:
+
+- Family-based immigration: Cases in which a U.S. citizen or
+  permanent resident sponsors a family member for immigration.
+
+- Employment-based immigration: Cases in which a U.S.
+  employer sponsors a foreign worker for a work visa.
+
+- Asylum: Cases in which an individual seeks protection
+  from persecution in their home country.
+
+- Deportation and removal: Cases in which an individual faces deportation
+  or removal from the United States due to immigration violations.
+
+- Naturalization: Cases in which an individual applies for U.S. citizenship.
+
+- Consular processing: Cases in which an individual applies for
+  a visa at a U.S. consulate or embassy abroad.
+
+- Adjustment of status: Cases in which an individual applies
+  for a green card while in the United States.
+
+- Visa waivers: Cases in which an individual seeks to enter
+  the United States without a visa.
+
+- Immigration cases can be complex and often involve navigating multiple
+  federal agencies and regulations.
+
+# Historical
+
+- The assassination of Julius Caesar: On March 15, 44 BC, Julius Caesar, the dictator of Rome,
+  was assassinated by a group of senators who were opposed to his rule.
+
+- The Salem Witch Trials: In the late 17th century, more than 200 people in Salem, Massachusetts,
+  were accused of witchcraft and 20 were executed.
+  The trials were a tragic example of mass hysteria and the dangers of religious fanaticism.
+
 ### Soon
-1. Jury system: Introduce a jury system where the player must persuade a group of jurors to side with their decision.
+
+1. ( first version exists ) Jury system: Introduce a jury system where the player must persuade a group of jurors to
+   side with their decision.
 2. Public opinion: Introduce a system where the player's decisions affect their public approval rating.
 3. Judge's chambers: Add a feature where players can interact with their clerk or other characters in their judge's
    chambers.
-4. Pre-trial negotiations: Add pre-trial negotiations where the player must work with both the prosecution and defense
-   to come to a plea agreement.
 
 ### Later
 

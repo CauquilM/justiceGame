@@ -19,6 +19,10 @@
     margin-bottom: 80px;
 }
 
+.game-container-first-row{
+    width: 100%;
+}
+
 /*************************** Title of all cards ***************************/
 .card-title {
     font-size: 20px;
@@ -44,6 +48,21 @@
 
 .judge-buttons > button {
     margin: 0 5px 10px 5px;
+}
+
+/***************************** Jury ***************************/
+.jury-member{
+    font-size: 40px;
+}
+
+.jury-btn{
+    background: linear-gradient(-80deg, rgba(64,133,88,1) 50%, rgba(203,68,74,1) 50%);
+}
+
+/*************************** Plea Deal ***************************/
+.pleaDeal-buttons-container{
+    display: flex;
+    justify-content: space-around;
 }
 
 /*************************** Others ***************************/
@@ -99,11 +118,6 @@
 .sentences-switch > .custom-control-input:checked~.custom-control-label::before{
     background-color: red;
 }
-
-/*.custom-switch.b-custom-control-lg .custom-control-label::after{
-    background-image: url("@/assets/hammer.png");
-    background-size: 100% 100% !important;
-}*/
 
 /*************************** Court Bar ***************************/
 .court-bar {
@@ -218,12 +232,27 @@
     right: 20px;
 }
 
+/*************************** History Page ***************************/
+.return-button{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.table-history-cases{
+    max-height: 70vh;
+}
+
+
 /*************************** Responsive ***************************/
 @media (max-width: 1024px) {
     #app {
-        height: unset;
-        overflow: scroll;
+        overflow-y: scroll;
         padding-top: 10px;
+    }
+
+    .game-container{
+        margin-top: 400px;
     }
 
     .others-div {
@@ -266,6 +295,25 @@
 @media (max-width: 900px) {
     .court-bar {
         max-width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .judge-bench {
+        margin: 0 15%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .criminal-record-card {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pleaDeal-buttons-container > button {
+        font-size: 0.82em;
     }
 }
 
