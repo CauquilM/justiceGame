@@ -39,11 +39,32 @@ export default {
                 'type': "",
                 'criminalCharge': ['murder', 'theft', 'fraud',
                     'assault', 'arson',
-                    /*'fake 911 call', 'vandalism', 'cybercrime', 'identity theft', 'kidnapping', 'bribery'*/
+                    /*
+                    'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
+                     'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
+                     'Attempted Murder 1st degree murder', 'Murder of Police Officer'
+                    */
                 ],
+                /*'felonies_first': [
+                    'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
+                    'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
+                    , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
+                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle',
+
+                ],*/
+                /*'felonies_second': [
+                    'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
+                    'Hate Crime', 'Impersonating a Peace/Police Officer', 'Indecent Exposure',
+                    'Participating in Gang'
+
+                ],*/
+                /*'parole': [
+                    'Violation of probation', 'Violation of parole'
+                ],*/
                 'roadCharge': ['dui', 'recklessDriving',
                     'drivingNoLicense', 'hitAndRun',
-                    /**/
+                    /*'driving Wrong Way', 'evading Arrest', 'leaving the Scene of Accident',
+                    failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
                     'manslaughter', 'drugTrafficking',
