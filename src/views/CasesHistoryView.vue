@@ -120,7 +120,8 @@ export default {
                 }
             }
             result = ((result * 100) / this.historicalCases.length);
-            console.log(result.toFixed(2));
+            console.log(result.toFixed(2
+            ));
         },
         securityDelete() {
             this.deleteButton = true;
