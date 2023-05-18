@@ -57,19 +57,19 @@
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.prison }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                     <template v-slot:cell(probation)="row">
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.probation }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                     <template v-slot:cell(fine)="row">
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.fine }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                 </b-table>
             </div>
@@ -90,7 +90,7 @@ export default {
             deleteButton: false,
             screenWidth: 0,
             smallFields: [
-                "type", "charge", "name", "age", "criminalRecord",
+                "type", "charge", "suspect_name", "suspect_age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
             largeFields: [
