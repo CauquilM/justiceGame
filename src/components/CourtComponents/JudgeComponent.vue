@@ -6,7 +6,15 @@
                 Judge
             </p>
             <div>
-                <div v-if="!pleaDealExists && juryExists">
+                <div v-if="chosenCase.type === 'parole'">
+                    <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"
+                              @click="playerDecision('guilty')">Jail
+                    </b-button>
+                    <b-button v-if="juryDecision === 'not guilty'" class="jury-btn"
+                              @click="playerDecision('not guilty')">Free
+                    </b-button>
+                </div>
+                <div v-else-if="!pleaDealExists && juryExists">
                     <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"
                               @click="playerDecision('guilty')">Jury decision
                     </b-button>
@@ -51,7 +59,7 @@ export default {
     name: 'JudgeComponent',
     components: {PleaDealComponent},
     computed: {
-        ...mapState(["judgeComment", "isDark", "pleaDealExists" ,"juryExists", "juryDecision"])
+        ...mapState(["judgeComment", "isDark", "pleaDealExists" ,"juryExists", "juryDecision", "chosenCase"])
     },
     mounted() {
         eventBus.$on('openGuiltyModal', () => {
