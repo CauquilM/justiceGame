@@ -557,6 +557,7 @@ export default {
                         this.caseObj["charge"] = "parole hearing";
                         this.caseObj["description"] = descriptions.parole[Math.floor(Math.random() * descriptions.parole.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.parole.slice(0, Math.floor(Math.random() * evidences.parole.length))).slice(0, 3);
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                     }
 

@@ -29,7 +29,11 @@
                      no-close-on-backdrop
                      title="Message from the clerk">
                 <p class="sentencing-modal-text">{{ judgeComment }}</p>
-                <b-button block class="sentencing-modal-button" variant="info"
+                <b-button v-if="chosenCase.type === 'parole'" block class="sentencing-modal-button" variant="info"
+                          @click="showSentences">
+                    Let's do
+                </b-button>
+                <b-button v-else block class="sentencing-modal-button" variant="info"
                           @click="showSentences">
                     Let's do
                 </b-button>
@@ -38,7 +42,12 @@
                      hide-header-close
                      no-close-on-backdrop
                      title="Message from the clerk">
-                <b-button block class="sentencing-modal-button" variant="info"
+                <p class="sentencing-modal-text">{{ judgeComment }}</p>
+                <b-button v-if="chosenCase.type === 'parole'" block class="sentencing-modal-button" variant="info"
+                          @click="refreshPage">
+                    Case closed
+                </b-button>
+                <b-button v-else block class="sentencing-modal-button" variant="info"
                           @click="refreshPage">
                     🕊️ Freed him, case dismissed
                 </b-button>
