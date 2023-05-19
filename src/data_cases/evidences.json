@@ -2628,6 +2628,74 @@
       "description": "The victim was attacked with a sharpened piece of wood during a gang-related brawl in the mess hall.",
       "prosecutionSentence": "The defendant was identified as a member of the attacking gang and had a motive for the assault.",
       "defenseSentence": "My client was not involved in the gang and had no reason to attack the victim."
+    },
+    {
+      "id": 25,
+      "description": "Surveillance footage reveals that the defendant was acting in self-defense and used the weapon as a last resort to protect themselves from the victim's violent attack.",
+      "prosecutionSentence": "The defendant's use of a deadly weapon constitutes a clear act of aggression and intention to cause harm.",
+      "defenseSentence": "My client resorted to using a weapon in self-defense to protect their own life from the imminent danger posed by the victim."
+    },
+
+    {
+      "id": 26,
+      "description": "Eyewitness testimonies from other inmates confirm that the victim was the initial aggressor and the defendant acted in self-defense with the weapon as a means to protect themselves.",
+      "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrates a premeditated intent to harm the victim.",
+      "defenseSentence": "My client only resorted to using a weapon as a necessary measure to defend themselves against the victim's life-threatening assault."
+    },
+
+    {
+      "id": 27,
+      "description": "Medical reports indicate that the defendant sustained severe injuries prior to the incident, providing evidence of the victim's prior aggression and the defendant's need to defend themselves with a weapon.",
+      "prosecutionSentence": "The defendant's use of a deadly weapon goes beyond reasonable self-defense and constitutes an act of excessive force.",
+      "defenseSentence": "My client was forced to use a weapon as a means of self-preservation due to the victim's relentless and life-threatening attack."
+    },
+
+    {
+      "id": 28,
+      "description": "Statements from prison staff reveal that the victim had a history of violent behavior and had previously assaulted other inmates, justifying the defendant's use of a weapon for self-defense.",
+      "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrate a clear intention to cause harm to the victim.",
+      "defenseSentence": "My client's use of a weapon was solely for self-defense purposes, as they had legitimate reasons to fear for their safety due to the victim's violent tendencies."
+    },
+
+    {
+      "id": 29,
+      "description": "Surveillance footage from a different angle shows the victim brandishing a weapon prior to the defendant's use of their own weapon, suggesting that the defendant acted in response to an imminent threat.",
+      "prosecutionSentence": "The defendant's use of a deadly weapon in the altercation indicates a deliberate intent to cause harm to the victim.",
+      "defenseSentence": "My client's use of a weapon was a direct response to the victim's armed aggression, aimed at protecting themselves from imminent harm."
+    },
+
+    {
+      "id": 30,
+      "description": "Psychological evaluation of the defendant reveals a history of trauma and anxiety, which influenced their perception of threat and led them to use a weapon as a means of self-defense.",
+      "prosecutionSentence": "The defendant's use of a deadly weapon suggests a willingness to inflict harm on the victim, regardless of the circumstances.",
+      "defenseSentence": "My client, due to their traumatic experiences and resulting psychological distress, used a weapon as a necessary means to defend themselves from the victim's life-threatening assault."
+    },
+    {
+      "id": 31,
+      "description": "Eyewitness testimonies from other inmates corroborate the defendant's claim of acting in self-defense and using the weapon as a last resort.",
+      "prosecutionSentence": "The defendant's possession and use of a deadly weapon indicates their intention to cause harm and goes against the principles of self-defense.",
+      "defenseSentence": "My client utilized the weapon in self-defense, employing necessary force to protect themselves from the imminent danger posed by the victim."
+    },
+
+    {
+      "id": 32,
+      "description": "Medical records reveal that the defendant sustained severe injuries consistent with a physical altercation, supporting their claim of acting in self-defense with the weapon.",
+      "prosecutionSentence": "The defendant's use of a deadly weapon suggests an intent to cause harm rather than acting solely in self-defense.",
+      "defenseSentence": "My client resorted to using a weapon as a means of self-preservation, responding to the victim's aggressive actions and protecting their own life."
+    },
+
+    {
+      "id": 33,
+      "description": "Surveillance footage shows the victim brandishing a different weapon prior to the defendant's use of their own weapon, indicating a defensive response to an immediate threat.",
+      "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrate their intent to inflict harm on the victim, regardless of the circumstances.",
+      "defenseSentence": "My client's use of a weapon was a direct reaction to the victim's armed aggression, aimed at protecting themselves from imminent danger."
+    },
+
+    {
+      "id": 34,
+      "description": "Character references from fellow inmates highlight the defendant's peaceful nature and lack of prior involvement in violent altercations, casting doubt on the prosecution's claim of initiating the fight.",
+      "prosecutionSentence": "The defendant's possession and use of a deadly weapon imply a deliberate intention to cause harm to the victim.",
+      "defenseSentence": "My client used a weapon only in response to the victim's unprovoked aggression, employing necessary force to defend themselves."
     }
   ],
   "manslaughter": [
