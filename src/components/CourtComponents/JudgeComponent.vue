@@ -6,13 +6,9 @@
                 Judge
             </p>
             <div>
-                <div v-if="chosenCase.type === 'parole'">
-                    <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"
-                              @click="playerDecision('guilty')">Jail
-                    </b-button>
-                    <b-button v-if="juryDecision === 'not guilty'" class="jury-btn"
-                              @click="playerDecision('not guilty')">Free
-                    </b-button>
+                <div v-if="chosenCase.type === 'parole'" class="judge-buttons">
+                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Send to jail</b-button>
+                    <b-button variant="success" @click="playerDecision('not guilty')">Free</b-button>
                 </div>
                 <div v-else-if="!pleaDealExists && juryExists">
                     <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"
