@@ -6,8 +6,10 @@
             <div class="col-lg-2">
                 <JudgeComponent/>
             </div>
-            <div class="col-lg-2" vi>
-                <JuryComponent v-if="chosenCase.type !== 'parole' || (chosenCase.type !== 'traffic infraction' && !pleaDealExists)"/>
+            <div class="col-lg-2">
+                <div v-if="chosenCase.type !=='parole'">
+                    <JuryComponent v-if="chosenCase.type !== 'traffic infraction' && !pleaDealExists"/>
+                </div>
             </div>
         </b-row>
 

@@ -29,7 +29,7 @@ export default {
         this.createJury();
     },
     computed: {
-        ...mapState(["isDark", "pleaDealExists", "juryExists"])
+        ...mapState(["isDark", "pleaDealExists", "juryExists", "chosenCase"])
     },
     methods: {
         ...mapActions(["toggleJury", "getJuryDecision"]),

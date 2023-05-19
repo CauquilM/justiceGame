@@ -22,7 +22,7 @@
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Guilty</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
-                <PleaDealComponent/>
+                <PleaDealComponent v-if="chosenCase.type !== 'parole'"/>
             </div>
             <b-modal ref="guilty-modal" centered hide-footer
                      hide-header-close

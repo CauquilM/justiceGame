@@ -402,16 +402,14 @@ export default new Vuex.Store({
             eventBus.$emit('openNotGuiltyModal');
         },
         doSentencing({state}) {
-            if (state.chosenCase.type !== "parole") {
+            if (state.chosenCase.type === "parole") {
                 if (state.probationSelected !== null) {
-                    const randomSentence = Math.floor(Math.random() * 3);
-                    if (state.probationSelected === '0' || state.probationSelected === null) {
-                        state.probationSelected = "no time"
-                    }
-                    if (state.probationSelected === 0) {
+                    console.log("test: ", state.probationSelected);
+                    if (state.probationSelected == 0) {
                         state.finalComment = `The court has decided regarding your criminal record and your behaviour 
                         in prison to freed you without conditions, stay safe.`
                     } else {
+                        const randomSentence = Math.floor(Math.random() * 3);
                         if (randomSentence === 0) {
                             state.finalComment = `You will have to submit to ${state.probationSelected} years of parole, 
                             each week you will have to meet your parole officer, missing a meeting 
@@ -571,14 +569,6 @@ export default new Vuex.Store({
             commit("SET_IS_DARK");
         },
         refreshPage() {
-            /*console.log("entered ", {judgedCase: state.chosenCase});
-            axios.post("http://localhost:3000/history", {judgedCase: state.chosenCase})
-                .then((res) => {
-                    console.log(res);
-                })
-                .catch((err) => {
-                    console.log("axios post history cases: ", err);
-                })*/
             window.location.reload();
         },
     },
