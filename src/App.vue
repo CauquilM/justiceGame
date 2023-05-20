@@ -1,9 +1,10 @@
 <template>
     <div id="app" :class="isDark ?'bg-dark text-light' : ''">
-        <div class="dark-mode-flex">
+        <div class="dark-mode-button">
             <DarkModeSwitch/>
         </div>
         <router-view/>
+        <OfficeModal/>
     </div>
 </template>
 
@@ -12,6 +13,7 @@
 </style>
 <script setup>
 import DarkModeSwitch from "@/components/CourtComponents/DarkModeSwitch.vue";
+import OfficeModal from "@/components/OfficeModal.vue";
 </script>
 <script>
 import {mapActions, mapState} from "vuex";
@@ -20,6 +22,7 @@ import descriptions from "@/data_cases/descriptions.json"
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
 import witnessesData from '@/data_cases/witnessesData.json'
+import {eventBus} from "@/main";
 
 export default {
     name: 'App',
@@ -68,7 +71,7 @@ export default {
 
                 ],*/
                 'parole': [
-                   'parole hearing' /*'Violation of probation', 'Violation of parole'*/
+                    'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
                     'drivingNoLicense', 'hitAndRun',
@@ -103,6 +106,9 @@ export default {
     },
     methods: {
         ...mapActions(["addGeneratedCase", "chooseProsecutionSentence", "getHistoricalCases"]),
+        goToOffice() {
+            eventBus.$emit('openOfficeModal');
+        },
         generateName() {
             const firstName = [
                 "Emma",
@@ -241,11 +247,9 @@ export default {
             }
 
             numbers.sort((a, b) => a - b);
-            console.log("numbers before: ", numbers);
-            if(numbers[1] == numbers[0] || numbers[1] == numbers[2]){
+            if (numbers[1] == numbers[0] || numbers[1] == numbers[2]) {
                 numbers[1]--;
             }
-            console.log("numbers: ", numbers);
             const prosecutorRandom = Math.floor(Math.random() * 3);
             let prosecutorChoice = [];
 

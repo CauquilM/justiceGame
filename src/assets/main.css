@@ -224,12 +224,17 @@
 }
 
 /*************************** Dark Mode ***************************/
-.dark-mode-flex {
-    display: flex;
-    justify-content: flex-end;
+.dark-mode-button, .office-button {
     position: absolute;
     top: 20px;
+}
+
+.dark-mode-button {
     right: 20px;
+}
+
+.office-button {
+    left: 20px;
 }
 
 /*************************** History Page ***************************/

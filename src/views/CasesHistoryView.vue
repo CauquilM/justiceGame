@@ -1,8 +1,5 @@
 <template>
     <div class="cases-history-container">
-        <b-button class="return-button" variant="primary" @click="$router.push('/')">
-            <i class="ti ti-arrow-back"/>
-        </b-button>
         <b-row align-h="center" align-v="center" class="table-history-cases">
             <div v-if="historicalCases.length === 0" class="col-11">
                 <h1>No data</h1>
