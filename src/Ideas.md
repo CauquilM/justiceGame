@@ -52,7 +52,7 @@
 
 ### Later
 
-1. Créer une api
+1. Ajouter une fonctionnalité pour la loi des trois coups
 2. Appellate courts: Add a new layer to the game where players can appeal their decisions to higher courts.
 3. Random events: Add random events that can occur during a case, such as a witness suddenly changing their story.
 4. Political interference: Add a layer of political interference where the player must navigate their decisions in the

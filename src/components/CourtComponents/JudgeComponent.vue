@@ -5,8 +5,12 @@
                 <b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>
                 Judge
             </p>
-            <div>
-                <div v-if="!pleaDealExists && juryExists">
+            <div class="mt-3">
+                <div v-if="chosenCase.type === 'parole'" class="judge-buttons">
+                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Refuse parole</b-button>
+                    <b-button variant="success" @click="playerDecision('not guilty')">Accept parole</b-button>
+                </div>
+                <div v-else-if="!pleaDealExists && juryExists">
                     <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"
                               @click="playerDecision('guilty')">Jury decision
                     </b-button>
@@ -18,14 +22,18 @@
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Guilty</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
-                <PleaDealComponent/>
+                <PleaDealComponent v-if="chosenCase.type !== 'parole'"/>
             </div>
             <b-modal ref="guilty-modal" centered hide-footer
                      hide-header-close
                      no-close-on-backdrop
                      title="Message from the clerk">
                 <p class="sentencing-modal-text">{{ judgeComment }}</p>
-                <b-button block class="sentencing-modal-button" variant="info"
+                <b-button v-if="chosenCase.type === 'parole'" block class="sentencing-modal-button" variant="info"
+                          @click="showSentences">
+                    Let's do
+                </b-button>
+                <b-button v-else block class="sentencing-modal-button" variant="info"
                           @click="showSentences">
                     Let's do
                 </b-button>
@@ -34,7 +42,12 @@
                      hide-header-close
                      no-close-on-backdrop
                      title="Message from the clerk">
-                <b-button block class="sentencing-modal-button" variant="info"
+                <p class="sentencing-modal-text">{{ judgeComment }}</p>
+                <b-button v-if="chosenCase.type === 'parole'" block class="sentencing-modal-button" variant="info"
+                          @click="refreshPage">
+                    Case closed
+                </b-button>
+                <b-button v-else block class="sentencing-modal-button" variant="info"
                           @click="refreshPage">
                     🕊️ Freed him, case dismissed
                 </b-button>
@@ -51,7 +64,7 @@ export default {
     name: 'JudgeComponent',
     components: {PleaDealComponent},
     computed: {
-        ...mapState(["judgeComment", "isDark", "pleaDealExists" ,"juryExists", "juryDecision"])
+        ...mapState(["judgeComment", "isDark", "pleaDealExists" ,"juryExists", "juryDecision", "chosenCase"])
     },
     mounted() {
         eventBus.$on('openGuiltyModal', () => {

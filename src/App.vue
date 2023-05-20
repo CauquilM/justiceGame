@@ -28,7 +28,11 @@ export default {
         return {
             // Define case properties for each type
             caseProperties: {
-                Criminal: ['criminalCharge'],
+                Criminal_first: ['criminalCharge_first'],
+                /*Criminal_second: ['criminalCharge_second'],*/
+                /*Felonies_first: ['felonies_first'],*/
+                /*Felonies_second: ['felonies_second'],*/
+                Parole: ['parole'],
                 Road: ['roadCharge'],
                 Prison: ['prisonCharge'],
                 Traffic: ['trafficCharge']
@@ -37,13 +41,39 @@ export default {
             // Define randomization parameters
             randomizationParams: {
                 'type': "",
-                'criminalCharge': ['murder', 'theft', 'fraud',
+                'criminalCharge_first': ['murder', 'theft', 'fraud',
                     'assault', 'arson',
-                    /*'fake 911 call', 'vandalism', 'cybercrime', 'identity theft', 'kidnapping', 'bribery'*/
+                    /*
+                    'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
+                     'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
+                     'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Grand Theft Auto', 'Robbery w/violence',
+                    */
+                ],
+                /*'criminalCharge_second': [
+                ],*/
+                /*'felonies_first': [
+                    'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
+                    'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
+                    , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
+                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle',
+
+                ],*/
+                /*'felonies_second': [
+                    'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
+                    'Hate Crime', 'Impersonating a Peace/Police Officer', 'Indecent Exposure',
+                    'Participating in Gang', 'Pickpocketing', 'Brandishing of Firearm', 'Inciting Riot',
+                    'Terrorist threat',
+
+                ],*/
+                'parole': [
+                   'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
                     'drivingNoLicense', 'hitAndRun',
-                    /**/
+                    /*'driving Wrong Way', 'evading Arrest', 'leaving the Scene of Accident',
+                    failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
                     'manslaughter', 'drugTrafficking',
@@ -65,7 +95,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "boursin");
+        console.log("VERCEL" + ' ' + "pblv");
         console.time("Test");
         this.caseGeneration();
         console.timeEnd("Test");
@@ -211,7 +241,11 @@ export default {
             }
 
             numbers.sort((a, b) => a - b);
-
+            console.log("numbers before: ", numbers);
+            if(numbers[1] == numbers[0] || numbers[1] == numbers[2]){
+                numbers[1]--;
+            }
+            console.log("numbers: ", numbers);
             const prosecutorRandom = Math.floor(Math.random() * 3);
             let prosecutorChoice = [];
 
@@ -366,9 +400,9 @@ export default {
                     this.caseObj[prop] = this.randomizationParams[prop][Math.floor(Math.random() * this.randomizationParams[prop].length)];
 
                     /******* Criminal *******/
-                    if (this.caseObj.criminalCharge === "murder") {
+                    if (this.caseObj.criminalCharge_first === "murder") {
                         this.caseObj["type"] = "criminal";
-                        this.caseObj["charge"] = this.caseObj.criminalCharge;
+                        this.caseObj["charge"] = this.caseObj.criminalCharge_first;
                         this.caseObj["description"] = descriptions.murder[Math.floor(Math.random() * descriptions.murder.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.murder.slice(0, Math.floor(Math.random() * evidences.murder.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(5, 20, false, "prison");
@@ -376,9 +410,9 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
-                    } else if (this.caseObj.criminalCharge === "theft") {
+                    } else if (this.caseObj.criminalCharge_first === "theft") {
                         this.caseObj["type"] = "criminal";
-                        this.caseObj["charge"] = this.caseObj.criminalCharge;
+                        this.caseObj["charge"] = this.caseObj.criminalCharge_first;
                         this.caseObj["description"] = descriptions.theft[Math.floor(Math.random() * descriptions.theft.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.theft.slice(0, Math.floor(Math.random() * evidences.theft.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(1, 10, false, "prison");
@@ -386,9 +420,9 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 20000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
-                    } else if (this.caseObj.criminalCharge === "fraud") {
+                    } else if (this.caseObj.criminalCharge_first === "fraud") {
                         this.caseObj["type"] = "criminal";
-                        this.caseObj["charge"] = this.caseObj.criminalCharge;
+                        this.caseObj["charge"] = this.caseObj.criminalCharge_first;
                         this.caseObj["description"] = descriptions.fraud[Math.floor(Math.random() * descriptions.fraud.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.fraud.slice(0, Math.floor(Math.random() * evidences.fraud.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(1, 10, false, "prison");
@@ -396,9 +430,9 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(5000, 100000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
-                    } else if (this.caseObj.criminalCharge === "assault") {
+                    } else if (this.caseObj.criminalCharge_first === "assault") {
                         this.caseObj["type"] = "criminal";
-                        this.caseObj["charge"] = this.caseObj.criminalCharge;
+                        this.caseObj["charge"] = this.caseObj.criminalCharge_first;
                         this.caseObj["description"] = descriptions.assault[Math.floor(Math.random() * descriptions.assault.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.assault.slice(0, Math.floor(Math.random() * evidences.assault.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
@@ -406,9 +440,9 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
-                    } else if (this.caseObj.criminalCharge === "arson") {
+                    } else if (this.caseObj.criminalCharge_first === "arson") {
                         this.caseObj["type"] = "criminal";
-                        this.caseObj["charge"] = this.caseObj.criminalCharge;
+                        this.caseObj["charge"] = this.caseObj.criminalCharge_first;
                         this.caseObj["description"] = descriptions.arson[Math.floor(Math.random() * descriptions.arson.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.arson.slice(0, Math.floor(Math.random() * evidences.arson.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
@@ -484,7 +518,7 @@ export default {
                         this.caseObj["type"] = "prison case";
                         this.caseObj["charge"] = "escape";
                         this.caseObj["description"] = descriptions.escape[Math.floor(Math.random() * descriptions.escape.length)].description;
-                        this.caseObj["evidences"] = this.shuffleArray(evidences.escape.slice(0, Math.floor(Math.random() * evidences.fight.length))).slice(0, 4);
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.escape.slice(0, Math.floor(Math.random() * evidences.escape.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(3, 12, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -494,7 +528,7 @@ export default {
                         this.caseObj["type"] = "prison case";
                         this.caseObj["charge"] = "assault with deadly weapon";
                         this.caseObj["description"] = descriptions.assaultWithDeadlyWeapon[Math.floor(Math.random() * descriptions.assaultWithDeadlyWeapon.length)].description;
-                        this.caseObj["evidences"] = this.shuffleArray(evidences.assaultWithDeadlyWeapon.slice(0, Math.floor(Math.random() * evidences.fight.length))).slice(0, 4);
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.assaultWithDeadlyWeapon.slice(0, Math.floor(Math.random() * evidences.assaultWithDeadlyWeapon.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(3, 12, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -504,7 +538,7 @@ export default {
                         this.caseObj["type"] = "prison case";
                         this.caseObj["charge"] = "manslaughter";
                         this.caseObj["description"] = descriptions.manslaughter[Math.floor(Math.random() * descriptions.manslaughter.length)].description;
-                        this.caseObj["evidences"] = this.shuffleArray(evidences.manslaughter.slice(0, Math.floor(Math.random() * evidences.fight.length))).slice(0, 4);
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.manslaughter.slice(0, Math.floor(Math.random() * evidences.manslaughter.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(3, 12, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
@@ -514,12 +548,21 @@ export default {
                         this.caseObj["type"] = "prison case";
                         this.caseObj["charge"] = "drug trafficking";
                         this.caseObj["description"] = descriptions.drugTrafficking[Math.floor(Math.random() * descriptions.drugTrafficking.length)].description;
-                        this.caseObj["evidences"] = this.shuffleArray(evidences.drugTrafficking.slice(0, Math.floor(Math.random() * evidences.fight.length))).slice(0, 4);
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.drugTrafficking.slice(0, Math.floor(Math.random() * evidences.drugTrafficking.length))).slice(0, 4);
                         this.caseObj["prisonSentences"] = this.generateSentences(3, 12, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                         this.caseObj["witnesses"] = witnessesData.murder;
+                    }
+                    /******* Parole *******/
+                    else if (this.caseObj.parole === "parole hearing") {
+                        this.caseObj["type"] = "parole";
+                        this.caseObj["charge"] = "parole hearing";
+                        this.caseObj["description"] = descriptions.parole[Math.floor(Math.random() * descriptions.parole.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.parole.slice(0, Math.floor(Math.random() * evidences.parole.length))).slice(0, 3);
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                     }
 
                 } else {
@@ -532,8 +575,8 @@ export default {
 
         caseGeneration() {
             // Define case types
-            const caseTypes = ['Criminal', 'Road', 'Prison', 'Traffic',
-                /*'Immigration', 'Parole', 'Constitutional', "Historical"*/
+            const caseTypes = ['Parole', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+                /*'Felony', 'Army', 'Immigration', 'Parole', 'Constitutional', "Historical"*/
             ];
 
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);

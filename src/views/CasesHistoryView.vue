@@ -57,19 +57,19 @@
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.prison }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                     <template v-slot:cell(probation)="row">
-                        <span v-if="row.item.verdict === 'Guilty'">
+                        <span v-if="row.item.verdict === 'Guilty' || row.item.verdict === 'Parole accepted'">
                             {{ row.item.probation }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                     <template v-slot:cell(fine)="row">
                         <span v-if="row.item.verdict === 'Guilty'">
                             {{ row.item.fine }}
                         </span>
-                        <span v-else>False</span>
+                        <span v-else>0</span>
                     </template>
                 </b-table>
             </div>
@@ -90,7 +90,7 @@ export default {
             deleteButton: false,
             screenWidth: 0,
             smallFields: [
-                "type", "charge", "name", "age", "criminalRecord",
+                "type", "charge", "suspect_name", "suspect_age", "criminalRecord",
                 "verdict", "prison", "probation", "fine"
             ],
             largeFields: [
@@ -102,12 +102,27 @@ export default {
     mounted() {
         this.updateScreenWidth();
         this.onScreenResize();
+        this.stats();
     },
     computed: {
         ...mapState(["historicalCases", "isDark"])
     },
     methods: {
         ...mapActions(["getHistoricalCases"]),
+        stats() {
+            console.log("debug: ", this.historicalCases.length);
+            let result = 0;
+            for (let i = 0; i < this.historicalCases.length; i++) {
+                console.log("enter for");
+                if (this.historicalCases[i].verdict === "Guilty") {
+                    result++
+                    console.log("enetr for if");
+                }
+            }
+            result = ((result * 100) / this.historicalCases.length);
+            console.log(result.toFixed(2
+            ));
+        },
         securityDelete() {
             this.deleteButton = true;
         },

@@ -2,6 +2,7 @@
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -253,6 +254,7 @@
 /*************************** Responsive ***************************/
 @media (max-width: 1024px) {
     #app {
+        height: 100%;
         overflow-y: scroll;
         padding-top: 10px;
     }

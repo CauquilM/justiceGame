@@ -13,15 +13,16 @@
         </div>
       </div>
       <div v-if="!customSentences" class="sentences-card-select-flex">
-        <b-form-select v-if="chosenCase.type !== 'traffic infraction'" v-model="prisonSelected"
+        <b-form-select v-if="chosenCase.type !== 'traffic infraction' && chosenCase.type !== 'parole'"
+                       v-model="prisonSelected"
                        :options="chosenCase.prisonSentences"/>
         <b-form-select v-if="chosenCase.type !== 'traffic infraction'" v-model="probationSelected"
                        :options="chosenCase.probationSentences"/>
-        <b-form-select v-model="fineSelected" :options="chosenCase.fineSentences"></b-form-select>
+        <b-form-select v-if="chosenCase.type !== 'parole'" v-model="fineSelected" :options="chosenCase.fineSentences"></b-form-select>
         <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
       </div>
       <div v-if="customSentences" class="sentences-card-select-flex">
-        <b-input-group prepend="Prison">
+        <b-input-group prepend="Prison" v-if="chosenCase.type !== 'parole'">
           <b-form-input v-model="prisonSelected"
             min="0" :max="maxPrison" type="number"/>
         </b-input-group>
@@ -29,7 +30,7 @@
           <b-form-input v-model="probationSelected"
             min="0" :max="maxProbation" type="number"/>
         </b-input-group>
-        <b-input-group prepend="Fines $">
+        <b-input-group prepend="Fines $" v-if="chosenCase.type !== 'parole'">
           <b-form-input v-model="fineSelected" type="number"
             min="0" :max="maxFine"/>
         </b-input-group>
