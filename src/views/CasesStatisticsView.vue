@@ -12,22 +12,14 @@
 </template>
 <script>
 import {mapActions, mapState} from "vuex";
-import axios from "axios";
 
 export default {
     name: 'CasesStatisticsView',
     data() {
         return {
-            deleteButton: false,
             screenWidth: 0,
-            smallFields: [
-                "type", "charge", "suspect_name", "suspect_age", "criminalRecord",
-                "verdict", "prison", "probation", "fine"
-            ],
-            largeFields: [
-                "case_id", "type", "charge", "description", "suspect_name", "suspect_age", "criminalRecord",
-                "verdict", "prison", "probation", "fine"
-            ],
+            casesGuilty: 0,
+            casesNotGuilty: 0
         }
     },
     mounted() {
@@ -44,30 +36,12 @@ export default {
             console.log("debug: ", this.historicalCases.length);
             let result = 0;
             for (let i = 0; i < this.historicalCases.length; i++) {
-                console.log("enter for");
                 if (this.historicalCases[i].verdict === "Guilty") {
                     result++
-                    console.log("enetr for if");
                 }
             }
             result = ((result * 100) / this.historicalCases.length);
-            console.log(result.toFixed(2
-            ));
-        },
-        securityDelete() {
-            this.deleteButton = true;
-        },
-        deleteAll() {
-            console.log("before axios");
-            axios.delete("https://spotless-ant-beret.cyclic.app/history")
-                .then((res) => {
-                    console.log("delete: ", res);
-                    this.deleteButton = false;
-                    this.getHistoricalCases();
-                })
-                .catch((e) => {
-                    console.log("delete error: ", e);
-                })
+            console.log("result: ", result.toFixed(2));
         },
         onScreenResize() {
             window.addEventListener("resize", () => {
