@@ -95,7 +95,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "irish coffee");
+        console.log("VERCEL" + ' ' + "pblv");
         console.time("Test");
         this.caseGeneration();
         console.timeEnd("Test");
