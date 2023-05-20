@@ -255,6 +255,10 @@
     overflow-y: scroll;
 }
 
+/*************************** Statistics Page ***************************/
+span.apexcharts-legend-text{
+    color: white;
+}
 
 /*************************** Responsive ***************************/
 @media (max-width: 1024px) {
