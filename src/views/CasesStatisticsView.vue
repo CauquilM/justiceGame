@@ -3,16 +3,16 @@
         <b-button class="return-button" variant="primary" @click="$router.push('/')">
             <i class="ti ti-arrow-back"/>
         </b-button>
-        <b-row align-h="center" align-v="center" class="table-history-cases">
+        <b-row align-h="around" align-v="center" class="table-history-cases">
             <div v-if="casesGuilty === 0" class="col-12">
                 <h1>No data</h1>
             </div>
-            <b-card class="col-auto">
+            <div class="col-auto">
                 <apexchart :options="casesChartOptions" :series="casesSeries" type="pie" width="450"/>
-            </b-card>
-            <b-card class="col-3">
+            </div>
+            <div class="col-auto">
                 <apexchart :options="typeOfCasesChartOptions" :series="typeOfCasesSeries" type="pie" width="450"/>
-            </b-card>
+            </div>
         </b-row>
     </div>
 </template>
@@ -31,10 +31,11 @@ export default {
             typeOfCasesSeries: [],
             casesChartOptions: {
                 title: {
-                    text: 'Pourcentages of verdict',
+                    text: 'Pourcentage of verdict',
                     align: 'center'
                 },
                 chart: {
+                    foreColor: 'white',
                     width: 380,
                     type: 'pie',
                 },
@@ -47,7 +48,7 @@ export default {
                     breakpoint: 480,
                     options: {
                         chart: {
-                            width: 200
+                            width: 300,
                         },
                         legend: {
                             position: 'bottom'
@@ -61,6 +62,7 @@ export default {
                     align: 'center'
                 },
                 chart: {
+                    foreColor: 'white',
                     width: 380,
                     type: 'pie',
                 },
@@ -73,7 +75,7 @@ export default {
                     breakpoint: 480,
                     options: {
                         chart: {
-                            width: 200
+                            width: 350
                         },
                         legend: {
                             position: 'bottom'
@@ -115,15 +117,15 @@ export default {
                     criminal++
                 }
 
-                if (this.historicalCases[i].type === "road") {
+                if (this.historicalCases[i].type === "traffic crime") {
                     road++
                 }
 
-                if (this.historicalCases[i].type === "prison") {
+                if (this.historicalCases[i].type === "prison case") {
                     prison++
                 }
 
-                if (this.historicalCases[i].type === "traffic") {
+                if (this.historicalCases[i].type === "traffic infraction") {
                     traffic++
                 }
 
