@@ -3,7 +3,7 @@
         <b-row align-h="around" align-v="center" class="game-container-first-row">
             <div class="col-lg-2">
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <JudgeComponent/>
             </div>
             <div class="col-lg-2">

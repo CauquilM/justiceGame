@@ -7,8 +7,8 @@
             </p>
             <div>
                 <div v-if="chosenCase.type === 'parole'" class="judge-buttons">
-                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Send to jail</b-button>
-                    <b-button variant="success" @click="playerDecision('not guilty')">Free</b-button>
+                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Refuse parole</b-button>
+                    <b-button variant="success" @click="playerDecision('not guilty')">Accept parole</b-button>
                 </div>
                 <div v-else-if="!pleaDealExists && juryExists">
                     <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"

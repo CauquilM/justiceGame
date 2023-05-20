@@ -362,6 +362,25 @@ export default new Vuex.Store({
                 if (state.chosenCase.type === 'parole') {
                     commit("SET_JUDGE_COMMENT", "The parole is refused to the defendant");
                     dispatch("openNotGuiltyModal");
+                    console.time("test not guilty post axios");
+                    axios.post("https://spotless-ant-beret.cyclic.app/history",
+                        {
+                            case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                            type: state.chosenCase.type,
+                            charge: state.chosenCase.charge,
+                            description: state.chosenCase.description,
+                            suspect_name: state.chosenCase.suspect.name,
+                            suspect_age: state.chosenCase.suspect.age,
+                            criminalRecord: state.chosenCase.criminalRecord,
+                            verdict: "Refused"
+                        })
+                        .then((res) => {
+                            console.log(res);
+                        })
+                        .catch((err) => {
+                            console.log("axios post history cases: ", err);
+                        })
+                    console.timeEnd("test not guilty post axios");
                 } else {
                     commit("SET_JUDGE_COMMENT", "The suspect is recognized guilty, let's proceed to the sentencing");
                     dispatch("openGuiltyModal");
@@ -373,26 +392,26 @@ export default new Vuex.Store({
                 } else {
                     commit("SET_JUDGE_COMMENT", "The suspect is innocent, bailiff, freed him, case dismissed");
                     dispatch("openNotGuiltyModal");
+                    console.time("test not guilty post axios");
+                    axios.post("https://spotless-ant-beret.cyclic.app/history",
+                        {
+                            case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                            type: state.chosenCase.type,
+                            charge: state.chosenCase.charge,
+                            description: state.chosenCase.description,
+                            suspect_name: state.chosenCase.suspect.name,
+                            suspect_age: state.chosenCase.suspect.age,
+                            criminalRecord: state.chosenCase.criminalRecord,
+                            verdict: "Not Guilty"
+                        })
+                        .then((res) => {
+                            console.log(res);
+                        })
+                        .catch((err) => {
+                            console.log("axios post history cases: ", err);
+                        })
+                    console.timeEnd("test not guilty post axios");
                 }
-                console.time("test not guilty post axios");
-                axios.post("https://spotless-ant-beret.cyclic.app/history",
-                    {
-                        case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
-                        type: state.chosenCase.type,
-                        charge: state.chosenCase.charge,
-                        description: state.chosenCase.description,
-                        suspect_name: state.chosenCase.suspect.name,
-                        suspect_age: state.chosenCase.suspect.age,
-                        criminalRecord: state.chosenCase.criminalRecord,
-                        verdict: "Not Guilty"
-                    })
-                    .then((res) => {
-                        console.log(res);
-                    })
-                    .catch((err) => {
-                        console.log("axios post history cases: ", err);
-                    })
-                console.timeEnd("test not guilty post axios");
             }
         },
         openGuiltyModal() {
@@ -423,6 +442,28 @@ export default new Vuex.Store({
                             don't forget the cost of your actions.`
                         }
                     }
+                    console.time("test guilty post axios");
+                    axios.post("https://spotless-ant-beret.cyclic.app/history",
+                        {
+                            case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                            type: state.chosenCase.type,
+                            charge: state.chosenCase.charge,
+                            description: state.chosenCase.description,
+                            suspect_name: state.chosenCase.suspect.name,
+                            suspect_age: state.chosenCase.suspect.age,
+                            criminalRecord: state.chosenCase.criminalRecord,
+                            verdict: "Parole accepted",
+                            prison: state.prisonSelected,
+                            probation: state.probationSelected,
+                            fine: state.fineSelected,
+                        })
+                        .then((res) => {
+                            console.log(res);
+                        })
+                        .catch((err) => {
+                            console.log("axios post history cases: ", err);
+                        })
+                    console.timeEnd("test guilty post axios");
                     eventBus.$emit('openSuccessModal');
                 } else {
                     eventBus.$emit('openSentencingFailModal');
