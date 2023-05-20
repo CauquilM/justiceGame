@@ -60,7 +60,7 @@
                         <span v-else>0</span>
                     </template>
                     <template v-slot:cell(probation)="row">
-                        <span v-if="row.item.verdict === 'Guilty'">
+                        <span v-if="row.item.verdict === 'Guilty' || row.item.verdict === 'Parole accepted'">
                             {{ row.item.probation }}
                         </span>
                         <span v-else>0</span>

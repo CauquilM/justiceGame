@@ -443,6 +443,7 @@ export default new Vuex.Store({
                         }
                     }
                     console.time("test guilty post axios");
+                    console.log("probation: ", state.probationSelected);
                     axios.post("https://spotless-ant-beret.cyclic.app/history",
                         {
                             case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
@@ -464,7 +465,7 @@ export default new Vuex.Store({
                             console.log("axios post history cases: ", err);
                         })
                     console.timeEnd("test guilty post axios");
-                    eventBus.$emit('openSuccessModal');
+                    return eventBus.$emit('openSuccessModal');
                 } else {
                     eventBus.$emit('openSentencingFailModal');
                 }

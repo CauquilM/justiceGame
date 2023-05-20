@@ -241,7 +241,11 @@ export default {
             }
 
             numbers.sort((a, b) => a - b);
-
+            console.log("numbers before: ", numbers);
+            if(numbers[1] == numbers[0] || numbers[1] == numbers[2]){
+                numbers[1]--;
+            }
+            console.log("numbers: ", numbers);
             const prosecutorRandom = Math.floor(Math.random() * 3);
             let prosecutorChoice = [];
 

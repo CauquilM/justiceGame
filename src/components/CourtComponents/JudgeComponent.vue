@@ -5,7 +5,7 @@
                 <b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>
                 Judge
             </p>
-            <div>
+            <div class="mt-3">
                 <div v-if="chosenCase.type === 'parole'" class="judge-buttons">
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Refuse parole</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Accept parole</b-button>
