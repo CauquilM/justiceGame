@@ -34,7 +34,7 @@ export default {
             caseProperties: {
                 Criminal_first: ['criminalCharge_first'],
                 /*Criminal_second: ['criminalCharge_second'],*/
-                /*Felonies_first: ['felonies_first'],*/
+                Felonies_first: ['feloniesCharge_first'],
                 /*Felonies_second: ['felonies_second'],*/
                 Parole: ['parole'],
                 Road: ['roadCharge'],
@@ -57,7 +57,7 @@ export default {
                 ],
                 /*'criminalCharge_second': [
                 ],*/
-                'felonies_first': [
+                'feloniesCharge_first': [
                     'trespassing'
                     /*'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
@@ -354,6 +354,17 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
+                    /******* Felonies *******/
+                    else if (this.caseObj.feloniesCharge_first === "trespassing") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "trespassing";
+                        this.caseObj["description"] = descriptions.trespassing[Math.floor(Math.random() * descriptions.trespassing.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.trespassing.slice(0, Math.floor(Math.random() * evidences.trespassing.length))).slice(0, 4);
+                        this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    }
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {
                         this.caseObj["type"] = "traffic crime";
@@ -488,7 +499,7 @@ export default {
 
         caseGeneration() {
             // Define case types
-            const caseTypes = ['Parole', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+            const caseTypes = ['Felonies_first', 'Parole', 'Criminal_first', 'Road', 'Prison', 'Traffic',
                 /*'Felony', 'Army', 'Immigration', 'Parole', 'Constitutional', "Historical"*/
             ];
 
