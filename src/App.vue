@@ -21,7 +21,8 @@ import evidences from "@/data_cases/evidences.json"
 import descriptions from "@/data_cases/descriptions.json"
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
-import witnessesData from '@/data_cases/witnessesData.json'
+import suspect_names_data from '@/data_cases/suspect_names.json'
+import witnessesData from '@/data_cases/witnesses.json'
 import {eventBus} from "@/main";
 
 export default {
@@ -33,7 +34,7 @@ export default {
             caseProperties: {
                 Criminal_first: ['criminalCharge_first'],
                 /*Criminal_second: ['criminalCharge_second'],*/
-                /*Felonies_first: ['felonies_first'],*/
+                Felonies_first: ['feloniesCharge_first'],
                 /*Felonies_second: ['felonies_second'],*/
                 Parole: ['parole'],
                 Road: ['roadCharge'],
@@ -49,21 +50,21 @@ export default {
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
-                     'Attempted Murder 1st degree murder',
+                     'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
                     */
                 ],
                 /*'criminalCharge_second': [
-                'Murder of Police Officer', 'Battery on Peace/Police Officer',
-                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
-                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
                 ],*/
-                /*'felonies_first': [
-                    'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
+                'feloniesCharge_first': [
+                    'trespassing', 'impersonatingPolice'
+                    /*'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
-                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle',
+                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle', 'fake 911 call',*/
 
-                ],*/
+                ],
                 /*'felonies_second': [
                     'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
                     'Hate Crime', 'Impersonating a Peace/Police Officer', 'Indecent Exposure',
@@ -110,115 +111,8 @@ export default {
             eventBus.$emit('openOfficeModal');
         },
         generateName() {
-            const firstName = [
-                "Emma",
-                "Noah",
-                "Ava",
-                "Liam",
-                "Olivia",
-                "William",
-                "Sophia",
-                "Mason",
-                "Isabella",
-                "James",
-                "Mia",
-                "Benjamin",
-                "Charlotte",
-                "Jacob",
-                "Amelia",
-                "Michael",
-                "Harper",
-                "Elijah",
-                "Evelyn",
-                "Ethan",
-                "Abigail",
-                "Alexander",
-                "Emily",
-                "Daniel",
-                "Elizabeth",
-                "Matthew",
-                "Mila",
-                "Aiden",
-                "Ella",
-                "Henry",
-                "Avery",
-                "Joseph",
-                "Sofia",
-                "Jackson",
-                "Camila",
-                "Samuel",
-                "Scarlett",
-                "Sebastian",
-                "Victoria",
-                "David",
-                "Luna",
-                "Carter",
-                "Chloe",
-                "Luke",
-                "Penelope",
-                "Owen",
-                "Grace",
-                "Wyatt",
-                "Lily",
-                "Nathan",
-                "Hannah"
-            ];
-
-
-            const lastName = [
-                "Lopez",
-                "Adams",
-                "Perry",
-                "Henderson",
-                "Foster",
-                "Harrison",
-                "Stewart",
-                "Ramirez",
-                "Graham",
-                "Flores",
-                "Ramos",
-                "Wright",
-                "Sullivan",
-                "Parker",
-                "Cox",
-                "Murray",
-                "Morales",
-                "Bryant",
-                "Hunt",
-                "Rose",
-                "Riley",
-                "Gonzalez",
-                "Jordan",
-                "Bishop",
-                "Wheeler",
-                "Marshall",
-                "Hayes",
-                "Douglas",
-                "Griffin",
-                "Harper",
-                "Lawson",
-                "Barrett",
-                "Hawkins",
-                "Banks",
-                "Franklin",
-                "Moreno",
-                "Hudson",
-                "McGuire",
-                "Gutierrez",
-                "Clarke",
-                "Vargas",
-                "Baker",
-                "Gibson",
-                "Warren",
-                "Austin",
-                "Waters",
-                "Stone",
-                "Mcdonald",
-                "Rocha",
-                "Santos"];
-
-            const randomFirstName = firstName[Math.floor(Math.random() * firstName.length)];
-            const randomLastName = lastName[Math.floor(Math.random() * lastName.length)];
+            const randomFirstName = suspect_names_data.firstName[Math.floor(Math.random() * suspect_names_data.firstName.length)];
+            const randomLastName = suspect_names_data.lastName[Math.floor(Math.random() * suspect_names_data.lastName.length)];
 
             return `${randomFirstName} ${randomLastName}`;
         },
@@ -460,6 +354,26 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
+                    /******* Felonies *******/
+                    else if (this.caseObj.feloniesCharge_first === "trespassing") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "trespassing";
+                        this.caseObj["description"] = descriptions.trespassing[Math.floor(Math.random() * descriptions.trespassing.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.trespassing.slice(0, Math.floor(Math.random() * evidences.trespassing.length))).slice(0, 4);
+                        this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    } else if (this.caseObj.feloniesCharge_first === "impersonatingPolice") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "impersonating police officer";
+                        this.caseObj["description"] = descriptions.impersonatingPolice[Math.floor(Math.random() * descriptions.impersonatingPolice.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.impersonatingPolice.slice(0, Math.floor(Math.random() * evidences.impersonatingPolice.length))).slice(0, 4);
+                        this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    }
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {
                         this.caseObj["type"] = "traffic crime";
@@ -594,7 +508,7 @@ export default {
 
         caseGeneration() {
             // Define case types
-            const caseTypes = ['Parole', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+            const caseTypes = ['Felonies_first', 'Parole', 'Criminal_first', 'Road', 'Prison', 'Traffic',
                 /*'Felony', 'Army', 'Immigration', 'Parole', 'Constitutional', "Historical"*/
             ];
 

@@ -66,11 +66,15 @@ export default {
                     width: 380,
                     type: 'pie',
                 },
+                fill: {
+                    colors: ['#F44336', '#E91E63', '#9C27B0', '#03A9F4', '#009688', '#FFC107']
+                },
+                colors: ['#F44336', '#E91E63', '#9C27B0', '#03A9F4', '#009688', '#FFC107'],
                 legend:
                     {
                         position: 'bottom'
                     },
-                labels: ['Parole', 'Criminal', 'Traffic crimes', 'Prison', 'Traffic infraction'],
+                labels: ['Parole', 'Criminal', 'Traffic crimes', 'Prison', 'Felony', 'Traffic infraction'],
                 responsive: [{
                     breakpoint: 480,
                     options: {
@@ -105,6 +109,7 @@ export default {
             let road = 0;
             let prison = 0;
             let traffic = 0;
+            let felony = 0;
             let verdict = 0;
 
             for (let i = 0; i < this.historicalCases.length; i++) {
@@ -125,6 +130,11 @@ export default {
                     prison++
                 }
 
+                if (this.historicalCases[i].type === "felony") {
+                    console.log("felony");
+                    felony++
+                }
+
                 if (this.historicalCases[i].type === "traffic infraction") {
                     traffic++
                 }
@@ -138,7 +148,7 @@ export default {
             this.casesNotGuilty = 100 - this.casesGuilty;
             console.log("verdict: ", verdict);
             this.casesSeries.push(this.casesGuilty, this.casesNotGuilty);
-            this.typeOfCasesSeries.push(parole, criminal, road, prison, traffic);
+            this.typeOfCasesSeries.push(parole, criminal, road, prison, felony, traffic);
         },
         onScreenResize() {
             window.addEventListener("resize", () => {
