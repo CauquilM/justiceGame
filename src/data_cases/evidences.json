@@ -964,6 +964,308 @@
       "defenseSentence": "The independent audit reports provide compelling evidence of the defendant's innocence, as they demonstrate the absence of fraudulent activities in their financial transactions."
     }
   ],
+  "armedRobbery": [
+    {
+      "id": 0,
+      "description": "Forensic examination of the defendant's belongings, including clothing and personal items, found no traces of physical evidence linking him to the armed robbery.",
+      "prosecutionSentence": "The absence of physical evidence on the defendant's belongings does not negate his involvement in the armed robbery, as he may have taken precautions to avoid leaving traces behind.",
+      "defenseSentence": "The forensic examination's findings support my client's innocence, as the absence of physical evidence proves his lack of participation in the armed robbery."
+    },
+    {
+      "id": 1,
+      "description": "Surveillance footage shows the defendant wearing a mask and brandishing a firearm while robbing a convenience store.",
+      "prosecutionSentence": "The defendant can be clearly identified in the surveillance footage as the individual who committed the armed robbery.",
+      "defenseSentence": "There is no conclusive evidence linking my client to the robbery. The prosecution's case relies solely on circumstantial evidence."
+    },
+    {
+      "id": 2,
+      "description": "The defendant's fingerprints were found on the cash register at the scene of the armed robbery.",
+      "prosecutionSentence": "Forensic analysis confirms that the defendant's fingerprints match those found at the crime scene, indicating his direct involvement.",
+      "defenseSentence": "My client's fingerprints might have been present at the location innocently prior to the robbery. It does not prove his guilt."
+    },
+    {
+      "id": 3,
+      "description": "Eyewitnesses positively identified the defendant as the individual who entered the bank and demanded money at gunpoint.",
+      "prosecutionSentence": "Multiple reliable eyewitnesses have positively identified the defendant as the armed robber, providing strong evidence of his guilt.",
+      "defenseSentence": "Eyewitness testimony can be unreliable and influenced by various factors. We question the accuracy of the identification."
+    },
+    {
+      "id": 4,
+      "description": "The defendant was found in possession of stolen cash and a weapon matching the description given by the robbery victims.",
+      "prosecutionSentence": "The recovered stolen money and weapon directly link the defendant to the armed robbery, leaving no doubt about his involvement.",
+      "defenseSentence": "The defendant claims that he acquired the money and weapon through legitimate means and had no knowledge of their connection to the robbery."
+    },
+    {
+      "id": 5,
+      "description": "A security camera captured the defendant fleeing the scene of the robbery in a vehicle matching the description provided by witnesses.",
+      "prosecutionSentence": "Video evidence clearly shows the defendant leaving the crime scene in the described vehicle, providing strong incriminating evidence.",
+      "defenseSentence": "The defendant can prove that he borrowed the vehicle on the day of the robbery and had no knowledge of its involvement in the crime."
+    },
+    {
+      "id": 6,
+      "description": "Cell phone records indicate that the defendant was in close proximity to the location of the armed robbery at the time it occurred.",
+      "prosecutionSentence": "The defendant's cell phone records place him near the crime scene during the robbery, suggesting his active participation.",
+      "defenseSentence": "Cell phone records are not definitive proof of the defendant's involvement and could be explained by coincidental factors."
+    },
+    {
+      "id": 7,
+      "description": "A DNA sample recovered from the scene matches the defendant's DNA profile, linking him directly to the armed robbery.",
+      "prosecutionSentence": "The DNA evidence conclusively matches the defendant's genetic profile, leaving no doubt about his presence and involvement in the crime.",
+      "defenseSentence": "My client's DNA could have been transferred innocently and does not necessarily prove his active participation in the robbery."
+    },
+    {
+      "id": 8,
+      "description": "The defendant was captured on a security camera discarding a bag containing stolen money in a dumpster near his residence.",
+      "prosecutionSentence": "Video footage shows the defendant disposing of the stolen money, providing strong evidence of his guilt and attempt to conceal the crime.",
+      "defenseSentence": "The defendant claims that he found the bag accidentally and was unaware of its contents or connection to the robbery."
+    },
+    {
+      "id": 9,
+      "description": "A surveillance camera captured the defendant wearing a mask and holding a weapon outside the robbed bank just minutes before the crime.",
+      "prosecutionSentence": "The surveillance footage clearly shows the defendant preparing for the armed robbery, establishing his premeditated intent to commit the crime.",
+      "defenseSentence": "The defendant's presence near the bank does not prove his involvement in the robbery. He may have been coincidentally passing by."
+    },
+    {
+      "id": 10,
+      "description": "Witnesses observed the defendant entering the bank with a firearm, threatening employees and customers to hand over money.",
+      "prosecutionSentence": "Multiple eyewitness testimonies confirm the defendant's direct involvement in the armed robbery, providing compelling evidence of his guilt.",
+      "defenseSentence": "Eyewitness testimonies can be unreliable and influenced by various factors. The witnesses may have mistaken the defendant for someone else."
+    },
+    {
+      "id": 11,
+      "description": "The defendant's vehicle was captured on a red light camera near the crime scene moments after the robbery, matching the getaway car's description.",
+      "prosecutionSentence": "The defendant's vehicle, captured on camera in close proximity to the crime scene, connects him to the armed robbery as the likely getaway driver.",
+      "defenseSentence": "The defendant's vehicle could have been used by someone else without his knowledge or involvement in the robbery."
+    },
+    {
+      "id": 12,
+      "description": "A bag containing stolen money was found hidden in the defendant's residence, along with a mask and gloves matching those used in the robbery.",
+      "prosecutionSentence": "The discovery of the stolen money, mask, and gloves at the defendant's residence strongly implicates him in the armed robbery.",
+      "defenseSentence": "The items found in the defendant's residence could have been planted by someone else to falsely incriminate him."
+    },
+    {
+      "id": 13,
+      "description": "Bank surveillance footage shows the defendant forcibly opening the cash register and taking the money while threatening the teller at gunpoint.",
+      "prosecutionSentence": "The bank surveillance footage provides clear visual evidence of the defendant committing the armed robbery, leaving no doubt about his guilt.",
+      "defenseSentence": "The defendant denies his involvement in the robbery and argues that he was not present at the bank during the incident."
+    },
+    {
+      "id": 14,
+      "description": "A reliable informant provided detailed information about the defendant's plan to commit the armed robbery and identified him as the perpetrator.",
+      "prosecutionSentence": "The reliable informant's testimony provides crucial insider information linking the defendant to the planning and execution of the armed robbery.",
+      "defenseSentence": "The informant may have personal motives to falsely accuse the defendant and cannot be considered a reliable source of information."
+    },
+    {
+      "id": 15,
+      "description": "Footprints matching the defendant's shoes were found at the crime scene, indicating his presence during the armed robbery.",
+      "prosecutionSentence": "Forensic analysis confirms that the footprints at the crime scene belong to the defendant, providing strong physical evidence of his direct involvement.",
+      "defenseSentence": "The defendant's footprints could have been coincidentally present at the crime scene or manipulated by someone to frame him."
+    },
+    {
+      "id": 16,
+      "description": "During a search of the defendant's residence, police discovered a blueprint of the bank and notes outlining the robbery plan.",
+      "prosecutionSentence": "The discovery of the blueprint and notes implicates the defendant in meticulously planning the armed robbery, establishing his intent and preparation.",
+      "defenseSentence": "The blueprint and notes could have been obtained by the defendant innocently or planted by someone else to incriminate him."
+    },
+    {
+      "id": 17,
+      "description": "The defendant's DNA was found on a mask discarded near the crime scene, linking him directly to the armed robbery.",
+      "prosecutionSentence": "The presence of the defendant's DNA on the mask provides compelling evidence of his direct involvement in the armed robbery.",
+      "defenseSentence": "The defendant's DNA could have been transferred innocently or planted on the mask by someone else to falsely incriminate him."
+    },
+    {
+      "id": 18,
+      "description": "Bank employees identified the defendant in a lineup as the individual who demanded money at gunpoint during the robbery.",
+      "prosecutionSentence": "The identification of the defendant by bank employees establishes his active participation in the armed robbery, providing strong evidence of his guilt.",
+      "defenseSentence": "Eyewitness identifications are prone to error, and the lineup process may have influenced the witnesses' decision. We question the reliability of their identification."
+    },
+    {
+      "id": 19,
+      "description": "A recorded phone conversation between the defendant and an accomplice discussing the details of the planned armed robbery was obtained by the police.",
+      "prosecutionSentence": "The recorded phone conversation serves as direct evidence of the defendant's active involvement in planning and executing the armed robbery.",
+      "defenseSentence": "The recorded phone conversation is open to interpretation and could be misconstrued. It does not prove my client's guilt beyond a reasonable doubt."
+    },
+    {
+      "id": 20,
+      "description": "Bank surveillance footage captured the defendant fleeing the scene with a bag of stolen money, providing visual evidence of his direct participation in the robbery.",
+      "prosecutionSentence": "The bank surveillance footage clearly shows the defendant in the act of fleeing the crime scene with the stolen money, leaving no doubt about his active involvement.",
+      "defenseSentence": "The defendant maintains that he was in the vicinity but had no knowledge of the armed robbery and denies his participation in the crime."
+    },
+    {
+      "id": 21,
+      "description": "A marked bill from the stolen money was traced back to the defendant, who used it to make a purchase shortly after the robbery.",
+      "prosecutionSentence": "The presence of a marked bill from the stolen money in the defendant's possession serves as strong evidence linking him directly to the armed robbery.",
+      "defenseSentence": "The defendant received the marked bill innocently and was unaware of its connection to the robbery. It does not prove his active participation."
+    },
+    {
+      "id": 22,
+      "description": "An eyewitness positively identified the defendant as the armed robber, testifying to seeing him flee the crime scene with a weapon and a bag of money.",
+      "prosecutionSentence": "The eyewitness testimony provides direct evidence of the defendant's active involvement in the armed robbery, corroborating his guilt.",
+      "defenseSentence": "Eyewitness testimonies can be unreliable and influenced by various factors. We believe the witness may have mistaken my client for someone else."
+    },
+    {
+      "id": 23,
+      "description": "The defendant's financial transactions revealed a significant increase in cash deposits shortly after the armed robbery, suggesting illicit gains.",
+      "prosecutionSentence": "The defendant's financial transactions strongly indicate his involvement in the armed robbery and subsequent attempts to conceal the stolen money.",
+      "defenseSentence": "The increase in cash deposits can be explained by legitimate sources or unrelated activities. It does not prove my client's guilt in the armed robbery."
+    },
+    {
+      "id": 24,
+      "description": "The defendant's fingerprints were found on the weapon used during the armed robbery, linking him directly to the crime.",
+      "prosecutionSentence": "Forensic analysis confirms that the defendant's fingerprints match those found on the weapon, providing strong evidence of his active involvement in the armed robbery.",
+      "defenseSentence": "The presence of my client's fingerprints on the weapon does not prove that he used it during the robbery. It could have been contaminated or planted by someone else."
+    },
+    {
+      "id": 25,
+      "description": "A security guard identified the defendant as the individual who threatened him with a firearm during the armed robbery.",
+      "prosecutionSentence": "The security guard's identification of the defendant as the armed robber provides crucial eyewitness testimony, strongly implicating him in the crime.",
+      "defenseSentence": "The security guard's identification may be unreliable due to the stressful and chaotic nature of the situation. We question the accuracy of his claim."
+    },
+    {
+      "id": 26,
+      "description": "Surveillance footage from neighboring businesses shows the defendant casing the target location days before the armed robbery.",
+      "prosecutionSentence": "The surveillance footage clearly captures the defendant conducting surveillance on the target location, indicating his premeditated intent to commit the armed robbery.",
+      "defenseSentence": "The defendant's presence near the target location does not prove his involvement in the armed robbery. He might have had unrelated reasons for being in the vicinity."
+    },
+    {
+      "id": 27,
+      "description": "The defendant's alibi for the time of the armed robbery was proven false through video evidence from multiple sources.",
+      "prosecutionSentence": "Video evidence contradicts the defendant's alibi, establishing that he was present at the scene of the armed robbery during the specified time period.",
+      "defenseSentence": "The video evidence may be inconclusive or manipulated. The defendant maintains that his alibi is accurate and denies his involvement in the robbery."
+    },
+    {
+      "id": 28,
+      "description": "A witness observed the defendant discarding a bag containing stolen money in a remote location after the armed robbery.",
+      "prosecutionSentence": "The witness's account of the defendant disposing of the stolen money provides strong evidence of his direct participation in the armed robbery.",
+      "defenseSentence": "The witness's testimony is unreliable and lacks corroborating evidence. It could be influenced by external factors or mistaken identity."
+    },
+    {
+      "id": 29,
+      "description": "An undercover police officer infiltrated the defendant's criminal network and obtained evidence of his planning and involvement in the armed robbery.",
+      "prosecutionSentence": "The undercover officer's evidence, obtained through close monitoring and surveillance, proves the defendant's active participation in planning and executing the armed robbery.",
+      "defenseSentence": "The evidence obtained by the undercover officer may be biased or misconstrued. The defendant denies his involvement in the armed robbery."
+    },
+    {
+      "id": 30,
+      "description": "The defendant was found in possession of a large sum of cash shortly after the armed robbery, exceeding his known legitimate income.",
+      "prosecutionSentence": "The discovery of a substantial amount of cash in the defendant's possession strongly suggests his direct involvement in the armed robbery and subsequent gain from it.",
+      "defenseSentence": "The defendant can provide evidence that the cash in his possession was acquired through legal means and is unrelated to the armed robbery."
+    },
+    {
+      "id": 31,
+      "description": "Surveillance footage from a different location at the same time as the armed robbery shows the defendant engaged in a completely unrelated activity.",
+      "prosecutionSentence": "While the defendant may have been captured on surveillance footage, it does not provide evidence of his involvement in the armed robbery.",
+      "defenseSentence": "The surveillance footage from a different location establishes my client's alibi and proves his innocence in relation to the armed robbery."
+    },
+    {
+      "id": 32,
+      "description": "A witness testified that they saw the defendant at a different location during the time of the armed robbery, providing an alibi for his whereabouts.",
+      "prosecutionSentence": "The witness's testimony does not prove the defendant's innocence in the armed robbery, as their account may be mistaken or influenced by external factors.",
+      "defenseSentence": "The witness's testimony supports my client's alibi, indicating that he was not present at the scene of the armed robbery and is innocent."
+    },
+    {
+      "id": 33,
+      "description": "Bank surveillance footage captured an individual committing the armed robbery, but the defendant's appearance does not match the physical description of the perpetrator.",
+      "prosecutionSentence": "While the defendant's appearance may not match the physical description of the armed robber, it does not absolve him of guilt if there is other evidence linking him to the crime.",
+      "defenseSentence": "The discrepancy between the defendant's appearance and the physical description of the armed robber casts doubt on his involvement and raises the possibility of mistaken identity."
+    },
+    {
+      "id": 34,
+      "description": "The defendant's financial transactions show no significant increase in cash deposits or suspicious activity around the time of the armed robbery.",
+      "prosecutionSentence": "The lack of financial evidence directly linking the defendant to the armed robbery does not necessarily indicate his innocence, as there may be other means of obtaining and concealing illicit gains.",
+      "defenseSentence": "The absence of any unusual financial transactions supports my client's claim of innocence, as it demonstrates his lack of involvement in the armed robbery."
+    },
+    {
+      "id": 35,
+      "description": "A reliable alibi witness testified that the defendant was with them at a different location during the entire time of the armed robbery.",
+      "prosecutionSentence": "While the alibi witness's testimony may support the defendant's claim of innocence, their credibility and veracity must be scrutinized to ensure they are not providing false alibi.",
+      "defenseSentence": "The reliable alibi witness's testimony establishes my client's presence at another location during the armed robbery, proving his innocence beyond a reasonable doubt."
+    },
+    {
+      "id": 36,
+      "description": "A thorough forensic examination of the defendant's belongings, including clothing and personal items, found no traces of physical evidence linking him to the armed robbery.",
+      "prosecutionSentence": "The absence of physical evidence on the defendant's belongings does not negate his involvement in the armed robbery, as he could have taken precautions to avoid leaving traces.",
+      "defenseSentence": "The thorough forensic examination's findings validate my client's innocence, as the absence of physical evidence proves his lack of participation in the armed robbery."
+    },
+    {
+      "id": 37,
+      "description": "Eyewitnesses provided conflicting testimonies regarding the appearance and actions of the armed robber, casting doubt on the accuracy of their observations.",
+      "prosecutionSentence": "Conflicting eyewitness testimonies do not necessarily exonerate the defendant, as discrepancies can arise from various factors and the core details of the armed robbery remain consistent.",
+      "defenseSentence": "The conflicting testimonies of the eyewitnesses raise reasonable doubt about my client's involvement in the armed robbery, highlighting the unreliability of their observations."
+    },
+    {
+      "id": 38,
+      "description": "Surveillance footage from the crime scene shows the defendant's absence during the time of the armed robbery.",
+      "prosecutionSentence": "While the surveillance footage indicates the defendant's absence during the armed robbery, it does not provide conclusive evidence of his innocence as he could have orchestrated the crime remotely.",
+      "defenseSentence": "The surveillance footage proves my client's absence from the scene, establishing his innocence in the armed robbery beyond a reasonable doubt."
+    },
+    {
+      "id": 39,
+      "description": "Multiple witnesses testified that they saw the defendant at a different location during the time of the armed robbery, providing a strong alibi.",
+      "prosecutionSentence": "While the witness testimonies may support the defendant's alibi, their reliability and potential bias should be thoroughly examined to ensure they are not providing false alibi.",
+      "defenseSentence": "The testimonies of multiple witnesses corroborate my client's alibi, confirming his innocence in the armed robbery."
+    },
+    {
+      "id": 40,
+      "description": "Bank surveillance footage shows an individual committing the armed robbery, and the defendant's appearance does not match the physical description of the perpetrator.",
+      "prosecutionSentence": "While the defendant's appearance may not match the physical description of the armed robber, it does not prove his innocence if other evidence establishes his direct involvement in the crime.",
+      "defenseSentence": "The discrepancy between the defendant's appearance and the physical description of the armed robber raises reasonable doubt about his involvement and suggests the possibility of mistaken identity."
+    },
+    {
+      "id": 41,
+      "description": "Financial records demonstrate that the defendant had no unusual increase in cash deposits or expenditures around the time of the armed robbery.",
+      "prosecutionSentence": "The absence of financial evidence linking the defendant to the armed robbery does not automatically exonerate him, as he may have used alternative means to obtain and conceal the stolen funds.",
+      "defenseSentence": "The financial records prove my client's innocence, as the absence of any unusual transactions supports his lack of involvement in the armed robbery."
+    },
+    {
+      "id": 42,
+      "description": "The defendant's phone records indicate that he was engaged in a phone call with a reliable alibi witness during the entire duration of the armed robbery.",
+      "prosecutionSentence": "While the defendant may have been on a phone call with an alibi witness, it does not necessarily prove his innocence, as he could have orchestrated the armed robbery while having someone provide a false alibi.",
+      "defenseSentence": "The defendant's phone records, coupled with the testimony of a reliable alibi witness, establish his innocence by proving that he was engaged in a phone call during the armed robbery."
+    },
+    {
+      "id": 43,
+      "description": "Forensic examination of the defendant's belongings, including clothing and personal items, found no traces of physical evidence linking him to the armed robbery.",
+      "prosecutionSentence": "The absence of physical evidence on the defendant's belongings does not negate his involvement in the armed robbery, as he may have taken precautions to avoid leaving traces behind.",
+      "defenseSentence": "The forensic examination's findings support my client's innocence, as the absence of physical evidence proves his lack of participation in the armed robbery."
+    },
+    {
+      "id": 44,
+      "description": "Eyewitnesses provided conflicting testimonies regarding the appearance and actions of the armed robber, raising doubts about the accuracy and reliability of their observations.",
+      "prosecutionSentence": "Conflicting eyewitness testimonies do not necessarily prove the defendant's innocence, as discrepancies can arise from various factors and the core details of the armed robbery remain consistent.",
+      "defenseSentence": "The conflicting testimonies of the eyewitnesses introduce reasonable doubt about my client's involvement in the armed robbery, highlighting the unreliability of their observations."
+    },
+    {
+      "id": 45,
+      "description": "Surveillance footage from the crime scene shows the defendant's presence at a different location during the time of the armed robbery.",
+      "prosecutionSentence": "While the surveillance footage indicates the defendant's presence at a different location, it does not prove his innocence as he could have orchestrated the crime remotely.",
+      "defenseSentence": "The surveillance footage establishes my client's alibi, proving his innocence in the armed robbery beyond a reasonable doubt."
+    },
+    {
+      "id": 46,
+      "description": "Multiple reliable witnesses testified that they saw the defendant at a different location during the time of the armed robbery, providing a strong alibi.",
+      "prosecutionSentence": "While the witness testimonies may support the defendant's alibi, their credibility and potential bias should be thoroughly examined to ensure they are not providing false alibi.",
+      "defenseSentence": "The testimonies of multiple reliable witnesses corroborate my client's alibi, confirming his innocence in the armed robbery."
+    },
+    {
+      "id": 47,
+      "description": "Bank surveillance footage shows an individual committing the armed robbery, and the defendant's appearance does not match the physical description of the perpetrator.",
+      "prosecutionSentence": "While the defendant's appearance may not match the physical description of the armed robber, it does not prove his innocence if other evidence establishes his direct involvement in the crime.",
+      "defenseSentence": "The discrepancy between the defendant's appearance and the physical description of the armed robber raises reasonable doubt about his involvement and suggests the possibility of mistaken identity."
+    },
+    {
+      "id": 48,
+      "description": "Financial records demonstrate that the defendant had no unusual increase in cash deposits or expenditures around the time of the armed robbery.",
+      "prosecutionSentence": "The absence of financial evidence linking the defendant to the armed robbery does not automatically exonerate him, as he may have used alternative means to obtain and conceal the stolen funds.",
+      "defenseSentence": "The financial records prove my client's innocence, as the absence of any unusual transactions supports his lack of involvement in the armed robbery."
+    },
+    {
+      "id": 49,
+      "description": "The defendant's phone records indicate that he was engaged in a phone call with a reliable alibi witness during the entire duration of the armed robbery.",
+      "prosecutionSentence": "While the defendant may have been on a phone call with an alibi witness, it does not necessarily prove his innocence, as he could have orchestrated the armed robbery while having someone provide a false alibi.",
+      "defenseSentence": "The defendant's phone records, coupled with the testimony of a reliable alibi witness, establish his innocence by proving that he was engaged in a phone call during the armed robbery."
+    }
+  ],
   "dui": [
     {
       "id": 0,
