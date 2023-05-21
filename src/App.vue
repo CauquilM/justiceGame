@@ -21,7 +21,8 @@ import evidences from "@/data_cases/evidences.json"
 import descriptions from "@/data_cases/descriptions.json"
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
-import witnessesData from '@/data_cases/witnessesData.json'
+import suspect_names_data from '@/data_cases/suspect_names.json'
+import witnessesData from '@/data_cases/witnesses.json'
 import {eventBus} from "@/main";
 
 export default {
@@ -110,115 +111,8 @@ export default {
             eventBus.$emit('openOfficeModal');
         },
         generateName() {
-            const firstName = [
-                "Emma",
-                "Noah",
-                "Ava",
-                "Liam",
-                "Olivia",
-                "William",
-                "Sophia",
-                "Mason",
-                "Isabella",
-                "James",
-                "Mia",
-                "Benjamin",
-                "Charlotte",
-                "Jacob",
-                "Amelia",
-                "Michael",
-                "Harper",
-                "Elijah",
-                "Evelyn",
-                "Ethan",
-                "Abigail",
-                "Alexander",
-                "Emily",
-                "Daniel",
-                "Elizabeth",
-                "Matthew",
-                "Mila",
-                "Aiden",
-                "Ella",
-                "Henry",
-                "Avery",
-                "Joseph",
-                "Sofia",
-                "Jackson",
-                "Camila",
-                "Samuel",
-                "Scarlett",
-                "Sebastian",
-                "Victoria",
-                "David",
-                "Luna",
-                "Carter",
-                "Chloe",
-                "Luke",
-                "Penelope",
-                "Owen",
-                "Grace",
-                "Wyatt",
-                "Lily",
-                "Nathan",
-                "Hannah"
-            ];
-
-
-            const lastName = [
-                "Lopez",
-                "Adams",
-                "Perry",
-                "Henderson",
-                "Foster",
-                "Harrison",
-                "Stewart",
-                "Ramirez",
-                "Graham",
-                "Flores",
-                "Ramos",
-                "Wright",
-                "Sullivan",
-                "Parker",
-                "Cox",
-                "Murray",
-                "Morales",
-                "Bryant",
-                "Hunt",
-                "Rose",
-                "Riley",
-                "Gonzalez",
-                "Jordan",
-                "Bishop",
-                "Wheeler",
-                "Marshall",
-                "Hayes",
-                "Douglas",
-                "Griffin",
-                "Harper",
-                "Lawson",
-                "Barrett",
-                "Hawkins",
-                "Banks",
-                "Franklin",
-                "Moreno",
-                "Hudson",
-                "McGuire",
-                "Gutierrez",
-                "Clarke",
-                "Vargas",
-                "Baker",
-                "Gibson",
-                "Warren",
-                "Austin",
-                "Waters",
-                "Stone",
-                "Mcdonald",
-                "Rocha",
-                "Santos"];
-
-            const randomFirstName = firstName[Math.floor(Math.random() * firstName.length)];
-            const randomLastName = lastName[Math.floor(Math.random() * lastName.length)];
+            const randomFirstName = suspect_names_data.firstName[Math.floor(Math.random() * suspect_names_data.firstName.length)];
+            const randomLastName = suspect_names_data.lastName[Math.floor(Math.random() * suspect_names_data.lastName.length)];
 
             return `${randomFirstName} ${randomLastName}`;
         },
