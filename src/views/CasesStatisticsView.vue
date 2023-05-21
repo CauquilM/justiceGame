@@ -70,7 +70,7 @@ export default {
                     {
                         position: 'bottom'
                     },
-                labels: ['Parole', 'Criminal', 'Road', 'Prison', 'Traffic'],
+                labels: ['Parole', 'Criminal', 'Traffic crimes', 'Prison', 'Traffic infraction'],
                 responsive: [{
                     breakpoint: 480,
                     options: {

@@ -94,8 +94,16 @@ export default {
                 "verdict", "prison", "probation", "fine"
             ],
             largeFields: [
-                "case_id", "type", "charge", "description", "suspect_name", "suspect_age", "criminalRecord",
-                "verdict", "prison", "probation", "fine"
+                {
+                    key: "case_id",
+                    sortable: true
+                },
+                {
+                    key: "type", sortable: true
+                },
+                {key: "charge", sortable: true},
+                "description", "suspect_name", "suspect_age", "criminalRecord",
+                {key: "verdict", sortable: true}, "prison", "probation", "fine"
             ],
         }
     },
