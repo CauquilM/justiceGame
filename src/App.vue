@@ -49,12 +49,13 @@ export default {
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
-                     'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
-                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
-                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
+                     'Attempted Murder 1st degree murder',
                     */
                 ],
                 /*'criminalCharge_second': [
+                'Murder of Police Officer', 'Battery on Peace/Police Officer',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
                 ],*/
                 /*'felonies_first': [
                     'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
@@ -79,8 +80,7 @@ export default {
                     failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
-                    'manslaughter', 'drugTrafficking',
-                    /*"prison hostage situation",*/
+                    'manslaughter', 'drugTrafficking', 'prisonHostage',
                 ],
                 'trafficCharge': ['traffic']
                 /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
