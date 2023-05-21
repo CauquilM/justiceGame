@@ -58,7 +58,7 @@ export default {
                 /*'criminalCharge_second': [
                 ],*/
                 'feloniesCharge_first': [
-                    'trespassing'
+                    'trespassing', 'Impersonating a Police Officer'
                     /*'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
