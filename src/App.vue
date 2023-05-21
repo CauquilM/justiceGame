@@ -49,21 +49,21 @@ export default {
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
-                     'Attempted Murder 1st degree murder',
+                     'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
                     */
                 ],
                 /*'criminalCharge_second': [
-                'Murder of Police Officer', 'Battery on Peace/Police Officer',
-                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
-                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
                 ],*/
-                /*'felonies_first': [
-                    'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
+                'felonies_first': [
+                    'trespassing'
+                    /*'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
-                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle',
+                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle', 'fake 911 call',*/
 
-                ],*/
+                ],
                 /*'felonies_second': [
                     'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
                     'Hate Crime', 'Impersonating a Peace/Police Officer', 'Indecent Exposure',
