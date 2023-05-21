@@ -1,9 +1,10 @@
 <template>
     <div id="app" :class="isDark ?'bg-dark text-light' : ''">
-        <div class="dark-mode-flex">
+        <div class="dark-mode-button">
             <DarkModeSwitch/>
         </div>
         <router-view/>
+        <OfficeModal/>
     </div>
 </template>
 
@@ -12,6 +13,7 @@
 </style>
 <script setup>
 import DarkModeSwitch from "@/components/CourtComponents/DarkModeSwitch.vue";
+import OfficeModal from "@/components/OfficeModal.vue";
 </script>
 <script>
 import {mapActions, mapState} from "vuex";
@@ -20,6 +22,7 @@ import descriptions from "@/data_cases/descriptions.json"
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
 import witnessesData from '@/data_cases/witnessesData.json'
+import {eventBus} from "@/main";
 
 export default {
     name: 'App',
@@ -42,16 +45,17 @@ export default {
             randomizationParams: {
                 'type': "",
                 'criminalCharge_first': ['murder', 'theft', 'fraud',
-                    'assault', 'arson',
+                    'assault', 'arson', 'armedRobbery'
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
-                     'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
-                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
-                     'Grand Theft Auto', 'Robbery w/violence',
+                     'Attempted Murder 1st degree murder',
                     */
                 ],
                 /*'criminalCharge_second': [
+                'Murder of Police Officer', 'Battery on Peace/Police Officer',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
                 ],*/
                 /*'felonies_first': [
                     'fake 911 call', 'vandalism', 'bribery', 'suspicious Activity',
@@ -68,7 +72,7 @@ export default {
 
                 ],*/
                 'parole': [
-                   'parole hearing' /*'Violation of probation', 'Violation of parole'*/
+                    'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
                     'drivingNoLicense', 'hitAndRun',
@@ -76,8 +80,7 @@ export default {
                     failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
-                    'manslaughter', 'drugTrafficking',
-                    /*"hostage situation",*/
+                    'manslaughter', 'drugTrafficking', 'prisonHostage',
                 ],
                 'trafficCharge': ['traffic']
                 /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
@@ -96,13 +99,16 @@ export default {
     },
     created() {
         console.log("VERCEL" + ' ' + "pblv");
-        console.time("Test");
+        console.time("Test case generation");
         this.caseGeneration();
-        console.timeEnd("Test");
+        console.timeEnd("Test case generation");
         this.getHistoricalCases();
     },
     methods: {
         ...mapActions(["addGeneratedCase", "chooseProsecutionSentence", "getHistoricalCases"]),
+        goToOffice() {
+            eventBus.$emit('openOfficeModal');
+        },
         generateName() {
             const firstName = [
                 "Emma",
@@ -241,11 +247,9 @@ export default {
             }
 
             numbers.sort((a, b) => a - b);
-            console.log("numbers before: ", numbers);
-            if(numbers[1] == numbers[0] || numbers[1] == numbers[2]){
+            if (numbers[1] == numbers[0] || numbers[1] == numbers[2]) {
                 numbers[1]--;
             }
-            console.log("numbers: ", numbers);
             const prosecutorRandom = Math.floor(Math.random() * 3);
             let prosecutorChoice = [];
 
@@ -409,7 +413,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                        this.caseObj["witnesses"] = witnessesData.murder;
+                        /*this.caseObj["witnesses"] = witnessesData.murder;*/
                     } else if (this.caseObj.criminalCharge_first === "theft") {
                         this.caseObj["type"] = "criminal";
                         this.caseObj["charge"] = this.caseObj.criminalCharge_first;
@@ -419,7 +423,6 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 20000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                        this.caseObj["witnesses"] = witnessesData.murder;
                     } else if (this.caseObj.criminalCharge_first === "fraud") {
                         this.caseObj["type"] = "criminal";
                         this.caseObj["charge"] = this.caseObj.criminalCharge_first;
@@ -429,7 +432,6 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(5000, 100000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                        this.caseObj["witnesses"] = witnessesData.murder;
                     } else if (this.caseObj.criminalCharge_first === "assault") {
                         this.caseObj["type"] = "criminal";
                         this.caseObj["charge"] = this.caseObj.criminalCharge_first;
@@ -439,7 +441,6 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                        this.caseObj["witnesses"] = witnessesData.murder;
                     } else if (this.caseObj.criminalCharge_first === "arson") {
                         this.caseObj["type"] = "criminal";
                         this.caseObj["charge"] = this.caseObj.criminalCharge_first;
@@ -449,7 +450,15 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                        this.caseObj["witnesses"] = witnessesData.murder;
+                    } else if (this.caseObj.criminalCharge_first === "armedRobbery") {
+                        this.caseObj["type"] = "criminal";
+                        this.caseObj["charge"] = "armed robbery";
+                        this.caseObj["description"] = descriptions.armedRobbery[Math.floor(Math.random() * descriptions.armedRobbery.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.armedRobbery.slice(0, Math.floor(Math.random() * evidences.armedRobbery.length))).slice(0, 4);
+                        this.caseObj["prisonSentences"] = this.generateSentences(1, 8, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {
@@ -554,6 +563,16 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                         this.caseObj["witnesses"] = witnessesData.murder;
+                    } else if (this.caseObj.prisonCharge === "prisonHostage") {
+                        this.caseObj["type"] = "prison case";
+                        this.caseObj["charge"] = "prison hostage";
+                        this.caseObj["description"] = descriptions.prisonHostage[Math.floor(Math.random() * descriptions.prisonHostage.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.prisonHostage.slice(0, Math.floor(Math.random() * evidences.prisonHostage.length))).slice(0, 4);
+                        this.caseObj["prisonSentences"] = this.generateSentences(3, 12, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(3000, 10000, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+                        this.caseObj["witnesses"] = witnessesData.murder;
                     }
                     /******* Parole *******/
                     else if (this.caseObj.parole === "parole hearing") {
@@ -603,7 +622,8 @@ prosecutionSentence: "We have clear video evidence that the defendant initiated 
 defenseSentence: "My client acted in self-defense and only used necessary force to protect himself from the victim's aggression."
 },
 Generate 30 fraud evidences that make the defendant innocent / guilty like in the examples,
-put them in objects not a function, start from ID (27)
+add a prosecution sentence and a defense sentence
+put them in objects not a function, start from ID (0)
 -->
 
 <!--do 30 more continuing from ID (14)-->

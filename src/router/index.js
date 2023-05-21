@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import CourtView from "@/views/CourtView.vue";
 import CasesHistoryView from "@/views/CasesHistoryView.vue";
+import CasesStatisticsView from "@/views/CasesStatisticsView.vue";
 /*import CreateCaseView from "@/views/CreateCaseView.vue";*/
 
 Vue.use(VueRouter)
@@ -16,6 +17,11 @@ const routes = [
     path: '/history',
     name: 'cases-history',
     component: CasesHistoryView
+  },
+  {
+    path: '/statistics',
+    name: 'cases-statistics',
+    component: CasesStatisticsView
   },
   /*{
     path: '/create',

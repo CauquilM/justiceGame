@@ -94,35 +94,28 @@ export default {
                 "verdict", "prison", "probation", "fine"
             ],
             largeFields: [
-                "case_id", "type", "charge", "description", "suspect_name", "suspect_age", "criminalRecord",
-                "verdict", "prison", "probation", "fine"
+                {
+                    key: "case_id",
+                    sortable: true
+                },
+                {
+                    key: "type", sortable: true
+                },
+                {key: "charge", sortable: true},
+                "description", "suspect_name", "suspect_age", "criminalRecord",
+                {key: "verdict", sortable: true}, "prison", "probation", "fine"
             ],
         }
     },
     mounted() {
         this.updateScreenWidth();
         this.onScreenResize();
-        this.stats();
     },
     computed: {
         ...mapState(["historicalCases", "isDark"])
     },
     methods: {
         ...mapActions(["getHistoricalCases"]),
-        stats() {
-            console.log("debug: ", this.historicalCases.length);
-            let result = 0;
-            for (let i = 0; i < this.historicalCases.length; i++) {
-                console.log("enter for");
-                if (this.historicalCases[i].verdict === "Guilty") {
-                    result++
-                    console.log("enetr for if");
-                }
-            }
-            result = ((result * 100) / this.historicalCases.length);
-            console.log(result.toFixed(2
-            ));
-        },
         securityDelete() {
             this.deleteButton = true;
         },

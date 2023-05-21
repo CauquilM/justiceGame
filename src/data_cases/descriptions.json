@@ -893,7 +893,212 @@
       "description": "A popular tourist attraction was damaged in a fire that investigators suspect was caused by arson."
     }
   ],
-  "fake_911_call": [],
+  "armedRobbery": [
+    {
+      "id": 0,
+      "description": "The National Maze Bank has been robbed by an armed robber."
+    },
+    {
+      "id": 1,
+      "description": "The bank teller was held at gunpoint as masked robbers emptied the cash registers."
+    },
+    {
+      "id": 2,
+      "description": "A jewelry store was targeted by armed assailants who escaped with a haul of precious gemstones."
+    },
+    {
+      "id": 3,
+      "description": "During a late-night heist, armed criminals raided a high-end art gallery and made off with several valuable paintings."
+    },
+    {
+      "id": 4,
+      "description": "An armed gang stormed a casino, overpowering security and stealing a significant amount of cash."
+    },
+    {
+      "id": 5,
+      "description": "A group of armed individuals robbed a luxury watch boutique, fleeing with an assortment of expensive timepieces."
+    },
+    {
+      "id": 6,
+      "description": "In a daring daylight robbery, armed thieves targeted an armored truck transporting millions of dollars."
+    },
+    {
+      "id": 7,
+      "description": "A masked gunman entered a convenience store, demanding money from the terrified cashier before escaping on foot."
+    },
+    {
+      "id": 8,
+      "description": "A well-known art collector's mansion was invaded by armed intruders who looted the premises of valuable artifacts."
+    },
+    {
+      "id": 9,
+      "description": "An armed robbery took place at a high-profile fashion boutique, where the thieves escaped with designer clothing and accessories."
+    },
+    {
+      "id": 10,
+      "description": "During a daring bank heist, heavily armed criminals took hostages and made off with a fortune."
+    },
+    {
+      "id": 11,
+      "description": "A group of armed robbers targeted a rare book store, stealing a collection of valuable first editions."
+    },
+    {
+      "id": 12,
+      "description": "A convenience store was robbed by an armed suspect who escaped with cash and cigarettes."
+    },
+    {
+      "id": 13,
+      "description": "Armed assailants stormed a technology company's headquarters, stealing valuable prototypes and sensitive information."
+    },
+    {
+      "id": 14,
+      "description": "A heavily armed gang raided a pharmaceutical warehouse, making off with a large quantity of prescription drugs."
+    },
+    {
+      "id": 15,
+      "description": "During an audacious heist, armed robbers targeted a high-end car dealership, stealing several luxury vehicles."
+    },
+    {
+      "id": 16,
+      "description": "A masked gunman broke into a mansion and held the wealthy residents hostage while ransacking the premises."
+    },
+    {
+      "id": 17,
+      "description": "Armed criminals targeted a museum, stealing a rare artifact that held significant historical value."
+    },
+    {
+      "id": 18,
+      "description": "A group of armed thieves robbed a prominent auction house, stealing valuable artwork and jewelry."
+    },
+    {
+      "id": 19,
+      "description": "An armed robbery took place at a renowned antique store, with the thieves escaping with valuable relics."
+    },
+    {
+      "id": 20,
+      "description": "During an evening robbery, armed criminals targeted a high-end restaurant, stealing cash and patrons' belongings."
+    },
+    {
+      "id": 21,
+      "description": "A jewelry exhibition was interrupted by armed robbers who managed to escape with a selection of exquisite pieces."
+    },
+    {
+      "id": 22,
+      "description": "Armed assailants targeted a high-security warehouse, stealing a large shipment of electronic devices."
+    },
+    {
+      "id": 23,
+      "description": "A masked gunman robbed a gas station, demanding cash from the frightened attendants before fleeing the scene."
+    },
+    {
+      "id": 24,
+      "description": "During a brazen daytime robbery, armed criminals targeted a prestigious art auction, stealing valuable paintings."
+    },
+    {
+      "id": 25,
+      "description": "An individual was brutally attacked and robbed while walking alone at night."
+    },
+    {
+      "id": 26,
+      "description": "A group of assailants assaulted a passerby, stealing their wallet and personal belongings."
+    },
+    {
+      "id": 27,
+      "description": "During a heated argument, one person physically attacked another, resulting in severe injuries."
+    },
+    {
+      "id": 28,
+      "description": "A violent mugging took place in a dark alley, with the victim sustaining significant injuries."
+    },
+    {
+      "id": 29,
+      "description": "An unsuspecting victim was assaulted and robbed by an unknown assailant in a crowded subway station."
+    },
+    {
+      "id": 30,
+      "description": "A brutal assault occurred outside a nightclub, leaving the victim with critical injuries."
+    },
+    {
+      "id": 31,
+      "description": "During a home invasion, the residents were subjected to a vicious assault by armed intruders."
+    },
+    {
+      "id": 32,
+      "description": "A physical altercation broke out between two individuals, resulting in both parties sustaining injuries."
+    },
+    {
+      "id": 33,
+      "description": "A person was assaulted and robbed at knifepoint while walking through a secluded park."
+    },
+    {
+      "id": 34,
+      "description": "An argument turned violent when one individual attacked another with a blunt object, causing severe harm."
+    },
+    {
+      "id": 35,
+      "description": "A victim was assaulted by a group of individuals, leaving them with serious injuries and trauma."
+    },
+    {
+      "id": 36,
+      "description": "A domestic dispute escalated into a physical assault, resulting in injuries to both parties involved."
+    },
+    {
+      "id": 37,
+      "description": "A targeted assault took place at a crowded event, leaving the victim with significant injuries."
+    },
+    {
+      "id": 38,
+      "description": "A road rage incident turned violent when one driver attacked the other with a weapon, causing harm."
+    },
+    {
+      "id": 39,
+      "description": "A physical assault occurred during a robbery attempt, leaving the victim with injuries and stolen property."
+    },
+    {
+      "id": 40,
+      "description": "An individual was assaulted and beaten by a group of strangers for no apparent reason."
+    },
+    {
+      "id": 41,
+      "description": "A victim was assaulted by an acquaintance in their own home, resulting in serious injuries and emotional distress."
+    },
+    {
+      "id": 42,
+      "description": "A violent altercation erupted in a bar, with multiple individuals sustaining injuries."
+    },
+    {
+      "id": 43,
+      "description": "During a confrontation, one person viciously attacked another with a weapon, causing severe harm."
+    },
+    {
+      "id": 44,
+      "description": "A targeted assault occurred in a parking lot, leaving the victim with critical injuries and stolen belongings."
+    },
+    {
+      "id": 45,
+      "description": "A person was assaulted and robbed by a group of individuals while waiting at a bus stop."
+    },
+    {
+      "id": 46,
+      "description": "An argument between neighbors turned violent, resulting in one person assaulting the other."
+    },
+    {
+      "id": 47,
+      "description": "A victim was assaulted during a burglary, enduring physical harm and stolen valuables."
+    },
+    {
+      "id": 48,
+      "description": "A physical assault took place at a sporting event, causing injuries to the victim and disrupting the event."
+    },
+    {
+      "id": 49,
+      "description": "A dispute escalated into a physical confrontation, with both parties involved engaging in assault."
+    },
+    {
+      "id": 50,
+      "description": "An unsuspecting victim was assaulted and robbed in a dimly lit parking garage."
+    }
+  ],
   "dui": [
     {
       "id": 0,
@@ -2576,6 +2781,235 @@
     {
       "id": 43,
       "description": "An inmate was caught with drugs hidden inside their legal paperwork."
+    }
+  ],
+  "prisonHostage": [
+    {
+      "id": 0,
+      "description": "A group of inmates has taken over the prison's chapel, holding both religious staff and fellow prisoners hostage and demanding religious freedom and the right to conduct their own ceremonies."
+    },
+    {
+      "id": 1,
+      "description": "A group of inmates has taken a prison guard hostage in a daring escape attempt."
+    },
+    {
+      "id": 2,
+      "description": "The prisoners have barricaded themselves in a cell block, demanding better living conditions and reduced sentences."
+    },
+    {
+      "id": 3,
+      "description": "A notorious criminal mastermind has seized control of the entire prison and is holding multiple hostages."
+    },
+    {
+      "id": 4,
+      "description": "Armed inmates have gained access to the prison's control room, taking the warden and several staff members hostage."
+    },
+    {
+      "id": 5,
+      "description": "A group of prisoners has managed to overpower the guards, holding them captive within the prison walls."
+    },
+    {
+      "id": 6,
+      "description": "A desperate inmate has taken a fellow prisoner hostage, demanding a getaway vehicle and a substantial ransom."
+    },
+    {
+      "id": 7,
+      "description": "A violent gang has stormed the prison, taking both inmates and guards hostage as they search for a hidden stash of drugs."
+    },
+    {
+      "id": 8,
+      "description": "An inmate, wrongly convicted, has taken a judge hostage during a court hearing held within the prison premises."
+    },
+    {
+      "id": 9,
+      "description": "A group of inmates has captured a visiting celebrity and is using them as a bargaining chip for their demands."
+    },
+    {
+      "id": 10,
+      "description": "An inmate with a history of mental illness has taken a prison counselor hostage, demanding a transfer to a psychiatric facility."
+    },
+    {
+      "id": 11,
+      "description": "A prisoner has rigged the facility with explosives and is threatening to detonate them unless their demands are met."
+    },
+    {
+      "id": 12,
+      "description": "A former inmate, seeking revenge, has infiltrated the prison and is holding several guards hostage in an attempt to settle a score."
+    },
+    {
+      "id": 13,
+      "description": "A high-profile inmate, with connections to a powerful criminal organization, has taken control of the prison, holding the warden hostage."
+    },
+    {
+      "id": 14,
+      "description": "A group of prisoners has managed to escape their cells and is now holding the entire prison population hostage."
+    },
+    {
+      "id": 15,
+      "description": "An inmate, known for their violent tendencies, has taken a nurse hostage, demanding medical treatment and prescription drugs."
+    },
+    {
+      "id": 16,
+      "description": "A political prisoner has taken a government official hostage, demanding their release and amnesty for fellow activists."
+    },
+    {
+      "id": 17,
+      "description": "A notorious gang leader has taken control of the prison's visiting area, holding visitors and guards hostage in a bid for freedom."
+    },
+    {
+      "id": 18,
+      "description": "A group of prisoners has hijacked a prison transport vehicle, taking the driver and accompanying guards hostage."
+    },
+    {
+      "id": 19,
+      "description": "A convicted hacker has breached the prison's security systems, taking control and holding key personnel hostage until they're granted freedom."
+    },
+    {
+      "id": 20,
+      "description": "A group of inmates has taken over the prison's kitchen, holding the chefs and other staff hostage while demanding better food quality."
+    },
+    {
+      "id": 21,
+      "description": "A prisoner, seeking revenge on a fellow inmate, has taken them hostage, demanding an opportunity for personal retribution."
+    },
+    {
+      "id": 22,
+      "description": "A radicalized inmate has seized control of the prison's communication center, holding the staff hostage and cutting off all external contact."
+    },
+    {
+      "id": 23,
+      "description": "A group of prisoners has taken a visiting dignitary hostage, demanding the release of their fellow gang members from other prisons."
+    },
+    {
+      "id": 24,
+      "description": "A group of inmates has taken control of the prison's infirmary, holding medical personnel hostage and demanding access to experimental treatments."
+    },
+    {
+      "id": 25,
+      "description": "A prisoner with extensive knowledge of the prison's layout has taken several guards hostage, planning an elaborate escape through secret tunnels."
+    },
+    {
+      "id": 26,
+      "description": "A deranged inmate has taken a chaplain hostage, demanding a public confession from the warden for alleged mistreatment of prisoners."
+    },
+    {
+      "id": 27,
+      "description": "A group of prisoners has taken control of the prison's exercise yard, holding both inmates and guards hostage and refusing to release them until certain demands are met."
+    },
+    {
+      "id": 28,
+      "description": "An inmate, known for their survival skills, has taken a hostage and barricaded themselves in an underground bunker, challenging authorities to find and release them."
+    },
+    {
+      "id": 29,
+      "description": "A violent inmate has taken control of the prison's armory, threatening to arm fellow prisoners and cause widespread chaos if their demands for freedom aren't met."
+    },
+    {
+      "id": 30,
+      "description": "A group of inmates has captured a prison psychologist, forcing them to conduct evaluations and make recommendations for early releases based on their demands."
+    },
+    {
+      "id": 31,
+      "description": "A charismatic inmate has taken a group of fellow prisoners hostage, forming a cult-like following and demanding complete control of the prison's operations."
+    },
+    {
+      "id": 32,
+      "description": "A prisoner, wrongly convicted, has taken a visiting journalist hostage, demanding a high-profile media campaign to expose their innocence."
+    },
+    {
+      "id": 33,
+      "description": "A group of inmates has taken over the prison's library, holding both staff and fellow prisoners hostage and demanding access to banned books and educational resources."
+    },
+    {
+      "id": 34,
+      "description": "A prisoner with advanced hacking skills has gained control of the prison's surveillance system, using it to hold guards and administrators hostage while covering their escape."
+    },
+    {
+      "id": 35,
+      "description": "A notorious gang leader has taken a high-ranking prison official hostage, demanding the release of their gang members from rival prisons as a condition for their freedom."
+    },
+    {
+      "id": 36,
+      "description": "A group of prisoners has seized control of the prison's visiting area, holding visitors and guards hostage and demanding improved visitation rights and privileges."
+    },
+    {
+      "id": 37,
+      "description": "A politically motivated inmate has taken a prison governor hostage, demanding better treatment for all political prisoners and a review of their cases."
+    },
+    {
+      "id": 38,
+      "description": "A former military inmate has seized control of the prison's weapons depot, threatening to unleash a reign of terror unless their demands for amnesty and a new identity are met."
+    },
+    {
+      "id": 39,
+      "description": "A group of inmates has taken over the prison's workshop, holding both staff and fellow prisoners hostage and demanding better working conditions and fair wages."
+    },
+    {
+      "id": 40, "description": "A prisoner with engineering skills has rigged the prison's main entrance with explosives, holding the guards and incoming staff hostage until their demands are met."
+    },
+    {
+      "id": 41,
+      "description": "A group of inmates has taken control of the prison's laundry facility, holding both staff and fellow prisoners hostage and demanding improved laundry services."
+    },
+    {
+      "id": 42,
+      "description": "An inmate with connections to an underground criminal organization has taken a prison administrator hostage, demanding confidential files and access to hidden assets."
+    },
+    {
+      "id": 43,
+      "description": "A desperate inmate has taken a prison chaplain hostage, demanding a spiritual intervention and divine intervention to secure their release."
+    },
+    {
+      "id": 44,
+      "description": "A group of prisoners has seized control of the prison's cafeteria, holding both kitchen staff and fellow inmates hostage and demanding better food quality and menu options."
+    },
+    {
+      "id": 45,
+      "description": "A high-ranking inmate with political ties has taken a government official hostage, demanding political asylum and protection from retribution."
+    },
+    {
+      "id": 46,
+      "description": "A mentally unstable inmate has taken a fellow prisoner hostage, claiming they possess vital information about an unsolved crime and demanding a reopening of the investigation."
+    },
+    {
+      "id": 47,
+      "description": "A group of prisoners has barricaded themselves in the prison's control tower, holding the guards hostage and demanding an immediate end to all surveillance and monitoring."
+    },
+    {
+      "id": 48,
+      "description": "An inmate, skilled in electronics, has hacked into the prison's security system, disabling all locks and cameras and holding the staff hostage until their demands are met."
+    },
+    {
+      "id": 49,
+      "description": "A group of prisoners has taken over the prison's educational center, holding both instructors and fellow inmates hostage and demanding access to advanced educational programs."
+    },
+    {
+      "id": 50,
+      "description": "A notorious gang member has taken a prison librarian hostage, demanding confidential files and information that could expose rival gang members within the facility."
+    },
+    {
+      "id": 51,
+      "description": "A group of inmates has captured a prison administrator's family during a scheduled visit, using them as leverage to negotiate their demands."
+    },
+    {
+      "id": 52,
+      "description": "A prisoner, known for their manipulation skills, has taken a fellow inmate hostage, using them as a pawn to gain control over the prison's contraband trade."
+    },
+    {
+      "id": 53,
+      "description": "A group of prisoners has taken control of the prison's recreation yard, holding both inmates and guards hostage and demanding better recreational facilities and activities."
+    },
+    {
+      "id": 54,
+      "description": "An inmate with medical knowledge has taken a prison doctor hostage, demanding specialized medical treatment and access to experimental drugs."
+    },
+    {
+      "id": 55,
+      "description": "A group of inmates has seized control of the prison's maintenance department, holding both staff and fellow prisoners hostage and demanding improved living conditions and repairs."
+    },
+    {
+      "id": 56,
+      "description": "A prisoner with hacking skills has gained access to the prison's financial system, holding the prison administration hostage until a large sum of money is transferred to a designated account."
     }
   ],
   "parole": [

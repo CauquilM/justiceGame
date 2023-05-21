@@ -1,17 +1,18 @@
 <template>
     <div class="judge-bench">
         <b-card :class="isDark ?'bg-dark text-light' : ''">
-            <p class="card-title" @click="$router.push('/history')">
+            <p class="card-title" @click="goToOffice">
                 <b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>
                 Judge
             </p>
             <div class="mt-3">
                 <div v-if="chosenCase.type === 'parole'" class="judge-buttons">
-                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Refuse parole</b-button>
+                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Refuse parole
+                    </b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Accept parole</b-button>
                 </div>
                 <div v-else-if="!pleaDealExists && juryExists">
-                    <b-button v-if="juryDecision === 'guilty'" class="jury-btn" ref="guilty-btn"
+                    <b-button v-if="juryDecision === 'guilty'" ref="guilty-btn" class="jury-btn"
                               @click="playerDecision('guilty')">Jury decision
                     </b-button>
                     <b-button v-if="juryDecision === 'not guilty'" class="jury-btn"
@@ -22,7 +23,7 @@
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Guilty</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
-                <PleaDealComponent v-if="chosenCase.type !== 'parole'"/>
+                <PleaDealComponent class="mt-2" v-if="chosenCase.type !== 'parole'"/>
             </div>
             <b-modal ref="guilty-modal" centered hide-footer
                      hide-header-close
@@ -64,7 +65,7 @@ export default {
     name: 'JudgeComponent',
     components: {PleaDealComponent},
     computed: {
-        ...mapState(["judgeComment", "isDark", "pleaDealExists" ,"juryExists", "juryDecision", "chosenCase"])
+        ...mapState(["judgeComment", "isDark", "pleaDealExists", "juryExists", "juryDecision", "chosenCase"])
     },
     mounted() {
         eventBus.$on('openGuiltyModal', () => {
@@ -79,6 +80,9 @@ export default {
     },
     methods: {
         ...mapActions(["playerDecision", "showSentences", "refreshPage"]),
+        goToOffice() {
+            eventBus.$emit('openOfficeModal');
+        }
     }
 }
 </script>
