@@ -49,6 +49,7 @@
 2. Public opinion: Introduce a system where the player's decisions affect their public approval rating.
 3. Judge's chambers: Add a feature where players can interact with their clerk or other characters in their judge's
    chambers.
+4. Ajouter un système de journal pour les affaires
 
 ### Later
 
