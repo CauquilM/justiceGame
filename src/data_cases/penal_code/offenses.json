@@ -3,7 +3,9 @@
     "prison_min": 5,
     "prison_max": 30,
     "probation_min": 0,
-    "probation_max": 5
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 50000
   },
   "theft": {
     "prison_min": 0,
@@ -51,7 +53,7 @@
     "probation_min": 0,
     "probation_max": 5,
     "fine_min": 0,
-    "fine_max": 1,000
+    "fine_max": 1000
   },
   "drivingNoLicense": {
     "prison_min": 0,
@@ -59,7 +61,7 @@
     "probation_min": 0,
     "probation_max": 3,
     "fine_min": 0,
-    "fine_max": 1,000
+    "fine_max": 1000
   },
   "hitAndRun": {
     "prison_min": 0,
