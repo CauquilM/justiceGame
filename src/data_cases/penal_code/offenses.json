@@ -1,18 +1,104 @@
 {
-  "murder": [],
-  "theft": [],
-  "fraud": [],
-  "assault": [],
-  "arson": [],
-  "dui": [],
-  "recklessDriving": [],
-  "drivingNoLicense": [],
-  "hitAndRun": [],
-  "traffic": [],
-  "fight": [],
-  "escape": [],
-  "assaultWithDeadlyWeapon": [],
-  "manslaughter": [],
-  "drugTrafficking": [],
-  "parole": []
+  "murder": {
+    "prison_min": 5,
+    "prison_max": 30,
+    "probation_min": 0,
+    "probation_max": 5
+  },
+  "theft": {
+    "prison_min": 0,
+    "prison_max": 5,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 10000
+  },
+  "fraud": {
+    "prison_min": 0,
+    "prison_max": 20,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 250000
+  },
+  "assault": {
+    "prison_min": 0,
+    "prison_max": 10,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 5000
+  },
+  "arson": {
+    "prison_min": 0,
+    "prison_max": 25,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 50000
+  },
+  "dui": {
+    "prison_min": 0,
+    "prison_max": 1,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 2500
+  },
+  "recklessDriving": {
+    "prison_min": 0,
+    "prison_max": 1,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 1,000
+  },
+  "drivingNoLicense": {
+    "prison_min": 0,
+    "prison_max": 1,
+    "probation_min": 0,
+    "probation_max": 3,
+    "fine_min": 0,
+    "fine_max": 1,000
+  },
+  "hitAndRun": {
+    "prison_min": 0,
+    "prison_max": 5,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 5000
+  },
+  "traffic": {
+    "prison_min": 0,
+    "prison_max": 1,
+    "probation_min": 0,
+    "probation_max": 2,
+    "fine_min": 0,
+    "fine_max": 500
+  },
+  "fight": {
+    "prison_min": 0,
+    "prison_max": 1,
+    "probation_min": 0,
+    "probation_max": 2,
+    "fine_min": 0,
+    "fine_max": 1000
+  },
+  "escape": {
+    "prison_min": 0,
+    "prison_max": 5,
+    "probation_min": 0,
+    "probation_max": 3,
+    "fine_min": 0,
+    "fine_max": 5000
+  },
+  "assaultWithDeadlyWeapon": {
+    "prison_min": 0,
+    "prison_max": 20,
+    "probation_min": 0,
+    "probation_max": 5,
+    "fine_min": 0,
+    "fine_max": 10000
+  }
 }
