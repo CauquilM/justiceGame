@@ -100,7 +100,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "kellogs");
+        console.log("VERCEL" + ' ' + "Dead eye");
         console.time("Test case generation");
         this.caseGeneration();
         console.timeEnd("Test case generation");
