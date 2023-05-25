@@ -89,7 +89,7 @@
 .sentences-card > .card {
     border-color: orange;
     margin-top: 20px;
-    min-width: 700px;
+    min-width: 800px;
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex {
@@ -211,7 +211,7 @@
     text-decoration: underline chocolate;
 }
 
-/**************************** Witenesses ****************************/
+/**************************** Witnesses ****************************/
 
 /**************************** Prosecution ****************************/
 .prosecution-table > .card {
