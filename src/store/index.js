@@ -485,18 +485,18 @@ export default new Vuex.Store({
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
                         then sentenced to 
-                        ${state.prisonSelected > 0 ? state.prisonSelected + 'years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected  > 0 ? state.probationSelected + 'years' : state.probationSelected}
+                        ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected}
                         of probation, and a ${state.fineSelected} fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to ${state.prisonSelected > 0 ? state.prisonSelected + 'years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected > 0 ? state.probationSelected + 'years' : state.probationSelected} 
+                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to ${state.prisonSelected > 0 ? state.prisonSelected + 'years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected  > 0 ? state.probationSelected + 'years' : state.probationSelected} 
+                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
                     eventBus.$emit('openSuccessModal');
@@ -518,16 +518,20 @@ export default new Vuex.Store({
                     }
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
-                        then sentenced to ${state.prisonSelected} in prison, ${state.probationSelected}
+                        then sentenced to 
+                        ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected}
                         of probation, and a ${state.fineSelected} fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
-                        and a ${state.fineSelected} fine as punishment for his actions.`
+                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
+                        of probation, and a ${state.fineSelected} fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to ${state.prisonSelected} in prison, ${state.probationSelected} of probation,
-                        and a ${state.fineSelected} fine for his crimes.`
+                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected} 
+                        of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
                     eventBus.$emit('openSuccessModal');
                 } else {

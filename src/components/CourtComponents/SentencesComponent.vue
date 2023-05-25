@@ -122,7 +122,7 @@ export default {
         this.updateSentences();
     },
     methods: {
-        ...mapActions([/*'doSentencing',*/ 'modifyPrisonSelected',
+        ...mapActions(['doSentencing', 'modifyPrisonSelected',
             'modifyProbationSelected', 'modifyFineSelected', 'refreshPage']),
         openPenalCodeModal() {
             eventBus.$emit('openPenalCodeModal');
