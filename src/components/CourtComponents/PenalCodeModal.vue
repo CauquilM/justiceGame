@@ -5,15 +5,15 @@
         <div class="penal-code-modal-container">
             <div>
                 <p><i class="ti ti-book-2"/> Minimum :</p>
-                <p><i class="ti ti-book-prison"/>Imprisonment of {{ offenses[offenseInPenalCode].prison_min }} years </p>
-                <p><i class="ti ti-book-accessible-off"/>Probation of {{ offenses[offenseInPenalCode].probation_min }} years </p>
-                <p><i class="ti ti-book-currency-dollar"/>Fine of {{ offenses[offenseInPenalCode].fine_min }}$ </p>
+                <p><i class="ti ti-prison"/>Imprisonment of {{ offenses[offenseInPenalCode].prison_min }} years </p>
+                <p><i class="ti ti-accessible-off"/>Probation of {{ offenses[offenseInPenalCode].probation_min }} years </p>
+                <p><i class="ti ti-currency-dollar"/>Fine of {{ offenses[offenseInPenalCode].fine_min }}$ </p>
             </div>
             <div>
                 <p> <i class="ti ti-book-2"/>Maximum :</p>
-                <p><i class="ti ti-book-prison"/>Imprisonment of {{ offenses[offenseInPenalCode].prison_max }} years </p>
-                <p><i class="ti ti-book-accessible-off"/>Probation of {{ offenses[offenseInPenalCode].probation_max }} years </p>
-                <p><i class="ti ti-book-currency-dollar"/>Fine of {{ offenses[offenseInPenalCode].fine_max }}$ </p>
+                <p><i class="ti ti-prison"/>Imprisonment of {{ offenses[offenseInPenalCode].prison_max }} years </p>
+                <p><i class="ti ti-accessible-off"/>Probation of {{ offenses[offenseInPenalCode].probation_max }} years </p>
+                <p><i class="ti ti-currency-dollar"/>Fine of {{ offenses[offenseInPenalCode].fine_max }}$ </p>
             </div>
         </div>
     </b-modal>
