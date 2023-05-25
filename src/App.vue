@@ -511,10 +511,11 @@ export default {
                     /******* Parole *******/
                     else if (this.caseObj.parole === "parole hearing") {
                         this.caseObj["type"] = "parole";
-                        this.caseObj["charge"] = "parole hearing";
+                        this.caseObj["charge"] = "parole";
+                        this.caseObj["penalCodeCharge"] = "parole";
                         this.caseObj["description"] = descriptions.parole[Math.floor(Math.random() * descriptions.parole.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evidences.parole.slice(0, Math.floor(Math.random() * evidences.parole.length))).slice(0, 3);
-                        this.caseObj["probationSentences"] = this.generateSentences(1, 5, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.parole.probation_min, offenses.parole.probation_max, false, "probation");
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                     }
 
@@ -528,7 +529,7 @@ export default {
 
         caseGeneration() {
             // Define case types
-            const caseTypes = ['Felonies_first', 'Parole', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+            const caseTypes = ['Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
                 /*'Felony', 'Army', 'Immigration', 'Parole', 'Constitutional', "Historical"*/
             ];
 

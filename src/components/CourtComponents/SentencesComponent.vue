@@ -25,26 +25,37 @@
                 <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
             </div>
             <div v-if="customSentences" class="sentences-card-select-flex">
-                <b-input-group v-if="chosenCase.type !== 'parole'">
+                <b-input-group :state="prisonIsValid ? null : false"
+                               :aria-describedby="prisonIsValid ? null : 'prison-error'"
+                               v-if="chosenCase.type !== 'parole'">
                     <b-input-group-prepend @click="changePrisonTime">
                         <span class="input-group-text">Prison</span>
                     </b-input-group-prepend>
-                    <b-form-input v-model="prisonSelected" :max="maxPrison"
+                    <b-form-input v-model="prisonSelected"
                                   :placeholder="prisonSelected" min="0" type="number"/>
                 </b-input-group>
-                <b-input-group>
+                <small v-if="!prisonIsValid" id="prison-error" class="form-text text-danger">{{ errors.prisonSelected }}</small>
+
+                <b-input-group :state="probationIsValid ? null : false"
+                               :aria-describedby="probationIsValid ? null : 'probation-error'">
                     <b-input-group-prepend @click="changeProbationTime">
                         <span class="input-group-text">Probation</span>
                     </b-input-group-prepend>
-                    <b-form-input v-model="probationSelected" :max="maxProbation"
+                    <b-form-input v-model="probationSelected"
                                   :placeholder="probationSelected" min="0" type="number"/>
                 </b-input-group>
-                <b-input-group v-if="chosenCase.type !== 'parole'" prepend="Fines $">
-                    <b-form-input v-model="fineSelected" :max="maxFine"
+                <small v-if="!probationIsValid" id="probation-error" class="form-text text-danger">{{ errors.probationSelected }}</small>
+
+                <b-input-group :state="fineIsValid ? null : false"
+                               :aria-describedby="fineIsValid ? null : 'fine-error'"
+                               v-if="chosenCase.type !== 'parole'" prepend="Fines $">
+                    <b-form-input v-model="fineSelected"
                                   min="0" type="number"/>
                 </b-input-group>
-                <b-button variant="danger" @click="doSentencing({isPrisonYears, isProbationYears})"><i
-                        class="ti ti-gavel"/> Sentence
+                <small v-if="!fineIsValid" id="fine-error" class="form-text text-danger">{{ errors.fineSelected }}</small>
+
+                <b-button :disabled="!customIsValid" variant="danger" @click="doSentencing({isPrisonYears, isProbationYears})">
+                    <i class="ti ti-gavel"/> Sentence
                 </b-button>
             </div>
             <b-modal ref="sentencing-success-modal" centered hide-footer
@@ -53,7 +64,7 @@
                      title="Message from the clerk">
                 <p class="sentencing-modal-text">{{ finalComment }}</p>
                 <b-button block class="sentencing-modal-button" variant="info"
-                          @click="refreshPage"><i class="ti ti-prison"/> Bailiff, bring the denfendant
+                          @click="refreshPage"><i class="ti ti-prison"/> Bailiff, bring the defendant
                 </b-button>
             </b-modal>
             <b-modal ref="sentencing-failed-modal" centered hide-footer
@@ -72,6 +83,7 @@
 import {mapActions, mapGetters, mapState} from "vuex";
 import {eventBus} from '../../main';
 import PenalCodeModal from "@/components/CourtComponents/PenalCodeModal.vue";
+import offenses from '@/data_cases/penal_code/offenses.json'
 
 export default {
     name: 'SentenceComponent',
@@ -79,16 +91,58 @@ export default {
     data() {
         return {
             customSentences: false,
-            maxPrison: 0,
             isPrisonYears: true,
-            maxProbation: 0,
             isProbationYears: true,
-            maxFine: 0
+            errors: {},
+            offenses: undefined
+        }
+    },
+    watch: {
+        prisonSelected() {
+            this.errors.prisonSelected = this.prisonIsValid ? '' : 'Invalid prison time, watch penal code.';
+        },
+        probationSelected() {
+            this.errors.probationSelected = this.probationIsValid ? '' : 'Invalid probation time, watch penal code.';
+        },
+        fineSelected() {
+            this.errors.fineSelected = this.fineIsValid ? '' : 'Invalid fine amount, watch penal code.';
         }
     },
     computed: {
         ...mapState(["showAllSentences", "finalComment", "isDark", "chosenCase"]),
         ...mapGetters(["getPrisonSelected", 'getProbationSelected', 'getFineSelected']),
+        prisonIsValid() {
+            const value = parseInt(this.prisonSelected);
+            if(this.offenses.prison_min == 99){
+                return true;
+            }
+            if (this.isPrisonYears === true) {
+                return value >= this.offenses.prison_min && value <= this.offenses.prison_max;
+            }
+            else {
+                return value >= this.offenses.prison_months_min && value <= this.offenses.prison_months_max;
+            }
+        },
+        probationIsValid() {
+            const value = parseInt(this.probationSelected);
+            if (this.isProbationYears === true) {
+                return value >= this.offenses.probation_min && value <= this.offenses.probation_max;
+            }
+            else {
+                return value >= this.offenses.probation_months_min && value <= this.offenses.probation_months_max;
+            }
+        },
+        fineIsValid() {
+            if(this.offenses.prison_min == 99){
+                return true;
+            }
+            const value = parseInt(this.fineSelected);
+            return value >= this.offenses.fine_min && value <= this.offenses.fine_max;
+        },
+        customIsValid(){
+            console.log("custom: ", this.prisonIsValid && this.probationIsValid && this.fineIsValid);
+            return this.prisonIsValid && this.probationIsValid && this.fineIsValid;
+        },
         prisonSelected: {
             get() {
                 return this.getPrisonSelected;
@@ -122,6 +176,7 @@ export default {
             this.$refs["sentencing-failed-modal"].show();
         });
         this.updateSentences();
+        this.offenses = offenses[this.chosenCase.penalCodeCharge];
     },
     methods: {
         ...mapActions(['doSentencing', 'modifyPrisonSelected',

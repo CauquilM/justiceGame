@@ -421,7 +421,6 @@ export default new Vuex.Store({
             eventBus.$emit('openNotGuiltyModal');
         },
         doSentencing({state}, { isPrisonYears, isProbationYears }) {
-            console.log(`prison: ${isPrisonYears}, probation: ${isProbationYears}`);
             if (state.chosenCase.type === "parole") {
                 if (state.probationSelected !== null) {
                     console.log("test: ", state.probationSelected);
@@ -527,6 +526,28 @@ export default new Vuex.Store({
                         ${state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
+                    console.time("test guilty post axios");
+                    axios.post("https://spotless-ant-beret.cyclic.app/history",
+                        {
+                            case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                            type: state.chosenCase.type,
+                            charge: state.chosenCase.charge,
+                            description: state.chosenCase.description,
+                            suspect_name: state.chosenCase.suspect.name,
+                            suspect_age: state.chosenCase.suspect.age,
+                            criminalRecord: state.chosenCase.criminalRecord,
+                            verdict: "Guilty",
+                            prison: state.prisonSelected,
+                            probation: state.probationSelected,
+                            fine: state.fineSelected,
+                        })
+                        .then((res) => {
+                            console.log(res);
+                        })
+                        .catch((err) => {
+                            console.log("axios post history cases: ", err);
+                        })
+                    console.timeEnd("test guilty post axios");
                     eventBus.$emit('openSuccessModal');
                 } else {
                     eventBus.$emit('openSentencingFailModal');
@@ -573,33 +594,33 @@ export default new Vuex.Store({
                         ${state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
+                    console.time("test guilty post axios");
+                    axios.post("https://spotless-ant-beret.cyclic.app/history",
+                        {
+                            case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                            type: state.chosenCase.type,
+                            charge: state.chosenCase.charge,
+                            description: state.chosenCase.description,
+                            suspect_name: state.chosenCase.suspect.name,
+                            suspect_age: state.chosenCase.suspect.age,
+                            criminalRecord: state.chosenCase.criminalRecord,
+                            verdict: "Guilty",
+                            prison: state.prisonSelected,
+                            probation: state.probationSelected,
+                            fine: state.fineSelected,
+                        })
+                        .then((res) => {
+                            console.log(res);
+                        })
+                        .catch((err) => {
+                            console.log("axios post history cases: ", err);
+                        })
+                    console.timeEnd("test guilty post axios");
                     eventBus.$emit('openSuccessModal');
                 } else {
                     eventBus.$emit('openSentencingFailModal');
                 }
             }
-            console.time("test guilty post axios");
-            axios.post("https://spotless-ant-beret.cyclic.app/history",
-                {
-                    case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
-                    type: state.chosenCase.type,
-                    charge: state.chosenCase.charge,
-                    description: state.chosenCase.description,
-                    suspect_name: state.chosenCase.suspect.name,
-                    suspect_age: state.chosenCase.suspect.age,
-                    criminalRecord: state.chosenCase.criminalRecord,
-                    verdict: "Guilty",
-                    prison: state.prisonSelected,
-                    probation: state.probationSelected,
-                    fine: state.fineSelected,
-                })
-                .then((res) => {
-                    console.log(res);
-                })
-                .catch((err) => {
-                    console.log("axios post history cases: ", err);
-                })
-            console.timeEnd("test guilty post axios");
         },
         togglePleaDeal({commit}) {
             commit("SET_PLEA_DEAL");
