@@ -49,9 +49,9 @@
   },
   "trespassing": {
     "prison_min": 1,
-    "prison_max": 1,
+    "prison_max": 5,
     "probation_min": 1,
-    "probation_max": 2,
+    "probation_max": 5,
     "fine_min": 1,
     "fine_max": 1000
   },
@@ -59,13 +59,13 @@
     "prison_min": 1,
     "prison_max": 5,
     "probation_min": 1,
-    "probation_max": 3,
+    "probation_max": 5,
     "fine_min": 1,
     "fine_max": 10000
   },
   "dui": {
     "prison_min": 1,
-    "prison_max": 1,
+    "prison_max": 4,
     "probation_min": 1,
     "probation_max": 5,
     "fine_min": 1,
@@ -73,7 +73,7 @@
   },
   "recklessDriving": {
     "prison_min": 1,
-    "prison_max": 1,
+    "prison_max": 8,
     "probation_min": 1,
     "probation_max": 5,
     "fine_min": 1,
@@ -81,9 +81,9 @@
   },
   "drivingNoLicense": {
     "prison_min": 1,
-    "prison_max": 1,
+    "prison_max": 5,
     "probation_min": 1,
-    "probation_max": 3,
+    "probation_max": 5,
     "fine_min": 1,
     "fine_max": 1000
   },
@@ -105,9 +105,9 @@
   },
   "fight": {
     "prison_min": 1,
-    "prison_max": 1,
+    "prison_max": 7,
     "probation_min": 1,
-    "probation_max": 2,
+    "probation_max": 5,
     "fine_min": 1,
     "fine_max": 1000
   },
@@ -115,7 +115,7 @@
     "prison_min": 1,
     "prison_max": 5,
     "probation_min": 1,
-    "probation_max": 3,
+    "probation_max": 5,
     "fine_min": 1,
     "fine_max": 5000
   },
@@ -153,9 +153,9 @@
   },
   "parole": {
     "prison_min": 1,
-    "prison_max": 2,
+    "prison_max": 4,
     "probation_min": 1,
-    "probation_max": 2,
+    "probation_max": 5,
     "fine_min": 1,
     "fine_max": 5000
   }
