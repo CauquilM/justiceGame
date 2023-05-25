@@ -100,7 +100,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "Gant");
+        console.log("VERCEL" + ' ' + "London");
         console.time("Test case generation");
         this.caseGeneration();
         console.timeEnd("Test case generation");
