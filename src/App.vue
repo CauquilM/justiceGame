@@ -167,15 +167,15 @@ export default {
                 });
                 result.push({
                     text: `${numbers[0]} years`,
-                    value: `${numbers[0]} years`
+                    value: `${numbers[0]}`
                 });
                 result.push({
                     text: `${numbers[1]} years`,
-                    value: `${numbers[1]} years`
+                    value: `${numbers[1]}`
                 });
                 result.push({
                     text: `${numbers[2]} years`,
-                    value: `${numbers[2]} years`
+                    value: `${numbers[2]}`
                 });
             } else if (!fineVariant && text === "probation") {
                 const prosecutionNoSentence = Math.floor(Math.random() * 11);
@@ -196,15 +196,15 @@ export default {
                 });
                 result.push({
                     text: `${numbers[0]} years`,
-                    value: `${numbers[0]} years`
+                    value: `${numbers[0]}`
                 });
                 result.push({
                     text: `${numbers[1]} years`,
-                    value: `${numbers[1]} years`
+                    value: `${numbers[1]}`
                 });
                 result.push({
                     text: `${numbers[2]} years`,
-                    value: `${numbers[2]} years`
+                    value: `${numbers[2]}`
                 });
             } else if (!fineVariant && text === "traffic") {
                 const prosecutionNoSentence = Math.floor(Math.random() * 11);

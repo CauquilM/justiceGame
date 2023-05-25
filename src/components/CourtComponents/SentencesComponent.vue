@@ -26,14 +26,17 @@
             </div>
             <div v-if="customSentences" class="sentences-card-select-flex">
                 <b-input-group v-if="chosenCase.type !== 'parole'">
-                    <b-input-group-prepend @click="prependClicked">
+                    <b-input-group-prepend @click="prependClicked('prison')">
                         <span class="input-group-text">Prison</span>
                     </b-input-group-prepend>
                     <b-form-input v-model="prisonSelected" :placeholder="prisonSelected"
                                   :max="maxPrison" min="0" type="number"/>
                 </b-input-group>
-                <b-input-group prepend="Probation">
-                    <b-form-input v-model="probationSelected"
+                <b-input-group>
+                    <b-input-group-prepend @click="prependClicked('probation')">
+                        <span class="input-group-text">Probation</span>
+                    </b-input-group-prepend>
+                    <b-form-input v-model="probationSelected" :placeholder="probationSelected"
                                   :max="maxProbation" min="0" type="number"/>
                 </b-input-group>
                 <b-input-group v-if="chosenCase.type !== 'parole'" prepend="Fines $">
@@ -119,20 +122,31 @@ export default {
         this.updateSentences();
     },
     methods: {
-        ...mapActions(['doSentencing', 'modifyPrisonSelected',
+        ...mapActions([/*'doSentencing',*/ 'modifyPrisonSelected',
             'modifyProbationSelected', 'modifyFineSelected', 'refreshPage']),
         openPenalCodeModal() {
             eventBus.$emit('openPenalCodeModal');
         },
-        prependClicked(){
+        prependClicked(sentence){
             console.log("clicked: ", this.isPrisonYears);
-           if(this.isPrisonYears === true){
-               this.prisonSelected = "months";
-               this.isPrisonYears = false;
-           }
-           else{
-               this.prisonSelected = "years";
-               this.isPrisonYears = true;
+           if(sentence === 'prison'){
+               if(this.isPrisonYears === true){
+                   this.prisonSelected = "months";
+                   this.isPrisonYears = false;
+               }
+               else{
+                   this.prisonSelected = "years";
+                   this.isPrisonYears = true;
+               }
+           } else{
+               if(this.isProbationYears === true){
+                   this.probationSelected = "months";
+                   this.isProbationYears = false;
+               }
+               else{
+                   this.probationSelected = "years";
+                   this.isProbationYears = true;
+               }
            }
         },
         updateSentences() {
