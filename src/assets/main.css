@@ -119,6 +119,13 @@
     background-color: red;
 }
 
+/*************************** Penal Code Modal ***************************/
+
+.penal-code-modal-container{
+    display: flex;
+    justify-content: space-around;
+}
+
 /*************************** Court Bar ***************************/
 .court-bar {
     max-width: 40%;

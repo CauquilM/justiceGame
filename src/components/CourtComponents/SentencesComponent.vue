@@ -2,11 +2,13 @@
     <div v-if="showAllSentences" class="sentences-card">
         <b-card :class="isDark ?'bg-dark text-light' : ''">
             <div class="row">
-                <div class="col-xl-4 col-lg-1 col-md-1"></div>
-                <div class="col-xl-3 col-lg-11 col-md-11">
+                <div class="col-xl-3 col-lg-1 col-md-1">
+                    <b-button variant="info" @click="openPenalCodeModal">?</b-button>
+                </div>
+                <div class="col-xl-5 col-lg-11 col-md-11">
                     <p class="card-title"><i class="ti ti-gavel"/>Sentences</p>
                 </div>
-                <div class="col-xl-5 col-lg-12 col-md-12">
+                <div class="col-xl-4 col-lg-12 col-md-12">
                     <b-form-checkbox v-model="customSentences" class="sentences-switch" size="lg" switch>
                         Custom sentences
                     </b-form-checkbox>
@@ -58,14 +60,17 @@
                           @click="$refs['sentencing-failed-modal'].hide()">My bad<i class="ti ti-brain"/></b-button>
             </b-modal>
         </b-card>
+        <PenalCodeModal :current-offense="chosenCase.charge" :offense-in-penal-code="chosenCase.penalCodeCharge" />
     </div>
 </template>
 <script>
 import {mapActions, mapGetters, mapState} from "vuex";
 import {eventBus} from '../../main';
+import PenalCodeModal from "@/components/CourtComponents/PenalCodeModal.vue";
 
 export default {
     name: 'SentenceComponent',
+    components: {PenalCodeModal},
     data() {
         return {
             customSentences: false,
@@ -116,6 +121,9 @@ export default {
     methods: {
         ...mapActions(['doSentencing', 'modifyPrisonSelected',
             'modifyProbationSelected', 'modifyFineSelected', 'refreshPage']),
+        openPenalCodeModal() {
+            eventBus.$emit('openPenalCodeModal');
+        },
         prependClicked(){
             console.log("clicked: ", this.isPrisonYears);
            if(this.isPrisonYears === true){
