@@ -420,7 +420,8 @@ export default new Vuex.Store({
         openNotGuiltyModal() {
             eventBus.$emit('openNotGuiltyModal');
         },
-        doSentencing({state}) {
+        doSentencing({state}, { isPrisonYears, isProbationYears }) {
+            console.log(`prison: ${isPrisonYears}, probation: ${isProbationYears}`);
             if (state.chosenCase.type === "parole") {
                 if (state.probationSelected !== null) {
                     console.log("test: ", state.probationSelected);
@@ -429,17 +430,33 @@ export default new Vuex.Store({
                         in prison to freed you without conditions, stay safe.`
                     } else {
                         const randomSentence = Math.floor(Math.random() * 3);
-                        if (randomSentence === 0) {
-                            state.finalComment = `You will have to submit to ${state.probationSelected} years of parole, 
+                        if(isProbationYears === true){
+                            if (randomSentence === 0) {
+                                state.finalComment = `You will have to submit to ${state.probationSelected} years of parole, 
                             each week you will have to meet your parole officer, missing a meeting 
                             will lead you back to jail`
-                        } else if (randomSentence === 1) {
-                            state.finalComment = `The court has decided to give you a chance, you will be under parole 
+                            } else if (randomSentence === 1) {
+                                state.finalComment = `The court has decided to give you a chance, you will be under parole 
                             for ${state.probationSelected} years, your future is in your hands.`
-                        } else {
-                            state.finalComment = `This court has decided to give you her clemency, 
+                            } else {
+                                state.finalComment = `This court has decided to give you her clemency, 
                             you will have to serve ${state.probationSelected} of parole, enjoy the freedom, 
                             don't forget the cost of your actions.`
+                            }
+                        }
+                        else {
+                            if (randomSentence === 0) {
+                                state.finalComment = `You will have to submit to ${state.probationSelected} months of parole, 
+                            each week you will have to meet your parole officer, missing a meeting 
+                            will lead you back to jail`
+                            } else if (randomSentence === 1) {
+                                state.finalComment = `The court has decided to give you a chance, you will be under parole 
+                            for ${state.probationSelected} months, your future is in your hands.`
+                            } else {
+                                state.finalComment = `This court has decided to give you her clemency, 
+                            you will have to serve ${state.probationSelected} months of parole, enjoy the freedom, 
+                            don't forget the cost of your actions.`
+                            }
                         }
                     }
                     console.time("test guilty post axios");
@@ -474,10 +491,21 @@ export default new Vuex.Store({
                     const randomSentence = Math.floor(Math.random() * 3);
                     if (state.prisonSelected === '0') {
                         state.prisonSelected = "no time"
-
+                    }
+                    if (state.prisonSelected > '0' && isPrisonYears) {
+                        state.prisonSelected = state.prisonSelected + " years"
+                    }
+                    if (state.prisonSelected > '0' && !isPrisonYears) {
+                        state.prisonSelected = state.prisonSelected + " months"
                     }
                     if (state.probationSelected === '0') {
                         state.probationSelected = "no time"
+                    }
+                    if (state.probationSelected > '0' && isProbationYears) {
+                        state.probationSelected = state.probationSelected + " years"
+                    }
+                    if (state.probationSelected > '0' && !isProbationYears) {
+                        state.probationSelected = state.probationSelected + " months"
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
@@ -485,18 +513,18 @@ export default new Vuex.Store({
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
                         then sentenced to 
-                        ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected}
+                        ${state.prisonSelected} in prison, 
+                        ${state.probationSelected}
                         of probation, and a ${state.fineSelected} fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected} 
+                        to ${state.prisonSelected} in prison, 
+                        ${state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
                     eventBus.$emit('openSuccessModal');
@@ -510,8 +538,20 @@ export default new Vuex.Store({
                         state.prisonSelected = "no time"
 
                     }
+                    if (state.prisonSelected > '0' && isPrisonYears) {
+                        state.prisonSelected = state.prisonSelected + " years"
+                    }
+                    if (state.prisonSelected > '0' && !isPrisonYears) {
+                        state.prisonSelected = state.prisonSelected + " months"
+                    }
                     if (state.probationSelected === '0' || state.probationSelected === null) {
                         state.probationSelected = "no time"
+                    }
+                    if (state.probationSelected > '0' && isProbationYears) {
+                        state.probationSelected = state.probationSelected + " years"
+                    }
+                    if (state.probationSelected > '0' && !isProbationYears) {
+                        state.probationSelected = state.probationSelected + " months"
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
@@ -519,18 +559,18 @@ export default new Vuex.Store({
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
                         then sentenced to 
-                        ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected}
+                        ${state.prisonSelected} in prison, 
+                        ${state.probationSelected}
                         of probation, and a ${state.fineSelected} fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
+                        to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to ${state.prisonSelected > 0 ? state.prisonSelected + ' years' : state.prisonSelected} in prison, 
-                        ${state.probationSelected  > 0 ? state.probationSelected + ' years' : state.probationSelected} 
+                        to ${state.prisonSelected} in prison, 
+                        ${state.probationSelected} 
                         of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
                     eventBus.$emit('openSuccessModal');

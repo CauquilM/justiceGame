@@ -26,24 +26,26 @@
             </div>
             <div v-if="customSentences" class="sentences-card-select-flex">
                 <b-input-group v-if="chosenCase.type !== 'parole'">
-                    <b-input-group-prepend @click="prependClicked('prison')">
+                    <b-input-group-prepend @click="changePrisonTime">
                         <span class="input-group-text">Prison</span>
                     </b-input-group-prepend>
-                    <b-form-input v-model="prisonSelected" :placeholder="prisonSelected"
-                                  :max="maxPrison" min="0" type="number"/>
+                    <b-form-input v-model="prisonSelected" :max="maxPrison"
+                                  :placeholder="prisonSelected" min="0" type="number"/>
                 </b-input-group>
                 <b-input-group>
-                    <b-input-group-prepend @click="prependClicked('probation')">
+                    <b-input-group-prepend @click="changeProbationTime">
                         <span class="input-group-text">Probation</span>
                     </b-input-group-prepend>
-                    <b-form-input v-model="probationSelected" :placeholder="probationSelected"
-                                  :max="maxProbation" min="0" type="number"/>
+                    <b-form-input v-model="probationSelected" :max="maxProbation"
+                                  :placeholder="probationSelected" min="0" type="number"/>
                 </b-input-group>
                 <b-input-group v-if="chosenCase.type !== 'parole'" prepend="Fines $">
                     <b-form-input v-model="fineSelected" :max="maxFine"
                                   min="0" type="number"/>
                 </b-input-group>
-                <b-button variant="danger" @click="doSentencing"><i class="ti ti-gavel"/> Sentence</b-button>
+                <b-button variant="danger" @click="doSentencing({isPrisonYears, isProbationYears})"><i
+                        class="ti ti-gavel"/> Sentence
+                </b-button>
             </div>
             <b-modal ref="sentencing-success-modal" centered hide-footer
                      hide-header-close
@@ -63,7 +65,7 @@
                           @click="$refs['sentencing-failed-modal'].hide()">My bad<i class="ti ti-brain"/></b-button>
             </b-modal>
         </b-card>
-        <PenalCodeModal :current-offense="chosenCase.charge" :offense-in-penal-code="chosenCase.penalCodeCharge" />
+        <PenalCodeModal :current-offense="chosenCase.charge" :offense-in-penal-code="chosenCase.penalCodeCharge"/>
     </div>
 </template>
 <script>
@@ -80,7 +82,7 @@ export default {
             maxPrison: 0,
             isPrisonYears: true,
             maxProbation: 0,
-            isProbationYears: false,
+            isProbationYears: true,
             maxFine: 0
         }
     },
@@ -127,27 +129,23 @@ export default {
         openPenalCodeModal() {
             eventBus.$emit('openPenalCodeModal');
         },
-        prependClicked(sentence){
-            console.log("clicked: ", this.isPrisonYears);
-           if(sentence === 'prison'){
-               if(this.isPrisonYears === true){
-                   this.prisonSelected = "months";
-                   this.isPrisonYears = false;
-               }
-               else{
-                   this.prisonSelected = "years";
-                   this.isPrisonYears = true;
-               }
-           } else{
-               if(this.isProbationYears === true){
-                   this.probationSelected = "months";
-                   this.isProbationYears = false;
-               }
-               else{
-                   this.probationSelected = "years";
-                   this.isProbationYears = true;
-               }
-           }
+        changePrisonTime() {
+            if (this.isPrisonYears === true) {
+                this.prisonSelected = "months";
+                this.isPrisonYears = false;
+            } else {
+                this.prisonSelected = "years";
+                this.isPrisonYears = true;
+            }
+        },
+        changeProbationTime() {
+            if (this.isProbationYears === true) {
+                this.probationSelected = "months";
+                this.isProbationYears = false;
+            } else {
+                this.probationSelected = "years";
+                this.isProbationYears = true;
+            }
         },
         updateSentences() {
             if (this.chosenCase.charge === 'murder') {
