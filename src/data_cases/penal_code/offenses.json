@@ -144,7 +144,7 @@
   },
   "traffic": {
     "prison_min": 1,
-    "prison_months_min": 11,
+    "prison_months_min": 1,
     "prison_max": 1,
     "prison_months_max": 12,
     "probation_min": 1,
