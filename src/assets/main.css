@@ -119,6 +119,20 @@
     background-color: red;
 }
 
+/*************************** Penal Code ***************************/
+.penal-code-view-container{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+
+.penal-code-view-div{
+    padding: 20px 0;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+
 /*************************** Penal Code Modal ***************************/
 
 .penal-code-modal-container{
