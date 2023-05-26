@@ -271,6 +271,9 @@ export default new Vuex.Store({
         SET_HISTORICAL_CASES(state, payload) {
             state.historicalCases = payload;
         },
+        SET_NEW_CHARGE(state, payload) {
+            state.chosenCase.charge = payload;
+        },
         SET_CASES(state, payload) {
             state.cases.push(payload)
         },
@@ -330,6 +333,10 @@ export default new Vuex.Store({
             }
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
+        },
+        modifyChargeInStore({commit}, newCharge) {
+            commit("SET_NEW_CHARGE", newCharge);
+            eventBus.$emit('closeModifyChargeModal');
         },
         getHistoricalCases({commit}) {
             axios.get("https://spotless-ant-beret.cyclic.app/history")
@@ -420,7 +427,7 @@ export default new Vuex.Store({
         openNotGuiltyModal() {
             eventBus.$emit('openNotGuiltyModal');
         },
-        doSentencing({state}, { isPrisonYears, isProbationYears }) {
+        doSentencing({state}, {isPrisonYears, isProbationYears}) {
             if (state.chosenCase.type === "parole") {
                 if (state.probationSelected !== null) {
                     console.log("test: ", state.probationSelected);
@@ -429,7 +436,7 @@ export default new Vuex.Store({
                         in prison to freed you without conditions, stay safe.`
                     } else {
                         const randomSentence = Math.floor(Math.random() * 3);
-                        if(isProbationYears === true){
+                        if (isProbationYears === true) {
                             if (randomSentence === 0) {
                                 state.finalComment = `You will have to submit to ${state.probationSelected} years of parole, 
                             each week you will have to meet your parole officer, missing a meeting 
@@ -442,8 +449,7 @@ export default new Vuex.Store({
                             you will have to serve ${state.probationSelected} of parole, enjoy the freedom, 
                             don't forget the cost of your actions.`
                             }
-                        }
-                        else {
+                        } else {
                             if (randomSentence === 0) {
                                 state.finalComment = `You will have to submit to ${state.probationSelected} months of parole, 
                             each week you will have to meet your parole officer, missing a meeting 
@@ -508,6 +514,9 @@ export default new Vuex.Store({
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
+                    }
+                    else {
+                        state.fineSelected = state.fineSelected + '$';
                     }
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
