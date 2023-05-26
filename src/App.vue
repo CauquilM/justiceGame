@@ -530,7 +530,7 @@ export default {
         caseGeneration() {
             // Define case types
             const caseTypes = ['Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
-                /*'Felony', 'Army', 'Immigration', 'Parole', 'Constitutional', "Historical"*/
+                /*'Felony', 'Army', 'Immigration', 'Constitutional', "Historical"*/
             ];
 
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
