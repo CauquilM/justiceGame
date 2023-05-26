@@ -89,7 +89,7 @@
 .sentences-card > .card {
     border-color: orange;
     margin-top: 20px;
-    min-width: 700px;
+    min-width: 800px;
 }
 
 .sentences-card > .card > .card-body > .sentences-card-select-flex {
@@ -117,6 +117,13 @@
 
 .sentences-switch > .custom-control-input:checked~.custom-control-label::before{
     background-color: red;
+}
+
+/*************************** Penal Code Modal ***************************/
+
+.penal-code-modal-container{
+    display: flex;
+    justify-content: space-around;
 }
 
 /*************************** Court Bar ***************************/
@@ -211,7 +218,7 @@
     text-decoration: underline chocolate;
 }
 
-/**************************** Witenesses ****************************/
+/**************************** Witnesses ****************************/
 
 /**************************** Prosecution ****************************/
 .prosecution-table > .card {
