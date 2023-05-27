@@ -439,7 +439,7 @@ export default {
                         this.caseObj["type"] = "traffic infraction";
                         this.caseObj["charge"] = "traffic";
                         this.caseObj["penalCodeCharge"] = "traffic";
-                        this.caseObj["description"] = descriptions.traffic[randomNum].description;
+                        this.caseObj["description"] = evidences.traffic[randomNum].description;
                         this.caseObj["evidences"] = [evidences.traffic[randomNum]];
                         this.caseObj["fineSentences"] = this.generateSentences(90, 1500, true, "traffic");
                         this.caseObj["criminalRecord"] = this.generateTrafficRecord();
