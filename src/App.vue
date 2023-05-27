@@ -415,6 +415,16 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.shoplifting.probation_min, offenses.shoplifting.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.shoplifting.fine_min, offenses.shoplifting.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    } else if (this.caseObj.feloniesCharge_first === "drinkingInPublic") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "drinking in public";
+                        this.caseObj["penalCodeCharge"] = "drinkingInPublic";
+                        this.caseObj["description"] = descriptions.drinkingInPublic[Math.floor(Math.random() * descriptions.drinkingInPublic.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.drinkingInPublic.slice(0, Math.floor(Math.random() * evidences.drinkingInPublic.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.drinkingInPublic.prison_min, offenses.drinkingInPublic.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.drinkingInPublic.probation_min, offenses.drinkingInPublic.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.drinkingInPublic.fine_min, offenses.drinkingInPublic.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {
