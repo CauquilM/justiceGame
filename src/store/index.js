@@ -522,25 +522,23 @@ export default new Vuex.Store({
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
-                    } else {
-                        state.fineSelected = state.fineSelected + '$';
                     }
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
                         then sentenced to 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
-                        of probation, and a ${state.fineSelected} fine.`
+                        of probation, and a ${state.fineSelected}$ fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine as punishment for his actions.`
+                        of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine for his crimes.`
+                        of probation, and a ${state.fineSelected}$ fine for his crimes.`
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",
@@ -598,17 +596,17 @@ export default new Vuex.Store({
                         then sentenced to 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
-                        of probation, and a ${state.fineSelected} fine.`
+                        of probation, and a ${state.fineSelected}$ fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine as punishment for his actions.`
+                        of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine for his crimes.`
+                        of probation, and a ${state.fineSelected}$ fine for his crimes.`
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",

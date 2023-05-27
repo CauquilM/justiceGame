@@ -52,7 +52,7 @@ export default {
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
                      'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
-                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
+                     'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence',
                      'Grand Theft Auto', 'Robbery w/violence', 'hostage situation', 'Terrorist threat',
                     */
                 ],
@@ -232,16 +232,16 @@ export default {
                     value: "0"
                 });
                 result.push({
-                    text: `${numbers[0]}$`,
-                    value: `${numbers[0]}$`
+                    text: `${numbers[0]}`,
+                    value: `${numbers[0]}`
                 });
                 result.push({
-                    text: `${numbers[1]}$`,
-                    value: `${numbers[1]}$`
+                    text: `${numbers[1]}`,
+                    value: `${numbers[1]}`
                 });
                 result.push({
-                    text: `${numbers[2]}$`,
-                    value: `${numbers[2]}$`
+                    text: `${numbers[2]}`,
+                    value: `${numbers[2]}`
                 });
             }
 
