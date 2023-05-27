@@ -4421,6 +4421,7 @@
       "defenseSentence": "My client possessed a valid international driver's license that authorized them to drive in the jurisdiction where the incident occurred."
     }
   ],
+  "evadingArrest": [],
   "traffic": [
     {
       "id": 0,

@@ -77,8 +77,8 @@ export default {
                     'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
-                    'drivingNoLicense', 'hitAndRun',
-                    /*'driving Wrong Way', 'evading Arrest', 'leaving the Scene of Accident',
+                    'drivingNoLicense', 'hitAndRun', /*'evadingArrest',*/
+                    /*'driving Wrong Way',  'leaving the Scene of Accident',
                     failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
@@ -588,9 +588,9 @@ export default {
 id: 0,
 description: "The antique store owner discovered a valuable artifact missing from their display case."
 },
-Generate 30 descriptions for an assault case like in the examples, put them in objects not a function, start from ID (11)-->
+Generate 30 descriptions for an assault case like in the examples, put them in objects not a function, start from ID (0)-->
 
-<!--do 30 more continuing from ID (14)-->
+<!--do 30 more continuing from ID (0)-->
 
 <!--
 {
@@ -604,4 +604,4 @@ add a prosecution sentence and a defense sentence
 put them in objects not a function, start from ID (0)
 -->
 
-<!--do 30 more continuing from ID (14)-->
+<!--do 30 more continuing from ID (0)-->
