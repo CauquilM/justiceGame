@@ -59,9 +59,10 @@ export default {
                 /*'criminalCharge_second': [
                 ],*/
                 'feloniesCharge_first': [
-                    'trespassing', 'impersonatingPolice', 'pickpocketing', 'fake911Call', 'vandalism'
+                    'trespassing', 'impersonatingPolice', 'pickpocketing', 'fake911Call',
+                    'vandalism', 'shoplifting',
                     /*'vandalism', 'bribery', 'suspicious Activity',
-                    'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
+                     'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
                      'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle'*/
 
@@ -127,8 +128,7 @@ export default {
                 numbers.push(Math.floor(Math.random() * (max - min + 1)) + min);
                 numbers.push(Math.floor(Math.random() * (max - numbers[0] - 2 + 1)) + min);
                 numbers.push(Math.floor(Math.random() * (max - numbers[1] - 3 + 1)) + numbers[1] + 3);
-            }
-            else {
+            } else {
                 numbers.push(Math.floor(Math.random() * max));
                 numbers.push(Math.floor(Math.random() * max));
                 numbers.push(Math.floor(Math.random() * max));
@@ -385,8 +385,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.pickpocketing.probation_min, offenses.pickpocketing.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.pickpocketing.fine_min, offenses.pickpocketing.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    }
-                    else if (this.caseObj.feloniesCharge_first === "fake911Call") {
+                    } else if (this.caseObj.feloniesCharge_first === "fake911Call") {
                         this.caseObj["type"] = "felony";
                         this.caseObj["charge"] = "fake 911 call";
                         this.caseObj["penalCodeCharge"] = "fake911Call";
@@ -396,8 +395,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.fake911Call.probation_min, offenses.fake911Call.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.fake911Call.fine_min, offenses.fake911Call.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    }
-                    else if (this.caseObj.feloniesCharge_first === "vandalism") {
+                    } else if (this.caseObj.feloniesCharge_first === "vandalism") {
                         this.caseObj["type"] = "felony";
                         this.caseObj["charge"] = "vandalism";
                         this.caseObj["penalCodeCharge"] = "vandalism";
