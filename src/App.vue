@@ -61,14 +61,14 @@ export default {
                 'feloniesCharge_first': [
                     'trespassing', 'impersonatingPolice', 'pickpocketing', 'fake911Call',
                     'vandalism', 'shoplifting', 'drinkingInPublic'
-                    /*'vandalism', 'bribery', 'suspicious Activity',
+                    /*'bribery', 'suspicious Activity',
                      'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
-                    , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
+                    , 'Possession of Burglary Tools', 'Possession of a Deadly Weapon',
                      'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle'*/
 
                 ],
                 /*'felonies_second': [
-                    'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
+                    Disturbing the Peace, Failure to Present Concealed Carry Permit,
                     'Hate Crime', 'Indecent Exposure',
                     'Participating in Gang', 'Brandishing of Firearm', 'Inciting Riot',
 
@@ -100,7 +100,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "AXEs");
+        console.log("VERCEL" + ' ' + "Pavel");
         console.time("Test case generation");
         this.caseGeneration();
         console.timeEnd("Test case generation");
