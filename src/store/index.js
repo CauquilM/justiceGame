@@ -286,6 +286,10 @@ export default new Vuex.Store({
         SET_DEFENSE_COMMENT(state, payload) {
             state.defenseComment = payload;
         },
+        SET_EVIDENCE_TO_SUPPRESS(state, payload) {
+            state.chosenCase.evidences = state.chosenCase.evidences.splice(payload, 1);
+            console.log("array: ", state.chosenCase.evidences.splice(payload, 1));
+        },
         SET_PROSECUTION_SENTENCES(state, payload) {
             state.prosecutionSentences.push(payload);
         },
@@ -337,6 +341,10 @@ export default new Vuex.Store({
         modifyChargeInStore({commit}, newCharge) {
             commit("SET_NEW_CHARGE", newCharge);
             eventBus.$emit('closeModifyChargeModal');
+        },
+        deleteEvidence({commit}, index) {
+            console.log("suppress");
+            commit("SET_EVIDENCE_TO_SUPPRESS", index);
         },
         getHistoricalCases({commit}) {
             axios.get("https://spotless-ant-beret.cyclic.app/history")
@@ -514,8 +522,7 @@ export default new Vuex.Store({
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
-                    }
-                    else {
+                    } else {
                         state.fineSelected = state.fineSelected + '$';
                     }
                     if (randomSentence === 0) {

@@ -232,6 +232,10 @@
     text-decoration: underline chocolate;
 }
 
+.evidence-proof > div > p{
+    margin: 25px 0 10px 0;
+}
+
 .evidences-suppress-button{
     margin-left: 50px;
 }
