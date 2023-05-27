@@ -1519,6 +1519,200 @@
       "description": "An impersonator officer posed as an Internal Affairs investigator to intimidate and silence whistleblowers."
     }
   ],
+  "pickpocketing": [
+    {
+      "id": 0,
+      "description": "A commuter's phone disappeared from their pocket during a rush hour commute."
+    },
+    {
+      "id": 1,
+      "description": "A tourist realized their wallet was gone after a crowded bus ride."
+    },
+    {
+      "id": 2,
+      "description": "A businessman felt a tug on his coat and discovered his phone was stolen."
+    },
+    {
+      "id": 3,
+      "description": "A commuter noticed their bag was unzipped, and their laptop was no longer inside."
+    },
+    {
+      "id": 4,
+      "description": "A woman reached into her purse to find that her valuable necklace had been snatched."
+    },
+    {
+      "id": 5,
+      "description": "A man realized his watch was missing after brushing past a suspicious stranger."
+    },
+    {
+      "id": 6,
+      "description": "A student noticed their backpack felt lighter, and their wallet had been taken."
+    },
+    {
+      "id": 7,
+      "description": "A couple discovered their camera was gone after a distraction by street performers."
+    },
+    {
+      "id": 8,
+      "description": "A jogger realized their keychain was stolen while they stopped to tie their shoe."
+    },
+    {
+      "id": 9,
+      "description": "A tourist felt a hand in their pocket and found their passport missing."
+    },
+    {
+      "id": 10,
+      "description": "A commuter's wallet vanished from their pocket during a crowded train ride."
+    },
+    {
+      "id": 11,
+      "description": "A shopper reached into their shopping bag and noticed their wallet had been swiped."
+    },
+    {
+      "id": 12,
+      "description": "A musician discovered their instrument was gone after a momentary distraction."
+    },
+    {
+      "id": 13,
+      "description": "A woman's purse was cut open, and her credit cards and cash were stolen."
+    },
+    {
+      "id": 14,
+      "description": "A man realized his tablet had been pickpocketed while he was engrossed in a conversation."
+    },
+    {
+      "id": 15,
+      "description": "A traveler found their money missing from their backpack after leaving it unattended briefly."
+    },
+    {
+      "id": 16,
+      "description": "A festivalgoer felt a pickpocket's touch and discovered their phone had been taken."
+    },
+    {
+      "id": 17,
+      "description": "A tourist's camera disappeared from their bag after being jostled in a crowded market."
+    },
+    {
+      "id": 18,
+      "description": "A commuter realized their wallet was missing after a sudden bump on the subway."
+    },
+    {
+      "id": 19,
+      "description": "A woman felt her purse being unzipped and saw her keys vanish in a blink of an eye."
+    },
+    {
+      "id": 20,
+      "description": "A man noticed his wallet had been stolen after brushing past someone on the street."
+    },
+    {
+      "id": 21,
+      "description": "A student's laptop went missing from their bag during a library visit."
+    },
+    {
+      "id": 22,
+      "description": "A couple discovered their expensive sunglasses were gone after being distracted by a commotion."
+    },
+    {
+      "id": 23,
+      "description": "A jogger realized their headphones had been stolen while resting on a park bench."
+    },
+    {
+      "id": 24,
+      "description": "A tourist felt a slight pull on their backpack and discovered their camera missing."
+    },
+    {
+      "id": 25,
+      "description": "A street performer's hat was emptied of all the day's earnings while they entertained the crowd."
+    },
+    {
+      "id": 26,
+      "description": "A tourist's backpack was opened surreptitiously, and their travel documents were stolen."
+    },
+    {
+      "id": 27,
+      "description": "A commuter's wallet vanished from their bag while they were distracted by a loud argument."
+    },
+    {
+      "id": 28,
+      "description": "A woman realized her bracelet had been snatched while browsing a busy marketplace."
+    },
+    {
+      "id": 29,
+      "description": "A man's pocket was discreetly picked, and his car keys were stolen without him noticing."
+    },
+    {
+      "id": 30,
+      "description": "A student's laptop disappeared from their study desk during a brief moment of inattention."
+    },
+    {
+      "id": 31,
+      "description": "A couple discovered their cash was missing from their wallet after being bumped by a stranger."
+    },
+    {
+      "id": 32,
+      "description": "A jogger's phone was taken from their armband while they paused to tie their shoelaces."
+    },
+    {
+      "id": 33,
+      "description": "A tourist felt a gentle tug on their shoulder bag and found their camera had vanished."
+    },
+    {
+      "id": 34,
+      "description": "A commuter's wallet was skillfully lifted from their back pocket during rush hour."
+    },
+    {
+      "id": 35,
+      "description": "A shopper's purse was cut open, and their credit cards and ID were stolen without notice."
+    },
+    {
+      "id": 36,
+      "description": "A man's tablet disappeared from his briefcase while he was distracted by a phone call."
+    },
+    {
+      "id": 37,
+      "description": "A traveler realized their money had been stolen from their backpack during a train journey."
+    },
+    {
+      "id": 38,
+      "description": "A festivalgoer's phone was pickpocketed while they were engrossed in a live performance."
+    },
+    {
+      "id": 39,
+      "description": "A tourist's wallet vanished from their bag after a sudden bump in a crowded tourist attraction."
+    },
+    {
+      "id": 40,
+      "description": "A woman's purse was opened silently, and her keys were swiped without her noticing."
+    },
+    {
+      "id": 41,
+      "description": "A man felt a hand in his pocket and discovered his wallet had been stolen during a busy parade."
+    },
+    {
+      "id": 42,
+      "description": "A student's backpack was rummaged through, and their valuable textbooks were taken."
+    },
+    {
+      "id": 43,
+      "description": "A couple discovered their expensive wristwatches were gone after being approached by a persistent beggar."
+    },
+    {
+      "id": 44,
+      "description": "A jogger realized their headphones had been snatched while waiting for a traffic light to change."
+    },
+    {
+      "id": 45,
+      "description": "A tourist's camera disappeared from their backpack after they briefly left it unattended."
+    },
+    {
+      "id": 46,
+      "description": "A commuter's phone was deftly removed from their purse during a crowded bus ride."
+    },
+    {
+      "id": 47,
+      "description": "A shopper noticed their wallet had been stolen after brushing past a suspicious-looking person."
+    }
+  ],
   "dui": [
     {
       "id": 0,

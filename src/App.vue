@@ -59,7 +59,7 @@ export default {
                 /*'criminalCharge_second': [
                 ],*/
                 'feloniesCharge_first': [
-                    'trespassing', 'impersonatingPolice'
+                    'trespassing', 'impersonatingPolice', 'pickpocketing',
                     /*'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
@@ -68,7 +68,7 @@ export default {
                 ],
                 /*'felonies_second': [
                     'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
-                    'Hate Crime', 'Impersonating a Peace/Police Officer', 'Indecent Exposure',
+                    'Hate Crime', 'Indecent Exposure',
                     'Participating in Gang', 'Pickpocketing', 'Brandishing of Firearm', 'Inciting Riot',
                     'Terrorist threat',
 
@@ -375,6 +375,16 @@ export default {
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.impersonatingPolice.prison_min, offenses.impersonatingPolice.prison_max, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.impersonatingPolice.probation_min, offenses.impersonatingPolice.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.impersonatingPolice.fine_min, offenses.impersonatingPolice.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    } else if (this.caseObj.feloniesCharge_first === "pickpocketing") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "pickpocketing";
+                        this.caseObj["penalCodeCharge"] = "pickpocketing";
+                        this.caseObj["description"] = descriptions.pickpocketing[Math.floor(Math.random() * descriptions.pickpocketing.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.pickpocketing.slice(0, Math.floor(Math.random() * evidences.pickpocketing.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.pickpocketing.prison_min, offenses.pickpocketing.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.pickpocketing.probation_min, offenses.pickpocketing.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.pickpocketing.fine_min, offenses.pickpocketing.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
                     /******* Road *******/
