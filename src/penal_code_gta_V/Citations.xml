@@ -1,0 +1,205 @@
+<CompuLiteCitations>
+	<CitationGroup name="Alcohol">
+		<Citation name="(UTC) Open Container: Motor Vehicle (FSS 316.1936)" fine="255"/>
+		<Citation name="(C) Open Container: Public (FSS 316.1936)" fine="166"/>
+		<Citation name="(A) Possession Persons Under 21 (FSS 562.111)" fine="166"/>
+		<Citation name="(M) Disorderly Intoxication (FSS 856.011)" fine="166"/>
+		<Citation name="(A) Contributing to Delinquancy of a Minor (FSS 827.04)" fine="550"/>
+	</CitationGroup>
+	<CitationGroup name="Public / Arrestable">
+		<Citation name="(A) Possession Marijuana Less 21g (FSS 893.13)" fine="550"/>
+		<Citation name="(A) Loitering (FSS 856.01)" fine="50"/>
+		<Citation name="(A) Trespassing (FSS 810.09)" fine="125"/>
+		<Citation name="(A) Disorderly Conduct (FSS 877.03)" fine="155"/>
+		<Citation name="(A) Failure to Disperse (FSS 870.04)" fine="165"/>
+		<Citation name="(A) Criminal Mischief (FSS 806.13)" fine="200"/>
+	</CitationGroup>
+	<CitationGroup name="Misc. Public">
+		<Citation name="(C) Littering (FSS 403.413)" fine="250"/>
+		<Citation name="(C) Illegal Dumping (FSS 403.413(d)" fine="550"/>
+		<Citation name="(UTC) Jaywalking (FSS 316.130)" fine="25"/>
+		<Citation name="(C) Smoking Within 1000ft of a School (FSS 386.212)" fine="50"/>
+		<Citation name="(A) Possession of Fake ID/Drivers License (FSS 322.212)" fine="550"/>
+		<Citation name="(C) Possession of Expired ID/Drivers License (FSS 322.03)" fine="116"/>
+		<Citation name="(UTC) Pedestrian Prohibited on Roadway/Impeding Traffic (FSS 316.2045)" fine="65"/>
+	</CitationGroup>
+	<CitationGroup name="Pets/Wildlife">
+		<Citation name="(C) Dog Must be Leashed in Public (FSS 828.27)" fine="55"/>
+		<Citation name="(C) Fishing w/Out License (FSS 379.354)" fine="64"/>
+		<Citation name="(C) Hunting w/Out License (FSS 379.354(1)(15)" fine="156"/>
+	</CitationGroup>
+	<CitationGroup name="Speeding">
+		<Citation name="(UTC) Too Fast for Conditions (FSS 316.183)" fine="215"/>
+		<Citation name="(UTC) Impeding Traffic (FSS 316.2045)" fine="75"/>
+		<Citation name="(UTC) Unlawful Speed 6-9 Over (FSS 316.183)" fine="144"/>
+		<Citation name="(UTC) Unlawful Speed 10-14 Over (FSS 316.183)" fine="216"/>
+		<Citation name="(UTC) Unlawful Speed 15-19 Over (FSS 316.183)" fine="269"/>
+		<Citation name="(UTC) Unlawful Speed 20-29 Over (FSS 316.183)" fine="294"/>
+		<Citation name="(UTC) Unlawful Speed 30+ Over (FSS 316.183)" fine="340"/>
+		<Citation name="(UTC) Unlawful Speed; School Zone (FSS 316.1895)" fine="480"/>
+		<Citation name="(UTC) Unlawful Speed; Posted/Workers Present (FSS 316.183(6)" fine="480"/>		
+		<Citation name="(A) Unlawful Speed 30MPH and Above (FSS 316.183) " fine="369"/>
+		
+
+
+	</CitationGroup>
+	<CitationGroup name="Passing/Turning">
+		<Citation name="(UTC) Improper Lane Change or Course (FSS 316.089)" fine="116"/>	
+		<Citation name="(UTC) Improper Passing (FSS 316.083(1)" fine="116"/>
+		<Citation name="(UTC) Passing in a No Passing Zone (FSS 316.0875)" fine="116"/>
+		<Citation name="(UTC) Illegal U-Turn (FSS 316.1515)" fine="116"/>
+		<Citation name="(UTC) Failure to Maintain Lane (FSS 316.089)" fine="116"/>
+		<Citation name="(UTC) Crossing Over a Center Divider, Median, Lane (FSS 316.089)" fine="116"/>
+		<Citation name="(UTC) Left of Center (FSS 316.089)" fine="116"/>
+	</CitationGroup>
+	<CitationGroup name="Intersections/Yeilding">
+		<Citation name="(UTC) Violation of Move Over Law (FSS 316.126)" fine="255"/>
+		<Citation name="(UTC) Failure to stop/Running a Red Light (FSS 316.075(c)(1)" fine="166"/>
+		<Citation name="(UTC) Failure to Yield to a Traffic Control Device (FSS 316.074)" fine="116"/>	
+		<Citation name="(UTC) Failure to Yield to Emergency Vehicle (FSS 316.126(1)(a)" fine="215"/>
+		<Citation name="(UTC) Failure to Yield to Pedestrian in Cross Walk (FSS 316.130(7)" fine="155"/>
+		<Citation name="(UTC) Failure to Yield at Intersection (FSS 316.123)" fine="116"/>
+		<Citation name="(UTC) Failure to Yield (FSS 316.121)" fine="116"/>
+		<Citation name="(UTC) Violation of Right of Way (FSS 316.123)" fine="116"/>
+	</CitationGroup>
+	<CitationGroup name="Operation">
+		<Citation name="(UTC) Following too Closely: Tailgating (FSS 316.0895)" fine="116"/>
+		<Citation name="(UTC) Careless Driving (FSS 316.1925)" fine="155"/>
+		<Citation name="(UTC) Driving on Sidewalk, Pedestrian/Bicycle Path (FSS 316.212(8)" fine="255"/>
+		<Citation name="(UTC) Obstruction to Drivers View (FSS 316.2004)" fine="116"/>
+		<Citation name="(UTC) Unlawful for Persons to Ride on Exterior of Vehicle (FSS 316.2015)" fine="116"/>
+		<Citation name="(UTC) Failure to Secure Load (FSS 316.520)" fine="116"/>
+		<Citation name="(UTC) Distracted Driving (FSS 316.306)" fine="116"/>
+		<Citation name="(UTC) Stopping on Rail Crossing (FSS 316.159)" fine="116"/>
+	</CitationGroup>
+	<CitationGroup name="Operation (Notice To Appear)">
+		<Citation name="(A) Driving Wrong Way (FSS 316.085)" fine="255"/>	
+		<Citation name="(A) Reckless Driving (FSS 316.192)" fine="255"/>
+		<Citation name="(A) Leaving the Scene of an Accident (FSS 316.061)" fine="1000"/>
+		<Citation name="(A) Driving While License Suspended (FSS 322.34)" fine="255"/>
+		<Citation name="(A) Driving Without License (FSS 322.03)" fine="155"/>
+		<Citation name="(A) Driving With License Expired 6mo + (FSS 322.03(5)" fine="255"/>
+	</CitationGroup>
+	<CitationGroup name="Motorcycle,ATV,Offroad">
+		<Citation name="(UTC) DOT Approved Helmet Required(Operator) (FSS 316.211(1)" fine="116"/>	
+		<Citation name="(UTC) DOT Approved Helmet Required(Passenger) (FSS 316.211(1)" fine="116"/>
+		<Citation name="(UTC) DOT Approved Safety Glasses/Sheild Required (FSS 316.211(2)" fine="116"/>
+		<Citation name="(UTC) Motorcycle License Endorsement (FSS 322.03(4)" fine="500"/>
+		<Citation name="(UTC) Motorcycle Lane Splitting (FSS 316.209(3)" fine="155"/>
+		<Citation name="(UTC) Motorcycle Riding No More than 2 Abreast (FSS 316.209)" fine="116"/>
+		<Citation name="(UTC) Motorcycle Headlights to be On when in Operation (FSS 316.209(1)" fine="116"/>
+		<Citation name="(UTC) Offroad Vehicle Must not Drive on Roadway or Shoulder (FSS 316.2123)" fine="116"/>
+		<Citation name="(UTC) ATV Must not Operate on Roadway or Shoulder (FSS 316.2123)" fine="116"/>
+	</CitationGroup>
+	<CitationGroup name="Accident">
+		<Citation name="(UTC) Failure to Maintain Control (FSS 316.089)" fine="310"/>
+		<Citation name="(UTC) Driver to Exercise Due Care to Avoid Accident (FSS 316.089)" fine="310"/>	
+	</CitationGroup>
+	<CitationGroup name="Non-Moving">
+		<Citation name="(UTC) Obstruction of Public Street,Highway or Road (FSS 316.2045)" fine="155"/>
+		<Citation name="(UTC) Blocking Right of Way (FSS 316.2045)" fine="155"/>
+		<Citation name="(UTC) Stopping,Standing or Parking Prohibited (FSS 316.1945(1)(a)" fine="90"/>	
+	</CitationGroup>
+	<CitationGroup name="Equipment">
+		<Citation name="(UTC) Unsafe Equipment (FSS 316.610)" fine="155"/>
+		<Citation name="(UTC) Safety Belt Violation (FSS 316.614)" fine="116"/>
+		<Citation name="(UTC) Windshield Damaged/Obstructed (FSS 316.610)" fine="116"/>if
+		<Citation name="(UTC) Illegal Window Tint (FSS 316.2953)" fine="116"/>
+		<Citation name="(UTC) Illuminate Lights as Required (FSS 316.217)" fine="116"/>        
+		<Citation name="(UTC) Failure to Dim to Oncoming Traffic (FSS 316.238)" fine="116"/>
+		<Citation name="(UTC) Prohibited Lighting (FSS 316.2397)" fine="116"/>		
+	</CitationGroup>	
+	<CitationGroup name="Documents">
+		<Citation name="(UTC) Failure To Insure Vehicle (FSS 316.646)" fine="510"/>
+		<Citation name="(UTC) Expired Insurance (FSS 316.646)" fine="255"/>
+		<Citation name="(UTC) Failure to Register Vehicle (FSS 320.02)" fine="155"/>
+		<Citation name="(UTC) Expired Vehicle Registration (FSS 320.02)" fine="155"/>
+		<Citation name="(UTC) Expired Registration 30days+ (FSS 320.02)" fine="255"/>
+		<Citation name="(UTC) Failure to Display License Plate (FSS 316.605)" fine="116"/>
+		<Citation name="(UTC) License Not Carried/Exhibited (FSS 322.15)" fine="116"/>		
+		<Citation name="(UTC) Expired Drivers License (FSS 322.065)" fine="116"/>
+		<Citation name="(UTC) Expired Drivers License; 30 Days or More (FSS 322.03)" fine="255"/>
+	</CitationGroup>
+	<CitationGroup name="Parking/TOW">
+		<Citation name="(TOW) Vehicle Impound: Criminal Charges Attached" fine="350"/>
+		<Citation name="(TOW) Vehicle Impound: Parking Violation Attached" fine="150"/>
+		<Citation name="(TOW) Vehicle Impound: Other(See Officer Notes)" fine="150"/>
+		<Citation name="(UTC/TOW) Blocking Access To Disabled Spot: TOWED (FSS 316.1955)" fine="650"/>
+		<Citation name="(UTC/TOW) Parking in front of Fire Hydrants; TOWED (FSS 316.1945)" fine="500"/>
+		<Citation name="(UTC/TOW) Parking Blocking a Driveway: TOWED (FSS 316.1945)" fine="266"/>
+		<Citation name="(UTC/TOW) Parking Posted Fire Lane: TOWED (FSS 316.1945)" fine="650"/>
+		<Citation name="(UTC) Parking in front of Fire Hydrant (FSS 316.1945)" fine="500"/>
+		<Citation name="(UTC) Blocking Access To Disabled Spot (FSS 316.1955)" fine="500"/>
+		<Citation name="(UTC) Parking Blocking a Driveway (FSS 316.1945)" fine="116"/>
+		<Citation name="(UTC) Double-Parking (FSS 316.1945)" fine="116"/>
+		<Citation name="(UTC) Parked in Opposite Direction of Traffic (FSS 316.1945)" fine="116"/>
+		<Citation name="(UTC) Parked on Designated Disabled Space (FSS 316.1945)" fine="500"/>
+		<Citation name="(UTC) Parking in Loading Zone (FSS 316.1945)" fine="116"/>
+		<Citation name="(UTC) Parking in No-Parking Zone (FSS 316.1945)" fine="116"/>
+		<Citation name="(UTC) Parking Posted Fire Lane (FSS 316.1945)" fine="500"/>
+	</CitationGroup>
+	<CitationGroup name="Written Warning (Traffic)">
+		<Citation name="(W) Unlawful Speed (FSS 316.183)"/>
+		<Citation name="(W) Failure to Stop at Stop Sign (FSS 316.074)"/>
+		<Citation name="(W) Failure to Stop for Traffic Signal (FSS 316.074)"/>
+		<Citation name="(W) Failure to Obey Traffic Control Device (FSS 316.074)"/>
+		<Citation name="(W) Improper Lane Change or Course (FSS 316.085)"/>	
+		<Citation name="(W) Improper Passing (FSS 316.085)"/>
+		<Citation name="(W) Improper Turn (FSS 316.085)"/>
+		<Citation name="(W) Failure to Signal (FSS 316.085)"/>
+		<Citation name="(W) Illegal U-Turn (FSS 316.085)"/>
+		<Citation name="(W) Failure to Maintain Lane (FSS 316.089)"/>
+		<Citation name="(W) Crossing Over a Center Divider, Median, Lane (FSS 316.085)"/>
+		<Citation name="(W) Failure to Yield at Intersection (FSS 316.085)"/>
+		<Citation name="(W) Failure to Yield (FSS 316.085)"/>
+		<Citation name="(W) Obstruction to Drivers View (FSS 316.2004)"/>
+		<Citation name="(W) Unlawful for Persons to Ride on Exterior of Vehicle (FSS 316.2015)"/>
+		<Citation name="(W) Failure to Tarp/Cover Load/Debri (FSS 316.520)"/>
+		<Citation name="(W) Driver must Use Hands-Free Device (FSS 316.305)"/>
+		<Citation name="(W) Following too Closely: Tailgating (FSS 316.0895)"/>
+		<Citation name="(W) Crossing Double Yellow (FSS 316.085)"/>
+	</CitationGroup>
+	<CitationGroup name="Written Warning (Equipment)">
+		<Citation name="(W) Prohibited Lighting Use on Public Road (FSS 316.2397)"/>
+		<Citation name="(W) Unsafe Equipment (FSS 316.610)"/>
+		<Citation name="(W) Seat Belt Violation (FSS 316.614)"/>
+		<Citation name="(W) Windshield Damaged Drivers View (FSS 316.2952)"/>
+		<Citation name="(W) Illegal Window Tint (FSS 316.2953)"/>
+		<Citation name="(W) Illuminate Lights as Required (FSS 316.217)"/>        
+		<Citation name="(W) Failure to Dim to Oncoming Traffic (FSS 316.238(a)"/>
+	</CitationGroup>
+	<CitationGroup name="Written Warning (Documents)">
+		<Citation name="(W) Expired Insurance (FSS 316.646)"/>
+		<Citation name="(W) Expired Vehicle Registration (FSS 320.02)"/>
+		<Citation name="(W) License Not Carried/Exibited (FSS 322.15)"/>
+		<Citation name="(W) Expired Drivers License (FSS 322.065)"/>
+		<Citation name="(W) Failure to Display License Plate (FSS 316.605)"/>
+	</CitationGroup>
+	<CitationGroup name="Written Warning (M/Bikes/Offroad)">
+		<Citation name="(W) DOT Approved Helmet Required (FSS 316.211(1)"/>	
+		<Citation name="(W) DOT Approved Eye Protection Required (FSS 316.211)"/>
+	</CitationGroup>
+	<CitationGroup name="Written Warning (Parking)">
+		<Citation name="(W) Blocking Right of Way (FSS 316.1945)"/>
+		<Citation name="(W) Stopping,Standing or Parking Prohibited (FSS 316.1945)"/>
+		<Citation name="(W) Parked in Opposite Direction of Traffic (FSS 316.1945)"/>
+		<Citation name="(W) Parking in loading Zone (FSS 316.1945)"/>
+		<Citation name="(W) Parking Blocking a Driveway (FSS 316.1945)"/>
+		<Citation name="(W) Parking Near Sidewalk Access Ramp (FSS 316.1945)"/>
+		<Citation name="(W) Parking on No-Parking Zone (FSS 316.1945)"/>
+		<Citation name="(W) Parking on or Blocking Crosswalk (FSS 316.1945)"/>
+		<Citation name="(W) Parking on Sidewalk (FSS 316.1945)"/>
+		<Citation name="(W) Parking in an Intersection (FSS 316.1945)"/>
+		<Citation name="(W) Parking on Right of Way (FSS 316.1945)"/>
+	</CitationGroup>
+	<CitationGroup name="Written Warning (Public/Misc.)">
+		<Citation name="(W) Open Container (FSS 316.1936)"/>
+		<Citation name="(W) Disorderly Conduct (FSS 877.03)"/>
+		<Citation name="(W) Littering (FSS 403.413)"/>
+	 	<Citation name="(A) Loitering (FSS 856.021)"/>
+		<Citation name="(W) Official Trespassing Notice (FSS 810.08)"/>
+		<Citation name="(W) Violation of Local Animal Leash Ordinance"/>
+		<Citation name="(W) Jaywalking (FSS 316.130)"/>
+		<Citation name="(W) Pedestrians Prohibited on Freeway (FSS 316.130)"/>
+	</CitationGroup>
+</CompuLiteCitations>

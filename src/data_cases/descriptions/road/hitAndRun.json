@@ -1,0 +1,198 @@
+[
+  {
+    "id": 0,
+    "description": "Driver stopped for speeding found to be driving without a license"
+  },
+  {
+    "id": 1,
+    "description": "A pedestrian was hit by a car and the driver fled the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 2,
+    "description": "A car crashed into a parked vehicle and the driver left the scene without reporting the accident or leaving a note"
+  },
+  {
+    "id": 3,
+    "description": "A motorcyclist hit a bicyclist and fled the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 4,
+    "description": "A driver hit a deer on the road and drove away without stopping to check on the animal or report the accident"
+  },
+  {
+    "id": 5,
+    "description": "A hit and run driver caused a multi-car accident and left the scene without stopping to exchange information or render aid to injured parties"
+  },
+  {
+    "id": 6,
+    "description": "A driver crashed into a building and fled the scene without reporting the accident or checking for damages to the structure"
+  },
+  {
+    "id": 7,
+    "description": "A driver hit a parked car and left the scene without reporting the accident or leaving a note with contact information"
+  },
+  {
+    "id": 8,
+    "description": "A hit and run driver struck a pedestrian in a crosswalk and fled the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 9,
+    "description": "A driver hit a bicyclist on the road and left the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 10,
+    "description": "A hit and run driver collided with another vehicle and fled the scene without stopping to exchange information or render aid to injured parties"
+  },
+  {
+    "id": 11,
+    "description": "A driver hit a mailbox and drove away without stopping to check for damages or leaving a note with contact information"
+  },
+  {
+    "id": 12,
+    "description": "A hit and run driver collided with a motorcycle and fled the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 13,
+    "description": "A driver hit a pedestrian and fled the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 14,
+    "description": "A hit and run driver struck a parked vehicle and left the scene without reporting the accident or leaving a note with contact information"
+  },
+  {
+    "id": 15,
+    "description": "A driver collided with a tree and fled the scene without reporting the accident or checking for damages to the tree"
+  },
+  {
+    "id": 16,
+    "description": "A hit and run driver collided with a bicyclist and left the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 17,
+    "description": "A driver hit a pedestrian in a crosswalk and drove away without stopping to render aid or exchange information"
+  },
+  {
+    "id": 18,
+    "description": "A hit and run driver collided with a parked car and left the scene without reporting the accident or leaving a note with contact information"
+  },
+  {
+    "id": 19,
+    "description": "A driver hit a fire hydrant and fled the scene without checking for damages or reporting the accident"
+  },
+  {
+    "id": 20,
+    "description": "A hit and run driver collided with a motorcycle and left the scene without stopping to render aid or exchange information"
+  },
+  {
+    "id": 21,
+    "description": "A pedestrian was struck by a car that fled the scene, leaving the victim with a broken leg and severe head trauma."
+  },
+  {
+    "id": 22,
+    "description": "A hit and run driver crashed into a parked car and caused significant damage before fleeing the scene without leaving any identifying information."
+  },
+  {
+    "id": 23,
+    "description": "A cyclist was hit by a car that fled the scene, leaving the victim with multiple broken bones and other serious injuries."
+  },
+  {
+    "id": 24,
+    "description": "A hit and run driver collided with a motorcycle and caused the rider to be thrown from their bike, resulting in life-threatening injuries."
+  },
+  {
+    "id": 25,
+    "description": "A pedestrian was struck by a vehicle that then fled the scene, leaving the victim with a broken arm and leg."
+  },
+  {
+    "id": 26,
+    "description": "A hit and run driver caused a multi-car accident and then fled the scene before police arrived, leaving several people injured."
+  },
+  {
+    "id": 27,
+    "description": "A driver fled the scene after striking a pedestrian who was crossing the street in a crosswalk, leaving the victim with a broken collarbone and other injuries."
+  },
+  {
+    "id": 28,
+    "description": "A hit and run driver crashed into a utility pole, causing significant damage and leaving the scene without reporting the incident."
+  },
+  {
+    "id": 29,
+    "description": "A motorist struck a bicyclist from behind and then fled the scene, leaving the victim with a concussion and other injuries."
+  },
+  {
+    "id": 30,
+    "description": "A hit and run driver collided with another car, causing significant damage and injury to the other driver, before fleeing the scene without providing any identifying information."
+  },
+  {
+    "id": 31,
+    "description": "A pedestrian was hit by a speeding car that fled the scene, leaving the victim with a broken arm and severe head injuries."
+  },
+  {
+    "id": 32,
+    "description": "A hit and run driver collided with a parked car and caused significant damage before fleeing the scene without leaving any contact information."
+  },
+  {
+    "id": 33,
+    "description": "A cyclist was struck by a vehicle that fled the scene, leaving the victim with multiple fractures and other serious injuries."
+  },
+  {
+    "id": 34,
+    "description": "A hit and run driver crashed into a motorcyclist and caused the rider to be thrown from their bike, resulting in life-threatening injuries."
+  },
+  {
+    "id": 35,
+    "description": "A pedestrian was hit by a car that then fled the scene, leaving the victim with a broken leg and other injuries."
+  },
+  {
+    "id": 36,
+    "description": "A hit and run driver caused a multi-vehicle collision and then fled the scene before police arrived, leaving several people injured."
+  },
+  {
+    "id": 37,
+    "description": "A driver fled the scene after hitting a pedestrian who was crossing the street, leaving the victim with a broken rib and other injuries."
+  },
+  {
+    "id": 38,
+    "description": "A hit and run driver collided with a tree, causing significant damage and leaving the scene without reporting the incident."
+  },
+  {
+    "id": 39,
+    "description": "A motorist struck a bicyclist and then fled the scene, leaving the victim with a broken arm and other injuries."
+  },
+  {
+    "id": 40,
+    "description": "A hit and run driver collided with another car, causing significant damage and injury to the other driver, before fleeing the scene without providing any contact information."
+  },
+  {
+    "id": 41,
+    "description": "A pedestrian was hit by a vehicle that fled the scene, leaving the victim with a fractured pelvis and other injuries."
+  },
+  {
+    "id": 42,
+    "description": "A hit and run driver collided with a parked car and caused significant damage before fleeing the scene without leaving any identifying information."
+  },
+  {
+    "id": 43,
+    "description": "A cyclist was hit by a car that fled the scene, leaving the victim with a broken leg and other injuries."
+  },
+  {
+    "id": 44,
+    "description": "A hit and run driver collided with a motorcyclist and caused the rider to be thrown from their bike, resulting in serious injuries."
+  },
+  {
+    "id": 45,
+    "description": "A pedestrian was struck by a speeding car that fled the scene, leaving the victim with a broken arm and other injuries."
+  },
+  {
+    "id": 46,
+    "description": "A hit and run driver caused a multi-car collision and then fled the scene before police arrived, leaving several people injured."
+  },
+  {
+    "id": 47,
+    "description": "A driver fled the scene after hitting a pedestrian who was walking on the sidewalk, leaving the victim with a broken leg and other injuries."
+  },
+  {
+    "id": 48,
+    "description": "A hit and run driver collided with a tree, causing significant damage and leaving the scene without reporting the incident."
+  }
+]
