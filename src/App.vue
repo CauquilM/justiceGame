@@ -33,53 +33,53 @@ import armedRobbery_d from '@/data_cases/descriptions/crimes/theft.json'
 import armedRobbery_e from '@/data_cases/evidences/crimes/theft.json'
 
 /************** Felonies **************/
-import drinkingInPublic_d from '@/data_cases/descriptions/crimes/drinkingInPublic.json'
-import drinkingInPublic_e from '@/data_cases/evidences/crimes/drinkingInPublic.json'
-import fake911Call_d from '@/data_cases/descriptions/crimes/fake911Call.json'
-import fake911Call_e from '@/data_cases/evidences/crimes/fake911Call.json'
-import impersonatingPolice_d from '@/data_cases/descriptions/crimes/impersonatingPolice.json'
-import impersonatingPolice_e from '@/data_cases/evidences/crimes/impersonatingPolice.json'
-import pickpocketing_d from '@/data_cases/descriptions/crimes/pickpocketing.json'
-import pickpocketing_e from '@/data_cases/evidences/crimes/pickpocketing.json'
-import shoplifting_d from '@/data_cases/descriptions/crimes/shoplifting.json'
-import shoplifting_e from '@/data_cases/evidences/crimes/shoplifting.json'
-import trespassing_d from '@/data_cases/descriptions/crimes/trespassing.json'
-import trespassing_e from '@/data_cases/evidences/crimes/trespassing.json'
-import vandalism_d from '@/data_cases/descriptions/crimes/vandalism.json'
-import vandalism_e from '@/data_cases/evidences/crimes/vandalism.json'
+import drinkingInPublic_d from '@/data_cases/descriptions/felonies/drinkingInPublic.json'
+import drinkingInPublic_e from '@/data_cases/evidences/felonies/drinkingInPublic.json'
+import fake911Call_d from '@/data_cases/descriptions/felonies/fake911Call.json'
+import fake911Call_e from '@/data_cases/evidences/felonies/fake911Call.json'
+import impersonatingPolice_d from '@/data_cases/descriptions/felonies/impersonatingPolice.json'
+import impersonatingPolice_e from '@/data_cases/evidences/felonies/impersonatingPolice.json'
+import pickpocketing_d from '@/data_cases/descriptions/felonies/pickpocketing.json'
+import pickpocketing_e from '@/data_cases/evidences/felonies/pickpocketing.json'
+import shoplifting_d from '@/data_cases/descriptions/felonies/shoplifting.json'
+import shoplifting_e from '@/data_cases/evidences/felonies/shoplifting.json'
+import trespassing_d from '@/data_cases/descriptions/felonies/trespassing.json'
+import trespassing_e from '@/data_cases/evidences/felonies/trespassing.json'
+import vandalism_d from '@/data_cases/descriptions/felonies/vandalism.json'
+import vandalism_e from '@/data_cases/evidences/felonies/vandalism.json'
 
 /************** Parole **************/
-import parole_d from '@/data_cases/descriptions/crimes/parole.json'
-import parole_e from '@/data_cases/evidences/crimes/parole.json'
+import parole_d from '@/data_cases/descriptions/parole/parole.json'
+import parole_e from '@/data_cases/evidences/parole/parole.json'
 
 /************** Prison **************/
-import assaultWithDeadlyWeapon_d from '@/data_cases/descriptions/crimes/assaultWithDeadlyWeapon.json'
-import assaultWithDeadlyWeapon_e from '@/data_cases/evidences/crimes/assaultWithDeadlyWeapon.json'
-import drugTrafficking_d from '@/data_cases/descriptions/crimes/drugTrafficking.json'
-import drugTrafficking_e from '@/data_cases/evidences/crimes/drugTrafficking.json'
-import escape_d from '@/data_cases/descriptions/crimes/escape.json'
-import escape_e from '@/data_cases/evidences/crimes/escape.json'
-import fight_d from '@/data_cases/descriptions/crimes/fight.json'
-import fight_e from '@/data_cases/evidences/crimes/fight.json'
-import manslaughter_d from '@/data_cases/descriptions/crimes/manslaughter.json'
-import manslaughter_e from '@/data_cases/evidences/crimes/manslaughter.json'
-import prisonHostage_d from '@/data_cases/descriptions/crimes/prisonHostage.json'
-import prisonHostage_e from '@/data_cases/evidences/crimes/prisonHostage.json'
+import assaultWithDeadlyWeapon_d from '@/data_cases/descriptions/prison/assaultWithDeadlyWeapon.json'
+import assaultWithDeadlyWeapon_e from '@/data_cases/evidences/prison/assaultWithDeadlyWeapon.json'
+import drugTrafficking_d from '@/data_cases/descriptions/prison/drugTrafficking.json'
+import drugTrafficking_e from '@/data_cases/evidences/prison/drugTrafficking.json'
+import escape_d from '@/data_cases/descriptions/prison/escape.json'
+import escape_e from '@/data_cases/evidences/prison/escape.json'
+import fight_d from '@/data_cases/descriptions/prison/fight.json'
+import fight_e from '@/data_cases/evidences/prison/fight.json'
+import manslaughter_d from '@/data_cases/descriptions/prison/manslaughter.json'
+import manslaughter_e from '@/data_cases/evidences/prison/manslaughter.json'
+import prisonHostage_d from '@/data_cases/descriptions/prison/prisonHostage.json'
+import prisonHostage_e from '@/data_cases/evidences/prison/prisonHostage.json'
 
 /************** Road **************/
-import drivingNoLicense_d from '@/data_cases/descriptions/crimes/drivingNoLicense.json'
-import drivingNoLicense_e from '@/data_cases/evidences/crimes/drivingNoLicense.json'
-import dui_d from '@/data_cases/descriptions/crimes/dui.json'
-import dui_e from '@/data_cases/evidences/crimes/dui.json'
-/*import evadingArrest_d from '@/data_cases/descriptions/crimes/evadingArrest.json'
-import evadingArrest_e from '@/data_cases/evidences/crimes/evadingArrest.json'*/
-import hitAndRun_d from '@/data_cases/descriptions/crimes/hitAndRun.json'
-import hitAndRun_e from '@/data_cases/evidences/crimes/hitAndRun.json'
-import recklessDriving_d from '@/data_cases/descriptions/crimes/recklessDriving.json'
-import recklessDriving_e from '@/data_cases/evidences/crimes/recklessDriving.json'
+import drivingNoLicense_d from '@/data_cases/descriptions/road/drivingNoLicense.json'
+import drivingNoLicense_e from '@/data_cases/evidences/road/drivingNoLicense.json'
+import dui_d from '@/data_cases/descriptions/road/dui.json'
+import dui_e from '@/data_cases/evidences/road/dui.json'
+/*import evadingArrest_d from '@/data_cases/descriptions/road/evadingArrest.json'
+import evadingArrest_e from '@/data_cases/evidences/road/evadingArrest.json'*/
+import hitAndRun_d from '@/data_cases/descriptions/road/hitAndRun.json'
+import hitAndRun_e from '@/data_cases/evidences/road/hitAndRun.json'
+import recklessDriving_d from '@/data_cases/descriptions/road/recklessDriving.json'
+import recklessDriving_e from '@/data_cases/evidences/road/recklessDriving.json'
 
 /************** Traffic **************/
-import traffic_e from '@/data_cases/evidences/crimes/traffic.json'
+import traffic_e from '@/data_cases/evidences/traffic/traffic.json'
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
 import suspect_names_data from '@/data_cases/suspect_names.json'
@@ -293,7 +293,7 @@ export default {
                     value: "0"
                 });
                 result.push({
-                    text: `${numbers[0]}`,
+                    text: `${numbers[0]}$`,
                     value: `${numbers[0]}`
                 });
                 result.push({
@@ -301,7 +301,7 @@ export default {
                     value: `${numbers[1]}`
                 });
                 result.push({
-                    text: `${numbers[2]}`,
+                    text: `${numbers[2]}$`,
                     value: `${numbers[2]}`
                 });
             }
