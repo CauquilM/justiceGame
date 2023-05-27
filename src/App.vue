@@ -386,6 +386,17 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.pickpocketing.fine_min, offenses.pickpocketing.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
+                    else if (this.caseObj.feloniesCharge_first === "fake911Call") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "fake 911 call";
+                        this.caseObj["penalCodeCharge"] = "fake911Call";
+                        this.caseObj["description"] = descriptions.fake911Call[Math.floor(Math.random() * descriptions.fake911Call.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.fake911Call.slice(0, Math.floor(Math.random() * evidences.fake911Call.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.fake911Call.prison_min, offenses.fake911Call.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.fake911Call.probation_min, offenses.fake911Call.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.fake911Call.fine_min, offenses.fake911Call.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    }
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {
                         this.caseObj["type"] = "traffic crime";

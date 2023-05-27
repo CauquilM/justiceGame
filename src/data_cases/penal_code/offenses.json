@@ -115,6 +115,19 @@
     "fine_min": 1000,
     "fine_max": 10000
   },
+  "fake911Call": {
+    "offense_charge": "fake 911 call",
+    "prison_min": 1,
+    "prison_months_min": 1,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 100000
+  },
   "dui": {
     "offense_charge": "dui",
     "prison_min": 1,
@@ -126,7 +139,7 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 15000
   },
   "recklessDriving": {
     "offense_charge": "reckless driving",
@@ -139,7 +152,7 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 15000
   },
   "drivingNoLicense": {
     "offense_charge": "driving w/o license",
@@ -152,7 +165,7 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 15000
   },
   "hitAndRun": {
     "offense_charge": "hit and run",
