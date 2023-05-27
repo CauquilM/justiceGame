@@ -60,7 +60,7 @@ export default {
                 ],*/
                 'feloniesCharge_first': [
                     'trespassing', 'impersonatingPolice', 'pickpocketing', 'fake911Call',
-                    'vandalism', 'shoplifting',
+                    'vandalism', 'shoplifting', 'drinkingInPublic'
                     /*'vandalism', 'bribery', 'suspicious Activity',
                      'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
