@@ -129,16 +129,10 @@ export default {
                 numbers.push(Math.floor(Math.random() * (max - numbers[0] - 2 + 1)) + min);
                 numbers.push(Math.floor(Math.random() * (max - numbers[1] - 3 + 1)) + numbers[1] + 3);
             }
-            /*** Road Infractions ***/
-            else if (fineVariant && text === "traffic") {
-                numbers.push(Math.floor(Math.random() * (1500 - 90)) + 90);
-                numbers.push(Math.floor(Math.random() * (1500 - 90)) + 90);
-                numbers.push(Math.floor(Math.random() * (1500 - 90)) + 90);
-                /*All kind of cases fines except road infractions*/
-            } else {
-                numbers.push(Math.floor(Math.random() * 50000));
-                numbers.push(Math.floor(Math.random() * 50000));
-                numbers.push(Math.floor(Math.random() * 50000));
+            else {
+                numbers.push(Math.floor(Math.random() * max));
+                numbers.push(Math.floor(Math.random() * max));
+                numbers.push(Math.floor(Math.random() * max));
             }
 
             numbers.sort((a, b) => a - b);
