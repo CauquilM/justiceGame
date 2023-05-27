@@ -53,24 +53,23 @@ export default {
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
                      'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
                      'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence', 'Armed Robbery',
-                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation', 'Terrorist threat',
                     */
                 ],
                 /*'criminalCharge_second': [
                 ],*/
                 'feloniesCharge_first': [
-                    'trespassing', 'impersonatingPolice', 'pickpocketing',
+                    'trespassing', 'impersonatingPolice', 'pickpocketing', 'fake911Call'
                     /*'vandalism', 'bribery', 'suspicious Activity',
                     'shoplifting', 'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , '"Possession of Burglary Tools', 'Possession of a Deadly Weapon',
-                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle', 'fake 911 call',*/
+                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle'*/
 
                 ],
                 /*'felonies_second': [
                     'Drinking in public', Disturbing the Peace, Failure to Present Concealed Carry Permit,
                     'Hate Crime', 'Indecent Exposure',
-                    'Participating in Gang', 'Pickpocketing', 'Brandishing of Firearm', 'Inciting Riot',
-                    'Terrorist threat',
+                    'Participating in Gang', 'Brandishing of Firearm', 'Inciting Riot',
 
                 ],*/
                 'parole': [
