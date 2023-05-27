@@ -71,15 +71,14 @@ import drivingNoLicense_d from '@/data_cases/descriptions/crimes/drivingNoLicens
 import drivingNoLicense_e from '@/data_cases/evidences/crimes/drivingNoLicense.json'
 import dui_d from '@/data_cases/descriptions/crimes/dui.json'
 import dui_e from '@/data_cases/evidences/crimes/dui.json'
-import evadingArrest_d from '@/data_cases/descriptions/crimes/evadingArrest.json'
-import evadingArrest_e from '@/data_cases/evidences/crimes/evadingArrest.json'
+/*import evadingArrest_d from '@/data_cases/descriptions/crimes/evadingArrest.json'
+import evadingArrest_e from '@/data_cases/evidences/crimes/evadingArrest.json'*/
 import hitAndRun_d from '@/data_cases/descriptions/crimes/hitAndRun.json'
 import hitAndRun_e from '@/data_cases/evidences/crimes/hitAndRun.json'
 import recklessDriving_d from '@/data_cases/descriptions/crimes/recklessDriving.json'
 import recklessDriving_e from '@/data_cases/evidences/crimes/recklessDriving.json'
 
 /************** Traffic **************/
-import traffic_d from '@/data_cases/descriptions/crimes/traffic.json'
 import traffic_e from '@/data_cases/evidences/crimes/traffic.json'
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
@@ -527,7 +526,7 @@ export default {
                         this.caseObj["charge"] = "hit and run";
                         this.caseObj["penalCodeCharge"] = "hitAndRun";
                         this.caseObj["description"] = hitAndRun_d[Math.floor(Math.random() * hitAndRun_d.length)].description;
-                        this.caseObj["evidences"] = this.shuffleArray(hitAndRun_d.slice(0, Math.floor(Math.random() * hitAndRun_d.length))).slice(0, 3);
+                        this.caseObj["evidences"] = this.shuffleArray(hitAndRun_e.slice(0, Math.floor(Math.random() * hitAndRun_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.hitAndRun.prison_min, offenses.hitAndRun.prison_max, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.hitAndRun.probation_min, offenses.hitAndRun.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.hitAndRun.fine_min, offenses.hitAndRun.fine_max, true);
