@@ -165,7 +165,7 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 5000
+    "fine_max": 1500
   },
   "dui": {
     "offense_charge": "dui",
