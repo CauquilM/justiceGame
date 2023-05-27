@@ -271,6 +271,9 @@ export default new Vuex.Store({
         SET_HISTORICAL_CASES(state, payload) {
             state.historicalCases = payload;
         },
+        SET_NEW_CHARGE(state, payload) {
+            state.chosenCase.charge = payload;
+        },
         SET_CASES(state, payload) {
             state.cases.push(payload)
         },
@@ -282,6 +285,10 @@ export default new Vuex.Store({
         },
         SET_DEFENSE_COMMENT(state, payload) {
             state.defenseComment = payload;
+        },
+        SET_EVIDENCE_TO_SUPPRESS(state, payload) {
+            state.chosenCase.evidences = state.chosenCase.evidences.splice(payload, 1);
+            console.log("array: ", state.chosenCase.evidences.splice(payload, 1));
         },
         SET_PROSECUTION_SENTENCES(state, payload) {
             state.prosecutionSentences.push(payload);
@@ -330,6 +337,14 @@ export default new Vuex.Store({
             }
             lastCase = caseIndex;
             commit("SET_CHOSEN_CASE", state.cases[caseIndex]);
+        },
+        modifyChargeInStore({commit}, newCharge) {
+            commit("SET_NEW_CHARGE", newCharge);
+            eventBus.$emit('closeModifyChargeModal');
+        },
+        deleteEvidence({commit}, index) {
+            console.log("suppress");
+            commit("SET_EVIDENCE_TO_SUPPRESS", index);
         },
         getHistoricalCases({commit}) {
             axios.get("https://spotless-ant-beret.cyclic.app/history")
@@ -420,7 +435,7 @@ export default new Vuex.Store({
         openNotGuiltyModal() {
             eventBus.$emit('openNotGuiltyModal');
         },
-        doSentencing({state}, { isPrisonYears, isProbationYears }) {
+        doSentencing({state}, {isPrisonYears, isProbationYears}) {
             if (state.chosenCase.type === "parole") {
                 if (state.probationSelected !== null) {
                     console.log("test: ", state.probationSelected);
@@ -429,7 +444,7 @@ export default new Vuex.Store({
                         in prison to freed you without conditions, stay safe.`
                     } else {
                         const randomSentence = Math.floor(Math.random() * 3);
-                        if(isProbationYears === true){
+                        if (isProbationYears === true) {
                             if (randomSentence === 0) {
                                 state.finalComment = `You will have to submit to ${state.probationSelected} years of parole, 
                             each week you will have to meet your parole officer, missing a meeting 
@@ -442,8 +457,7 @@ export default new Vuex.Store({
                             you will have to serve ${state.probationSelected} of parole, enjoy the freedom, 
                             don't forget the cost of your actions.`
                             }
-                        }
-                        else {
+                        } else {
                             if (randomSentence === 0) {
                                 state.finalComment = `You will have to submit to ${state.probationSelected} months of parole, 
                             each week you will have to meet your parole officer, missing a meeting 
@@ -514,17 +528,17 @@ export default new Vuex.Store({
                         then sentenced to 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
-                        of probation, and a ${state.fineSelected} fine.`
+                        of probation, and a ${state.fineSelected}$ fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine as punishment for his actions.`
+                        of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine for his crimes.`
+                        of probation, and a ${state.fineSelected}$ fine for his crimes.`
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",
@@ -582,17 +596,17 @@ export default new Vuex.Store({
                         then sentenced to 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
-                        of probation, and a ${state.fineSelected} fine.`
+                        of probation, and a ${state.fineSelected}$ fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine as punishment for his actions.`
+                        of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
-                        of probation, and a ${state.fineSelected} fine for his crimes.`
+                        of probation, and a ${state.fineSelected}$ fine for his crimes.`
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",

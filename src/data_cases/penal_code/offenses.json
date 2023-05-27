@@ -1,5 +1,6 @@
 {
   "murder": {
+    "offense_charge": "murder",
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 30,
@@ -12,6 +13,7 @@
     "fine_max": 50000
   },
   "theft": {
+    "offense_charge": "theft",
     "prison_min": 1,
     "prison_months_min": 8,
     "prison_max": 5,
@@ -21,9 +23,10 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 10000
+    "fine_max": 20000
   },
   "fraud": {
+    "offense_charge": "fraud",
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 20,
@@ -33,9 +36,10 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 250000
+    "fine_max": 500000
   },
   "assault": {
+    "offense_charge": "assault",
     "prison_min": 1,
     "prison_months_min": 8,
     "prison_max": 10,
@@ -45,9 +49,10 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 5000
+    "fine_max": 10000
   },
   "arson": {
+    "offense_charge": "arson",
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 25,
@@ -57,32 +62,35 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 50000
+    "fine_max": 100000
   },
   "armedRobbery": {
+    "offense_charge": "armed robbery",
     "prison_min": 1,
     "prison_months_min": 12,
-    "prison_max": 20,
+    "prison_max": 25,
     "probation_min": 1,
     "probation_months_min": 12,
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 50000
+    "fine_max": 100000
   },
   "trespassing": {
+    "offense_charge": "trespassing",
     "prison_min": 1,
     "prison_months_min": 1,
-    "prison_max": 5,
+    "prison_max": 10,
     "prison_months_max": 60,
     "probation_min": 1,
     "probation_months_min": 1,
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 500,
-    "fine_max": 5000
+    "fine_max": 10000
   },
   "impersonatingPolice": {
+    "offense_charge": "impersonating a police officer",
     "prison_min": 1,
     "prison_months_min": 6,
     "prison_max": 5,
@@ -94,7 +102,73 @@
     "fine_min": 1000,
     "fine_max": 10000
   },
+  "pickpocketing": {
+    "offense_charge": "pickpocketing",
+    "prison_min": 1,
+    "prison_months_min": 6,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 10000
+  },
+  "fake911Call": {
+    "offense_charge": "fake 911 call",
+    "prison_min": 1,
+    "prison_months_min": 1,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 100000
+  },
+  "vandalism": {
+    "offense_charge": "vandalism",
+    "prison_min": 1,
+    "prison_months_min": 6,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 50000
+  },
+  "shoplifting": {
+    "offense_charge": "shoplifting",
+    "prison_min": 1,
+    "prison_months_min": 6,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 10000
+  },
+  "drinkingInPublic": {
+    "offense_charge": "drinking in public",
+    "prison_min": 1,
+    "prison_months_min": 6,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 1500
+  },
   "dui": {
+    "offense_charge": "dui",
     "prison_min": 1,
     "prison_months_min": 10,
     "prison_max": 4,
@@ -104,21 +178,23 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 15000
   },
   "recklessDriving": {
+    "offense_charge": "reckless driving",
     "prison_min": 1,
     "prison_months_min": 1,
     "prison_max": 8,
-    "prison_months_max": 160,
+    "prison_months_max": 96,
     "probation_min": 1,
     "probation_months_min": 1,
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 15000
   },
   "drivingNoLicense": {
+    "offense_charge": "driving w/o license",
     "prison_min": 1,
     "prison_months_min": 1,
     "prison_max": 5,
@@ -128,13 +204,14 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 15000
   },
   "hitAndRun": {
+    "offense_charge": "hit and run",
     "prison_min": 1,
     "prison_months_min": 6,
-    "prison_max": 5,
-    "prison_months_max": 60,
+    "prison_max": 15,
+    "prison_months_max": 180,
     "probation_min": 1,
     "probation_months_min": 10,
     "probation_max": 5,
@@ -143,6 +220,7 @@
     "fine_max": 25000
   },
   "traffic": {
+    "offense_charge": "traffic",
     "prison_min": 0,
     "prison_months_min": 1,
     "prison_max": 1,
@@ -155,30 +233,33 @@
     "fine_max": 1500
   },
   "fight": {
+    "offense_charge": "fight",
     "prison_min": 1,
     "prison_months_min": 10,
-    "prison_max": 7,
+    "prison_max": 10,
     "prison_months_max": 84,
     "probation_min": 1,
     "probation_months_min": 6,
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 10000
   },
   "escape": {
+    "offense_charge": "escape",
     "prison_min": 1,
     "prison_months_min": 12,
-    "prison_max": 5,
+    "prison_max": 10,
     "prison_months_max": 60,
     "probation_min": 1,
     "probation_months_min": 12,
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 8000
+    "fine_max": 10000
   },
   "assaultWithDeadlyWeapon": {
+    "offense_charge": "assault with deadly weapon",
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 20,
@@ -191,9 +272,10 @@
     "fine_max": 10000
   },
   "manslaughter": {
+    "offense_charge": "manslaughter",
     "prison_min": 1,
     "prison_months_min": 12,
-    "prison_max": 15,
+    "prison_max": 25,
     "prison_months_max": 180,
     "probation_min": 1,
     "probation_months_min": 12,
@@ -203,6 +285,7 @@
     "fine_max": 25000
   },
   "drugTrafficking": {
+    "offense_charge": "drug trafficking",
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 30,
@@ -215,6 +298,7 @@
     "fine_max": 500000
   },
   "prisonHostage": {
+    "offense_charge": "prison hostage",
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 15,
@@ -227,10 +311,11 @@
     "fine_max": 25000
   },
   "parole": {
+    "offense_charge": "parole hearing",
     "prison_min": 99,
     "prison_months_min": 12,
     "prison_max": 4,
-    "prison_months_max": 180,
+    "prison_months_max": 48,
     "probation_min": 1,
     "probation_months_min": 1,
     "probation_max": 5,

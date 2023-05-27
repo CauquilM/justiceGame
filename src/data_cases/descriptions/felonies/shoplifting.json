@@ -1,0 +1,230 @@
+[
+  {
+    "id": 0,
+    "description": "An observant employee witnessed the defendant attempting to walk out with a gourmet food hamper."
+  },
+  {
+    "id": 1,
+    "description": "The store's security apprehended the suspect for attempting to steal a candy bar."
+  },
+  {
+    "id": 2,
+    "description": "The shopkeeper caught the accused shoplifting a bottle of perfume."
+  },
+  {
+    "id": 3,
+    "description": "A customer witnessed the defendant concealing a pair of sunglasses in their bag."
+  },
+  {
+    "id": 4,
+    "description": "The store manager caught the perpetrator trying to smuggle out a pack of batteries."
+  },
+  {
+    "id": 5,
+    "description": "An employee observed the accused shoplifting a small electronic gadget."
+  },
+  {
+    "id": 6,
+    "description": "The security personnel detained the suspect for attempting to steal a designer handbag."
+  },
+  {
+    "id": 7,
+    "description": "A vigilant shopper noticed the defendant pocketing a high-end watch."
+  },
+  {
+    "id": 8,
+    "description": "The store's surveillance footage captured the accused shoplifting a box of chocolates."
+  },
+  {
+    "id": 9,
+    "description": "The shop owner confronted the perpetrator trying to steal a bottle of whiskey."
+  },
+  {
+    "id": 10,
+    "description": "An observant employee witnessed the defendant attempting to walk out with a laptop."
+  },
+  {
+    "id": 11,
+    "description": "The security guards apprehended the suspect for shoplifting a designer dress."
+  },
+  {
+    "id": 12,
+    "description": "A customer reported seeing the accused shoplifting a new smartphone."
+  },
+  {
+    "id": 13,
+    "description": "The store manager caught the perpetrator trying to steal a pack of cigarettes."
+  },
+  {
+    "id": 14,
+    "description": "An employee noticed the defendant hiding a valuable painting under their coat."
+  },
+  {
+    "id": 15,
+    "description": "The security personnel detained the suspect for attempting to steal a diamond necklace."
+  },
+  {
+    "id": 16,
+    "description": "A vigilant shopper witnessed the accused shoplifting a bottle of expensive perfume."
+  },
+  {
+    "id": 17,
+    "description": "The store's surveillance footage captured the defendant pocketing a rare collectible."
+  },
+  {
+    "id": 18,
+    "description": "The shop owner confronted the perpetrator trying to steal a luxury handbag."
+  },
+  {
+    "id": 19,
+    "description": "An observant employee witnessed the suspect attempting to walk out with a case of wine."
+  },
+  {
+    "id": 20,
+    "description": "The security guards apprehended the accused shoplifting a high-end gaming console."
+  },
+  {
+    "id": 21,
+    "description": "A customer reported seeing the defendant stealing a piece of expensive jewelry."
+  },
+  {
+    "id": 22,
+    "description": "The store manager caught the perpetrator trying to smuggle out a designer suit."
+  },
+  {
+    "id": 23,
+    "description": "An employee observed the accused shoplifting a premium-quality camera."
+  },
+  {
+    "id": 24,
+    "description": "The security personnel detained the suspect for attempting to steal a gourmet food hamper."
+  },
+  {
+    "id": 25,
+    "description": "A vigilant shopper noticed the defendant concealing a rare antique artifact."
+  },
+  {
+    "id": 26,
+    "description": "The store's surveillance footage captured the accused shoplifting a set of high-end headphones."
+  },
+  {
+    "id": 27,
+    "description": "The shop owner confronted the perpetrator trying to steal a luxury wristwatch."
+  },
+  {
+    "id": 28,
+    "description": "An observant employee witnessed the defendant attempting to walk out with a bottle of fine wine."
+  },
+  {
+    "id": 29,
+    "description": "The security guards apprehended the suspect for shoplifting a limited edition book."
+  },
+  {
+    "id": 30,
+    "description": "The store's security apprehended the suspect for attempting to steal a designer handbag."
+  },
+  {
+    "id": 31,
+    "description": "The shopkeeper caught the accused shoplifting a pack of batteries."
+  },
+  {
+    "id": 32,
+    "description": "A customer witnessed the defendant concealing a bottle of perfume in their bag."
+  },
+  {
+    "id": 33,
+    "description": "The store manager caught the perpetrator trying to smuggle out a box of chocolates."
+  },
+  {
+    "id": 34,
+    "description": "An employee observed the accused shoplifting a small electronic gadget."
+  },
+  {
+    "id": 35,
+    "description": "The security personnel detained the suspect for attempting to steal a high-end watch."
+  },
+  {
+    "id": 36,
+    "description": "A vigilant shopper noticed the defendant pocketing a bottle of expensive perfume."
+  },
+  {
+    "id": 37,
+    "description": "The store's surveillance footage captured the accused shoplifting a new smartphone."
+  },
+  {
+    "id": 38,
+    "description": "The shop owner confronted the perpetrator trying to steal a pack of cigarettes."
+  },
+  {
+    "id": 39,
+    "description": "An observant employee witnessed the defendant attempting to walk out with a laptop."
+  },
+  {
+    "id": 40,
+    "description": "The security guards apprehended the suspect for shoplifting a designer dress."
+  },
+  {
+    "id": 41,
+    "description": "A customer reported seeing the accused shoplifting a valuable painting."
+  },
+  {
+    "id": 42,
+    "description": "The store manager caught the perpetrator trying to steal a diamond necklace."
+  },
+  {
+    "id": 43,
+    "description": "An employee noticed the defendant hiding a bottle of whiskey under their coat."
+  },
+  {
+    "id": 44,
+    "description": "The security personnel detained the suspect for attempting to steal a luxury handbag."
+  },
+  {
+    "id": 45,
+    "description": "A vigilant shopper witnessed the accused shoplifting a case of wine."
+  },
+  {
+    "id": 46,
+    "description": "The store's surveillance footage captured the defendant pocketing a rare collectible."
+  },
+  {
+    "id": 47,
+    "description": "The shop owner confronted the perpetrator trying to steal a high-end gaming console."
+  },
+  {
+    "id": 48,
+    "description": "An observant employee witnessed the suspect attempting to walk out with a piece of expensive jewelry."
+  },
+  {
+    "id": 49,
+    "description": "The security guards apprehended the accused shoplifting a designer suit."
+  },
+  {
+    "id": 50,
+    "description": "A customer reported seeing the defendant stealing a premium-quality camera."
+  },
+  {
+    "id": 51,
+    "description": "The store manager caught the perpetrator trying to smuggle out a gourmet food hamper."
+  },
+  {
+    "id": 52,
+    "description": "An employee observed the accused shoplifting a rare antique artifact."
+  },
+  {
+    "id": 53,
+    "description": "The security personnel detained the suspect for attempting to steal a set of high-end headphones."
+  },
+  {
+    "id": 54,
+    "description": "A vigilant shopper noticed the defendant concealing a luxury wristwatch."
+  },
+  {
+    "id": 55,
+    "description": "The store's surveillance footage captured the accused shoplifting a bottle of fine wine."
+  },
+  {
+    "id": 56,
+    "description": "The shop owner confronted the perpetrator trying to steal a limited edition book."
+  }
+]

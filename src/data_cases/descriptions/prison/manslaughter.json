@@ -1,0 +1,178 @@
+[
+  {
+    "id": 0,
+    "description": "The victim was found dead in their cell with signs of physical trauma indicating they had been beaten to death by another inmate."
+  },
+  {
+    "id": 1,
+    "description": "An inmate was killed during a prison riot that broke out after a disagreement between rival gangs."
+  },
+  {
+    "id": 2,
+    "description": "A corrections officer was found dead in a cell block with evidence suggesting they had been attacked by an inmate."
+  },
+  {
+    "id": 3,
+    "description": "An inmate died after being beaten by several other prisoners in a common area of the prison."
+  },
+  {
+    "id": 4,
+    "description": "A prisoner who had been placed in solitary confinement died after being left unattended for an extended period of time."
+  },
+  {
+    "id": 5,
+    "description": "An inmate was found dead in their cell after reportedly being involved in a physical altercation with another prisoner."
+  },
+  {
+    "id": 6,
+    "description": "A prisoner was killed by a fellow inmate using a makeshift weapon."
+  },
+  {
+    "id": 7,
+    "description": "A corrections officer was fatally injured while attempting to break up a fight between two inmates."
+  },
+  {
+    "id": 8,
+    "description": "An inmate died after being beaten by another prisoner in a prison yard."
+  },
+  {
+    "id": 9,
+    "description": "A prisoner died after being struck by a vehicle while on a work detail outside the prison."
+  },
+  {
+    "id": 10,
+    "description": "An inmate died after being strangled by a cellmate."
+  },
+  {
+    "id": 11,
+    "description": "A corrections officer was killed in a prison escape attempt."
+  },
+  {
+    "id": 12,
+    "description": "An inmate died after being stabbed by another prisoner with a homemade weapon."
+  },
+  {
+    "id": 13,
+    "description": "A prisoner died after being beaten by several other inmates during a gang-related incident."
+  },
+  {
+    "id": 14,
+    "description": "A corrections officer was killed during a prison riot that was sparked by a disagreement between inmates and staff members."
+  },
+  {
+    "id": 15,
+    "description": "An inmate died after being found unconscious in their cell with multiple injuries."
+  },
+  {
+    "id": 16,
+    "description": "A prisoner died after being hit by a car while attempting to escape from the prison."
+  },
+  {
+    "id": 17,
+    "description": "A corrections officer was killed in a hostage situation that occurred during a prison uprising."
+  },
+  {
+    "id": 18,
+    "description": "An inmate was found dead in their cell with evidence suggesting they had committed suicide."
+  },
+  {
+    "id": 19,
+    "description": "A prisoner died after being beaten by a group of other inmates who had gained access to their cell."
+  },
+  {
+    "id": 20,
+    "description": "An inmate was killed in a fight that broke out in the prison yard over gang territory."
+  },
+  {
+    "id": 21,
+    "description": "A corrections officer was fatally shot by an inmate who had obtained a firearm while in the prison."
+  },
+  {
+    "id": 22,
+    "description": "An inmate died after being struck by a guard's baton during a riot in the prison."
+  },
+  {
+    "id": 23,
+    "description": "A prisoner died after being beaten by a cellmate with a metal pipe."
+  },
+  {
+    "id": 24,
+    "description": "An inmate died after being involved in a fight with another inmate in the recreation yard."
+  },
+  {
+    "id": 25,
+    "description": "An inmate was found unresponsive in their cell and later died as a result of injuries sustained in an altercation with another inmate."
+  },
+  {
+    "id": 26,
+    "description": "During a fight between two inmates in the prison yard, one of them struck the other with a metal pipe, causing fatal injuries."
+  },
+  {
+    "id": 27,
+    "description": "An inmate was fatally stabbed in the chest during a brawl in the prison mess hall."
+  },
+  {
+    "id": 28,
+    "description": "An inmate died from head injuries sustained in a physical altercation with another inmate in their shared cell."
+  },
+  {
+    "id": 29,
+    "description": "Two inmates got into a fight in the prison library, during which one of them struck the other with a book, causing fatal head injuries."
+  },
+  {
+    "id": 30,
+    "description": "An inmate died after being punched in the face multiple times during a dispute with another inmate over a television in the dayroom."
+  },
+  {
+    "id": 31,
+    "description": "An inmate was found dead in their cell, with evidence suggesting they were strangled by their cellmate during an altercation."
+  },
+  {
+    "id": 32,
+    "description": "During a physical altercation between two inmates in the prison yard, one of them was knocked unconscious and later died from brain damage."
+  },
+  {
+    "id": 33,
+    "description": "An inmate died from internal injuries after being beaten with a broomstick during a fight with another inmate in the prison laundry room."
+  },
+  {
+    "id": 34,
+    "description": "A prisoner died from blunt force trauma to the head after being attacked by another inmate with a metal tray during a meal in the cafeteria."
+  },
+  {
+    "id": 35,
+    "description": "An inmate was killed during a gang-related brawl in the prison yard, during which multiple weapons were used."
+  },
+  {
+    "id": 36,
+    "description": "A prisoner died from injuries sustained in a fight with another inmate in their cell, which was not stopped by the guards in time."
+  },
+  {
+    "id": 37,
+    "description": "An inmate was found dead in their cell, with evidence suggesting they were beaten to death by their cellmate with a homemade weapon."
+  },
+  {
+    "id": 38,
+    "description": "During a fight between two inmates in the shower area, one of them was fatally stabbed with a sharpened piece of metal."
+  },
+  {
+    "id": 39,
+    "description": "An inmate died from internal injuries after being punched repeatedly in the stomach by another inmate during a physical altercation in the yard."
+  },
+  {
+    "id": 40,
+    "description": "A prisoner was killed by their cellmate, who strangled them with a bedsheet during a dispute over the use of the cell's toilet."
+  },
+  {
+    "id": 41,
+    "description": "An inmate was found dead in their cell, with evidence suggesting they were suffocated by their cellmate with a pillow during the night."
+  },
+  {
+    "id": 42,
+    "description": "During a fight between two inmates in the prison yard, one of them was hit in the head with a rock and died from their injuries."
+  },
+  {
+    "id": 43,
+    "description": "An inmate died after being stabbed multiple times with a homemade knife during a brawl in the prison exercise area."
+  }
+]

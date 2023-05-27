@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "description": "The victim reported being physically attacked by the suspect"
+  },
+  {
+    "id": 1,
+    "description": "Multiple witnesses saw the suspect hitting the victim"
+  },
+  {
+    "id": 2,
+    "description": "The victim has visible injuries consistent with being assaulted"
+  },
+  {
+    "id": 3,
+    "description": "Security footage shows the suspect striking the victim"
+  },
+  {
+    "id": 4,
+    "description": "The suspect was found with the victim's belongings and had blood on their clothing"
+  },
+  {
+    "id": 5,
+    "description": "The victim's medical records indicate injuries consistent with being assaulted"
+  },
+  {
+    "id": 6,
+    "description": "The suspect has a history of violent behavior and was previously convicted of assault"
+  },
+  {
+    "id": 7,
+    "description": "A bystander intervened to stop the assault and called the police"
+  },
+  {
+    "id": 8,
+    "description": "The victim identified the suspect as their attacker in a police lineup"
+  },
+  {
+    "id": 9,
+    "description": "The suspect was overheard threatening to harm the victim prior to the assault"
+  },
+  {
+    "id": 10,
+    "description": "The suspect was caught on camera following the victim prior to the assault"
+  },
+  {
+    "id": 11,
+    "description": "The victim's statement is consistent with the evidence at the scene"
+  },
+  {
+    "id": 12,
+    "description": "A neighbor heard screams and called the police, arriving in time to see the suspect fleeing the scene"
+  },
+  {
+    "id": 13,
+    "description": "The suspect was found with a weapon that matches the one used in the assault"
+  },
+  {
+    "id": 14,
+    "description": "The suspect has a history of animosity towards the victim and had motive to commit the assault"
+  },
+  {
+    "id": 15,
+    "description": "The suspect was under the influence of drugs or alcohol at the time of the assault"
+  },
+  {
+    "id": 16,
+    "description": "The victim's family member witnessed the assault and identified the suspect"
+  },
+  {
+    "id": 17,
+    "description": "The suspect made verbal threats towards the victim prior to the assault"
+  },
+  {
+    "id": 18,
+    "description": "The suspect was caught attempting to flee the scene of the assault"
+  },
+  {
+    "id": 19,
+    "description": "The victim suffered serious injuries and required hospitalization as a result of the assault"
+  },
+  {
+    "id": 20,
+    "description": "The suspect has a history of domestic violence and was previously convicted of assault against a family member"
+  },
+  {
+    "id": 21,
+    "description": "The assault occurred in a public place and was witnessed by multiple individuals"
+  },
+  {
+    "id": 22,
+    "description": "The suspect was in possession of a weapon at the time of the assault"
+  },
+  {
+    "id": 23,
+    "description": "The victim did not provoke the assault in any way"
+  },
+  {
+    "id": 24,
+    "description": "The suspect has a history of gang involvement and the assault may have been gang-related"
+  },
+  {
+    "id": 25,
+    "description": "The assault was premeditated and the suspect had planned it in advance"
+  },
+  {
+    "id": 26,
+    "description": "The victim suffered from a pre-existing medical condition that was exacerbated by the assault"
+  },
+  {
+    "id": 27,
+    "description": "The suspect attempted to hide or dispose of evidence related to the assault"
+  },
+  {
+    "id": 28,
+    "description": "The victim was a vulnerable individual, such as an elderly or disabled person, and the assault was particularly egregious"
+  },
+  {
+    "id": 29,
+    "description": "The suspect has a history of violent behavior towards strangers and may pose a threat to public safety"
+  },
+  {
+    "id": 30,
+    "description": "The suspect was caught on camera stealing the victim's purse"
+  },
+  {
+    "id": 31,
+    "description": "The victim's credit card was used at a store shortly after the theft, with the suspect captured on security footage"
+  },
+  {
+    "id": 32,
+    "description": "The suspect was found in possession of the victim's stolen property and could not provide a satisfactory explanation for how they obtained it"
+  },
+  {
+    "id": 33,
+    "description": "A witness saw the suspect taking the victim's purse and provided a detailed description to the police"
+  },
+  {
+    "id": 34,
+    "description": "The suspect has a history of theft and was previously convicted of a similar crime"
+  },
+  {
+    "id": 35,
+    "description": "The victim's personal information was found in the suspect's possession"
+  },
+  {
+    "id": 36,
+    "description": "The suspect attempted to sell the victim's stolen property online"
+  },
+  {
+    "id": 37,
+    "description": "The victim's purse was found in the suspect's vehicle during a routine traffic stop"
+  },
+  {
+    "id": 38,
+    "description": "The suspect was identified by the victim as the person who stole their purse"
+  },
+  {
+    "id": 39,
+    "description": "The suspect was seen on camera casing the area before committing the theft"
+  },
+  {
+    "id": 40,
+    "description": "The suspect has a known association with other individuals involved in theft and burglary"
+  },
+  {
+    "id": 41,
+    "description": "The suspect used the victim's stolen credit card to make large purchases at several stores"
+  },
+  {
+    "id": 42,
+    "description": "The suspect was caught by store security trying to use the victim's stolen credit card"
+  },
+  {
+    "id": 43,
+    "description": "The victim's stolen property was found in the suspect's home during a search warrant"
+  },
+  {
+    "id": 44,
+    "description": "The suspect was found in possession of tools commonly used for breaking into vehicles"
+  }
+]
