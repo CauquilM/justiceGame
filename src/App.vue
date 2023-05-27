@@ -405,6 +405,16 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.vandalism.probation_min, offenses.vandalism.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.vandalism.fine_min, offenses.vandalism.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    } else if (this.caseObj.feloniesCharge_first === "shoplifting") {
+                        this.caseObj["type"] = "felony";
+                        this.caseObj["charge"] = "shoplifting";
+                        this.caseObj["penalCodeCharge"] = "shoplifting";
+                        this.caseObj["description"] = descriptions.shoplifting[Math.floor(Math.random() * descriptions.shoplifting.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evidences.shoplifting.slice(0, Math.floor(Math.random() * evidences.shoplifting.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.shoplifting.prison_min, offenses.shoplifting.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.shoplifting.probation_min, offenses.shoplifting.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.shoplifting.fine_min, offenses.shoplifting.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {

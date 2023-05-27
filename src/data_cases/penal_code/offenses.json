@@ -139,7 +139,20 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 100000
+    "fine_max": 50000
+  },
+  "shoplifting": {
+    "offense_charge": "shoplifting",
+    "prison_min": 1,
+    "prison_months_min": 6,
+    "prison_max": 5,
+    "prison_months_max": 60,
+    "probation_min": 1,
+    "probation_months_min": 6,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 10000
   },
   "dui": {
     "offense_charge": "dui",
