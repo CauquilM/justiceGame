@@ -17,8 +17,68 @@ import OfficeModal from "@/components/OfficeModal.vue";
 </script>
 <script>
 import {mapActions, mapState} from "vuex";
-import evidences from "@/data_cases/evidences.json"
-import descriptions from "@/data_cases/descriptions.json"
+
+/************** Crimes **************/
+import murder from '@/data_cases/descriptions/crimes/murder.json'
+import murder from '@/data_cases/evidences/crimes/murder.json'
+import arson from '@/data_cases/descriptions/crimes/arson.json'
+import arson from '@/data_cases/evidences/crimes/arson.json'
+import assault from '@/data_cases/descriptions/crimes/assault.json'
+import assault from '@/data_cases/evidences/crimes/assault.json'
+import fraud from '@/data_cases/descriptions/crimes/fraud.json'
+import fraud from '@/data_cases/evidences/crimes/fraud.json'
+import theft from '@/data_cases/descriptions/crimes/theft.json'
+import theft from '@/data_cases/evidences/crimes/theft.json'
+
+/************** Felonies **************/
+import drinkingInPublic from '@/data_cases/descriptions/crimes/drinkingInPublic.json'
+import drinkingInPublic from '@/data_cases/evidences/crimes/drinkingInPublic.json'
+import fake911Call from '@/data_cases/descriptions/crimes/fake911Call.json'
+import fake911Call from '@/data_cases/evidences/crimes/fake911Call.json'
+import impersonatingPolice from '@/data_cases/descriptions/crimes/impersonatingPolice.json'
+import impersonatingPolice from '@/data_cases/evidences/crimes/impersonatingPolice.json'
+import pickpocketing from '@/data_cases/descriptions/crimes/pickpocketing.json'
+import pickpocketing from '@/data_cases/evidences/crimes/pickpocketing.json'
+import shoplifting from '@/data_cases/descriptions/crimes/shoplifting.json'
+import shoplifting from '@/data_cases/evidences/crimes/shoplifting.json'
+import trespassing from '@/data_cases/descriptions/crimes/trespassing.json'
+import trespassing from '@/data_cases/evidences/crimes/trespassing.json'
+import vandalism from '@/data_cases/descriptions/crimes/vandalism.json'
+import vandalism from '@/data_cases/evidences/crimes/vandalism.json'
+
+/************** Parole **************/
+import parole from '@/data_cases/descriptions/crimes/parole.json'
+import parole from '@/data_cases/evidences/crimes/parole.json'
+
+/************** Prison **************/
+import assaultWithDeadlyWeapon from '@/data_cases/descriptions/crimes/assaultWithDeadlyWeapon.json'
+import assaultWithDeadlyWeapon from '@/data_cases/evidences/crimes/assaultWithDeadlyWeapon.json'
+import drugTrafficking from '@/data_cases/descriptions/crimes/drugTrafficking.json'
+import drugTrafficking from '@/data_cases/evidences/crimes/drugTrafficking.json'
+import escape from '@/data_cases/descriptions/crimes/escape.json'
+import escape from '@/data_cases/evidences/crimes/escape.json'
+import fight from '@/data_cases/descriptions/crimes/fight.json'
+import fight from '@/data_cases/evidences/crimes/fight.json'
+import manslaughter from '@/data_cases/descriptions/crimes/manslaughter.json'
+import manslaughter from '@/data_cases/evidences/crimes/manslaughter.json'
+import prisonHostage from '@/data_cases/descriptions/crimes/prisonHostage.json'
+import prisonHostage from '@/data_cases/evidences/crimes/prisonHostage.json'
+
+/************** Road **************/
+import drivingNoLicense from '@/data_cases/descriptions/crimes/drivingNoLicense.json'
+import drivingNoLicense from '@/data_cases/evidences/crimes/drivingNoLicense.json'
+import dui from '@/data_cases/descriptions/crimes/dui.json'
+import dui from '@/data_cases/evidences/crimes/dui.json'
+import evadingArrest from '@/data_cases/descriptions/crimes/evadingArrest.json'
+import evadingArrest from '@/data_cases/evidences/crimes/evadingArrest.json'
+import hitAndRun from '@/data_cases/descriptions/crimes/hitAndRun.json'
+import hitAndRun from '@/data_cases/evidences/crimes/hitAndRun.json'
+import recklessDriving from '@/data_cases/descriptions/crimes/recklessDriving.json'
+import recklessDriving from '@/data_cases/evidences/crimes/recklessDriving.json'
+
+/************** Traffic **************/
+import traffic from '@/data_cases/descriptions/crimes/traffic.json'
+import traffic from '@/data_cases/evidences/crimes/traffic.json'
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
 import suspect_names_data from '@/data_cases/suspect_names.json'
