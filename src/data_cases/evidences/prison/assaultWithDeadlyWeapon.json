@@ -1,182 +1,220 @@
 [
   {
     "id": 0,
-    "description": "A prison guard was attacked by an inmate with a shiv, leaving the guard with multiple stab wounds and other serious injuries."
+    "description": "The victim suffered a laceration on their face from being attacked with a homemade knife.",
+    "prosecutionSentence": "We have witness testimony and video evidence showing the defendant making the weapon and using it to attack the victim.",
+    "defenseSentence": "My client was acting in self-defense and did not intend to cause such serious injury."
   },
   {
     "id": 1,
-    "description": "An inmate used a sharpened toothbrush to stab another prisoner multiple times during a fight in the yard."
+    "description": "The victim was found unconscious with multiple stab wounds in their cell.",
+    "prosecutionSentence": "We have DNA evidence linking the defendant to the scene and witness testimony placing them near the victim's cell around the time of the attack.",
+    "defenseSentence": "My client had no motive to harm the victim and was in a different part of the prison at the time of the attack."
   },
   {
     "id": 2,
-    "description": "A group of inmates attacked a fellow prisoner with a sock filled with bars of soap, causing serious head injuries."
+    "description": "The victim sustained severe head trauma from being struck with a metal object.",
+    "prosecutionSentence": "We have security footage showing the defendant entering the victim's cell with a metal object and leaving shortly after with blood on their hands.",
+    "defenseSentence": "My client was coerced by other inmates into committing the assault and did not act of their own accord."
   },
   {
     "id": 3,
-    "description": "A corrections officer was hit over the head with a metal tray by an inmate, causing a skull fracture and other injuries."
+    "description": "The victim was attacked in the prison yard with a sharpened toothbrush.",
+    "prosecutionSentence": "We have witness testimony identifying the defendant as the attacker and surveillance footage showing them discarding the weapon after the attack.",
+    "defenseSentence": "My client was acting in self-defense and used the toothbrush to fend off an aggressor."
   },
   {
     "id": 4,
-    "description": "An inmate used a homemade weapon to attack another prisoner, causing life-threatening injuries."
+    "description": "The victim sustained a broken arm from being hit with a metal pipe.",
+    "prosecutionSentence": "We have video evidence showing the defendant attacking the victim with the pipe and witness testimony placing them at the scene of the crime.",
+    "defenseSentence": "My client was under duress from other inmates and did not have control over their actions."
   },
   {
     "id": 5,
-    "description": "A prison fight broke out between rival gang members, resulting in one inmate being stabbed multiple times with a sharpened piece of metal."
+    "description": "The victim was slashed with a razor blade during an altercation in the mess hall.",
+    "prosecutionSentence": "We have witness testimony identifying the defendant as the attacker and medical records showing that the victim required stitches for their wounds.",
+    "defenseSentence": "My client was defending themselves against an aggressor and did not intend to cause serious harm."
   },
   {
     "id": 6,
-    "description": "A prisoner attacked a guard with a metal chair, causing the guard to suffer a concussion and other injuries."
+    "description": "The victim suffered a fractured skull from being struck with a metal tray.",
+    "prosecutionSentence": "We have surveillance footage showing the defendant attacking the victim with the tray and witness testimony placing them at the scene of the crime.",
+    "defenseSentence": "My client was provoked by the victim and acted in the heat of the moment without intending to cause such serious injury."
   },
   {
     "id": 7,
-    "description": "A group of inmates attacked a rival gang member with a broken broomstick, causing multiple lacerations and other injuries."
+    "description": "The victim sustained a puncture wound from being stabbed with a sharpened pen.",
+    "prosecutionSentence": "We have DNA evidence linking the defendant to the pen and witness testimony placing them at the scene of the attack.",
+    "defenseSentence": "My client was defending themselves against an unprovoked attack and did not intend to cause such serious injury."
   },
   {
     "id": 8,
-    "description": "An inmate attacked another prisoner with a sharpened piece of plastic, causing deep wounds and other injuries."
+    "description": "The victim was found in their cell with multiple stab wounds and a makeshift knife was discovered nearby.",
+    "prosecutionSentence": "The defendant was seen arguing with the victim earlier in the day and their DNA was found on the knife.",
+    "defenseSentence": "My client was not in the victim's cell at the time of the assault and their DNA could have been transferred through other means."
   },
   {
     "id": 9,
-    "description": "A corrections officer was attacked by an inmate wielding a sharpened piece of metal, causing severe cuts and other injuries."
+    "description": "Surveillance footage captured the defendant approaching the victim with a sharpened toothbrush.",
+    "prosecutionSentence": "The defendant had a motive for the assault and the weapon was found in their possession.",
+    "defenseSentence": "The footage is inconclusive and the weapon could have been planted by other inmates."
   },
   {
     "id": 10,
-    "description": "A prison riot broke out, during which several inmates used weapons to attack guards and fellow prisoners, causing numerous injuries and extensive property damage."
+    "description": "The victim suffered serious injuries after being hit on the head with a metal tray during a fight in the mess hall.",
+    "prosecutionSentence": "Multiple witnesses saw the defendant strike the victim and their fingerprints were found on the tray.",
+    "defenseSentence": "My client was acting in self-defense and did not intend to cause serious harm."
   },
   {
     "id": 11,
-    "description": "A prisoner attacked another inmate with a sock filled with rocks, causing head injuries and other wounds."
+    "description": "The victim was attacked in the yard with a sharpened piece of metal that was later found in the defendant's cell.",
+    "prosecutionSentence": "The defendant had a history of violence and was seen with the weapon before the assault.",
+    "defenseSentence": "My client had no involvement in the assault and the weapon could have been planted in their cell."
   },
   {
     "id": 12,
-    "description": "An inmate used a sharpened piece of metal to stab another prisoner in the neck, causing life-threatening injuries."
+    "description": "The victim was found unconscious in their cell with a pillowcase tied tightly around their neck.",
+    "prosecutionSentence": "The defendant had a motive for the assault and was the only one with access to the victim's cell.",
+    "defenseSentence": "My client had no involvement in the assault and there is no concrete evidence linking them to the crime."
   },
   {
     "id": 13,
-    "description": "A prison guard was assaulted by an inmate with a broomstick, causing serious head injuries and other wounds."
+    "description": "The victim was stabbed with a sharpened piece of metal during a gang-related dispute.",
+    "prosecutionSentence": "The defendant was a known member of the gang and had a motive for the assault.",
+    "defenseSentence": "My client was not involved in the dispute and had no motive to harm the victim."
   },
   {
     "id": 14,
-    "description": "An inmate attacked another prisoner with a sharpened toothbrush, causing deep cuts and other injuries."
+    "description": "The victim was found in the shower with severe burns after being attacked with boiling water.",
+    "prosecutionSentence": "The defendant was the only one with access to the boiling water and had a motive for the assault.",
+    "defenseSentence": "My client was not involved in the assault and there is no concrete evidence linking them to the crime."
   },
   {
     "id": 15,
-    "description": "A group of inmates attacked a fellow prisoner with a broken pool cue, causing severe lacerations and other injuries."
+    "description": "The victim was assaulted with a wooden plank during a dispute over contraband.",
+    "prosecutionSentence": "The defendant was seen with the weapon and had a motive for the assault.",
+    "defenseSentence": "My client was not involved in the dispute and did not have access to the weapon."
   },
   {
     "id": 16,
-    "description": "A corrections officer was attacked by an inmate with a sharpened piece of plastic, causing deep cuts and other injuries."
+    "description": "The victim suffered serious injuries after being hit on the head with a metal pipe in the laundry room.",
+    "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a motive for the attack.",
+    "defenseSentence": "My client was not involved in the assault and did not have access to the weapon."
   },
   {
     "id": 17,
-    "description": "An inmate used a sharpened piece of metal to attack another prisoner, causing multiple wounds and other injuries."
+    "description": "The victim was stabbed multiple times with a homemade knife in the yard.",
+    "prosecutionSentence": "The defendant was found with a bloody knife that matched the wounds on the victim and had a motive for the attack.",
+    "defenseSentence": "My client was not involved in the assault and the knife found on them was not the weapon used in the attack."
   },
   {
     "id": 18,
-    "description": "A prisoner attacked a guard with a makeshift weapon made from a metal pipe, causing serious head injuries and other wounds."
+    "description": "The victim was hit in the face with a lock wrapped in a sock during an altercation in the common area.",
+    "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a motive for the attack.",
+    "defenseSentence": "My client was not involved in the assault and there is no evidence linking them to the crime."
   },
   {
     "id": 19,
-    "description": "An inmate attacked another prisoner with a sharpened piece of glass, causing deep cuts and other injuries."
+    "description": "The victim suffered multiple fractures after being beaten with a metal pipe in the recreation room.",
+    "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the assault and there is no concrete evidence linking them to the crime."
   },
   {
     "id": 20,
-    "description": "A group of inmates attacked a fellow prisoner with a sock filled with batteries, causing serious head injuries and other wounds."
+    "description": "The victim was slashed with a sharpened piece of metal during a gang-related attack in the dormitory.",
+    "prosecutionSentence": "The defendant was identified as a member of the attacking gang and had a motive for the assault.",
+    "defenseSentence": "My client was not involved in the gang and had no reason to attack the victim."
   },
   {
     "id": 21,
-    "description": "A corrections officer was assaulted by an inmate with a sharpened piece of metal, causing severe cuts and other injuries."
+    "description": "The victim was hit in the head with a lock attached to a belt during a fight in the cell block.",
+    "prosecutionSentence": "The defendant was seen with the weapon before the assault and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the assault and had no access to the weapon."
   },
   {
     "id": 22,
-    "description": "An inmate used a sharpened toothbrush to attack another prisoner, causing deep wounds and other injuries."
+    "description": "The victim was stabbed in the back with a sharpened toothbrush during a confrontation in the shower.",
+    "prosecutionSentence": "The defendant was found with a bloodied toothbrush that matched the wounds on the victim and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the assault and the toothbrush found on them was not the weapon used in the attack."
   },
   {
     "id": 23,
-    "description": "A prisoner attacked another inmate with a homemade knife, causing serious injuries."
+    "description": "The victim was hit in the face with a rock during a fight in the exercise yard.",
+    "prosecutionSentence": "The defendant was seen with the rock before the assault and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the assault and did not have access to the rock."
   },
   {
     "id": 24,
-    "description": "During a fight in the prison yard, a prisoner stabbed another inmate with a sharpened toothbrush."
+    "description": "The victim was attacked with a sharpened piece of wood during a gang-related brawl in the mess hall.",
+    "prosecutionSentence": "The defendant was identified as a member of the attacking gang and had a motive for the assault.",
+    "defenseSentence": "My client was not involved in the gang and had no reason to attack the victim."
   },
   {
     "id": 25,
-    "description": "A group of inmates attacked a fellow prisoner with a metal pipe, causing severe head trauma."
+    "description": "Surveillance footage reveals that the defendant was acting in self-defense and used the weapon as a last resort to protect themselves from the victim's violent attack.",
+    "prosecutionSentence": "The defendant's use of a deadly weapon constitutes a clear act of aggression and intention to cause harm.",
+    "defenseSentence": "My client resorted to using a weapon in self-defense to protect their own life from the imminent danger posed by the victim."
   },
+
   {
     "id": 26,
-    "description": "A prisoner assaulted a guard with a homemade weapon, causing significant injuries."
+    "description": "Eyewitness testimonies from other inmates confirm that the victim was the initial aggressor and the defendant acted in self-defense with the weapon as a means to protect themselves.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrates a premeditated intent to harm the victim.",
+    "defenseSentence": "My client only resorted to using a weapon as a necessary measure to defend themselves against the victim's life-threatening assault."
   },
+
   {
     "id": 27,
-    "description": "An inmate stabbed another prisoner with a pen, causing multiple puncture wounds."
+    "description": "Medical reports indicate that the defendant sustained severe injuries prior to the incident, providing evidence of the victim's prior aggression and the defendant's need to defend themselves with a weapon.",
+    "prosecutionSentence": "The defendant's use of a deadly weapon goes beyond reasonable self-defense and constitutes an act of excessive force.",
+    "defenseSentence": "My client was forced to use a weapon as a means of self-preservation due to the victim's relentless and life-threatening attack."
   },
+
   {
     "id": 28,
-    "description": "During a fight in the recreation room, a prisoner struck another inmate in the head with a weight, causing a skull fracture."
+    "description": "Statements from prison staff reveal that the victim had a history of violent behavior and had previously assaulted other inmates, justifying the defendant's use of a weapon for self-defense.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrate a clear intention to cause harm to the victim.",
+    "defenseSentence": "My client's use of a weapon was solely for self-defense purposes, as they had legitimate reasons to fear for their safety due to the victim's violent tendencies."
   },
+
   {
     "id": 29,
-    "description": "A group of inmates attacked a fellow prisoner with a broom handle, causing multiple broken bones."
+    "description": "Surveillance footage from a different angle shows the victim brandishing a weapon prior to the defendant's use of their own weapon, suggesting that the defendant acted in response to an imminent threat.",
+    "prosecutionSentence": "The defendant's use of a deadly weapon in the altercation indicates a deliberate intent to cause harm to the victim.",
+    "defenseSentence": "My client's use of a weapon was a direct response to the victim's armed aggression, aimed at protecting themselves from imminent harm."
   },
+
   {
     "id": 30,
-    "description": "A prisoner assaulted a guard with a sharpened piece of metal, causing deep lacerations and a punctured lung."
+    "description": "Psychological evaluation of the defendant reveals a history of trauma and anxiety, which influenced their perception of threat and led them to use a weapon as a means of self-defense.",
+    "prosecutionSentence": "The defendant's use of a deadly weapon suggests a willingness to inflict harm on the victim, regardless of the circumstances.",
+    "defenseSentence": "My client, due to their traumatic experiences and resulting psychological distress, used a weapon as a necessary means to defend themselves from the victim's life-threatening assault."
   },
   {
     "id": 31,
-    "description": "A prisoner attacked another inmate with a sock filled with rocks, causing significant head injuries."
+    "description": "Eyewitness testimonies from other inmates corroborate the defendant's claim of acting in self-defense and using the weapon as a last resort.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon indicates their intention to cause harm and goes against the principles of self-defense.",
+    "defenseSentence": "My client utilized the weapon in self-defense, employing necessary force to protect themselves from the imminent danger posed by the victim."
   },
+
   {
     "id": 32,
-    "description": "During a brawl in the mess hall, a prisoner slashed another inmate with a sharpened plastic utensil."
+    "description": "Medical records reveal that the defendant sustained severe injuries consistent with a physical altercation, supporting their claim of acting in self-defense with the weapon.",
+    "prosecutionSentence": "The defendant's use of a deadly weapon suggests an intent to cause harm rather than acting solely in self-defense.",
+    "defenseSentence": "My client resorted to using a weapon as a means of self-preservation, responding to the victim's aggressive actions and protecting their own life."
   },
+
   {
     "id": 33,
-    "description": "A group of inmates attacked a fellow prisoner with a metal rod, causing serious internal injuries."
+    "description": "Surveillance footage shows the victim brandishing a different weapon prior to the defendant's use of their own weapon, indicating a defensive response to an immediate threat.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrate their intent to inflict harm on the victim, regardless of the circumstances.",
+    "defenseSentence": "My client's use of a weapon was a direct reaction to the victim's armed aggression, aimed at protecting themselves from imminent danger."
   },
+
   {
     "id": 34,
-    "description": "A prisoner assaulted a guard with a broken broom handle, causing multiple lacerations and bruises."
-  },
-  {
-    "id": 35,
-    "description": "During a fight in the cell block, a prisoner used a sock filled with batteries to attack another inmate, causing significant injuries."
-  },
-  {
-    "id": 36,
-    "description": "An inmate attacked another prisoner with a sharpened piece of plexiglass, causing deep lacerations and puncture wounds."
-  },
-  {
-    "id": 37,
-    "description": "A prisoner assaulted a guard with a makeshift weapon made from a broken chair leg, causing significant head injuries."
-  },
-  {
-    "id": 38,
-    "description": "During a scuffle in the exercise yard, a prisoner struck another inmate with a metal weight, causing a broken jaw."
-  },
-  {
-    "id": 39,
-    "description": "A group of inmates attacked a fellow prisoner with a broken pool cue, causing multiple lacerations and bruises."
-  },
-  {
-    "id": 40,
-    "description": "A prisoner assaulted a guard with a sharpened toothbrush, causing deep puncture wounds."
-  },
-  {
-    "id": 41,
-    "description": "During a fight in the laundry room, a prisoner used a hot iron to burn another inmate, causing significant burns."
-  },
-  {
-    "id": 42,
-    "description": "An inmate attacked another prisoner with a sharpened piece of rebar, causing multiple puncture wounds."
-  },
-  {
-    "id": 43,
-    "description": "A prisoner assaulted a guard with a broken piece of furniture, causing significant head injuries."
-  },
-  {
-    "id": 44,
-    "description": "During a brawl in the shower area, a prisoner used a bar of soap in a sock to attack another inmate, causing significant head injuries."
+    "description": "Character references from fellow inmates highlight the defendant's peaceful nature and lack of prior involvement in violent altercations, casting doubt on the prosecution's claim of initiating the fight.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon imply a deliberate intention to cause harm to the victim.",
+    "defenseSentence": "My client used a weapon only in response to the victim's unprovoked aggression, employing necessary force to defend themselves."
   }
 ]

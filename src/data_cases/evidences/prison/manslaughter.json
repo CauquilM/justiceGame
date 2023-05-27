@@ -1,178 +1,248 @@
 [
   {
     "id": 0,
-    "description": "The victim was found dead in their cell with signs of physical trauma indicating they had been beaten to death by another inmate."
+    "description": "The victim was found unresponsive in their cell with signs of asphyxiation.",
+    "prosecutionSentence": "The defendant was the only other person in the cell at the time of the incident and had a history of violent behavior towards the victim.",
+    "defenseSentence": "My client did not cause the victim's death and was not in the cell at the time of the incident."
   },
   {
     "id": 1,
-    "description": "An inmate was killed during a prison riot that broke out after a disagreement between rival gangs."
+    "description": "The victim died after being beaten by other inmates in the yard.",
+    "prosecutionSentence": "The defendant was one of the instigators of the attack and was caught on CCTV footage.",
+    "defenseSentence": "My client was not involved in the attack and was not even in the yard at the time."
   },
   {
     "id": 2,
-    "description": "A corrections officer was found dead in a cell block with evidence suggesting they had been attacked by an inmate."
+    "description": "The victim was killed by a falling object in the workshop.",
+    "prosecutionSentence": "The defendant was operating a crane at the time of the incident and had a history of reckless behavior.",
+    "defenseSentence": "My client was not responsible for the incident and the victim's death was a tragic accident."
   },
   {
     "id": 3,
-    "description": "An inmate died after being beaten by several other prisoners in a common area of the prison."
+    "description": "The victim died after being stabbed with a homemade knife in the shower.",
+    "prosecutionSentence": "The defendant was seen with the weapon before the incident and had a motive for the attack.",
+    "defenseSentence": "My client was not involved in the incident and did not have access to the weapon."
   },
   {
     "id": 4,
-    "description": "A prisoner who had been placed in solitary confinement died after being left unattended for an extended period of time."
+    "description": "The victim was killed in a fight over territory in the prison yard.",
+    "prosecutionSentence": "The defendant was one of the main instigators of the fight and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the fight and was in a different part of the yard at the time."
   },
   {
     "id": 5,
-    "description": "An inmate was found dead in their cell after reportedly being involved in a physical altercation with another prisoner."
+    "description": "The victim died after being pushed down the stairs in the cell block.",
+    "prosecutionSentence": "The defendant had a history of altercations with the victim and was the only other person in the area at the time.",
+    "defenseSentence": "My client did not push the victim down the stairs and was not even in the cell block at the time."
   },
   {
     "id": 6,
-    "description": "A prisoner was killed by a fellow inmate using a makeshift weapon."
+    "description": "The victim died from a drug overdose after being given a lethal dose by another inmate.",
+    "prosecutionSentence": "The defendant was seen giving the victim the drugs and had a motive for the overdose.",
+    "defenseSentence": "My client did not give the victim the drugs and was not even in the area at the time."
   },
   {
     "id": 7,
-    "description": "A corrections officer was fatally injured while attempting to break up a fight between two inmates."
+    "description": "The victim died after being strangled with a bedsheet in their cell.",
+    "prosecutionSentence": "The defendant was the only other person in the cell at the time and had a motive for the attack.",
+    "defenseSentence": "My client did not strangle the victim and was not in the cell at the time of the incident."
   },
   {
     "id": 8,
-    "description": "An inmate died after being beaten by another prisoner in a prison yard."
+    "description": "The victim died from a head injury sustained during a fight in the recreation area.",
+    "prosecutionSentence": "The defendant was one of the main instigators of the fight and was caught on CCTV footage.",
+    "defenseSentence": "My client was not involved in the fight and was in a different part of the recreation area at the time."
   },
   {
     "id": 9,
-    "description": "A prisoner died after being struck by a vehicle while on a work detail outside the prison."
+    "description": "The victim died after being stabbed multiple times with a makeshift knife in the prison yard.",
+    "prosecutionSentence": "The defendant was seen with the weapon and had a motive for the attack. Witnesses also reported hearing the defendant threaten the victim prior to the incident.",
+    "defenseSentence": "My client did not have a motive to kill the victim and there is no physical evidence linking them to the crime."
   },
   {
     "id": 10,
-    "description": "An inmate died after being strangled by a cellmate."
+    "description": "The victim was found dead in their cell after an apparent overdose of illegal drugs.",
+    "prosecutionSentence": "The defendant was the last person seen with the victim before they died and had a history of drug use and trafficking in the prison.",
+    "defenseSentence": "My client did not provide the drugs to the victim and had no knowledge of the overdose."
   },
   {
     "id": 11,
-    "description": "A corrections officer was killed in a prison escape attempt."
+    "description": "The victim died of blunt force trauma to the head after being attacked with a heavy object in the prison library.",
+    "prosecutionSentence": "The defendant was seen with the object before the assault and had a motive for the attack. Witnesses also reported hearing the defendant threaten the victim prior to the incident.",
+    "defenseSentence": "My client did not have a motive to kill the victim and there is no physical evidence linking them to the crime."
   },
   {
     "id": 12,
-    "description": "An inmate died after being stabbed by another prisoner with a homemade weapon."
+    "description": "The victim died after being pushed down a flight of stairs by the defendant during an argument.",
+    "prosecutionSentence": "Witnesses reported seeing the defendant push the victim down the stairs and had a motive for the attack.",
+    "defenseSentence": "My client did not intend to kill the victim and the incident was the result of a heated argument that got out of control."
   },
   {
     "id": 13,
-    "description": "A prisoner died after being beaten by several other inmates during a gang-related incident."
+    "description": "The victim died of asphyxiation after being strangled with a bedsheet in their cell.",
+    "prosecutionSentence": "The defendant had a motive for the attack and witnesses reported seeing them near the victim's cell at the time of the incident.",
+    "defenseSentence": "My client did not have a motive to kill the victim and there is no physical evidence linking them to the crime."
   },
   {
     "id": 14,
-    "description": "A corrections officer was killed during a prison riot that was sparked by a disagreement between inmates and staff members."
+    "description": "The victim died of a heart attack after being beaten by the defendant in a prison fight.",
+    "prosecutionSentence": "Witnesses reported seeing the defendant strike the victim multiple times during the fight and had a history of violence in the prison.",
+    "defenseSentence": "My client did not intend to cause the victim's death and the incident was the result of a mutual altercation that got out of control."
   },
   {
     "id": 15,
-    "description": "An inmate died after being found unconscious in their cell with multiple injuries."
+    "description": "The victim died of a head injury after falling from a top bunk bed during an argument with the defendant.",
+    "prosecutionSentence": "Witnesses reported seeing the defendant engage in a physical altercation with the victim on the bunk bed prior to the incident.",
+    "defenseSentence": "My client did not intend to cause the victim's death and the incident was the result of a heated argument that got out of control."
   },
   {
     "id": 16,
-    "description": "A prisoner died after being hit by a car while attempting to escape from the prison."
+    "description": "The victim died after being stabbed multiple times with a homemade knife in the cafeteria.",
+    "prosecutionSentence": "The defendant was found with a bloodstained knife and had a motive for the attack.",
+    "defenseSentence": "My client did not have a knife and was not involved in the attack."
   },
   {
     "id": 17,
-    "description": "A corrections officer was killed in a hostage situation that occurred during a prison uprising."
+    "description": "The victim died from injuries sustained in a physical altercation in the exercise yard.",
+    "prosecutionSentence": "The defendant was seen hitting and kicking the victim and had a history of violence.",
+    "defenseSentence": "My client was defending themselves and did not intend to cause the victim's death."
   },
   {
     "id": 18,
-    "description": "An inmate was found dead in their cell with evidence suggesting they had committed suicide."
+    "description": "The victim died from a heart attack after being subjected to prolonged verbal abuse by another inmate.",
+    "prosecutionSentence": "The defendant was seen and heard shouting insults and threats at the victim before their death.",
+    "defenseSentence": "My client did not intend to cause the victim's death and was not aware of any pre-existing medical conditions."
   },
   {
     "id": 19,
-    "description": "A prisoner died after being beaten by a group of other inmates who had gained access to their cell."
+    "description": "The victim died from injuries sustained in a gang-related assault.",
+    "prosecutionSentence": "The defendant was a known member of the gang that carried out the attack and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the gang and did not participate in the assault."
   },
   {
     "id": 20,
-    "description": "An inmate was killed in a fight that broke out in the prison yard over gang territory."
+    "description": "The victim died from a drug overdose after being given a lethal dose by another inmate.",
+    "prosecutionSentence": "The defendant was seen giving the victim the drugs and had a motive for the overdose.",
+    "defenseSentence": "My client did not give the victim the drugs and was not even in the area at the time."
   },
   {
     "id": 21,
-    "description": "A corrections officer was fatally shot by an inmate who had obtained a firearm while in the prison."
+    "description": "The victim died after being hit on the head with a weight during a dispute in the weight room.",
+    "prosecutionSentence": "The defendant was seen with the weight and had a motive for the attack.",
+    "defenseSentence": "My client was not involved in the dispute and did not have access to the weight."
   },
   {
     "id": 22,
-    "description": "An inmate died after being struck by a guard's baton during a riot in the prison."
+    "description": "The victim died from injuries sustained in a violent altercation in the shower room.",
+    "prosecutionSentence": "The defendant was seen hitting and kicking the victim and had a history of violence.",
+    "defenseSentence": "My client was defending themselves and did not intend to cause the victim's death."
   },
   {
     "id": 23,
-    "description": "A prisoner died after being beaten by a cellmate with a metal pipe."
+    "description": "The victim died after being suffocated with a pillow in their cell.",
+    "prosecutionSentence": "The defendant was the only other person in the cell at the time and had a motive for the attack.",
+    "defenseSentence": "My client did not suffocate the victim and was not in the cell at the time of the incident."
   },
   {
     "id": 24,
-    "description": "An inmate died after being involved in a fight with another inmate in the recreation yard."
+    "description": "The victim died from injuries sustained in a gang-related attack in the yard.",
+    "prosecutionSentence": "The defendant was a known member of the gang that carried out the attack and had a history of violent behavior.",
+    "defenseSentence": "My client was not involved in the gang and did not participate in the assault."
   },
   {
     "id": 25,
-    "description": "An inmate was found unresponsive in their cell and later died as a result of injuries sustained in an altercation with another inmate."
+    "description": "The victim died after being punched in the head during a fight in the mess hall.",
+    "prosecutionSentence": "The defendant was seen throwing the punch and had a history of violent behavior.",
+    "defenseSentence": "My client did not intend to cause the victim's death and was defending themselves in the fight."
   },
   {
     "id": 26,
-    "description": "During a fight between two inmates in the prison yard, one of them struck the other with a metal pipe, causing fatal injuries."
+    "description": "Witness testimonies from other inmates state that the victim had a history of instigating fights and had a reputation for being violent.",
+    "prosecutionSentence": "The defendant's actions led directly to the victim's death and should be considered manslaughter.",
+    "defenseSentence": "My client's actions were a necessary response to the victim's aggressive behavior, intended to protect their own life."
   },
   {
     "id": 27,
-    "description": "An inmate was fatally stabbed in the chest during a brawl in the prison mess hall."
+    "description": "Surveillance footage shows that the victim initiated the confrontation by throwing the first punch, escalating the situation into a physical altercation.",
+    "prosecutionSentence": "The defendant's involvement in the fight resulted in the victim's death and constitutes manslaughter.",
+    "defenseSentence": "My client's response to the victim's initial aggression was reasonable and aimed at preserving their own life."
   },
   {
     "id": 28,
-    "description": "An inmate died from head injuries sustained in a physical altercation with another inmate in their shared cell."
+    "description": "Forensic analysis of the victim's injuries indicates that they had pre-existing medical conditions that contributed to their death, independent of the defendant's actions.",
+    "prosecutionSentence": "The defendant's participation in the fight directly caused the victim's death and should be classified as manslaughter.",
+    "defenseSentence": "My client's actions did not directly cause the victim's death, as their pre-existing medical conditions played a significant role."
   },
   {
     "id": 29,
-    "description": "Two inmates got into a fight in the prison library, during which one of them struck the other with a book, causing fatal head injuries."
+    "description": "Witness testimonies from prison staff confirm that the defendant attempted to diffuse the situation and retreat from the altercation before any fatal injuries occurred.",
+    "prosecutionSentence": "The defendant's involvement in the fight resulted in the victim's death, constituting manslaughter.",
+    "defenseSentence": "My client's actions were aimed at self-preservation, and they took reasonable steps to avoid the confrontation escalating to a deadly level."
   },
   {
     "id": 30,
-    "description": "An inmate died after being punched in the face multiple times during a dispute with another inmate over a television in the dayroom."
+    "description": "Expert analysis of the surveillance footage reveals that the victim's injuries were a result of a fall rather than direct blows from the defendant.",
+    "prosecutionSentence": "The defendant's participation in the fight caused the victim's death and should be considered manslaughter.",
+    "defenseSentence": "My client's actions did not directly cause the victim's fatal injuries, as the evidence suggests an alternative cause."
   },
   {
     "id": 31,
-    "description": "An inmate was found dead in their cell, with evidence suggesting they were strangled by their cellmate during an altercation."
+    "description": "Statements from other inmates indicate that the victim had a reputation for provoking fights and had been involved in previous violent incidents.",
+    "prosecutionSentence": "The defendant's actions in the fight led to the victim's death and should be classified as manslaughter.",
+    "defenseSentence": "My client's response to the victim's aggression was proportionate and intended to protect their own safety."
   },
   {
     "id": 32,
-    "description": "During a physical altercation between two inmates in the prison yard, one of them was knocked unconscious and later died from brain damage."
+    "description": "Medical reports reveal that the victim had a pre-existing medical condition that was a significant contributing factor to their death, unrelated to the defendant's actions.",
+    "prosecutionSentence": "The defendant's involvement in the fight directly caused the victim's death and should be considered manslaughter.",
+    "defenseSentence": "My client's actions did not directly cause the victim's death, as their pre-existing medical condition played a substantial role."
   },
   {
     "id": 33,
-    "description": "An inmate died from internal injuries after being beaten with a broomstick during a fight with another inmate in the prison laundry room."
+    "description": "Surveillance footage captures the victim engaging in aggressive and threatening behavior towards the defendant, justifying the defendant's actions as self-defense.",
+    "prosecutionSentence": "The defendant's actions in the fight resulted in the victim's death and constitute manslaughter.",
+    "defenseSentence": "My client's use of force was a necessary response to the victim's life-threatening aggression."
   },
   {
     "id": 34,
-    "description": "A prisoner died from blunt force trauma to the head after being attacked by another inmate with a metal tray during a meal in the cafeteria."
+    "description": "Surveillance footage shows that the defendant was cornered and threatened by multiple inmates, forcing them to use the weapon as a means of self-defense.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon indicate their intent to cause harm and should be considered an assault.",
+    "defenseSentence": "My client resorted to using the weapon as a last resort to protect themselves from the imminent danger posed by the multiple aggressors."
   },
   {
     "id": 35,
-    "description": "An inmate was killed during a gang-related brawl in the prison yard, during which multiple weapons were used."
+    "description": "Eyewitness testimonies from other inmates confirm that the defendant had been receiving consistent threats and was targeted by the victim, justifying their use of a weapon for self-defense.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon imply an intent to harm others, constituting an assault offense.",
+    "defenseSentence": "My client used the weapon solely to defend themselves from the victim's persistent threats and physical aggression."
   },
   {
     "id": 36,
-    "description": "A prisoner died from injuries sustained in a fight with another inmate in their cell, which was not stopped by the guards in time."
+    "description": "Medical records show that the defendant sustained severe injuries prior to using the weapon, indicating that they used it to protect themselves from further harm.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon suggest their intention to cause harm rather than acting solely in self-defense.",
+    "defenseSentence": "My client's use of the weapon was a response to the victim's initial attack, aimed at preventing further harm to themselves."
   },
   {
     "id": 37,
-    "description": "An inmate was found dead in their cell, with evidence suggesting they were beaten to death by their cellmate with a homemade weapon."
+    "description": "Surveillance footage reveals that the defendant attempted to retreat from the confrontation before resorting to the use of a weapon, indicating a desire to avoid violence.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon demonstrate their intent to inflict harm on others, constituting an assault offense.",
+    "defenseSentence": "My client's use of the weapon was a last-ditch effort to protect themselves after exhausting all non-violent options."
   },
   {
     "id": 38,
-    "description": "During a fight between two inmates in the shower area, one of them was fatally stabbed with a sharpened piece of metal."
+    "description": "Character references from fellow inmates emphasize the defendant's non-violent nature and lack of prior involvement in assaultive behavior, casting doubt on the prosecution's claim of initiating the altercation.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon indicate their intent to cause harm, regardless of the circumstances.",
+    "defenseSentence": "My client's use of the weapon was solely in response to the victim's unprovoked aggression, aimed at ensuring their own safety."
   },
   {
     "id": 39,
-    "description": "An inmate died from internal injuries after being punched repeatedly in the stomach by another inmate during a physical altercation in the yard."
+    "description": "Forensic analysis of the weapon shows no trace of the victim's DNA or fingerprints, suggesting that the defendant did not use the weapon against them.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon suggest their intention to harm others, constituting an assault offense.",
+    "defenseSentence": "My client did not use the weapon against the victim, as evidenced by the lack of their DNA or fingerprints on it."
   },
   {
     "id": 40,
-    "description": "A prisoner was killed by their cellmate, who strangled them with a bedsheet during a dispute over the use of the cell's toilet."
-  },
-  {
-    "id": 41,
-    "description": "An inmate was found dead in their cell, with evidence suggesting they were suffocated by their cellmate with a pillow during the night."
-  },
-  {
-    "id": 42,
-    "description": "During a fight between two inmates in the prison yard, one of them was hit in the head with a rock and died from their injuries."
-  },
-  {
-    "id": 43,
-    "description": "An inmate died after being stabbed multiple times with a homemade knife during a brawl in the prison exercise area."
+    "description": "Witness testimonies from prison staff confirm that the defendant had been subjected to ongoing harassment and threats by the victim, justifying their use of a weapon for self-defense.",
+    "prosecutionSentence": "The defendant's possession and use of a deadly weapon imply an intent to cause harm, regardless of the circumstances.",
+    "defenseSentence": "My client used the weapon as a necessary measure to protect themselves from the victim's persistent threats and physical violence."
   }
 ]

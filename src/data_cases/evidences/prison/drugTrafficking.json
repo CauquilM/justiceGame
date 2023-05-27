@@ -1,178 +1,308 @@
 [
   {
     "id": 0,
-    "description": "A correctional officer found a package of drugs hidden inside a roll of toilet paper in an inmate's cell."
+    "description": "A large amount of drugs were found in the defendant's cell during a routine search.",
+    "prosecutionSentence": "The drugs found in the defendant's cell were enough to supply the entire prison population, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the drugs were in their cell and someone else must have placed them there."
   },
   {
     "id": 1,
-    "description": "An inmate was caught on surveillance camera passing a small package to another inmate in the yard, suspected to contain drugs."
+    "description": "The defendant was caught on CCTV footage passing drugs to another inmate during a visitation session.",
+    "prosecutionSentence": "The CCTV footage clearly shows the defendant passing drugs to the other inmate, and the defendant had a history of drug trafficking.",
+    "defenseSentence": "My client did not pass drugs to the other inmate and the footage must have been doctored or manipulated."
   },
   {
     "id": 2,
-    "description": "A random search of an inmate's cell revealed a stash of drugs hidden inside a hollowed-out book."
+    "description": "Drugs were found hidden inside a package sent to the defendant by a known drug supplier.",
+    "prosecutionSentence": "The package was intercepted and searched, revealing a significant amount of drugs, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know there were drugs in the package and the supplier must have sent them without their knowledge or consent."
   },
   {
     "id": 3,
-    "description": "A visitor attempting to leave the prison was caught with drugs concealed in their clothing by a security checkpoint guard."
+    "description": "The defendant was caught with drugs in their possession during a pat-down search before entering the visiting area.",
+    "prosecutionSentence": "The drugs were found in the defendant's pockets during the search, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the drugs were in their pockets and someone else must have put them there without their knowledge or consent."
   },
   {
     "id": 4,
-    "description": "During a routine cell search, a correctional officer found a homemade syringe filled with drugs hidden in a mattress."
+    "description": "The defendant was overheard discussing drug deals with other inmates during recreation time.",
+    "prosecutionSentence": "The defendant's conversations were recorded by an undercover officer and confirmed drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client was not discussing drug deals with the other inmates and the recordings must have been doctored or manipulated."
   },
   {
     "id": 5,
-    "description": "An inmate was found to be in possession of drugs after being stopped for a routine pat-down search by a correctional officer."
+    "description": "The defendant was caught with drugs hidden inside their personal belongings during a random cell search.",
+    "prosecutionSentence": "The drugs found in the defendant's belongings were enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the drugs were in their belongings and someone else must have put them there without their knowledge or consent."
   },
   {
     "id": 6,
-    "description": "A correctional officer noticed an inmate acting suspiciously and upon searching them found a bag of drugs hidden in their shoe."
+    "description": "A search of the defendant's cell revealed drug paraphernalia and a ledger detailing drug transactions.",
+    "prosecutionSentence": "The paraphernalia and ledger provided strong evidence of drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not own the drug paraphernalia or ledger, and someone else must have put them in the cell without their knowledge or consent."
   },
   {
     "id": 7,
-    "description": "A visitor was caught on surveillance camera passing a small package to an inmate during a visitation session, suspected to contain drugs."
+    "description": "A package containing drugs and addressed to the defendant was intercepted by prison officials before it reached its intended destination.",
+    "prosecutionSentence": "The package contained a significant amount of drugs and was clearly intended for the defendant, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the package contained drugs and the sender must have put them there without their knowledge or consent."
   },
   {
     "id": 8,
-    "description": "A group of inmates were caught in possession of drugs after a search of their shared cell turned up a stash hidden in a wall vent."
+    "description": "During a routine pat-down search, a prison guard discovered drugs hidden on the defendant's person.",
+    "prosecutionSentence": "The drugs found on the defendant were enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the drugs were on their person and someone else must have planted them there without their knowledge or consent."
   },
   {
     "id": 9,
-    "description": "An inmate was found to be in possession of drugs after being searched during a routine transfer between cells."
+    "description": "A wiretap investigation revealed that the defendant was coordinating drug trafficking operations from within the prison.",
+    "prosecutionSentence": "The wiretap recordings provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client was not involved in any drug trafficking operations and the recordings must have been fabricated or taken out of context."
   },
   {
     "id": 10,
-    "description": "A correctional officer discovered a package of drugs hidden in a trash can in a common area of the prison."
+    "description": "Multiple inmates reported seeing the defendant selling drugs in the prison yard.",
+    "prosecutionSentence": "The testimonies of multiple witnesses provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client was not selling drugs in the prison yard and the witnesses must be mistaken or lying."
   },
   {
     "id": 11,
-    "description": "An inmate was caught attempting to flush a package of drugs down the toilet during a surprise cell inspection."
+    "description": "A search of the defendant's cell revealed a large quantity of drugs and drug paraphernalia.",
+    "prosecutionSentence": "The drugs and paraphernalia found in the defendant's cell provided strong evidence of their involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not own the drugs or paraphernalia and someone else must have put them in the cell without their knowledge or consent."
   },
   {
     "id": 12,
-    "description": "During a visitor search, a visitor was found to have swallowed drugs in an attempt to smuggle them into the prison."
+    "description": "An undercover officer posing as an inmate was able to purchase drugs directly from the defendant.",
+    "prosecutionSentence": "The undercover operation provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not sell drugs to the undercover officer and the officer must have mistaken them for someone else."
   },
   {
     "id": 13,
-    "description": "A drug-sniffing dog alerted to the presence of drugs in an inmate's personal belongings during a routine search of incoming mail."
+    "description": "The defendant was found in possession of a cell phone with evidence of drug transactions and communications with known drug dealers.",
+    "prosecutionSentence": "The evidence on the cell phone provided strong evidence of the defendant's involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the cell phone contained evidence of drug transactions and the phone must have been planted on them without their knowledge or consent."
   },
   {
     "id": 14,
-    "description": "A correctional officer discovered a package of drugs hidden inside a bar of soap in an inmate's shower area."
+    "description": "A drug-sniffing dog alerted to the presence of drugs in the defendant's cell.",
+    "prosecutionSentence": "The alert from the drug-sniffing dog provided probable cause for a search of the defendant's cell, which revealed drugs and drug paraphernalia.",
+    "defenseSentence": "My client did not own the drugs or paraphernalia and someone else must have put them in the cell without their knowledge or consent."
   },
   {
     "id": 15,
-    "description": "An inmate was caught attempting to smuggle drugs into the prison by hiding them in their prosthetic leg."
+    "description": "The defendant's bank account showed large and unexplained deposits of money, consistent with profits from drug trafficking.",
+    "prosecutionSentence": "The deposits in the defendant's bank account provided strong evidence of their involvement in drug trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not deposit the money and someone else must have used their information to do so without their knowledge or consent."
   },
   {
     "id": 16,
-    "description": "A correctional officer noticed an inmate with bloodshot eyes and slurred speech and found a bag of drugs hidden in their mouth upon searching them."
+    "description": "A confidential informant reported that the defendant was involved in drug trafficking within the prison.",
+    "prosecutionSentence": "The informant provided specific details about the defendant's drug trafficking activity, and their information was corroborated by other evidence.",
+    "defenseSentence": "The informant's testimony is unreliable and my client has never been involved in drug trafficking."
   },
   {
     "id": 17,
-    "description": "An inmate was caught in possession of drugs after being caught on surveillance camera entering a staff-only area of the prison."
+    "description": "A search of the defendant's cell revealed a large quantity of drugs hidden in a secret compartment in the wall.",
+    "prosecutionSentence": "The amount of drugs found in the defendant's cell was enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know about the drugs hidden in the cell and someone else must have put them there without their knowledge or consent."
   },
   {
     "id": 18,
-    "description": "During a cell shakedown, a correctional officer found a bag of drugs hidden inside a rolled-up magazine."
+    "description": "The defendant was caught on camera exchanging drugs for money with another inmate.",
+    "prosecutionSentence": "The footage clearly showed the defendant engaged in drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "The footage is inconclusive and does not show my client engaged in any illegal activity."
   },
   {
     "id": 19,
-    "description": "Prison officials discovered a package containing drugs hidden in a laundry basket during a routine search."
+    "description": "A search of the defendant's person revealed a small quantity of drugs hidden in their clothing.",
+    "prosecutionSentence": "The drugs found on the defendant's person were consistent with drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know about the drugs hidden in their clothing and someone else must have put them there without their knowledge or consent."
   },
   {
     "id": 20,
-    "description": "A visitor attempted to smuggle drugs into the prison by hiding them in a gift package."
+    "description": "The defendant's phone records showed multiple conversations with known drug traffickers outside of the prison.",
+    "prosecutionSentence": "The phone records provided strong evidence of the defendant's involvement in drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not discuss drug trafficking with anyone over the phone, and the calls were about other matters."
   },
   {
     "id": 21,
-    "description": "The prison's drug-sniffing dogs found drugs hidden in an inmate's cell."
+    "description": "An undercover officer posed as a drug buyer and successfully purchased drugs from the defendant.",
+    "prosecutionSentence": "The undercover operation provided strong evidence of the defendant's drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the person was an undercover officer and did not intend to sell drugs."
   },
   {
     "id": 22,
-    "description": "An inmate was caught trying to flush drugs down the toilet."
+    "description": "A search of the defendant's visitors revealed that they were bringing in drugs to be sold within the prison.",
+    "prosecutionSentence": "The visitors admitted to bringing in drugs for the defendant, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not ask the visitors to bring in drugs and did not know they were planning to do so."
   },
   {
     "id": 23,
-    "description": "A prison employee was caught smuggling drugs into the facility inside their lunchbox."
+    "description": "A fellow inmate testified that the defendant had sold them drugs on multiple occasions.",
+    "prosecutionSentence": "The inmate's testimony provided strong evidence of the defendant's involvement in drug trafficking activity, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "The inmate's testimony is unreliable and my client did not sell drugs to them."
   },
   {
     "id": 24,
-    "description": "A group of inmates was caught trying to bribe a guard to smuggle drugs into the prison."
+    "description": "The defendant was overheard on a recorded phone call discussing drug transactions with a known drug dealer.",
+    "prosecutionSentence": "The conversation provided strong evidence of the defendant's involvement in drug trafficking and their intention to continue the activity.",
+    "defenseSentence": "My client did not intend to participate in any drug transactions and was only discussing hypothetical scenarios with the other person on the call."
   },
   {
     "id": 25,
-    "description": "A drone was used to deliver drugs to a specific location inside the prison."
+    "description": "During a routine pat-down search, prison guards found a small quantity of drugs hidden on the defendant's person.",
+    "prosecutionSentence": "The drugs found on the defendant were consistent with those commonly found in the prison, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the drugs were on their person and someone else must have put them there without their knowledge or consent."
   },
   {
     "id": 26,
-    "description": "An inmate's mail was intercepted and found to contain drugs hidden inside."
+    "description": "The defendant was observed passing a small object to another inmate during a visitation session.",
+    "prosecutionSentence": "Subsequent searches of both inmates revealed drugs hidden on their persons, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not intend to pass drugs to the other inmate and was only giving them a harmless object, which was mistaken for drugs."
   },
   {
     "id": 27,
-    "description": "Drugs were found hidden inside a book during a routine search of the prison library."
+    "description": "A search of the defendant's cell revealed a stash of drugs hidden in a hollowed-out book.",
+    "prosecutionSentence": "The drugs found in the defendant's cell were enough to supply a significant portion of the prison population, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not know the drugs were in the book and someone else must have put them there without their knowledge or consent."
   },
   {
     "id": 28,
-    "description": "A prison nurse was caught smuggling prescription drugs into the facility."
+    "description": "A search of the defendant's mail revealed letters discussing drug transactions with individuals outside the prison.",
+    "prosecutionSentence": "The letters provided strong evidence of the defendant's involvement in drug trafficking both inside and outside the prison.",
+    "defenseSentence": "My client did not intend to participate in any drug transactions and was only communicating with the individuals out of friendship or other non-criminal purposes."
   },
   {
     "id": 29,
-    "description": "An inmate was caught attempting to hide drugs inside their mattress."
+    "description": "A search of the defendant's cell revealed drug paraphernalia and a homemade recipe for producing drugs.",
+    "prosecutionSentence": "The paraphernalia and recipe provided strong evidence of the defendant's involvement in drug production and trafficking, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not own the drug paraphernalia or recipe and someone else must have put them in the cell without their knowledge or consent."
   },
   {
     "id": 30,
-    "description": "Drugs were found concealed inside a pen during a search of an inmate's property."
+    "description": "The defendant was observed handing over money to another inmate in exchange for a small object during a recreation period.",
+    "prosecutionSentence": "Subsequent searches of both inmates revealed drugs hidden on their persons, and the defendant had a history of drug-related offenses.",
+    "defenseSentence": "My client did not intend to purchase drugs from the other inmate and was only giving them money as a loan or payment for a non-criminal purpose."
   },
   {
     "id": 31,
-    "description": "A visitor attempted to pass drugs to an inmate during a visitation session."
+    "description": "Forensic analysis of the alleged drugs found in the defendant's possession reveals that they were not illegal substances but harmless substances resembling drugs.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs indicate their involvement in drug-related activities and should be considered a crime.",
+    "defenseSentence": "The alleged drugs found in the defendant's possession were not illegal substances but harmless substances, indicating their innocence."
   },
   {
     "id": 32,
-    "description": "An inmate was caught with drugs hidden in their clothing during a pat-down search."
+    "description": "Witness testimonies from other inmates assert that the alleged drugs were planted in the defendant's belongings by a third party with malicious intent.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs imply their involvement in drug-related activities, constituting a criminal offense.",
+    "defenseSentence": "The alleged drugs were planted in the defendant's belongings by a third party, as supported by the testimonies of other inmates, making them innocent."
   },
   {
     "id": 33,
-    "description": "An undercover officer posed as an inmate to gather evidence of drug trafficking inside the prison."
+    "description": "Surveillance footage shows that the defendant had no access to the area where the drugs were discovered, raising doubts about their involvement in drug trafficking.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs suggest their active involvement in drug-related activities, constituting a crime.",
+    "defenseSentence": "The defendant had no access to the area where the drugs were discovered, as shown in the surveillance footage, indicating their innocence."
   },
   {
     "id": 34,
-    "description": "A prison staff member was caught on camera smuggling drugs into the facility."
+    "description": "Character references from fellow inmates attest to the defendant's reputation for being drug-free and not participating in drug-related activities, casting doubt on the prosecution's claim.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs indicate their involvement in drug-related activities, constituting a criminal offense.",
+    "defenseSentence": "Character references from fellow inmates emphasize the defendant's drug-free reputation, making it unlikely for them to possess or traffic illegal drugs."
   },
   {
     "id": 35,
-    "description": "An inmate was caught with drugs hidden in their personal hygiene products during a search."
+    "description": "Expert analysis of the alleged drugs reveals inconsistencies in their composition and packaging, suggesting that they were tampered with or counterfeit.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs imply their active participation in drug-related activities, constituting a crime.",
+    "defenseSentence": "The alleged drugs were tampered with or counterfeit, as indicated by expert analysis, exonerating the defendant from the charges."
   },
   {
     "id": 36,
-    "description": "Drugs were found inside a package of legal correspondence sent to an inmate."
+    "description": "Witness testimonies from prison staff confirm that the defendant was under constant surveillance and had no opportunity to engage in drug trafficking activities.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs indicate their involvement in drug-related activities and should be considered a crime.",
+    "defenseSentence": "The defendant was under constant surveillance and had no opportunity to engage in drug trafficking activities, as confirmed by prison staff."
   },
   {
     "id": 37,
-    "description": "An inmate was caught trying to pass drugs to another inmate during a meal service."
+    "description": "Surveillance footage captures the defendant rejecting and reporting offers of drugs from other inmates, demonstrating their refusal to participate in drug trafficking.",
+    "prosecutionSentence": "The defendant's possession and trafficking of illegal drugs imply their active involvement in drug-related activities, constituting a criminal offense.",
+    "defenseSentence": "The defendant rejected and reported offers of drugs, as shown in the surveillance footage, indicating their innocence in drug trafficking."
   },
   {
     "id": 38,
-    "description": "A prison maintenance worker was caught trying to smuggle drugs into the facility in their tool belt."
+    "description": "Surveillance footage shows that the defendant was not present at the location of the assault during the time it occurred, casting doubt on their involvement.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon indicates their intent to cause harm, constituting a criminal offense.",
+    "defenseSentence": "The defendant was not present at the location of the assault during the specified time, as clearly shown in the surveillance footage, asserting their innocence."
   },
   {
     "id": 39,
-    "description": "An inmate was caught trying to pass drugs to a visitor during a visitation session."
+    "description": "Eyewitness testimonies from other inmates state that the victim was the initial aggressor and that the defendant only used the weapon as a means of self-defense.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon suggests their intent to cause harm, constituting a criminal offense.",
+    "defenseSentence": "My client acted in self-defense and used the weapon solely to protect themselves from the victim's aggression, as supported by the testimonies of other inmates."
   },
   {
     "id": 40,
-    "description": "Drugs were found hidden inside a roll of toilet paper during a routine search of the prison's facilities."
+    "description": "Medical records indicate that the defendant sustained severe injuries prior to the assault, implying that they used the weapon to defend themselves from further harm.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon suggests their intention to cause harm, constituting a criminal offense.",
+    "defenseSentence": "My client used the weapon in self-defense, aiming to prevent further harm to themselves after already sustaining severe injuries."
   },
   {
     "id": 41,
-    "description": "An inmate was caught trying to conceal drugs inside their prosthetic limb."
+    "description": "Surveillance footage reveals that the defendant was being threatened and cornered by multiple inmates, justifying their use of the weapon as a means of self-defense.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon implies their intent to cause harm, constituting a criminal offense.",
+    "defenseSentence": "My client resorted to using the weapon as a last resort to protect themselves from the imminent danger posed by the multiple aggressors."
   },
   {
     "id": 42,
-    "description": "A prison visitor was caught trying to smuggle drugs into the facility inside their shoes."
+    "description": "Character references from fellow inmates emphasize the defendant's non-violent nature and lack of prior involvement in assaultive behavior, casting doubt on the prosecution's claim.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon indicates their intent to cause harm, regardless of the circumstances.",
+    "defenseSentence": "Character references attest to my client's non-violent nature, making it unlikely for them to initiate an assault with a deadly weapon."
   },
   {
     "id": 43,
-    "description": "An inmate was caught with drugs hidden inside their legal paperwork."
+    "description": "Forensic analysis of the alleged weapon does not link it to the defendant, raising doubts about their possession and use of a deadly weapon during the assault.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon suggests their intention to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Forensic analysis does not link the alleged weapon to my client, indicating that they were not in possession or involved in using a deadly weapon during the assault."
+  },
+  {
+    "id": 44,
+    "description": "Surveillance footage captures the victim brandishing a different deadly weapon just moments before the assault, indicating that the defendant acted in response to a direct threat.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon suggests their intent to cause harm, constituting a criminal offense.",
+    "defenseSentence": "The defendant used the weapon as a necessary measure in response to the direct threat posed by the victim, as captured in the surveillance footage."
+  },
+  {
+    "id": 45,
+    "description": "Expert analysis of the defendant's injuries aligns with their self-defense claim, indicating that their actions were justified in the face of imminent danger.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon implies their intention to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Expert analysis of the defendant's injuries supports their self-defense claim, providing evidence that their actions were justified given the imminent danger they faced."
+  },
+  {
+    "id": 46,
+    "description": "Eyewitness testimonies from prison staff confirm that the defendant had a history of being targeted and bullied by the victim, providing a context for their defensive actions.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon suggests their intent to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Eyewitness testimonies from prison staff substantiate the defendant's claim of being a victim of bullying, providing a context for their defensive actions."
+  },
+  {
+    "id": 47,
+    "description": "Video evidence shows that the defendant used the weapon as a last resort and immediately ceased their actions once the threat was neutralized, indicating self-defense rather than aggression.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon implies their intention to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Video evidence clearly demonstrates that the defendant used the weapon as a means of self-defense and immediately stopped their actions once the threat was neutralized."
+  },
+  {
+    "id": 48,
+    "description": "Forensic analysis of the defendant's DNA on the weapon reveals no conclusive evidence, suggesting that they may not have been the one who handled it during the assault.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon suggests their intent to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Forensic analysis of the weapon does not conclusively link the defendant's DNA to it, raising doubts about their direct involvement in the assault."
+  },
+  {
+    "id": 49,
+    "description": "Medical records indicate that the defendant suffered from physical and psychological trauma prior to the assault, which could have influenced their actions in self-defense.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon implies their intention to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Medical records highlight the defendant's prior physical and psychological trauma, which may have influenced their actions in self-defense during the assault."
+  },
+  {
+    "id": 50,
+    "description": "Surveillance footage reveals that the defendant attempted to flee the altercation rather than instigate or prolong it, supporting their claim of acting in self-preservation.",
+    "prosecutionSentence": "The defendant's alleged involvement in the assault with a deadly weapon implies their intention to cause harm, constituting a criminal offense.",
+    "defenseSentence": "Surveillance footage clearly shows the defendant attempting to disengage and flee the altercation, corroborating their claim of acting in self-preservation."
   }
 ]
