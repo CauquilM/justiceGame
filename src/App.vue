@@ -95,6 +95,7 @@ export default {
         return {
             // Define case properties for each type
             caseProperties: {
+                Police: ['policeCharges'],
                 Criminal_first: ['criminalCharge_first'],
                 Criminal_second: ['criminalCharge_second'],
                 Felonies_first: ['feloniesCharge_first'],
@@ -108,6 +109,10 @@ export default {
             // Define randomization parameters
             randomizationParams: {
                 'type': "",
+                'policeCharges': [
+                    /*'Excessive Use of Force', 'False Arrest', 'bribery', 'perjury', 'evidence tampering',
+                    'corruption', 'Civil Rights Violations', 'Murder'*/
+                ],
                 'criminalCharge_first': ['murder', 'theft', 'fraud',
                     'assault'
                     /*
@@ -658,9 +663,9 @@ export default {
         caseGeneration() {
             // Define case types
             const caseTypes = [
-                /*'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',*/
+                'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
                 'Felonies_second', 'Criminal_second',
-                /*'Felony', 'Army', 'Immigration', 'Constitutional', "Historical"*/
+                /*'Police' ,'Army', 'Immigration', 'Constitutional', "Historical"*/
             ];
 
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
