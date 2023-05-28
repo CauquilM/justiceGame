@@ -219,6 +219,19 @@
     "fine_min": 1000,
     "fine_max": 25000
   },
+  "evadingArrest": {
+    "offense_charge": "evading Arrest",
+    "prison_min": 1,
+    "prison_months_min": 6,
+    "prison_max": 10,
+    "prison_months_max": 120,
+    "probation_min": 1,
+    "probation_months_min": 10,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 1000,
+    "fine_max": 25000
+  },
   "traffic": {
     "offense_charge": "traffic",
     "prison_min": 0,

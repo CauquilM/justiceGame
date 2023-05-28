@@ -71,8 +71,8 @@ import drivingNoLicense_d from '@/data_cases/descriptions/road/drivingNoLicense.
 import drivingNoLicense_e from '@/data_cases/evidences/road/drivingNoLicense.json'
 import dui_d from '@/data_cases/descriptions/road/dui.json'
 import dui_e from '@/data_cases/evidences/road/dui.json'
-/*import evadingArrest_d from '@/data_cases/descriptions/road/evadingArrest.json'
-import evadingArrest_e from '@/data_cases/evidences/road/evadingArrest.json'*/
+import evadingArrest_d from '@/data_cases/descriptions/road/evadingArrest.json'
+import evadingArrest_e from '@/data_cases/evidences/road/evadingArrest.json'
 import hitAndRun_d from '@/data_cases/descriptions/road/hitAndRun.json'
 import hitAndRun_e from '@/data_cases/evidences/road/hitAndRun.json'
 import recklessDriving_d from '@/data_cases/descriptions/road/recklessDriving.json'
@@ -138,7 +138,7 @@ export default {
                     'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
-                    'drivingNoLicense', 'hitAndRun', /*'evadingArrest',*/
+                    'drivingNoLicense', 'hitAndRun', 'evadingArrest', "leavingTheSceneOfAccident"
                     /*'driving Wrong Way',  'leaving the Scene of Accident',
                     failure to blood or breath sample, speeding*/
                 ],
@@ -530,6 +530,17 @@ export default {
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.hitAndRun.prison_min, offenses.hitAndRun.prison_max, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.hitAndRun.probation_min, offenses.hitAndRun.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.hitAndRun.fine_min, offenses.hitAndRun.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                        this.caseObj["witnesses"] = witnessesData.murder;
+                    } else if (this.caseObj.roadCharge === "evadingArrest") {
+                        this.caseObj["type"] = "traffic crime";
+                        this.caseObj["charge"] = "evading Arrest";
+                        this.caseObj["penalCodeCharge"] = "evadingArrest";
+                        this.caseObj["description"] = evadingArrest_d[Math.floor(Math.random() * evadingArrest_d.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evadingArrest_e.slice(0, Math.floor(Math.random() * evadingArrest_e.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.evadingArrest.prison_min, offenses.evadingArrest.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.evadingArrest.probation_min, offenses.evadingArrest.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.evadingArrest.fine_min, offenses.evadingArrest.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
                     }
