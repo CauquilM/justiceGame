@@ -29,9 +29,10 @@ import fraud_d from '@/data_cases/descriptions/crimes/fraud.json'
 import fraud_e from '@/data_cases/evidences/crimes/fraud.json'
 import theft_d from '@/data_cases/descriptions/crimes/theft.json'
 import theft_e from '@/data_cases/evidences/crimes/theft.json'
-import armedRobbery_d from '@/data_cases/descriptions/crimes/theft.json'
-import armedRobbery_e from '@/data_cases/evidences/crimes/theft.json'
-
+import armedRobbery_d from '@/data_cases/descriptions/crimes/armedRobbery.json'
+import armedRobbery_e from '@/data_cases/evidences/crimes/armedRobbery.json'
+import terrorist_d from '@/data_cases/descriptions/crimes/terrorist.json'
+import terrorist_e from '@/data_cases/evidences/crimes/terrorist.json'
 /************** Felonies **************/
 import drinkingInPublic_d from '@/data_cases/descriptions/felonies/drinkingInPublic.json'
 import drinkingInPublic_e from '@/data_cases/evidences/felonies/drinkingInPublic.json'
@@ -71,8 +72,8 @@ import drivingNoLicense_d from '@/data_cases/descriptions/road/drivingNoLicense.
 import drivingNoLicense_e from '@/data_cases/evidences/road/drivingNoLicense.json'
 import dui_d from '@/data_cases/descriptions/road/dui.json'
 import dui_e from '@/data_cases/evidences/road/dui.json'
-/*import evadingArrest_d from '@/data_cases/descriptions/road/evadingArrest.json'
-import evadingArrest_e from '@/data_cases/evidences/road/evadingArrest.json'*/
+import evadingArrest_d from '@/data_cases/descriptions/road/evadingArrest.json'
+import evadingArrest_e from '@/data_cases/evidences/road/evadingArrest.json'
 import hitAndRun_d from '@/data_cases/descriptions/road/hitAndRun.json'
 import hitAndRun_e from '@/data_cases/evidences/road/hitAndRun.json'
 import recklessDriving_d from '@/data_cases/descriptions/road/recklessDriving.json'
@@ -95,9 +96,9 @@ export default {
             // Define case properties for each type
             caseProperties: {
                 Criminal_first: ['criminalCharge_first'],
-                /*Criminal_second: ['criminalCharge_second'],*/
+                Criminal_second: ['criminalCharge_second'],
                 Felonies_first: ['feloniesCharge_first'],
-                /*Felonies_second: ['felonies_second'],*/
+                Felonies_second: ['feloniesCharge_second'],
                 Parole: ['parole'],
                 Road: ['roadCharge'],
                 Prison: ['prisonCharge'],
@@ -108,38 +109,39 @@ export default {
             randomizationParams: {
                 'type': "",
                 'criminalCharge_first': ['murder', 'theft', 'fraud',
-                    'assault', 'arson', 'armedRobbery'
+                    'assault'
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
                      'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
                      'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence',
-                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation', 'Terrorist threat',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation'
                     */
                 ],
-                /*'criminalCharge_second': [
-                ],*/
+                'criminalCharge_second': [
+                    'arson', 'armedRobbery', 'terrorist'
+                ],
                 'feloniesCharge_first': [
                     'trespassing', 'impersonatingPolice', 'pickpocketing', 'fake911Call',
-                    'vandalism', 'shoplifting', 'drinkingInPublic'
                     /*'bribery', 'suspicious Activity',
                      'trespassing', 'possesion of drugs', 'illegal Possession of Firearm'
                     , 'Possession of Burglary Tools', 'Possession of a Deadly Weapon',
-                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle'*/
-
-                ],
-                /*'felonies_second': [
-                    Disturbing the Peace, Failure to Present Concealed Carry Permit,
+                     'Possession of Firearm (Stolen)', 'Possession of a Stolen Vehicle'
+                     Disturbing the Peace, Failure to Present Concealed Carry Permit,
                     'Hate Crime', 'Indecent Exposure',
                     'Participating in Gang', 'Brandishing of Firearm', 'Inciting Riot',
+                     */
 
-                ],*/
+                ],
+                'feloniesCharge_second': [
+                    'vandalism', 'shoplifting', 'drinkingInPublic'
+                ],
                 'parole': [
                     'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
-                    'drivingNoLicense', 'hitAndRun', /*'evadingArrest',*/
-                    /*'driving Wrong Way',  'leaving the Scene of Accident',
+                    'drivingNoLicense', 'hitAndRun', 'evadingArrest'
+                    /*'driving Wrong Way',
                     failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
@@ -394,9 +396,9 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.assault.probation_min, offenses.assault.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.assault.fine_min, offenses.assault.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    } else if (this.caseObj.criminalCharge_first === "arson") {
+                    } else if (this.caseObj.criminalCharge_second === "arson") {
                         this.caseObj["type"] = "criminal";
-                        this.caseObj["charge"] = this.caseObj.criminalCharge_first;
+                        this.caseObj["charge"] = this.caseObj.criminalCharge_second;
                         this.caseObj["penalCodeCharge"] = "arson";
                         this.caseObj["description"] = arson_d[Math.floor(Math.random() * arson_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(arson_e.slice(0, Math.floor(Math.random() * arson_e.length))).slice(0, 3);
@@ -404,7 +406,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.arson.probation_min, offenses.arson.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.arson.fine_min, offenses.arson.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    } else if (this.caseObj.criminalCharge_first === "armedRobbery") {
+                    } else if (this.caseObj.criminalCharge_second === "armedRobbery") {
                         this.caseObj["type"] = "criminal";
                         this.caseObj["charge"] = "armed robbery";
                         this.caseObj["penalCodeCharge"] = "armedRobbery";
@@ -414,7 +416,18 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.armedRobbery.probation_min, offenses.armedRobbery.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.armedRobbery.fine_min, offenses.armedRobbery.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    } else if (this.caseObj.criminalCharge_second === "terrorist") {
+                        this.caseObj["type"] = "criminal";
+                        this.caseObj["charge"] = "terrorist case";
+                        this.caseObj["penalCodeCharge"] = "terrorist";
+                        this.caseObj["description"] = terrorist_d[Math.floor(Math.random() * terrorist_d.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(terrorist_e.slice(0, Math.floor(Math.random() * terrorist_e.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.terrorist.prison_min, offenses.terrorist.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.terrorist.probation_min, offenses.terrorist.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.terrorist.fine_min, offenses.terrorist.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
+
                     /******* Felonies *******/
                     else if (this.caseObj.feloniesCharge_first === "trespassing") {
                         this.caseObj["type"] = "felony";
@@ -456,7 +469,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.fake911Call.probation_min, offenses.fake911Call.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.fake911Call.fine_min, offenses.fake911Call.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    } else if (this.caseObj.feloniesCharge_first === "vandalism") {
+                    } else if (this.caseObj.feloniesCharge_second === "vandalism") {
                         this.caseObj["type"] = "felony";
                         this.caseObj["charge"] = "vandalism";
                         this.caseObj["penalCodeCharge"] = "vandalism";
@@ -466,7 +479,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.vandalism.probation_min, offenses.vandalism.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.vandalism.fine_min, offenses.vandalism.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    } else if (this.caseObj.feloniesCharge_first === "shoplifting") {
+                    } else if (this.caseObj.feloniesCharge_second === "shoplifting") {
                         this.caseObj["type"] = "felony";
                         this.caseObj["charge"] = "shoplifting";
                         this.caseObj["penalCodeCharge"] = "shoplifting";
@@ -476,7 +489,7 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.shoplifting.probation_min, offenses.shoplifting.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.shoplifting.fine_min, offenses.shoplifting.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
-                    } else if (this.caseObj.feloniesCharge_first === "drinkingInPublic") {
+                    } else if (this.caseObj.feloniesCharge_second === "drinkingInPublic") {
                         this.caseObj["type"] = "felony";
                         this.caseObj["charge"] = "drinking in public";
                         this.caseObj["penalCodeCharge"] = "drinkingInPublic";
@@ -530,6 +543,17 @@ export default {
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.hitAndRun.prison_min, offenses.hitAndRun.prison_max, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.hitAndRun.probation_min, offenses.hitAndRun.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.hitAndRun.fine_min, offenses.hitAndRun.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                        this.caseObj["witnesses"] = witnessesData.murder;
+                    } else if (this.caseObj.roadCharge === "evadingArrest") {
+                        this.caseObj["type"] = "traffic crime";
+                        this.caseObj["charge"] = "evading Arrest";
+                        this.caseObj["penalCodeCharge"] = "evadingArrest";
+                        this.caseObj["description"] = evadingArrest_d[Math.floor(Math.random() * evadingArrest_d.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(evadingArrest_e.slice(0, Math.floor(Math.random() * evadingArrest_e.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.evadingArrest.prison_min, offenses.evadingArrest.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.evadingArrest.probation_min, offenses.evadingArrest.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.evadingArrest.fine_min, offenses.evadingArrest.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
                     }
@@ -633,7 +657,9 @@ export default {
 
         caseGeneration() {
             // Define case types
-            const caseTypes = ['Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+            const caseTypes = [
+                /*'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',*/
+                'Felonies_second', 'Criminal_second',
                 /*'Felony', 'Army', 'Immigration', 'Constitutional', "Historical"*/
             ];
 
