@@ -29,9 +29,10 @@ import fraud_d from '@/data_cases/descriptions/crimes/fraud.json'
 import fraud_e from '@/data_cases/evidences/crimes/fraud.json'
 import theft_d from '@/data_cases/descriptions/crimes/theft.json'
 import theft_e from '@/data_cases/evidences/crimes/theft.json'
-import armedRobbery_d from '@/data_cases/descriptions/crimes/theft.json'
-import armedRobbery_e from '@/data_cases/evidences/crimes/theft.json'
-
+import armedRobbery_d from '@/data_cases/descriptions/crimes/armedRobbery.json'
+import armedRobbery_e from '@/data_cases/evidences/crimes/armedRobbery.json'
+import terrorist_d from '@/data_cases/descriptions/crimes/terrorist.json'
+import terrorist_e from '@/data_cases/evidences/crimes/terrorist.json'
 /************** Felonies **************/
 import drinkingInPublic_d from '@/data_cases/descriptions/felonies/drinkingInPublic.json'
 import drinkingInPublic_e from '@/data_cases/evidences/felonies/drinkingInPublic.json'
@@ -108,13 +109,13 @@ export default {
             randomizationParams: {
                 'type': "",
                 'criminalCharge_first': ['murder', 'theft', 'fraud',
-                    'assault', 'arson', 'armedRobbery'
+                    'assault', 'arson', 'armedRobbery', 'terrorist'
                     /*
                     'cybercrime', 'identity theft', 'kidnapping', '1st Degree Murder', 'Attempted Murder'
                      'Arms Trafficking', 'Involuntarily Manslaughter', 'Attempted Murder of Police Officer'
                      'Attempted Murder 1st degree murder', 'Murder of Police Officer', 'Battery on Peace/Police Officer',
                      'Sexual Assault', 'Shoplifting w/violence', 'Pickpocketing w/violence',
-                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation', 'Terrorist threat',
+                     'Grand Theft Auto', 'Robbery w/violence', 'hostage situation'
                     */
                 ],
                 /*'criminalCharge_second': [
@@ -138,8 +139,8 @@ export default {
                     'parole hearing' /*'Violation of probation', 'Violation of parole'*/
                 ],
                 'roadCharge': ['dui', 'recklessDriving',
-                    'drivingNoLicense', 'hitAndRun', 'evadingArrest', "leavingTheSceneOfAccident"
-                    /*'driving Wrong Way',  'leaving the Scene of Accident',
+                    'drivingNoLicense', 'hitAndRun', 'evadingArrest'
+                    /*'driving Wrong Way',
                     failure to blood or breath sample, speeding*/
                 ],
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
@@ -414,7 +415,18 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.armedRobbery.probation_min, offenses.armedRobbery.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.armedRobbery.fine_min, offenses.armedRobbery.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                    } else if (this.caseObj.criminalCharge_first === "terrorist") {
+                        this.caseObj["type"] = "criminal";
+                        this.caseObj["charge"] = "terrorist case";
+                        this.caseObj["penalCodeCharge"] = "terrorist";
+                        this.caseObj["description"] = terrorist_d[Math.floor(Math.random() * terrorist_d.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(terrorist_e.slice(0, Math.floor(Math.random() * terrorist_e.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.terrorist.prison_min, offenses.terrorist.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.terrorist.probation_min, offenses.terrorist.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.terrorist.fine_min, offenses.terrorist.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
+
                     /******* Felonies *******/
                     else if (this.caseObj.feloniesCharge_first === "trespassing") {
                         this.caseObj["type"] = "felony";

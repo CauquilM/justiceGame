@@ -1,8 +1,8 @@
 {
   "murder": {
     "offense_charge": "murder",
-    "prison_min": 1,
-    "prison_months_min": 12,
+    "prison_min": 5,
+    "prison_months_min": 6,
     "prison_max": 30,
     "prison_months_max": 360,
     "probation_min": 1,
@@ -69,12 +69,26 @@
     "prison_min": 1,
     "prison_months_min": 12,
     "prison_max": 25,
+    "prison_months_max": 300,
     "probation_min": 1,
     "probation_months_min": 12,
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
     "fine_max": 100000
+  },
+  "terrorist": {
+    "offense_charge": "terrorist case",
+    "prison_min": 5,
+    "prison_months_min": 60,
+    "prison_max": 40,
+    "prison_months_max": 480,
+    "probation_min": 1,
+    "probation_months_min": 12,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 5000,
+    "fine_max": 50000
   },
   "trespassing": {
     "offense_charge": "trespassing",
