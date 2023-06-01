@@ -95,6 +95,7 @@ export default {
         return {
             // Define case properties for each type
             caseProperties: {
+                Student: ['studentCharges'],
                 Police: ['policeCharges'],
                 Criminal_first: ['criminalCharge_first'],
                 Criminal_second: ['criminalCharge_second'],
@@ -109,6 +110,18 @@ export default {
             // Define randomization parameters
             randomizationParams: {
                 'type': "",
+                studentCharges: [
+                    /*
+                    'Excessive Use of Emoji in Academic Papers',
+                    'Inappropriate Use of Campus Mascot Costume',
+                    'Unsanctioned Food Fight in the Cafeteria',
+                    'Excessive Consumption of Ramen Noodles',
+                    'Conspiracy to Break into the Library After Hours for Late-Night Storytime'
+                    'Violation of the "No Socks with Sandals" Dress Code Policy',
+                    'Stealing another student's pen', 'Breach in university database to modify notes',
+                    'Mischievous Pranks Leading to Temporary Closure of a Building or Facility',
+                    */
+                ],
                 'policeCharges': [
                     /*'Excessive Use of Force', 'False Arrest', 'bribery', 'perjury', 'evidence tampering',
                     'corruption', 'Civil Rights Violations', 'Murder'*/
@@ -664,8 +677,8 @@ export default {
             // Define case types
             const caseTypes = [
                 'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
-                'Felonies_second', 'Criminal_second',
-                /*'Police' ,'Army', 'Immigration', 'Constitutional', "Historical"*/
+                'Felonies_second', 'Criminal_second', /* 'Student'
+                'Police' ,'Army', 'Immigration', 'Constitutional', "Historical"*/
             ];
 
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
