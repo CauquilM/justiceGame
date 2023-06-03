@@ -19,7 +19,7 @@
     margin-bottom: 80px;
 }
 
-.game-container-first-row{
+.game-container-first-row {
     width: 100%;
 }
 
@@ -27,11 +27,11 @@
 .card-title {
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline red;
 }
 
 .card-title > span {
     margin-right: 7px;
+    text-decoration: underline red;
 }
 
 /*************************** Judge ***************************/
@@ -51,16 +51,16 @@
 }
 
 /***************************** Jury ***************************/
-.jury-member{
+.jury-member {
     font-size: 40px;
 }
 
-.jury-btn{
-    background: linear-gradient(-80deg, rgba(64,133,88,1) 50%, rgba(203,68,74,1) 50%);
+.jury-btn {
+    background: linear-gradient(-80deg, rgba(64, 133, 88, 1) 50%, rgba(203, 68, 74, 1) 50%);
 }
 
 /*************************** Plea Deal ***************************/
-.pleaDeal-buttons-container{
+.pleaDeal-buttons-container {
     display: flex;
     justify-content: space-around;
 }
@@ -115,18 +115,18 @@
     margin-bottom: 10px;
 }
 
-.sentences-switch > .custom-control-input:checked~.custom-control-label::before{
+.sentences-switch > .custom-control-input:checked ~ .custom-control-label::before {
     background-color: red;
 }
 
 /*************************** Penal Code ***************************/
-.penal-code-view-container{
+.penal-code-view-container {
     height: 100vh;
     overflow-y: hidden;
 }
 
 
-.penal-code-view-div{
+.penal-code-view-div {
     padding: 20px 0;
     height: 60vh;
     overflow-y: scroll;
@@ -135,7 +135,7 @@
 
 /*************************** Penal Code Modal ***************************/
 
-.penal-code-modal-container{
+.penal-code-modal-container {
     display: flex;
     justify-content: space-around;
 }
@@ -164,7 +164,7 @@
     height: 22vh;
 }
 
-.criminal-record-overflow >  .criminal-record-subcard {
+.criminal-record-overflow > .criminal-record-subcard {
     border-color: white;
     margin: 15px 5% 20px 5%;
 }
@@ -183,7 +183,7 @@
     border-radius: 10px;
 }
 
-.wheat-proof{
+.wheat-proof {
     text-decoration: underline wheat;
 }
 
@@ -228,15 +228,15 @@
     border-radius: 10px;
 }
 
-.evidence-proof{
+.evidence-proof {
     text-decoration: underline chocolate;
 }
 
-.evidence-proof > div > p{
+.evidence-proof > div > p {
     margin: 10px 0 10px 0;
 }
 
-.evidences-suppress-button{
+.evidences-suppress-button {
     margin-left: 50px;
 }
 
@@ -267,17 +267,17 @@
 }
 
 /*************************** History Page ***************************/
-.cases-history-container{
+.cases-history-container {
     height: 100vh;
 }
 
-.return-button{
+.return-button {
     position: absolute;
     top: 17px;
     left: 20px;
 }
 
-.table-history-cases{
+.table-history-cases {
     height: 100%;
     padding-top: 5%;
     padding-bottom: 50px;
@@ -285,7 +285,7 @@
 }
 
 /*************************** Statistics Page ***************************/
-span.apexcharts-legend-text{
+span.apexcharts-legend-text {
     color: white;
 }
 
@@ -338,7 +338,8 @@ span.apexcharts-legend-text{
     .court-bar {
         max-width: 85%;
     }
-    .table-history-cases{
+
+    .table-history-cases {
         height: 100%;
         padding-top: 10%;
         padding-bottom: 50px;
@@ -356,6 +357,14 @@ span.apexcharts-legend-text{
 @media (max-width: 600px) {
     .criminal-record-card {
         max-width: 75%;
+    }
+
+    .others-div {
+        margin: 0 5% 0 3%;
+    }
+
+    .judge-bench > .card{
+        margin-bottom: 0;
     }
 }
 

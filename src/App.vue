@@ -95,8 +95,8 @@ export default {
         return {
             // Define case properties for each type
             caseProperties: {
-                Student: ['studentCharges'],
-                Police: ['policeCharges'],
+                Student: ['studentCharge'],
+                Police: ['policeCharge'],
                 Criminal_first: ['criminalCharge_first'],
                 Criminal_second: ['criminalCharge_second'],
                 Felonies_first: ['feloniesCharge_first'],
@@ -104,13 +104,14 @@ export default {
                 Parole: ['parole'],
                 Road: ['roadCharge'],
                 Prison: ['prisonCharge'],
-                Traffic: ['trafficCharge']
+                Traffic: ['trafficCharge'],
+                Immigration: ['immigrationCharge']
             },
 
             // Define randomization parameters
             randomizationParams: {
                 'type': "",
-                studentCharges: [
+                studentCharge: [
                     /*
                     'Excessive Use of Emoji in Academic Papers',
                     'Inappropriate Use of Campus Mascot Costume',
@@ -122,7 +123,7 @@ export default {
                     'Mischievous Pranks Leading to Temporary Closure of a Building or Facility',
                     */
                 ],
-                'policeCharges': [
+                'policeCharge': [
                     /*'Excessive Use of Force', 'False Arrest', 'bribery', 'perjury', 'evidence tampering',
                     'corruption', 'Civil Rights Violations', 'Murder'*/
                 ],
@@ -165,7 +166,8 @@ export default {
                 'prisonCharge': ['fight', 'escape', 'assaultWithDeadlyWeapon',
                     'manslaughter', 'drugTrafficking', 'prisonHostage',
                 ],
-                'trafficCharge': ['traffic']
+                'trafficCharge': ['traffic'],
+                'immigrationCharge': ['deportation']
                 /*'witnesses': ['eye witness', 'expert witness', 'character witness']*/
             },
             caseObj: {
@@ -678,7 +680,7 @@ export default {
             const caseTypes = [
                 'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
                 'Felonies_second', 'Criminal_second', /* 'Student'
-                'Police' ,'Army', 'Immigration', 'Constitutional', "Historical"*/
+                'Police' ,'Army', 'Immigration', 'Constitutional', 'Historical' */
             ];
 
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);

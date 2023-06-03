@@ -3,10 +3,12 @@
         <b-card :class="isDark ?'bg-dark text-light' : ''">
             <p class="card-title" @click="goToOffice">
                 <b-avatar :src="require('@/assets/characters-logo/judge.jpg')"/>
-                Judge
+                <i class="ti ti-arrow-up"/><span>Judge</span>
             </p>
             <div class="mt-3">
-                <div v-if="chosenCase.type === 'parole'" class="judge-buttons">
+                <p>{{ pleaDealExists }}</p>
+                <PleaDealComponent class="mt-2" v-if="chosenCase.type !== 'parole' || chosenCase.type !== 'felony'"/>
+                <div v-if="!pleaDealExists && chosenCase.type === 'parole'" class="judge-buttons">
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Refuse parole
                     </b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Accept parole</b-button>
@@ -19,11 +21,10 @@
                               @click="playerDecision('not guilty')">Jury decision
                     </b-button>
                 </div>
-                <div v-else class="judge-buttons">
+                <div v-else-if="!pleaDealExists" class="judge-buttons">
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Guilty</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
-                <PleaDealComponent class="mt-2" v-if="chosenCase.type !== 'parole' || chosenCase.type !== 'felony'"/>
             </div>
             <b-modal ref="guilty-modal" centered hide-footer
                      hide-header-close
