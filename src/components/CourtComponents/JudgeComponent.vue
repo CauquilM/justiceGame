@@ -24,23 +24,24 @@
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
             </div>
-
         </b-card>
+        <JudgeModals/>
     </div>
 </template>
 <script>
 import {mapActions, mapState} from "vuex";
 import {eventBus} from '../../main';
 import PleaDealComponent from "@/components/CourtComponents/PleaDealComponent.vue";
+import JudgeModals from "@/components/CourtComponents/JudgeModals.vue";
 
 export default {
     name: 'JudgeComponent',
-    components: {PleaDealComponent},
+    components: {JudgeModals, PleaDealComponent},
     computed: {
         ...mapState(["isDark", "pleaDealExists", "juryExists", "juryDecision", "chosenCase"])
     },
     methods: {
-        ...mapActions(["playerDecision"]),
+        ...mapActions(["playerDecision", "refreshPage"]),
         goToOffice() {
             eventBus.$emit('openOfficeModal');
         }

@@ -16,7 +16,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    padding-bottom: 10px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.game-container::-webkit-scrollbar{
+    width: 0;
 }
 
 .game-container-first-row {
@@ -297,6 +303,13 @@ span.apexcharts-legend-text {
         padding-top: 10px;
     }
 
+    .game-container {
+        display: flex;
+        height: 100%;
+        overflow-y: hidden;
+        padding-bottom: 30px;
+    }
+
     .others-div {
         flex-direction: column;
     }
@@ -357,6 +370,10 @@ span.apexcharts-legend-text {
 @media (max-width: 600px) {
     .criminal-record-card {
         max-width: 75%;
+    }
+
+    .sentences-card > .card {
+        margin-top: 20px;
     }
 
     .others-div {
