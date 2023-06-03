@@ -43,13 +43,13 @@
   The trials were a tragic example of mass hysteria and the dangers of religious fanaticism.
 
 ### Soon
-
 1. ( first version exists ) Jury system: Introduce a jury system where the player must persuade a group of jurors to
    side with their decision.
 2. Public opinion: Introduce a system where the player's decisions affect their public approval rating.
 3. Judge's chambers: Add a feature where players can interact with their clerk or other characters in their judge's
    chambers.
-4. Ajouter un système de journal pour les affaires
+4. Ajouter un système de journal pour les affaires.
+5. Make a system of investigation cases like in real life with pre-trial prison, fast cases (comparution immédiate) and new evidences through case's persistance.
 
 ### Later
 
