@@ -81,12 +81,21 @@ import recklessDriving_e from '@/data_cases/evidences/road/recklessDriving.json'
 
 /************** Traffic **************/
 import traffic_e from '@/data_cases/evidences/traffic/traffic.json'
+
+
+/************** Immigration **************/
+import deportation_d from '@/data_cases/descriptions/immigration/deportation.json'
+import deportation_e from '@/data_cases/evidences/immigration/deportation.json'
+
+/************** Others **************/
 import crimesData from '@/data_cases/criminal_record/crimesData.json'
 import infractionsData from '@/data_cases/criminal_record/infractionsData.json'
 import suspect_names_data from '@/data_cases/suspect_names.json'
 import witnessesData from '@/data_cases/witnesses.json'
 import offenses from '@/data_cases/penal_code/offenses.json'
 import {eventBus} from "@/main";
+
+
 
 export default {
     name: 'App',
@@ -666,6 +675,19 @@ export default {
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.parole.probation_min, offenses.parole.probation_max, false, "probation");
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                     }
+                    /******* Immigration *******/
+                    else if (this.caseObj.immigrationCharge === "deportation") {
+                        this.caseObj["type"] = "immigration";
+                        this.caseObj["charge"] = "deportation";
+                        this.caseObj["penalCodeCharge"] = "deportation";
+                        this.caseObj["description"] = deportation_d[Math.floor(Math.random() * deportation_d.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(deportation_e.slice(0, Math.floor(Math.random() * deportation_e.length))).slice(0, 3);
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.deportation.prison_min, offenses.deportation.prison_max, false, "prison");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.deportation.probation_min, offenses.deportation.probation_max, false, "probation");
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.deportation.fine_min, offenses.deportation.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
+                        this.caseObj["witnesses"] = witnessesData.murder;
+                    }
 
                 } else {
                     this.caseObj[prop] = '';
@@ -678,9 +700,10 @@ export default {
         caseGeneration() {
             // Define case types
             const caseTypes = [
-                'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
-                'Felonies_second', 'Criminal_second', /* 'Student'
-                'Police' ,'Army', 'Immigration', 'Constitutional', 'Historical' */
+                'Immigration',
+                /*'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+                'Felonies_second', 'Criminal_second',*/ /* 'Student'
+                'Police' ,'Army', 'Constitutional', 'Historical' */
             ];
 
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);

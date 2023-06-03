@@ -349,5 +349,18 @@
     "probation_months_max": 60,
     "fine_min": 99,
     "fine_max": 5000
+  },
+  "deportation": {
+    "offense_charge": "deportation",
+    "prison_min": 99,
+    "prison_months_min": 12,
+    "prison_max": 4,
+    "prison_months_max": 48,
+    "probation_min": 1,
+    "probation_months_min": 1,
+    "probation_max": 5,
+    "probation_months_max": 60,
+    "fine_min": 99,
+    "fine_max": 5000
   }
 }

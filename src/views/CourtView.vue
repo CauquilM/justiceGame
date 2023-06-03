@@ -9,6 +9,7 @@
             <div class="col-lg-2">
                 <div v-if="chosenCase.type !=='parole'">
                     <JuryComponent v-if="chosenCase.type !== 'traffic infraction' && !pleaDealExists"/>
+                    <JuryComponent v-else-if="chosenCase.type == 'immigration' && !pleaDealExists"/>
                 </div>
             </div>
         </b-row>

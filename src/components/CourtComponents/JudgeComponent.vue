@@ -19,7 +19,11 @@
                     </b-button>
                 </div>
                 <PleaDealComponent class="mt-2" v-else-if="chosenCase.type !== 'parole'"/>
-                <div v-if="!pleaDealExists && !juryExists && chosenCase.type !== 'parole'" class="judge-buttons">
+                <div v-if="!pleaDealExists && !juryExists && chosenCase.type === 'immigration'" class="judge-buttons">
+                    <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Deport</b-button>
+                    <b-button variant="success" @click="playerDecision('not guilty')">Grant Legal Status</b-button>
+                </div>
+                <div v-else-if="!pleaDealExists && !juryExists && chosenCase.type !== 'parole'" class="judge-buttons">
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Guilty</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
