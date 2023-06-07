@@ -700,9 +700,9 @@ export default {
         caseGeneration() {
             // Define case types
             const caseTypes = [
-                'Immigration',
-                /*'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
-                'Felonies_second', 'Criminal_second',*/ /* 'Student'
+                /*'Immigration',*/
+                'Parole', 'Felonies_first', 'Criminal_first', 'Road', 'Prison', 'Traffic',
+                'Felonies_second', 'Criminal_second', /* 'Student'
                 'Police' ,'Army', 'Constitutional', 'Historical' */
             ];
 

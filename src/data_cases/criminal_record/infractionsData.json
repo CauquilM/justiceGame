@@ -353,6 +353,396 @@
       "description": "Drove a vehicle in a designated bike lane.",
       "sentence": "1 month probation",
       "fine": "$150"
+    },
+    {
+      "charge": "running a red light",
+      "description": "Failed to stop at a red traffic light.",
+      "sentence": "$350 fine and 2 points on driving record",
+      "fine": "$350"
+    },
+    {
+      "charge": "reckless driving",
+      "description": "Operated a vehicle in a dangerous and careless manner.",
+      "sentence": "$500 fine and mandatory defensive driving course",
+      "fine": "$500"
+    },
+    {
+      "charge": "illegal U-turn",
+      "description": "Executed a U-turn in an area where it is prohibited.",
+      "sentence": "$150 fine",
+      "fine": "$150"
+    },
+    {
+      "charge": "improper lane change",
+      "description": "Changed lanes without signaling or checking blind spots.",
+      "sentence": "$200 fine and 1 point on driving record",
+      "fine": "$200"
+    },
+    {
+      "charge": "failure to yield to pedestrians",
+      "description": "Failed to give right of way to pedestrians at a crosswalk.",
+      "sentence": "$300 fine and traffic school",
+      "fine": "$300"
+    },
+    {
+      "charge": "tailgating",
+      "description": "Followed another vehicle too closely.",
+      "sentence": "$250 fine and 2 points on driving record",
+      "fine": "$250"
+    },
+    {
+      "charge": "improper use of turn signals",
+      "description": "Failed to use turn signals when changing lanes or making turns.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving under the influence (DUI)",
+      "description": "Operated a vehicle while under the influence of alcohol or drugs.",
+      "sentence": "License suspension, $1000 fine, and mandatory substance abuse program",
+      "fine": "$1000"
+    },
+    {
+      "charge": "texting while driving",
+      "description": "Used a mobile device for texting or emailing while operating a vehicle.",
+      "sentence": "$200 fine and 1 point on driving record",
+      "fine": "$200"
+    },
+    {
+      "charge": "failure to maintain proper lane",
+      "description": "Swerved or drifted out of the designated lane without justification.",
+      "sentence": "$150 fine",
+      "fine": "$150"
+    },
+    {
+      "charge": "driving with expired registration",
+      "description": "Operated a vehicle with registration that has expired.",
+      "sentence": "$100 fine and vehicle impoundment",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to yield to emergency vehicles",
+      "description": "Failed to give right of way to emergency vehicles with lights and sirens.",
+      "sentence": "$400 fine and 3 points on driving record",
+      "fine": "$400"
+    },
+    {
+      "charge": "improper use of high beams",
+      "description": "Failed to dim high beams when approaching oncoming traffic.",
+      "sentence": "$150 fine",
+      "fine": "$150"
+    },
+    {
+      "charge": "illegal parking in a handicapped spot",
+      "description": "Park in a designated handicapped spot without a valid permit.",
+      "sentence": "$500 fine and vehicle towed",
+      "fine": "$500"
+    },
+    {
+      "charge": "driving without insurance",
+      "description": "Operated a vehicle without valid insurance coverage.",
+      "sentence": "License suspension, $500 fine, and mandatory insurance coverage",
+      "fine": "$500"
+    },
+    {
+      "charge": "excessive noise violation",
+      "description": "Operated a vehicle with loud exhaust or audio system.",
+      "sentence": "$200 fine and vehicle inspection",
+      "fine": "$200"
+    },
+    {
+      "charge": "jaywalking",
+      "description": "Crossed the road illegally or outside designated crosswalks.",
+      "sentence": "$50 fine",
+      "fine": "$50"
+    },
+    {
+      "charge": "driving with obscured vision",
+      "description": "Operated a vehicle with obstructed or impaired vision.",
+      "sentence": "$250 fine and corrective action required",
+      "fine": "$250"
+    },
+    {
+      "charge": "improper passing on the shoulder",
+      "description": "Passed other vehicles using the shoulder of the road.",
+      "sentence": "$300 fine and 2 points on driving record",
+      "fine": "$300"
+    },
+    {
+      "charge": "driving with expired driver's license",
+      "description": "Operated a vehicle with an expired driver's license.",
+      "sentence": "$200 fine and license renewal required",
+      "fine": "$200"
+    },
+    {
+      "charge": "following too closely",
+      "description": "Maintained an unsafe distance behind the vehicle ahead.",
+      "sentence": "$150 fine and defensive driving course",
+      "fine": "$150"
+    },
+    {
+      "charge": "improper use of bicycle lanes",
+      "description": "Drove a motor vehicle in designated bicycle lanes.",
+      "sentence": "$100 fine and traffic safety education",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to yield to construction zone flagger",
+      "description": "Failed to obey instructions from a construction zone flagger.",
+      "sentence": "$250 fine and 3 points on driving record",
+      "fine": "$250"
+    },
+    {
+      "charge": "illegal use of electronic devices",
+      "description": "Used a handheld electronic device while operating a vehicle.",
+      "sentence": "$200 fine and 1 point on driving record",
+      "fine": "$200"
+    },
+    {
+      "charge": "failure to use seatbelt",
+      "description": "Operated a vehicle without wearing a seatbelt.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving the wrong way on a one-way street",
+      "description": "Drove a vehicle in the opposite direction of a one-way street.",
+      "sentence": "$200 fine and traffic safety course",
+      "fine": "$200"
+    },
+    {
+      "charge": "driving with tinted windows exceeding legal limit",
+      "description": "Operated a vehicle with window tint that exceeded the legally allowed percentage.",
+      "sentence": "$150 fine and window tint removal",
+      "fine": "$150"
+    },
+    {
+      "charge": "failure to stop for a school bus",
+      "description": "Failed to stop when a school bus was displaying its stop sign and flashing lights.",
+      "sentence": "$500 fine, license suspension, and mandatory driver's education",
+      "fine": "$500"
+    },
+    {
+      "charge": "improper use of a median",
+      "description": "Used the median as a travel lane or for unauthorized purposes.",
+      "sentence": "$100 fine and traffic school",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving with an open container of alcohol",
+      "description": "Operated a vehicle with an open container of alcohol within reach.",
+      "sentence": "$250 fine and 1 point on driving record",
+      "fine": "$250"
+    },
+    {
+      "charge": "failure to yield at a roundabout",
+      "description": "Did not yield to vehicles already in the roundabout when entering.",
+      "sentence": "$150 fine and defensive driving course",
+      "fine": "$150"
+    },
+    {
+      "charge": "improper use of shoulder for passing",
+      "description": "Passed other vehicles by driving on the shoulder of the road.",
+      "sentence": "$300 fine and 2 points on driving record",
+      "fine": "$300"
+    },
+    {
+      "charge": "driving without headlights during nighttime",
+      "description": "Operated a vehicle without turning on headlights during nighttime hours.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to yield to a funeral procession",
+      "description": "Did not yield to a funeral procession with proper funeral flags and escorts.",
+      "sentence": "$200 fine and respectful driving course",
+      "fine": "$200"
+    },
+    {
+      "charge": "improper backing or reversing",
+      "description": "Reversed or backed a vehicle without exercising due caution or safety.",
+      "sentence": "$150 fine and defensive driving course",
+      "fine": "$150"
+    },
+    {
+      "charge": "driving without functioning brake lights",
+      "description": "Operated a vehicle with malfunctioning or non-functional brake lights.",
+      "sentence": "$100 fine and mandatory vehicle inspection",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to use a turn signal when changing lanes",
+      "description": "Did not use a turn signal when changing lanes or merging.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving with an obscured windshield",
+      "description": "Operated a vehicle with a windshield obstructed by objects or stickers.",
+      "sentence": "$150 fine and windshield clearance",
+      "fine": "$150"
+    },
+    {
+      "charge": "failure to yield to a pedestrian in a crosswalk",
+      "description": "Failed to stop or yield to a pedestrian within a marked crosswalk.",
+      "sentence": "$300 fine and 2 points on driving record",
+      "fine": "$300"
+    },
+    {
+      "charge": "illegal passing on a double yellow line",
+      "description": "Overtaking another vehicle by crossing a double yellow line.",
+      "sentence": "$250 fine and defensive driving course",
+      "fine": "$250"
+    },
+    {
+      "charge": "driving with a suspended license",
+      "description": "Operated a vehicle while the driver's license was under suspension.",
+      "sentence": "License suspension extension, $500 fine, and mandatory driver's education",
+      "fine": "$500"
+    },
+    {
+      "charge": "failure to obey a traffic control device",
+      "description": "Failed to follow the instructions of a traffic signal or sign.",
+      "sentence": "$150 fine and traffic school",
+      "fine": "$150"
+    },
+    {
+      "charge": "improper use of hazard lights",
+      "description": "Used hazard lights while driving in non-emergency situations.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving too slowly",
+      "description": "Operated a vehicle significantly below the posted speed limit impeding traffic.",
+      "sentence": "$100 fine and warning",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to maintain a safe distance",
+      "description": "Followed the vehicle ahead too closely, not leaving enough braking distance.",
+      "sentence": "$200 fine and defensive driving course",
+      "fine": "$200"
+    },
+    {
+      "charge": "improper use of fog lights",
+      "description": "Used fog lights when visibility conditions did not warrant their use.",
+      "sentence": "$150 fine",
+      "fine": "$150"
+    },
+    {
+      "charge": "failure to signal while turning",
+      "description": "Did not use turn signals when making a turn or changing lanes.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving with an expired inspection sticker",
+      "description": "Operated a vehicle with an expired inspection sticker.",
+      "sentence": "$75 fine and mandatory vehicle inspection",
+      "fine": "$75"
+    },
+    {
+      "charge": "improper use of carpool lane",
+      "description": "Used the carpool lane without the required number of occupants.",
+      "sentence": "$250 fine and 1 point on driving record",
+      "fine": "$250"
+    },
+    {
+      "charge": "failure to yield to merging traffic",
+      "description": "Failed to yield to vehicles merging onto the roadway.",
+      "sentence": "$150 fine and defensive driving course",
+      "fine": "$150"
+    },
+    {
+      "charge": "driving with obscured license plates",
+      "description": "Operated a vehicle with obscured or illegible license plates.",
+      "sentence": "$100 fine and license plate replacement",
+      "fine": "$100"
+    },
+    {
+      "charge": "improper use of emergency lights",
+      "description": "Activated emergency lights without proper justification or authority.",
+      "sentence": "$500 fine and 2 points on driving record",
+      "fine": "$500"
+    },
+    {
+      "charge": "excessive acceleration or revving engine",
+      "description": "Accelerated rapidly or revved the engine excessively, causing unnecessary noise or disturbance.",
+      "sentence": "$100 fine and warning",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to yield to a funeral procession",
+      "description": "Failed to yield the right of way to a funeral procession while driving.",
+      "sentence": "$200 fine and traffic safety course",
+      "fine": "$200"
+    },
+    {
+      "charge": "improper use of hazard lights",
+      "description": "Activated hazard lights while driving without a valid emergency situation.",
+      "sentence": "$150 fine",
+      "fine": "$150"
+    },
+    {
+      "charge": "driving with an expired registration",
+      "description": "Operated a vehicle with expired registration tags or without valid registration.",
+      "sentence": "$200 fine and registration renewal",
+      "fine": "$200"
+    },
+    {
+      "charge": "failure to obey a school crossing guard",
+      "description": "Disregarded instructions or signals given by a school crossing guard.",
+      "sentence": "$250 fine and 1 point on driving record",
+      "fine": "$250"
+    },
+    {
+      "charge": "improper passing in a no-passing zone",
+      "description": "Overtaking another vehicle in an area marked as a no-passing zone.",
+      "sentence": "$300 fine and defensive driving course",
+      "fine": "$300"
+    },
+    {
+      "charge": "driving without headlights during inclement weather",
+      "description": "Operated a vehicle without turning on headlights during fog, heavy rain, or other inclement weather.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "failure to yield to a bicyclist",
+      "description": "Failed to give the right of way to a bicyclist when required by law.",
+      "sentence": "$150 fine and bicycle safety course",
+      "fine": "$150"
+    },
+    {
+      "charge": "improper use of a car horn",
+      "description": "Used the car horn for non-emergency situations or in an excessive and unnecessary manner.",
+      "sentence": "$100 fine",
+      "fine": "$100"
+    },
+    {
+      "charge": "driving with a cracked or obstructed windshield",
+      "description": "Operated a vehicle with a cracked windshield or with objects obstructing the driver's view.",
+      "sentence": "$150 fine and windshield repair",
+      "fine": "$150"
+    },
+    {
+      "charge": "failure to stop for a pedestrian in a crosswalk",
+      "description": "Did not come to a complete stop to allow a pedestrian to cross at a marked crosswalk.",
+      "sentence": "$200 fine and pedestrian safety education",
+      "fine": "$200"
+    },
+    {
+      "charge": "improper use of emergency signals",
+      "description": "Activated emergency signals (flashing lights) without justifiable cause or authorization.",
+      "sentence": "$250 fine and 2 points on driving record",
+      "fine": "$250"
+    },
+    {
+      "charge": "driving with an obscured license plate",
+      "description": "Operated a vehicle with a license plate that was partially or completely obscured.",
+      "sentence": "$100 fine and license plate replacement",
+      "fine": "$100"
     }
   ]
 }
