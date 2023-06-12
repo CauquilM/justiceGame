@@ -10,7 +10,10 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 50000
+    "fine_max": 50000,
+    "life_sentence": true,
+    "death_sentence": true,
+    "life_probation": true
   },
   "theft": {
     "offense_charge": "theft",
@@ -62,7 +65,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 100000
+    "fine_max": 100000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "armedRobbery": {
     "offense_charge": "armed robbery",
@@ -75,7 +80,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 100000
+    "fine_max": 100000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "terrorist": {
     "offense_charge": "terrorist case",
@@ -88,7 +95,10 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 5000,
-    "fine_max": 50000
+    "fine_max": 50000,
+    "life_sentence": true,
+    "death_sentence": true,
+    "life_probation": true
   },
   "trespassing": {
     "offense_charge": "trespassing",
@@ -140,7 +150,8 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 100000
+    "fine_max": 100000,
+    "life_probation": true
   },
   "vandalism": {
     "offense_charge": "vandalism",
@@ -192,7 +203,8 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 15000
+    "fine_max": 15000,
+    "life_probation": true
   },
   "recklessDriving": {
     "offense_charge": "reckless driving",
@@ -231,7 +243,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 25000
+    "fine_max": 25000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "evadingArrest": {
     "offense_charge": "evading Arrest",
@@ -309,7 +323,10 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 25000
+    "fine_max": 25000,
+    "life_sentence": true,
+    "death_sentence": true,
+    "life_probation": true
   },
   "drugTrafficking": {
     "offense_charge": "drug trafficking",
@@ -322,7 +339,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 500000
+    "fine_max": 500000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "prisonHostage": {
     "offense_charge": "prison hostage",
@@ -335,7 +354,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 25000
+    "fine_max": 25000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "parole": {
     "offense_charge": "parole hearing",
