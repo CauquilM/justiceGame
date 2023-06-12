@@ -158,7 +158,7 @@
   "shoplifting": {
     "offense_charge": "shoplifting",
     "prison_min": 1,
-    "prison_months_min": 6,
+    "prison_months_min": 1,
     "prison_max": 5,
     "prison_months_max": 60,
     "probation_min": 1,
@@ -171,14 +171,14 @@
   "drinkingInPublic": {
     "offense_charge": "drinking in public",
     "prison_min": 1,
-    "prison_months_min": 6,
+    "prison_months_min": 1,
     "prison_max": 5,
     "prison_months_max": 60,
     "probation_min": 1,
     "probation_months_min": 6,
     "probation_max": 5,
     "probation_months_max": 60,
-    "fine_min": 1000,
+    "fine_min": 135,
     "fine_max": 1500
   },
   "dui": {
@@ -300,8 +300,8 @@
   },
   "manslaughter": {
     "offense_charge": "manslaughter",
-    "prison_min": 1,
-    "prison_months_min": 12,
+    "prison_min": 2,
+    "prison_months_min": 24,
     "prison_max": 25,
     "prison_months_max": 180,
     "probation_min": 1,
@@ -314,7 +314,7 @@
   "drugTrafficking": {
     "offense_charge": "drug trafficking",
     "prison_min": 1,
-    "prison_months_min": 12,
+    "prison_months_min": 6,
     "prison_max": 30,
     "prison_months_max": 360,
     "probation_min": 1,
@@ -340,7 +340,7 @@
   "parole": {
     "offense_charge": "parole hearing",
     "prison_min": 99,
-    "prison_months_min": 12,
+    "prison_months_min": 6,
     "prison_max": 4,
     "prison_months_max": 48,
     "probation_min": 1,
