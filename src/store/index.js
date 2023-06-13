@@ -234,6 +234,20 @@ export default new Vuex.Store({
         prisonSelected: null,
         probationSelected: null,
         fineSelected: null,
+        drivingSentenceSelected: null,
+        drivingSentences: [
+            {text: "Select a sentence", value: null},
+            {text: "No sentence", value: 0},
+            {text: "1 point", value: 1},
+            {text: "2 points", value: 2},
+            {text: "4 points", value: 4},
+            {text: "6 points", value: 6},
+            {text: "8 points", value: 8},
+            {text: "10 points", value: 10},
+            {text: "12 points", value: 12},
+            {text: "Suspend", value: "suspend"},
+            {text: "Revoke", value: "revoke"},
+        ],
         defenseComment: '',
         prosecutionComment: '',
         prosecutionSentences: [],
@@ -258,6 +272,9 @@ export default new Vuex.Store({
         },
         getFineSelected: (state) => {
             return state.fineSelected;
+        },
+        getDrivingSentenceSelected: (state) => {
+            return state.drivingSentenceSelected;
         },
         getIsDark: (state) => {
             return state.isDark;
@@ -322,6 +339,9 @@ export default new Vuex.Store({
         },
         SET_FINE_SELECTED(state, payload) {
             state.fineSelected = payload;
+        },
+        SET_DRIVING_SENTENCE_SELECTED(state, payload) {
+            state.drivingSentenceSelected = payload;
         },
         SET_IS_DARK(state) {
             state.isDark === true ? state.isDark = false : state.isDark = true;
@@ -536,19 +556,16 @@ export default new Vuex.Store({
                             that you stay in prison forever, you are sentenced to life in prison with a possibility of 
                             parole, this court as also decided to sentence you to a 
                             ${state.fineSelected} for your crimes.`
-                        }
-                        else if (state.prisonSelected === 'life_prison') {
+                        } else if (state.prisonSelected === 'life_prison') {
                             state.finalComment = `This court has judged that it's required for the safety of the society
                             that you stay in prison forever, you are sentenced to life in prison without parole, 
                             this court as also decided to sentence you to a 
                             ${state.fineSelected} for your crimes.`;
-                        }
-                        else if (state.prisonSelected === 'death_prison') {
+                        } else if (state.prisonSelected === 'death_prison') {
                             state.finalComment = `This court has judged that you are and will stay a danger for 
                             society your whole life, this court as then decided to sentence you to death and a 
                             ${state.fineSelected} for your crimes.`;
-                        }
-                        else if (state.prisonSelected !== 'life_prison' && state.probationSelected === 'life_probation'){
+                        } else if (state.prisonSelected !== 'life_prison' && state.probationSelected === 'life_probation') {
                             state.finalComment = `This court has judged that your crime is important enough to make you stay under the arm
                              of justice, however we chose to give you a last chance, you are sentence to ${state.prisonSelected} in prison, 
                              to be under probation for life and a ${state.fineSelected} for your crimes.`;
@@ -724,6 +741,9 @@ export default new Vuex.Store({
         },
         modifyFineSelected({commit}, fine) {
             commit("SET_FINE_SELECTED", fine);
+        },
+        modifyDrivingSentenceSelected({commit}, sentence) {
+            commit("SET_DRIVING_SENTENCE_SELECTED", sentence);
         },
         modifyDarkMode({commit}) {
             commit("SET_IS_DARK");
