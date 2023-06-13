@@ -191,7 +191,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "Sacha");
+        console.log("VERCEL" + ' ' + "Rudy");
         console.time("Test case generation");
         this.caseGeneration();
         console.timeEnd("Test case generation");
@@ -733,9 +733,8 @@ export default {
         caseGeneration() {
             // Define case types
             const caseTypes = [
-                /*'Immigration',*/'Road', 'Traffic',
-                /*'Parole', 'Felonies_first', 'Criminal_first', 'Prison',
-                'Felonies_second', 'Criminal_second',*/ /* 'Student'
+                'Road', 'Traffic', 'Parole', 'Felonies_first', 'Criminal_first', 'Prison',
+                'Felonies_second', 'Criminal_second', /* 'Immigration', 'Student'
                 'Police' ,'Army', 'Constitutional', 'Historical' */
             ];
 
