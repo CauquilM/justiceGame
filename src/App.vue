@@ -738,6 +738,15 @@ export default {
                 'Police' ,'Army', 'Constitutional', 'Historical' */
             ];
 
+            /*const random = Math.floor(Math.random() * 101);
+            const type = "";
+            if(random >= 0 && random <= 10){
+                type = "Road";
+            }
+            if(random >= 0 && random <= 10){
+                type = "Road";
+            }*/
+
             let generatedCase = this.generateCase(caseTypes[Math.floor(Math.random() * caseTypes.length)]);
             this.addGeneratedCase(generatedCase);
         }

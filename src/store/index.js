@@ -245,8 +245,8 @@ export default new Vuex.Store({
             {text: "8 points", value: 8},
             {text: "10 points", value: 10},
             {text: "12 points", value: 12},
-            {text: "Suspend license", value: "suspend"},
-            {text: "Revoke license", value: "revoke"},
+            {text: "Suspend license", value: "suspended"},
+            {text: "Revoke license", value: "revoked"},
         ],
         defenseComment: '',
         prosecutionComment: '',
@@ -542,20 +542,22 @@ export default new Vuex.Store({
                     } else if (state.fineSelected > '0') {
                         state.fineSelected = `${state.fineSelected}$`
                     }
-                    if(state.drivingSentenceSelected === null){
+                    if (state.drivingSentenceSelected === null) {
                         state.drivingSentenceSelected = ""
-                    }
-                    else if (state.drivingSentenceSelected === '0') {
+                    } else if (state.drivingSentenceSelected === '0') {
                         state.drivingSentenceSelected = "loose no points on your driving license,"
-                    } else if (state.drivingSentenceSelected > '0') {
+                    } else if (state.drivingSentenceSelected > '0'
+                        && state.drivingSentenceSelected !== 'suspended'
+                        && state.drivingSentenceSelected !== 'revoked'
+                    ) {
                         if (state.drivingSentenceSelected >= state.chosenCase.drivingLicensePoints) {
                             state.drivingSentenceSelected = `get your driving license revoked,`;
                         } else {
                             state.drivingSentenceSelected = `loose ${state.drivingSentenceSelected} points on your driving license,`
                         }
-                    } else if (state.drivingSentenceSelected > 'suspended') {
+                    } else if (state.drivingSentenceSelected === 'suspended') {
                         state.drivingSentenceSelected = `get your driving license suspended,`
-                    } else if (state.drivingSentenceSelected > 'revoke') {
+                    } else if (state.drivingSentenceSelected === 'revoked') {
                         state.drivingSentenceSelected = `get your driving license revoked,`
                     }
                     if (state.prisonSelected === 'life_prison' || state.prisonSelected === 'death_prison' ||
@@ -649,17 +651,21 @@ export default new Vuex.Store({
                     } else if (state.fineSelected > '0') {
                         state.fineSelected = `${state.fineSelected}$`
                     }
+                    console.log("driving => ", state.drivingSentenceSelected);
                     if (state.drivingSentenceSelected === '0') {
                         state.drivingSentenceSelected = "loose no points on your driving license"
-                    } else if (state.drivingSentenceSelected > '0') {
+                    } else if (state.drivingSentenceSelected > '0'
+                        && state.drivingSentenceSelected !== 'suspended'
+                        && state.drivingSentenceSelected !== 'revoked'
+                    ) {
                         if (state.drivingSentenceSelected >= state.chosenCase.drivingLicensePoints) {
                             state.drivingSentenceSelected = `get your driving license revoked`;
                         } else {
                             state.drivingSentenceSelected = `loose ${state.drivingSentenceSelected} points on your driving license`
                         }
-                    } else if (state.drivingSentenceSelected > 'suspended') {
+                    } else if (state.drivingSentenceSelected === 'suspended') {
                         state.drivingSentenceSelected = `get your driving license suspended`
-                    } else if (state.drivingSentenceSelected > 'revoke') {
+                    } else if (state.drivingSentenceSelected === 'revoked') {
                         state.drivingSentenceSelected = `get your driving license revoked`
                     }
                     const randomSentence = Math.floor(Math.random() * 3);
