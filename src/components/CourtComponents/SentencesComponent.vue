@@ -188,7 +188,7 @@ export default {
     },
     methods: {
         ...mapActions(['doSentencing', 'modifyPrisonSelected',
-            'modifyProbationSelected', 'modifyFineSelected', 'refreshPage']),
+            'modifyProbationSelected', 'modifyFineSelected', 'modifyDrivingSentenceSelected' ,'refreshPage']),
         openPenalCodeModal() {
             eventBus.$emit('openPenalCodeModal');
         },

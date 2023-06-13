@@ -1,6 +1,10 @@
 <template>
     <div>
         <div v-if="evidences.length !== 0" class="evidence-proof">
+            <p v-if="chosenCase.type === 'traffic infraction'
+                || chosenCase.type === 'traffic crime'">
+                Driving license points: <b>{{ chosenCase.drivingLicensePoints }}</b>
+            </p>
             <div v-for="(evidence, index) in evidences" :key="evidence.id" class="evidence-div">
                 <p @click="displayCommentsOnEvidence(index)">{{ evidence.description }}</p>
                 <b-button size="sm" variant="warning" @click="deleteEvidence(index)">Refuse evidence <i

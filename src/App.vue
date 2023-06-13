@@ -191,7 +191,7 @@ export default {
         ...mapState(["isDark"])
     },
     created() {
-        console.log("VERCEL" + ' ' + "Mirta");
+        console.log("VERCEL" + ' ' + "Sacha");
         console.time("Test case generation");
         this.caseGeneration();
         console.timeEnd("Test case generation");
@@ -564,6 +564,7 @@ export default {
                         this.caseObj["penalCodeCharge"] = "dui";
                         this.caseObj["description"] = dui_d[Math.floor(Math.random() * dui_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(dui_e.slice(0, Math.floor(Math.random() * dui_e.length))).slice(0, 3);
+                        this.caseObj["drivingLicensePoints"] = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.dui.prison_min, offenses.dui.prison_max, false, "prison", offenses.dui);
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.dui.probation_min, offenses.dui.probation_max, false, "probation", offenses.dui);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.dui.fine_min, offenses.dui.fine_max, true);
@@ -575,6 +576,7 @@ export default {
                         this.caseObj["penalCodeCharge"] = "recklessDriving";
                         this.caseObj["description"] = recklessDriving_d[Math.floor(Math.random() * recklessDriving_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(recklessDriving_e.slice(0, Math.floor(Math.random() * recklessDriving_e.length))).slice(0, 3);
+                        this.caseObj["drivingLicensePoints"] = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.recklessDriving.prison_min, offenses.recklessDriving.prison_max, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.recklessDriving.probation_min, offenses.recklessDriving.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.recklessDriving.fine_min, offenses.recklessDriving.fine_max, true);
@@ -597,6 +599,7 @@ export default {
                         this.caseObj["penalCodeCharge"] = "hitAndRun";
                         this.caseObj["description"] = hitAndRun_d[Math.floor(Math.random() * hitAndRun_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(hitAndRun_e.slice(0, Math.floor(Math.random() * hitAndRun_e.length))).slice(0, 3);
+                        this.caseObj["drivingLicensePoints"] = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.hitAndRun.prison_min, offenses.hitAndRun.prison_max, false, "prison", offenses.hitAndRun);
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.hitAndRun.probation_min, offenses.hitAndRun.probation_max, false, "probation", offenses.hitAndRun);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.hitAndRun.fine_min, offenses.hitAndRun.fine_max, true);
@@ -608,6 +611,7 @@ export default {
                         this.caseObj["penalCodeCharge"] = "evadingArrest";
                         this.caseObj["description"] = evadingArrest_d[Math.floor(Math.random() * evadingArrest_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(evadingArrest_e.slice(0, Math.floor(Math.random() * evadingArrest_e.length))).slice(0, 3);
+                        this.caseObj["drivingLicensePoints"] = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.evadingArrest.prison_min, offenses.evadingArrest.prison_max, false, "prison");
                         this.caseObj["probationSentences"] = this.generateSentences(offenses.evadingArrest.probation_min, offenses.evadingArrest.probation_max, false, "probation");
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.evadingArrest.fine_min, offenses.evadingArrest.fine_max, true);
@@ -622,6 +626,7 @@ export default {
                         this.caseObj["penalCodeCharge"] = "traffic";
                         this.caseObj["description"] = traffic_e[randomNum].description;
                         this.caseObj["evidences"] = [traffic_e[randomNum]];
+                        this.caseObj["drivingLicensePoints"] = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
                         this.caseObj["fineSentences"] = this.generateSentences(90, 1500, true, "traffic");
                         this.caseObj["criminalRecord"] = this.generateTrafficRecord();
                     }

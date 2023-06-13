@@ -245,8 +245,8 @@ export default new Vuex.Store({
             {text: "8 points", value: 8},
             {text: "10 points", value: 10},
             {text: "12 points", value: 12},
-            {text: "Suspend", value: "suspend"},
-            {text: "Revoke", value: "revoke"},
+            {text: "Suspend license", value: "suspend"},
+            {text: "Revoke license", value: "revoke"},
         ],
         defenseComment: '',
         prosecutionComment: '',
@@ -523,29 +523,40 @@ export default new Vuex.Store({
                 if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
                     if (state.prisonSelected === '0') {
                         state.prisonSelected = "no time"
-                    }
-                    if (state.prisonSelected > '0' && isPrisonYears) {
+                    } else if (state.prisonSelected > '0' && isPrisonYears) {
                         state.prisonSelected = state.prisonSelected + " years"
-                    }
-                    if (state.prisonSelected > '0' && !isPrisonYears &&
+                    } else if (state.prisonSelected > '0' && !isPrisonYears &&
                         state.prisonSelected !== 'life_prison' &&
                         state.prisonSelected !== 'death_prison') {
                         state.prisonSelected = state.prisonSelected + " months"
                     }
                     if (state.probationSelected === '0') {
                         state.probationSelected = "no time"
-                    }
-                    if (state.probationSelected > '0' && isProbationYears) {
+                    } else if (state.probationSelected > '0' && isProbationYears) {
                         state.probationSelected = state.probationSelected + " years"
-                    }
-                    if (state.probationSelected > '0' && !isProbationYears && state.probationSelected !== 'life_probation') {
+                    } else if (state.probationSelected > '0' && !isProbationYears && state.probationSelected !== 'life_probation') {
                         state.probationSelected = state.probationSelected + " months"
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
-                    }
-                    if (state.fineSelected > '0') {
+                    } else if (state.fineSelected > '0') {
                         state.fineSelected = `${state.fineSelected}$`
+                    }
+                    if(state.drivingSentenceSelected === null){
+                        state.drivingSentenceSelected = ""
+                    }
+                    else if (state.drivingSentenceSelected === '0') {
+                        state.drivingSentenceSelected = "loose no points on your driving license,"
+                    } else if (state.drivingSentenceSelected > '0') {
+                        if (state.drivingSentenceSelected >= state.chosenCase.drivingLicensePoints) {
+                            state.drivingSentenceSelected = `get your driving license revoked,`;
+                        } else {
+                            state.drivingSentenceSelected = `loose ${state.drivingSentenceSelected} points on your driving license,`
+                        }
+                    } else if (state.drivingSentenceSelected > 'suspended') {
+                        state.drivingSentenceSelected = `get your driving license suspended,`
+                    } else if (state.drivingSentenceSelected > 'revoke') {
+                        state.drivingSentenceSelected = `get your driving license revoked,`
                     }
                     if (state.prisonSelected === 'life_prison' || state.prisonSelected === 'death_prison' ||
                         state.probationSelected === 'life_probation') {
@@ -574,20 +585,20 @@ export default new Vuex.Store({
                         const randomSentence = Math.floor(Math.random() * 3);
                         if (randomSentence === 0) {
                             state.finalComment = `The defendant has been recognized guilty and
-                        then sentenced to 
+                        then sentenced to ${state.drivingSentenceSelected}
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
-                        of probation, and a ${state.fineSelected}$ fine.`
+                        of probation, and a ${state.fineSelected} fine.`
                         } else if (randomSentence === 1) {
                             state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to ${state.prisonSelected} in prison, 
+                        to ${state.drivingSentenceSelected} ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
-                        of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
+                        of probation, and a ${state.fineSelected} fine as punishment for his actions.`
                         } else {
                             state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to ${state.prisonSelected} in prison, 
+                        to ${state.drivingSentenceSelected} ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
-                        of probation, and a ${state.fineSelected}$ fine for his crimes.`
+                        of probation, and a ${state.fineSelected} fine for his crimes.`
                         }
                     }
                     console.time("test guilty post axios");
@@ -618,47 +629,56 @@ export default new Vuex.Store({
                 }
             } else {
                 if (state.fineSelected !== null) {
+                    console.log("traffic");
                     if (state.prisonSelected === '0' || state.prisonSelected === null) {
                         state.prisonSelected = "no time"
-                    }
-                    if (state.prisonSelected > '0' && isPrisonYears) {
+                    } else if (state.prisonSelected > '0' && isPrisonYears) {
                         state.prisonSelected = state.prisonSelected + " years"
-                    }
-                    if (state.prisonSelected > '0' && !isPrisonYears) {
+                    } else if (state.prisonSelected > '0' && !isPrisonYears) {
                         state.prisonSelected = state.prisonSelected + " months"
                     }
                     if (state.probationSelected === '0' || state.probationSelected === null) {
                         state.probationSelected = "no time"
-                    }
-                    if (state.probationSelected > '0' && isProbationYears) {
+                    } else if (state.probationSelected > '0' && isProbationYears) {
                         state.probationSelected = state.probationSelected + " years"
-                    }
-                    if (state.probationSelected > '0' && !isProbationYears) {
+                    } else if (state.probationSelected > '0' && !isProbationYears) {
                         state.probationSelected = state.probationSelected + " months"
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
-                    }
-                    if (state.fineSelected > '0') {
+                    } else if (state.fineSelected > '0') {
                         state.fineSelected = `${state.fineSelected}$`
+                    }
+                    if (state.drivingSentenceSelected === '0') {
+                        state.drivingSentenceSelected = "loose no points on your driving license"
+                    } else if (state.drivingSentenceSelected > '0') {
+                        if (state.drivingSentenceSelected >= state.chosenCase.drivingLicensePoints) {
+                            state.drivingSentenceSelected = `get your driving license revoked`;
+                        } else {
+                            state.drivingSentenceSelected = `loose ${state.drivingSentenceSelected} points on your driving license`
+                        }
+                    } else if (state.drivingSentenceSelected > 'suspended') {
+                        state.drivingSentenceSelected = `get your driving license suspended`
+                    } else if (state.drivingSentenceSelected > 'revoke') {
+                        state.drivingSentenceSelected = `get your driving license revoked`
                     }
                     const randomSentence = Math.floor(Math.random() * 3);
                     if (randomSentence === 0) {
                         state.finalComment = `The defendant has been recognized guilty and
-                        then sentenced to 
+                        then sentenced to ${state.drivingSentenceSelected}, 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
-                        of probation, and a ${state.fineSelected}$ fine.`
+                        of probation, and a ${state.fineSelected} fine.`
                     } else if (randomSentence === 1) {
                         state.finalComment = `After a fair trial, the defendant has been sentenced
-                        to ${state.prisonSelected} in prison, 
+                        to ${state.drivingSentenceSelected}, ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
                     } else {
                         state.finalComment = `In a strict judgement, the defendant has been sentenced
-                        to ${state.prisonSelected} in prison, 
+                        to ${state.drivingSentenceSelected}, ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
-                        of probation, and a ${state.fineSelected}$ fine for his crimes.`
+                        of probation, and a ${state.fineSelected} fine for his crimes.`
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",
