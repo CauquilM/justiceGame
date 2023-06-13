@@ -57,7 +57,7 @@ export default {
             this.togglePleaDeal();
         },
         createPleaDeal() {
-            if (this.randomNumber() >= 8) {
+            if (this.randomNumber() >= 9) {
                 this.togglePleaDeal();
                 if (this.chosenCase.type !== 'traffic infraction') {
                     if (this.noSentence() >= 2) {

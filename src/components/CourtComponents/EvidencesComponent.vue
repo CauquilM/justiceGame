@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="evidences.length !== 0" class="evidence-proof">
-            <div v-for="(evidence, index) in evidences" :key="evidence.id">
+            <div v-for="(evidence, index) in evidences" :key="evidence.id" class="evidence-div">
                 <p @click="displayCommentsOnEvidence(index)">{{ evidence.description }}</p>
                 <b-button size="sm" variant="warning" @click="deleteEvidence(index)">Refuse evidence <i
                         class="ti ti-arrow-up"/></b-button>

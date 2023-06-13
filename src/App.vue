@@ -225,6 +225,17 @@ export default {
                 numbers.push(Math.floor(Math.random() * max));
             }
 
+            console.log(`numbers ${text} => `, numbers);
+            if(numbers[0] == 0){
+                numbers[0]++;
+            }
+            if(numbers[1] == 1){
+                numbers[1]++;
+            }
+            if(numbers[2] == 2){
+                numbers[2]++;
+            }
+
             numbers.sort((a, b) => a - b);
             if (numbers[1] == numbers[0] || numbers[1] == numbers[2]) {
                 numbers[1]--;
@@ -345,7 +356,7 @@ export default {
                     value: `${numbers[0]}`
                 });
                 result.push({
-                    text: `${numbers[1]}`,
+                    text: `${numbers[1]}$`,
                     value: `${numbers[1]}`
                 });
                 result.push({
@@ -408,7 +419,7 @@ export default {
                         this.caseObj["description"] = murder_d[Math.floor(Math.random() * murder_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(murder_e.slice(0, Math.floor(Math.random() * murder_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.murder.prison_min, offenses.murder.prison_max, false, "prison", offenses.murder);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.murder.probation_min, offenses.murder.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.murder.probation_min, offenses.murder.probation_max, false, "probation", offenses.murder);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.murder.fine_min, offenses.murder.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         /*this.caseObj["witnesses"] = witnessesData.murder;*/
@@ -449,7 +460,7 @@ export default {
                         this.caseObj["description"] = arson_d[Math.floor(Math.random() * arson_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(arson_e.slice(0, Math.floor(Math.random() * arson_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.arson.prison_min, offenses.arson.prison_max, false, "prison", offenses.arson);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.arson.probation_min, offenses.arson.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.arson.probation_min, offenses.arson.probation_max, false, "probation", offenses.arson);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.arson.fine_min, offenses.arson.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     } else if (this.caseObj.criminalCharge_second === "armedRobbery") {
@@ -459,7 +470,7 @@ export default {
                         this.caseObj["description"] = armedRobbery_d[Math.floor(Math.random() * armedRobbery_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(armedRobbery_e.slice(0, Math.floor(Math.random() * armedRobbery_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.armedRobbery.prison_min, offenses.armedRobbery.prison_max, false, "prison", offenses.armedRobbery);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.armedRobbery.probation_min, offenses.armedRobbery.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.armedRobbery.probation_min, offenses.armedRobbery.probation_max, false, "probation", offenses.armedRobbery);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.armedRobbery.fine_min, offenses.armedRobbery.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     } else if (this.caseObj.criminalCharge_second === "terrorist") {
@@ -469,7 +480,7 @@ export default {
                         this.caseObj["description"] = terrorist_d[Math.floor(Math.random() * terrorist_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(terrorist_e.slice(0, Math.floor(Math.random() * terrorist_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.terrorist.prison_min, offenses.terrorist.prison_max, false, "prison", offenses.terrorist);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.terrorist.probation_min, offenses.terrorist.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.terrorist.probation_min, offenses.terrorist.probation_max, false, "probation", offenses.terrorist);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.terrorist.fine_min, offenses.terrorist.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
@@ -512,7 +523,7 @@ export default {
                         this.caseObj["description"] = fake911Call_d[Math.floor(Math.random() * fake911Call_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(fake911Call_e.slice(0, Math.floor(Math.random() * fake911Call_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.fake911Call.prison_min, offenses.fake911Call.prison_max, false, "prison", offenses.fake911Call);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.fake911Call.probation_min, offenses.fake911Call.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.fake911Call.probation_min, offenses.fake911Call.probation_max, false, "probation", offenses.fake911Call);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.fake911Call.fine_min, offenses.fake911Call.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     } else if (this.caseObj.feloniesCharge_second === "vandalism") {
@@ -554,7 +565,7 @@ export default {
                         this.caseObj["description"] = dui_d[Math.floor(Math.random() * dui_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(dui_e.slice(0, Math.floor(Math.random() * dui_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.dui.prison_min, offenses.dui.prison_max, false, "prison", offenses.dui);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.dui.probation_min, offenses.dui.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.dui.probation_min, offenses.dui.probation_max, false, "probation", offenses.dui);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.dui.fine_min, offenses.dui.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
@@ -587,7 +598,7 @@ export default {
                         this.caseObj["description"] = hitAndRun_d[Math.floor(Math.random() * hitAndRun_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(hitAndRun_e.slice(0, Math.floor(Math.random() * hitAndRun_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.hitAndRun.prison_min, offenses.hitAndRun.prison_max, false, "prison", offenses.hitAndRun);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.hitAndRun.probation_min, offenses.hitAndRun.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.hitAndRun.probation_min, offenses.hitAndRun.probation_max, false, "probation", offenses.hitAndRun);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.hitAndRun.fine_min, offenses.hitAndRun.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                         this.caseObj["witnesses"] = witnessesData.murder;
@@ -655,7 +666,7 @@ export default {
                         this.caseObj["description"] = manslaughter_d[Math.floor(Math.random() * manslaughter_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(manslaughter_e.slice(0, Math.floor(Math.random() * manslaughter_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.manslaughter.prison_min, offenses.manslaughter.prison_max, false, "prison", offenses.manslaughter);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.manslaughter.probation_min, offenses.manslaughter.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.manslaughter.probation_min, offenses.manslaughter.probation_max, false, "probation", offenses.manslaughter);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.manslaughter.fine_min, offenses.manslaughter.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                         this.caseObj["witnesses"] = witnessesData.murder;
@@ -666,7 +677,7 @@ export default {
                         this.caseObj["description"] = drugTrafficking_d[Math.floor(Math.random() * drugTrafficking_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(drugTrafficking_e.slice(0, Math.floor(Math.random() * drugTrafficking_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.drugTrafficking.prison_min, offenses.drugTrafficking.prison_max, false, "prison", offenses.drugTrafficking);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.drugTrafficking.probation_min, offenses.drugTrafficking.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.drugTrafficking.probation_min, offenses.drugTrafficking.probation_max, false, "probation", offenses.drugTrafficking);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.drugTrafficking.fine_min, offenses.drugTrafficking.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                         this.caseObj["witnesses"] = witnessesData.murder;
@@ -677,7 +688,7 @@ export default {
                         this.caseObj["description"] = prisonHostage_d[Math.floor(Math.random() * prisonHostage_d.length)].description;
                         this.caseObj["evidences"] = this.shuffleArray(prisonHostage_e.slice(0, Math.floor(Math.random() * prisonHostage_e.length))).slice(0, 3);
                         this.caseObj["prisonSentences"] = this.generateSentences(offenses.prisonHostage.prison_min, offenses.prisonHostage.prison_max, false, "prison", offenses.prisonHostage);
-                        this.caseObj["probationSentences"] = this.generateSentences(offenses.prisonHostage.probation_min, offenses.prisonHostage.probation_max, false, "probation");
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.prisonHostage.probation_min, offenses.prisonHostage.probation_max, false, "probation", offenses.prisonHostage);
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.prisonHostage.fine_min, offenses.prisonHostage.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord(0);
                         this.caseObj["witnesses"] = witnessesData.murder;

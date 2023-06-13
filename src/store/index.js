@@ -500,19 +500,26 @@ export default new Vuex.Store({
                     eventBus.$emit('openSentencingFailModal');
                 }
             } else if (state.chosenCase.type !== "traffic infraction") {
+                console.log("test prison 1 => ", state.prisonSelected, state.probationSelected);
                 if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
-                    const randomSentence = Math.floor(Math.random() * 3);
                     if (state.prisonSelected === '0') {
                         state.prisonSelected = "no time"
+                        console.log("modify 1");
                     }
                     if (state.prisonSelected > '0' && isPrisonYears) {
                         state.prisonSelected = state.prisonSelected + " years"
+                        console.log("modify 2");
                     }
-                    if (state.prisonSelected > '0' && !isPrisonYears) {
+                    if (state.prisonSelected > '0' && !isPrisonYears && (
+                        state.prisonSelected !== 'life_prison' &&
+                        state.prisonSelected !== 'death_prison' &&
+                        state.probationSelected !== 'life_probation')) {
                         state.prisonSelected = state.prisonSelected + " months"
+                        console.log("modify 3");
                     }
                     if (state.probationSelected === '0') {
                         state.probationSelected = "no time"
+                        console.log("modify 4");
                     }
                     if (state.probationSelected > '0' && isProbationYears) {
                         state.probationSelected = state.probationSelected + " years"
@@ -523,22 +530,57 @@ export default new Vuex.Store({
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
                     }
-                    if (randomSentence === 0) {
-                        state.finalComment = `The defendant has been recognized guilty and
+                    console.log("good");
+                    console.log("test prison 2 => ", state.prisonSelected, state.probationSelected);
+                    if (state.prisonSelected === 'life_prison' || state.prisonSelected === 'death_prison' ||
+                        state.probationSelected === 'life_probation') {
+                        console.log("here prob");
+
+                        if (state.prisonSelected == 'life_prison' || state.prisonSelected == 'death_prison') {
+                            state.finalComment = `This court has judged that it's required for the safety of the society
+                            that you stay in prison forever, you are sentenced to life in prison with a possibility of 
+                            parole, this court as also decided to sentence you to a 
+                            ${state.fineSelected}$ for your crimes.`
+                        }
+
+                        if (state.prisonSelected == 'life_prison') {
+                            state.finalComment = `This court has judged that it's required for the safety of the society
+                            that you stay in prison forever, you are sentenced to life in prison without parole, 
+                            this court as also decided to sentence you to a 
+                            ${state.fineSelected}$ for your crimes.`
+                        }
+
+                        if (state.prisonSelected == 'death_prison') {
+                            state.prisonSelected = "death";
+                            state.finalComment = `This court has judged that you are and will stay a danger for 
+                            society your whole life, this court as then decided to sentence you to death and a 
+                            ${state.fineSelected}$ for your crimes.`
+                        }
+
+                        if (state.prisonSelected == 'life_probation') {
+                            state.prisonSelected = "probation for life";
+                        }
+
+
+                    } else {
+                        const randomSentence = Math.floor(Math.random() * 3);
+                        if (randomSentence === 0) {
+                            state.finalComment = `The defendant has been recognized guilty and
                         then sentenced to 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
                         of probation, and a ${state.fineSelected}$ fine.`
-                    } else if (randomSentence === 1) {
-                        state.finalComment = `After a fair trial, the defendant has been sentenced
+                        } else if (randomSentence === 1) {
+                            state.finalComment = `After a fair trial, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
-                    } else {
-                        state.finalComment = `In a strict judgement, the defendant has been sentenced
+                        } else {
+                            state.finalComment = `In a strict judgement, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
                         of probation, and a ${state.fineSelected}$ fine for his crimes.`
+                        }
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",
@@ -589,55 +631,23 @@ export default new Vuex.Store({
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
                     }
-                    if(state.prisonSelected === 'life_prison' || state.prisonSelected === 'death_prison' ||
-                        state.probationSelected === 'life_probation'){
-
-                        if (state.prisonSelected === 'life_prison' || state.prisonSelected === 'death_prison'){
-                            state.finalComment = `This court has judged that it's required for the safety of the society
-                            that you stay in prison forever, you are sentenced to life in prison with a possibility of 
-                            parole, this court as also decided to sentence you to a 
-                            ${state.fineSelected}$ for your crimes.`
-                        }
-
-                        if(state.prisonSelected === 'life_prison') {
-                            state.finalComment = `This court has judged that it's required for the safety of the society
-                            that you stay in prison forever, you are sentenced to life in prison without parole, 
-                            this court as also decided to sentence you to a 
-                            ${state.fineSelected}$ for your crimes.`
-                        }
-
-                        if(state.prisonSelected === 'death_prison') {
-                            state.prisonSelected = "death";
-                            state.finalComment = `This court has judged that you are and will stay a danger for 
-                            society your whole life, this court as then decided to sentence you to death and a 
-                            ${state.fineSelected}$ for your crimes.`
-                        }
-
-                        if(state.prisonSelected === 'life_probation') {
-                            state.prisonSelected = "probation for life";
-                        }
-
-
-                    }
-                    else {
-                        const randomSentence = Math.floor(Math.random() * 3);
-                        if (randomSentence === 0) {
-                            state.finalComment = `The defendant has been recognized guilty and
+                    const randomSentence = Math.floor(Math.random() * 3);
+                    if (randomSentence === 0) {
+                        state.finalComment = `The defendant has been recognized guilty and
                         then sentenced to 
                         ${state.prisonSelected} in prison, 
                         ${state.probationSelected}
                         of probation, and a ${state.fineSelected}$ fine.`
-                        } else if (randomSentence === 1) {
-                            state.finalComment = `After a fair trial, the defendant has been sentenced
+                    } else if (randomSentence === 1) {
+                        state.finalComment = `After a fair trial, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected > 0 ? state.probationSelected + ' years' : state.probationSelected} 
                         of probation, and a ${state.fineSelected}$ fine as punishment for his actions.`
-                        } else {
-                            state.finalComment = `In a strict judgement, the defendant has been sentenced
+                    } else {
+                        state.finalComment = `In a strict judgement, the defendant has been sentenced
                         to ${state.prisonSelected} in prison, 
                         ${state.probationSelected} 
                         of probation, and a ${state.fineSelected}$ fine for his crimes.`
-                        }
                     }
                     console.time("test guilty post axios");
                     axios.post("https://spotless-ant-beret.cyclic.app/history",

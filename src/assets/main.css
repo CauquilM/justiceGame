@@ -242,6 +242,10 @@
     margin: 10px 0 10px 0;
 }
 
+.evidence-div {
+    margin-bottom: 25px;
+}
+
 .evidences-suppress-button {
     margin-left: 50px;
 }
