@@ -500,68 +500,59 @@ export default new Vuex.Store({
                     eventBus.$emit('openSentencingFailModal');
                 }
             } else if (state.chosenCase.type !== "traffic infraction") {
-                console.log("test prison 1 => ", state.prisonSelected, state.probationSelected);
                 if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
                     if (state.prisonSelected === '0') {
                         state.prisonSelected = "no time"
-                        console.log("modify 1");
                     }
                     if (state.prisonSelected > '0' && isPrisonYears) {
                         state.prisonSelected = state.prisonSelected + " years"
-                        console.log("modify 2");
                     }
-                    if (state.prisonSelected > '0' && !isPrisonYears && (
+                    if (state.prisonSelected > '0' && !isPrisonYears &&
                         state.prisonSelected !== 'life_prison' &&
-                        state.prisonSelected !== 'death_prison' &&
-                        state.probationSelected !== 'life_probation')) {
+                        state.prisonSelected !== 'death_prison') {
                         state.prisonSelected = state.prisonSelected + " months"
-                        console.log("modify 3");
                     }
                     if (state.probationSelected === '0') {
                         state.probationSelected = "no time"
-                        console.log("modify 4");
                     }
                     if (state.probationSelected > '0' && isProbationYears) {
                         state.probationSelected = state.probationSelected + " years"
                     }
-                    if (state.probationSelected > '0' && !isProbationYears) {
+                    if (state.probationSelected > '0' && !isProbationYears && state.probationSelected !== 'life_probation') {
                         state.probationSelected = state.probationSelected + " months"
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
                     }
-                    console.log("good");
-                    console.log("test prison 2 => ", state.prisonSelected, state.probationSelected);
+                    if (state.fineSelected > '0') {
+                        state.fineSelected = `${state.fineSelected}$`
+                    }
                     if (state.prisonSelected === 'life_prison' || state.prisonSelected === 'death_prison' ||
                         state.probationSelected === 'life_probation') {
                         console.log("here prob");
 
-                        if (state.prisonSelected == 'life_prison' || state.prisonSelected == 'death_prison') {
+                        if (state.prisonSelected === 'life_prison' && state.probationSelected !== 'life_probation') {
                             state.finalComment = `This court has judged that it's required for the safety of the society
                             that you stay in prison forever, you are sentenced to life in prison with a possibility of 
                             parole, this court as also decided to sentence you to a 
-                            ${state.fineSelected}$ for your crimes.`
+                            ${state.fineSelected} for your crimes.`
                         }
-
-                        if (state.prisonSelected == 'life_prison') {
+                        else if (state.prisonSelected === 'life_prison') {
                             state.finalComment = `This court has judged that it's required for the safety of the society
                             that you stay in prison forever, you are sentenced to life in prison without parole, 
                             this court as also decided to sentence you to a 
-                            ${state.fineSelected}$ for your crimes.`
+                            ${state.fineSelected} for your crimes.`;
                         }
-
-                        if (state.prisonSelected == 'death_prison') {
-                            state.prisonSelected = "death";
+                        else if (state.prisonSelected === 'death_prison') {
                             state.finalComment = `This court has judged that you are and will stay a danger for 
                             society your whole life, this court as then decided to sentence you to death and a 
-                            ${state.fineSelected}$ for your crimes.`
+                            ${state.fineSelected} for your crimes.`;
                         }
-
-                        if (state.prisonSelected == 'life_probation') {
-                            state.prisonSelected = "probation for life";
+                        else if (state.prisonSelected !== 'life_prison' && state.probationSelected === 'life_probation'){
+                            state.finalComment = `This court has judged that your crime is important enough to make you stay under the arm
+                             of justice, however we chose to give you a last chance, you are sentence to ${state.prisonSelected} in prison, 
+                             to be under probation for life and a ${state.fineSelected} for your crimes.`;
                         }
-
-
                     } else {
                         const randomSentence = Math.floor(Math.random() * 3);
                         if (randomSentence === 0) {
@@ -630,6 +621,9 @@ export default new Vuex.Store({
                     }
                     if (state.fineSelected === '0') {
                         state.fineSelected = "no "
+                    }
+                    if (state.fineSelected > '0') {
+                        state.fineSelected = `${state.fineSelected}$`
                     }
                     const randomSentence = Math.floor(Math.random() * 3);
                     if (randomSentence === 0) {

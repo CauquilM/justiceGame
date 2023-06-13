@@ -46,7 +46,7 @@ export default {
         },
         createJury() {
             let random = Math.floor(Math.random() * 11);
-            if (!this.pleaDealExists && random >= 8) {
+            if (!this.pleaDealExists && random >= 9) {
                 this.toggleJury();
                 this.getJuryDecision(this.juryDecision());
             }

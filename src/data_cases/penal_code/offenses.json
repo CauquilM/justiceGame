@@ -39,7 +39,8 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 500000
+    "fine_max": 500000,
+    "life_probation": true
   },
   "assault": {
     "offense_charge": "assault",
@@ -217,7 +218,8 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 15000
+    "fine_max": 15000,
+    "life_probation": true
   },
   "drivingNoLicense": {
     "offense_charge": "driving w/o license",
@@ -230,7 +232,8 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 15000
+    "fine_max": 15000,
+    "life_probation": true
   },
   "hitAndRun": {
     "offense_charge": "hit and run",
@@ -258,7 +261,8 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 25000
+    "fine_max": 25000,
+    "life_probation": true
   },
   "traffic": {
     "offense_charge": "traffic",
@@ -284,7 +288,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 10000
+    "fine_max": 10000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "escape": {
     "offense_charge": "escape",
@@ -297,7 +303,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 10000
+    "fine_max": 10000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "assaultWithDeadlyWeapon": {
     "offense_charge": "assault with deadly weapon",
@@ -310,7 +318,9 @@
     "probation_max": 5,
     "probation_months_max": 60,
     "fine_min": 1000,
-    "fine_max": 10000
+    "fine_max": 10000,
+    "life_sentence": true,
+    "life_probation": true
   },
   "manslaughter": {
     "offense_charge": "manslaughter",
