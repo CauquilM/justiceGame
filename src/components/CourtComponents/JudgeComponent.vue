@@ -25,6 +25,7 @@
                 </div>
                 <div v-else-if="!pleaDealExists && !juryExists && chosenCase.type !== 'parole'" class="judge-buttons">
                     <b-button ref="guilty-btn" variant="danger" @click="playerDecision('guilty')">Guilty</b-button>
+                    <b-button variant="warning" @click="playerDecision('dismiss')">Dismiss case</b-button>
                     <b-button variant="success" @click="playerDecision('not guilty')">Not guilty</b-button>
                 </div>
             </div>

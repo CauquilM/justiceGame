@@ -420,6 +420,28 @@ export default new Vuex.Store({
                     commit("SET_JUDGE_COMMENT", "The suspect is recognized guilty, let's proceed to the sentencing");
                     dispatch("openGuiltyModal");
                 }
+            } else if (decision === "dismiss") {
+                commit("SET_JUDGE_COMMENT", "The case is dismissed");
+                dispatch("openNotGuiltyModal");
+                console.time("test not guilty post axios");
+                axios.post("https://spotless-ant-beret.cyclic.app/history",
+                    {
+                        case_id: `#${Math.floor(Math.random() * (99999 - 1000 + 1)) + 1000}`,
+                        type: state.chosenCase.type,
+                        charge: state.chosenCase.charge,
+                        description: state.chosenCase.description,
+                        suspect_name: state.chosenCase.suspect.name,
+                        suspect_age: state.chosenCase.suspect.age,
+                        criminalRecord: state.chosenCase.criminalRecord,
+                        verdict: "Dismissed"
+                    })
+                    .then((res) => {
+                        console.log(res);
+                    })
+                    .catch((err) => {
+                        console.log("axios post history cases: ", err);
+                    })
+                console.timeEnd("test not guilty post axios");
             } else {
                 if (state.chosenCase.type === 'parole') {
                     commit("SET_JUDGE_COMMENT", "The parole is accepted, you will now know the conditions");
