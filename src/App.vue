@@ -33,6 +33,13 @@ import armedRobbery_d from '@/data_cases/descriptions/crimes/armedRobbery.json'
 import armedRobbery_e from '@/data_cases/evidences/crimes/armedRobbery.json'
 import terrorist_d from '@/data_cases/descriptions/crimes/terrorist.json'
 import terrorist_e from '@/data_cases/evidences/crimes/terrorist.json'
+
+/************** Divorce **************/
+import divorce_d from '@/data_cases/descriptions/divorce/divorce.json'
+import divorce_e from '@/data_cases/evidences/divorce/divorce.json'
+import coupleItems_e from '@/data_cases/evidences/divorce/coupleItems.json'
+
+
 /************** Felonies **************/
 import drinkingInPublic_d from '@/data_cases/descriptions/felonies/drinkingInPublic.json'
 import drinkingInPublic_e from '@/data_cases/evidences/felonies/drinkingInPublic.json'
