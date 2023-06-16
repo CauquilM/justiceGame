@@ -35,9 +35,9 @@ import terrorist_d from '@/data_cases/descriptions/crimes/terrorist.json'
 import terrorist_e from '@/data_cases/evidences/crimes/terrorist.json'
 
 /************** Divorce **************/
-import divorce_d from '@/data_cases/descriptions/divorce/divorce.json'
+/*import divorce_d from '@/data_cases/descriptions/divorce/divorce.json'
 import divorce_e from '@/data_cases/evidences/divorce/divorce.json'
-import coupleItems_e from '@/data_cases/evidences/divorce/coupleItems.json'
+import coupleItems_e from '@/data_cases/evidences/divorce/coupleItems.json'*/
 
 
 /************** Felonies **************/
@@ -564,6 +564,20 @@ export default {
                         this.caseObj["fineSentences"] = this.generateSentences(offenses.drinkingInPublic.fine_min, offenses.drinkingInPublic.fine_max, true);
                         this.caseObj["criminalRecord"] = this.generateCriminalRecord();
                     }
+                    /******* Divorce *******/
+                    /*else if (this.caseObj.divorceCharge === "divorce") {
+                        this.caseObj["type"] = "divorce";
+                        this.caseObj["charge"] = "divorce";
+                        this.caseObj["penalCodeCharge"] = "";
+                        this.caseObj["description"] = dui_d[Math.floor(Math.random() * divorce_d.length)].description;
+                        this.caseObj["evidences"] = this.shuffleArray(dui_e.slice(0, Math.floor(Math.random() * dui_e.length))).slice(0, 3);
+                        this.caseObj["drivingLicensePoints"] = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+                        this.caseObj["prisonSentences"] = this.generateSentences(offenses.dui.prison_min, offenses.dui.prison_max, false, "prison", offenses.dui);
+                        this.caseObj["probationSentences"] = this.generateSentences(offenses.dui.probation_min, offenses.dui.probation_max, false, "probation", offenses.dui);
+                        this.caseObj["fineSentences"] = this.generateSentences(offenses.dui.fine_min, offenses.dui.fine_max, true);
+                        this.caseObj["criminalRecord"] = this.generateCriminalRecord();
+                        this.caseObj["witnesses"] = witnessesData.murder;
+                    }*/
                     /******* Road *******/
                     else if (this.caseObj.roadCharge === "dui") {
                         this.caseObj["type"] = "traffic crime";
@@ -741,7 +755,7 @@ export default {
             // Define case types
             const caseTypes = [
                 'Road', 'Traffic', 'Parole', 'Felonies_first', 'Criminal_first', 'Prison',
-                'Felonies_second', 'Criminal_second', /* 'Immigration', 'Student'
+                'Felonies_second', 'Criminal_second', /* 'Divorce', 'Immigration', 'Student'
                 'Police' ,'Army', 'Constitutional', 'Historical' */
             ];
 

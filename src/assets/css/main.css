@@ -409,9 +409,18 @@ span.apexcharts-legend-text {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
+    .judge-bench {
+        margin: 0 3%;
+    }
+
     .pleaDeal-buttons-container > button {
         font-size: 0.82em;
+    }
+}
+@media (max-width: 520px) {
+    .judge-bench {
+        margin: 0;
     }
 }
 
