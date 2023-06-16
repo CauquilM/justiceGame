@@ -1,0 +1,406 @@
+[
+  {
+    "id": "1",
+    "name": "Wedding Ring"
+  },
+  {
+    "id": "2",
+    "name": "Family Photo Album"
+  },
+  {
+    "id": "3",
+    "name": "House"
+  },
+  {
+    "id": "4",
+    "name": "Car"
+  },
+  {
+    "id": "5",
+    "name": "Pet Dog"
+  },
+  {
+    "id": "6",
+    "name": "Antique Furniture"
+  },
+  {
+    "id": "7",
+    "name": "Vacation Timeshare"
+  },
+  {
+    "id": "8",
+    "name": "Joint Bank Account"
+  },
+  {
+    "id": "9",
+    "name": "Artwork Collection"
+  },
+  {
+    "id": "10",
+    "name": "Family Heirloom"
+  },
+  {
+    "id": "11",
+    "name": "Kitchen Appliances"
+  },
+  {
+    "id": "12",
+    "name": "Electronics"
+  },
+  {
+    "id": "13",
+    "name": "Home Decor"
+  },
+  {
+    "id": "14",
+    "name": "Fine China"
+  },
+  {
+    "id": "15",
+    "name": "Children's Toys"
+  },
+  {
+    "id": "16",
+    "name": "Musical Instruments"
+  },
+  {
+    "id": "17",
+    "name": "Sports Equipment"
+  },
+  {
+    "id": "18",
+    "name": "Jewelry Collection"
+  },
+  {
+    "id": "19",
+    "name": "Tool Set"
+  },
+  {
+    "id": "20",
+    "name": "Garden Furniture"
+  },
+  {
+    "id": "21",
+    "name": "Clothing and Accessories"
+  },
+  {
+    "id": "22",
+    "name": "Family Pet (Cat)"
+  },
+  {
+    "id": "23",
+    "name": "Family Pet (Dog)"
+  },
+  {
+    "id": "24",
+    "name": "Fitness Equipment"
+  },
+  {
+    "id": "25",
+    "name": "Hol"
+    id
+    "ay Decorations"
+  },
+  {
+    "id": "26",
+    "name": "Home Office Equipment"
+  },
+  {
+    "id": "27",
+    "name": "Library (Book Collection)"
+  },
+  {
+    "id": "28",
+    "name": "Wine Collection"
+  },
+  {
+    "id": "29",
+    "name": "Outdoor Grill"
+  },
+  {
+    "id": "30",
+    "name": "Photography Equipment"
+  },
+  {
+    "id": "31",
+    "name": "Family Business"
+  },
+  {
+    "id": "32",
+    "name": "Hobby Collections"
+  },
+  {
+    "id": "33",
+    "name": "Motorcycle"
+  },
+  {
+    "id": "34",
+    "name": "Boat"
+  },
+  {
+    "id": "35",
+    "name": "RV or Camper"
+  },
+  {
+    "id": "36",
+    "name": "Sports Memorabilia"
+  },
+  {
+    "id": "37",
+    "name": "Tools and Machinery"
+  },
+  {
+    "id": "38",
+    "name": "Home Theater System"
+  },
+  {
+    "id": "39",
+    "name": "Piano"
+  },
+  {
+    "id": "40",
+    "name": "Home Security System"
+  },
+  {
+    "id": "41",
+    "name": "Computer Equipment"
+  },
+  {
+    "id": "42",
+    "name": "Vintage Collectibles"
+  },
+  {
+    "id": "43",
+    "name": "Horse"
+  },
+  {
+    "id": "44",
+    "name": "Fishing Gear"
+  },
+  {
+    "id": "45",
+    "name": "Camping Gear"
+  },
+  {
+    "id": "46",
+    "name": "Bicycles"
+  },
+  {
+    "id": "47",
+    "name": "Snowboard and Ski Equipment"
+  },
+  {
+    "id": "48",
+    "name": "Photographs and Art Prints"
+  },
+  {
+    "id": "49",
+    "name": "Home Renovation Tools"
+  },
+  {
+    "id": "50",
+    "name": "Coin Collection"
+  },
+  {
+    "id": "51",
+    "name": "Stamp Collection"
+  },
+  {
+    "id": "52",
+    "name": "Vintage Cars"
+  },
+  {
+    "id": "53",
+    "name": "Motorized Vehicles (ATV, Jet Ski, etc.)"
+  },
+  {
+    "id": "54",
+    "name": "Comic Book Collection"
+  },
+  {
+    "id": "55",
+    "name": "Board Games"
+  },
+  {
+    "id": "56",
+    "name": "Family Business Equipment"
+  },
+  {
+    "id": "57",
+    "name": "Surfboards"
+  },
+  {
+    "id": "58",
+    "name": "Fine Dining Dinnerware"
+  },
+  {
+    "id": "59",
+    "name": "Home Brewery Kit"
+  },
+  {
+    "id": "60",
+    "name": "Coin Operated Arcade Games"
+  },
+  {
+    "id": "61",
+    "name": "Home Library"
+  },
+  {
+    "id": "62",
+    "name": "Art Supplies"
+  },
+  {
+    "id": "63",
+    "name": "Vintage Vinyl Record Collection"
+  },
+  {
+    "id": "64",
+    "name": "Cigar Collection"
+  },
+  {
+    "id": "65",
+    "name": "Home Aquarium"
+  },
+  {
+    "id": "66",
+    "name": "Movie Memorabilia"
+  },
+  {
+    "id": "67",
+    "name": "Motorized Lawn Equipment"
+  },
+  {
+    "id": "68",
+    "name": "Home Brewing Equipment"
+  },
+  {
+    "id": "69",
+    "name": "Sculptures and Statues"
+  },
+  {
+    "id": "70",
+    "name": "Kitchenware and Cookware"
+  },
+  {
+    "id": "71",
+    "name": "Outdoor Playset"
+  },
+  {
+    "id": "72",
+    "name": "Home Sauna"
+  },
+  {
+    "id": "73",
+    "name": "Musical Record Collection"
+  },
+  {
+    "id": "74",
+    "name": "Classic V"
+    id
+    "eo Game Collection"
+  },
+  {
+    "id": "75",
+    "name": "Model Train Set"
+  },
+  {
+    "id": "76",
+    "name": "Home Gym"
+  },
+  {
+    "id": "77",
+    "name": "Designer Handbags and Accessories"
+  },
+  {
+    "id": "78",
+    "name": "Vintage Watches"
+  },
+  {
+    "id": "79",
+    "name": "Home Solar Panels"
+  },
+  {
+    "id": "80",
+    "name": "Outdoor Furniture"
+  },
+  {
+    "id": "81",
+    "name": "Firearms Collection"
+  },
+  {
+    "id": "82",
+    "name": "Motorized Bicycle"
+  },
+  {
+    "id": "83",
+    "name": "Comic Art Collection"
+  },
+  {
+    "id": "84",
+    "name": "Archery Equipment"
+  },
+  {
+    "id": "85",
+    "name": "Fine Wine Collection"
+  },
+  {
+    "id": "86",
+    "name": "Home Massage Chair"
+  },
+  {
+    "id": "87",
+    "name": "Remote Control Cars and Drones"
+  },
+  {
+    "id": "88",
+    "name": "Home Weather Station"
+  },
+  {
+    "id": "89",
+    "name": "Home Pool Table"
+  },
+  {
+    "id": "90",
+    "name": "Personal Watercraft (Jet Ski)"
+  },
+  {
+    "id": "91",
+    "name": "Fine China Dinnerware"
+  },
+  {
+    "id": "92",
+    "name": "Vintage Clothing Collection"
+  },
+  {
+    "id": "93",
+    "name": "Home Bread Maker"
+  },
+  {
+    "id": "94",
+    "name": "Hunting Gear"
+  },
+  {
+    "id": "95",
+    "name": "Home Telescope"
+  },
+  {
+    "id": "96",
+    "name": "Skateboard and Ramp"
+  },
+  {
+    "id": "97",
+    "name": "Photography Studio Equipment"
+  },
+  {
+    "id": "98",
+    "name": "Home Wine Cellar"
+  },
+  {
+    "id": "99",
+    "name": "Classic Bicycle Collection"
+  },
+  {
+    "id": "100",
+    "name": "Personalized Artwork"
+  }
+]

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import "./assets/main.css"
+import "./assets/css/main.css"
 import './assets/css/tabler-icons.min.css'
 import {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 import VueCookies from 'vue-cookies'
