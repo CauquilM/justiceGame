@@ -17,6 +17,8 @@
         <div class="others-container">
 
             <div class="switchable-components">
+                <DragNDropComponent/>
+
                 <SentenceComponent/>
 
                 <CourtBarComponent/>
@@ -52,10 +54,12 @@ import AllProvesComponent from "@/components/CourtComponents/AllProvesComponent.
 import CourtBarComponent from "@/components/CourtComponents/CourtBarComponent.vue";
 import CriminalRecord from "@/components/CourtComponents/CriminalRecord.vue";
 import JuryComponent from "@/components/CourtComponents/JuryComponent.vue";
+import DragNDropComponent from "@/components/CourtComponents/DragNDropComponent.vue";
 
 export default {
     name: 'HomeView',
     components: {
+        DragNDropComponent,
         JuryComponent,
         CriminalRecord,
         CourtBarComponent,
