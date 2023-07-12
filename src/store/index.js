@@ -477,7 +477,8 @@ export default new Vuex.Store({
         openNotGuiltyModal() {
             eventBus.$emit('openNotGuiltyModal');
         },
-        doSentencing({state}, {isPrisonYears, isProbationYears}) {
+        doSentencing({state}, {isPrisonYears = true, isProbationYears = true}) {
+            console.log("CHat => ", isPrisonYears, " ", isProbationYears);
             if (state.chosenCase.type === "parole") {
                 if (state.probationSelected !== null) {
                     console.log("test: ", state.probationSelected);
@@ -542,6 +543,7 @@ export default new Vuex.Store({
                     eventBus.$emit('openSentencingFailModal');
                 }
             } else if (state.chosenCase.type !== "traffic infraction") {
+                console.log("CHat => ", isPrisonYears, " ", isProbationYears);
                 if (state.prisonSelected !== null && state.probationSelected !== null && state.fineSelected !== null) {
                     if (state.prisonSelected === '0') {
                         state.prisonSelected = "no time"

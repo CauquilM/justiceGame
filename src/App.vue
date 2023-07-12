@@ -755,7 +755,7 @@ export default {
             // Define case types
             const caseTypes = [
                 'Road', 'Traffic', 'Parole', 'Felonies_first', 'Criminal_first', 'Prison',
-                'Felonies_second', 'Criminal_second', /* 'Divorce', 'Immigration', 'Student'
+                'Felonies_second', 'Criminal_second', /* 'Canonical (Church)' 'Divorce', 'Immigration', 'Student'
                 'Police' ,'Army', 'Constitutional', 'Historical' */
             ];
 
