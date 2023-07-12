@@ -4,6 +4,7 @@ import CourtView from "@/views/CourtView.vue";
 import CasesHistoryView from "@/views/CasesHistoryView.vue";
 import CasesStatisticsView from "@/views/CasesStatisticsView.vue";
 import PenalCodeView from "@/views/PenalCodeView.vue";
+import IdeasView from "@/views/IdeasView.vue";
 /*import CreateCaseView from "@/views/CreateCaseView.vue";*/
 
 Vue.use(VueRouter)
@@ -28,6 +29,11 @@ const routes = [
     path: '/laws',
     name: 'penal-code',
     component: PenalCodeView
+  },
+  {
+    path: '/ideas',
+    name: 'ideas',
+    component: IdeasView
   },
   /*{
     path: '/create',

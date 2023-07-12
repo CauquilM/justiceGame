@@ -20,7 +20,9 @@ export default {
             officePages: [
                 /*{text: "Go to court", link: "/", icon: "ti ti-gavel"},*/
                 {text: "Visit archives", link: "/history", icon: "ti ti-archive"},
-                {text: "See statistics", link: "/statistics", icon: "ti ti-chart-histogram"}
+                {text: "See statistics", link: "/statistics", icon: "ti ti-chart-histogram"},
+                {text: "Ideas", link: "/ideas", icon: "ti ti-bulb"},
+                {text: "Bugs", link: "/bugs", icon: "ti ti-bug"},
             ]
         }
     },
