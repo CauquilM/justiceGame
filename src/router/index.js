@@ -4,7 +4,7 @@ import CourtView from "@/views/CourtView.vue";
 import CasesHistoryView from "@/views/CasesHistoryView.vue";
 import CasesStatisticsView from "@/views/CasesStatisticsView.vue";
 import PenalCodeView from "@/views/PenalCodeView.vue";
-import IdeasView from "@/views/IdeasView.vue";
+import ReportsView from "@/views/ReportsView.vue";
 /*import CreateCaseView from "@/views/CreateCaseView.vue";*/
 
 Vue.use(VueRouter)
@@ -31,9 +31,9 @@ const routes = [
     component: PenalCodeView
   },
   {
-    path: '/ideas',
-    name: 'ideas',
-    component: IdeasView
+    path: '/reports',
+    name: 'reports',
+    component: ReportsView
   },
   /*{
     path: '/create',
